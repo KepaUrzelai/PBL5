@@ -12,4 +12,10 @@ public class Line extends Segment{
 		this.nextSegment2=nextSegment2;
 	}
 
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

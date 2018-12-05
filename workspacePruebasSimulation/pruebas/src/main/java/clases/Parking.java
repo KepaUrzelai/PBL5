@@ -10,4 +10,10 @@ public class Parking extends Segment{
 		this.correspondientLine=correspondient;
 	}
 
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

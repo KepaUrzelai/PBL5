@@ -3,10 +3,12 @@ package clases;
 public class Vehicle {
 	
 	int ID;
-	Segment segment;
+	Segment currentSegment, nextSegment;
 	
-	public Vehicle() {
-		
+	public Vehicle(int id, Segment current, Segment next) {
+		this.ID=id;
+		this.currentSegment=current;
+		this.nextSegment=next;
 	}
 
 }

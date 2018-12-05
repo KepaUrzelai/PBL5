@@ -1,34 +1,59 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import clases.Line;
+import clases.Order;
 import clases.Parking;
+import clases.Product;
 import clases.Segment;
-import clases.Workspace;
+import clases.Workstation;
+import control.ControlOrders;
 
 public class Main {
 	
 	List<Segment> SegmentList;
+	List<Product> order1;
+	Order order;
+	ControlOrders controlOrders;
 	
 	public Main() {
 		inicializar();
-		
+		addOrder();
 	}
 	
-    public static void main(String[] args) throws Exception {
+    private void addOrder() {
+		controlOrders=new ControlOrders();
+		System.out.println(order.getProductList().get(0));
+		controlOrders.addOrder(order);
+		
+	}
+
+	public static void main(String[] args) throws Exception {
 
     	@SuppressWarnings("unused")
 		Main main= new Main();
+ 
     	
     }
-    
-    public void inicializar() {
+
+
+	public void inicializar() {
     	inicializarSegmentos();
-    	
+    	inicializarOrders();
     }
     
-    public void inicializarSegmentos() {
+    private void inicializarOrders() {
+    	order1=new ArrayList<Product>();
+    	order1.add(new Product(0,"alfajores 1", (Workstation)SegmentList.get(8), (Workstation)SegmentList.get(7), 3));
+    	order1.add(new Product(1,"alfajores 2", (Workstation)SegmentList.get(8), (Workstation)SegmentList.get(7), 3));
+    	order1.add(new Product(2,"dildo 1", (Workstation)SegmentList.get(9), (Workstation)SegmentList.get(7), 5));
+		order=new Order(1, order1);
+	}
+
+	private void inicializarSegmentos() {
+		SegmentList=new ArrayList<Segment>();
     	SegmentList.add(new Line(0, 1, 2));//-1 equivale a null
     	SegmentList.add(new Line(1, 3, -1));
     	SegmentList.add(new Line(2, 5, -1));
@@ -36,8 +61,9 @@ public class Main {
     	SegmentList.add(new Line(4, 5, -1));
     	SegmentList.add(new Line(5, 6, -1));
     	SegmentList.add(new Line(6, 0, -1));
-     	SegmentList.add(new Workspace(10, (Line) SegmentList.get(0)));
-     	SegmentList.add(new Workspace(11, (Line) SegmentList.get(4)));
+     	SegmentList.add(new Workstation(10,"workspace 1", (Line) SegmentList.get(0)));
+     	SegmentList.add(new Workstation(11,"workspace 2", (Line) SegmentList.get(4)));
+     	SegmentList.add(new Workstation(12,"workspace 3", (Line) SegmentList.get(4)));//este lo he creau para tener otro mas y para hacer pruebas. no cuadra con el esquema
      	SegmentList.add(new Parking(20, (Line) SegmentList.get(1)));
     	
     }

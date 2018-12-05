@@ -1,0 +1,45 @@
+package control;
+
+import java.util.List;
+
+import clases.Order;
+import clases.Product;
+import clases.Workstation;
+
+public class ControlOrders {
+	
+	public ControlOrders() {
+		
+	}
+	
+	
+	public void addOrder(Order order) {
+		List<Product> productList;
+		productList=order.getProductList();
+		for(int i=0;i<productList.size();i++) {
+			addToWorkspace(productList.get(i), productList.get(i).getSegmentOrigin());			
+		}		
+		initThreads(order);
+	}
+	
+	private void initThreads(Order order) {
+		List<Product> productList;
+		productList=order.getProductList();
+		Thread thread=new Thread(order.getProductList().get(0).getSegmentOrigin());
+		thread.setName("thread" + 1);
+			
+		Thread thread1=new Thread(order.getProductList().get(2).getSegmentOrigin());
+		thread1.setName("thread" + 2);
+		
+		thread.start();	
+		thread1.start();	
+			
+	}
+
+
+	private void addToWorkspace(Product product, Workstation workstation) {
+
+		workstation.addProduct(product);
+	}
+
+}

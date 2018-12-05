@@ -1,13 +1,28 @@
 package clases;
 
+import java.util.List;
+
 public class Order {
 	
 	int ID;
-	Product product;
-	Segment segmentOrigin, segmentDestination;
+	List<Product> productList;
 	
-	public Order(){
-		
+	
+	public Order(int id, List<Product> productList){
+		this.ID=id;
+		this.productList=productList;		
 	}
+
+
+	public int getID() {
+		return ID;
+	}
+
+
+	public List<Product> getProductList() {
+		return productList;
+	}
+	
+	
 
 }
