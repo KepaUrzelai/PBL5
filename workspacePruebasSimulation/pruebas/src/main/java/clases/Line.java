@@ -1,11 +1,13 @@
 package clases;
 
+import control.ControlVehicles;
+
 public class Line extends Segment{
 	
 	int nextSegment, nextSegment2;
 
-	public Line(int id, int nextSegment, int nextSegment2) {
-		super(id);
+	public Line(int id, int nextSegment, int nextSegment2, ControlVehicles control) {
+		super(id, control);
 		// TODO Auto-generated constructor stub
 		
 		this.nextSegment=nextSegment;

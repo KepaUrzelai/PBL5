@@ -9,7 +9,8 @@ import clases.Workstation;
 public class ControlOrders {
 	
 	public ControlOrders() {
-		
+		//el init threads tendriamos que hacerlo aqui inicializando todos los threads. Luego un while en el 
+		//run de los threads esperando a que llegue un orden.
 	}
 	
 	

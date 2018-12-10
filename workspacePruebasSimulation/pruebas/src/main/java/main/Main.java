@@ -10,6 +10,7 @@ import clases.Product;
 import clases.Segment;
 import clases.Workstation;
 import control.ControlOrders;
+import control.ControlVehicles;
 
 public class Main {
 	
@@ -17,8 +18,10 @@ public class Main {
 	List<Product> order1;
 	Order order;
 	ControlOrders controlOrders;
+	ControlVehicles controlVehicles;
 	
 	public Main() {
+		controlVehicles=new ControlVehicles();
 		inicializar();
 		addOrder();
 	}
@@ -54,17 +57,17 @@ public class Main {
 
 	private void inicializarSegmentos() {
 		SegmentList=new ArrayList<Segment>();
-    	SegmentList.add(new Line(0, 1, 2));//-1 equivale a null
-    	SegmentList.add(new Line(1, 3, -1));
-    	SegmentList.add(new Line(2, 5, -1));
-    	SegmentList.add(new Line(3, 4, -1));
-    	SegmentList.add(new Line(4, 5, -1));
-    	SegmentList.add(new Line(5, 6, -1));
-    	SegmentList.add(new Line(6, 0, -1));
-     	SegmentList.add(new Workstation(10,"workspace 1", (Line) SegmentList.get(0)));
-     	SegmentList.add(new Workstation(11,"workspace 2", (Line) SegmentList.get(4)));
-     	SegmentList.add(new Workstation(12,"workspace 3", (Line) SegmentList.get(4)));//este lo he creau para tener otro mas y para hacer pruebas. no cuadra con el esquema
-     	SegmentList.add(new Parking(20, (Line) SegmentList.get(1)));
+    	SegmentList.add(new Line(0, 1, 2, controlVehicles));//-1 equivale a null
+    	SegmentList.add(new Line(1, 3, -1, controlVehicles));
+    	SegmentList.add(new Line(2, 5, -1, controlVehicles));
+    	SegmentList.add(new Line(3, 4, -1, controlVehicles));
+    	SegmentList.add(new Line(4, 5, -1, controlVehicles));
+    	SegmentList.add(new Line(5, 6, -1, controlVehicles));
+    	SegmentList.add(new Line(6, 0, -1, controlVehicles));
+     	SegmentList.add(new Workstation(10,"workspace 1", (Line) SegmentList.get(0), controlVehicles));
+     	SegmentList.add(new Workstation(11,"workspace 2", (Line) SegmentList.get(4), controlVehicles));
+     	SegmentList.add(new Workstation(12,"workspace 3", (Line) SegmentList.get(4), controlVehicles));//este lo he creau para tener otro mas y para hacer pruebas. no cuadra con el esquema
+     	SegmentList.add(new Parking(20, (Line) SegmentList.get(1), controlVehicles));
     	
     }
 

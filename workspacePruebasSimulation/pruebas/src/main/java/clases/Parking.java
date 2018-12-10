@@ -1,11 +1,13 @@
 package clases;
 
+import control.ControlVehicles;
+
 public class Parking extends Segment{
 	
 	Line correspondientLine;
 
-	public Parking(int id, Line correspondient) {
-		super(id);
+	public Parking(int id, Line correspondient, ControlVehicles control) {
+		super(id, control);
 		// TODO Auto-generated constructor stub
 		this.correspondientLine=correspondient;
 	}

@@ -3,17 +3,21 @@ package clases;
 import java.util.ArrayList;
 import java.util.List;
 
+import control.ControlVehicles;
+
 public class Workstation extends Segment{
 	
 	Line correspondientLine;
 	String name;
 	List<Product> listaProductos;
+	boolean productTaken;
 
-	public Workstation(int id,String name, Line correspondient) {
-		super(id);
+	public Workstation(int id,String name, Line correspondient, ControlVehicles control) {
+		super(id, control);
 		// TODO Auto-generated constructor stub
 		this.correspondientLine=correspondient;
 		this.listaProductos=new ArrayList<Product>();
+		productTaken=false;
 	}
 	
 	public void addProduct(Product product) {
@@ -34,20 +38,24 @@ public class Workstation extends Segment{
 		return true;
 
 	}
-
+	
+	public void produce() {
+		makeProduct();
+		while(!productTaken) {		
+			productTaken=controlVehicles.callVehicle(listaProductos.get(0));
+		}
+		deleteProduct();
+	}
+	
 	public void deleteProduct() {
 		listaProductos.remove(0);
-		
 		if(listaProductos.size()!=0) {
-			makeProduct();
+			produce();
 		}
 	}
 
 	@Override
 	public void run() {
-		makeProduct();
-		System.out.println("viene el vehiculo a llevarse un producto");
-		deleteProduct();
-		
+		produce();	
 	}
 }
