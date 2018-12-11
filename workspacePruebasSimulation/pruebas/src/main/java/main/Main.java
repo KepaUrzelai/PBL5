@@ -21,6 +21,7 @@ public class Main {
 	ControlVehicles controlVehicles;
 	
 	public Main() {
+		
 		controlVehicles=new ControlVehicles();
 		inicializar();
 		addOrder();
@@ -49,9 +50,11 @@ public class Main {
     
     private void inicializarOrders() {
     	order1=new ArrayList<Product>();
-    	order1.add(new Product(0,"alfajores 1", (Workstation)SegmentList.get(8), (Workstation)SegmentList.get(7), 3));
-    	order1.add(new Product(1,"alfajores 2", (Workstation)SegmentList.get(8), (Workstation)SegmentList.get(7), 3));
-    	order1.add(new Product(2,"dildo 1", (Workstation)SegmentList.get(9), (Workstation)SegmentList.get(7), 5));
+    	order1.add(new Product(0,"alfajores 1", (Workstation)SegmentList.get(8), (Workstation)SegmentList.get(7), 5));
+    	order1.add(new Product(1,"alfajores 2", (Workstation)SegmentList.get(8), (Workstation)SegmentList.get(7), 5));
+    	order1.add(new Product(2,"alfajores 3", (Workstation)SegmentList.get(8), (Workstation)SegmentList.get(7), 5));
+    	order1.add(new Product(3,"dildo 1", (Workstation)SegmentList.get(9), (Workstation)SegmentList.get(7), 7));
+    	order1.add(new Product(4,"dildo 2", (Workstation)SegmentList.get(9), (Workstation)SegmentList.get(7), 7));
 		order=new Order(1, order1);
 	}
 

@@ -23,13 +23,13 @@ public class ControlOrders {
 		initThreads(order);
 	}
 	
-	private void initThreads(Order order) {
+	private void initThreads(Order order) {//esto esta mal, hay que crearlos pillando de la lista de los segmentos. que luego he estado con errores
 		List<Product> productList;
 		productList=order.getProductList();
 		Thread thread=new Thread(order.getProductList().get(0).getSegmentOrigin());
 		thread.setName("thread" + 1);
 			
-		Thread thread1=new Thread(order.getProductList().get(2).getSegmentOrigin());
+		Thread thread1=new Thread(order.getProductList().get(3).getSegmentOrigin());
 		thread1.setName("thread" + 2);
 		
 		thread.start();	
@@ -39,7 +39,6 @@ public class ControlOrders {
 
 
 	private void addToWorkspace(Product product, Workstation workstation) {
-
 		workstation.addProduct(product);
 	}
 

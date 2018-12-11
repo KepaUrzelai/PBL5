@@ -21,19 +21,19 @@ public class Workstation extends Segment{
 	}
 	
 	public void addProduct(Product product) {
-		listaProductos.add(product);
+		this.listaProductos.add(product);
 		System.out.println(product.getName()+ " added to the workstation");
 	}
 
 	public boolean makeProduct() {
-		if(listaProductos.size()!=0) {
+		if(this.listaProductos.size()!=0) {
 			try {
-				Thread.sleep(listaProductos.get(0).getTime()*1000);
+				Thread.sleep(this.listaProductos.get(0).getTime()*1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			System.out.println(listaProductos.get(0).getName()+ " its ready!");
+			System.out.println(this.listaProductos.get(0).getName()+ " its ready!");
 		}
 		return true;
 
@@ -41,15 +41,16 @@ public class Workstation extends Segment{
 	
 	public void produce() {
 		makeProduct();
-		while(!productTaken) {		
-			productTaken=controlVehicles.callVehicle(listaProductos.get(0));
+		while(!this.productTaken) {		
+			controlVehicles.callVehicle(listaProductos.get(0), this);
 		}
+		this.productTaken=false;
 		deleteProduct();
 	}
 	
 	public void deleteProduct() {
-		listaProductos.remove(0);
-		if(listaProductos.size()!=0) {
+		this.listaProductos.remove(0);
+		if(this.listaProductos.size()!=0) {
 			produce();
 		}
 	}
@@ -58,4 +59,9 @@ public class Workstation extends Segment{
 	public void run() {
 		produce();	
 	}
+
+	public void setProductTaken(boolean productTaken) {
+		this.productTaken = productTaken;
+	}
+	
 }

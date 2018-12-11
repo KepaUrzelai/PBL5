@@ -6,16 +6,20 @@ import java.util.concurrent.Semaphore;
 
 import clases.Product;
 import clases.Vehicle;
+import clases.Workstation;
 
 public class ControlVehicles {
 	
-	static Semaphore vehicle;
+	static Semaphore vehicleSem;
+	static Semaphore mutEx;
 	List<Vehicle> listVehicles;
 	List<Vehicle> listAvailableVehicles;
 	
 	public ControlVehicles() {
 		initVehicles();
-		vehicle = new Semaphore(2);
+		vehicleSem = new Semaphore(2);
+		mutEx = new Semaphore(1);
+		
 	}
 	
 	private void initVehicles() {
@@ -36,19 +40,38 @@ public class ControlVehicles {
 		listAvailableVehicles=listVehicles;
 	}
 
-	public void moveVehicle(int id, Product product) throws InterruptedException {
-		vehicle.acquire();
-		System.out.println("El vehiculo=" + id + " ha pillau el producto=" + product.getName());
-		Thread.sleep(5000);
-		System.out.println("Se ha entregado el producto. El vehiculo vuelve a estar disponible.");
-		vehicle.release();
+	public void addVehicle(Vehicle vehicle) throws InterruptedException {
+		mutEx.acquire();
+		listAvailableVehicles.add(vehicle);
+		mutEx.release();
+		vehicleSem.release();
 		
 	}
 
-	public boolean callVehicle(Product product) {
-	//	listAvailableVehicles.get(0).setWaiting(false);
-		listAvailableVehicles.get(0).move(product);
-		return true;
+	public void callVehicle(Product product, Workstation workstation){
+		try {
+			vehicleSem.acquire();
+			mutEx.acquire();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Vehicle vehicle;
+		while(listAvailableVehicles.size()==0) {			
+		}
+		vehicle=listAvailableVehicles.get(0);
+		listAvailableVehicles.remove(0);
+		workstation.setProductTaken(true);
+		mutEx.release();
+		vehicle.moveProduct(product);
+		
+		synchronized(vehicle) {
+			vehicle.notify();
+		}
+		
+		
+	//	vehicle.move(product);
+		
 	}
 
 }
