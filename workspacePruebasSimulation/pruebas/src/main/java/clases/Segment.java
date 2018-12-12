@@ -5,6 +5,7 @@ import control.ControlVehicles;
 public abstract class Segment implements Runnable{
 	
 	int ID;
+	
 	ControlVehicles controlVehicles;
 
 	

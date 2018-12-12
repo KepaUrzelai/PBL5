@@ -4,12 +4,22 @@ import control.ControlVehicles;
 
 public class Parking extends Segment{
 	
-	Line correspondientLine;
+	int correspondientLineId;
+	String name;
 
-	public Parking(int id, Line correspondient, ControlVehicles control) {
+	public Parking(int id,String name, int correspondient, ControlVehicles control) {
 		super(id, control);
 		// TODO Auto-generated constructor stub
-		this.correspondientLine=correspondient;
+		this.name=name;
+		this.correspondientLineId=correspondient;
+	}
+
+	public int getCorrespondientLineId() {
+		return correspondientLineId;
+	}
+
+	public String getName() {
+		return name;
 	}
 
 	@Override

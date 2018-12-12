@@ -11,6 +11,7 @@ import clases.Segment;
 import clases.Workstation;
 import control.ControlOrders;
 import control.ControlVehicles;
+import segment.dao.SegmentItemFacade;
 
 public class Main {
 	
@@ -24,10 +25,18 @@ public class Main {
 		
 		controlVehicles=new ControlVehicles();
 		inicializar();
+		addSegmentsToDatabase();
 		addOrder();
 	}
 	
-    private void addOrder() {
+    private void addSegmentsToDatabase() {
+    	SegmentItemFacade database= new SegmentItemFacade();
+		for (Segment s: SegmentList) {
+			database.saveSegment(s);
+		}
+	}
+
+	private void addOrder() {
 		controlOrders=new ControlOrders();
 		System.out.println(order.getProductList().get(0));
 		controlOrders.addOrder(order);
@@ -67,11 +76,10 @@ public class Main {
     	SegmentList.add(new Line(4, 5, -1, controlVehicles));
     	SegmentList.add(new Line(5, 6, -1, controlVehicles));
     	SegmentList.add(new Line(6, 0, -1, controlVehicles));
-     	SegmentList.add(new Workstation(10,"workspace 1", (Line) SegmentList.get(0), controlVehicles));
-     	SegmentList.add(new Workstation(11,"workspace 2", (Line) SegmentList.get(4), controlVehicles));
-     	SegmentList.add(new Workstation(12,"workspace 3", (Line) SegmentList.get(4), controlVehicles));//este lo he creau para tener otro mas y para hacer pruebas. no cuadra con el esquema
-     	SegmentList.add(new Parking(20, (Line) SegmentList.get(1), controlVehicles));
-    	
+     	SegmentList.add(new Workstation(10,"workspace 1",  SegmentList.get(0).getID(), controlVehicles));
+     	SegmentList.add(new Workstation(11,"workspace 2",  SegmentList.get(4).getID(), controlVehicles));
+     	SegmentList.add(new Workstation(12,"workspace 3",  SegmentList.get(4).getID(), controlVehicles));//este lo he creau para tener otro mas y para hacer pruebas. no cuadra con el esquema
+     	SegmentList.add(new Parking(20,"parking 1", SegmentList.get(1).getID(), controlVehicles));    	
     }
 
 }

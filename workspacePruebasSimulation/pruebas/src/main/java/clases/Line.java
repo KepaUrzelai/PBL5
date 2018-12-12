@@ -20,4 +20,12 @@ public class Line extends Segment{
 		
 	}
 
+	public int getNextSegment() {
+		return nextSegment;
+	}
+
+	public int getNextSegment2() {
+		return nextSegment2;
+	}
+
 }

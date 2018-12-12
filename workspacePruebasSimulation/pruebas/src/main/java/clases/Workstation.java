@@ -7,15 +7,15 @@ import control.ControlVehicles;
 
 public class Workstation extends Segment{
 	
-	Line correspondientLine;
+	int correspondientLineId;
 	String name;
 	List<Product> listaProductos;
 	boolean productTaken;
 
-	public Workstation(int id,String name, Line correspondient, ControlVehicles control) {
+	public Workstation(int id,String name, int correspondient, ControlVehicles control) {
 		super(id, control);
 		// TODO Auto-generated constructor stub
-		this.correspondientLine=correspondient;
+		this.correspondientLineId=correspondient;
 		this.listaProductos=new ArrayList<Product>();
 		productTaken=false;
 	}
@@ -62,6 +62,14 @@ public class Workstation extends Segment{
 
 	public void setProductTaken(boolean productTaken) {
 		this.productTaken = productTaken;
+	}
+
+	public int getCorrespondientLineId() {
+		return correspondientLineId;
+	}
+
+	public String getName() {
+		return name;
 	}
 	
 }
