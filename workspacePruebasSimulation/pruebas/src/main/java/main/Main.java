@@ -25,7 +25,7 @@ public class Main {
 		
 		controlVehicles=new ControlVehicles();
 		inicializar();
-		addSegmentsToDatabase();
+		//addSegmentsToDatabase();
 		addOrder();
 	}
 	
@@ -38,7 +38,6 @@ public class Main {
 
 	private void addOrder() {
 		controlOrders=new ControlOrders();
-		System.out.println(order.getProductList().get(0));
 		controlOrders.addOrder(order);
 		
 	}
@@ -62,8 +61,8 @@ public class Main {
     	order1.add(new Product(0,"alfajores 1", (Workstation)SegmentList.get(8), (Workstation)SegmentList.get(7), 5));
     	order1.add(new Product(1,"alfajores 2", (Workstation)SegmentList.get(8), (Workstation)SegmentList.get(7), 5));
     	order1.add(new Product(2,"alfajores 3", (Workstation)SegmentList.get(8), (Workstation)SegmentList.get(7), 5));
-    	order1.add(new Product(3,"dildo 1", (Workstation)SegmentList.get(9), (Workstation)SegmentList.get(7), 7));
-    	order1.add(new Product(4,"dildo 2", (Workstation)SegmentList.get(9), (Workstation)SegmentList.get(7), 7));
+    	order1.add(new Product(3,"perrunillas 1", (Workstation)SegmentList.get(9), (Workstation)SegmentList.get(7), 7));
+    	order1.add(new Product(4,"perrunillas 2", (Workstation)SegmentList.get(9), (Workstation)SegmentList.get(7), 7));
 		order=new Order(1, order1);
 	}
 
