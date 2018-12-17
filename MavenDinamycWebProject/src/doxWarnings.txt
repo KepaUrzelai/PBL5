@@ -1,0 +1,13 @@
+warning: source ../../lib/defines.h is not a readable file or directory... skipping.
+warning: source ../../lib/util is not a readable file or directory... skipping.
+warning: source ../../lib/dummy is not a readable file or directory... skipping.
+warning: source ../../lib/modelica is not a readable file or directory... skipping.
+warning: source ../../lib/matlab is not a readable file or directory... skipping.
+warning: source ../../lib/ptII/lbnl is not a readable file or directory... skipping.
+warning: source ../../lib/ptII/bacnet/src is not a readable file or directory... skipping.
+warning: source ../../lib/ptII/adInterfaceMCC/src is not a readable file or directory... skipping.
+warning: source ../../lib/launcher/src is not a readable file or directory... skipping.
+warning: source ../../lib/xml is not a readable file or directory... skipping.
+warning: source ../../lib/config is not a readable file or directory... skipping.
+warning: source ../../examples/c-room is not a readable file or directory... skipping.
+warning: source ../../examples/f90-room is not a readable file or directory... skipping.

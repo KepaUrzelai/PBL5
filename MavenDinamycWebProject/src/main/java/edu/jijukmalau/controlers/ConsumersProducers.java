@@ -1,3 +1,7 @@
+/**
+ * Entry point for this project. *
+ * @author Spiria
+ */package edu.jijukmalau.controlers;
 
 // Java program to implement solution of producer 
 // consumer problem. 
@@ -16,6 +20,12 @@ public class ConsumersProducers
         Thread t1 = new Thread(new Runnable() 
         { 
             @Override
+            
+            /** This is a method that does so
+             * much that I must write an epic 
+             * novel just to describe how much
+             * it truly does. */
+            /// This method does something
             public void run() 
             { 
                 try
@@ -55,16 +65,19 @@ public class ConsumersProducers
         t2.join(); 
     } 
   
-    // This class has a list, producer (adds items to list 
-    // and consumber (removes items). 
+    /* \brief Transform any car calls we can directly link to "answered" directional landing calls
+    *
+    * We can only be sure that a car call is the result of an \c ANSWERED directional landing call if there are no other car calls at the floor (ie for any lift for any floor <tt>call[]==TRUE but CarCalls[]==0</tt>).
+    * \note This function should only be executed after all destination and directional landing calls have already been transformed
+    * \param
+    */
     public static class PC 
     { 
         // Create a list shared by producer and consumer 
         // Size of list is 2. 
         LinkedList<Integer> list = new LinkedList<Integer>(); 
         int capacity = 2; 
-  
-        // Function called by producer thread 
+
         public void produce() throws InterruptedException 
         { 
             int value = 0; 
