@@ -37,15 +37,10 @@ public class Vehicle implements Runnable{
 	}
 
 	public void move(Product product) throws InterruptedException {
-		try {
-			System.out.println("El vehiculo=" + this.id + " ha pillau el producto=" + product.getName());
-			Thread.sleep(6000);
-			System.out.println("Se ha entregado el producto. El vehiculo vuelve a estar disponible.");
-			controlVehicles.addVehicle(this);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		System.out.println("El vehiculo=" + this.id + " ha pillau el producto=" + product.getName());
+		Thread.sleep(6000);
+		System.out.println("Se ha entregado el producto. El vehiculo vuelve a estar disponible.");
+		controlVehicles.addVehicle(this);
 		waiting();
 	}
 
@@ -64,7 +59,6 @@ public class Vehicle implements Runnable{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 	}
 	
 	private void waiting() throws InterruptedException {
