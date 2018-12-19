@@ -86,7 +86,7 @@ public class DaoSegmentItemMySQL implements DaoSegmentItem{
 		boolean ret = false;
 		String sqlQuery = "INSERT INTO segment (segmentId,state,NextlineId,Nextline2Id,role) "+
 		"VALUES("
-		+ "'"+segment.getID()+"',"
+		+ "'"+segment.getId()+"',"
 		+ "'"+0+"',"
 		+ "'"+segment.getNextSegment()+"',"
 		+ "'"+segment.getNextSegment2()+"',"
@@ -111,7 +111,7 @@ public class DaoSegmentItemMySQL implements DaoSegmentItem{
 		boolean ret = false;
 		String sqlQuery = "INSERT INTO segment (segmentId,state,correspondentLineId,name,role) "+
 		"VALUES("
-		+ "'"+segment.getID()+"',"
+		+ "'"+segment.getId()+"',"
 		+ "'"+0+"',"
 		+ "'"+segment.getCorrespondientLineId()+"',"
 		+ "'"+segment.getName()+"',"
@@ -136,7 +136,7 @@ public class DaoSegmentItemMySQL implements DaoSegmentItem{
 		boolean ret = false;
 		String sqlQuery = "INSERT INTO segment (segmentId,state, correspondentLineId, name, role) "+
 		"VALUES("
-		+ "'"+segment.getID()+"',"
+		+ "'"+segment.getId()+"',"
 		+ "'"+0+"',"
 		+ "'"+segment.getCorrespondientLineId()+"',"
 		+ "'"+segment.getName()+"',"

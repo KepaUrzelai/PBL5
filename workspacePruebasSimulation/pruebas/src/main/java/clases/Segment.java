@@ -60,4 +60,49 @@ public abstract class Segment implements Runnable{
 	public abstract void run();
 
 
+	public int getNextSegment() {
+		return nextSegment;
+	}
+
+
+	public void setNextSegment(int nextSegment) {
+		this.nextSegment = nextSegment;
+	}
+
+
+	public int getNextSegment2() {
+		return nextSegment2;
+	}
+
+
+	public void setNextSegment2(int nextSegment2) {
+		this.nextSegment2 = nextSegment2;
+	}
+
+
+	public int getCorrespondientLineId() {
+		return correspondientLineId;
+	}
+
+
+	public void setCorrespondientLineId(int correspondientLineId) {
+		this.correspondientLineId = correspondientLineId;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public Integer getId() {
+		return id;
+	}
+
+
 }

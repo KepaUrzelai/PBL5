@@ -75,10 +75,10 @@ public class Main {
     	SegmentList.add(new Line(4, 5, -1, controlVehicles));
     	SegmentList.add(new Line(5, 6, -1, controlVehicles));
     	SegmentList.add(new Line(6, 0, -1, controlVehicles));
-     	SegmentList.add(new Workstation(10,"workspace 1",  SegmentList.get(0).getID(), controlVehicles));
-     	SegmentList.add(new Workstation(11,"workspace 2",  SegmentList.get(4).getID(), controlVehicles));
-     	SegmentList.add(new Workstation(12,"workspace 3",  SegmentList.get(4).getID(), controlVehicles));//este lo he creau para tener otro mas y para hacer pruebas. no cuadra con el esquema
-     	SegmentList.add(new Parking(20,"parking 1", SegmentList.get(1).getID(), controlVehicles));    	
+     	SegmentList.add(new Workstation(10,"workspace 1",  SegmentList.get(0).getId(), controlVehicles));
+     	SegmentList.add(new Workstation(11,"workspace 2",  SegmentList.get(4).getId(), controlVehicles));
+     	SegmentList.add(new Workstation(12,"workspace 3",  SegmentList.get(4).getId(), controlVehicles));//este lo he creau para tener otro mas y para hacer pruebas. no cuadra con el esquema
+     	SegmentList.add(new Parking(20,"parking 1", SegmentList.get(1).getId(), controlVehicles));    	
     }
 
 }
