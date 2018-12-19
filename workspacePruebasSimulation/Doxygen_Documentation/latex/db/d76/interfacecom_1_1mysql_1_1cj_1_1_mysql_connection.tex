@@ -1,0 +1,166 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection}{}\section{com.\+mysql.\+cj.\+Mysql\+Connection Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection}\index{com.\+mysql.\+cj.\+Mysql\+Connection@{com.\+mysql.\+cj.\+Mysql\+Connection}}
+
+
+Inherited by \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a51fb6a3db410136a80cda075db6a70f5}{get\+Property\+Set}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a95370bad49129eb6c1f5136e008e6ed1}{create\+New\+IO}} (boolean is\+For\+Reconnect)
+\item 
+long \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_aba5831e0b7016bc8b3fffa0c2e728fee}{get\+Id}} ()
+\item 
+Properties \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a1fde8714cc1e2176748fd4f35f0df0d1}{get\+Properties}} ()
+\item 
+Object \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a9509cf17d31eff921de41b8ecd03278f}{get\+Connection\+Mutex}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_ac1220f01fc29222847acfba3035a860a}{get\+Session}} ()
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a8fab6ed57d7f54fbd017890355b610a2}{get\+U\+RL}} ()
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_adc3ee83d060d0d48cb92e181dc5cbbb6}{get\+User}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a90d92a3170923d8e05d748f2079dca15}{get\+Exception\+Interceptor}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a49756db5417b86971e0f2bb17ae71630}{check\+Closed}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a15e693e5e3b333c7a29b238b510734ab}{normal\+Close}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a20ea00c4098425d1caa0ab9fbf28338c}{cleanup}} (Throwable why\+Cleaned\+Up)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a49756db5417b86971e0f2bb17ae71630}\label{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a49756db5417b86971e0f2bb17ae71630}} 
+\index{com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}!check\+Closed@{check\+Closed}}
+\index{check\+Closed@{check\+Closed}!com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}}
+\subsubsection{\texorpdfstring{check\+Closed()}{checkClosed()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+Mysql\+Connection.\+check\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a33d9303b2ac912fc285f5c2215d568d1}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a071813afb9b56c08fa663b1d429c8def}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_aaca35ad8d7fae96cb649f1f14f2dbc13}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a20ea00c4098425d1caa0ab9fbf28338c}\label{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a20ea00c4098425d1caa0ab9fbf28338c}} 
+\index{com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}}
+\subsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+Mysql\+Connection.\+cleanup (\begin{DoxyParamCaption}\item[{Throwable}]{why\+Cleaned\+Up }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_ab604be7f74e54251056bc902359fa65a}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a60353fa7a398c8186c22a0ceba331655}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_ac72cb58dc4f2b002b1882b69815cc64b}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a95370bad49129eb6c1f5136e008e6ed1}\label{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a95370bad49129eb6c1f5136e008e6ed1}} 
+\index{com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}!create\+New\+IO@{create\+New\+IO}}
+\index{create\+New\+IO@{create\+New\+IO}!com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}}
+\subsubsection{\texorpdfstring{create\+New\+I\+O()}{createNewIO()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+Mysql\+Connection.\+create\+New\+IO (\begin{DoxyParamCaption}\item[{boolean}]{is\+For\+Reconnect }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_addd175e6d6524fb4a1f626f17f732670}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a063addf80134be647765cd125d270968}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a82a97ebf4275bab6b1a25ef00985185d}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a9509cf17d31eff921de41b8ecd03278f}\label{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a9509cf17d31eff921de41b8ecd03278f}} 
+\index{com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}!get\+Connection\+Mutex@{get\+Connection\+Mutex}}
+\index{get\+Connection\+Mutex@{get\+Connection\+Mutex}!com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}}
+\subsubsection{\texorpdfstring{get\+Connection\+Mutex()}{getConnectionMutex()}}
+{\footnotesize\ttfamily Object com.\+mysql.\+cj.\+Mysql\+Connection.\+get\+Connection\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a6542c75a7fef46e1f62e68a00c01d211}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a06d09fc5eed4ef3d1142e26491b25ea4}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a2d5f7dcbb793d20fce3c805a2ad96b80}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a90d92a3170923d8e05d748f2079dca15}\label{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a90d92a3170923d8e05d748f2079dca15}} 
+\index{com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}!get\+Exception\+Interceptor@{get\+Exception\+Interceptor}}
+\index{get\+Exception\+Interceptor@{get\+Exception\+Interceptor}!com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}}
+\subsubsection{\texorpdfstring{get\+Exception\+Interceptor()}{getExceptionInterceptor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} com.\+mysql.\+cj.\+Mysql\+Connection.\+get\+Exception\+Interceptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a9333bafa5720993c7b74f73e07710388}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a3f7f70fcff77c01e2e8d4bf12802d0e0}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a137370a98bed09d640fa15f2b8832e8b}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_aba5831e0b7016bc8b3fffa0c2e728fee}\label{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_aba5831e0b7016bc8b3fffa0c2e728fee}} 
+\index{com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}}
+\subsubsection{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+Mysql\+Connection.\+get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_ae835f7c80a3c9705b622a244ba07e7e3}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_acedea8a5e36d279cb32705ee2a1b4d54}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a1c1baa5c3292115f16511d6f99d69154}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a1fde8714cc1e2176748fd4f35f0df0d1}\label{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a1fde8714cc1e2176748fd4f35f0df0d1}} 
+\index{com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}!get\+Properties@{get\+Properties}}
+\index{get\+Properties@{get\+Properties}!com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}}
+\subsubsection{\texorpdfstring{get\+Properties()}{getProperties()}}
+{\footnotesize\ttfamily Properties com.\+mysql.\+cj.\+Mysql\+Connection.\+get\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the parsed and passed in properties for this connection.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{}{Properties}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a63bb38c4e47986e5b187fb3fefb9aec6}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a76eea5af4534baf71ff0852b0c0f6f9c}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a4a717cb95caa93ac7469d50383e2882b}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_my_s_q_l_connection_a04a60b0695519e98a4827f90161f52da}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a51fb6a3db410136a80cda075db6a70f5}\label{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a51fb6a3db410136a80cda075db6a70f5}} 
+\index{com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}!get\+Property\+Set@{get\+Property\+Set}}
+\index{get\+Property\+Set@{get\+Property\+Set}!com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}}
+\subsubsection{\texorpdfstring{get\+Property\+Set()}{getPropertySet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} com.\+mysql.\+cj.\+Mysql\+Connection.\+get\+Property\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a32dc1cdc24960317f3b65009ae5bb475}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_adc1a5c59c115064dc892d458337dd638}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a46dbc5cd68d7e3bd2ba1931c4bd5f003}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a8d7309165f9280946c8ac7a4fb8a22c7}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_ac1220f01fc29222847acfba3035a860a}\label{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_ac1220f01fc29222847acfba3035a860a}} 
+\index{com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}!get\+Session@{get\+Session}}
+\index{get\+Session@{get\+Session}!com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}}
+\subsubsection{\texorpdfstring{get\+Session()}{getSession()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}} com.\+mysql.\+cj.\+Mysql\+Connection.\+get\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a70670228bbdfc0e4474904f57b87d64d}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a63453eb36923681973e47b1321058cde}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a656ba156c1e99bf0e9d0a2fd5c3cb646}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a8fab6ed57d7f54fbd017890355b610a2}\label{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a8fab6ed57d7f54fbd017890355b610a2}} 
+\index{com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}!get\+U\+RL@{get\+U\+RL}}
+\index{get\+U\+RL@{get\+U\+RL}!com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}}
+\subsubsection{\texorpdfstring{get\+U\+R\+L()}{getURL()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+Mysql\+Connection.\+get\+U\+RL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a098f1e77842e56a64fad3854686fbe8a}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a9e241644319ccf0cbba174d5ebe5208b}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a52febdf3fd28e122d17a8f0713427fa6}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_adc3ee83d060d0d48cb92e181dc5cbbb6}\label{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_adc3ee83d060d0d48cb92e181dc5cbbb6}} 
+\index{com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+Mysql\+Connection.\+get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_afbb744e880f00dfaf434498ab5cbceba}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_ae9d26519d0e8ec724fb48ebc905f7684}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a3e6181cd20398fc2968c8ea0204f7c95}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a15e693e5e3b333c7a29b238b510734ab}\label{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection_a15e693e5e3b333c7a29b238b510734ab}} 
+\index{com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}!normal\+Close@{normal\+Close}}
+\index{normal\+Close@{normal\+Close}!com\+::mysql\+::cj\+::\+Mysql\+Connection@{com\+::mysql\+::cj\+::\+Mysql\+Connection}}
+\subsubsection{\texorpdfstring{normal\+Close()}{normalClose()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+Mysql\+Connection.\+normal\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a7fdf5a3f3e8efeaefc0a51ed69309416}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a4bfd91b48bd990b05482d972c940a53f}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a926772cecea56ad4444ebd84d576bdc4}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/\mbox{\hyperlink{_mysql_connection_8java}{Mysql\+Connection.\+java}}\end{DoxyCompactItemize}

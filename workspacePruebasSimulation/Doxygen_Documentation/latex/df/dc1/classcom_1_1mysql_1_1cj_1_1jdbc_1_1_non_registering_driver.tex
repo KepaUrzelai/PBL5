@@ -1,0 +1,254 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver}{}\section{com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver}\index{com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver@{com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver}}
+
+
+Inherits Driver.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_driver}{com.\+mysql.\+cj.\+jdbc.\+Driver}}.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Connection\+Phantom\+Reference}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a43d2c5741a06d37722f12c74d34cad9c}{Non\+Registering\+Driver}} ()  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a647f9685378b944a3c5c6d9f9c47d7f1}{accepts\+U\+RL}} (String url)  throws S\+Q\+L\+Exception 
+\item 
+java.\+sql.\+Connection \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_ab3fd3d522550db032eab6c240b554e3e}{connect}} (String url, Properties info)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a49801fef4e0494c6b788eab02ed7c30f}{get\+Major\+Version}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a004f3e6c14f4cecb91e1d10cb87f873f}{get\+Minor\+Version}} ()
+\item 
+Driver\+Property\+Info \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_ad132531e673998633349a65c4c3eb402}{get\+Property\+Info}} (String url, Properties info)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a7957fc641b984cf8d56938949be1069d}{jdbc\+Compliant}} ()
+\item 
+Logger \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a458cfbaed5ad475322ddca7ff3973928}{get\+Parent\+Logger}} ()  throws S\+Q\+L\+Feature\+Not\+Supported\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a51da4d6e28d7a51a1c10daddf2376f94}{get\+O\+S\+Name}} ()
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_add52c29486e82fccba3a92b79a6b44de}{get\+Platform}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_af5d0136e48b6fc7f86919ff737840950}{track\+Connection}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} new\+Conn)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final Concurrent\+Hash\+Map$<$ Connection\+Phantom\+Reference, Connection\+Phantom\+Reference $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a3c1f45389d1b114801ab9a0054a72a56}{connection\+Phantom\+Refs}} = new Concurrent\+Hash\+Map$<$$>$()
+\item 
+static final Reference\+Queue$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_aad570b2f650c5e4f22c47374bd2f8b6c}{ref\+Queue}} = new Reference\+Queue$<$$>$()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Java S\+QL framework allows for multiple database drivers. Each driver should supply a class that implements the \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_driver}{Driver}} interface
+
+The Driver\+Manager will try to load as many drivers as it can find and then for any given connection request, it will ask each driver in turn to try to connect to the target U\+RL. 
+
+It is strongly recommended that each \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_driver}{Driver}} class should be small and standalone so that the \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_driver}{Driver}} class can be loaded and queried without bringing in vast quantities of supporting code. 
+
+When a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_driver}{Driver}} class is loaded, it should create an instance of itself and register it with the Driver\+Manager. This means that a user can load and register a driver by doing Class.\+for\+Name(\char`\"{}foo.\+bah.\+Driver\char`\"{}) 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a43d2c5741a06d37722f12c74d34cad9c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a43d2c5741a06d37722f12c74d34cad9c}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}!Non\+Registering\+Driver@{Non\+Registering\+Driver}}
+\index{Non\+Registering\+Driver@{Non\+Registering\+Driver}!com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}}
+\subsubsection{\texorpdfstring{Non\+Registering\+Driver()}{NonRegisteringDriver()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver.\+Non\+Registering\+Driver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Construct a new driver and register it with Driver\+Manager
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a647f9685378b944a3c5c6d9f9c47d7f1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a647f9685378b944a3c5c6d9f9c47d7f1}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}!accepts\+U\+RL@{accepts\+U\+RL}}
+\index{accepts\+U\+RL@{accepts\+U\+RL}!com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}}
+\subsubsection{\texorpdfstring{accepts\+U\+R\+L()}{acceptsURL()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver.\+accepts\+U\+RL (\begin{DoxyParamCaption}\item[{String}]{url }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Typically, drivers will return true if they understand the subprotocol specified in the U\+RL and false if they don\textquotesingle{}t. This driver\textquotesingle{}s protocols start with jdbc\+:mysql\+:
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & the U\+RL of the driver\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this driver accepts the given U\+RL
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs or the url is null\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Driver\+::accepts\+U\+RL 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_ab3fd3d522550db032eab6c240b554e3e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_ab3fd3d522550db032eab6c240b554e3e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}!connect@{connect}}
+\index{connect@{connect}!com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily java.\+sql.\+Connection com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver.\+connect (\begin{DoxyParamCaption}\item[{String}]{url,  }\item[{Properties}]{info }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Try to make a database connection to the given U\+RL. The driver should return \char`\"{}null\char`\"{} if it realizes it is the wrong kind of driver to connect to the given U\+RL. This will be common, as when the J\+D\+BC driver\+Manager is asked to connect to a given U\+RL, it passes the U\+RL to each loaded driver in turn.
+
+The driver should raise an S\+Q\+L\+Exception if the U\+RL is null or if it is the right driver to connect to the given U\+RL, but has trouble connecting to the database. 
+
+The java.\+util.\+Properties argument can be used to pass arbitrary string tag/value pairs as connection arguments. These properties take precedence over any properties sent in the U\+RL. 
+
+My\+S\+QL protocol takes the form\+:
+
+
+\begin{DoxyPre}
+jdbc:mysql://host:port/database
+\end{DoxyPre}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & the U\+RL of the database to connect to \\
+\hline
+{\em info} & a list of arbitrary tag/value pairs as connection arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a connection to the U\+RL or null if it isn\textquotesingle{}t us
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs or the url is
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Driver\+::connect 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a49801fef4e0494c6b788eab02ed7c30f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a49801fef4e0494c6b788eab02ed7c30f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}!get\+Major\+Version@{get\+Major\+Version}}
+\index{get\+Major\+Version@{get\+Major\+Version}!com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}}
+\subsubsection{\texorpdfstring{get\+Major\+Version()}{getMajorVersion()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver.\+get\+Major\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the drivers major version number
+
+\begin{DoxyReturn}{Returns}
+the drivers major version number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a004f3e6c14f4cecb91e1d10cb87f873f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a004f3e6c14f4cecb91e1d10cb87f873f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}!get\+Minor\+Version@{get\+Minor\+Version}}
+\index{get\+Minor\+Version@{get\+Minor\+Version}!com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}}
+\subsubsection{\texorpdfstring{get\+Minor\+Version()}{getMinorVersion()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver.\+get\+Minor\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the drivers minor version number
+
+\begin{DoxyReturn}{Returns}
+the drivers minor version number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a51da4d6e28d7a51a1c10daddf2376f94}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a51da4d6e28d7a51a1c10daddf2376f94}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}!get\+O\+S\+Name@{get\+O\+S\+Name}}
+\index{get\+O\+S\+Name@{get\+O\+S\+Name}!com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}}
+\subsubsection{\texorpdfstring{get\+O\+S\+Name()}{getOSName()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver.\+get\+O\+S\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a458cfbaed5ad475322ddca7ff3973928}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a458cfbaed5ad475322ddca7ff3973928}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}!get\+Parent\+Logger@{get\+Parent\+Logger}}
+\index{get\+Parent\+Logger@{get\+Parent\+Logger}!com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}}
+\subsubsection{\texorpdfstring{get\+Parent\+Logger()}{getParentLogger()}}
+{\footnotesize\ttfamily Logger com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver.\+get\+Parent\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Feature\+Not\+Supported\+Exception}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_add52c29486e82fccba3a92b79a6b44de}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_add52c29486e82fccba3a92b79a6b44de}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}!get\+Platform@{get\+Platform}}
+\index{get\+Platform@{get\+Platform}!com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}}
+\subsubsection{\texorpdfstring{get\+Platform()}{getPlatform()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver.\+get\+Platform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_ad132531e673998633349a65c4c3eb402}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_ad132531e673998633349a65c4c3eb402}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}!get\+Property\+Info@{get\+Property\+Info}}
+\index{get\+Property\+Info@{get\+Property\+Info}!com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}}
+\subsubsection{\texorpdfstring{get\+Property\+Info()}{getPropertyInfo()}}
+{\footnotesize\ttfamily Driver\+Property\+Info \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver.\+get\+Property\+Info (\begin{DoxyParamCaption}\item[{String}]{url,  }\item[{Properties}]{info }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+The get\+Property\+Info method is intended to allow a generic G\+UI tool to discover what properties it should prompt a human for in order to get enough information to connect to a database.
+
+Note that depending on the values the human has supplied so far, additional values may become necessary, so it may be necessary to iterate through several calls to get\+Property\+Info 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & the Url of the database to connect to \\
+\hline
+{\em info} & a proposed list of tag/value pairs that will be sent on connect open.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of Driver\+Property\+Info objects describing possible properties. This array may be an empty array if no properties are required
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Driver\+::get\+Property\+Info 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a7957fc641b984cf8d56938949be1069d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a7957fc641b984cf8d56938949be1069d}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}!jdbc\+Compliant@{jdbc\+Compliant}}
+\index{jdbc\+Compliant@{jdbc\+Compliant}!com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}}
+\subsubsection{\texorpdfstring{jdbc\+Compliant()}{jdbcCompliant()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver.\+jdbc\+Compliant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Report whether the driver is a genuine J\+D\+BC compliant driver. A driver may only report \char`\"{}true\char`\"{} here if it passes the J\+D\+BC compliance tests, otherwise it is required to return false. J\+D\+BC compliance requires full support for the J\+D\+BC A\+PI and full support for S\+QL 92 Entry Level.
+
+My\+S\+QL is not S\+Q\+L92 compliant 
+
+\begin{DoxyReturn}{Returns}
+is this driver J\+D\+BC compliant? 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_af5d0136e48b6fc7f86919ff737840950}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_af5d0136e48b6fc7f86919ff737840950}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}!track\+Connection@{track\+Connection}}
+\index{track\+Connection@{track\+Connection}!com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}}
+\subsubsection{\texorpdfstring{track\+Connection()}{trackConnection()}}
+{\footnotesize\ttfamily static void com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver.\+track\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}}}]{new\+Conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a3c1f45389d1b114801ab9a0054a72a56}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_a3c1f45389d1b114801ab9a0054a72a56}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}!connection\+Phantom\+Refs@{connection\+Phantom\+Refs}}
+\index{connection\+Phantom\+Refs@{connection\+Phantom\+Refs}!com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}}
+\subsubsection{\texorpdfstring{connection\+Phantom\+Refs}{connectionPhantomRefs}}
+{\footnotesize\ttfamily final Concurrent\+Hash\+Map$<$Connection\+Phantom\+Reference, Connection\+Phantom\+Reference$>$ com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver.\+connection\+Phantom\+Refs = new Concurrent\+Hash\+Map$<$$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_aad570b2f650c5e4f22c47374bd2f8b6c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_aad570b2f650c5e4f22c47374bd2f8b6c}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}!ref\+Queue@{ref\+Queue}}
+\index{ref\+Queue@{ref\+Queue}!com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver@{com\+::mysql\+::cj\+::jdbc\+::\+Non\+Registering\+Driver}}
+\subsubsection{\texorpdfstring{ref\+Queue}{refQueue}}
+{\footnotesize\ttfamily final Reference\+Queue$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl}{Connection\+Impl}}$>$ com.\+mysql.\+cj.\+jdbc.\+Non\+Registering\+Driver.\+ref\+Queue = new Reference\+Queue$<$$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/\mbox{\hyperlink{_non_registering_driver_8java}{Non\+Registering\+Driver.\+java}}\end{DoxyCompactItemize}

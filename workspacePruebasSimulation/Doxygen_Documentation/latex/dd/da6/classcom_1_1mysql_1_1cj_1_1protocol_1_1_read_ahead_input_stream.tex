@@ -1,0 +1,125 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream}{}\section{com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream}\index{com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream@{com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream}}
+
+
+Inherits Input\+Stream.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a130f55bbeb99362583fe11b61a3f792a}{read}} (byte b\mbox{[}$\,$\mbox{]}, int off, int len)  throws I\+O\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a0810c5860c7fa43ffff24b5d2a5b4f27}{read}} ()  throws I\+O\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a42da53c32ffa008263b0e68b6a6a8577}{available}} ()  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_ae5435f386001c88ac355cf664961fcbb}{Read\+Ahead\+Input\+Stream}} (Input\+Stream to\+Buffer, boolean debug, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log\+To)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a542ea2a1e891f8cfff9b80c83f05b646}{Read\+Ahead\+Input\+Stream}} (Input\+Stream to\+Buffer, int buffer\+Size, boolean debug, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log\+To)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a6837da76b0a9a3272a9b9db88fee4ecd}{close}} ()  throws I\+O\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a13106d328f8dd3c5ce653a18a7efdfd0}{mark\+Supported}} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_aab36ec1a6e8b9795abfd919af07d6e27}{skip}} (long n)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a610f1fb0f37469d11a19adbb2d2f116e}{end\+Of\+Current\+Data}}
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a5945549400abb32d2e8dbb686b7af786}{current\+Position}}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a36c489a54865b32a5477505cc0cfdc88}{do\+Debug}} = false
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a244243ffa076d708c4f5ba1686ce5151}{log}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A non-\/blocking buffered input stream. Reads more if it can, won\textquotesingle{}t block to fill the buffer, only blocks to satisfy a request of read(byte\mbox{[}$\,$\mbox{]}) 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_ae5435f386001c88ac355cf664961fcbb}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_ae5435f386001c88ac355cf664961fcbb}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}!Read\+Ahead\+Input\+Stream@{Read\+Ahead\+Input\+Stream}}
+\index{Read\+Ahead\+Input\+Stream@{Read\+Ahead\+Input\+Stream}!com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Read\+Ahead\+Input\+Stream()}{ReadAheadInputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream.\+Read\+Ahead\+Input\+Stream (\begin{DoxyParamCaption}\item[{Input\+Stream}]{to\+Buffer,  }\item[{boolean}]{debug,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}}}]{log\+To }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a542ea2a1e891f8cfff9b80c83f05b646}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a542ea2a1e891f8cfff9b80c83f05b646}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}!Read\+Ahead\+Input\+Stream@{Read\+Ahead\+Input\+Stream}}
+\index{Read\+Ahead\+Input\+Stream@{Read\+Ahead\+Input\+Stream}!com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Read\+Ahead\+Input\+Stream()}{ReadAheadInputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream.\+Read\+Ahead\+Input\+Stream (\begin{DoxyParamCaption}\item[{Input\+Stream}]{to\+Buffer,  }\item[{int}]{buffer\+Size,  }\item[{boolean}]{debug,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}}}]{log\+To }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a42da53c32ffa008263b0e68b6a6a8577}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a42da53c32ffa008263b0e68b6a6a8577}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}!available@{available}}
+\index{available@{available}!com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}}
+\subsubsection{\texorpdfstring{available()}{available()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream.\+available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a6837da76b0a9a3272a9b9db88fee4ecd}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a6837da76b0a9a3272a9b9db88fee4ecd}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}!close@{close}}
+\index{close@{close}!com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a13106d328f8dd3c5ce653a18a7efdfd0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a13106d328f8dd3c5ce653a18a7efdfd0}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}!mark\+Supported@{mark\+Supported}}
+\index{mark\+Supported@{mark\+Supported}!com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}}
+\subsubsection{\texorpdfstring{mark\+Supported()}{markSupported()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream.\+mark\+Supported (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a130f55bbeb99362583fe11b61a3f792a}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a130f55bbeb99362583fe11b61a3f792a}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}!read@{read}}
+\index{read@{read}!com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}}
+\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily synchronized int com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream.\+read (\begin{DoxyParamCaption}\item[{byte}]{b\mbox{[}$\,$\mbox{]},  }\item[{int}]{off,  }\item[{int}]{len }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a0810c5860c7fa43ffff24b5d2a5b4f27}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a0810c5860c7fa43ffff24b5d2a5b4f27}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}!read@{read}}
+\index{read@{read}!com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}}
+\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream.\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_aab36ec1a6e8b9795abfd919af07d6e27}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_aab36ec1a6e8b9795abfd919af07d6e27}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}!skip@{skip}}
+\index{skip@{skip}!com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}}
+\subsubsection{\texorpdfstring{skip()}{skip()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream.\+skip (\begin{DoxyParamCaption}\item[{long}]{n }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a5945549400abb32d2e8dbb686b7af786}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a5945549400abb32d2e8dbb686b7af786}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}!current\+Position@{current\+Position}}
+\index{current\+Position@{current\+Position}!com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}}
+\subsubsection{\texorpdfstring{current\+Position}{currentPosition}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream.\+current\+Position\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a36c489a54865b32a5477505cc0cfdc88}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a36c489a54865b32a5477505cc0cfdc88}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}!do\+Debug@{do\+Debug}}
+\index{do\+Debug@{do\+Debug}!com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}}
+\subsubsection{\texorpdfstring{do\+Debug}{doDebug}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream.\+do\+Debug = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a610f1fb0f37469d11a19adbb2d2f116e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a610f1fb0f37469d11a19adbb2d2f116e}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}!end\+Of\+Current\+Data@{end\+Of\+Current\+Data}}
+\index{end\+Of\+Current\+Data@{end\+Of\+Current\+Data}!com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}}
+\subsubsection{\texorpdfstring{end\+Of\+Current\+Data}{endOfCurrentData}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream.\+end\+Of\+Current\+Data\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a244243ffa076d708c4f5ba1686ce5151}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a244243ffa076d708c4f5ba1686ce5151}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}!log@{log}}
+\index{log@{log}!com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::\+Read\+Ahead\+Input\+Stream}}
+\subsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream.\+log\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/protocol/\mbox{\hyperlink{_read_ahead_input_stream_8java}{Read\+Ahead\+Input\+Stream.\+java}}\end{DoxyCompactItemize}

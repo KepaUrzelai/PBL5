@@ -1,0 +1,201 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{}\section{com.\+mysql.\+cj.\+conf.\+Connection\+Url\+Parser Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}\index{com.\+mysql.\+cj.\+conf.\+Connection\+Url\+Parser@{com.\+mysql.\+cj.\+conf.\+Connection\+Url\+Parser}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_database_url_container}{com.\+mysql.\+cj.\+conf.\+Database\+Url\+Container}}.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Pair}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_af08f3c184e60422f883d7400e326e3e1}{get\+Database\+Url}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a3dcb0a44f5d1cdec45cafe6476f7d5f8}{get\+Scheme}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_afc563e2c255dbf29c24fd6f71d0b8122}{get\+Authority}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a7c7838a4b6c4939f565aa9cd91279ba0}{get\+Path}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a8983aea4b0aae226a364e4a25ee91c1c}{get\+Query}} ()
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a1e8d19de90145bad47380341900627b0}{get\+Hosts}} ()
+\item 
+Map$<$ String, String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a30950205d2cb4d966d66bcdcd4047918}{get\+Properties}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_add731ba88032454b1c17aaca658cd75e}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_ad9c8c5abeae754a8e938861add140250}{parse\+Connection\+String}} (String conn\+String)
+\item 
+static Pair$<$ String, String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_ab6e4c3d4a5e13537d3746966ffb5c5bb}{parse\+User\+Info}} (String user\+Info)
+\item 
+static Pair$<$ String, Integer $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_af8c96fb1b935d0e91d1af2268582f9c9}{parse\+Host\+Port\+Pair}} (String host\+Info)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class parses a connection string using the general U\+RI structure defined in R\+FC 3986. Instead of using a U\+RI instance to ensure the correct syntax of the connection string, this implementation uses regular expressions which is faster but also less strict in terms of validations. This actually works better because database U\+R\+Ls don\textquotesingle{}t exactly stick to the R\+FC 3986 rules. 
+
+{\itshape scheme\+://authority/path?query\+::fragment} 
+
+This results in splitting the connection string U\+RL and processing its internal parts\+: 
+\begin{DoxyDescription}
+\item[scheme ]The protocol and subprotocol identification. Usually \char`\"{}jdbc\+:mysql\+:\char`\"{} or \char`\"{}mysqlx\+:\char`\"{}. 
+\item[authority ]Contains information about the user credentials and/or the host and port information. Unlike its definition in the R\+FC 3986 specification, there can be multiple authority sections separated by a single comma (,) in a connection string. It is also possible to use an alternative syntax for the user and/or host identification, that also allows setting per host connection properties, in the form of \char`\"{}\mbox{[}user\mbox{[}\+:password\mbox{]}@\mbox{]}address=(key1=value)\mbox{[}(key2=value)\mbox{]}...\mbox{[},address=(key3=value)\mbox{[}(key4=value)\mbox{]}...\mbox{]}...\char`\"{}. 
+\item[path ]Corresponds to the database identification. 
+\item[query ]The connection properties, written as \char`\"{}property\+Name1\mbox{[}=\mbox{[}property\+Value1\mbox{]}\mbox{]}\mbox{[}\&property\+Name2\mbox{[}=\mbox{[}property\+Value2\mbox{]}\mbox{]}\mbox{]}...\char`\"{} 
+\item[fragment ]The fragment section is ignored in Connector/J connection strings. 
+\end{DoxyDescription}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_afc563e2c255dbf29c24fd6f71d0b8122}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_afc563e2c255dbf29c24fd6f71d0b8122}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}!get\+Authority@{get\+Authority}}
+\index{get\+Authority@{get\+Authority}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}}
+\subsubsection{\texorpdfstring{get\+Authority()}{getAuthority()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Connection\+Url\+Parser.\+get\+Authority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the authority section.
+
+\begin{DoxyReturn}{Returns}
+the authority section 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_af08f3c184e60422f883d7400e326e3e1}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_af08f3c184e60422f883d7400e326e3e1}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}!get\+Database\+Url@{get\+Database\+Url}}
+\index{get\+Database\+Url@{get\+Database\+Url}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}}
+\subsubsection{\texorpdfstring{get\+Database\+Url()}{getDatabaseUrl()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Connection\+Url\+Parser.\+get\+Database\+Url (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the original database U\+RL that produced this connection string parser.
+
+\begin{DoxyReturn}{Returns}
+the original database U\+RL 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_database_url_container_a5a2570fc547da50c4d8f0486de2fb13e}{com.\+mysql.\+cj.\+conf.\+Database\+Url\+Container}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a1e8d19de90145bad47380341900627b0}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a1e8d19de90145bad47380341900627b0}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}!get\+Hosts@{get\+Hosts}}
+\index{get\+Hosts@{get\+Hosts}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}}
+\subsubsection{\texorpdfstring{get\+Hosts()}{getHosts()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}}$>$ com.\+mysql.\+cj.\+conf.\+Connection\+Url\+Parser.\+get\+Hosts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the hosts information.
+
+\begin{DoxyReturn}{Returns}
+the hosts information 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a7c7838a4b6c4939f565aa9cd91279ba0}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a7c7838a4b6c4939f565aa9cd91279ba0}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}!get\+Path@{get\+Path}}
+\index{get\+Path@{get\+Path}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}}
+\subsubsection{\texorpdfstring{get\+Path()}{getPath()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Connection\+Url\+Parser.\+get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the path section.
+
+\begin{DoxyReturn}{Returns}
+the path section 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a30950205d2cb4d966d66bcdcd4047918}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a30950205d2cb4d966d66bcdcd4047918}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}!get\+Properties@{get\+Properties}}
+\index{get\+Properties@{get\+Properties}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}}
+\subsubsection{\texorpdfstring{get\+Properties()}{getProperties()}}
+{\footnotesize\ttfamily Map$<$String, String$>$ com.\+mysql.\+cj.\+conf.\+Connection\+Url\+Parser.\+get\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the properties map contained in this connection string.
+
+\begin{DoxyReturn}{Returns}
+the properties map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a8983aea4b0aae226a364e4a25ee91c1c}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a8983aea4b0aae226a364e4a25ee91c1c}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}!get\+Query@{get\+Query}}
+\index{get\+Query@{get\+Query}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}}
+\subsubsection{\texorpdfstring{get\+Query()}{getQuery()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Connection\+Url\+Parser.\+get\+Query (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the query section.
+
+\begin{DoxyReturn}{Returns}
+the query section 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a3dcb0a44f5d1cdec45cafe6476f7d5f8}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_a3dcb0a44f5d1cdec45cafe6476f7d5f8}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}!get\+Scheme@{get\+Scheme}}
+\index{get\+Scheme@{get\+Scheme}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}}
+\subsubsection{\texorpdfstring{get\+Scheme()}{getScheme()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Connection\+Url\+Parser.\+get\+Scheme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the scheme section.
+
+\begin{DoxyReturn}{Returns}
+the scheme section 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_ad9c8c5abeae754a8e938861add140250}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_ad9c8c5abeae754a8e938861add140250}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}!parse\+Connection\+String@{parse\+Connection\+String}}
+\index{parse\+Connection\+String@{parse\+Connection\+String}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}}
+\subsubsection{\texorpdfstring{parse\+Connection\+String()}{parseConnectionString()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}} com.\+mysql.\+cj.\+conf.\+Connection\+Url\+Parser.\+parse\+Connection\+String (\begin{DoxyParamCaption}\item[{String}]{conn\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Static factory method for constructing instances of this class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn\+String} & The connection string to parse. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an instance of \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_af8c96fb1b935d0e91d1af2268582f9c9}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_af8c96fb1b935d0e91d1af2268582f9c9}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}!parse\+Host\+Port\+Pair@{parse\+Host\+Port\+Pair}}
+\index{parse\+Host\+Port\+Pair@{parse\+Host\+Port\+Pair}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}}
+\subsubsection{\texorpdfstring{parse\+Host\+Port\+Pair()}{parseHostPortPair()}}
+{\footnotesize\ttfamily static Pair$<$String, Integer$>$ com.\+mysql.\+cj.\+conf.\+Connection\+Url\+Parser.\+parse\+Host\+Port\+Pair (\begin{DoxyParamCaption}\item[{String}]{host\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses a host\+:port pair and returns the two elements in a \mbox{\hyperlink{}{Pair}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Info} & the host\+:pair to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{}{Pair}} containing the host and port information or null if the host information can\textquotesingle{}t be parsed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_ab6e4c3d4a5e13537d3746966ffb5c5bb}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_ab6e4c3d4a5e13537d3746966ffb5c5bb}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}!parse\+User\+Info@{parse\+User\+Info}}
+\index{parse\+User\+Info@{parse\+User\+Info}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}}
+\subsubsection{\texorpdfstring{parse\+User\+Info()}{parseUserInfo()}}
+{\footnotesize\ttfamily static Pair$<$String, String$>$ com.\+mysql.\+cj.\+conf.\+Connection\+Url\+Parser.\+parse\+User\+Info (\begin{DoxyParamCaption}\item[{String}]{user\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses the given user information which is formed by the parts \mbox{[}user\mbox{]}\mbox{[}\+:password\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Info} & the string containing the user information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{}{Pair}} containing the user and password information or null if the user information can\textquotesingle{}t be parsed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_add731ba88032454b1c17aaca658cd75e}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser_add731ba88032454b1c17aaca658cd75e}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+Parser}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Connection\+Url\+Parser.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string representation of this object.
+
+\begin{DoxyReturn}{Returns}
+a string representation of this object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/conf/\mbox{\hyperlink{_connection_url_parser_8java}{Connection\+Url\+Parser.\+java}}\end{DoxyCompactItemize}

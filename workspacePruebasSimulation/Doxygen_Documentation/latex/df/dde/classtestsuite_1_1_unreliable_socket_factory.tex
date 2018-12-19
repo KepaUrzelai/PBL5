@@ -1,0 +1,224 @@
+\hypertarget{classtestsuite_1_1_unreliable_socket_factory}{}\section{testsuite.\+Unreliable\+Socket\+Factory Class Reference}
+\label{classtestsuite_1_1_unreliable_socket_factory}\index{testsuite.\+Unreliable\+Socket\+Factory@{testsuite.\+Unreliable\+Socket\+Factory}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory}{com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory}}.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Hanging\+Input\+Stream}
+\item 
+class {\bfseries Hanging\+Output\+Stream}
+\item 
+class {\bfseries Hanging\+Socket}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_abd363b9f8118fa57b02cf4cab0250b9d}{get\+Host\+Connected\+Status}} (String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a61a6781433c3290f82de3629497c74c5}{host}})
+\item 
+static String \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_a8ab985cf1e065c50b61ef58babcec4df}{get\+Host\+Failed\+Status}} (String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a61a6781433c3290f82de3629497c74c5}{host}})
+\item 
+static String \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_a7a32e894d7bc4c7667f51c92919db087}{get\+Host\+Unknown\+Status}} (String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a61a6781433c3290f82de3629497c74c5}{host}})
+\item 
+static void \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_a28422cfdbb2523a906bcbff264195687}{flush\+All\+Static\+Data}} ()
+\item 
+static void \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_a976583ae43c3337696f2a1cb509fe2d0}{flush\+Connection\+Attempts}} ()
+\item 
+static void \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_a4b8431541613eb3aadd17fc81fe12c7f}{map\+Host}} (String alias, String orig)
+\item 
+static void \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_aa884cd5e45c61e73130fd6e56a64a05a}{hang\+On\+Read}} (String hostname)
+\item 
+static void \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_ace34957ad762b9074f4b4ff436a5f2d3}{dont\+Hang\+On\+Read}} (String hostname)
+\item 
+static void \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_a4d89c3537b07019cbf118394fc4726d4}{hang\+On\+Write}} (String hostname)
+\item 
+static void \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_acc8516ff4e8a54b7f1c34e88647abeae}{dont\+Hang\+On\+Write}} (String hostname)
+\item 
+static void \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_a2266e4126f65454dae88fbb1d6a11130}{hang\+On\+Connect}} (String hostname)
+\item 
+static void \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_aa2a6bb8fe4d3d6eebf4c8b0e083d230e}{dont\+Hang\+On\+Connect}} (String hostname)
+\item 
+static void \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_a83758897cf0731bbee562f9c1b10a56b}{down\+Host}} (String hostname)
+\item 
+static void \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_a3a64f904e1088a3f094e4f983e1a5161}{dont\+Down\+Host}} (String hostname)
+\item 
+static String \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_a7a17f472892f980eb1e6fee265cf017d}{get\+Host\+From\+Last\+Connection}} ()
+\item 
+static String \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_ad0be11be705ac21a4b946285562caf5b}{get\+Host\+From\+Past\+Connection}} (int pos)
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_ab70a79c8c060bbd42135dcccac232a3e}{get\+Hosts\+From\+All\+Connections}} ()
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_af95d260d8de35629bf4735fb9946006b}{get\+Hosts\+From\+Last\+Connections}} (int count)
+\item 
+static boolean \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_a2a98c5f404403d475332e8b557560614}{is\+Connected}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_ab3f9a10e0c6fb5b7b50961c354cb168e}{S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+K\+N\+O\+WN}} = \char`\"{}?\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_aba26420cbe3743803295fa8acdefac55}{S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}} = \char`\"{}/\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_a012aaa326daab499cde10b634a549785}{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L\+ED}} = \char`\"{}\textbackslash{}\textbackslash{}\char`\"{}
+\item 
+static final long \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_a04b724f9bcd5e359856361166c4ecf32}{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+M\+I\+L\+L\+IS}} = 10 $\ast$ 60 $\ast$ 1000
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Configure \char`\"{}socket\+Factory\char`\"{} to use this class in your J\+D\+BC U\+RL, and it will operate as normal, unless you map some host aliases to actual IP addresses, and then have the test driver call hang\+On\+Connect/\+Read/\+Write() which simulate the given failure condition for the host with the {\bfseries alias} argument, and will honor connect or socket timeout properties.
+
+You can also cause a host to be immediately-\/downed by calling \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_a83758897cf0731bbee562f9c1b10a56b}{down\+Host()}} with an alias.
+
+A\+T\+T\+E\+N\+T\+I\+O\+N! This class is {\itshape N\+OT} thread safe. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_a3a64f904e1088a3f094e4f983e1a5161}\label{classtestsuite_1_1_unreliable_socket_factory_a3a64f904e1088a3f094e4f983e1a5161}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!dont\+Down\+Host@{dont\+Down\+Host}}
+\index{dont\+Down\+Host@{dont\+Down\+Host}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{dont\+Down\+Host()}{dontDownHost()}}
+{\footnotesize\ttfamily static void testsuite.\+Unreliable\+Socket\+Factory.\+dont\+Down\+Host (\begin{DoxyParamCaption}\item[{String}]{hostname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_aa2a6bb8fe4d3d6eebf4c8b0e083d230e}\label{classtestsuite_1_1_unreliable_socket_factory_aa2a6bb8fe4d3d6eebf4c8b0e083d230e}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!dont\+Hang\+On\+Connect@{dont\+Hang\+On\+Connect}}
+\index{dont\+Hang\+On\+Connect@{dont\+Hang\+On\+Connect}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{dont\+Hang\+On\+Connect()}{dontHangOnConnect()}}
+{\footnotesize\ttfamily static void testsuite.\+Unreliable\+Socket\+Factory.\+dont\+Hang\+On\+Connect (\begin{DoxyParamCaption}\item[{String}]{hostname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_ace34957ad762b9074f4b4ff436a5f2d3}\label{classtestsuite_1_1_unreliable_socket_factory_ace34957ad762b9074f4b4ff436a5f2d3}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!dont\+Hang\+On\+Read@{dont\+Hang\+On\+Read}}
+\index{dont\+Hang\+On\+Read@{dont\+Hang\+On\+Read}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{dont\+Hang\+On\+Read()}{dontHangOnRead()}}
+{\footnotesize\ttfamily static void testsuite.\+Unreliable\+Socket\+Factory.\+dont\+Hang\+On\+Read (\begin{DoxyParamCaption}\item[{String}]{hostname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_acc8516ff4e8a54b7f1c34e88647abeae}\label{classtestsuite_1_1_unreliable_socket_factory_acc8516ff4e8a54b7f1c34e88647abeae}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!dont\+Hang\+On\+Write@{dont\+Hang\+On\+Write}}
+\index{dont\+Hang\+On\+Write@{dont\+Hang\+On\+Write}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{dont\+Hang\+On\+Write()}{dontHangOnWrite()}}
+{\footnotesize\ttfamily static void testsuite.\+Unreliable\+Socket\+Factory.\+dont\+Hang\+On\+Write (\begin{DoxyParamCaption}\item[{String}]{hostname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_a83758897cf0731bbee562f9c1b10a56b}\label{classtestsuite_1_1_unreliable_socket_factory_a83758897cf0731bbee562f9c1b10a56b}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!down\+Host@{down\+Host}}
+\index{down\+Host@{down\+Host}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{down\+Host()}{downHost()}}
+{\footnotesize\ttfamily static void testsuite.\+Unreliable\+Socket\+Factory.\+down\+Host (\begin{DoxyParamCaption}\item[{String}]{hostname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_a28422cfdbb2523a906bcbff264195687}\label{classtestsuite_1_1_unreliable_socket_factory_a28422cfdbb2523a906bcbff264195687}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!flush\+All\+Static\+Data@{flush\+All\+Static\+Data}}
+\index{flush\+All\+Static\+Data@{flush\+All\+Static\+Data}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{flush\+All\+Static\+Data()}{flushAllStaticData()}}
+{\footnotesize\ttfamily static void testsuite.\+Unreliable\+Socket\+Factory.\+flush\+All\+Static\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_a976583ae43c3337696f2a1cb509fe2d0}\label{classtestsuite_1_1_unreliable_socket_factory_a976583ae43c3337696f2a1cb509fe2d0}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!flush\+Connection\+Attempts@{flush\+Connection\+Attempts}}
+\index{flush\+Connection\+Attempts@{flush\+Connection\+Attempts}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{flush\+Connection\+Attempts()}{flushConnectionAttempts()}}
+{\footnotesize\ttfamily static void testsuite.\+Unreliable\+Socket\+Factory.\+flush\+Connection\+Attempts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_abd363b9f8118fa57b02cf4cab0250b9d}\label{classtestsuite_1_1_unreliable_socket_factory_abd363b9f8118fa57b02cf4cab0250b9d}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!get\+Host\+Connected\+Status@{get\+Host\+Connected\+Status}}
+\index{get\+Host\+Connected\+Status@{get\+Host\+Connected\+Status}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{get\+Host\+Connected\+Status()}{getHostConnectedStatus()}}
+{\footnotesize\ttfamily static String testsuite.\+Unreliable\+Socket\+Factory.\+get\+Host\+Connected\+Status (\begin{DoxyParamCaption}\item[{String}]{host }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_a8ab985cf1e065c50b61ef58babcec4df}\label{classtestsuite_1_1_unreliable_socket_factory_a8ab985cf1e065c50b61ef58babcec4df}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!get\+Host\+Failed\+Status@{get\+Host\+Failed\+Status}}
+\index{get\+Host\+Failed\+Status@{get\+Host\+Failed\+Status}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{get\+Host\+Failed\+Status()}{getHostFailedStatus()}}
+{\footnotesize\ttfamily static String testsuite.\+Unreliable\+Socket\+Factory.\+get\+Host\+Failed\+Status (\begin{DoxyParamCaption}\item[{String}]{host }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_a7a17f472892f980eb1e6fee265cf017d}\label{classtestsuite_1_1_unreliable_socket_factory_a7a17f472892f980eb1e6fee265cf017d}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!get\+Host\+From\+Last\+Connection@{get\+Host\+From\+Last\+Connection}}
+\index{get\+Host\+From\+Last\+Connection@{get\+Host\+From\+Last\+Connection}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{get\+Host\+From\+Last\+Connection()}{getHostFromLastConnection()}}
+{\footnotesize\ttfamily static String testsuite.\+Unreliable\+Socket\+Factory.\+get\+Host\+From\+Last\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_ad0be11be705ac21a4b946285562caf5b}\label{classtestsuite_1_1_unreliable_socket_factory_ad0be11be705ac21a4b946285562caf5b}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!get\+Host\+From\+Past\+Connection@{get\+Host\+From\+Past\+Connection}}
+\index{get\+Host\+From\+Past\+Connection@{get\+Host\+From\+Past\+Connection}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{get\+Host\+From\+Past\+Connection()}{getHostFromPastConnection()}}
+{\footnotesize\ttfamily static String testsuite.\+Unreliable\+Socket\+Factory.\+get\+Host\+From\+Past\+Connection (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_ab70a79c8c060bbd42135dcccac232a3e}\label{classtestsuite_1_1_unreliable_socket_factory_ab70a79c8c060bbd42135dcccac232a3e}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!get\+Hosts\+From\+All\+Connections@{get\+Hosts\+From\+All\+Connections}}
+\index{get\+Hosts\+From\+All\+Connections@{get\+Hosts\+From\+All\+Connections}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{get\+Hosts\+From\+All\+Connections()}{getHostsFromAllConnections()}}
+{\footnotesize\ttfamily static List$<$String$>$ testsuite.\+Unreliable\+Socket\+Factory.\+get\+Hosts\+From\+All\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_af95d260d8de35629bf4735fb9946006b}\label{classtestsuite_1_1_unreliable_socket_factory_af95d260d8de35629bf4735fb9946006b}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!get\+Hosts\+From\+Last\+Connections@{get\+Hosts\+From\+Last\+Connections}}
+\index{get\+Hosts\+From\+Last\+Connections@{get\+Hosts\+From\+Last\+Connections}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{get\+Hosts\+From\+Last\+Connections()}{getHostsFromLastConnections()}}
+{\footnotesize\ttfamily static List$<$String$>$ testsuite.\+Unreliable\+Socket\+Factory.\+get\+Hosts\+From\+Last\+Connections (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_a7a32e894d7bc4c7667f51c92919db087}\label{classtestsuite_1_1_unreliable_socket_factory_a7a32e894d7bc4c7667f51c92919db087}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!get\+Host\+Unknown\+Status@{get\+Host\+Unknown\+Status}}
+\index{get\+Host\+Unknown\+Status@{get\+Host\+Unknown\+Status}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{get\+Host\+Unknown\+Status()}{getHostUnknownStatus()}}
+{\footnotesize\ttfamily static String testsuite.\+Unreliable\+Socket\+Factory.\+get\+Host\+Unknown\+Status (\begin{DoxyParamCaption}\item[{String}]{host }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_a2266e4126f65454dae88fbb1d6a11130}\label{classtestsuite_1_1_unreliable_socket_factory_a2266e4126f65454dae88fbb1d6a11130}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!hang\+On\+Connect@{hang\+On\+Connect}}
+\index{hang\+On\+Connect@{hang\+On\+Connect}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{hang\+On\+Connect()}{hangOnConnect()}}
+{\footnotesize\ttfamily static void testsuite.\+Unreliable\+Socket\+Factory.\+hang\+On\+Connect (\begin{DoxyParamCaption}\item[{String}]{hostname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_aa884cd5e45c61e73130fd6e56a64a05a}\label{classtestsuite_1_1_unreliable_socket_factory_aa884cd5e45c61e73130fd6e56a64a05a}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!hang\+On\+Read@{hang\+On\+Read}}
+\index{hang\+On\+Read@{hang\+On\+Read}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{hang\+On\+Read()}{hangOnRead()}}
+{\footnotesize\ttfamily static void testsuite.\+Unreliable\+Socket\+Factory.\+hang\+On\+Read (\begin{DoxyParamCaption}\item[{String}]{hostname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_a4d89c3537b07019cbf118394fc4726d4}\label{classtestsuite_1_1_unreliable_socket_factory_a4d89c3537b07019cbf118394fc4726d4}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!hang\+On\+Write@{hang\+On\+Write}}
+\index{hang\+On\+Write@{hang\+On\+Write}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{hang\+On\+Write()}{hangOnWrite()}}
+{\footnotesize\ttfamily static void testsuite.\+Unreliable\+Socket\+Factory.\+hang\+On\+Write (\begin{DoxyParamCaption}\item[{String}]{hostname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_a2a98c5f404403d475332e8b557560614}\label{classtestsuite_1_1_unreliable_socket_factory_a2a98c5f404403d475332e8b557560614}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!is\+Connected@{is\+Connected}}
+\index{is\+Connected@{is\+Connected}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{is\+Connected()}{isConnected()}}
+{\footnotesize\ttfamily static boolean testsuite.\+Unreliable\+Socket\+Factory.\+is\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_a4b8431541613eb3aadd17fc81fe12c7f}\label{classtestsuite_1_1_unreliable_socket_factory_a4b8431541613eb3aadd17fc81fe12c7f}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!map\+Host@{map\+Host}}
+\index{map\+Host@{map\+Host}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{map\+Host()}{mapHost()}}
+{\footnotesize\ttfamily static void testsuite.\+Unreliable\+Socket\+Factory.\+map\+Host (\begin{DoxyParamCaption}\item[{String}]{alias,  }\item[{String}]{orig }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_a04b724f9bcd5e359856361166c4ecf32}\label{classtestsuite_1_1_unreliable_socket_factory_a04b724f9bcd5e359856361166c4ecf32}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+M\+I\+L\+L\+IS@{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+M\+I\+L\+L\+IS}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+M\+I\+L\+L\+IS@{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+M\+I\+L\+L\+IS}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+M\+I\+L\+L\+IS}{DEFAULT\_TIMEOUT\_MILLIS}}
+{\footnotesize\ttfamily final long testsuite.\+Unreliable\+Socket\+Factory.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+M\+I\+L\+L\+IS = 10 $\ast$ 60 $\ast$ 1000\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_aba26420cbe3743803295fa8acdefac55}\label{classtestsuite_1_1_unreliable_socket_factory_aba26420cbe3743803295fa8acdefac55}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED@{S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}}
+\index{S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED@{S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}{STATUS\_CONNECTED}}
+{\footnotesize\ttfamily final String testsuite.\+Unreliable\+Socket\+Factory.\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED = \char`\"{}/\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_a012aaa326daab499cde10b634a549785}\label{classtestsuite_1_1_unreliable_socket_factory_a012aaa326daab499cde10b634a549785}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L\+ED@{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L\+ED}}
+\index{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L\+ED@{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L\+ED}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L\+ED}{STATUS\_FAILED}}
+{\footnotesize\ttfamily final String testsuite.\+Unreliable\+Socket\+Factory.\+S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L\+ED = \char`\"{}\textbackslash{}\textbackslash{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1_unreliable_socket_factory_ab3f9a10e0c6fb5b7b50961c354cb168e}\label{classtestsuite_1_1_unreliable_socket_factory_ab3f9a10e0c6fb5b7b50961c354cb168e}} 
+\index{testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}!S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+K\+N\+O\+WN@{S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+K\+N\+O\+WN}}
+\index{S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+K\+N\+O\+WN@{S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+K\+N\+O\+WN}!testsuite\+::\+Unreliable\+Socket\+Factory@{testsuite\+::\+Unreliable\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+K\+N\+O\+WN}{STATUS\_UNKNOWN}}
+{\footnotesize\ttfamily final String testsuite.\+Unreliable\+Socket\+Factory.\+S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+K\+N\+O\+WN = \char`\"{}?\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/test/java/testsuite/\mbox{\hyperlink{_unreliable_socket_factory_8java}{Unreliable\+Socket\+Factory.\+java}}\end{DoxyCompactItemize}

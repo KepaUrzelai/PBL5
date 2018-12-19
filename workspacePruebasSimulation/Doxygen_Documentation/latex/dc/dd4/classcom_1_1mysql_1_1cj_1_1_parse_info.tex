@@ -1,0 +1,194 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info}{}\section{com.\+mysql.\+cj.\+Parse\+Info Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1_parse_info}\index{com.\+mysql.\+cj.\+Parse\+Info@{com.\+mysql.\+cj.\+Parse\+Info}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_a2ad9d4e1a851a9a83dd98fa5680b2582}{Parse\+Info}} (String sql, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}} session, String encoding)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_a3d8041c18abed49b875e46d462787547}{Parse\+Info}} (String sql, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}} session, String encoding, boolean build\+Rewrite\+Info)
+\item 
+byte \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_a7bcdc3fc9f3ba6ee10cbebd852ec7499}{get\+Static\+Sql}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_ab4edc6aeb613cae7e4c882b28e760a02}{get\+Values\+Clause}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_a068d6757223b8e1aa1aae78d75201728}{get\+Location\+Of\+On\+Duplicate\+Key\+Update}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_ab74791d029e7a456e2b7d34f5dfd491f}{can\+Rewrite\+As\+Multi\+Value\+Insert\+At\+Sql\+Level}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_ac5edf580e4fabda26a81d7f2920491ed}{contains\+On\+Duplicate\+Key\+Update\+In\+S\+QL}} ()
+\item 
+synchronized \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info}{Parse\+Info}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_afb6755fef767af487192ea4a4f589d24}{get\+Parse\+Info\+For\+Batch}} (int num\+Batch)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_a7a1053a89e14ce278d2617ee0f56010f}{get\+Sql\+For\+Batch}} (int num\+Batch)  throws Unsupported\+Encoding\+Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_a49a364ef5d8d3f1ac2ea98576601a926}{get\+Sql\+For\+Batch}} ()  throws Unsupported\+Encoding\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_a65f8d65a575cc6ad9497fbd55b5ee22e}{is\+Found\+Load\+Data}} ()
+\item 
+char \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_a29b231e147f11d1da6d1c5b40a2df776}{get\+First\+Stmt\+Char}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_a47b69a5028ecc28f00f72b62d95003f1}{get\+On\+Duplicate\+Key\+Location}} (String sql, boolean dont\+Check\+On\+Duplicate\+Key\+Update\+In\+S\+QL, boolean rewrite\+Batched\+Statements, boolean no\+Backslash\+Escapes)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_aa47b9fbde39c657eac345e567ee07f72}{find\+Start\+Of\+Statement}} (String sql)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_adbc42f712587fec95fff129e59deeff7}{can\+Rewrite}} (String sql, boolean is\+On\+Duplicate\+Key\+Update, int location\+Of\+On\+Duplicate\+Key\+Update, int statement\+Start\+Pos)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info_ac230b0079c1485cf8af348a2b45fe3ae}{O\+N\+\_\+\+D\+U\+P\+L\+I\+C\+A\+T\+E\+\_\+\+K\+E\+Y\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+C\+L\+A\+U\+SE}} = new String\mbox{[}$\,$\mbox{]} \{ \char`\"{}ON\char`\"{}, \char`\"{}D\+U\+P\+L\+I\+C\+A\+TE\char`\"{}, \char`\"{}K\+EY\char`\"{}, \char`\"{}U\+P\+D\+A\+TE\char`\"{} \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents the \char`\"{}parsed\char`\"{} state of a prepared query, with the statement broken up into its static and dynamic (where parameters are bound) parts. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_a2ad9d4e1a851a9a83dd98fa5680b2582}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_a2ad9d4e1a851a9a83dd98fa5680b2582}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!Parse\+Info@{Parse\+Info}}
+\index{Parse\+Info@{Parse\+Info}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{Parse\+Info()}{ParseInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+Parse\+Info.\+Parse\+Info (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}}}]{session,  }\item[{String}]{encoding }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_a3d8041c18abed49b875e46d462787547}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_a3d8041c18abed49b875e46d462787547}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!Parse\+Info@{Parse\+Info}}
+\index{Parse\+Info@{Parse\+Info}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{Parse\+Info()}{ParseInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+Parse\+Info.\+Parse\+Info (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}}}]{session,  }\item[{String}]{encoding,  }\item[{boolean}]{build\+Rewrite\+Info }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_adbc42f712587fec95fff129e59deeff7}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_adbc42f712587fec95fff129e59deeff7}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!can\+Rewrite@{can\+Rewrite}}
+\index{can\+Rewrite@{can\+Rewrite}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{can\+Rewrite()}{canRewrite()}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+cj.\+Parse\+Info.\+can\+Rewrite (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{boolean}]{is\+On\+Duplicate\+Key\+Update,  }\item[{int}]{location\+Of\+On\+Duplicate\+Key\+Update,  }\item[{int}]{statement\+Start\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_ab74791d029e7a456e2b7d34f5dfd491f}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_ab74791d029e7a456e2b7d34f5dfd491f}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!can\+Rewrite\+As\+Multi\+Value\+Insert\+At\+Sql\+Level@{can\+Rewrite\+As\+Multi\+Value\+Insert\+At\+Sql\+Level}}
+\index{can\+Rewrite\+As\+Multi\+Value\+Insert\+At\+Sql\+Level@{can\+Rewrite\+As\+Multi\+Value\+Insert\+At\+Sql\+Level}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{can\+Rewrite\+As\+Multi\+Value\+Insert\+At\+Sql\+Level()}{canRewriteAsMultiValueInsertAtSqlLevel()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+Parse\+Info.\+can\+Rewrite\+As\+Multi\+Value\+Insert\+At\+Sql\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_ac5edf580e4fabda26a81d7f2920491ed}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_ac5edf580e4fabda26a81d7f2920491ed}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!contains\+On\+Duplicate\+Key\+Update\+In\+S\+QL@{contains\+On\+Duplicate\+Key\+Update\+In\+S\+QL}}
+\index{contains\+On\+Duplicate\+Key\+Update\+In\+S\+QL@{contains\+On\+Duplicate\+Key\+Update\+In\+S\+QL}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{contains\+On\+Duplicate\+Key\+Update\+In\+S\+Q\+L()}{containsOnDuplicateKeyUpdateInSQL()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+Parse\+Info.\+contains\+On\+Duplicate\+Key\+Update\+In\+S\+QL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_aa47b9fbde39c657eac345e567ee07f72}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_aa47b9fbde39c657eac345e567ee07f72}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!find\+Start\+Of\+Statement@{find\+Start\+Of\+Statement}}
+\index{find\+Start\+Of\+Statement@{find\+Start\+Of\+Statement}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{find\+Start\+Of\+Statement()}{findStartOfStatement()}}
+{\footnotesize\ttfamily static int com.\+mysql.\+cj.\+Parse\+Info.\+find\+Start\+Of\+Statement (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_a29b231e147f11d1da6d1c5b40a2df776}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_a29b231e147f11d1da6d1c5b40a2df776}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!get\+First\+Stmt\+Char@{get\+First\+Stmt\+Char}}
+\index{get\+First\+Stmt\+Char@{get\+First\+Stmt\+Char}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{get\+First\+Stmt\+Char()}{getFirstStmtChar()}}
+{\footnotesize\ttfamily char com.\+mysql.\+cj.\+Parse\+Info.\+get\+First\+Stmt\+Char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_a068d6757223b8e1aa1aae78d75201728}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_a068d6757223b8e1aa1aae78d75201728}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!get\+Location\+Of\+On\+Duplicate\+Key\+Update@{get\+Location\+Of\+On\+Duplicate\+Key\+Update}}
+\index{get\+Location\+Of\+On\+Duplicate\+Key\+Update@{get\+Location\+Of\+On\+Duplicate\+Key\+Update}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{get\+Location\+Of\+On\+Duplicate\+Key\+Update()}{getLocationOfOnDuplicateKeyUpdate()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+Parse\+Info.\+get\+Location\+Of\+On\+Duplicate\+Key\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_a47b69a5028ecc28f00f72b62d95003f1}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_a47b69a5028ecc28f00f72b62d95003f1}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!get\+On\+Duplicate\+Key\+Location@{get\+On\+Duplicate\+Key\+Location}}
+\index{get\+On\+Duplicate\+Key\+Location@{get\+On\+Duplicate\+Key\+Location}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{get\+On\+Duplicate\+Key\+Location()}{getOnDuplicateKeyLocation()}}
+{\footnotesize\ttfamily static int com.\+mysql.\+cj.\+Parse\+Info.\+get\+On\+Duplicate\+Key\+Location (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{boolean}]{dont\+Check\+On\+Duplicate\+Key\+Update\+In\+S\+QL,  }\item[{boolean}]{rewrite\+Batched\+Statements,  }\item[{boolean}]{no\+Backslash\+Escapes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_afb6755fef767af487192ea4a4f589d24}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_afb6755fef767af487192ea4a4f589d24}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!get\+Parse\+Info\+For\+Batch@{get\+Parse\+Info\+For\+Batch}}
+\index{get\+Parse\+Info\+For\+Batch@{get\+Parse\+Info\+For\+Batch}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{get\+Parse\+Info\+For\+Batch()}{getParseInfoForBatch()}}
+{\footnotesize\ttfamily synchronized \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info}{Parse\+Info}} com.\+mysql.\+cj.\+Parse\+Info.\+get\+Parse\+Info\+For\+Batch (\begin{DoxyParamCaption}\item[{int}]{num\+Batch }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info}{Parse\+Info}} for a multi-\/value I\+N\+S\+E\+RT for a batch of size num\+Batch (without parsing!).
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Batch} & number of batched parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info}{Parse\+Info}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_a7a1053a89e14ce278d2617ee0f56010f}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_a7a1053a89e14ce278d2617ee0f56010f}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!get\+Sql\+For\+Batch@{get\+Sql\+For\+Batch}}
+\index{get\+Sql\+For\+Batch@{get\+Sql\+For\+Batch}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{get\+Sql\+For\+Batch()}{getSqlForBatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+Parse\+Info.\+get\+Sql\+For\+Batch (\begin{DoxyParamCaption}\item[{int}]{num\+Batch }\end{DoxyParamCaption}) throws Unsupported\+Encoding\+Exception}
+
+Returns a preparable S\+QL string for the number of batched parameters; used by server-\/side prepared statements when re-\/writing batch I\+N\+S\+E\+R\+Ts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Batch} & number of batched parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+QL string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unsupported\+Encoding\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_a49a364ef5d8d3f1ac2ea98576601a926}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_a49a364ef5d8d3f1ac2ea98576601a926}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!get\+Sql\+For\+Batch@{get\+Sql\+For\+Batch}}
+\index{get\+Sql\+For\+Batch@{get\+Sql\+For\+Batch}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{get\+Sql\+For\+Batch()}{getSqlForBatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+Parse\+Info.\+get\+Sql\+For\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Unsupported\+Encoding\+Exception}
+
+Used for filling in the S\+QL for get\+Prepared\+Sql() -\/ for debugging
+
+\begin{DoxyReturn}{Returns}
+sql string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unsupported\+Encoding\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_a7bcdc3fc9f3ba6ee10cbebd852ec7499}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_a7bcdc3fc9f3ba6ee10cbebd852ec7499}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!get\+Static\+Sql@{get\+Static\+Sql}}
+\index{get\+Static\+Sql@{get\+Static\+Sql}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{get\+Static\+Sql()}{getStaticSql()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+Parse\+Info.\+get\+Static\+Sql (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_ab4edc6aeb613cae7e4c882b28e760a02}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_ab4edc6aeb613cae7e4c882b28e760a02}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!get\+Values\+Clause@{get\+Values\+Clause}}
+\index{get\+Values\+Clause@{get\+Values\+Clause}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{get\+Values\+Clause()}{getValuesClause()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+Parse\+Info.\+get\+Values\+Clause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_a65f8d65a575cc6ad9497fbd55b5ee22e}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_a65f8d65a575cc6ad9497fbd55b5ee22e}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!is\+Found\+Load\+Data@{is\+Found\+Load\+Data}}
+\index{is\+Found\+Load\+Data@{is\+Found\+Load\+Data}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{is\+Found\+Load\+Data()}{isFoundLoadData()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+Parse\+Info.\+is\+Found\+Load\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_parse_info_ac230b0079c1485cf8af348a2b45fe3ae}\label{classcom_1_1mysql_1_1cj_1_1_parse_info_ac230b0079c1485cf8af348a2b45fe3ae}} 
+\index{com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}!O\+N\+\_\+\+D\+U\+P\+L\+I\+C\+A\+T\+E\+\_\+\+K\+E\+Y\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+C\+L\+A\+U\+SE@{O\+N\+\_\+\+D\+U\+P\+L\+I\+C\+A\+T\+E\+\_\+\+K\+E\+Y\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+C\+L\+A\+U\+SE}}
+\index{O\+N\+\_\+\+D\+U\+P\+L\+I\+C\+A\+T\+E\+\_\+\+K\+E\+Y\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+C\+L\+A\+U\+SE@{O\+N\+\_\+\+D\+U\+P\+L\+I\+C\+A\+T\+E\+\_\+\+K\+E\+Y\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+C\+L\+A\+U\+SE}!com\+::mysql\+::cj\+::\+Parse\+Info@{com\+::mysql\+::cj\+::\+Parse\+Info}}
+\subsubsection{\texorpdfstring{O\+N\+\_\+\+D\+U\+P\+L\+I\+C\+A\+T\+E\+\_\+\+K\+E\+Y\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+C\+L\+A\+U\+SE}{ON\_DUPLICATE\_KEY\_UPDATE\_CLAUSE}}
+{\footnotesize\ttfamily final String \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+Parse\+Info.\+O\+N\+\_\+\+D\+U\+P\+L\+I\+C\+A\+T\+E\+\_\+\+K\+E\+Y\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+C\+L\+A\+U\+SE = new String\mbox{[}$\,$\mbox{]} \{ \char`\"{}ON\char`\"{}, \char`\"{}D\+U\+P\+L\+I\+C\+A\+TE\char`\"{}, \char`\"{}K\+EY\char`\"{}, \char`\"{}U\+P\+D\+A\+TE\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/\mbox{\hyperlink{_parse_info_8java}{Parse\+Info.\+java}}\end{DoxyCompactItemize}

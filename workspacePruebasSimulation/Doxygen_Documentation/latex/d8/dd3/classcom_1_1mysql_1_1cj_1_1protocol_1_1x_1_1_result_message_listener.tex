@@ -1,0 +1,63 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener}{}\section{com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Message\+Listener Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener}\index{com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Message\+Listener@{com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Message\+Listener}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener}{com.\+mysql.\+cj.\+protocol.\+Message\+Listener$<$ M extends Message $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener_a11f2adec18c2182473f77f004b237984}{Result\+Message\+Listener}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_field}{Field}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ col\+To\+Field, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_notice}{Notice}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ notice\+Factory, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener}{Result\+Listener}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} $>$ callbacks)
+\item 
+Boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener_a08fc8c82309b101b59b186522c051a13}{create\+From\+Message}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} message)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener_a72527b705b89b553d393412f88615f86}{closed}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener_ad8c3856e573b2bcad94f5b914e5f9c82}{error}} (Throwable ex)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener}{Message\+Listener}} to handle result data and propagate it to a \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener}{Result\+Listener}}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener_a11f2adec18c2182473f77f004b237984}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener_a11f2adec18c2182473f77f004b237984}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener}!Result\+Message\+Listener@{Result\+Message\+Listener}}
+\index{Result\+Message\+Listener@{Result\+Message\+Listener}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener}}
+\subsubsection{\texorpdfstring{Result\+Message\+Listener()}{ResultMessageListener()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Message\+Listener.\+Result\+Message\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_field}{Field}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$}]{col\+To\+Field,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_notice}{Notice}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$}]{notice\+Factory,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener}{Result\+Listener}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} $>$}]{callbacks }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener_a72527b705b89b553d393412f88615f86}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener_a72527b705b89b553d393412f88615f86}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener}!closed@{closed}}
+\index{closed@{closed}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener}}
+\subsubsection{\texorpdfstring{closed()}{closed()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Message\+Listener.\+closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener_a7bc6393234bbbfa7609efc6fb7ff8c0b}{com.\+mysql.\+cj.\+protocol.\+Message\+Listener$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener_a08fc8c82309b101b59b186522c051a13}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener_a08fc8c82309b101b59b186522c051a13}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener}!create\+From\+Message@{create\+From\+Message}}
+\index{create\+From\+Message@{create\+From\+Message}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener}}
+\subsubsection{\texorpdfstring{create\+From\+Message()}{createFromMessage()}}
+{\footnotesize\ttfamily Boolean com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Message\+Listener.\+create\+From\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}}}]{message }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener_ad8c3856e573b2bcad94f5b914e5f9c82}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener_ad8c3856e573b2bcad94f5b914e5f9c82}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener}!error@{error}}
+\index{error@{error}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Message\+Listener}}
+\subsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Message\+Listener.\+error (\begin{DoxyParamCaption}\item[{Throwable}]{ex }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener_a9e06f02beaf29eb065149ac4f819761f}{com.\+mysql.\+cj.\+protocol.\+Message\+Listener$<$ M extends Message $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/x/\mbox{\hyperlink{_result_message_listener_8java}{Result\+Message\+Listener.\+java}}\end{DoxyCompactItemize}

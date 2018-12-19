@@ -1,0 +1,118 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc_impl}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Db\+Doc\+Impl Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc_impl}\index{com.\+mysql.\+cj.\+xdevapi.\+Db\+Doc\+Impl@{com.\+mysql.\+cj.\+xdevapi.\+Db\+Doc\+Impl}}
+
+
+Inherits Tree\+Map$<$ String, Json\+Value $>$, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{com.\+mysql.\+cj.\+xdevapi.\+Db\+Doc}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc_impl_abcc9b6b3b3d9cbd802d4a4e141e26c22}{to\+String}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc_impl_a4880b999d135b6a871d605b523fc1529}{to\+Formatted\+String}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc_impl_afc266a49bb4249ce1a52ce6e69c7daea}{add}} (String key, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_value}{Json\+Value}} val)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a J\+S\+ON {\bfseries object}\+:
+
+
+\begin{DoxyPre}
+  \{\}
+  or
+  \{key : value\}
+  or
+  \{key : value, key : value, ...\}
+\end{DoxyPre}
+
+
+{\bfseries key} is a J\+S\+ON {\bfseries string}. {\bfseries value} is any of J\+S\+ON {\bfseries object}, {\bfseries array}, {\bfseries number}, {\bfseries string}, true, false, null.
+
+Example of valid J\+S\+ON object\+:
+
+
+\begin{DoxyPre}
+\{
+"field1" : "value 1",
+"field2" : 1.234544E+26,
+"field3" : true,
+"field4" : false,
+"field5" : null,
+"field6" : \{
+           "inner field 1" : "inner value 1",
+           "inner field 2" : 2,
+           "inner field 3" : true,
+           "inner field 4" : false,
+           "inner field 5" : null,
+           "inner field 6" : [],
+           "inner field 7" : \{\}
+           \},
+"field7" : ["arr1", 3, true, false, null, [], \{\}]
+\}
+\end{DoxyPre}
+
+
+To create \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} from existing string representation you need to use \mbox{\hyperlink{}{Json\+Parser\#parse\+Doc(java.\+io.\+String\+Reader)}} method\+:
+
+
+\begin{DoxyPre}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{DbDoc}} doc = \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_parser_ad779f7c1563d2bcca7481d3655519501}{JsonParser.parseDoc}}(new StringReader("\{\&quot;key1\&quot; : \&quot;value1\&quot;\}"));
+\end{DoxyPre}
+
+
+You can construct J\+S\+ON document by \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_string}{Json\+String}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_number}{Json\+Number}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_array}{Json\+Array}} and \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_literal}{Json\+Literal}} methods and get J\+S\+ON string representation by using \mbox{\hyperlink{}{Db\+Doc\#to\+String()}} method. For example, to get the document shown above\+:
+
+
+\begin{DoxyPre}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{DbDoc}} doc = new DbDoc().add("field1", new JsonString().setValue("value 1")).add("field2", new JsonNumber().setValue("12345.44E22"))
+        .add("field3", \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_literal_a722be7500d3b4eaca0cff79a1d09b547}{JsonLiteral.TRUE}}).add("field4", \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_literal_a916ec267d9278e15e933d8e9c63b7c00}{JsonLiteral.FALSE}}).add("field5", \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_literal_ac7dcd6501113b4b9941a96fb4d91ae2c}{JsonLiteral.NULL}})
+        .add("field6",
+                new DbDoc().add("inner field 1", new JsonString().setValue("inner value 1")).add("inner field 2", new JsonNumber().setValue("2"))
+                        .add("inner field 3", \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_literal_a722be7500d3b4eaca0cff79a1d09b547}{JsonLiteral.TRUE}}).add("inner field 4", \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_literal_a916ec267d9278e15e933d8e9c63b7c00}{JsonLiteral.FALSE}}).add("inner field 5", \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_literal_ac7dcd6501113b4b9941a96fb4d91ae2c}{JsonLiteral.NULL}})
+                        .add("inner field 6", new JsonArray()).add("inner field 7", new DbDoc()))
+        .add("field7", new JsonArray().addValue(new JsonString().setValue("arr1")).addValue(new JsonNumber().setValue("3")).addValue(\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_literal_a722be7500d3b4eaca0cff79a1d09b547}{JsonLiteral.TRUE}})
+                .addValue(\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_literal_a916ec267d9278e15e933d8e9c63b7c00}{JsonLiteral.FALSE}}).addValue(\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_literal_ac7dcd6501113b4b9941a96fb4d91ae2c}{JsonLiteral.NULL}}).addValue(new JsonArray()).addValue(new DbDoc()));\end{DoxyPre}
+
+
+
+\begin{DoxyPre}doc.toString();
+\end{DoxyPre}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc_impl_afc266a49bb4249ce1a52ce6e69c7daea}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc_impl_afc266a49bb4249ce1a52ce6e69c7daea}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Db\+Doc\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Db\+Doc\+Impl}!add@{add}}
+\index{add@{add}!com\+::mysql\+::cj\+::xdevapi\+::\+Db\+Doc\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Db\+Doc\+Impl}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} com.\+mysql.\+cj.\+xdevapi.\+Db\+Doc\+Impl.\+add (\begin{DoxyParamCaption}\item[{String}]{key,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_value}{Json\+Value}}}]{val }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc_a49318fdc8c741c373d2cae74292bb29d}{com.\+mysql.\+cj.\+xdevapi.\+Db\+Doc}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc_impl_a4880b999d135b6a871d605b523fc1529}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc_impl_a4880b999d135b6a871d605b523fc1529}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Db\+Doc\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Db\+Doc\+Impl}!to\+Formatted\+String@{to\+Formatted\+String}}
+\index{to\+Formatted\+String@{to\+Formatted\+String}!com\+::mysql\+::cj\+::xdevapi\+::\+Db\+Doc\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Db\+Doc\+Impl}}
+\subsubsection{\texorpdfstring{to\+Formatted\+String()}{toFormattedString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+xdevapi.\+Db\+Doc\+Impl.\+to\+Formatted\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+human readable \char`\"{}pretty\char`\"{} J\+S\+ON string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_value_aed42bf9ff63b3cd329cb1fabcf9dfe41}{com.\+mysql.\+cj.\+xdevapi.\+Json\+Value}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc_impl_abcc9b6b3b3d9cbd802d4a4e141e26c22}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc_impl_abcc9b6b3b3d9cbd802d4a4e141e26c22}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Db\+Doc\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Db\+Doc\+Impl}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!com\+::mysql\+::cj\+::xdevapi\+::\+Db\+Doc\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Db\+Doc\+Impl}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+xdevapi.\+Db\+Doc\+Impl.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_db_doc_impl_8java}{Db\+Doc\+Impl.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,144 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}{}\section{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory$<$ T $>$ Class Template Reference}
+\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}\index{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory$<$ T $>$@{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory$<$ T $>$}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory}{com.\+mysql.\+cj.\+result.\+Value\+Factory$<$ T $>$}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc_value_factory}{com.\+mysql.\+cj.\+xdevapi.\+Db\+Doc\+Value\+Factory}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a7abbef5c2c0a1da994d462bd01bc66ae}{create\+From\+Date}} (int year, int month, int day)
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_af1cd4fa518f703b1eee37b00365f808b}{create\+From\+Time}} (int hours, int minutes, int seconds, int nanos)
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a826d789263a33a4a914fd4ce07aa44e9}{create\+From\+Timestamp}} (int year, int month, int day, int hours, int minutes, int seconds, int nanos)
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a051d2bb4762b37e5318c4b12879fee16}{create\+From\+Long}} (long l)
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_ab0c6bdb65a95e8a1459fb64b0fe2a6ae}{create\+From\+Big\+Integer}} (Big\+Integer i)
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a5a769375b9daa8f06534dec605997715}{create\+From\+Double}} (double d)
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_aaf3123a40d44b5da21e8f0cc7a26142f}{create\+From\+Big\+Decimal}} (Big\+Decimal d)
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a97d2423b59241620b2e0a519c54b592a}{create\+From\+Bytes}} (byte\mbox{[}$\,$\mbox{]} bytes, int offset, int length)
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a05b8ff2d9d1c7ff5c6f5b26188a5476c}{create\+From\+Bit}} (byte\mbox{[}$\,$\mbox{]} bytes, int offset, int length)
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_ad19879592d2d343604ceff8f7d6dde84}{create\+From\+Null}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The default value factory provides a base class that can be used for value factories that do not support creation from every type. The default value factory will thrown an Unsupported\+Operation\+Exception for every method and individual methods must be overridden by subclasses. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_aaf3123a40d44b5da21e8f0cc7a26142f}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_aaf3123a40d44b5da21e8f0cc7a26142f}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}!create\+From\+Big\+Decimal@{create\+From\+Big\+Decimal}}
+\index{create\+From\+Big\+Decimal@{create\+From\+Big\+Decimal}!com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Big\+Decimal()}{createFromBigDecimal()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory}}$<$ T $>$.create\+From\+Big\+Decimal (\begin{DoxyParamCaption}\item[{Big\+Decimal}]{d }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory_ab4acc647cdd39297d8bad28339a8ef18}{com.\+mysql.\+cj.\+result.\+Value\+Factory$<$ T $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_ab0c6bdb65a95e8a1459fb64b0fe2a6ae}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_ab0c6bdb65a95e8a1459fb64b0fe2a6ae}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}!create\+From\+Big\+Integer@{create\+From\+Big\+Integer}}
+\index{create\+From\+Big\+Integer@{create\+From\+Big\+Integer}!com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Big\+Integer()}{createFromBigInteger()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory}}$<$ T $>$.create\+From\+Big\+Integer (\begin{DoxyParamCaption}\item[{Big\+Integer}]{i }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory_a8b18f90981ce59ba61491c945b2820fe}{com.\+mysql.\+cj.\+result.\+Value\+Factory$<$ T $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a05b8ff2d9d1c7ff5c6f5b26188a5476c}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a05b8ff2d9d1c7ff5c6f5b26188a5476c}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}!create\+From\+Bit@{create\+From\+Bit}}
+\index{create\+From\+Bit@{create\+From\+Bit}!com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Bit()}{createFromBit()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory}}$<$ T $>$.create\+From\+Bit (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{bytes,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory_a23ac617a66fbf713243dd67ab04d30e6}{com.\+mysql.\+cj.\+result.\+Value\+Factory$<$ T $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a97d2423b59241620b2e0a519c54b592a}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a97d2423b59241620b2e0a519c54b592a}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}!create\+From\+Bytes@{create\+From\+Bytes}}
+\index{create\+From\+Bytes@{create\+From\+Bytes}!com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Bytes()}{createFromBytes()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory}}$<$ T $>$.create\+From\+Bytes (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{bytes,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory_a0724fcd13ef1ef07c781a61167847a11}{com.\+mysql.\+cj.\+result.\+Value\+Factory$<$ T $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a7abbef5c2c0a1da994d462bd01bc66ae}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a7abbef5c2c0a1da994d462bd01bc66ae}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}!create\+From\+Date@{create\+From\+Date}}
+\index{create\+From\+Date@{create\+From\+Date}!com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Date()}{createFromDate()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory}}$<$ T $>$.create\+From\+Date (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month,  }\item[{int}]{day }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory_a5c7828e8fe372c9070e0e64ddafac761}{com.\+mysql.\+cj.\+result.\+Value\+Factory$<$ T $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a5a769375b9daa8f06534dec605997715}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a5a769375b9daa8f06534dec605997715}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}!create\+From\+Double@{create\+From\+Double}}
+\index{create\+From\+Double@{create\+From\+Double}!com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Double()}{createFromDouble()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory}}$<$ T $>$.create\+From\+Double (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory_a9977e0c9d2bb9e306ee4a5a2ead6840c}{com.\+mysql.\+cj.\+result.\+Value\+Factory$<$ T $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a051d2bb4762b37e5318c4b12879fee16}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a051d2bb4762b37e5318c4b12879fee16}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}!create\+From\+Long@{create\+From\+Long}}
+\index{create\+From\+Long@{create\+From\+Long}!com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Long()}{createFromLong()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory}}$<$ T $>$.create\+From\+Long (\begin{DoxyParamCaption}\item[{long}]{l }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory_a48c32868f2e3efac502522211a40f642}{com.\+mysql.\+cj.\+result.\+Value\+Factory$<$ T $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_ad19879592d2d343604ceff8f7d6dde84}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_ad19879592d2d343604ceff8f7d6dde84}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}!create\+From\+Null@{create\+From\+Null}}
+\index{create\+From\+Null@{create\+From\+Null}!com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Null()}{createFromNull()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory}}$<$ T $>$.create\+From\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory_a56a65ddc42f449859a1dedb6395016cf}{com.\+mysql.\+cj.\+result.\+Value\+Factory$<$ T $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_af1cd4fa518f703b1eee37b00365f808b}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_af1cd4fa518f703b1eee37b00365f808b}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}!create\+From\+Time@{create\+From\+Time}}
+\index{create\+From\+Time@{create\+From\+Time}!com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Time()}{createFromTime()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory}}$<$ T $>$.create\+From\+Time (\begin{DoxyParamCaption}\item[{int}]{hours,  }\item[{int}]{minutes,  }\item[{int}]{seconds,  }\item[{int}]{nanos }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory_a5edf0bed225d34bd1fade72d8f106760}{com.\+mysql.\+cj.\+result.\+Value\+Factory$<$ T $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a826d789263a33a4a914fd4ce07aa44e9}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a826d789263a33a4a914fd4ce07aa44e9}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}!create\+From\+Timestamp@{create\+From\+Timestamp}}
+\index{create\+From\+Timestamp@{create\+From\+Timestamp}!com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Default\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Timestamp()}{createFromTimestamp()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory}}$<$ T $>$.create\+From\+Timestamp (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month,  }\item[{int}]{day,  }\item[{int}]{hours,  }\item[{int}]{minutes,  }\item[{int}]{seconds,  }\item[{int}]{nanos }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory_accbdc6c6970a22e40a0b1d72213334e6}{com.\+mysql.\+cj.\+result.\+Value\+Factory$<$ T $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/result/\mbox{\hyperlink{_default_value_factory_8java}{Default\+Value\+Factory.\+java}}\end{DoxyCompactItemize}

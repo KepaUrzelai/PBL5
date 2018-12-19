@@ -1,0 +1,187 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{}\section{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}\index{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor@{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_auto_commit_interceptor}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Auto\+Commit\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor}{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Result\+Set\+Scanner\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_server_status_diff_interceptor}{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Server\+Status\+Diff\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor}{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Session\+Association\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper}{com.\+mysql.\+cj.\+No\+Sub\+Interceptor\+Wrapper}}, and \mbox{\hyperlink{classtestsuite_1_1_base_query_interceptor}{testsuite.\+Base\+Query\+Interceptor}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a1613f5491fdb4610d5727d60c904e7e2}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection}{Mysql\+Connection}} conn, Properties props, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log)
+\item 
+$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}} $>$ T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a029f3c5ddf1f6cc28252db82c1ff7e5c}{pre\+Process}} (Supplier$<$ String $>$ sql, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} intercepted\+Query)
+\item 
+default$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$ M \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_ada6b2326b706e992daf61f897652b971}{pre\+Process}} (M query\+Packet)
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_ab12edf90713df907ba400dbe3ba03ea6}{execute\+Top\+Level\+Only}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a123809a91800f4f4409f5f37717bf9c8}{destroy}} ()
+\item 
+$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}} $>$ T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_acd2344550559d32789873afcd3d54cc0}{post\+Process}} (Supplier$<$ String $>$ sql, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} intercepted\+Query, T original\+Result\+Set, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} server\+Session)
+\item 
+default$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$ M \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a08ee8ceeb494eb8f33d2f18a9471e8d1}{post\+Process}} (M query\+Packet, M original\+Response\+Packet)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implement this interface to be placed \char`\"{}in between\char`\"{} query execution, so that you can influence it.
+
+Query\+Interceptors are \char`\"{}chainable\char`\"{} when configured by the user, the results returned by the \char`\"{}current\char`\"{} interceptor will be passed on to the next on in the chain, from left-\/to-\/right order, as specified by the user in the driver configuration property \char`\"{}query\+Interceptors\char`\"{}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a123809a91800f4f4409f5f37717bf9c8}\label{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a123809a91800f4f4409f5f37717bf9c8}} 
+\index{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor@{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor}!destroy@{destroy}}
+\index{destroy@{destroy}!com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor@{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a6e0fa82b6d4827d34c1db0676419efa5}{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Result\+Set\+Scanner\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_server_status_diff_interceptor_a119b87c009b04d7290f38b3e857a09d3}{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Server\+Status\+Diff\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a2bbe0b1b240f2ab943ba68fe979cf3a9}{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Session\+Association\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a196b252abd96fbdd70d0dd6f844145b8}{com.\+mysql.\+cj.\+No\+Sub\+Interceptor\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_auto_commit_interceptor_a57d2b1b50e5b81d3bf07df78f7e657c3}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Auto\+Commit\+Interceptor}}, and \mbox{\hyperlink{classtestsuite_1_1_base_query_interceptor_a8f368e0057821e78db66d4282c4d3b8e}{testsuite.\+Base\+Query\+Interceptor}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_ab12edf90713df907ba400dbe3ba03ea6}\label{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_ab12edf90713df907ba400dbe3ba03ea6}} 
+\index{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor@{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor}!execute\+Top\+Level\+Only@{execute\+Top\+Level\+Only}}
+\index{execute\+Top\+Level\+Only@{execute\+Top\+Level\+Only}!com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor@{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor}}
+\subsubsection{\texorpdfstring{execute\+Top\+Level\+Only()}{executeTopLevelOnly()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor.\+execute\+Top\+Level\+Only (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Should the driver execute this interceptor only for the \char`\"{}original\char`\"{} top-\/level query, and not put it in the execution path for queries that may be executed from other interceptors?
+
+If an interceptor issues queries using the connection it was created for, and does not return {\ttfamily true} for this method, it must ensure that it does not cause infinite recursion.
+
+\begin{DoxyReturn}{Returns}
+true if the driver should ensure that this interceptor is only executed for the top-\/level \char`\"{}original\char`\"{} query. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a3f3a48cedb6de0c16b6ea146aaff4af0}{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Result\+Set\+Scanner\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_server_status_diff_interceptor_a3234671cd5949383f563d60003d9798b}{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Server\+Status\+Diff\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a86d3be9b55a93bb96f17d85e39e623c9}{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Session\+Association\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_auto_commit_interceptor_a048bf25ce3ec24d6db036ec6c4b49884}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Auto\+Commit\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a84d3030e0055b60ed0bb2b56fd5a0dbe}{com.\+mysql.\+cj.\+No\+Sub\+Interceptor\+Wrapper}}, and \mbox{\hyperlink{classtestsuite_1_1_base_query_interceptor_ad806e1659dde0537e052f1825ee6a40e}{testsuite.\+Base\+Query\+Interceptor}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a1613f5491fdb4610d5727d60c904e7e2}\label{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a1613f5491fdb4610d5727d60c904e7e2}} 
+\index{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor@{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor}!init@{init}}
+\index{init@{init}!com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor@{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection}{Mysql\+Connection}}}]{conn,  }\item[{Properties}]{props,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}}}]{log }\end{DoxyParamCaption})}
+
+Called once per connection that wants to use the interceptor
+
+The properties are the same ones passed in in the U\+RL or arguments to Driver.\+connect() or Driver\+Manager.\+get\+Connection().
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection for which this interceptor is being created \\
+\hline
+{\em props} & configuration values as passed to the connection. Note that in order to support javax.\+sql.\+Data\+Sources, configuration properties specific to an interceptor {\bfseries must} be passed via set\+U\+R\+L() on the Data\+Source. \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} properties are not exposed via accessor/mutator methods on Data\+Sources. \\
+\hline
+{\em log} & logger \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_af6940dabb40c900b336fb6f5761160b6}{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Session\+Association\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_auto_commit_interceptor_a72ccbcacf034135666a25f6f85b483f0}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Auto\+Commit\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a1d037e783990bcd80c1ce5a16a1cf254}{com.\+mysql.\+cj.\+No\+Sub\+Interceptor\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_server_status_diff_interceptor_a918b0b784bd4d6edb689aa1cf01afb66}{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Server\+Status\+Diff\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a8b4dccb5d9c1fd75ed0e04fe50a2c087}{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Result\+Set\+Scanner\+Interceptor}}, and \mbox{\hyperlink{classtestsuite_1_1_base_query_interceptor_a9772ae8ec3555a8f2d3a49658c90b3c7}{testsuite.\+Base\+Query\+Interceptor}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_acd2344550559d32789873afcd3d54cc0}\label{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_acd2344550559d32789873afcd3d54cc0}} 
+\index{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor@{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor}!post\+Process@{post\+Process}}
+\index{post\+Process@{post\+Process}!com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor@{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor}}
+\subsubsection{\texorpdfstring{post\+Process()}{postProcess()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily $<$T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}}$>$ T com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor.\+post\+Process (\begin{DoxyParamCaption}\item[{Supplier$<$ String $>$}]{sql,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}}}]{intercepted\+Query,  }\item[{T}]{original\+Result\+Set,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}}}]{server\+Session }\end{DoxyParamCaption})}
+
+Called after the given query has been sent to the server for processing.
+
+Interceptors are free to inspect the \char`\"{}original\char`\"{} result set, and if a different result set is returned by the interceptor, it is used in place of the \char`\"{}original\char`\"{} result set.
+
+This method will be called while the connection-\/level mutex is held, so it will only be called from one thread at a time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & the Supplier for S\+QL representation of the query \\
+\hline
+{\em intercepted\+Query} & the actual \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} instance being intercepted \\
+\hline
+{\em original\+Result\+Set} & a \mbox{\hyperlink{}{Resultset}} created from query execution \\
+\hline
+{\em server\+Session} & \mbox{\hyperlink{}{Server\+Session}} object after the query execution \\
+\hline
+{\em $<$\+T$>$} & \mbox{\hyperlink{}{Resultset}} object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{}{Resultset}} that should be returned to the application instead of results that are created from actual execution of the intercepted query. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a08ee8ceeb494eb8f33d2f18a9471e8d1}\label{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a08ee8ceeb494eb8f33d2f18a9471e8d1}} 
+\index{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor@{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor}!post\+Process@{post\+Process}}
+\index{post\+Process@{post\+Process}!com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor@{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor}}
+\subsubsection{\texorpdfstring{post\+Process()}{postProcess()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily default$<$M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}}$>$ M com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor.\+post\+Process (\begin{DoxyParamCaption}\item[{M}]{query\+Packet,  }\item[{M}]{original\+Response\+Packet }\end{DoxyParamCaption})}
+
+Called after the given query packet has been sent to the server for processing.
+
+Interceptors are free to return either a different Packet\+Payload than the original\+Response\+Packet or null.
+
+This method will be called while the connection-\/level mutex is held, so it will only be called from one thread at a time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Packet} & query \mbox{\hyperlink{}{Message}} \\
+\hline
+{\em original\+Response\+Packet} & response \mbox{\hyperlink{}{Message}} \\
+\hline
+{\em $<$\+M$>$} & \mbox{\hyperlink{}{Message}} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{}{Message}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a029f3c5ddf1f6cc28252db82c1ff7e5c}\label{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a029f3c5ddf1f6cc28252db82c1ff7e5c}} 
+\index{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor@{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor}!pre\+Process@{pre\+Process}}
+\index{pre\+Process@{pre\+Process}!com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor@{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor}}
+\subsubsection{\texorpdfstring{pre\+Process()}{preProcess()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily $<$T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}}$>$ T com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor.\+pre\+Process (\begin{DoxyParamCaption}\item[{Supplier$<$ String $>$}]{sql,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}}}]{intercepted\+Query }\end{DoxyParamCaption})}
+
+Called before the given query is going to be sent to the server for processing.
+
+Interceptors are free to return a result set (which must implement the interface \mbox{\hyperlink{}{Resultset}}), and if so, the server will not execute the query, and the given result set will be returned to the application instead.
+
+This method will be called while the connection-\/level mutex is held, so it will only be called from one thread at a time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & the Supplier for S\+QL representation of the query \\
+\hline
+{\em intercepted\+Query} & the actual \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} instance being intercepted \\
+\hline
+{\em $<$\+T$>$} & \mbox{\hyperlink{}{Resultset}} object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{}{Resultset}} that should be returned to the application instead of results that are created from actual execution of the intercepted query. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_ada6b2326b706e992daf61f897652b971}\label{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_ada6b2326b706e992daf61f897652b971}} 
+\index{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor@{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor}!pre\+Process@{pre\+Process}}
+\index{pre\+Process@{pre\+Process}!com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor@{com\+::mysql\+::cj\+::interceptors\+::\+Query\+Interceptor}}
+\subsubsection{\texorpdfstring{pre\+Process()}{preProcess()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily default$<$M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}}$>$ M com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor.\+pre\+Process (\begin{DoxyParamCaption}\item[{M}]{query\+Packet }\end{DoxyParamCaption})}
+
+Called before the given query packet is going to be sent to the server for processing.
+
+Interceptors are free to return a Packet\+Payload, and if so, the server will not execute the query, and the given Packet\+Payload will be returned to the application instead.
+
+This method will be called while the connection-\/level mutex is held, so it will only be called from one thread at a time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Packet} & original \mbox{\hyperlink{}{Message}} \\
+\hline
+{\em $<$\+M$>$} & \mbox{\hyperlink{}{Message}} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+processed \mbox{\hyperlink{}{Message}} 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/interceptors/\mbox{\hyperlink{_query_interceptor_8java}{Query\+Interceptor.\+java}}\end{DoxyCompactItemize}

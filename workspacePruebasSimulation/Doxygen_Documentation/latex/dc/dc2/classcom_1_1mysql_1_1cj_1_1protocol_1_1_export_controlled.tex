@@ -1,0 +1,112 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled}{}\section{com.\+mysql.\+cj.\+protocol.\+Export\+Controlled Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled}\index{com.\+mysql.\+cj.\+protocol.\+Export\+Controlled@{com.\+mysql.\+cj.\+protocol.\+Export\+Controlled}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries X509\+Trust\+Manager\+Wrapper}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_ab8716d93a9380a66c91a6df75a803c71}{enabled}} ()
+\item 
+static Socket \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a81bd557abb458b90f449ba14b7d3fe80}{perform\+Tls\+Handshake}} (Socket raw\+Socket, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}} socket\+Connection, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}} server\+Version)  throws I\+O\+Exception, S\+S\+L\+Params\+Exception, Feature\+Not\+Available\+Exception 
+\item 
+static S\+S\+L\+Context \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a7e00720fe058b036abef04752934d37a}{get\+S\+S\+L\+Context}} (String client\+Certificate\+Key\+Store\+Url, String client\+Certificate\+Key\+Store\+Type, String client\+Certificate\+Key\+Store\+Password, String trust\+Certificate\+Key\+Store\+Url, String trust\+Certificate\+Key\+Store\+Type, String trust\+Certificate\+Key\+Store\+Password, boolean verify\+Server\+Cert, String host\+Name, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+S\+L\+Params\+Exception 
+\item 
+static S\+S\+L\+Context \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a181c1aa6b05dafc3ddf3b2943da64c0b}{get\+S\+S\+L\+Context}} (String client\+Certificate\+Key\+Store\+Url, String client\+Certificate\+Key\+Store\+Type, String client\+Certificate\+Key\+Store\+Password, String trust\+Certificate\+Key\+Store\+Url, String trust\+Certificate\+Key\+Store\+Type, String trust\+Certificate\+Key\+Store\+Password, boolean fallback\+To\+Default\+Trust\+Store, boolean verify\+Server\+Cert, String host\+Name, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+S\+L\+Params\+Exception 
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a234adb48ad955b9c37b28dddaab9335d}{is\+S\+S\+L\+Established}} (Socket socket)
+\item 
+static R\+S\+A\+Public\+Key \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a909eca9940fffbea1168d1f27c6794da}{decode\+R\+S\+A\+Public\+Key}} (String key)  throws R\+S\+A\+Exception 
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_aa9026bc31e213be6337010026aa89632}{encrypt\+With\+R\+S\+A\+Public\+Key}} (byte\mbox{[}$\,$\mbox{]} source, R\+S\+A\+Public\+Key key, String transformation)  throws R\+S\+A\+Exception 
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a8a20678c3f99068fe3230c7e60efcf29}{encrypt\+With\+R\+S\+A\+Public\+Key}} (byte\mbox{[}$\,$\mbox{]} source, R\+S\+A\+Public\+Key key)  throws R\+S\+A\+Exception 
+\item 
+static Asynchronous\+Socket\+Channel \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a0737e8a1422c8d2e5fa6fb9e4dd61caa}{start\+Tls\+On\+Asynchronous\+Channel}} (Asynchronous\+Socket\+Channel channel, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}} socket\+Connection)  throws S\+S\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds functionality that falls under export-\/control regulations. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a909eca9940fffbea1168d1f27c6794da}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a909eca9940fffbea1168d1f27c6794da}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}!decode\+R\+S\+A\+Public\+Key@{decode\+R\+S\+A\+Public\+Key}}
+\index{decode\+R\+S\+A\+Public\+Key@{decode\+R\+S\+A\+Public\+Key}!com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}}
+\subsubsection{\texorpdfstring{decode\+R\+S\+A\+Public\+Key()}{decodeRSAPublicKey()}}
+{\footnotesize\ttfamily static R\+S\+A\+Public\+Key com.\+mysql.\+cj.\+protocol.\+Export\+Controlled.\+decode\+R\+S\+A\+Public\+Key (\begin{DoxyParamCaption}\item[{String}]{key }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1exceptions_1_1_r_s_a_exception}{R\+S\+A\+Exception}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_ab8716d93a9380a66c91a6df75a803c71}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_ab8716d93a9380a66c91a6df75a803c71}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}!enabled@{enabled}}
+\index{enabled@{enabled}!com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}}
+\subsubsection{\texorpdfstring{enabled()}{enabled()}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+cj.\+protocol.\+Export\+Controlled.\+enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_aa9026bc31e213be6337010026aa89632}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_aa9026bc31e213be6337010026aa89632}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}!encrypt\+With\+R\+S\+A\+Public\+Key@{encrypt\+With\+R\+S\+A\+Public\+Key}}
+\index{encrypt\+With\+R\+S\+A\+Public\+Key@{encrypt\+With\+R\+S\+A\+Public\+Key}!com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}}
+\subsubsection{\texorpdfstring{encrypt\+With\+R\+S\+A\+Public\+Key()}{encryptWithRSAPublicKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+protocol.\+Export\+Controlled.\+encrypt\+With\+R\+S\+A\+Public\+Key (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{source,  }\item[{R\+S\+A\+Public\+Key}]{key,  }\item[{String}]{transformation }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1exceptions_1_1_r_s_a_exception}{R\+S\+A\+Exception}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a8a20678c3f99068fe3230c7e60efcf29}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a8a20678c3f99068fe3230c7e60efcf29}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}!encrypt\+With\+R\+S\+A\+Public\+Key@{encrypt\+With\+R\+S\+A\+Public\+Key}}
+\index{encrypt\+With\+R\+S\+A\+Public\+Key@{encrypt\+With\+R\+S\+A\+Public\+Key}!com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}}
+\subsubsection{\texorpdfstring{encrypt\+With\+R\+S\+A\+Public\+Key()}{encryptWithRSAPublicKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+protocol.\+Export\+Controlled.\+encrypt\+With\+R\+S\+A\+Public\+Key (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{source,  }\item[{R\+S\+A\+Public\+Key}]{key }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1exceptions_1_1_r_s_a_exception}{R\+S\+A\+Exception}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a7e00720fe058b036abef04752934d37a}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a7e00720fe058b036abef04752934d37a}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}!get\+S\+S\+L\+Context@{get\+S\+S\+L\+Context}}
+\index{get\+S\+S\+L\+Context@{get\+S\+S\+L\+Context}!com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}}
+\subsubsection{\texorpdfstring{get\+S\+S\+L\+Context()}{getSSLContext()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static S\+S\+L\+Context com.\+mysql.\+cj.\+protocol.\+Export\+Controlled.\+get\+S\+S\+L\+Context (\begin{DoxyParamCaption}\item[{String}]{client\+Certificate\+Key\+Store\+Url,  }\item[{String}]{client\+Certificate\+Key\+Store\+Type,  }\item[{String}]{client\+Certificate\+Key\+Store\+Password,  }\item[{String}]{trust\+Certificate\+Key\+Store\+Url,  }\item[{String}]{trust\+Certificate\+Key\+Store\+Type,  }\item[{String}]{trust\+Certificate\+Key\+Store\+Password,  }\item[{boolean}]{verify\+Server\+Cert,  }\item[{String}]{host\+Name,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1exceptions_1_1_s_s_l_params_exception}{S\+S\+L\+Params\+Exception}}\hspace{0.3cm}{\ttfamily [static]}}
+
+Configure the \mbox{\hyperlink{}{S\+S\+L\+Context}} based on the supplier property set. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a181c1aa6b05dafc3ddf3b2943da64c0b}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a181c1aa6b05dafc3ddf3b2943da64c0b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}!get\+S\+S\+L\+Context@{get\+S\+S\+L\+Context}}
+\index{get\+S\+S\+L\+Context@{get\+S\+S\+L\+Context}!com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}}
+\subsubsection{\texorpdfstring{get\+S\+S\+L\+Context()}{getSSLContext()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static S\+S\+L\+Context com.\+mysql.\+cj.\+protocol.\+Export\+Controlled.\+get\+S\+S\+L\+Context (\begin{DoxyParamCaption}\item[{String}]{client\+Certificate\+Key\+Store\+Url,  }\item[{String}]{client\+Certificate\+Key\+Store\+Type,  }\item[{String}]{client\+Certificate\+Key\+Store\+Password,  }\item[{String}]{trust\+Certificate\+Key\+Store\+Url,  }\item[{String}]{trust\+Certificate\+Key\+Store\+Type,  }\item[{String}]{trust\+Certificate\+Key\+Store\+Password,  }\item[{boolean}]{fallback\+To\+Default\+Trust\+Store,  }\item[{boolean}]{verify\+Server\+Cert,  }\item[{String}]{host\+Name,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1exceptions_1_1_s_s_l_params_exception}{S\+S\+L\+Params\+Exception}}\hspace{0.3cm}{\ttfamily [static]}}
+
+Configure the \mbox{\hyperlink{}{S\+S\+L\+Context}} based on the supplier property set. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a234adb48ad955b9c37b28dddaab9335d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a234adb48ad955b9c37b28dddaab9335d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}!is\+S\+S\+L\+Established@{is\+S\+S\+L\+Established}}
+\index{is\+S\+S\+L\+Established@{is\+S\+S\+L\+Established}!com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}}
+\subsubsection{\texorpdfstring{is\+S\+S\+L\+Established()}{isSSLEstablished()}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+cj.\+protocol.\+Export\+Controlled.\+is\+S\+S\+L\+Established (\begin{DoxyParamCaption}\item[{Socket}]{socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a81bd557abb458b90f449ba14b7d3fe80}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a81bd557abb458b90f449ba14b7d3fe80}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}!perform\+Tls\+Handshake@{perform\+Tls\+Handshake}}
+\index{perform\+Tls\+Handshake@{perform\+Tls\+Handshake}!com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}}
+\subsubsection{\texorpdfstring{perform\+Tls\+Handshake()}{performTlsHandshake()}}
+{\footnotesize\ttfamily static Socket com.\+mysql.\+cj.\+protocol.\+Export\+Controlled.\+perform\+Tls\+Handshake (\begin{DoxyParamCaption}\item[{Socket}]{raw\+Socket,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}}}]{socket\+Connection,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}}}]{server\+Version }\end{DoxyParamCaption}) throws I\+O\+Exception, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1exceptions_1_1_s_s_l_params_exception}{S\+S\+L\+Params\+Exception}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1exceptions_1_1_feature_not_available_exception}{Feature\+Not\+Available\+Exception}}\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts the socket being used in the given Core\+IO to an S\+S\+L\+Socket by performing the S\+S\+L/\+T\+LS handshake.
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+Socket} & original non-\/\+S\+SL socket \\
+\hline
+{\em socket\+Connection} & the \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{Protocol}} instance containing the socket to convert to an S\+S\+L\+Socket. \\
+\hline
+{\em server\+Version} & \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+SL socket 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+S\+L\+Params\+Exception} & if the handshake fails, or if this distribution of Connector/J doesn\textquotesingle{}t contain the S\+SL crypto hooks needed to perform the handshake. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a0737e8a1422c8d2e5fa6fb9e4dd61caa}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_export_controlled_a0737e8a1422c8d2e5fa6fb9e4dd61caa}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}!start\+Tls\+On\+Asynchronous\+Channel@{start\+Tls\+On\+Asynchronous\+Channel}}
+\index{start\+Tls\+On\+Asynchronous\+Channel@{start\+Tls\+On\+Asynchronous\+Channel}!com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled@{com\+::mysql\+::cj\+::protocol\+::\+Export\+Controlled}}
+\subsubsection{\texorpdfstring{start\+Tls\+On\+Asynchronous\+Channel()}{startTlsOnAsynchronousChannel()}}
+{\footnotesize\ttfamily static Asynchronous\+Socket\+Channel com.\+mysql.\+cj.\+protocol.\+Export\+Controlled.\+start\+Tls\+On\+Asynchronous\+Channel (\begin{DoxyParamCaption}\item[{Asynchronous\+Socket\+Channel}]{channel,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}}}]{socket\+Connection }\end{DoxyParamCaption}) throws S\+S\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/protocol/\mbox{\hyperlink{_export_controlled_8java}{Export\+Controlled.\+java}}\end{DoxyCompactItemize}

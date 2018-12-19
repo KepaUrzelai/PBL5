@@ -1,0 +1,136 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Time\+Tracking\+Packet\+Reader Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Time\+Tracking\+Packet\+Reader@{com.\+mysql.\+cj.\+protocol.\+a.\+Time\+Tracking\+Packet\+Reader}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_packet_received_time_holder}{com.\+mysql.\+cj.\+protocol.\+Packet\+Received\+Time\+Holder}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a3ffbfb02e61815c12a359e0f2845766f}{Time\+Tracking\+Packet\+Reader}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ message\+Reader)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_aa49a24bf628c8b096b222c6516cb04b3}{read\+Header}} ()  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a6f6c10be80bf6632e4f79e17b893c539}{read\+Message}} (Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ reuse, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}} header)  throws I\+O\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a3bd1be8166c894904064c43363adb821}{get\+Last\+Packet\+Received\+Time}} ()
+\item 
+byte \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a436548845d1e371699d0cad877dc717b}{get\+Message\+Sequence}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a1029b1583cd042d202fa0caa956a13c2}{reset\+Message\+Sequence}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_ab320fc6184aad94ebdba7260b574421f}{undecorate\+All}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_aebbbca667b7f55074795c128c2aff259}{undecorate}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \mbox{\hyperlink{}{Packet\+Reader}} which tracks the last time a packet was received. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a3ffbfb02e61815c12a359e0f2845766f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a3ffbfb02e61815c12a359e0f2845766f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}!Time\+Tracking\+Packet\+Reader@{Time\+Tracking\+Packet\+Reader}}
+\index{Time\+Tracking\+Packet\+Reader@{Time\+Tracking\+Packet\+Reader}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{Time\+Tracking\+Packet\+Reader()}{TimeTrackingPacketReader()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+Time\+Tracking\+Packet\+Reader.\+Time\+Tracking\+Packet\+Reader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$}]{message\+Reader }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a3bd1be8166c894904064c43363adb821}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a3bd1be8166c894904064c43363adb821}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}!get\+Last\+Packet\+Received\+Time@{get\+Last\+Packet\+Received\+Time}}
+\index{get\+Last\+Packet\+Received\+Time@{get\+Last\+Packet\+Received\+Time}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{get\+Last\+Packet\+Received\+Time()}{getLastPacketReceivedTime()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+protocol.\+a.\+Time\+Tracking\+Packet\+Reader.\+get\+Last\+Packet\+Received\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_packet_received_time_holder_ae2740ec8278f582c35b94df0028953be}{com.\+mysql.\+cj.\+protocol.\+Packet\+Received\+Time\+Holder}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a436548845d1e371699d0cad877dc717b}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a436548845d1e371699d0cad877dc717b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}!get\+Message\+Sequence@{get\+Message\+Sequence}}
+\index{get\+Message\+Sequence@{get\+Message\+Sequence}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{get\+Message\+Sequence()}{getMessageSequence()}}
+{\footnotesize\ttfamily byte com.\+mysql.\+cj.\+protocol.\+a.\+Time\+Tracking\+Packet\+Reader.\+get\+Message\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get last message sequence number, as it was stored by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_aa49a24bf628c8b096b222c6516cb04b3}{read\+Header()}}.
+
+\begin{DoxyReturn}{Returns}
+number 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader_ac4a36fb287c5308dd3d7e6157ef4e237}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_aa49a24bf628c8b096b222c6516cb04b3}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_aa49a24bf628c8b096b222c6516cb04b3}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}!read\+Header@{read\+Header}}
+\index{read\+Header@{read\+Header}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{read\+Header()}{readHeader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}} com.\+mysql.\+cj.\+protocol.\+a.\+Time\+Tracking\+Packet\+Reader.\+read\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Read the next message header from server, possibly blocking indefinitely until the message is received.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_header}{Message\+Header}} of the next message 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader_a09745b0e30f74fa13e2b32f22ce70cbb}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a6f6c10be80bf6632e4f79e17b893c539}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a6f6c10be80bf6632e4f79e17b893c539}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}!read\+Message@{read\+Message}}
+\index{read\+Message@{read\+Message}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{read\+Message()}{readMessage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} com.\+mysql.\+cj.\+protocol.\+a.\+Time\+Tracking\+Packet\+Reader.\+read\+Message (\begin{DoxyParamCaption}\item[{Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$}]{reuse,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}}]{header }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a1029b1583cd042d202fa0caa956a13c2}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_a1029b1583cd042d202fa0caa956a13c2}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}!reset\+Message\+Sequence@{reset\+Message\+Sequence}}
+\index{reset\+Message\+Sequence@{reset\+Message\+Sequence}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{reset\+Message\+Sequence()}{resetMessageSequence()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Time\+Tracking\+Packet\+Reader.\+reset\+Message\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set stored message sequence number to 0. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader_a3161e55ab8c1bb4d533aa6d2700fb14d}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_aebbbca667b7f55074795c128c2aff259}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_aebbbca667b7f55074795c128c2aff259}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}!undecorate@{undecorate}}
+\index{undecorate@{undecorate}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{undecorate()}{undecorate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Time\+Tracking\+Packet\+Reader.\+undecorate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the previous \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}} instance from the decorators chain or the current \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}} if it is the first entry in a chain.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader_a59b0e118857c167ad4a270845f19e89b}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_ab320fc6184aad94ebdba7260b574421f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_reader_ab320fc6184aad94ebdba7260b574421f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}!undecorate\+All@{undecorate\+All}}
+\index{undecorate\+All@{undecorate\+All}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Time\+Tracking\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{undecorate\+All()}{undecorateAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Time\+Tracking\+Packet\+Reader.\+undecorate\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return a \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}} instance free of decorators.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader_a22a326215a91e4d7bff08d1f2c3e1b6d}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/\mbox{\hyperlink{_time_tracking_packet_reader_8java}{Time\+Tracking\+Packet\+Reader.\+java}}\end{DoxyCompactItemize}

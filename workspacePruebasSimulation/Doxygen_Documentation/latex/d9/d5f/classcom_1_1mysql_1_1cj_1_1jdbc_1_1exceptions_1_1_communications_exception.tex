@@ -1,0 +1,73 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception}{}\section{com.\+mysql.\+cj.\+jdbc.\+exceptions.\+Communications\+Exception Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception}\index{com.\+mysql.\+cj.\+jdbc.\+exceptions.\+Communications\+Exception@{com.\+mysql.\+cj.\+jdbc.\+exceptions.\+Communications\+Exception}}
+
+
+Inherits S\+Q\+L\+Recoverable\+Exception, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_streaming_notifiable}{com.\+mysql.\+cj.\+exceptions.\+Streaming\+Notifiable}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_connection_feature_not_available_exception}{com.\+mysql.\+cj.\+jdbc.\+exceptions.\+Connection\+Feature\+Not\+Available\+Exception}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a7f4c2d50e516af22b690b858bb6ce620}{Communications\+Exception}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} conn, long last\+Packet\+Sent\+Time\+Ms, long last\+Packet\+Received\+Time\+Ms, Exception underlying\+Exception)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a2947d467151f9fca74a3af4e29a44cc3}{Communications\+Exception}} (String message, Throwable underlying\+Exception)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a76c0204d0e1d7227770114662433a7da}{get\+Message}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a98a2ad5b51b736dc3ec58edae855462d}{get\+S\+Q\+L\+State}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a29388ae45258ad923ba62072c51507ae}{set\+Was\+Streaming\+Results}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An exception to represent communications errors with the database.
+
+Attempts to provide \textquotesingle{}friendlier\textquotesingle{} error messages to end-\/users, including the last time a packet was sent to the database, what the client-\/timeout is set to, and whether the idle time has been exceeded. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a7f4c2d50e516af22b690b858bb6ce620}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a7f4c2d50e516af22b690b858bb6ce620}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception@{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception}!Communications\+Exception@{Communications\+Exception}}
+\index{Communications\+Exception@{Communications\+Exception}!com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception@{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception}}
+\subsubsection{\texorpdfstring{Communications\+Exception()}{CommunicationsException()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+jdbc.\+exceptions.\+Communications\+Exception.\+Communications\+Exception (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}}}]{conn,  }\item[{long}]{last\+Packet\+Sent\+Time\+Ms,  }\item[{long}]{last\+Packet\+Received\+Time\+Ms,  }\item[{Exception}]{underlying\+Exception }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a2947d467151f9fca74a3af4e29a44cc3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a2947d467151f9fca74a3af4e29a44cc3}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception@{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception}!Communications\+Exception@{Communications\+Exception}}
+\index{Communications\+Exception@{Communications\+Exception}!com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception@{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception}}
+\subsubsection{\texorpdfstring{Communications\+Exception()}{CommunicationsException()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+jdbc.\+exceptions.\+Communications\+Exception.\+Communications\+Exception (\begin{DoxyParamCaption}\item[{String}]{message,  }\item[{Throwable}]{underlying\+Exception }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a76c0204d0e1d7227770114662433a7da}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a76c0204d0e1d7227770114662433a7da}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception@{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception}!get\+Message@{get\+Message}}
+\index{get\+Message@{get\+Message}!com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception@{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception}}
+\subsubsection{\texorpdfstring{get\+Message()}{getMessage()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+jdbc.\+exceptions.\+Communications\+Exception.\+get\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a98a2ad5b51b736dc3ec58edae855462d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a98a2ad5b51b736dc3ec58edae855462d}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception@{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception}!get\+S\+Q\+L\+State@{get\+S\+Q\+L\+State}}
+\index{get\+S\+Q\+L\+State@{get\+S\+Q\+L\+State}!com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception@{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception}}
+\subsubsection{\texorpdfstring{get\+S\+Q\+L\+State()}{getSQLState()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+jdbc.\+exceptions.\+Communications\+Exception.\+get\+S\+Q\+L\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a29388ae45258ad923ba62072c51507ae}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_communications_exception_a29388ae45258ad923ba62072c51507ae}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception@{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception}!set\+Was\+Streaming\+Results@{set\+Was\+Streaming\+Results}}
+\index{set\+Was\+Streaming\+Results@{set\+Was\+Streaming\+Results}!com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception@{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Communications\+Exception}}
+\subsubsection{\texorpdfstring{set\+Was\+Streaming\+Results()}{setWasStreamingResults()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+exceptions.\+Communications\+Exception.\+set\+Was\+Streaming\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_streaming_notifiable_af8d92ff2c77b5b28ee8c6076e6a0d377}{com.\+mysql.\+cj.\+exceptions.\+Streaming\+Notifiable}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/exceptions/\mbox{\hyperlink{_communications_exception_8java}{Communications\+Exception.\+java}}\end{DoxyCompactItemize}

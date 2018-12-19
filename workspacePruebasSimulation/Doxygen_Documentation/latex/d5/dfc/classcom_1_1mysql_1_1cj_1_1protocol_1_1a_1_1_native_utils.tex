@@ -1,0 +1,61 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Utils Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Utils@{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Utils}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a219c3474ed3459976b78e6db24078981}{encode\+Mysql\+Three\+Byte\+Integer}} (int i)
+\item 
+static void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a5965327577eb5373eba1db4543ab62d7}{encode\+Mysql\+Three\+Byte\+Integer}} (int i, byte\mbox{[}$\,$\mbox{]} b, int offset)
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a6908531afd3be465ad595bbbf4bd7926}{decode\+Mysql\+Three\+Byte\+Integer}} (byte\mbox{[}$\,$\mbox{]} b)
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_aa4d8ecb6bae28aac66f4a6fd53e88cd7}{decode\+Mysql\+Three\+Byte\+Integer}} (byte\mbox{[}$\,$\mbox{]} b, int offset)
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_ac3519c674780b347ccf3b3e4a4c00193}{get\+Binary\+Encoded\+Length}} (int type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utilities to manipulate My\+S\+QL protocol-\/specific formats. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a6908531afd3be465ad595bbbf4bd7926}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a6908531afd3be465ad595bbbf4bd7926}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils}!decode\+Mysql\+Three\+Byte\+Integer@{decode\+Mysql\+Three\+Byte\+Integer}}
+\index{decode\+Mysql\+Three\+Byte\+Integer@{decode\+Mysql\+Three\+Byte\+Integer}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils}}
+\subsubsection{\texorpdfstring{decode\+Mysql\+Three\+Byte\+Integer()}{decodeMysqlThreeByteInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Utils.\+decode\+Mysql\+Three\+Byte\+Integer (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_aa4d8ecb6bae28aac66f4a6fd53e88cd7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_aa4d8ecb6bae28aac66f4a6fd53e88cd7}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils}!decode\+Mysql\+Three\+Byte\+Integer@{decode\+Mysql\+Three\+Byte\+Integer}}
+\index{decode\+Mysql\+Three\+Byte\+Integer@{decode\+Mysql\+Three\+Byte\+Integer}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils}}
+\subsubsection{\texorpdfstring{decode\+Mysql\+Three\+Byte\+Integer()}{decodeMysqlThreeByteInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Utils.\+decode\+Mysql\+Three\+Byte\+Integer (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{b,  }\item[{int}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a219c3474ed3459976b78e6db24078981}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a219c3474ed3459976b78e6db24078981}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils}!encode\+Mysql\+Three\+Byte\+Integer@{encode\+Mysql\+Three\+Byte\+Integer}}
+\index{encode\+Mysql\+Three\+Byte\+Integer@{encode\+Mysql\+Three\+Byte\+Integer}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils}}
+\subsubsection{\texorpdfstring{encode\+Mysql\+Three\+Byte\+Integer()}{encodeMysqlThreeByteInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Utils.\+encode\+Mysql\+Three\+Byte\+Integer (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a5965327577eb5373eba1db4543ab62d7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a5965327577eb5373eba1db4543ab62d7}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils}!encode\+Mysql\+Three\+Byte\+Integer@{encode\+Mysql\+Three\+Byte\+Integer}}
+\index{encode\+Mysql\+Three\+Byte\+Integer@{encode\+Mysql\+Three\+Byte\+Integer}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils}}
+\subsubsection{\texorpdfstring{encode\+Mysql\+Three\+Byte\+Integer()}{encodeMysqlThreeByteInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Utils.\+encode\+Mysql\+Three\+Byte\+Integer (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{b,  }\item[{int}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_ac3519c674780b347ccf3b3e4a4c00193}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_ac3519c674780b347ccf3b3e4a4c00193}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils}!get\+Binary\+Encoded\+Length@{get\+Binary\+Encoded\+Length}}
+\index{get\+Binary\+Encoded\+Length@{get\+Binary\+Encoded\+Length}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils}}
+\subsubsection{\texorpdfstring{get\+Binary\+Encoded\+Length()}{getBinaryEncodedLength()}}
+{\footnotesize\ttfamily static int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Utils.\+get\+Binary\+Encoded\+Length (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the length of a binary-\/encoded value of the given type.
+
+\begin{DoxyReturn}{Returns}
+the length ($>$0), 0 for a length-\/prefixed type, or -\/1 for unknown 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/\mbox{\hyperlink{_native_utils_8java}{Native\+Utils.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,95 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Database\+Object Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object}\index{com.\+mysql.\+cj.\+xdevapi.\+Database\+Object@{com.\+mysql.\+cj.\+xdevapi.\+Database\+Object}}
+
+
+Inherited by \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection}{com.\+mysql.\+cj.\+xdevapi.\+Collection}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{com.\+mysql.\+cj.\+xdevapi.\+Schema}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{com.\+mysql.\+cj.\+xdevapi.\+Table}}.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_1_1_db_object_status}{Db\+Object\+Status}}
+\item 
+enum \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_1_1_db_object_type}{Db\+Object\+Type}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_a0bebc7132108a9cfcffed4a599b2dad5}{get\+Session}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_a2d3d1b87950c42ecbe557248c51c954b}{get\+Schema}} ()
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_a482b3ae6f40ec6332bb7d8d8d02d1dda}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_1_1_db_object_status}{Db\+Object\+Status}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_ab4215a82b546a9e1dcb344c339765d7a}{exists\+In\+Database}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A client-\/side representation of X Plugin server object, e.\+g. table, collection, etc. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_ab4215a82b546a9e1dcb344c339765d7a}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_ab4215a82b546a9e1dcb344c339765d7a}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object@{com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object}!exists\+In\+Database@{exists\+In\+Database}}
+\index{exists\+In\+Database@{exists\+In\+Database}!com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object@{com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object}}
+\subsubsection{\texorpdfstring{exists\+In\+Database()}{existsInDatabase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_1_1_db_object_status}{Db\+Object\+Status}} com.\+mysql.\+cj.\+xdevapi.\+Database\+Object.\+exists\+In\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} the existence of this database object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_1_1_db_object_status}{Db\+Object\+Status}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_impl_aa51ee706e090fe9acd2e81c313e5a6eb}{com.\+mysql.\+cj.\+xdevapi.\+Table\+Impl}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a587cff9708d8d6787ad6012fd0353d5f}{com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_a482b3ae6f40ec6332bb7d8d8d02d1dda}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_a482b3ae6f40ec6332bb7d8d8d02d1dda}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object@{com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object@{com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+xdevapi.\+Database\+Object.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the name of the database object represented by the Java object.
+
+\begin{DoxyReturn}{Returns}
+name 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_impl_aeef36a88f386e5a6a7375315ab2af2c8}{com.\+mysql.\+cj.\+xdevapi.\+Table\+Impl}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_aab6a1ee96f0abeacc922a36da272e50d}{com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_a2d3d1b87950c42ecbe557248c51c954b}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_a2d3d1b87950c42ecbe557248c51c954b}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object@{com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object}!get\+Schema@{get\+Schema}}
+\index{get\+Schema@{get\+Schema}!com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object@{com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object}}
+\subsubsection{\texorpdfstring{get\+Schema()}{getSchema()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} com.\+mysql.\+cj.\+xdevapi.\+Database\+Object.\+get\+Schema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the schema owning this database object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_impl_a8aac02838d6b25aeeaaa53c4a34f4bac}{com.\+mysql.\+cj.\+xdevapi.\+Table\+Impl}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_aed68ad42cc9c13041185849537c8b791}{com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_a0bebc7132108a9cfcffed4a599b2dad5}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_a0bebc7132108a9cfcffed4a599b2dad5}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object@{com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object}!get\+Session@{get\+Session}}
+\index{get\+Session@{get\+Session}!com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object@{com\+::mysql\+::cj\+::xdevapi\+::\+Database\+Object}}
+\subsubsection{\texorpdfstring{get\+Session()}{getSession()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} com.\+mysql.\+cj.\+xdevapi.\+Database\+Object.\+get\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the session owning the given schema object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_impl_a50a4a5d8827aef7156fe6aa564f8809a}{com.\+mysql.\+cj.\+xdevapi.\+Table\+Impl}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_ab09abc096390ec7f763d045636551b7f}{com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_database_object_8java}{Database\+Object.\+java}}\end{DoxyCompactItemize}

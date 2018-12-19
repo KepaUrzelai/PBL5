@@ -1,0 +1,63 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_factory}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Session\+Factory Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_factory}\index{com.\+mysql.\+cj.\+xdevapi.\+Session\+Factory@{com.\+mysql.\+cj.\+xdevapi.\+Session\+Factory}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_factory_a3fda3a0cf7e75e290606aa778a8ed3ef}{get\+Session}} (String url)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_factory_ada2639565b22428f9b0ec6f07d925309}{get\+Session}} (Properties properties)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_factory}{Session\+Factory}} is used for creation of sessions.
+
+
+\begin{DoxyPre}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_factory}{SessionFactory}} xFactory = new SessionFactory();\end{DoxyPre}
+
+
+
+\begin{DoxyPre}\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} session1 = xFactory.getSession("<b>mysqlx:</b>//[user1[:pwd1]@]host1[:port1]/db");
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} session2 = xFactory.getSession("<b>mysqlx:</b>//host2[:port2]/db?user=user2&amp;password=pwd2");
+\end{DoxyPre}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_factory_a3fda3a0cf7e75e290606aa778a8ed3ef}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_factory_a3fda3a0cf7e75e290606aa778a8ed3ef}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Factory@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Factory}!get\+Session@{get\+Session}}
+\index{get\+Session@{get\+Session}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Factory@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Factory}}
+\subsubsection{\texorpdfstring{get\+Session()}{getSession()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} com.\+mysql.\+cj.\+xdevapi.\+Session\+Factory.\+get\+Session (\begin{DoxyParamCaption}\item[{String}]{url }\end{DoxyParamCaption})}
+
+Creates \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} by given U\+RL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & the session U\+RL. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_factory_ada2639565b22428f9b0ec6f07d925309}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_factory_ada2639565b22428f9b0ec6f07d925309}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Factory@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Factory}!get\+Session@{get\+Session}}
+\index{get\+Session@{get\+Session}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Factory@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Factory}}
+\subsubsection{\texorpdfstring{get\+Session()}{getSession()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} com.\+mysql.\+cj.\+xdevapi.\+Session\+Factory.\+get\+Session (\begin{DoxyParamCaption}\item[{Properties}]{properties }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} using the information contained in the given properties.
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & the \mbox{\hyperlink{}{Properties}} instance that contains the session components. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} instance. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_session_factory_8java}{Session\+Factory.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['object',['OBJECT',['../db/da7/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_datatypes_1_1_any_1_1_type.html#a8775d33409fc8c3f0d6ac1fdf9d59bb9',1,'com.mysql.cj.x.protobuf.MysqlxDatatypes.Any.Type.OBJECT()'],['../d0/de5/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_expr_1_1_expr_1_1_type.html#a1d26b1a6281ade9eae12e2f5d6d63ffc',1,'com.mysql.cj.x.protobuf.MysqlxExpr.Expr.Type.OBJECT()']]],
+  ['object_5fvalue',['OBJECT_VALUE',['../db/da7/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_datatypes_1_1_any_1_1_type.html#abba143b047a3f183d1e40f8d949ac78d',1,'com.mysql.cj.x.protobuf.MysqlxDatatypes.Any.Type.OBJECT_VALUE()'],['../d0/de5/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_expr_1_1_expr_1_1_type.html#ad224808d02cde85be1f8db03fede4e51',1,'com.mysql.cj.x.protobuf.MysqlxExpr.Expr.Type.OBJECT_VALUE()']]],
+  ['offset',['offset',['../d5/d5e/classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_filter_params.html#ae5a7ad2d85c2332b4969cc3470c01352',1,'com::mysql::cj::xdevapi::FilterParams']]],
+  ['ok',['ok',['../d6/dc8/classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result.html#a685a1078d618fe85fa65e7511f512985',1,'com.mysql.cj.xdevapi.AbstractDataResult.ok()'],['../db/dff/classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result.html#a9314dbffc186019112194b43a86e0174',1,'com.mysql.cj.xdevapi.UpdateResult.ok()'],['../d9/d92/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_1_1_server_messages_1_1_type.html#a81d561a164e8414117a2befb2475dfcf',1,'com.mysql.cj.x.protobuf.Mysqlx.ServerMessages.Type.OK()']]],
+  ['ok_5fvalue',['OK_VALUE',['../d9/d92/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_1_1_server_messages_1_1_type.html#ae31a9004cf8d79d36ce9fd42a3eba522',1,'com::mysql::cj::x::protobuf::Mysqlx::ServerMessages::Type']]],
+  ['on_5fduplicate_5fkey_5fupdate_5fclause',['ON_DUPLICATE_KEY_UPDATE_CLAUSE',['../dc/dd4/classcom_1_1mysql_1_1cj_1_1_parse_info.html#ac230b0079c1485cf8af348a2b45fe3ae',1,'com::mysql::cj::ParseInfo']]],
+  ['ondelete',['onDelete',['../d5/ddb/classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_def.html#acc7698fbffc9cfbc61a691f3100d6757',1,'com::mysql::cj::xdevapi::ForeignKeyDef']]],
+  ['onupdate',['onUpdate',['../d5/ddb/classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_def.html#ac67670317db85f5a276b7ca8502ccfaf',1,'com::mysql::cj::xdevapi::ForeignKeyDef']]],
+  ['open_5fcursor_5fflag',['OPEN_CURSOR_FLAG',['../d7/d6a/classcom_1_1mysql_1_1cj_1_1_server_prepared_query.html#a6578a6a2b278767240b8d382dc355928',1,'com::mysql::cj::ServerPreparedQuery']]],
+  ['openresults',['openResults',['../d4/d9a/classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl.html#a812055d2262412bf71c9553cb0e7640c',1,'com::mysql::cj::jdbc::StatementImpl']]],
+  ['operator',['OPERATOR',['../d0/de5/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_expr_1_1_expr_1_1_type.html#ab5a59b08ae70b50746584ffe020b20ad',1,'com::mysql::cj::x::protobuf::MysqlxExpr::Expr::Type']]],
+  ['operator_5fvalue',['OPERATOR_VALUE',['../d0/de5/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_expr_1_1_expr_1_1_type.html#a789081d24c76b754f49466fe247bb268',1,'com::mysql::cj::x::protobuf::MysqlxExpr::Expr::Type']]],
+  ['orderexpr',['orderExpr',['../d5/d5e/classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_filter_params.html#acd0942ec1171fe30668e7d5369a691dd',1,'com::mysql::cj::xdevapi::FilterParams']]],
+  ['originalconnstr',['originalConnStr',['../d3/d5e/classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url.html#acb1dfbbdde68f9e171c3a525d3763801',1,'com::mysql::cj::conf::ConnectionUrl']]],
+  ['originaldatabase',['originalDatabase',['../d3/d5e/classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url.html#a73a936ed6806d19dd308b401cb8f160c',1,'com::mysql::cj::conf::ConnectionUrl']]],
+  ['originalsql',['originalSql',['../db/dd3/classcom_1_1mysql_1_1cj_1_1_abstract_prepared_query.html#a06bb5d3e19f687e01fb4274e1f6f4f6a',1,'com::mysql::cj::AbstractPreparedQuery']]],
+  ['os_5farch',['OS_ARCH',['../de/dfc/classcom_1_1mysql_1_1cj_1_1_constants.html#ab856418642fd10aa0794159a27cb2e9e',1,'com::mysql::cj::Constants']]],
+  ['os_5fname',['OS_NAME',['../de/dfc/classcom_1_1mysql_1_1cj_1_1_constants.html#ace66e5c19e425e7546de210a129720ee',1,'com::mysql::cj::Constants']]],
+  ['os_5fversion',['OS_VERSION',['../de/dfc/classcom_1_1mysql_1_1cj_1_1_constants.html#ad1f1e8ee9d3e10a57303e73dc35df668',1,'com::mysql::cj::Constants']]],
+  ['outputparamwasnull',['outputParamWasNull',['../da/dbe/classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement.html#a50b0a5e60e29ab7d67b07a27004293c4',1,'com::mysql::cj::jdbc::CallableStatement']]],
+  ['owner',['owner',['../d2/d5e/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_resultset_rows.html#ac0fe5a90927b98441be0c579daefbf7f',1,'com::mysql::cj::protocol::a::result::AbstractResultsetRows']]]
+];

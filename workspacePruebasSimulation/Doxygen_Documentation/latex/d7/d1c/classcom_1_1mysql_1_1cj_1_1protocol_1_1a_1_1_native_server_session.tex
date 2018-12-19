@@ -1,0 +1,1081 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session@{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a6c5791574148df51d2ad36e22d21b58c}{Native\+Server\+Session}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} property\+Set)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_capabilities}{Native\+Capabilities}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a482ab0553e0ed36382b3224cf302844e}{get\+Capabilities}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9fa5513f7f2e28921a9d5b3331591bd1}{set\+Capabilities}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_capabilities}{Server\+Capabilities}} capabilities)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3b8393e68e3bba53f8afafeb67ea4616}{get\+Status\+Flags}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ad533b5d433cde1b38176e2718308c7a4}{set\+Status\+Flags}} (int status\+Flags)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a22280140ed155d3eedb9ab2c9c636afe}{set\+Status\+Flags}} (int status\+Flags, boolean save\+Old\+Status)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9d054f3066b6456e33a10c8ff57e439f}{get\+Old\+Status\+Flags}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a1fc54902245f1c34539d27846fa5e211}{set\+Old\+Status\+Flags}} (int old\+Status\+Flags)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_af4dfde9ca1e0cea7177b791ba4819f06}{get\+Transaction\+State}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a8d5589f1a033854b5fb7bf4bd687af3f}{in\+Transaction\+On\+Server}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9e04d0827dc182b812bde510a82952c1}{cursor\+Exists}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a443cf8223386212f9812b802f1821d00}{is\+Autocommit}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac688e04f00ac979c7e9430c998d12ae0}{has\+More\+Results}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ad51925b4903a656610eed30bfaa51562}{no\+Good\+Index\+Used}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aca343c9466cb45a783268924ce14b277}{no\+Index\+Used}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a1c74717444fce778adbd567143aa950a}{query\+Was\+Slow}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_adade829bf44ed55a8ac1a93ae5716a4b}{is\+Last\+Row\+Sent}} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a027379497479b7a43755ff49ad37e96f}{get\+Client\+Param}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a6b2f480c08fa965e6559157f71a86970}{set\+Client\+Param}} (long client\+Param)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a1ee7647193508670b38da91c9f39e11f}{use\+Multi\+Results}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_adeaa0a01acf79d5b609ce8757822948d}{is\+E\+O\+F\+Deprecated}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aeaccfa02aeae2a872f2d92412a051de0}{get\+Server\+Default\+Collation\+Index}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_abd6266538f2562073361edbc958a3304}{set\+Server\+Default\+Collation\+Index}} (int server\+Default\+Collation\+Index)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac5dca7c3f6c90dc330ed8fb7f7c74069}{has\+Long\+Column\+Info}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ab7e6639fd06a4d47ab35e3cd89dfc10a}{set\+Has\+Long\+Column\+Info}} (boolean has\+Long\+Column\+Info)
+\item 
+Map$<$ String, String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a5d1f9481bc93bb7f3a7a1ab35298b626}{get\+Server\+Variables}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac4c00989ffc6de351aa574fb6cc4a24b}{get\+Server\+Variable}} (String name)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a1073d8d9d87cbae4427770f6a33825f5}{get\+Server\+Variable}} (String variable\+Name, int fallback\+Value)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a5075caf877a67ffac4ab458c54f56071}{set\+Server\+Variables}} (Map$<$ String, String $>$ server\+Variables)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a36b26698c0ac9c2f0935c2173e11297b}{character\+Set\+Names\+Matches}} (String mysql\+Encoding\+Name)
+\item 
+final \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a38d2e0173e10f1f3b55a04c34c9fa8e8}{get\+Server\+Version}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a07301eeaa6402981ce961f528b4e09ef}{is\+Version}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}} version)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a4d7271374accd773d7db0f8858d479e7}{is\+Set\+Needed\+For\+Auto\+Commit\+Mode}} (boolean auto\+Commit\+Flag, boolean elide\+Set\+Auto\+Commits\+Flag)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aea6f38295ee9c65cfc59d975b20539ff}{get\+Error\+Message\+Encoding}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a394485ebd068b7fa0c9a0c7343fcd53c}{set\+Error\+Message\+Encoding}} (String error\+Message\+Encoding)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ad663008943ab8a1188490e3ba0befe95}{get\+Server\+Default\+Charset}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ad7465b48803efa279712a08e64bb4cd1}{get\+Max\+Bytes\+Per\+Char}} (String java\+Charset\+Name)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_af9ca6638e8879ecf64d7a09eb70420d4}{get\+Max\+Bytes\+Per\+Char}} (Integer charset\+Index, String java\+Charset\+Name)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3a9d807f5e66892f234d06934d275de1}{get\+Encoding\+For\+Index}} (int charset\+Index)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_afb85710d7264a784f27133cec2eaf811}{configure\+Character\+Sets}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae60251435377bb750534dd50526e06bb}{get\+Character\+Set\+Metadata}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3820f7525abbc47c614a2f1ffa794475}{set\+Character\+Set\+Metadata}} (String character\+Set\+Metadata)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ab7cb9e9b9e758a4bea17d5a7e3889463}{get\+Metadata\+Collation\+Index}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac50b43fb6e344f4b040cad7131f84ed6}{set\+Metadata\+Collation\+Index}} (int metadata\+Collation\+Index)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a6a563b249faf740d89dc4cf8be9dd0c7}{get\+Character\+Set\+Results\+On\+Server}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a8b4347b3013dbe54d67b318815008340}{set\+Character\+Set\+Results\+On\+Server}} (String character\+Set\+Results\+On\+Server)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a17eedbc99f68f8306dd9855c7f55c5ec}{preserve\+Old\+Transaction\+State}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a4409c3413cfab0fe0ce91af5d4c05454}{is\+Lower\+Case\+Table\+Names}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ab4ff668a507b74d55b1a67a47e983660}{stores\+Lower\+Case\+Table\+Names}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a60bae77bcda04aac21fbbc5a029b8174}{is\+Query\+Cache\+Enabled}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a649bec25ec5ac1c5084be7be5008844e}{is\+No\+Backslash\+Escapes\+Set}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a46c8526aa6827ff0fd5a934cf40aab00}{use\+Ansi\+Quoted\+Identifiers}} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9de8131697ca7d13a9df02f60568137f}{get\+Thread\+Id}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a00f6fda062d4ecc37f9f2561bae423ca}{set\+Thread\+Id}} (long thread\+Id)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a0c02c1e5f4fb1fd4c03c6ec956e48cff}{is\+Auto\+Commit}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae5619ea0802405494970f91db5b1cc46}{set\+Auto\+Commit}} (boolean auto\+Commit)
+\item 
+Time\+Zone \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a2bb2db7f0947a9fc9b287baa6a314314}{get\+Server\+Time\+Zone}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a404e7d990dbe62a81e702565dd55c8b5}{set\+Server\+Time\+Zone}} (Time\+Zone server\+Time\+Zone)
+\item 
+Time\+Zone \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_abba6aad0abd51609f134af9fa2cd345f}{get\+Default\+Time\+Zone}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a0136e27d19a065030e8acd8b855a1662}{set\+Default\+Time\+Zone}} (Time\+Zone default\+Time\+Zone)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Map$<$ Integer, String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a05bb96d23cfc48cd8c3330bcf72bce21}{index\+To\+Custom\+Mysql\+Charset}} = null
+\item 
+Map$<$ String, Integer $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae2143cf09383039fb6cc598e5a80bd38}{mysql\+Charset\+To\+Custom\+Mblen}} = null
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a2e17ad7ebafdf5c6ef09e26247c622e5}{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+\_\+\+T\+R\+A\+NS}} = 1
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a54c9bc32808c29e58e4c461bd82eea48}{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+U\+T\+O\+C\+O\+M\+M\+IT}} = 2
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aea95769f892a5a920b4781c3a9d10251}{S\+E\+R\+V\+E\+R\+\_\+\+M\+O\+R\+E\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+E\+X\+I\+S\+TS}} = 8
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aac04442bd02687292134ab604f5d6df7}{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+N\+O\+\_\+\+G\+O\+O\+D\+\_\+\+I\+N\+D\+E\+X\+\_\+\+U\+S\+ED}} = 16
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a40dd6773d6bdaeb065e4c24aa7973f84}{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+N\+O\+\_\+\+I\+N\+D\+E\+X\+\_\+\+U\+S\+ED}} = 32
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a4d5dd4d793a3f237f6c28ac077b6e4be}{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+U\+R\+S\+O\+R\+\_\+\+E\+X\+I\+S\+TS}} = 64
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac4f1803f0d5646e2025ddc000df4a63f}{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+A\+S\+T\+\_\+\+R\+O\+W\+\_\+\+S\+E\+NT}} = 128
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_af7568ceac4ed5c54ecec128043715046}{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+W\+A\+S\+\_\+\+S\+L\+OW}} = 2048
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9e181d1455ead8063c5b8a69340342f3}{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+N\+G\+\_\+\+P\+A\+S\+S\+W\+O\+RD}} = 0x00000001
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae83936b58792485548ed82b692e11540}{C\+L\+I\+E\+N\+T\+\_\+\+F\+O\+U\+N\+D\+\_\+\+R\+O\+WS}} = 0x00000002
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a703dd61c0350eaf916079bdebd1de0f5}{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+N\+G\+\_\+\+F\+L\+AG}} = 0x00000004
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a94799cd3c2d19d0688ea1189aee1e788}{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+W\+I\+T\+H\+\_\+\+DB}} = 0x00000008
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3571df6d003f0b5041708ba5a5f0b0ea}{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+M\+P\+R\+E\+SS}} = 0x00000020
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a30849aeb0efe6b6b175aafda4be95c37}{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+F\+I\+L\+ES}} = 0x00000080
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac6f7af0e348dfe33281f8bfc8ecdc906}{C\+L\+I\+E\+N\+T\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+41}} = 0x00000200
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac301c144f07b3d53d0b25a5c5480fed8}{C\+L\+I\+E\+N\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE}} = 0x00000400
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ab710f1c8c0eb6890bc5b77fd3f384a77}{C\+L\+I\+E\+N\+T\+\_\+\+S\+SL}} = 0x00000800
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3040ed4859c291123a53cfd7538c4376}{C\+L\+I\+E\+N\+T\+\_\+\+T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+NS}} = 0x00002000
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a921f2f1746a31fbe494f1ac264da0e83}{C\+L\+I\+E\+N\+T\+\_\+\+R\+E\+S\+E\+R\+V\+ED}} = 0x00004000
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a7d8e14fcd08c510b951ee715b870c571}{C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON}} = 0x00008000
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac5e827f5fd45e70902a3d83827007cf3}{C\+L\+I\+E\+N\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+S\+T\+A\+T\+E\+M\+E\+N\+TS}} = 0x00010000
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a261fe8da7413e0ecf0d73774c7229495}{C\+L\+I\+E\+N\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+R\+E\+S\+U\+L\+TS}} = 0x00020000
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a46dcf545eb83128f94e3055b0cc53624}{C\+L\+I\+E\+N\+T\+\_\+\+P\+S\+\_\+\+M\+U\+L\+T\+I\+\_\+\+R\+E\+S\+U\+L\+TS}} = 0x00040000
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a0f24415fd8bafd8f59855c8d7ba08b64}{C\+L\+I\+E\+N\+T\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+A\+U\+TH}} = 0x00080000
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a03ba55d0f657d3fdfd5fcb79083f9910}{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+A\+T\+T\+RS}} = 0x00100000
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a7e8d705e313e8c9e33cb7e60bc7288bc}{C\+L\+I\+E\+N\+T\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+A\+U\+T\+H\+\_\+\+L\+E\+N\+E\+N\+C\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+D\+A\+TA}} = 0x00200000
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a46fc1bfca9cc318f57884258726bcf4c}{C\+L\+I\+E\+N\+T\+\_\+\+C\+A\+N\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+E\+X\+P\+I\+R\+E\+D\+\_\+\+P\+A\+S\+S\+W\+O\+RD}} = 0x00400000
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae41eec1c6126a728c82a0bdc3a366b2b}{C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+T\+R\+A\+CK}} = 0x00800000
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_af4354f6755982c57f502489b585eacb4}{C\+L\+I\+E\+N\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+E\+OF}} = 0x01000000
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a6c5791574148df51d2ad36e22d21b58c}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a6c5791574148df51d2ad36e22d21b58c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!Native\+Server\+Session@{Native\+Server\+Session}}
+\index{Native\+Server\+Session@{Native\+Server\+Session}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{Native\+Server\+Session()}{NativeServerSession()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+Native\+Server\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}}}]{property\+Set }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a36b26698c0ac9c2f0935c2173e11297b}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a36b26698c0ac9c2f0935c2173e11297b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!character\+Set\+Names\+Matches@{character\+Set\+Names\+Matches}}
+\index{character\+Set\+Names\+Matches@{character\+Set\+Names\+Matches}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{character\+Set\+Names\+Matches()}{characterSetNamesMatches()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+character\+Set\+Names\+Matches (\begin{DoxyParamCaption}\item[{String}]{mysql\+Encoding\+Name }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a17bf8c1aa6316e1a1db91c7b00ebee86}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_afb85710d7264a784f27133cec2eaf811}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_afb85710d7264a784f27133cec2eaf811}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!configure\+Character\+Sets@{configure\+Character\+Sets}}
+\index{configure\+Character\+Sets@{configure\+Character\+Sets}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{configure\+Character\+Sets()}{configureCharacterSets()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+configure\+Character\+Sets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_abcad1a4dec7e1822b0d4c52fdb0feb7d}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9e04d0827dc182b812bde510a82952c1}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9e04d0827dc182b812bde510a82952c1}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!cursor\+Exists@{cursor\+Exists}}
+\index{cursor\+Exists@{cursor\+Exists}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{cursor\+Exists()}{cursorExists()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+cursor\+Exists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Server will only open a cursor and set this flag if it can, otherwise it punts and goes back to mysql\+\_\+store\+\_\+results() behavior.
+
+\begin{DoxyReturn}{Returns}
+S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+U\+R\+S\+O\+R\+\_\+\+E\+X\+I\+S\+TS \href{http://dev.mysql.com/doc/internals/en/status-flags.html}{\tt status flag} value. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_aee37dfcad7c37e0b031da85b7f638435}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a482ab0553e0ed36382b3224cf302844e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a482ab0553e0ed36382b3224cf302844e}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Capabilities@{get\+Capabilities}}
+\index{get\+Capabilities@{get\+Capabilities}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Capabilities()}{getCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_capabilities}{Native\+Capabilities}} com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a99f2361800e1d3df0a1ab516e4c80737}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae60251435377bb750534dd50526e06bb}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae60251435377bb750534dd50526e06bb}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Character\+Set\+Metadata@{get\+Character\+Set\+Metadata}}
+\index{get\+Character\+Set\+Metadata@{get\+Character\+Set\+Metadata}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Character\+Set\+Metadata()}{getCharacterSetMetadata()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Character\+Set\+Metadata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a3aeeeb80107544ed93be2c73124bf53f}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a6a563b249faf740d89dc4cf8be9dd0c7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a6a563b249faf740d89dc4cf8be9dd0c7}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Character\+Set\+Results\+On\+Server@{get\+Character\+Set\+Results\+On\+Server}}
+\index{get\+Character\+Set\+Results\+On\+Server@{get\+Character\+Set\+Results\+On\+Server}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Character\+Set\+Results\+On\+Server()}{getCharacterSetResultsOnServer()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Character\+Set\+Results\+On\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a8c4da1a076a82273ca497c1914faf960}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a027379497479b7a43755ff49ad37e96f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a027379497479b7a43755ff49ad37e96f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Client\+Param@{get\+Client\+Param}}
+\index{get\+Client\+Param@{get\+Client\+Param}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Client\+Param()}{getClientParam()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Client\+Param (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a7c64dec4bc0e55be071abce45e3c2ef2}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_abba6aad0abd51609f134af9fa2cd345f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_abba6aad0abd51609f134af9fa2cd345f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Default\+Time\+Zone@{get\+Default\+Time\+Zone}}
+\index{get\+Default\+Time\+Zone@{get\+Default\+Time\+Zone}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Default\+Time\+Zone()}{getDefaultTimeZone()}}
+{\footnotesize\ttfamily Time\+Zone com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Default\+Time\+Zone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The default time zone used to marshall date/time values to/from the server. This is used when get\+Date(), etc methods are called without a calendar argument.
+
+\begin{DoxyReturn}{Returns}
+The server time zone (which may be user overridden in a connection property) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a080efb1043278f9c6d13f7dc24d18476}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3a9d807f5e66892f234d06934d275de1}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3a9d807f5e66892f234d06934d275de1}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Encoding\+For\+Index@{get\+Encoding\+For\+Index}}
+\index{get\+Encoding\+For\+Index@{get\+Encoding\+For\+Index}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Encoding\+For\+Index()}{getEncodingForIndex()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Encoding\+For\+Index (\begin{DoxyParamCaption}\item[{int}]{collation\+Index }\end{DoxyParamCaption})}
+
+Returns the Java character encoding name for the given My\+S\+QL server collation index
+
+
+\begin{DoxyParams}{Parameters}
+{\em collation\+Index} & collation index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Java character encoding name for the given My\+S\+QL server collation index 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a437ab4e5fb2cdd6cc66f206bce8688cd}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aea6f38295ee9c65cfc59d975b20539ff}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aea6f38295ee9c65cfc59d975b20539ff}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Error\+Message\+Encoding@{get\+Error\+Message\+Encoding}}
+\index{get\+Error\+Message\+Encoding@{get\+Error\+Message\+Encoding}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Error\+Message\+Encoding()}{getErrorMessageEncoding()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Error\+Message\+Encoding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_af83c1d2cdc8e37e3c916ee435ff0af71}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ad7465b48803efa279712a08e64bb4cd1}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ad7465b48803efa279712a08e64bb4cd1}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Max\+Bytes\+Per\+Char@{get\+Max\+Bytes\+Per\+Char}}
+\index{get\+Max\+Bytes\+Per\+Char@{get\+Max\+Bytes\+Per\+Char}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Max\+Bytes\+Per\+Char()}{getMaxBytesPerChar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Max\+Bytes\+Per\+Char (\begin{DoxyParamCaption}\item[{String}]{java\+Charset\+Name }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a5717509373a607bafcf452136ccd4fe6}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_af9ca6638e8879ecf64d7a09eb70420d4}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_af9ca6638e8879ecf64d7a09eb70420d4}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Max\+Bytes\+Per\+Char@{get\+Max\+Bytes\+Per\+Char}}
+\index{get\+Max\+Bytes\+Per\+Char@{get\+Max\+Bytes\+Per\+Char}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Max\+Bytes\+Per\+Char()}{getMaxBytesPerChar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Max\+Bytes\+Per\+Char (\begin{DoxyParamCaption}\item[{Integer}]{charset\+Index,  }\item[{String}]{java\+Charset\+Name }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a2fb64ef85381ab4a6a7a2c819e5d8a8a}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ab7cb9e9b9e758a4bea17d5a7e3889463}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ab7cb9e9b9e758a4bea17d5a7e3889463}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Metadata\+Collation\+Index@{get\+Metadata\+Collation\+Index}}
+\index{get\+Metadata\+Collation\+Index@{get\+Metadata\+Collation\+Index}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Metadata\+Collation\+Index()}{getMetadataCollationIndex()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Metadata\+Collation\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_af72447373f7ae77b56c5563c2922e9db}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9d054f3066b6456e33a10c8ff57e439f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9d054f3066b6456e33a10c8ff57e439f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Old\+Status\+Flags@{get\+Old\+Status\+Flags}}
+\index{get\+Old\+Status\+Flags@{get\+Old\+Status\+Flags}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Old\+Status\+Flags()}{getOldStatusFlags()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Old\+Status\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a71070dd7715b9646cea4a81bd52e5376}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ad663008943ab8a1188490e3ba0befe95}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ad663008943ab8a1188490e3ba0befe95}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Server\+Default\+Charset@{get\+Server\+Default\+Charset}}
+\index{get\+Server\+Default\+Charset@{get\+Server\+Default\+Charset}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Server\+Default\+Charset()}{getServerDefaultCharset()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Server\+Default\+Charset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+the server\textquotesingle{}s default character set name according to collation index from server greeting, or value of \textquotesingle{}character\+\_\+set\+\_\+server\textquotesingle{} variable if there is no mapping for that index 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_afeb928036af67a7fff2d45783673c72d}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aeaccfa02aeae2a872f2d92412a051de0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aeaccfa02aeae2a872f2d92412a051de0}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Server\+Default\+Collation\+Index@{get\+Server\+Default\+Collation\+Index}}
+\index{get\+Server\+Default\+Collation\+Index@{get\+Server\+Default\+Collation\+Index}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Server\+Default\+Collation\+Index()}{getServerDefaultCollationIndex()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Server\+Default\+Collation\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Collation index which server provided in handshake greeting packet 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a840bf74b75252459afd6b33ae21c8379}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a2bb2db7f0947a9fc9b287baa6a314314}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a2bb2db7f0947a9fc9b287baa6a314314}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Server\+Time\+Zone@{get\+Server\+Time\+Zone}}
+\index{get\+Server\+Time\+Zone@{get\+Server\+Time\+Zone}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Server\+Time\+Zone()}{getServerTimeZone()}}
+{\footnotesize\ttfamily Time\+Zone com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Server\+Time\+Zone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_ac9b676155f1488748f697afbf1e10999}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac4c00989ffc6de351aa574fb6cc4a24b}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac4c00989ffc6de351aa574fb6cc4a24b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Server\+Variable@{get\+Server\+Variable}}
+\index{get\+Server\+Variable@{get\+Server\+Variable}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Server\+Variable()}{getServerVariable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Server\+Variable (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_aadfc93f89a87bfacef5c66a4033e3bcb}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a1073d8d9d87cbae4427770f6a33825f5}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a1073d8d9d87cbae4427770f6a33825f5}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Server\+Variable@{get\+Server\+Variable}}
+\index{get\+Server\+Variable@{get\+Server\+Variable}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Server\+Variable()}{getServerVariable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Server\+Variable (\begin{DoxyParamCaption}\item[{String}]{variable\+Name,  }\item[{int}]{fallback\+Value }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_afeb21bb0efebb37bf03081dc2febfa6b}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a5d1f9481bc93bb7f3a7a1ab35298b626}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a5d1f9481bc93bb7f3a7a1ab35298b626}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Server\+Variables@{get\+Server\+Variables}}
+\index{get\+Server\+Variables@{get\+Server\+Variables}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Server\+Variables()}{getServerVariables()}}
+{\footnotesize\ttfamily Map$<$String, String$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Server\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a0bd7485d9c76e0183247def27942a209}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a38d2e0173e10f1f3b55a04c34c9fa8e8}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a38d2e0173e10f1f3b55a04c34c9fa8e8}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Server\+Version@{get\+Server\+Version}}
+\index{get\+Server\+Version@{get\+Server\+Version}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Server\+Version()}{getServerVersion()}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}} com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Server\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the version of the My\+S\+QL server we are talking to.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a96ad6ba424e7065b39d9b83dae49834a}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3b8393e68e3bba53f8afafeb67ea4616}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3b8393e68e3bba53f8afafeb67ea4616}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Status\+Flags@{get\+Status\+Flags}}
+\index{get\+Status\+Flags@{get\+Status\+Flags}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Status\+Flags()}{getStatusFlags()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Status\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a9cba9b511a27892b6e860172734c7d70}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9de8131697ca7d13a9df02f60568137f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9de8131697ca7d13a9df02f60568137f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Thread\+Id@{get\+Thread\+Id}}
+\index{get\+Thread\+Id@{get\+Thread\+Id}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Thread\+Id()}{getThreadId()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Thread\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_aa0ebcb06b9b56f63662cedf8720a5505}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_af4dfde9ca1e0cea7177b791ba4819f06}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_af4dfde9ca1e0cea7177b791ba4819f06}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!get\+Transaction\+State@{get\+Transaction\+State}}
+\index{get\+Transaction\+State@{get\+Transaction\+State}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{get\+Transaction\+State()}{getTransactionState()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+get\+Transaction\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+T\+A\+R\+T\+ED, T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+N\+\_\+\+I\+N\+\_\+\+P\+R\+O\+G\+R\+E\+SS, T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+R\+T\+ED or T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+N\+\_\+\+C\+O\+M\+P\+L\+E\+T\+ED 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a0af5a6df719817773de40fbc1aba021d}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac5dca7c3f6c90dc330ed8fb7f7c74069}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac5dca7c3f6c90dc330ed8fb7f7c74069}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!has\+Long\+Column\+Info@{has\+Long\+Column\+Info}}
+\index{has\+Long\+Column\+Info@{has\+Long\+Column\+Info}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{has\+Long\+Column\+Info()}{hasLongColumnInfo()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+has\+Long\+Column\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a7b542c64c25cf2ebbc4c5709dd6bad80}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac688e04f00ac979c7e9430c998d12ae0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac688e04f00ac979c7e9430c998d12ae0}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!has\+More\+Results@{has\+More\+Results}}
+\index{has\+More\+Results@{has\+More\+Results}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{has\+More\+Results()}{hasMoreResults()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+has\+More\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a8bdf17d831029c823ce4277ffe3c3fd3}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a8d5589f1a033854b5fb7bf4bd687af3f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a8d5589f1a033854b5fb7bf4bd687af3f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!in\+Transaction\+On\+Server@{in\+Transaction\+On\+Server}}
+\index{in\+Transaction\+On\+Server@{in\+Transaction\+On\+Server}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{in\+Transaction\+On\+Server()}{inTransactionOnServer()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+in\+Transaction\+On\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a90f38b18d831d00e5074f12a0a88fad7}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a443cf8223386212f9812b802f1821d00}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a443cf8223386212f9812b802f1821d00}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!is\+Autocommit@{is\+Autocommit}}
+\index{is\+Autocommit@{is\+Autocommit}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{is\+Autocommit()}{isAutocommit()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+is\+Autocommit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_ab6c5390dc2b89ba2e41c6688523aef87}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a0c02c1e5f4fb1fd4c03c6ec956e48cff}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a0c02c1e5f4fb1fd4c03c6ec956e48cff}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!is\+Auto\+Commit@{is\+Auto\+Commit}}
+\index{is\+Auto\+Commit@{is\+Auto\+Commit}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{is\+Auto\+Commit()}{isAutoCommit()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+is\+Auto\+Commit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a9c74fcf2711698d212e1f30a104a0425}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_adeaa0a01acf79d5b609ce8757822948d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_adeaa0a01acf79d5b609ce8757822948d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!is\+E\+O\+F\+Deprecated@{is\+E\+O\+F\+Deprecated}}
+\index{is\+E\+O\+F\+Deprecated@{is\+E\+O\+F\+Deprecated}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{is\+E\+O\+F\+Deprecated()}{isEOFDeprecated()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+is\+E\+O\+F\+Deprecated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_ac41728a86890f318604684f6d8e36635}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_adade829bf44ed55a8ac1a93ae5716a4b}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_adade829bf44ed55a8ac1a93ae5716a4b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!is\+Last\+Row\+Sent@{is\+Last\+Row\+Sent}}
+\index{is\+Last\+Row\+Sent@{is\+Last\+Row\+Sent}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{is\+Last\+Row\+Sent()}{isLastRowSent()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+is\+Last\+Row\+Sent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a0c2296276bee98622e9bb340f9c7cb59}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a4409c3413cfab0fe0ce91af5d4c05454}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a4409c3413cfab0fe0ce91af5d4c05454}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!is\+Lower\+Case\+Table\+Names@{is\+Lower\+Case\+Table\+Names}}
+\index{is\+Lower\+Case\+Table\+Names@{is\+Lower\+Case\+Table\+Names}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{is\+Lower\+Case\+Table\+Names()}{isLowerCaseTableNames()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+is\+Lower\+Case\+Table\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is the server configured to use lower-\/case table names only?
+
+\begin{DoxyReturn}{Returns}
+true if lower\+\_\+case\+\_\+table\+\_\+names is \textquotesingle{}on\textquotesingle{} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a48d31222ed61fa5971aae698a5ff9fdf}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a649bec25ec5ac1c5084be7be5008844e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a649bec25ec5ac1c5084be7be5008844e}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!is\+No\+Backslash\+Escapes\+Set@{is\+No\+Backslash\+Escapes\+Set}}
+\index{is\+No\+Backslash\+Escapes\+Set@{is\+No\+Backslash\+Escapes\+Set}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{is\+No\+Backslash\+Escapes\+Set()}{isNoBackslashEscapesSet()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+is\+No\+Backslash\+Escapes\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is the server in a sql\+\_\+mode that does not allow us to use \textbackslash{} to escape things?
+
+\begin{DoxyReturn}{Returns}
+Returns the no\+Backslash\+Escapes. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a0ce8df759d76a4478164af19d85b837b}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a60bae77bcda04aac21fbbc5a029b8174}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a60bae77bcda04aac21fbbc5a029b8174}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!is\+Query\+Cache\+Enabled@{is\+Query\+Cache\+Enabled}}
+\index{is\+Query\+Cache\+Enabled@{is\+Query\+Cache\+Enabled}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{is\+Query\+Cache\+Enabled()}{isQueryCacheEnabled()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+is\+Query\+Cache\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_ae4eabba31c09190939a9e1886466c72d}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a4d7271374accd773d7db0f8858d479e7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a4d7271374accd773d7db0f8858d479e7}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!is\+Set\+Needed\+For\+Auto\+Commit\+Mode@{is\+Set\+Needed\+For\+Auto\+Commit\+Mode}}
+\index{is\+Set\+Needed\+For\+Auto\+Commit\+Mode@{is\+Set\+Needed\+For\+Auto\+Commit\+Mode}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{is\+Set\+Needed\+For\+Auto\+Commit\+Mode()}{isSetNeededForAutoCommitMode()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+is\+Set\+Needed\+For\+Auto\+Commit\+Mode (\begin{DoxyParamCaption}\item[{boolean}]{auto\+Commit\+Flag,  }\item[{boolean}]{elide\+Set\+Auto\+Commits\+Flag }\end{DoxyParamCaption})}
+
+Should S\+ET A\+U\+T\+O\+C\+O\+M\+M\+IT be sent to server if we are going to set auto\+Commit\+Flag in driver
+
+
+\begin{DoxyParams}{Parameters}
+{\em auto\+Commit\+Flag} & autocommit status we are going to set in driver \\
+\hline
+{\em elide\+Set\+Auto\+Commits\+Flag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if S\+ET A\+U\+T\+O\+C\+O\+M\+M\+IT to be sent 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a07301eeaa6402981ce961f528b4e09ef}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a07301eeaa6402981ce961f528b4e09ef}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!is\+Version@{is\+Version}}
+\index{is\+Version@{is\+Version}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{is\+Version()}{isVersion()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+is\+Version (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}}}]{version }\end{DoxyParamCaption})}
+
+Is the version of the My\+S\+QL server we are connected to the given version?
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & the version to check for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the version of the My\+S\+QL server we are connected is the given version 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a021c8f114fce23443b9a8b26074b137a}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ad51925b4903a656610eed30bfaa51562}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ad51925b4903a656610eed30bfaa51562}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!no\+Good\+Index\+Used@{no\+Good\+Index\+Used}}
+\index{no\+Good\+Index\+Used@{no\+Good\+Index\+Used}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{no\+Good\+Index\+Used()}{noGoodIndexUsed()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+no\+Good\+Index\+Used (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_affcc78ef2327efa3f81f7937ca3ca439}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aca343c9466cb45a783268924ce14b277}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aca343c9466cb45a783268924ce14b277}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!no\+Index\+Used@{no\+Index\+Used}}
+\index{no\+Index\+Used@{no\+Index\+Used}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{no\+Index\+Used()}{noIndexUsed()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+no\+Index\+Used (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a94f56669636895e83594c8f0fc89817a}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a17eedbc99f68f8306dd9855c7f55c5ec}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a17eedbc99f68f8306dd9855c7f55c5ec}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!preserve\+Old\+Transaction\+State@{preserve\+Old\+Transaction\+State}}
+\index{preserve\+Old\+Transaction\+State@{preserve\+Old\+Transaction\+State}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{preserve\+Old\+Transaction\+State()}{preserveOldTransactionState()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+preserve\+Old\+Transaction\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a1c74717444fce778adbd567143aa950a}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a1c74717444fce778adbd567143aa950a}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!query\+Was\+Slow@{query\+Was\+Slow}}
+\index{query\+Was\+Slow@{query\+Was\+Slow}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{query\+Was\+Slow()}{queryWasSlow()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+query\+Was\+Slow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a120504f00410f183697ee1c5d3dbeddc}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae5619ea0802405494970f91db5b1cc46}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae5619ea0802405494970f91db5b1cc46}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Auto\+Commit@{set\+Auto\+Commit}}
+\index{set\+Auto\+Commit@{set\+Auto\+Commit}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Auto\+Commit()}{setAutoCommit()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Auto\+Commit (\begin{DoxyParamCaption}\item[{boolean}]{auto\+Commit }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a17b272e332ab95b8d67e8df8d3588908}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9fa5513f7f2e28921a9d5b3331591bd1}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9fa5513f7f2e28921a9d5b3331591bd1}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Capabilities@{set\+Capabilities}}
+\index{set\+Capabilities@{set\+Capabilities}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Capabilities()}{setCapabilities()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Capabilities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_capabilities}{Server\+Capabilities}}}]{capabilities }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a061f04bcb0fbf1c553fd52639c62b1cc}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3820f7525abbc47c614a2f1ffa794475}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3820f7525abbc47c614a2f1ffa794475}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Character\+Set\+Metadata@{set\+Character\+Set\+Metadata}}
+\index{set\+Character\+Set\+Metadata@{set\+Character\+Set\+Metadata}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Character\+Set\+Metadata()}{setCharacterSetMetadata()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Character\+Set\+Metadata (\begin{DoxyParamCaption}\item[{String}]{character\+Set\+Metadata }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a494d0e19dd3695aa635d2696d19f0368}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a8b4347b3013dbe54d67b318815008340}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a8b4347b3013dbe54d67b318815008340}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Character\+Set\+Results\+On\+Server@{set\+Character\+Set\+Results\+On\+Server}}
+\index{set\+Character\+Set\+Results\+On\+Server@{set\+Character\+Set\+Results\+On\+Server}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Character\+Set\+Results\+On\+Server()}{setCharacterSetResultsOnServer()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Character\+Set\+Results\+On\+Server (\begin{DoxyParamCaption}\item[{String}]{character\+Set\+Results\+On\+Server }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a30cdcfb3f1137a3b74963b0ccdfd1014}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a6b2f480c08fa965e6559157f71a86970}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a6b2f480c08fa965e6559157f71a86970}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Client\+Param@{set\+Client\+Param}}
+\index{set\+Client\+Param@{set\+Client\+Param}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Client\+Param()}{setClientParam()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Client\+Param (\begin{DoxyParamCaption}\item[{long}]{client\+Param }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a25a797b7b770b843dfad239426ca0621}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a0136e27d19a065030e8acd8b855a1662}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a0136e27d19a065030e8acd8b855a1662}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Default\+Time\+Zone@{set\+Default\+Time\+Zone}}
+\index{set\+Default\+Time\+Zone@{set\+Default\+Time\+Zone}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Default\+Time\+Zone()}{setDefaultTimeZone()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Default\+Time\+Zone (\begin{DoxyParamCaption}\item[{Time\+Zone}]{default\+Time\+Zone }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_ae27787e7922817a157fdf6208e868756}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a394485ebd068b7fa0c9a0c7343fcd53c}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a394485ebd068b7fa0c9a0c7343fcd53c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Error\+Message\+Encoding@{set\+Error\+Message\+Encoding}}
+\index{set\+Error\+Message\+Encoding@{set\+Error\+Message\+Encoding}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Error\+Message\+Encoding()}{setErrorMessageEncoding()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Error\+Message\+Encoding (\begin{DoxyParamCaption}\item[{String}]{error\+Message\+Encoding }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a05ff2ff3c3265cb245ca9f1ff708d457}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ab7e6639fd06a4d47ab35e3cd89dfc10a}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ab7e6639fd06a4d47ab35e3cd89dfc10a}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Has\+Long\+Column\+Info@{set\+Has\+Long\+Column\+Info}}
+\index{set\+Has\+Long\+Column\+Info@{set\+Has\+Long\+Column\+Info}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Has\+Long\+Column\+Info()}{setHasLongColumnInfo()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Has\+Long\+Column\+Info (\begin{DoxyParamCaption}\item[{boolean}]{has\+Long\+Column\+Info }\end{DoxyParamCaption})}
+
+Does the server send back extra column info?
+
+
+\begin{DoxyParams}{Parameters}
+{\em has\+Long\+Column\+Info} & flag \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a004d9939fa7471ce08e0b404363642fc}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac50b43fb6e344f4b040cad7131f84ed6}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac50b43fb6e344f4b040cad7131f84ed6}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Metadata\+Collation\+Index@{set\+Metadata\+Collation\+Index}}
+\index{set\+Metadata\+Collation\+Index@{set\+Metadata\+Collation\+Index}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Metadata\+Collation\+Index()}{setMetadataCollationIndex()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Metadata\+Collation\+Index (\begin{DoxyParamCaption}\item[{int}]{metadata\+Collation\+Index }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a9472dd2bebc57f2dc9f94bae07ac6e9e}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a1fc54902245f1c34539d27846fa5e211}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a1fc54902245f1c34539d27846fa5e211}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Old\+Status\+Flags@{set\+Old\+Status\+Flags}}
+\index{set\+Old\+Status\+Flags@{set\+Old\+Status\+Flags}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Old\+Status\+Flags()}{setOldStatusFlags()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Old\+Status\+Flags (\begin{DoxyParamCaption}\item[{int}]{old\+Status\+Flags }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a8ca3607d493b411a09825465bf202eda}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_abd6266538f2562073361edbc958a3304}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_abd6266538f2562073361edbc958a3304}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Server\+Default\+Collation\+Index@{set\+Server\+Default\+Collation\+Index}}
+\index{set\+Server\+Default\+Collation\+Index@{set\+Server\+Default\+Collation\+Index}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Server\+Default\+Collation\+Index()}{setServerDefaultCollationIndex()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Server\+Default\+Collation\+Index (\begin{DoxyParamCaption}\item[{int}]{server\+Default\+Collation\+Index }\end{DoxyParamCaption})}
+
+Stores collation index which server provided in handshake greeting packet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em server\+Default\+Collation\+Index} & collation index \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_aa712ac71a0771a45a3f8b46ceaac4178}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a404e7d990dbe62a81e702565dd55c8b5}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a404e7d990dbe62a81e702565dd55c8b5}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Server\+Time\+Zone@{set\+Server\+Time\+Zone}}
+\index{set\+Server\+Time\+Zone@{set\+Server\+Time\+Zone}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Server\+Time\+Zone()}{setServerTimeZone()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Server\+Time\+Zone (\begin{DoxyParamCaption}\item[{Time\+Zone}]{server\+Time\+Zone }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a0278632316cb6f88139c404062beb68e}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a5075caf877a67ffac4ab458c54f56071}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a5075caf877a67ffac4ab458c54f56071}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Server\+Variables@{set\+Server\+Variables}}
+\index{set\+Server\+Variables@{set\+Server\+Variables}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Server\+Variables()}{setServerVariables()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Server\+Variables (\begin{DoxyParamCaption}\item[{Map$<$ String, String $>$}]{server\+Variables }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a47e9a273ef6de1e09dbacada62650998}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ad533b5d433cde1b38176e2718308c7a4}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ad533b5d433cde1b38176e2718308c7a4}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Status\+Flags@{set\+Status\+Flags}}
+\index{set\+Status\+Flags@{set\+Status\+Flags}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Status\+Flags()}{setStatusFlags()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Status\+Flags (\begin{DoxyParamCaption}\item[{int}]{status\+Flags }\end{DoxyParamCaption})}
+
+Sets new server status (from response) without saving it\textquotesingle{}s old state
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+Flags} & server status flags \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a855cbd715a8c33299d062a72fd75d8f4}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a22280140ed155d3eedb9ab2c9c636afe}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a22280140ed155d3eedb9ab2c9c636afe}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Status\+Flags@{set\+Status\+Flags}}
+\index{set\+Status\+Flags@{set\+Status\+Flags}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Status\+Flags()}{setStatusFlags()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Status\+Flags (\begin{DoxyParamCaption}\item[{int}]{status\+Flags,  }\item[{boolean}]{save\+Old\+Status\+Flags }\end{DoxyParamCaption})}
+
+Sets new server status (from response)
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+Flags} & new server status flags \\
+\hline
+{\em save\+Old\+Status\+Flags} & true if old server status flags should be preserved \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_acf86f0ae9cdfd88f758ec42bb72bf127}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a00f6fda062d4ecc37f9f2561bae423ca}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a00f6fda062d4ecc37f9f2561bae423ca}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!set\+Thread\+Id@{set\+Thread\+Id}}
+\index{set\+Thread\+Id@{set\+Thread\+Id}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{set\+Thread\+Id()}{setThreadId()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+set\+Thread\+Id (\begin{DoxyParamCaption}\item[{long}]{thread\+Id }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a376f1bef9dcabeda5451567df87ba210}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ab4ff668a507b74d55b1a67a47e983660}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ab4ff668a507b74d55b1a67a47e983660}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!stores\+Lower\+Case\+Table\+Names@{stores\+Lower\+Case\+Table\+Names}}
+\index{stores\+Lower\+Case\+Table\+Names@{stores\+Lower\+Case\+Table\+Names}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{stores\+Lower\+Case\+Table\+Names()}{storesLowerCaseTableNames()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+stores\+Lower\+Case\+Table\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_af13bb03c427785628050cb4466f6de24}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a46c8526aa6827ff0fd5a934cf40aab00}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a46c8526aa6827ff0fd5a934cf40aab00}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!use\+Ansi\+Quoted\+Identifiers@{use\+Ansi\+Quoted\+Identifiers}}
+\index{use\+Ansi\+Quoted\+Identifiers@{use\+Ansi\+Quoted\+Identifiers}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{use\+Ansi\+Quoted\+Identifiers()}{useAnsiQuotedIdentifiers()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+use\+Ansi\+Quoted\+Identifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a55ca4e6fce372e587c0bbc46089fa262}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a1ee7647193508670b38da91c9f39e11f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a1ee7647193508670b38da91c9f39e11f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!use\+Multi\+Results@{use\+Multi\+Results}}
+\index{use\+Multi\+Results@{use\+Multi\+Results}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{use\+Multi\+Results()}{useMultiResults()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+use\+Multi\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session_a7d92f74e5fe2cd93115d904f136b090b}{com.\+mysql.\+cj.\+protocol.\+Server\+Session}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a46fc1bfca9cc318f57884258726bcf4c}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a46fc1bfca9cc318f57884258726bcf4c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+C\+A\+N\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+E\+X\+P\+I\+R\+E\+D\+\_\+\+P\+A\+S\+S\+W\+O\+RD@{C\+L\+I\+E\+N\+T\+\_\+\+C\+A\+N\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+E\+X\+P\+I\+R\+E\+D\+\_\+\+P\+A\+S\+S\+W\+O\+RD}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+C\+A\+N\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+E\+X\+P\+I\+R\+E\+D\+\_\+\+P\+A\+S\+S\+W\+O\+RD@{C\+L\+I\+E\+N\+T\+\_\+\+C\+A\+N\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+E\+X\+P\+I\+R\+E\+D\+\_\+\+P\+A\+S\+S\+W\+O\+RD}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+C\+A\+N\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+E\+X\+P\+I\+R\+E\+D\+\_\+\+P\+A\+S\+S\+W\+O\+RD}{CLIENT\_CAN\_HANDLE\_EXPIRED\_PASSWORD}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+C\+A\+N\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+E\+X\+P\+I\+R\+E\+D\+\_\+\+P\+A\+S\+S\+W\+O\+RD = 0x00400000\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3571df6d003f0b5041708ba5a5f0b0ea}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3571df6d003f0b5041708ba5a5f0b0ea}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+M\+P\+R\+E\+SS@{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+M\+P\+R\+E\+SS}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+M\+P\+R\+E\+SS@{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+M\+P\+R\+E\+SS}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+M\+P\+R\+E\+SS}{CLIENT\_COMPRESS}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+M\+P\+R\+E\+SS = 0x00000020\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a03ba55d0f657d3fdfd5fcb79083f9910}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a03ba55d0f657d3fdfd5fcb79083f9910}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+A\+T\+T\+RS@{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+A\+T\+T\+RS}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+A\+T\+T\+RS@{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+A\+T\+T\+RS}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+A\+T\+T\+RS}{CLIENT\_CONNECT\_ATTRS}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+A\+T\+T\+RS = 0x00100000\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a94799cd3c2d19d0688ea1189aee1e788}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a94799cd3c2d19d0688ea1189aee1e788}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+W\+I\+T\+H\+\_\+\+DB@{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+W\+I\+T\+H\+\_\+\+DB}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+W\+I\+T\+H\+\_\+\+DB@{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+W\+I\+T\+H\+\_\+\+DB}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+W\+I\+T\+H\+\_\+\+DB}{CLIENT\_CONNECT\_WITH\_DB}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+W\+I\+T\+H\+\_\+\+DB = 0x00000008\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_af4354f6755982c57f502489b585eacb4}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_af4354f6755982c57f502489b585eacb4}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+E\+OF@{C\+L\+I\+E\+N\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+E\+OF}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+E\+OF@{C\+L\+I\+E\+N\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+E\+OF}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+E\+OF}{CLIENT\_DEPRECATE\_EOF}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+E\+OF = 0x01000000\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae83936b58792485548ed82b692e11540}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae83936b58792485548ed82b692e11540}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+F\+O\+U\+N\+D\+\_\+\+R\+O\+WS@{C\+L\+I\+E\+N\+T\+\_\+\+F\+O\+U\+N\+D\+\_\+\+R\+O\+WS}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+F\+O\+U\+N\+D\+\_\+\+R\+O\+WS@{C\+L\+I\+E\+N\+T\+\_\+\+F\+O\+U\+N\+D\+\_\+\+R\+O\+WS}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+F\+O\+U\+N\+D\+\_\+\+R\+O\+WS}{CLIENT\_FOUND\_ROWS}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+F\+O\+U\+N\+D\+\_\+\+R\+O\+WS = 0x00000002\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac301c144f07b3d53d0b25a5c5480fed8}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac301c144f07b3d53d0b25a5c5480fed8}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE@{C\+L\+I\+E\+N\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE@{C\+L\+I\+E\+N\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE}{CLIENT\_INTERACTIVE}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE = 0x00000400\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a30849aeb0efe6b6b175aafda4be95c37}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a30849aeb0efe6b6b175aafda4be95c37}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+F\+I\+L\+ES@{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+F\+I\+L\+ES}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+F\+I\+L\+ES@{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+F\+I\+L\+ES}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+F\+I\+L\+ES}{CLIENT\_LOCAL\_FILES}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+F\+I\+L\+ES = 0x00000080\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a703dd61c0350eaf916079bdebd1de0f5}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a703dd61c0350eaf916079bdebd1de0f5}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+N\+G\+\_\+\+F\+L\+AG@{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+N\+G\+\_\+\+F\+L\+AG}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+N\+G\+\_\+\+F\+L\+AG@{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+N\+G\+\_\+\+F\+L\+AG}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+N\+G\+\_\+\+F\+L\+AG}{CLIENT\_LONG\_FLAG}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+N\+G\+\_\+\+F\+L\+AG = 0x00000004\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9e181d1455ead8063c5b8a69340342f3}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a9e181d1455ead8063c5b8a69340342f3}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+N\+G\+\_\+\+P\+A\+S\+S\+W\+O\+RD@{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+N\+G\+\_\+\+P\+A\+S\+S\+W\+O\+RD}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+N\+G\+\_\+\+P\+A\+S\+S\+W\+O\+RD@{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+N\+G\+\_\+\+P\+A\+S\+S\+W\+O\+RD}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+N\+G\+\_\+\+P\+A\+S\+S\+W\+O\+RD}{CLIENT\_LONG\_PASSWORD}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+L\+O\+N\+G\+\_\+\+P\+A\+S\+S\+W\+O\+RD = 0x00000001\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a261fe8da7413e0ecf0d73774c7229495}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a261fe8da7413e0ecf0d73774c7229495}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+R\+E\+S\+U\+L\+TS@{C\+L\+I\+E\+N\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+R\+E\+S\+U\+L\+TS}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+R\+E\+S\+U\+L\+TS@{C\+L\+I\+E\+N\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+R\+E\+S\+U\+L\+TS}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+R\+E\+S\+U\+L\+TS}{CLIENT\_MULTI\_RESULTS}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+R\+E\+S\+U\+L\+TS = 0x00020000\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac5e827f5fd45e70902a3d83827007cf3}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac5e827f5fd45e70902a3d83827007cf3}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+S\+T\+A\+T\+E\+M\+E\+N\+TS@{C\+L\+I\+E\+N\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+S\+T\+A\+T\+E\+M\+E\+N\+TS}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+S\+T\+A\+T\+E\+M\+E\+N\+TS@{C\+L\+I\+E\+N\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+S\+T\+A\+T\+E\+M\+E\+N\+TS}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+S\+T\+A\+T\+E\+M\+E\+N\+TS}{CLIENT\_MULTI\_STATEMENTS}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+S\+T\+A\+T\+E\+M\+E\+N\+TS = 0x00010000\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a0f24415fd8bafd8f59855c8d7ba08b64}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a0f24415fd8bafd8f59855c8d7ba08b64}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+A\+U\+TH@{C\+L\+I\+E\+N\+T\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+A\+U\+TH}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+A\+U\+TH@{C\+L\+I\+E\+N\+T\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+A\+U\+TH}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+A\+U\+TH}{CLIENT\_PLUGIN\_AUTH}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+A\+U\+TH = 0x00080000\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a7e8d705e313e8c9e33cb7e60bc7288bc}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a7e8d705e313e8c9e33cb7e60bc7288bc}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+A\+U\+T\+H\+\_\+\+L\+E\+N\+E\+N\+C\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+D\+A\+TA@{C\+L\+I\+E\+N\+T\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+A\+U\+T\+H\+\_\+\+L\+E\+N\+E\+N\+C\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+D\+A\+TA}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+A\+U\+T\+H\+\_\+\+L\+E\+N\+E\+N\+C\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+D\+A\+TA@{C\+L\+I\+E\+N\+T\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+A\+U\+T\+H\+\_\+\+L\+E\+N\+E\+N\+C\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+D\+A\+TA}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+A\+U\+T\+H\+\_\+\+L\+E\+N\+E\+N\+C\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+D\+A\+TA}{CLIENT\_PLUGIN\_AUTH\_LENENC\_CLIENT\_DATA}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+A\+U\+T\+H\+\_\+\+L\+E\+N\+E\+N\+C\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+D\+A\+TA = 0x00200000\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac6f7af0e348dfe33281f8bfc8ecdc906}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac6f7af0e348dfe33281f8bfc8ecdc906}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+41@{C\+L\+I\+E\+N\+T\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+41}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+41@{C\+L\+I\+E\+N\+T\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+41}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+41}{CLIENT\_PROTOCOL\_41}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+41 = 0x00000200\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a46dcf545eb83128f94e3055b0cc53624}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a46dcf545eb83128f94e3055b0cc53624}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+P\+S\+\_\+\+M\+U\+L\+T\+I\+\_\+\+R\+E\+S\+U\+L\+TS@{C\+L\+I\+E\+N\+T\+\_\+\+P\+S\+\_\+\+M\+U\+L\+T\+I\+\_\+\+R\+E\+S\+U\+L\+TS}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+P\+S\+\_\+\+M\+U\+L\+T\+I\+\_\+\+R\+E\+S\+U\+L\+TS@{C\+L\+I\+E\+N\+T\+\_\+\+P\+S\+\_\+\+M\+U\+L\+T\+I\+\_\+\+R\+E\+S\+U\+L\+TS}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+P\+S\+\_\+\+M\+U\+L\+T\+I\+\_\+\+R\+E\+S\+U\+L\+TS}{CLIENT\_PS\_MULTI\_RESULTS}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+P\+S\+\_\+\+M\+U\+L\+T\+I\+\_\+\+R\+E\+S\+U\+L\+TS = 0x00040000\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a921f2f1746a31fbe494f1ac264da0e83}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a921f2f1746a31fbe494f1ac264da0e83}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+R\+E\+S\+E\+R\+V\+ED@{C\+L\+I\+E\+N\+T\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+R\+E\+S\+E\+R\+V\+ED@{C\+L\+I\+E\+N\+T\+\_\+\+R\+E\+S\+E\+R\+V\+ED}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+R\+E\+S\+E\+R\+V\+ED}{CLIENT\_RESERVED}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+R\+E\+S\+E\+R\+V\+ED = 0x00004000\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a7d8e14fcd08c510b951ee715b870c571}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a7d8e14fcd08c510b951ee715b870c571}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON@{C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON@{C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON}{CLIENT\_SECURE\_CONNECTION}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON = 0x00008000\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae41eec1c6126a728c82a0bdc3a366b2b}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae41eec1c6126a728c82a0bdc3a366b2b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+T\+R\+A\+CK@{C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+T\+R\+A\+CK}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+T\+R\+A\+CK@{C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+T\+R\+A\+CK}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+T\+R\+A\+CK}{CLIENT\_SESSION\_TRACK}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+T\+R\+A\+CK = 0x00800000\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ab710f1c8c0eb6890bc5b77fd3f384a77}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ab710f1c8c0eb6890bc5b77fd3f384a77}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+S\+SL@{C\+L\+I\+E\+N\+T\+\_\+\+S\+SL}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+S\+SL@{C\+L\+I\+E\+N\+T\+\_\+\+S\+SL}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+S\+SL}{CLIENT\_SSL}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+S\+SL = 0x00000800\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3040ed4859c291123a53cfd7538c4376}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a3040ed4859c291123a53cfd7538c4376}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!C\+L\+I\+E\+N\+T\+\_\+\+T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+NS@{C\+L\+I\+E\+N\+T\+\_\+\+T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+NS}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+NS@{C\+L\+I\+E\+N\+T\+\_\+\+T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+NS}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+NS}{CLIENT\_TRANSACTIONS}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+C\+L\+I\+E\+N\+T\+\_\+\+T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+NS = 0x00002000\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a05bb96d23cfc48cd8c3330bcf72bce21}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a05bb96d23cfc48cd8c3330bcf72bce21}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!index\+To\+Custom\+Mysql\+Charset@{index\+To\+Custom\+Mysql\+Charset}}
+\index{index\+To\+Custom\+Mysql\+Charset@{index\+To\+Custom\+Mysql\+Charset}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{index\+To\+Custom\+Mysql\+Charset}{indexToCustomMysqlCharset}}
+{\footnotesize\ttfamily Map$<$Integer, String$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+index\+To\+Custom\+Mysql\+Charset = null}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae2143cf09383039fb6cc598e5a80bd38}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ae2143cf09383039fb6cc598e5a80bd38}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!mysql\+Charset\+To\+Custom\+Mblen@{mysql\+Charset\+To\+Custom\+Mblen}}
+\index{mysql\+Charset\+To\+Custom\+Mblen@{mysql\+Charset\+To\+Custom\+Mblen}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{mysql\+Charset\+To\+Custom\+Mblen}{mysqlCharsetToCustomMblen}}
+{\footnotesize\ttfamily Map$<$String, Integer$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+mysql\+Charset\+To\+Custom\+Mblen = null}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aea95769f892a5a920b4781c3a9d10251}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aea95769f892a5a920b4781c3a9d10251}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!S\+E\+R\+V\+E\+R\+\_\+\+M\+O\+R\+E\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+E\+X\+I\+S\+TS@{S\+E\+R\+V\+E\+R\+\_\+\+M\+O\+R\+E\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+E\+X\+I\+S\+TS}}
+\index{S\+E\+R\+V\+E\+R\+\_\+\+M\+O\+R\+E\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+E\+X\+I\+S\+TS@{S\+E\+R\+V\+E\+R\+\_\+\+M\+O\+R\+E\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+E\+X\+I\+S\+TS}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{S\+E\+R\+V\+E\+R\+\_\+\+M\+O\+R\+E\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+E\+X\+I\+S\+TS}{SERVER\_MORE\_RESULTS\_EXISTS}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+S\+E\+R\+V\+E\+R\+\_\+\+M\+O\+R\+E\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+E\+X\+I\+S\+TS = 8\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aac04442bd02687292134ab604f5d6df7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_aac04442bd02687292134ab604f5d6df7}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+N\+O\+\_\+\+G\+O\+O\+D\+\_\+\+I\+N\+D\+E\+X\+\_\+\+U\+S\+ED@{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+N\+O\+\_\+\+G\+O\+O\+D\+\_\+\+I\+N\+D\+E\+X\+\_\+\+U\+S\+ED}}
+\index{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+N\+O\+\_\+\+G\+O\+O\+D\+\_\+\+I\+N\+D\+E\+X\+\_\+\+U\+S\+ED@{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+N\+O\+\_\+\+G\+O\+O\+D\+\_\+\+I\+N\+D\+E\+X\+\_\+\+U\+S\+ED}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+N\+O\+\_\+\+G\+O\+O\+D\+\_\+\+I\+N\+D\+E\+X\+\_\+\+U\+S\+ED}{SERVER\_QUERY\_NO\_GOOD\_INDEX\_USED}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+N\+O\+\_\+\+G\+O\+O\+D\+\_\+\+I\+N\+D\+E\+X\+\_\+\+U\+S\+ED = 16\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a40dd6773d6bdaeb065e4c24aa7973f84}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a40dd6773d6bdaeb065e4c24aa7973f84}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+N\+O\+\_\+\+I\+N\+D\+E\+X\+\_\+\+U\+S\+ED@{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+N\+O\+\_\+\+I\+N\+D\+E\+X\+\_\+\+U\+S\+ED}}
+\index{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+N\+O\+\_\+\+I\+N\+D\+E\+X\+\_\+\+U\+S\+ED@{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+N\+O\+\_\+\+I\+N\+D\+E\+X\+\_\+\+U\+S\+ED}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+N\+O\+\_\+\+I\+N\+D\+E\+X\+\_\+\+U\+S\+ED}{SERVER\_QUERY\_NO\_INDEX\_USED}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+N\+O\+\_\+\+I\+N\+D\+E\+X\+\_\+\+U\+S\+ED = 32\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_af7568ceac4ed5c54ecec128043715046}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_af7568ceac4ed5c54ecec128043715046}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+W\+A\+S\+\_\+\+S\+L\+OW@{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+W\+A\+S\+\_\+\+S\+L\+OW}}
+\index{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+W\+A\+S\+\_\+\+S\+L\+OW@{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+W\+A\+S\+\_\+\+S\+L\+OW}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+W\+A\+S\+\_\+\+S\+L\+OW}{SERVER\_QUERY\_WAS\_SLOW}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+S\+E\+R\+V\+E\+R\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+W\+A\+S\+\_\+\+S\+L\+OW = 2048\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a54c9bc32808c29e58e4c461bd82eea48}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a54c9bc32808c29e58e4c461bd82eea48}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+U\+T\+O\+C\+O\+M\+M\+IT@{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+U\+T\+O\+C\+O\+M\+M\+IT}}
+\index{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+U\+T\+O\+C\+O\+M\+M\+IT@{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+U\+T\+O\+C\+O\+M\+M\+IT}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+U\+T\+O\+C\+O\+M\+M\+IT}{SERVER\_STATUS\_AUTOCOMMIT}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+U\+T\+O\+C\+O\+M\+M\+IT = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a4d5dd4d793a3f237f6c28ac077b6e4be}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a4d5dd4d793a3f237f6c28ac077b6e4be}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+U\+R\+S\+O\+R\+\_\+\+E\+X\+I\+S\+TS@{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+U\+R\+S\+O\+R\+\_\+\+E\+X\+I\+S\+TS}}
+\index{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+U\+R\+S\+O\+R\+\_\+\+E\+X\+I\+S\+TS@{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+U\+R\+S\+O\+R\+\_\+\+E\+X\+I\+S\+TS}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+U\+R\+S\+O\+R\+\_\+\+E\+X\+I\+S\+TS}{SERVER\_STATUS\_CURSOR\_EXISTS}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+U\+R\+S\+O\+R\+\_\+\+E\+X\+I\+S\+TS = 64\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a2e17ad7ebafdf5c6ef09e26247c622e5}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_a2e17ad7ebafdf5c6ef09e26247c622e5}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+\_\+\+T\+R\+A\+NS@{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+\_\+\+T\+R\+A\+NS}}
+\index{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+\_\+\+T\+R\+A\+NS@{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+\_\+\+T\+R\+A\+NS}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+\_\+\+T\+R\+A\+NS}{SERVER\_STATUS\_IN\_TRANS}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+\_\+\+T\+R\+A\+NS = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac4f1803f0d5646e2025ddc000df4a63f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_server_session_ac4f1803f0d5646e2025ddc000df4a63f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}!S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+A\+S\+T\+\_\+\+R\+O\+W\+\_\+\+S\+E\+NT@{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+A\+S\+T\+\_\+\+R\+O\+W\+\_\+\+S\+E\+NT}}
+\index{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+A\+S\+T\+\_\+\+R\+O\+W\+\_\+\+S\+E\+NT@{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+A\+S\+T\+\_\+\+R\+O\+W\+\_\+\+S\+E\+NT}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Server\+Session}}
+\subsubsection{\texorpdfstring{S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+A\+S\+T\+\_\+\+R\+O\+W\+\_\+\+S\+E\+NT}{SERVER\_STATUS\_LAST\_ROW\_SENT}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Server\+Session.\+S\+E\+R\+V\+E\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+A\+S\+T\+\_\+\+R\+O\+W\+\_\+\+S\+E\+NT = 128\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/\mbox{\hyperlink{_native_server_session_8java}{Native\+Server\+Session.\+java}}\end{DoxyCompactItemize}

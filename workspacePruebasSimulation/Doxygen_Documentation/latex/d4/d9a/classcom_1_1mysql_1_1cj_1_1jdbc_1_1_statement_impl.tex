@@ -1,0 +1,1894 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl}{}\section{com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl}\index{com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl@{com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_client_prepared_statement}{com.\+mysql.\+cj.\+jdbc.\+Client\+Prepared\+Statement}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab7415feadb30fb623edffd1b9bd40d5d}{Statement\+Impl}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} c, String catalog)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aea9552692a06b93f8f8ed477c5d879c4}{add\+Batch}} (String sql)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a9fff3c6369792a80971d749bc3d2303a}{add\+Batch}} (Object batch)
+\item 
+List$<$ Object $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a19609eb768e13632f7a8eb0fd14cdfd5}{get\+Batched\+Args}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a89d3ae6ba7d634b3a5aa0b9014b2cf80}{cancel}} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a6730720b7a5409cab4d4c537b514f7c8}{clear\+Batch}} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a42618e455d715cde9a92efbc6922b252}{clear\+Batched\+Args}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a7356ed117aa4417ec6ce92292f53470b}{clear\+Warnings}} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac913294cd1adc42af73229a6ba2e4f0b}{close}} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aaf649eaefb9458d2857697f50ba46245}{remove\+Open\+Result\+Set}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} rs)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac4a8718b3d1e416f72dbe33370434b0d}{get\+Open\+Result\+Set\+Count}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a973ff5045e258a5c3e156887c116c976}{enable\+Streaming\+Results}} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a9e5713d601e7e410e0edb1647b6f9160}{disable\+Streaming\+Results}} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_cancel_query_task}{Cancel\+Query\+Task}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0f8e090e92e82672734e247c080f7da7}{start\+Query\+Timer}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} stmt\+To\+Cancel, int timeout)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a45e2d251ef9edf83345cde29d58dd704}{stop\+Query\+Timer}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_cancel_query_task}{Cancel\+Query\+Task}} timeout\+Task, boolean rethrow\+Cancel\+Reason, boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8409855892d4f4c55a35f3444f50825c}{check\+Cancel\+Timeout}})
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a55932ba2147827cc8b76353c14332c1f}{execute}} (String sql)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a51c8920bf35fc909ec12c2755ee2c491}{statement\+Begins}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_afca7737baacefddb5151fa0c81a20ee0}{reset\+Cancelled\+State}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a3a037fac1a8f37129b0eab24203b73f9}{execute}} (String sql, int return\+Generated\+Keys)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae74dd4c72023e709b23c9ea71ca1678a}{execute}} (String sql, int\mbox{[}$\,$\mbox{]} generated\+Key\+Indices)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a165371a7abd4d72d54a8ceaf0066aee1}{execute}} (String sql, String\mbox{[}$\,$\mbox{]} generated\+Key\+Names)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a812ff94727864cc68fe96aaa38dbce6a}{execute\+Batch}} ()  throws S\+Q\+L\+Exception 
+\item 
+java.\+sql.\+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad8bdf41d3e788681fe1adcf961b176ef}{execute\+Query}} (String sql)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a27a4381bb8f1b302a3f8e06cf3276023}{execute\+Simple\+Non\+Query}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} c, String non\+Query)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8df7dbcd016833437419cfdbae14b187}{execute\+Update}} (String sql)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a17446c85d153a1456965eb64858b5f46}{execute\+Update}} (String sql, int auto\+Generated\+Keys)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2ff60b126d55ceb7d991c9d5f56cebb6}{execute\+Update}} (String sql, int\mbox{[}$\,$\mbox{]} column\+Indexes)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad715518d5ddeca0a3a8771646c467d0b}{execute\+Update}} (String sql, String\mbox{[}$\,$\mbox{]} column\+Names)  throws S\+Q\+L\+Exception 
+\item 
+java.\+sql.\+Connection \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5e4c41ddb78ca7533f4984c9f6c996c4}{get\+Connection}} ()  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab0ef6daffffd7fd9dc6405c78b697b7d}{get\+Fetch\+Direction}} ()  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2e309596729b0de9bc9230e745c9350f}{get\+Fetch\+Size}} ()  throws S\+Q\+L\+Exception 
+\item 
+java.\+sql.\+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a498dcb08802ab5ebfb700b3bae3ff1f2}{get\+Generated\+Keys}} ()  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af48b4bdf41d529d92def194cbe611acf}{get\+Last\+Insert\+ID}} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a05b7122d9eb36876362b1e526e9dfd38}{get\+Long\+Update\+Count}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1dbdd8b00e13cbaadf54920e8d93075d}{get\+Max\+Field\+Size}} ()  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae2447bc18fbb4aba8ef64f48f0c90c36}{get\+Max\+Rows}} ()  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0791ff241a89529adb0be7da26a0ec62}{get\+More\+Results}} ()  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2cf53265012d4410f8090334c4837e81}{get\+More\+Results}} (int current)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_acc6d1eb26165bde353224ca1c5d9f4cb}{get\+Query\+Timeout}} ()  throws S\+Q\+L\+Exception 
+\item 
+java.\+sql.\+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8bf30f2ecfd13ebcfbde03b082172bb1}{get\+Result\+Set}} ()  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4a5fa990b06601f984e4393d6cb02b26}{get\+Result\+Set\+Concurrency}} ()  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a84b0f5b22d3ce2bd808aceb6c17e4620}{get\+Result\+Set\+Holdability}} ()  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0845a6219a16770f3675269fc28ade3b}{get\+Result\+Set\+Type}} ()  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abb1d31f01f22e76a4d2a03c26905cb2e}{get\+Update\+Count}} ()  throws S\+Q\+L\+Exception 
+\item 
+java.\+sql.\+S\+Q\+L\+Warning \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aeeda73d9ee01ed8c74d90c4014614412}{get\+Warnings}} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a60cd7b41aa7098febdb3f9af3aa40423}{set\+Cursor\+Name}} (String name)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a177506cc06af0885ffceef360e697bb0}{set\+Escape\+Processing}} (boolean enable)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5f61e150957f4bdfa9682061008d448f}{set\+Fetch\+Direction}} (int direction)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad68efa27b29ed10cdc35f711dad0d16f}{set\+Fetch\+Size}} (int rows)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a903fdf158910d8f86a7417699ac93064}{set\+Hold\+Results\+Open\+Over\+Close}} (boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a3313b50d4d597415d14dedd1620de480}{hold\+Results\+Open\+Over\+Close}})
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab0013f973a2fe60cb9cdbfa6f53486e6}{set\+Max\+Field\+Size}} (int max)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab0226070ba29ae3c0cf7431d7b902c01}{set\+Max\+Rows}} (int max)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4bc4a551083ec1e3a3cabcea2da922ad}{set\+Query\+Timeout}} (int seconds)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_affaded3f0d3bc5a4ff0d80928ddfd8bc}{is\+Closed}} ()  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af6867cf70a7da2cf3141b4435116faeb}{is\+Poolable}} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac5a27f06b5bc99195e039732366a33f5}{set\+Poolable}} (boolean poolable)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a403bf25ba81ab01a60bdb9f2d4b4cfed}{is\+Wrapper\+For}} (Class$<$?$>$ iface)  throws S\+Q\+L\+Exception 
+\item 
+Input\+Stream \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a52f35ba4029870388a69d493851e726a}{get\+Local\+Infile\+Input\+Stream}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a398ed93fc7171fac680cd867a87cbf23}{set\+Local\+Infile\+Input\+Stream}} (Input\+Stream stream)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abf41b78c8e7c3e4f62f7bedb8bf1a4b0}{set\+Ping\+Target}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_ping_target}{Ping\+Target}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a6e08338f8dca3b16c9da609a571fcf29}{ping\+Target}})
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8c7aeabcfab5a1dcac5bf2fec0accaab}{get\+Exception\+Interceptor}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_acd9358a76e0fe9e8aa7f5cfb4ee6a5af}{close\+On\+Completion}} ()  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a098584b310115f209ef1c28829438e28}{is\+Close\+On\+Completion}} ()  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad5138e585c47eef34667efe73d0a954f}{execute\+Large\+Batch}} ()  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a33be0126be83d0094c9d363132497a4e}{execute\+Large\+Update}} (String sql)  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_acb364f005fd4a5b579ebecbc3303fca9}{execute\+Large\+Update}} (String sql, int auto\+Generated\+Keys)  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a80eeb600ed30f4f2dc7ea99891e594b1}{execute\+Large\+Update}} (String sql, int\mbox{[}$\,$\mbox{]} column\+Indexes)  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac8be77a2303189e5efa1c5c9d34d0962}{execute\+Large\+Update}} (String sql, String\mbox{[}$\,$\mbox{]} column\+Names)  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a413626efa58d8aac8c72b36bb0ff4c33}{get\+Large\+Max\+Rows}} ()  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aeb27ff7e4f987d731094d20bf30fefad}{get\+Large\+Update\+Count}} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_adcb9676c5158982c94c3213a11feeb17}{set\+Large\+Max\+Rows}} (long max)  throws S\+Q\+L\+Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af2b2cc49667c4ca719920667ed148629}{get\+Current\+Catalog}} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae87860ea933fb4d96b255f57d5fa5580}{get\+Server\+Statement\+Id}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a42a752f62a59215845a9faf514893dba}{get\+Id}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aee9725a333800726518dc41fb794d1cc}{set\+Cancel\+Status}} (\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_query_1_1_cancel_status}{Cancel\+Status}} cs)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8409855892d4f4c55a35f3444f50825c}{check\+Cancel\+Timeout}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a9ff54c722b7738065d93da540326ffad}{get\+Session}} ()
+\item 
+Object \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a428c7f909851189bed9fdc590ee2e770}{get\+Cancel\+Timeout\+Mutex}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af05f123c5cf2cf971f7d5a8929b7c962}{close\+Query}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1c6f564765bab67e9f9330b362f930ca}{get\+Result\+Fetch\+Size}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a54925c630ea2ab107815206f742e7be9}{set\+Result\+Fetch\+Size}} (int fetch\+Size)
+\item 
+Resultset.\+Type \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4f0bfa0851a118ae62acd9420304bdd0}{get\+Result\+Type}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a7b30ea29a192772e8c464cec82eacb32}{set\+Result\+Type}} (Resultset.\+Type result\+Set\+Type)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae819d62406476bbeb71be402eff8f619}{get\+Timeout\+In\+Millis}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a88a77da140cb220313f9f876f08ee0a1}{set\+Timeout\+In\+Millis}} (int timeout\+In\+Millis)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_profiler_event_handler}{Profiler\+Event\+Handler}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a718d61ccf9261f402e7d28a295aca55c}{get\+Event\+Sink}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a7f46764af12c9648ac8ac2929b275fd4}{set\+Event\+Sink}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_profiler_event_handler}{Profiler\+Event\+Handler}} event\+Sink)
+\item 
+Atomic\+Boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab253ad63963434ee5cde7ca8e68f7ff6}{get\+Statement\+Executing}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a30dda4ad8c6bc0be8eb3c926c9a1e0f1}{set\+Current\+Catalog}} (String current\+Catalog)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a63d97344f6b1ebede1e07b71d13a923d}{is\+Clear\+Warnings\+Called}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a6e7f50419ea0c769393113fde7de7b87}{set\+Clear\+Warnings\+Called}} (boolean clear\+Warnings\+Called)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a03be1a8bab079e9da100366153fc4238}{get\+Query}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aa64fae9361367a5f37523a7031bb0e69}{max\+Rows}} = -\/1
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final byte \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abbc3c2e085f83d079cf486f4c460d127}{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+F\+A\+L\+SE}} = 0
+\item 
+static final byte \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae55f926f3d136716603ff6d792d73230}{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+T\+R\+UE}} = 1
+\item 
+static final byte \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a37cd97de6fa460a4f219706ef6375e74}{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+U\+N\+K\+N\+O\+WN}} = -\/1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a754a5bf5b0c4a83c123c657e6834d16c}{init\+Query}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abd738a18f0109b2305a642025eb4a3bb}{check\+Closed}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a153a70521a7a239c1d6ad089f474d7ba}{check\+For\+Dml}} (String sql, char first\+Statement\+Char)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae8ad6b113e7dffaf4f20129eba328f7b}{check\+Null\+Or\+Empty\+Query}} (String sql)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a471a61331072cf89533c58507ad21719}{close\+All\+Open\+Results}} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a424894ae04079fd072300d7a54de6243}{implicitly\+Close\+All\+Open\+Results}} ()  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4a514bb3e111c30e6b376b74bb8f78e8}{create\+Streaming\+Result\+Set}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a04f28c7dc2d7b2c20ae6fad4301dd8fc}{setup\+Streaming\+Timeout}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} con)  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abd879bf637f7f3ba5e74050912735836}{execute\+Batch\+Internal}} ()  throws S\+Q\+L\+Exception 
+\item 
+final boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5674003fcd332a1ac38d549b0b4c806e}{has\+Deadlock\+Or\+Timeout\+Rolled\+Back\+Tx}} (S\+Q\+L\+Exception ex)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1b7f947e15b58dbe233271842c0b6175}{process\+Multi\+Counts\+And\+Keys}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl}{Statement\+Impl}} batched\+Statement, int update\+Count\+Counter, long\mbox{[}$\,$\mbox{]} update\+Counts)  throws S\+Q\+L\+Exception 
+\item 
+S\+Q\+L\+Exception \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2d99664aa399918797c4238891f59fba}{handle\+Exception\+For\+Batch}} (int end\+Of\+Batch\+Index, int num\+Values\+Per\+Batch, long\mbox{[}$\,$\mbox{]} update\+Counts, S\+Q\+L\+Exception ex)  throws Batch\+Update\+Exception, S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1d04ca76ab91fea81ce3a67550de429b}{do\+Ping\+Instead}} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad3d32ab94e514770f0bd9517bfd21221}{generate\+Ping\+Result\+Set}} ()  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aa3b2b9e62f16d87eb9f3f877a1b12928}{execute\+Update\+Internal}} (String sql, boolean is\+Batch, boolean return\+Generated\+Keys)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a059f84ba3f95ea77a0a3c764e3ea00f2}{get\+Generated\+Keys\+Internal}} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a290944a1b4c5ccf73dcbad92fa755808}{get\+Generated\+Keys\+Internal}} (long num\+Keys)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a9e9be16d68c66d0ad86147417269fee3}{get\+Result\+Set\+Internal}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aea1b46dca9271ff10f7e65ba92c224fa}{real\+Close}} (boolean called\+Explicitly, boolean close\+Open\+Results)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af9a603cba639540f2cb9c6d998cf149e}{get\+Batched\+Generated\+Keys}} (java.\+sql.\+Statement batched\+Statement)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae919819a2a02e89738113125b950d694}{get\+Batched\+Generated\+Keys}} (int max\+Keys)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4731b8a25ed40cab2a2f5f238eba7a2a}{contains\+On\+Duplicate\+Key\+In\+String}} (String sql)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a7b294b3903bade079f3fb8addee17ab7}{find\+Start\+Of\+Statement}} (String sql)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_message_builder}{Native\+Message\+Builder}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a22d76e354be8de4952f86504a3433251}{command\+Builder}} = new \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_message_builder}{Native\+Message\+Builder}}()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a013d9c1b743d83cb092f7175327a8455}{char\+Encoding}} = null
+\item 
+volatile \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0d65d87b997eec0472cc8f07f376cfe0}{connection}} = null
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af7455e23bee0b1db4c8b8aa1a94f5412}{do\+Escape\+Processing}} = true
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5bdc6952f3179144fc55b513bed5a5d7}{is\+Closed}} = false
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a68a8e8c2a5616f548cc9152817fb0459}{last\+Insert\+Id}} = -\/1
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a355103d25d6487623132cf8d0c64c9ab}{max\+Field\+Size}} = (Integer) \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_property_definitions_afd49a84fa2e960cf885e7925aa9d0157}{Property\+Definitions.\+get\+Property\+Definition}}(\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_property_definitions_a12f43563b2f4047d96e88f0b90244c83}{Property\+Definitions.\+P\+N\+A\+M\+E\+\_\+max\+Allowed\+Packet}}).get\+Default\+Value()
+\item 
+Set$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a812055d2262412bf71c9553cb0e7640c}{open\+Results}} = new Hash\+Set$<$$>$()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0e2a7c6a67916ad9df5f99e913c85daf}{pedantic}} = false
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a07b21aaed79ec5115bfb9edee45e95d5}{point\+Of\+Origin}}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aaee84d382bc40b2843416ce3b1a52593}{profile\+S\+QL}} = false
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4dbf800c7a281faff1b33168d5785a01}{results}} = null
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a42ed6f6f9121ef0ed2c3849f3bccfc16}{generated\+Keys\+Results}} = null
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8cf4c2416671121707036791a1cd92b7}{result\+Set\+Concurrency}} = 0
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1c79bc87673f3bd4df386f866ba9a838}{update\+Count}} = -\/1
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad600cc8454dd1cfa63e414a9d5015cd0}{use\+Usage\+Advisor}} = false
+\item 
+S\+Q\+L\+Warning \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a33a86beb6f375456f45c42eef969d0bc}{warning\+Chain}} = null
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a3313b50d4d597415d14dedd1620de480}{hold\+Results\+Open\+Over\+Close}} = false
+\item 
+Array\+List$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_afc0b4a5f7795f9f48929405d708e96e9}{batched\+Generated\+Keys}} = null
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2bb72e36b3517dd1e58a1a9700788eb2}{retrieve\+Generated\+Keys}} = false
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad72b9304ff55338468096c06c5580bc2}{continue\+Batch\+On\+Error}} = false
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_ping_target}{Ping\+Target}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a6e08338f8dca3b16c9da609a571fcf29}{ping\+Target}} = null
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8872c74daa85e8ee0eb4889cafdd7f29}{exception\+Interceptor}}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a742e2f3ee7d41d0e0edeea2faa7eeefd}{last\+Query\+Is\+On\+Dup\+Key\+Update}} = false
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Boolean $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad4f6afecb1d35908d6962282c4a0cd7b}{dont\+Track\+Open\+Resources}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Boolean $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_acc5c1509a1bc8f9510f4712f044c969a}{dump\+Queries\+On\+Exception}}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0639ae52b62c9cb39a85ce14d4354cd9}{log\+Slow\+Queries}} = false
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Boolean $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac674098c8ad15c12ce85b0ace4e77095}{rewrite\+Batched\+Statements}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Integer $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a6cb3b874092f8119ff208bf2812c8c3b}{max\+Allowed\+Packet}}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abd7b9196c0cd0c3d4b6822aad9de7cea}{dont\+Check\+On\+Duplicate\+Key\+Update\+In\+S\+QL}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Boolean $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae7950eaf510ef0b55b21c6d43ba36d69}{send\+Fractional\+Seconds}}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory}{Result\+Set\+Factory}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a167305d0071e6f399f366ea30c0add9c}{result\+Set\+Factory}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a51fe94194f89dc701f885d05c69dd6cd}{query}}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_native_session}{Native\+Session}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5d87448a8405ded243f28efef524b16e}{session}} = null
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab525dfdaa9be2464103f3c7bb8f0ffdc}{P\+I\+N\+G\+\_\+\+M\+A\+R\+K\+ER}} = \char`\"{}/$\ast$ ping $\ast$/\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Statement object is used for executing a static S\+QL statement and obtaining the results produced by it.
+
+Only one Result\+Set per Statement can be open at any point in time. Therefore, if the reading of one Result\+Set is interleaved with the reading of another, each must have been generated by different Statements. All statement execute methods implicitly close a statement\textquotesingle{}s current Result\+Set if an open one exists. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab7415feadb30fb623edffd1b9bd40d5d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab7415feadb30fb623edffd1b9bd40d5d}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!Statement\+Impl@{Statement\+Impl}}
+\index{Statement\+Impl@{Statement\+Impl}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{Statement\+Impl()}{StatementImpl()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+Statement\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}}}]{c,  }\item[{String}]{catalog }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Constructor for a Statement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the Connection instance that creates us \\
+\hline
+{\em catalog} & the database name in use when we were created\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aea9552692a06b93f8f8ed477c5d879c4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aea9552692a06b93f8f8ed477c5d879c4}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!add\+Batch@{add\+Batch}}
+\index{add\+Batch@{add\+Batch}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{add\+Batch()}{addBatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+add\+Batch (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a9fff3c6369792a80971d749bc3d2303a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a9fff3c6369792a80971d749bc3d2303a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!add\+Batch@{add\+Batch}}
+\index{add\+Batch@{add\+Batch}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{add\+Batch()}{addBatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+add\+Batch (\begin{DoxyParamCaption}\item[{Object}]{batch }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a726941dcc741acae509b16f14730966a}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a89d3ae6ba7d634b3a5aa0b9014b2cf80}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a89d3ae6ba7d634b3a5aa0b9014b2cf80}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!cancel@{cancel}}
+\index{cancel@{cancel}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+cancel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Cancels this Statement object if both the D\+B\+MS and driver support aborting an S\+QL statement. This method can be used by one thread to cancel a statement that is being executed by another thread. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8409855892d4f4c55a35f3444f50825c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8409855892d4f4c55a35f3444f50825c}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!check\+Cancel\+Timeout@{check\+Cancel\+Timeout}}
+\index{check\+Cancel\+Timeout@{check\+Cancel\+Timeout}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{check\+Cancel\+Timeout()}{checkCancelTimeout()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+check\+Cancel\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_add91f39e25b2687d5ae8637d59e470f5}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abd738a18f0109b2305a642025eb4a3bb}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abd738a18f0109b2305a642025eb4a3bb}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!check\+Closed@{check\+Closed}}
+\index{check\+Closed@{check\+Closed}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{check\+Closed()}{checkClosed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+check\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks if closed() has been called, and throws an exception if so
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Statement\+Is\+Closed\+Exception} & if this statement has been closed \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a153a70521a7a239c1d6ad089f474d7ba}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a153a70521a7a239c1d6ad089f474d7ba}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!check\+For\+Dml@{check\+For\+Dml}}
+\index{check\+For\+Dml@{check\+For\+Dml}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{check\+For\+Dml()}{checkForDml()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+check\+For\+Dml (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{char}]{first\+Statement\+Char }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks if the given S\+QL query with the given first non-\/ws char is a D\+ML statement. Throws an exception if it is.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & the S\+QL to check \\
+\hline
+{\em first\+Statement\+Char} & the UC first non-\/ws char of the statement\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if the statement contains D\+ML \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae8ad6b113e7dffaf4f20129eba328f7b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae8ad6b113e7dffaf4f20129eba328f7b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!check\+Null\+Or\+Empty\+Query@{check\+Null\+Or\+Empty\+Query}}
+\index{check\+Null\+Or\+Empty\+Query@{check\+Null\+Or\+Empty\+Query}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{check\+Null\+Or\+Empty\+Query()}{checkNullOrEmptyQuery()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+check\+Null\+Or\+Empty\+Query (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Method check\+Null\+Or\+Empty\+Query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & the S\+QL to check\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if query is null or empty. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a6730720b7a5409cab4d4c537b514f7c8}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a6730720b7a5409cab4d4c537b514f7c8}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!clear\+Batch@{clear\+Batch}}
+\index{clear\+Batch@{clear\+Batch}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{clear\+Batch()}{clearBatch()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+clear\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 Make the set of commands in the current batch empty. This method is optional.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs, or the driver does not support batch statements \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a42618e455d715cde9a92efbc6922b252}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a42618e455d715cde9a92efbc6922b252}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!clear\+Batched\+Args@{clear\+Batched\+Args}}
+\index{clear\+Batched\+Args@{clear\+Batched\+Args}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{clear\+Batched\+Args()}{clearBatchedArgs()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+clear\+Batched\+Args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a72ab11f1338a67459c15b31d1e808b14}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a7356ed117aa4417ec6ce92292f53470b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a7356ed117aa4417ec6ce92292f53470b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!clear\+Warnings@{clear\+Warnings}}
+\index{clear\+Warnings@{clear\+Warnings}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{clear\+Warnings()}{clearWarnings()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+clear\+Warnings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+After this call, get\+Warnings returns null until a new warning is reported for this Statement.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs (why?) \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac913294cd1adc42af73229a6ba2e4f0b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac913294cd1adc42af73229a6ba2e4f0b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!close@{close}}
+\index{close@{close}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+In many cases, it is desirable to immediately release a Statement\textquotesingle{}s database and J\+D\+BC resources instead of waiting for this to happen when it is automatically closed. The close method provides this immediate release.
+
+{\bfseries Note\+:} A Statement is automatically closed when it is garbage collected. When a Statement is closed, its current Result\+Set, if one exists, is also closed. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a471a61331072cf89533c58507ad21719}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a471a61331072cf89533c58507ad21719}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!close\+All\+Open\+Results@{close\+All\+Open\+Results}}
+\index{close\+All\+Open\+Results@{close\+All\+Open\+Results}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{close\+All\+Open\+Results()}{closeAllOpenResults()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+close\+All\+Open\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Close any open result sets that have been \textquotesingle{}held open\textquotesingle{} \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_acd9358a76e0fe9e8aa7f5cfb4ee6a5af}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_acd9358a76e0fe9e8aa7f5cfb4ee6a5af}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!close\+On\+Completion@{close\+On\+Completion}}
+\index{close\+On\+Completion@{close\+On\+Completion}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{close\+On\+Completion()}{closeOnCompletion()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+close\+On\+Completion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af05f123c5cf2cf971f7d5a8929b7c962}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af05f123c5cf2cf971f7d5a8929b7c962}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!close\+Query@{close\+Query}}
+\index{close\+Query@{close\+Query}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{close\+Query()}{closeQuery()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+close\+Query (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a5808add7bd2bffa44c7532995b16e442}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4731b8a25ed40cab2a2f5f238eba7a2a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4731b8a25ed40cab2a2f5f238eba7a2a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!contains\+On\+Duplicate\+Key\+In\+String@{contains\+On\+Duplicate\+Key\+In\+String}}
+\index{contains\+On\+Duplicate\+Key\+In\+String@{contains\+On\+Duplicate\+Key\+In\+String}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{contains\+On\+Duplicate\+Key\+In\+String()}{containsOnDuplicateKeyInString()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+contains\+On\+Duplicate\+Key\+In\+String (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4a514bb3e111c30e6b376b74bb8f78e8}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4a514bb3e111c30e6b376b74bb8f78e8}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!create\+Streaming\+Result\+Set@{create\+Streaming\+Result\+Set}}
+\index{create\+Streaming\+Result\+Set@{create\+Streaming\+Result\+Set}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{create\+Streaming\+Result\+Set()}{createStreamingResultSet()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+create\+Streaming\+Result\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+We only stream result sets when they are forward-\/only, read-\/only, and the fetch size has been set to Integer.\+M\+I\+N\+\_\+\+V\+A\+L\+UE
+
+\begin{DoxyReturn}{Returns}
+true if this result set should be streamed row at-\/a-\/time, rather than read all at once. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a9e5713d601e7e410e0edb1647b6f9160}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a9e5713d601e7e410e0edb1647b6f9160}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!disable\+Streaming\+Results@{disable\+Streaming\+Results}}
+\index{disable\+Streaming\+Results@{disable\+Streaming\+Results}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{disable\+Streaming\+Results()}{disableStreamingResults()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+disable\+Streaming\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Resets this statements fetch size and result set type to the values they had before \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a973ff5045e258a5c3e156887c116c976}{enable\+Streaming\+Results()}} was called.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a11240571041f264e6bdde12ee05355a5}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1d04ca76ab91fea81ce3a67550de429b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1d04ca76ab91fea81ce3a67550de429b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!do\+Ping\+Instead@{do\+Ping\+Instead}}
+\index{do\+Ping\+Instead@{do\+Ping\+Instead}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{do\+Ping\+Instead()}{doPingInstead()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+do\+Ping\+Instead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a973ff5045e258a5c3e156887c116c976}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a973ff5045e258a5c3e156887c116c976}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!enable\+Streaming\+Results@{enable\+Streaming\+Results}}
+\index{enable\+Streaming\+Results@{enable\+Streaming\+Results}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{enable\+Streaming\+Results()}{enableStreamingResults()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+enable\+Streaming\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Workaround for containers that \textquotesingle{}check\textquotesingle{} for sane values of Statement.\+set\+Fetch\+Size() so that applications can use the Java variant of libmysql\textquotesingle{}s mysql\+\_\+use\+\_\+result() behavior.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a35049f45e6278dc1b824812acbe75556}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a55932ba2147827cc8b76353c14332c1f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a55932ba2147827cc8b76353c14332c1f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute@{execute}}
+\index{execute@{execute}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute()}{execute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Execute a S\+QL statement that may return multiple results. We don\textquotesingle{}t have to worry about this since we do not support multiple Result\+Sets. You can use get\+Result\+Set or get\+Update\+Count to retrieve the result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & any S\+QL statement\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the next result is a Resul\+Set, false if it is an update count or there are no more results
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a3a037fac1a8f37129b0eab24203b73f9}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a3a037fac1a8f37129b0eab24203b73f9}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute@{execute}}
+\index{execute@{execute}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute()}{execute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{int}]{return\+Generated\+Keys }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a3a037fac1a8f37129b0eab24203b73f9}{Statement\+Impl\+::execute(\+String, int)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae74dd4c72023e709b23c9ea71ca1678a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae74dd4c72023e709b23c9ea71ca1678a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute@{execute}}
+\index{execute@{execute}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute()}{execute()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{int \mbox{[}$\,$\mbox{]}}]{generated\+Key\+Indices }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+Statement\+Impl\+::execute(\+String, int\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a165371a7abd4d72d54a8ceaf0066aee1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a165371a7abd4d72d54a8ceaf0066aee1}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute@{execute}}
+\index{execute@{execute}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute()}{execute()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{String \mbox{[}$\,$\mbox{]}}]{generated\+Key\+Names }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+Statement\+Impl\+::execute(\+String, String\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a812ff94727864cc68fe96aaa38dbce6a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a812ff94727864cc68fe96aaa38dbce6a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute\+Batch@{execute\+Batch}}
+\index{execute\+Batch@{execute\+Batch}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Batch()}{executeBatch()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 Submit a batch of commands to the database for execution. This method is optional.
+
+\begin{DoxyReturn}{Returns}
+an array of update counts containing one element for each command in the batch. The array is ordered according to the order in which commands were inserted into the batch
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs, or the driver does not support batch statements \\
+\hline
+{\em java.\+sql.\+Batch\+Update\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abd879bf637f7f3ba5e74050912735836}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abd879bf637f7f3ba5e74050912735836}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute\+Batch\+Internal@{execute\+Batch\+Internal}}
+\index{execute\+Batch\+Internal@{execute\+Batch\+Internal}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Batch\+Internal()}{executeBatchInternal()}}
+{\footnotesize\ttfamily long \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute\+Batch\+Internal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad5138e585c47eef34667efe73d0a954f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad5138e585c47eef34667efe73d0a954f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute\+Large\+Batch@{execute\+Large\+Batch}}
+\index{execute\+Large\+Batch@{execute\+Large\+Batch}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Large\+Batch()}{executeLargeBatch()}}
+{\footnotesize\ttfamily long \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute\+Large\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+2 Same as \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a812ff94727864cc68fe96aaa38dbce6a}{execute\+Batch()}} but returns long\mbox{[}\mbox{]} instead of int\mbox{[}\mbox{]}. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a33be0126be83d0094c9d363132497a4e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a33be0126be83d0094c9d363132497a4e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute\+Large\+Update@{execute\+Large\+Update}}
+\index{execute\+Large\+Update@{execute\+Large\+Update}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Large\+Update()}{executeLargeUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute\+Large\+Update (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+2 Same as \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8df7dbcd016833437419cfdbae14b187}{execute\+Update(\+String)}} but returns long instead of int. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_acb364f005fd4a5b579ebecbc3303fca9}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_acb364f005fd4a5b579ebecbc3303fca9}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute\+Large\+Update@{execute\+Large\+Update}}
+\index{execute\+Large\+Update@{execute\+Large\+Update}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Large\+Update()}{executeLargeUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute\+Large\+Update (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{int}]{auto\+Generated\+Keys }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+2 Same as \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a17446c85d153a1456965eb64858b5f46}{execute\+Update(\+String, int)}} but returns long instead of int. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a80eeb600ed30f4f2dc7ea99891e594b1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a80eeb600ed30f4f2dc7ea99891e594b1}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute\+Large\+Update@{execute\+Large\+Update}}
+\index{execute\+Large\+Update@{execute\+Large\+Update}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Large\+Update()}{executeLargeUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute\+Large\+Update (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{int \mbox{[}$\,$\mbox{]}}]{column\+Indexes }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+2 Same as \mbox{\hyperlink{}{execute\+Update(\+String, int\mbox{[}$\,$\mbox{]})}} but returns long instead of int. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac8be77a2303189e5efa1c5c9d34d0962}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac8be77a2303189e5efa1c5c9d34d0962}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute\+Large\+Update@{execute\+Large\+Update}}
+\index{execute\+Large\+Update@{execute\+Large\+Update}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Large\+Update()}{executeLargeUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute\+Large\+Update (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{String \mbox{[}$\,$\mbox{]}}]{column\+Names }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+2 Same as \mbox{\hyperlink{}{execute\+Update(\+String, String\mbox{[}$\,$\mbox{]})}} but returns long instead of int. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad8bdf41d3e788681fe1adcf961b176ef}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad8bdf41d3e788681fe1adcf961b176ef}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute\+Query@{execute\+Query}}
+\index{execute\+Query@{execute\+Query}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Query()}{executeQuery()}}
+{\footnotesize\ttfamily java.\+sql.\+Result\+Set com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute\+Query (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Execute a S\+QL statement that returns a single Result\+Set
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & typically a static S\+QL S\+E\+L\+E\+CT statement\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Resul\+Set that contains the data produced by the query
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a27a4381bb8f1b302a3f8e06cf3276023}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a27a4381bb8f1b302a3f8e06cf3276023}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute\+Simple\+Non\+Query@{execute\+Simple\+Non\+Query}}
+\index{execute\+Simple\+Non\+Query@{execute\+Simple\+Non\+Query}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Simple\+Non\+Query()}{executeSimpleNonQuery()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute\+Simple\+Non\+Query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}}}]{c,  }\item[{String}]{non\+Query }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8df7dbcd016833437419cfdbae14b187}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8df7dbcd016833437419cfdbae14b187}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute\+Update@{execute\+Update}}
+\index{execute\+Update@{execute\+Update}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Update()}{executeUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute\+Update (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Execute a S\+QL I\+N\+S\+E\+RT, U\+P\+D\+A\+TE or D\+E\+L\+E\+TE statement. In addition S\+QL statements that return nothing such as S\+QL D\+DL statements can be executed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & a S\+QL statement\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+either a row count, or 0 for S\+QL commands
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a17446c85d153a1456965eb64858b5f46}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a17446c85d153a1456965eb64858b5f46}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute\+Update@{execute\+Update}}
+\index{execute\+Update@{execute\+Update}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Update()}{executeUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute\+Update (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{int}]{auto\+Generated\+Keys }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a17446c85d153a1456965eb64858b5f46}{Statement\+Impl\+::execute\+Update(\+String, int)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2ff60b126d55ceb7d991c9d5f56cebb6}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2ff60b126d55ceb7d991c9d5f56cebb6}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute\+Update@{execute\+Update}}
+\index{execute\+Update@{execute\+Update}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Update()}{executeUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute\+Update (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{int \mbox{[}$\,$\mbox{]}}]{column\+Indexes }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+Statement\+Impl\+::execute\+Update(\+String, int\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad715518d5ddeca0a3a8771646c467d0b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad715518d5ddeca0a3a8771646c467d0b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute\+Update@{execute\+Update}}
+\index{execute\+Update@{execute\+Update}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Update()}{executeUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute\+Update (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{String \mbox{[}$\,$\mbox{]}}]{column\+Names }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+Statement\+Impl\+::execute\+Update(\+String, String\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aa3b2b9e62f16d87eb9f3f877a1b12928}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aa3b2b9e62f16d87eb9f3f877a1b12928}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!execute\+Update\+Internal@{execute\+Update\+Internal}}
+\index{execute\+Update\+Internal@{execute\+Update\+Internal}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Update\+Internal()}{executeUpdateInternal()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+execute\+Update\+Internal (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{boolean}]{is\+Batch,  }\item[{boolean}]{return\+Generated\+Keys }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a7b294b3903bade079f3fb8addee17ab7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a7b294b3903bade079f3fb8addee17ab7}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!find\+Start\+Of\+Statement@{find\+Start\+Of\+Statement}}
+\index{find\+Start\+Of\+Statement@{find\+Start\+Of\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{find\+Start\+Of\+Statement()}{findStartOfStatement()}}
+{\footnotesize\ttfamily static int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+find\+Start\+Of\+Statement (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad3d32ab94e514770f0bd9517bfd21221}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad3d32ab94e514770f0bd9517bfd21221}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!generate\+Ping\+Result\+Set@{generate\+Ping\+Result\+Set}}
+\index{generate\+Ping\+Result\+Set@{generate\+Ping\+Result\+Set}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{generate\+Ping\+Result\+Set()}{generatePingResultSet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+generate\+Ping\+Result\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a19609eb768e13632f7a8eb0fd14cdfd5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a19609eb768e13632f7a8eb0fd14cdfd5}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Batched\+Args@{get\+Batched\+Args}}
+\index{get\+Batched\+Args@{get\+Batched\+Args}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Batched\+Args()}{getBatchedArgs()}}
+{\footnotesize\ttfamily List$<$Object$>$ com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Batched\+Args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the batched args as added by the add\+Batch method(s). The list is unmodifiable and might contain any combination of String, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_bindings}{Client\+Prepared\+Query\+Bindings}}, or \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings}{Server\+Prepared\+Query\+Bindings}} depending on how the parameters were batched.
+
+\begin{DoxyReturn}{Returns}
+an unmodifiable List of batched args 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_af927782ce04741b0b0d3447e9b4f2a08}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af9a603cba639540f2cb9c6d998cf149e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af9a603cba639540f2cb9c6d998cf149e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Batched\+Generated\+Keys@{get\+Batched\+Generated\+Keys}}
+\index{get\+Batched\+Generated\+Keys@{get\+Batched\+Generated\+Keys}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Batched\+Generated\+Keys()}{getBatchedGeneratedKeys()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Batched\+Generated\+Keys (\begin{DoxyParamCaption}\item[{java.\+sql.\+Statement}]{batched\+Statement }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae919819a2a02e89738113125b950d694}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae919819a2a02e89738113125b950d694}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Batched\+Generated\+Keys@{get\+Batched\+Generated\+Keys}}
+\index{get\+Batched\+Generated\+Keys@{get\+Batched\+Generated\+Keys}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Batched\+Generated\+Keys()}{getBatchedGeneratedKeys()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Batched\+Generated\+Keys (\begin{DoxyParamCaption}\item[{int}]{max\+Keys }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a428c7f909851189bed9fdc590ee2e770}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a428c7f909851189bed9fdc590ee2e770}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Cancel\+Timeout\+Mutex@{get\+Cancel\+Timeout\+Mutex}}
+\index{get\+Cancel\+Timeout\+Mutex@{get\+Cancel\+Timeout\+Mutex}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Cancel\+Timeout\+Mutex()}{getCancelTimeoutMutex()}}
+{\footnotesize\ttfamily Object com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Cancel\+Timeout\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_af99b8945b78c6f6cec21d9a81e227d1e}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5e4c41ddb78ca7533f4984c9f6c996c4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5e4c41ddb78ca7533f4984c9f6c996c4}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Connection@{get\+Connection}}
+\index{get\+Connection@{get\+Connection}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Connection()}{getConnection()}}
+{\footnotesize\ttfamily java.\+sql.\+Connection com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 Return the Connection that produced the Statement.
+
+\begin{DoxyReturn}{Returns}
+the Connection that produced the Statement
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af2b2cc49667c4ca719920667ed148629}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af2b2cc49667c4ca719920667ed148629}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Current\+Catalog@{get\+Current\+Catalog}}
+\index{get\+Current\+Catalog@{get\+Current\+Catalog}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Current\+Catalog()}{getCurrentCatalog()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Current\+Catalog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a5e5e4f493fd7d0ea5e0ac6d2066af251}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a718d61ccf9261f402e7d28a295aca55c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a718d61ccf9261f402e7d28a295aca55c}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Event\+Sink@{get\+Event\+Sink}}
+\index{get\+Event\+Sink@{get\+Event\+Sink}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Event\+Sink()}{getEventSink()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_profiler_event_handler}{Profiler\+Event\+Handler}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Event\+Sink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a3e23446737570171c4323243ce3f9239}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8c7aeabcfab5a1dcac5bf2fec0accaab}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8c7aeabcfab5a1dcac5bf2fec0accaab}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Exception\+Interceptor@{get\+Exception\+Interceptor}}
+\index{get\+Exception\+Interceptor@{get\+Exception\+Interceptor}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Exception\+Interceptor()}{getExceptionInterceptor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Exception\+Interceptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_acaa2fa9b43fdb8d5020efed654034d53}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab0ef6daffffd7fd9dc6405c78b697b7d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab0ef6daffffd7fd9dc6405c78b697b7d}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Fetch\+Direction@{get\+Fetch\+Direction}}
+\index{get\+Fetch\+Direction@{get\+Fetch\+Direction}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Fetch\+Direction()}{getFetchDirection()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Fetch\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 Determine the fetch direction.
+
+\begin{DoxyReturn}{Returns}
+the default fetch direction
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2e309596729b0de9bc9230e745c9350f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2e309596729b0de9bc9230e745c9350f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Fetch\+Size@{get\+Fetch\+Size}}
+\index{get\+Fetch\+Size@{get\+Fetch\+Size}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Fetch\+Size()}{getFetchSize()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Fetch\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 Determine the default fetch size.
+
+\begin{DoxyReturn}{Returns}
+the number of rows to fetch at a time
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a498dcb08802ab5ebfb700b3bae3ff1f2}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a498dcb08802ab5ebfb700b3bae3ff1f2}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Generated\+Keys@{get\+Generated\+Keys}}
+\index{get\+Generated\+Keys@{get\+Generated\+Keys}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Generated\+Keys()}{getGeneratedKeys()}}
+{\footnotesize\ttfamily java.\+sql.\+Result\+Set com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Generated\+Keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a059f84ba3f95ea77a0a3c764e3ea00f2}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a059f84ba3f95ea77a0a3c764e3ea00f2}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Generated\+Keys\+Internal@{get\+Generated\+Keys\+Internal}}
+\index{get\+Generated\+Keys\+Internal@{get\+Generated\+Keys\+Internal}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Generated\+Keys\+Internal()}{getGeneratedKeysInternal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Generated\+Keys\+Internal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a290944a1b4c5ccf73dcbad92fa755808}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a290944a1b4c5ccf73dcbad92fa755808}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Generated\+Keys\+Internal@{get\+Generated\+Keys\+Internal}}
+\index{get\+Generated\+Keys\+Internal@{get\+Generated\+Keys\+Internal}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Generated\+Keys\+Internal()}{getGeneratedKeysInternal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Generated\+Keys\+Internal (\begin{DoxyParamCaption}\item[{long}]{num\+Keys }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a42a752f62a59215845a9faf514893dba}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a42a752f62a59215845a9faf514893dba}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the query id used when profiling
+
+\begin{DoxyReturn}{Returns}
+id 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a29f450bbae1063765d434e3b89bdd26e}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a413626efa58d8aac8c72b36bb0ff4c33}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a413626efa58d8aac8c72b36bb0ff4c33}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Large\+Max\+Rows@{get\+Large\+Max\+Rows}}
+\index{get\+Large\+Max\+Rows@{get\+Large\+Max\+Rows}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Large\+Max\+Rows()}{getLargeMaxRows()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Large\+Max\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+2 Same as \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae2447bc18fbb4aba8ef64f48f0c90c36}{get\+Max\+Rows()}} but returns long instead of int. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aeb27ff7e4f987d731094d20bf30fefad}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aeb27ff7e4f987d731094d20bf30fefad}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Large\+Update\+Count@{get\+Large\+Update\+Count}}
+\index{get\+Large\+Update\+Count@{get\+Large\+Update\+Count}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Large\+Update\+Count()}{getLargeUpdateCount()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Large\+Update\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+2 Same as \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abb1d31f01f22e76a4d2a03c26905cb2e}{get\+Update\+Count()}} but returns long instead of int; \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af48b4bdf41d529d92def194cbe611acf}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af48b4bdf41d529d92def194cbe611acf}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Last\+Insert\+ID@{get\+Last\+Insert\+ID}}
+\index{get\+Last\+Insert\+ID@{get\+Last\+Insert\+ID}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Last\+Insert\+I\+D()}{getLastInsertID()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Last\+Insert\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get\+Last\+Insert\+ID returns the value of the auto\+\_\+incremented key after an \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad8bdf41d3e788681fe1adcf961b176ef}{execute\+Query()}} or excute() call.
+
+This gets around the un-\/threadsafe behavior of \char`\"{}select L\+A\+S\+T\+\_\+\+I\+N\+S\+E\+R\+T\+\_\+\+I\+D()\char`\"{} which is tied to the Connection that created this Statement, and therefore could have had many I\+N\+S\+E\+R\+TS performed before one gets a chance to call \char`\"{}select L\+A\+S\+T\+\_\+\+I\+N\+S\+E\+R\+T\+\_\+\+I\+D()\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+the last update ID. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a52f35ba4029870388a69d493851e726a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a52f35ba4029870388a69d493851e726a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Local\+Infile\+Input\+Stream@{get\+Local\+Infile\+Input\+Stream}}
+\index{get\+Local\+Infile\+Input\+Stream@{get\+Local\+Infile\+Input\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Local\+Infile\+Input\+Stream()}{getLocalInfileInputStream()}}
+{\footnotesize\ttfamily Input\+Stream com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Local\+Infile\+Input\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the Input\+Stream instance that will be used to send data in response to a \char`\"{}\+L\+O\+A\+D D\+A\+T\+A L\+O\+C\+A\+L I\+N\+F\+I\+L\+E\char`\"{} statement.
+
+This method returns N\+U\+LL if no such stream has been set via \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a398ed93fc7171fac680cd867a87cbf23}{set\+Local\+Infile\+Input\+Stream()}}.
+
+\begin{DoxyReturn}{Returns}
+input stream 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a1f5ddb4f3f7ad5c677a27d5350568eac}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a05b7122d9eb36876362b1e526e9dfd38}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a05b7122d9eb36876362b1e526e9dfd38}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Long\+Update\+Count@{get\+Long\+Update\+Count}}
+\index{get\+Long\+Update\+Count@{get\+Long\+Update\+Count}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Long\+Update\+Count()}{getLongUpdateCount()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Long\+Update\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get\+Long\+Update\+Count returns the current result as an update count, if the result is a Result\+Set or there are no more results, -\/1 is returned. It should only be called once per result.
+
+This method returns longs as My\+S\+QL server returns 64-\/bit values for update counts 
+
+\begin{DoxyReturn}{Returns}
+the current update count. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1dbdd8b00e13cbaadf54920e8d93075d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1dbdd8b00e13cbaadf54920e8d93075d}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Max\+Field\+Size@{get\+Max\+Field\+Size}}
+\index{get\+Max\+Field\+Size@{get\+Max\+Field\+Size}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Max\+Field\+Size()}{getMaxFieldSize()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Max\+Field\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+The max\+Field\+Size limit (in bytes) is the maximum amount of data returned for any column value; it only applies to B\+I\+N\+A\+RY, V\+A\+R\+B\+I\+N\+A\+RY, L\+O\+N\+G\+V\+A\+R\+B\+I\+N\+A\+RY, C\+H\+AR, V\+A\+R\+C\+H\+AR and L\+O\+N\+G\+V\+A\+R\+C\+H\+AR columns. If the limit is exceeded, the excess data is silently discarded.
+
+\begin{DoxyReturn}{Returns}
+the current max column size limit; zero means unlimited
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae2447bc18fbb4aba8ef64f48f0c90c36}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae2447bc18fbb4aba8ef64f48f0c90c36}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Max\+Rows@{get\+Max\+Rows}}
+\index{get\+Max\+Rows@{get\+Max\+Rows}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Max\+Rows()}{getMaxRows()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Max\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+The max\+Rows limit is set to limit the number of rows that any Result\+Set can contain. If the limit is exceeded, the excess rows are silently dropped.
+
+\begin{DoxyReturn}{Returns}
+the current maximum row limit; zero means unlimited
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0791ff241a89529adb0be7da26a0ec62}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0791ff241a89529adb0be7da26a0ec62}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+More\+Results@{get\+More\+Results}}
+\index{get\+More\+Results@{get\+More\+Results}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+More\+Results()}{getMoreResults()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+More\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+get\+More\+Results moves to a Statement\textquotesingle{}s next result. If it returns true, this result is a Resul\+Set.
+
+\begin{DoxyReturn}{Returns}
+true if the next Result\+Set is valid
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2cf53265012d4410f8090334c4837e81}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2cf53265012d4410f8090334c4837e81}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+More\+Results@{get\+More\+Results}}
+\index{get\+More\+Results@{get\+More\+Results}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+More\+Results()}{getMoreResults()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+More\+Results (\begin{DoxyParamCaption}\item[{int}]{current }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2cf53265012d4410f8090334c4837e81}{Statement\+Impl\+::get\+More\+Results(int)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac4a8718b3d1e416f72dbe33370434b0d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac4a8718b3d1e416f72dbe33370434b0d}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Open\+Result\+Set\+Count@{get\+Open\+Result\+Set\+Count}}
+\index{get\+Open\+Result\+Set\+Count@{get\+Open\+Result\+Set\+Count}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Open\+Result\+Set\+Count()}{getOpenResultSetCount()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Open\+Result\+Set\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the number of open result sets for this statement.
+
+\begin{DoxyReturn}{Returns}
+the number of open result sets for this statement 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_ad7367340b87accdd66c01872ebaddbcd}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a03be1a8bab079e9da100366153fc4238}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a03be1a8bab079e9da100366153fc4238}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Query@{get\+Query}}
+\index{get\+Query@{get\+Query}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Query()}{getQuery()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Query (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a6ebd2f09956035be03e076980dce5528}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_acc6d1eb26165bde353224ca1c5d9f4cb}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_acc6d1eb26165bde353224ca1c5d9f4cb}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Query\+Timeout@{get\+Query\+Timeout}}
+\index{get\+Query\+Timeout@{get\+Query\+Timeout}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Query\+Timeout()}{getQueryTimeout()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Query\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+The query\+Timeout limit is the number of seconds the driver will wait for a Statement to execute. If the limit is exceeded, a S\+Q\+L\+Exception is thrown.
+
+\begin{DoxyReturn}{Returns}
+the current query timeout limit in seconds; 0 = unlimited
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1c6f564765bab67e9f9330b362f930ca}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1c6f564765bab67e9f9330b362f930ca}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Result\+Fetch\+Size@{get\+Result\+Fetch\+Size}}
+\index{get\+Result\+Fetch\+Size@{get\+Result\+Fetch\+Size}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Result\+Fetch\+Size()}{getResultFetchSize()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Result\+Fetch\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a6f08d61e84781710d7e9c4680c2835b3}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8bf30f2ecfd13ebcfbde03b082172bb1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8bf30f2ecfd13ebcfbde03b082172bb1}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Result\+Set@{get\+Result\+Set}}
+\index{get\+Result\+Set@{get\+Result\+Set}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Result\+Set()}{getResultSet()}}
+{\footnotesize\ttfamily java.\+sql.\+Result\+Set com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Result\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+get\+Result\+Set returns the current result as a Result\+Set. It should only be called once per result.
+
+\begin{DoxyReturn}{Returns}
+the current result set; null if there are no more
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs (why?) \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4a5fa990b06601f984e4393d6cb02b26}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4a5fa990b06601f984e4393d6cb02b26}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Result\+Set\+Concurrency@{get\+Result\+Set\+Concurrency}}
+\index{get\+Result\+Set\+Concurrency@{get\+Result\+Set\+Concurrency}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Result\+Set\+Concurrency()}{getResultSetConcurrency()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Result\+Set\+Concurrency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 Determine the result set concurrency.
+
+\begin{DoxyReturn}{Returns}
+C\+O\+N\+C\+U\+R\+\_\+\+U\+P\+D\+A\+T\+A\+B\+LE or C\+O\+N\+C\+U\+R\+\_\+\+R\+E\+A\+D\+O\+N\+LY
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a84b0f5b22d3ce2bd808aceb6c17e4620}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a84b0f5b22d3ce2bd808aceb6c17e4620}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Result\+Set\+Holdability@{get\+Result\+Set\+Holdability}}
+\index{get\+Result\+Set\+Holdability@{get\+Result\+Set\+Holdability}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Result\+Set\+Holdability()}{getResultSetHoldability()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Result\+Set\+Holdability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a84b0f5b22d3ce2bd808aceb6c17e4620}{Statement\+Impl\+::get\+Result\+Set\+Holdability()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a9e9be16d68c66d0ad86147417269fee3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a9e9be16d68c66d0ad86147417269fee3}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Result\+Set\+Internal@{get\+Result\+Set\+Internal}}
+\index{get\+Result\+Set\+Internal@{get\+Result\+Set\+Internal}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Result\+Set\+Internal()}{getResultSetInternal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Result\+Set\+Internal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0845a6219a16770f3675269fc28ade3b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0845a6219a16770f3675269fc28ade3b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Result\+Set\+Type@{get\+Result\+Set\+Type}}
+\index{get\+Result\+Set\+Type@{get\+Result\+Set\+Type}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Result\+Set\+Type()}{getResultSetType()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Result\+Set\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 Determine the result set type.
+
+\begin{DoxyReturn}{Returns}
+the Result\+Set type (T\+Y\+P\+E\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+O\+N\+LY, S\+C\+R\+O\+L\+L\+\_\+\+S\+E\+N\+S\+I\+T\+I\+VE or S\+C\+R\+O\+L\+L\+\_\+\+I\+N\+S\+E\+N\+S\+I\+T\+I\+VE)
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4f0bfa0851a118ae62acd9420304bdd0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4f0bfa0851a118ae62acd9420304bdd0}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Result\+Type@{get\+Result\+Type}}
+\index{get\+Result\+Type@{get\+Result\+Type}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Result\+Type()}{getResultType()}}
+{\footnotesize\ttfamily Resultset.\+Type com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a1e97cf75ff946bef7b89512a69199b90}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae87860ea933fb4d96b255f57d5fa5580}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae87860ea933fb4d96b255f57d5fa5580}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Server\+Statement\+Id@{get\+Server\+Statement\+Id}}
+\index{get\+Server\+Statement\+Id@{get\+Server\+Statement\+Id}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Server\+Statement\+Id()}{getServerStatementId()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Server\+Statement\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a9ff54c722b7738065d93da540326ffad}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a9ff54c722b7738065d93da540326ffad}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Session@{get\+Session}}
+\index{get\+Session@{get\+Session}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Session()}{getSession()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_ad9657ad6282e8cccd264dccb9b1204a5}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab253ad63963434ee5cde7ca8e68f7ff6}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab253ad63963434ee5cde7ca8e68f7ff6}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Statement\+Executing@{get\+Statement\+Executing}}
+\index{get\+Statement\+Executing@{get\+Statement\+Executing}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Statement\+Executing()}{getStatementExecuting()}}
+{\footnotesize\ttfamily Atomic\+Boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Statement\+Executing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a330ed617e56f62061a3a300128456dbb}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae819d62406476bbeb71be402eff8f619}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae819d62406476bbeb71be402eff8f619}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Timeout\+In\+Millis@{get\+Timeout\+In\+Millis}}
+\index{get\+Timeout\+In\+Millis@{get\+Timeout\+In\+Millis}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Timeout\+In\+Millis()}{getTimeoutInMillis()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Timeout\+In\+Millis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a54f609a5c08b91fe0008e9b3334d0d82}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abb1d31f01f22e76a4d2a03c26905cb2e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abb1d31f01f22e76a4d2a03c26905cb2e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Update\+Count@{get\+Update\+Count}}
+\index{get\+Update\+Count@{get\+Update\+Count}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Update\+Count()}{getUpdateCount()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Update\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+get\+Update\+Count returns the current result as an update count, if the result is a Result\+Set or there are no more results, -\/1 is returned. It should only be called once per result.
+
+\begin{DoxyReturn}{Returns}
+the current result as an update count.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aeeda73d9ee01ed8c74d90c4014614412}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aeeda73d9ee01ed8c74d90c4014614412}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!get\+Warnings@{get\+Warnings}}
+\index{get\+Warnings@{get\+Warnings}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{get\+Warnings()}{getWarnings()}}
+{\footnotesize\ttfamily java.\+sql.\+S\+Q\+L\+Warning com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+get\+Warnings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+The first warning reported by calls on this Statement is returned. A Statement\textquotesingle{}s execute methods clear its java.\+sql.\+S\+Q\+L\+Warning chain. Subsequent Statement warnings will be chained to this java.\+sql.\+S\+Q\+L\+Warning.
+
+The Warning chain is automatically cleared each time a statement is (re)executed. 
+
+{\bfseries Note\+:} If you are processing a Result\+Set then any warnings associated with Result\+Set reads will be chained on the Result\+Set object. 
+
+\begin{DoxyReturn}{Returns}
+the first java.\+sql.\+S\+Q\+L\+Warning or null
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2d99664aa399918797c4238891f59fba}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2d99664aa399918797c4238891f59fba}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!handle\+Exception\+For\+Batch@{handle\+Exception\+For\+Batch}}
+\index{handle\+Exception\+For\+Batch@{handle\+Exception\+For\+Batch}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{handle\+Exception\+For\+Batch()}{handleExceptionForBatch()}}
+{\footnotesize\ttfamily S\+Q\+L\+Exception com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+handle\+Exception\+For\+Batch (\begin{DoxyParamCaption}\item[{int}]{end\+Of\+Batch\+Index,  }\item[{int}]{num\+Values\+Per\+Batch,  }\item[{long \mbox{[}$\,$\mbox{]}}]{update\+Counts,  }\item[{S\+Q\+L\+Exception}]{ex }\end{DoxyParamCaption}) throws Batch\+Update\+Exception, S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5674003fcd332a1ac38d549b0b4c806e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5674003fcd332a1ac38d549b0b4c806e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!has\+Deadlock\+Or\+Timeout\+Rolled\+Back\+Tx@{has\+Deadlock\+Or\+Timeout\+Rolled\+Back\+Tx}}
+\index{has\+Deadlock\+Or\+Timeout\+Rolled\+Back\+Tx@{has\+Deadlock\+Or\+Timeout\+Rolled\+Back\+Tx}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{has\+Deadlock\+Or\+Timeout\+Rolled\+Back\+Tx()}{hasDeadlockOrTimeoutRolledBackTx()}}
+{\footnotesize\ttfamily final boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+has\+Deadlock\+Or\+Timeout\+Rolled\+Back\+Tx (\begin{DoxyParamCaption}\item[{S\+Q\+L\+Exception}]{ex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a424894ae04079fd072300d7a54de6243}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a424894ae04079fd072300d7a54de6243}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!implicitly\+Close\+All\+Open\+Results@{implicitly\+Close\+All\+Open\+Results}}
+\index{implicitly\+Close\+All\+Open\+Results@{implicitly\+Close\+All\+Open\+Results}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{implicitly\+Close\+All\+Open\+Results()}{implicitlyCloseAllOpenResults()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+implicitly\+Close\+All\+Open\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Close all result sets in this statement. This includes multi-\/results \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a754a5bf5b0c4a83c123c657e6834d16c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a754a5bf5b0c4a83c123c657e6834d16c}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!init\+Query@{init\+Query}}
+\index{init\+Query@{init\+Query}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{init\+Query()}{initQuery()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+init\+Query (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a63d97344f6b1ebede1e07b71d13a923d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a63d97344f6b1ebede1e07b71d13a923d}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!is\+Clear\+Warnings\+Called@{is\+Clear\+Warnings\+Called}}
+\index{is\+Clear\+Warnings\+Called@{is\+Clear\+Warnings\+Called}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{is\+Clear\+Warnings\+Called()}{isClearWarningsCalled()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+is\+Clear\+Warnings\+Called (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_af3f72d084a40a8ec805f10b75b8fa0f2}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_affaded3f0d3bc5a4ff0d80928ddfd8bc}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_affaded3f0d3bc5a4ff0d80928ddfd8bc}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!is\+Closed@{is\+Closed}}
+\index{is\+Closed@{is\+Closed}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{is\+Closed()}{isClosed()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+is\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a098584b310115f209ef1c28829438e28}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a098584b310115f209ef1c28829438e28}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!is\+Close\+On\+Completion@{is\+Close\+On\+Completion}}
+\index{is\+Close\+On\+Completion@{is\+Close\+On\+Completion}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{is\+Close\+On\+Completion()}{isCloseOnCompletion()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+is\+Close\+On\+Completion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af6867cf70a7da2cf3141b4435116faeb}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af6867cf70a7da2cf3141b4435116faeb}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!is\+Poolable@{is\+Poolable}}
+\index{is\+Poolable@{is\+Poolable}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{is\+Poolable()}{isPoolable()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+is\+Poolable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a403bf25ba81ab01a60bdb9f2d4b4cfed}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a403bf25ba81ab01a60bdb9f2d4b4cfed}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!is\+Wrapper\+For@{is\+Wrapper\+For}}
+\index{is\+Wrapper\+For@{is\+Wrapper\+For}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{is\+Wrapper\+For()}{isWrapperFor()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+is\+Wrapper\+For (\begin{DoxyParamCaption}\item[{Class$<$?$>$}]{iface }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Wrapper\+::is\+Wrapper\+For(\+Class) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1b7f947e15b58dbe233271842c0b6175}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1b7f947e15b58dbe233271842c0b6175}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!process\+Multi\+Counts\+And\+Keys@{process\+Multi\+Counts\+And\+Keys}}
+\index{process\+Multi\+Counts\+And\+Keys@{process\+Multi\+Counts\+And\+Keys}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{process\+Multi\+Counts\+And\+Keys()}{processMultiCountsAndKeys()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+process\+Multi\+Counts\+And\+Keys (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl}{Statement\+Impl}}}]{batched\+Statement,  }\item[{int}]{update\+Count\+Counter,  }\item[{long \mbox{[}$\,$\mbox{]}}]{update\+Counts }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aea1b46dca9271ff10f7e65ba92c224fa}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aea1b46dca9271ff10f7e65ba92c224fa}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!real\+Close@{real\+Close}}
+\index{real\+Close@{real\+Close}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{real\+Close()}{realClose()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+real\+Close (\begin{DoxyParamCaption}\item[{boolean}]{called\+Explicitly,  }\item[{boolean}]{close\+Open\+Results }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Closes this statement, and frees resources.
+
+
+\begin{DoxyParams}{Parameters}
+{\em called\+Explicitly} & was this called from \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac913294cd1adc42af73229a6ba2e4f0b}{close()}}?\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aaf649eaefb9458d2857697f50ba46245}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aaf649eaefb9458d2857697f50ba46245}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!remove\+Open\+Result\+Set@{remove\+Open\+Result\+Set}}
+\index{remove\+Open\+Result\+Set@{remove\+Open\+Result\+Set}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{remove\+Open\+Result\+Set()}{removeOpenResultSet()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+remove\+Open\+Result\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}}}]{rs }\end{DoxyParamCaption})}
+
+Callback for result set instances to remove them from the Set that tracks them per-\/statement
+
+
+\begin{DoxyParams}{Parameters}
+{\em rs} & result set \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a5af1b0ade448d8559094223309113243}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_afca7737baacefddb5151fa0c81a20ee0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_afca7737baacefddb5151fa0c81a20ee0}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!reset\+Cancelled\+State@{reset\+Cancelled\+State}}
+\index{reset\+Cancelled\+State@{reset\+Cancelled\+State}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{reset\+Cancelled\+State()}{resetCancelledState()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+reset\+Cancelled\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a382965ca9799730bbfd58c83facd98b5}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aee9725a333800726518dc41fb794d1cc}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aee9725a333800726518dc41fb794d1cc}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Cancel\+Status@{set\+Cancel\+Status}}
+\index{set\+Cancel\+Status@{set\+Cancel\+Status}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Cancel\+Status()}{setCancelStatus()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Cancel\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_query_1_1_cancel_status}{Cancel\+Status}}}]{cs }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_ad88d55a91d45f0e133f0ffe7a279b258}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a6e7f50419ea0c769393113fde7de7b87}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a6e7f50419ea0c769393113fde7de7b87}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Clear\+Warnings\+Called@{set\+Clear\+Warnings\+Called}}
+\index{set\+Clear\+Warnings\+Called@{set\+Clear\+Warnings\+Called}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Clear\+Warnings\+Called()}{setClearWarningsCalled()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Clear\+Warnings\+Called (\begin{DoxyParamCaption}\item[{boolean}]{clear\+Warnings\+Called }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a7ee7a059fdd6b703d9def2d3bd77a52f}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a30dda4ad8c6bc0be8eb3c926c9a1e0f1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a30dda4ad8c6bc0be8eb3c926c9a1e0f1}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Current\+Catalog@{set\+Current\+Catalog}}
+\index{set\+Current\+Catalog@{set\+Current\+Catalog}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Current\+Catalog()}{setCurrentCatalog()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Current\+Catalog (\begin{DoxyParamCaption}\item[{String}]{current\+Catalog }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a456b19ab936c8d8ecd49dc23aaf6a833}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a60cd7b41aa7098febdb3f9af3aa40423}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a60cd7b41aa7098febdb3f9af3aa40423}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Cursor\+Name@{set\+Cursor\+Name}}
+\index{set\+Cursor\+Name@{set\+Cursor\+Name}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Cursor\+Name()}{setCursorName()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Cursor\+Name (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+set\+Cursor\+Name defines the S\+QL cursor name that will be used by subsequent execute methods. This name can then be used in S\+QL positioned update/delete statements to identify the current row in the Result\+Set generated by this statement. If a database doesn\textquotesingle{}t support positioned update/delete, this method is a no-\/op.
+
+{\bfseries Note\+:} This My\+S\+QL driver does not support cursors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the new cursor name\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a177506cc06af0885ffceef360e697bb0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a177506cc06af0885ffceef360e697bb0}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Escape\+Processing@{set\+Escape\+Processing}}
+\index{set\+Escape\+Processing@{set\+Escape\+Processing}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Escape\+Processing()}{setEscapeProcessing()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Escape\+Processing (\begin{DoxyParamCaption}\item[{boolean}]{enable }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+If escape scanning is on (the default), the driver will do escape substitution before sending the S\+QL to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & true to enable; false to disable\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a7f46764af12c9648ac8ac2929b275fd4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a7f46764af12c9648ac8ac2929b275fd4}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Event\+Sink@{set\+Event\+Sink}}
+\index{set\+Event\+Sink@{set\+Event\+Sink}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Event\+Sink()}{setEventSink()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Event\+Sink (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_profiler_event_handler}{Profiler\+Event\+Handler}}}]{event\+Sink }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_ad50d1ecd73b6b2cac60cff6bec83bfbf}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5f61e150957f4bdfa9682061008d448f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5f61e150957f4bdfa9682061008d448f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Fetch\+Direction@{set\+Fetch\+Direction}}
+\index{set\+Fetch\+Direction@{set\+Fetch\+Direction}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Fetch\+Direction()}{setFetchDirection()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Fetch\+Direction (\begin{DoxyParamCaption}\item[{int}]{direction }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 Give a hint as to the direction in which the rows in a result set will be processed. The hint applies only to result sets created using this Statement object. The default value is Result\+Set.\+F\+E\+T\+C\+H\+\_\+\+F\+O\+R\+W\+A\+RD.
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & the initial direction for processing rows\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs or direction is not one of Result\+Set.\+F\+E\+T\+C\+H\+\_\+\+F\+O\+R\+W\+A\+RD, Result\+Set.\+F\+E\+T\+C\+H\+\_\+\+R\+E\+V\+E\+R\+SE, or Result\+Set.\+F\+E\+T\+C\+H\+\_\+\+U\+N\+K\+N\+O\+WN \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad68efa27b29ed10cdc35f711dad0d16f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad68efa27b29ed10cdc35f711dad0d16f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Fetch\+Size@{set\+Fetch\+Size}}
+\index{set\+Fetch\+Size@{set\+Fetch\+Size}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Fetch\+Size()}{setFetchSize()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Fetch\+Size (\begin{DoxyParamCaption}\item[{int}]{rows }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 Give the J\+D\+BC driver a hint as to the number of rows that should be fetched from the database when more rows are needed. The number of rows specified only affects result sets created using this statement. If the value specified is zero, then the hint is ignored. The default value is zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & the number of rows to fetch\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs, or the condition 0 $<$= rows $<$= this.\+get\+Max\+Rows() is not satisfied. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a903fdf158910d8f86a7417699ac93064}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a903fdf158910d8f86a7417699ac93064}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Hold\+Results\+Open\+Over\+Close@{set\+Hold\+Results\+Open\+Over\+Close}}
+\index{set\+Hold\+Results\+Open\+Over\+Close@{set\+Hold\+Results\+Open\+Over\+Close}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Hold\+Results\+Open\+Over\+Close()}{setHoldResultsOpenOverClose()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Hold\+Results\+Open\+Over\+Close (\begin{DoxyParamCaption}\item[{boolean}]{hold\+Results\+Open\+Over\+Close }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_acf4340a52d236d444fa9584b3f9cc43b}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_adcb9676c5158982c94c3213a11feeb17}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_adcb9676c5158982c94c3213a11feeb17}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Large\+Max\+Rows@{set\+Large\+Max\+Rows}}
+\index{set\+Large\+Max\+Rows@{set\+Large\+Max\+Rows}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Large\+Max\+Rows()}{setLargeMaxRows()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Large\+Max\+Rows (\begin{DoxyParamCaption}\item[{long}]{max }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+2 Same as \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab0226070ba29ae3c0cf7431d7b902c01}{set\+Max\+Rows(int)}} but accepts a long value instead of an int. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a398ed93fc7171fac680cd867a87cbf23}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a398ed93fc7171fac680cd867a87cbf23}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Local\+Infile\+Input\+Stream@{set\+Local\+Infile\+Input\+Stream}}
+\index{set\+Local\+Infile\+Input\+Stream@{set\+Local\+Infile\+Input\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Local\+Infile\+Input\+Stream()}{setLocalInfileInputStream()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Local\+Infile\+Input\+Stream (\begin{DoxyParamCaption}\item[{Input\+Stream}]{stream }\end{DoxyParamCaption})}
+
+Sets an Input\+Stream instance that will be used to send data to the My\+S\+QL server for a \char`\"{}\+L\+O\+A\+D D\+A\+T\+A L\+O\+C\+A\+L I\+N\+F\+I\+L\+E\char`\"{} statement rather than a File\+Input\+Stream or U\+R\+L\+Input\+Stream that represents the path given as an argument to the statement.
+
+This stream will be read to completion upon execution of a \char`\"{}\+L\+O\+A\+D D\+A\+T\+A L\+O\+C\+A\+L I\+N\+F\+I\+L\+E\char`\"{} statement, and will automatically be closed by the driver, so it needs to be reset before each call to execute$\ast$() that would cause the My\+S\+QL server to request data to fulfill the request for \char`\"{}\+L\+O\+A\+D D\+A\+T\+A L\+O\+C\+A\+L I\+N\+F\+I\+L\+E\char`\"{}.
+
+If this value is set to N\+U\+LL, the driver will revert to using a File\+Input\+Stream or U\+R\+L\+Input\+Stream as required.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & input stream \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a89093285d02aa790bb07c7afab7c4140}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab0013f973a2fe60cb9cdbfa6f53486e6}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab0013f973a2fe60cb9cdbfa6f53486e6}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Max\+Field\+Size@{set\+Max\+Field\+Size}}
+\index{set\+Max\+Field\+Size@{set\+Max\+Field\+Size}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Max\+Field\+Size()}{setMaxFieldSize()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Max\+Field\+Size (\begin{DoxyParamCaption}\item[{int}]{max }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Sets the max\+Field\+Size
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & the new max column size limit; zero means unlimited\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if size exceeds buffer size \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab0226070ba29ae3c0cf7431d7b902c01}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab0226070ba29ae3c0cf7431d7b902c01}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Max\+Rows@{set\+Max\+Rows}}
+\index{set\+Max\+Rows@{set\+Max\+Rows}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Max\+Rows()}{setMaxRows()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Max\+Rows (\begin{DoxyParamCaption}\item[{int}]{max }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set the maximum number of rows
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & the new max rows limit; zero means unlimited\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae2447bc18fbb4aba8ef64f48f0c90c36}{get\+Max\+Rows}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abf41b78c8e7c3e4f62f7bedb8bf1a4b0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abf41b78c8e7c3e4f62f7bedb8bf1a4b0}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Ping\+Target@{set\+Ping\+Target}}
+\index{set\+Ping\+Target@{set\+Ping\+Target}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Ping\+Target()}{setPingTarget()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Ping\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_ping_target}{Ping\+Target}}}]{ping\+Target }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a7cf024a169c62cd9acbd867518a82dfc}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac5a27f06b5bc99195e039732366a33f5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac5a27f06b5bc99195e039732366a33f5}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Poolable@{set\+Poolable}}
+\index{set\+Poolable@{set\+Poolable}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Poolable()}{setPoolable()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Poolable (\begin{DoxyParamCaption}\item[{boolean}]{poolable }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4bc4a551083ec1e3a3cabcea2da922ad}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4bc4a551083ec1e3a3cabcea2da922ad}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Query\+Timeout@{set\+Query\+Timeout}}
+\index{set\+Query\+Timeout@{set\+Query\+Timeout}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Query\+Timeout()}{setQueryTimeout()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Query\+Timeout (\begin{DoxyParamCaption}\item[{int}]{seconds }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Sets the query\+Timeout limit
+
+
+\begin{DoxyParams}{Parameters}
+{\em seconds} & 
+\begin{DoxyItemize}
+\item the new query timeout limit in seconds
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a54925c630ea2ab107815206f742e7be9}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a54925c630ea2ab107815206f742e7be9}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Result\+Fetch\+Size@{set\+Result\+Fetch\+Size}}
+\index{set\+Result\+Fetch\+Size@{set\+Result\+Fetch\+Size}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Result\+Fetch\+Size()}{setResultFetchSize()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Result\+Fetch\+Size (\begin{DoxyParamCaption}\item[{int}]{fetch\+Size }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_aa27382e91d04ac9f8f6944dc3949b652}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a7b30ea29a192772e8c464cec82eacb32}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a7b30ea29a192772e8c464cec82eacb32}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Result\+Type@{set\+Result\+Type}}
+\index{set\+Result\+Type@{set\+Result\+Type}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Result\+Type()}{setResultType()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Result\+Type (\begin{DoxyParamCaption}\item[{Resultset.\+Type}]{result\+Set\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a88a77da140cb220313f9f876f08ee0a1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a88a77da140cb220313f9f876f08ee0a1}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!set\+Timeout\+In\+Millis@{set\+Timeout\+In\+Millis}}
+\index{set\+Timeout\+In\+Millis@{set\+Timeout\+In\+Millis}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set\+Timeout\+In\+Millis()}{setTimeoutInMillis()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+set\+Timeout\+In\+Millis (\begin{DoxyParamCaption}\item[{int}]{timeout\+In\+Millis }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a9bdb29806cdcfabc9bf48c9c7872d777}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a04f28c7dc2d7b2c20ae6fad4301dd8fc}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a04f28c7dc2d7b2c20ae6fad4301dd8fc}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!setup\+Streaming\+Timeout@{setup\+Streaming\+Timeout}}
+\index{setup\+Streaming\+Timeout@{setup\+Streaming\+Timeout}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{setup\+Streaming\+Timeout()}{setupStreamingTimeout()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+setup\+Streaming\+Timeout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}}}]{con }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Adjust net\+\_\+write\+\_\+timeout to a higher value if we\textquotesingle{}re streaming result sets. More often than not, someone runs into an issue where they blow net\+\_\+write\+\_\+timeout when using this feature, and if they\textquotesingle{}re willing to hold a result set open for 30 seconds or more, one more round-\/trip isn\textquotesingle{}t going to hurt.
+
+This is reset by Row\+Data\+Dynamic.\+close(). \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0f8e090e92e82672734e247c080f7da7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0f8e090e92e82672734e247c080f7da7}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!start\+Query\+Timer@{start\+Query\+Timer}}
+\index{start\+Query\+Timer@{start\+Query\+Timer}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{start\+Query\+Timer()}{startQueryTimer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_cancel_query_task}{Cancel\+Query\+Task}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+start\+Query\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}}}]{stmt\+To\+Cancel,  }\item[{int}]{timeout }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a05d5eedcc76ab8fe224f4e2df0e4d274}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a51c8920bf35fc909ec12c2755ee2c491}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a51c8920bf35fc909ec12c2755ee2c491}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!statement\+Begins@{statement\+Begins}}
+\index{statement\+Begins@{statement\+Begins}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{statement\+Begins()}{statementBegins()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+statement\+Begins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a103f171654654e894600c59f324b651b}{com.\+mysql.\+cj.\+Query}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a45e2d251ef9edf83345cde29d58dd704}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a45e2d251ef9edf83345cde29d58dd704}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!stop\+Query\+Timer@{stop\+Query\+Timer}}
+\index{stop\+Query\+Timer@{stop\+Query\+Timer}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{stop\+Query\+Timer()}{stopQueryTimer()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+stop\+Query\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_cancel_query_task}{Cancel\+Query\+Task}}}]{timeout\+Task,  }\item[{boolean}]{rethrow\+Cancel\+Reason,  }\item[{boolean}]{check\+Cancel\+Timeout }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a2bee69e6ff58bb35af496297e1803c41}{com.\+mysql.\+cj.\+Query}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_afc0b4a5f7795f9f48929405d708e96e9}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_afc0b4a5f7795f9f48929405d708e96e9}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!batched\+Generated\+Keys@{batched\+Generated\+Keys}}
+\index{batched\+Generated\+Keys@{batched\+Generated\+Keys}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{batched\+Generated\+Keys}{batchedGeneratedKeys}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}}$>$ com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+batched\+Generated\+Keys = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a013d9c1b743d83cb092f7175327a8455}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a013d9c1b743d83cb092f7175327a8455}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!char\+Encoding@{char\+Encoding}}
+\index{char\+Encoding@{char\+Encoding}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{char\+Encoding}{charEncoding}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+char\+Encoding = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+The character encoding to use (if available) \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a22d76e354be8de4952f86504a3433251}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a22d76e354be8de4952f86504a3433251}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!command\+Builder@{command\+Builder}}
+\index{command\+Builder@{command\+Builder}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{command\+Builder}{commandBuilder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_message_builder}{Native\+Message\+Builder}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+command\+Builder = new \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_message_builder}{Native\+Message\+Builder}}()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0d65d87b997eec0472cc8f07f376cfe0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0d65d87b997eec0472cc8f07f376cfe0}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!connection@{connection}}
+\index{connection@{connection}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{connection}{connection}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+connection = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+The connection that created us \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad72b9304ff55338468096c06c5580bc2}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad72b9304ff55338468096c06c5580bc2}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!continue\+Batch\+On\+Error@{continue\+Batch\+On\+Error}}
+\index{continue\+Batch\+On\+Error@{continue\+Batch\+On\+Error}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{continue\+Batch\+On\+Error}{continueBatchOnError}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+continue\+Batch\+On\+Error = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af7455e23bee0b1db4c8b8aa1a94f5412}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_af7455e23bee0b1db4c8b8aa1a94f5412}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!do\+Escape\+Processing@{do\+Escape\+Processing}}
+\index{do\+Escape\+Processing@{do\+Escape\+Processing}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{do\+Escape\+Processing}{doEscapeProcessing}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+do\+Escape\+Processing = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+Should we process escape codes? \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abd7b9196c0cd0c3d4b6822aad9de7cea}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abd7b9196c0cd0c3d4b6822aad9de7cea}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!dont\+Check\+On\+Duplicate\+Key\+Update\+In\+S\+QL@{dont\+Check\+On\+Duplicate\+Key\+Update\+In\+S\+QL}}
+\index{dont\+Check\+On\+Duplicate\+Key\+Update\+In\+S\+QL@{dont\+Check\+On\+Duplicate\+Key\+Update\+In\+S\+QL}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{dont\+Check\+On\+Duplicate\+Key\+Update\+In\+S\+QL}{dontCheckOnDuplicateKeyUpdateInSQL}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+dont\+Check\+On\+Duplicate\+Key\+Update\+In\+S\+QL\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad4f6afecb1d35908d6962282c4a0cd7b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad4f6afecb1d35908d6962282c4a0cd7b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!dont\+Track\+Open\+Resources@{dont\+Track\+Open\+Resources}}
+\index{dont\+Track\+Open\+Resources@{dont\+Track\+Open\+Resources}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{dont\+Track\+Open\+Resources}{dontTrackOpenResources}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$Boolean$>$ com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+dont\+Track\+Open\+Resources\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_acc5c1509a1bc8f9510f4712f044c969a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_acc5c1509a1bc8f9510f4712f044c969a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!dump\+Queries\+On\+Exception@{dump\+Queries\+On\+Exception}}
+\index{dump\+Queries\+On\+Exception@{dump\+Queries\+On\+Exception}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{dump\+Queries\+On\+Exception}{dumpQueriesOnException}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$Boolean$>$ com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+dump\+Queries\+On\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8872c74daa85e8ee0eb4889cafdd7f29}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8872c74daa85e8ee0eb4889cafdd7f29}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!exception\+Interceptor@{exception\+Interceptor}}
+\index{exception\+Interceptor@{exception\+Interceptor}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{exception\+Interceptor}{exceptionInterceptor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+exception\+Interceptor\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a42ed6f6f9121ef0ed2c3849f3bccfc16}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a42ed6f6f9121ef0ed2c3849f3bccfc16}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!generated\+Keys\+Results@{generated\+Keys\+Results}}
+\index{generated\+Keys\+Results@{generated\+Keys\+Results}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{generated\+Keys\+Results}{generatedKeysResults}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+generated\+Keys\+Results = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a3313b50d4d597415d14dedd1620de480}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a3313b50d4d597415d14dedd1620de480}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!hold\+Results\+Open\+Over\+Close@{hold\+Results\+Open\+Over\+Close}}
+\index{hold\+Results\+Open\+Over\+Close@{hold\+Results\+Open\+Over\+Close}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{hold\+Results\+Open\+Over\+Close}{holdResultsOpenOverClose}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+hold\+Results\+Open\+Over\+Close = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Should this statement hold results open over .\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac913294cd1adc42af73229a6ba2e4f0b}{close()}} irregardless of connection\textquotesingle{}s setting? \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5bdc6952f3179144fc55b513bed5a5d7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5bdc6952f3179144fc55b513bed5a5d7}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!is\+Closed@{is\+Closed}}
+\index{is\+Closed@{is\+Closed}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{is\+Closed}{isClosed}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+is\+Closed = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Has this statement been closed? \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a68a8e8c2a5616f548cc9152817fb0459}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a68a8e8c2a5616f548cc9152817fb0459}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!last\+Insert\+Id@{last\+Insert\+Id}}
+\index{last\+Insert\+Id@{last\+Insert\+Id}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{last\+Insert\+Id}{lastInsertId}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+last\+Insert\+Id = -\/1\hspace{0.3cm}{\ttfamily [protected]}}
+
+The auto\+\_\+increment value for the last insert \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a742e2f3ee7d41d0e0edeea2faa7eeefd}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a742e2f3ee7d41d0e0edeea2faa7eeefd}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!last\+Query\+Is\+On\+Dup\+Key\+Update@{last\+Query\+Is\+On\+Dup\+Key\+Update}}
+\index{last\+Query\+Is\+On\+Dup\+Key\+Update@{last\+Query\+Is\+On\+Dup\+Key\+Update}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{last\+Query\+Is\+On\+Dup\+Key\+Update}{lastQueryIsOnDupKeyUpdate}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+last\+Query\+Is\+On\+Dup\+Key\+Update = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Whether or not the last query was of the form ON D\+U\+P\+L\+I\+C\+A\+TE K\+EY U\+P\+D\+A\+TE \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0639ae52b62c9cb39a85ce14d4354cd9}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0639ae52b62c9cb39a85ce14d4354cd9}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!log\+Slow\+Queries@{log\+Slow\+Queries}}
+\index{log\+Slow\+Queries@{log\+Slow\+Queries}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{log\+Slow\+Queries}{logSlowQueries}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+log\+Slow\+Queries = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a6cb3b874092f8119ff208bf2812c8c3b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a6cb3b874092f8119ff208bf2812c8c3b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!max\+Allowed\+Packet@{max\+Allowed\+Packet}}
+\index{max\+Allowed\+Packet@{max\+Allowed\+Packet}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{max\+Allowed\+Packet}{maxAllowedPacket}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$Integer$>$ com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+max\+Allowed\+Packet\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a355103d25d6487623132cf8d0c64c9ab}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a355103d25d6487623132cf8d0c64c9ab}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!max\+Field\+Size@{max\+Field\+Size}}
+\index{max\+Field\+Size@{max\+Field\+Size}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{max\+Field\+Size}{maxFieldSize}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+max\+Field\+Size = (Integer) \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_property_definitions_afd49a84fa2e960cf885e7925aa9d0157}{Property\+Definitions.\+get\+Property\+Definition}}(\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_property_definitions_a12f43563b2f4047d96e88f0b90244c83}{Property\+Definitions.\+P\+N\+A\+M\+E\+\_\+max\+Allowed\+Packet}}).get\+Default\+Value()\hspace{0.3cm}{\ttfamily [protected]}}
+
+The max field size for this statement \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aa64fae9361367a5f37523a7031bb0e69}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aa64fae9361367a5f37523a7031bb0e69}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!max\+Rows@{max\+Rows}}
+\index{max\+Rows@{max\+Rows}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{max\+Rows}{maxRows}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+max\+Rows = -\/1}
+
+The maximum number of rows to return for this statement (-\/1 means {\itshape all} rows) \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a812055d2262412bf71c9553cb0e7640c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a812055d2262412bf71c9553cb0e7640c}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!open\+Results@{open\+Results}}
+\index{open\+Results@{open\+Results}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{open\+Results}{openResults}}
+{\footnotesize\ttfamily Set$<$\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}}$>$ com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+open\+Results = new Hash\+Set$<$$>$()\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set of currently-\/open Result\+Sets \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0e2a7c6a67916ad9df5f99e913c85daf}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a0e2a7c6a67916ad9df5f99e913c85daf}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!pedantic@{pedantic}}
+\index{pedantic@{pedantic}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{pedantic}{pedantic}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+pedantic = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Are we in pedantic mode? \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab525dfdaa9be2464103f3c7bb8f0ffdc}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ab525dfdaa9be2464103f3c7bb8f0ffdc}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!P\+I\+N\+G\+\_\+\+M\+A\+R\+K\+ER@{P\+I\+N\+G\+\_\+\+M\+A\+R\+K\+ER}}
+\index{P\+I\+N\+G\+\_\+\+M\+A\+R\+K\+ER@{P\+I\+N\+G\+\_\+\+M\+A\+R\+K\+ER}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{P\+I\+N\+G\+\_\+\+M\+A\+R\+K\+ER}{PING\_MARKER}}
+{\footnotesize\ttfamily final String com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+P\+I\+N\+G\+\_\+\+M\+A\+R\+K\+ER = \char`\"{}/$\ast$ ping $\ast$/\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a6e08338f8dca3b16c9da609a571fcf29}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a6e08338f8dca3b16c9da609a571fcf29}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!ping\+Target@{ping\+Target}}
+\index{ping\+Target@{ping\+Target}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{ping\+Target}{pingTarget}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_ping_target}{Ping\+Target}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+ping\+Target = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a07b21aaed79ec5115bfb9edee45e95d5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a07b21aaed79ec5115bfb9edee45e95d5}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!point\+Of\+Origin@{point\+Of\+Origin}}
+\index{point\+Of\+Origin@{point\+Of\+Origin}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{point\+Of\+Origin}{pointOfOrigin}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+point\+Of\+Origin\hspace{0.3cm}{\ttfamily [protected]}}
+
+Where this statement was created, only used if profile\+S\+QL or use\+Usage\+Advisor set to true. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aaee84d382bc40b2843416ce3b1a52593}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aaee84d382bc40b2843416ce3b1a52593}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!profile\+S\+QL@{profile\+S\+QL}}
+\index{profile\+S\+QL@{profile\+S\+QL}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{profile\+S\+QL}{profileSQL}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+profile\+S\+QL = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Should we profile? \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a51fe94194f89dc701f885d05c69dd6cd}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a51fe94194f89dc701f885d05c69dd6cd}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!query@{query}}
+\index{query@{query}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{query}{query}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+query\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4dbf800c7a281faff1b33168d5785a01}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a4dbf800c7a281faff1b33168d5785a01}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!results@{results}}
+\index{results@{results}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+results = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+The current results \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8cf4c2416671121707036791a1cd92b7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a8cf4c2416671121707036791a1cd92b7}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!result\+Set\+Concurrency@{result\+Set\+Concurrency}}
+\index{result\+Set\+Concurrency@{result\+Set\+Concurrency}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{result\+Set\+Concurrency}{resultSetConcurrency}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+result\+Set\+Concurrency = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+The concurrency for this result set (updatable or not) \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a167305d0071e6f399f366ea30c0add9c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a167305d0071e6f399f366ea30c0add9c}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!result\+Set\+Factory@{result\+Set\+Factory}}
+\index{result\+Set\+Factory@{result\+Set\+Factory}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{result\+Set\+Factory}{resultSetFactory}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory}{Result\+Set\+Factory}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+result\+Set\+Factory\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2bb72e36b3517dd1e58a1a9700788eb2}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a2bb72e36b3517dd1e58a1a9700788eb2}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!retrieve\+Generated\+Keys@{retrieve\+Generated\+Keys}}
+\index{retrieve\+Generated\+Keys@{retrieve\+Generated\+Keys}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{retrieve\+Generated\+Keys}{retrieveGeneratedKeys}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+retrieve\+Generated\+Keys = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac674098c8ad15c12ce85b0ace4e77095}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac674098c8ad15c12ce85b0ace4e77095}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!rewrite\+Batched\+Statements@{rewrite\+Batched\+Statements}}
+\index{rewrite\+Batched\+Statements@{rewrite\+Batched\+Statements}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{rewrite\+Batched\+Statements}{rewriteBatchedStatements}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$Boolean$>$ com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+rewrite\+Batched\+Statements\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae7950eaf510ef0b55b21c6d43ba36d69}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae7950eaf510ef0b55b21c6d43ba36d69}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!send\+Fractional\+Seconds@{send\+Fractional\+Seconds}}
+\index{send\+Fractional\+Seconds@{send\+Fractional\+Seconds}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{send\+Fractional\+Seconds}{sendFractionalSeconds}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$Boolean$>$ com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+send\+Fractional\+Seconds\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5d87448a8405ded243f28efef524b16e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a5d87448a8405ded243f28efef524b16e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!session@{session}}
+\index{session@{session}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{session}{session}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_native_session}{Native\+Session}} com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+session = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1c79bc87673f3bd4df386f866ba9a838}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a1c79bc87673f3bd4df386f866ba9a838}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!update\+Count@{update\+Count}}
+\index{update\+Count@{update\+Count}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{update\+Count}{updateCount}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+update\+Count = -\/1\hspace{0.3cm}{\ttfamily [protected]}}
+
+The update count for this statement \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abbc3c2e085f83d079cf486f4c460d127}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_abbc3c2e085f83d079cf486f4c460d127}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+F\+A\+L\+SE@{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+F\+A\+L\+SE}}
+\index{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+F\+A\+L\+SE@{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+F\+A\+L\+SE}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+F\+A\+L\+SE}{USES\_VARIABLES\_FALSE}}
+{\footnotesize\ttfamily final byte com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+F\+A\+L\+SE = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae55f926f3d136716603ff6d792d73230}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ae55f926f3d136716603ff6d792d73230}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+T\+R\+UE@{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+T\+R\+UE}}
+\index{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+T\+R\+UE@{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+T\+R\+UE}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+T\+R\+UE}{USES\_VARIABLES\_TRUE}}
+{\footnotesize\ttfamily final byte com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+T\+R\+UE = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a37cd97de6fa460a4f219706ef6375e74}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a37cd97de6fa460a4f219706ef6375e74}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+U\+N\+K\+N\+O\+WN@{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+U\+N\+K\+N\+O\+WN}}
+\index{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+U\+N\+K\+N\+O\+WN@{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+U\+N\+K\+N\+O\+WN}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+U\+N\+K\+N\+O\+WN}{USES\_VARIABLES\_UNKNOWN}}
+{\footnotesize\ttfamily final byte com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+U\+S\+E\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+S\+\_\+\+U\+N\+K\+N\+O\+WN = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad600cc8454dd1cfa63e414a9d5015cd0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ad600cc8454dd1cfa63e414a9d5015cd0}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!use\+Usage\+Advisor@{use\+Usage\+Advisor}}
+\index{use\+Usage\+Advisor@{use\+Usage\+Advisor}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{use\+Usage\+Advisor}{useUsageAdvisor}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+use\+Usage\+Advisor = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Should we use the usage advisor? \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a33a86beb6f375456f45c42eef969d0bc}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a33a86beb6f375456f45c42eef969d0bc}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}!warning\+Chain@{warning\+Chain}}
+\index{warning\+Chain@{warning\+Chain}!com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl@{com\+::mysql\+::cj\+::jdbc\+::\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{warning\+Chain}{warningChain}}
+{\footnotesize\ttfamily S\+Q\+L\+Warning com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl.\+warning\+Chain = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+The warnings chain. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/\mbox{\hyperlink{_statement_impl_8java}{Statement\+Impl.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,241 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group}{}\section{com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group}\index{com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group@{com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a6e9dca65e606501a5c538e52026d85b6}{get\+Connection\+Count}} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a3071d0f8628bcc858c1043648dfa5cc6}{register\+Replication\+Connection}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection}{Replication\+Connection}} conn, List$<$ String $>$ local\+Master\+List, List$<$ String $>$ local\+Slave\+List)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a8a41769fe2c58ca69d5c81c8e46bfac4}{get\+Group\+Name}} ()
+\item 
+Collection$<$ String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_ada95a698bb8c8006815c471771574f74}{get\+Master\+Hosts}} ()
+\item 
+Collection$<$ String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a5698926580f2370aaf7cf64460826efb}{get\+Slave\+Hosts}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_af6b5ef78b532f8eb4cf0529d482076f3}{add\+Slave\+Host}} (String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a62b72dc65b8fc6e2399f2812e3ae75fd}{handle\+Close\+Connection}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection}{Replication\+Connection}} conn)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a9aa1953764777765fa5c2b58498534a1}{remove\+Slave\+Host}} (String host\+Port\+Pair, boolean close\+Gently)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a15c7ea25c34ea77f3dedaa68eb05075d}{promote\+Slave\+To\+Master}} (String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a89849560352e7621bd8133af1af0dd3e}{remove\+Master\+Host}} (String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a63d001e066840fdb7b35f01464baedb0}{remove\+Master\+Host}} (String host\+Port\+Pair, boolean close\+Gently)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_ac128b6e69705e82273438c8fac8a5a45}{get\+Connection\+Count\+With\+Host\+As\+Slave}} (String host\+Port\+Pair)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a87f8a90ba0fad1cf31cf8e851806c01e}{get\+Connection\+Count\+With\+Host\+As\+Master}} (String host\+Port\+Pair)
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_aa2e94384131bb462e1f584f47236021e}{get\+Number\+Of\+Slaves\+Added}} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a9da050e4008ba4c847cb1942e7f5cca5}{get\+Number\+Of\+Slaves\+Removed}} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a831e025a67948ae07cbb2c1d8069dc64}{get\+Number\+Of\+Slave\+Promotions}} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a41e58a0d89cfb66483e04def035144ff}{get\+Total\+Connection\+Count}} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a0688494ae0d8db6dade2ab0012c32c8b}{get\+Active\+Connection\+Count}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a3acb730154c5ca1be9bef539ac44d4ed}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Group of connection objects which can be configured as a group. This is used for promotion/demotion of slaves and masters in a replication configuration, and for exposing metrics around replication-\/aware connections. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_af6b5ef78b532f8eb4cf0529d482076f3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_af6b5ef78b532f8eb4cf0529d482076f3}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!add\+Slave\+Host@{add\+Slave\+Host}}
+\index{add\+Slave\+Host@{add\+Slave\+Host}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{add\+Slave\+Host()}{addSlaveHost()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+add\+Slave\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Adds a host to the slaves hosts list.
+
+We can safely assume that if this host was added to the slaves list, then it must be added to each one of the replication connections from this group as well. Unnecessary calls to \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_ace5387750423fcebedca50789d44a26c}{Replication\+Connection\#add\+Slave\+Host(\+String)}} could result in undesirable locking issues, assuming that this method is synchronized by nature.
+
+This is a no-\/op if the group already has this host in a slave role.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a0688494ae0d8db6dade2ab0012c32c8b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a0688494ae0d8db6dade2ab0012c32c8b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!get\+Active\+Connection\+Count@{get\+Active\+Connection\+Count}}
+\index{get\+Active\+Connection\+Count@{get\+Active\+Connection\+Count}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{get\+Active\+Connection\+Count()}{getActiveConnectionCount()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+get\+Active\+Connection\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a6e9dca65e606501a5c538e52026d85b6}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a6e9dca65e606501a5c538e52026d85b6}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!get\+Connection\+Count@{get\+Connection\+Count}}
+\index{get\+Connection\+Count@{get\+Connection\+Count}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{get\+Connection\+Count()}{getConnectionCount()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+get\+Connection\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a87f8a90ba0fad1cf31cf8e851806c01e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a87f8a90ba0fad1cf31cf8e851806c01e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!get\+Connection\+Count\+With\+Host\+As\+Master@{get\+Connection\+Count\+With\+Host\+As\+Master}}
+\index{get\+Connection\+Count\+With\+Host\+As\+Master@{get\+Connection\+Count\+With\+Host\+As\+Master}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{get\+Connection\+Count\+With\+Host\+As\+Master()}{getConnectionCountWithHostAsMaster()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+get\+Connection\+Count\+With\+Host\+As\+Master (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_ac128b6e69705e82273438c8fac8a5a45}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_ac128b6e69705e82273438c8fac8a5a45}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!get\+Connection\+Count\+With\+Host\+As\+Slave@{get\+Connection\+Count\+With\+Host\+As\+Slave}}
+\index{get\+Connection\+Count\+With\+Host\+As\+Slave@{get\+Connection\+Count\+With\+Host\+As\+Slave}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{get\+Connection\+Count\+With\+Host\+As\+Slave()}{getConnectionCountWithHostAsSlave()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+get\+Connection\+Count\+With\+Host\+As\+Slave (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a8a41769fe2c58ca69d5c81c8e46bfac4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a8a41769fe2c58ca69d5c81c8e46bfac4}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!get\+Group\+Name@{get\+Group\+Name}}
+\index{get\+Group\+Name@{get\+Group\+Name}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{get\+Group\+Name()}{getGroupName()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+get\+Group\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_ada95a698bb8c8006815c471771574f74}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_ada95a698bb8c8006815c471771574f74}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!get\+Master\+Hosts@{get\+Master\+Hosts}}
+\index{get\+Master\+Hosts@{get\+Master\+Hosts}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{get\+Master\+Hosts()}{getMasterHosts()}}
+{\footnotesize\ttfamily Collection$<$String$>$ com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+get\+Master\+Hosts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a831e025a67948ae07cbb2c1d8069dc64}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a831e025a67948ae07cbb2c1d8069dc64}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!get\+Number\+Of\+Slave\+Promotions@{get\+Number\+Of\+Slave\+Promotions}}
+\index{get\+Number\+Of\+Slave\+Promotions@{get\+Number\+Of\+Slave\+Promotions}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{get\+Number\+Of\+Slave\+Promotions()}{getNumberOfSlavePromotions()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+get\+Number\+Of\+Slave\+Promotions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_aa2e94384131bb462e1f584f47236021e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_aa2e94384131bb462e1f584f47236021e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!get\+Number\+Of\+Slaves\+Added@{get\+Number\+Of\+Slaves\+Added}}
+\index{get\+Number\+Of\+Slaves\+Added@{get\+Number\+Of\+Slaves\+Added}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{get\+Number\+Of\+Slaves\+Added()}{getNumberOfSlavesAdded()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+get\+Number\+Of\+Slaves\+Added (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a9da050e4008ba4c847cb1942e7f5cca5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a9da050e4008ba4c847cb1942e7f5cca5}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!get\+Number\+Of\+Slaves\+Removed@{get\+Number\+Of\+Slaves\+Removed}}
+\index{get\+Number\+Of\+Slaves\+Removed@{get\+Number\+Of\+Slaves\+Removed}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{get\+Number\+Of\+Slaves\+Removed()}{getNumberOfSlavesRemoved()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+get\+Number\+Of\+Slaves\+Removed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a5698926580f2370aaf7cf64460826efb}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a5698926580f2370aaf7cf64460826efb}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!get\+Slave\+Hosts@{get\+Slave\+Hosts}}
+\index{get\+Slave\+Hosts@{get\+Slave\+Hosts}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{get\+Slave\+Hosts()}{getSlaveHosts()}}
+{\footnotesize\ttfamily Collection$<$String$>$ com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+get\+Slave\+Hosts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a41e58a0d89cfb66483e04def035144ff}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a41e58a0d89cfb66483e04def035144ff}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!get\+Total\+Connection\+Count@{get\+Total\+Connection\+Count}}
+\index{get\+Total\+Connection\+Count@{get\+Total\+Connection\+Count}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{get\+Total\+Connection\+Count()}{getTotalConnectionCount()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+get\+Total\+Connection\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a62b72dc65b8fc6e2399f2812e3ae75fd}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a62b72dc65b8fc6e2399f2812e3ae75fd}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!handle\+Close\+Connection@{handle\+Close\+Connection}}
+\index{handle\+Close\+Connection@{handle\+Close\+Connection}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{handle\+Close\+Connection()}{handleCloseConnection()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+handle\+Close\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection}{Replication\+Connection}}}]{conn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a15c7ea25c34ea77f3dedaa68eb05075d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a15c7ea25c34ea77f3dedaa68eb05075d}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!promote\+Slave\+To\+Master@{promote\+Slave\+To\+Master}}
+\index{promote\+Slave\+To\+Master@{promote\+Slave\+To\+Master}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{promote\+Slave\+To\+Master()}{promoteSlaveToMaster()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+promote\+Slave\+To\+Master (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Promotes a slave host to master.
+
+We can safely assume that if this host was removed from the slaves list or added to the masters list, then the same host promotion must happen in each one of the replication connections from this group as well. Unnecessary calls to \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_abeccff634ae5dc9f96295b012c458500}{Replication\+Connection\#promote\+Slave\+To\+Master(\+String)}} could result in undesirable locking issues, assuming that this method is synchronized by nature.
+
+This is a no-\/op if the group already has this host in a master role and not in slave role.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a3071d0f8628bcc858c1043648dfa5cc6}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a3071d0f8628bcc858c1043648dfa5cc6}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!register\+Replication\+Connection@{register\+Replication\+Connection}}
+\index{register\+Replication\+Connection@{register\+Replication\+Connection}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{register\+Replication\+Connection()}{registerReplicationConnection()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+register\+Replication\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection}{Replication\+Connection}}}]{conn,  }\item[{List$<$ String $>$}]{local\+Master\+List,  }\item[{List$<$ String $>$}]{local\+Slave\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a89849560352e7621bd8133af1af0dd3e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a89849560352e7621bd8133af1af0dd3e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!remove\+Master\+Host@{remove\+Master\+Host}}
+\index{remove\+Master\+Host@{remove\+Master\+Host}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{remove\+Master\+Host()}{removeMasterHost()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+remove\+Master\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Removes a host from the masters hosts list.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a63d001e066840fdb7b35f01464baedb0}{remove\+Master\+Host(\+String, boolean)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a63d001e066840fdb7b35f01464baedb0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a63d001e066840fdb7b35f01464baedb0}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!remove\+Master\+Host@{remove\+Master\+Host}}
+\index{remove\+Master\+Host@{remove\+Master\+Host}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{remove\+Master\+Host()}{removeMasterHost()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+remove\+Master\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair,  }\item[{boolean}]{close\+Gently }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Removes a host from the masters hosts list.
+
+We can safely assume that if this host was removed from the masters list, then it must be removed from each one of the replication connections from this group as well. Unnecessary calls to \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_a47341136bcee35fd889a2d568e375756}{Replication\+Connection\#remove\+Master\+Host(\+String, boolean)}} could result in undesirable locking issues, assuming that this method is synchronized by nature.
+
+This is a no-\/op if the group doesn\textquotesingle{}t have this host in a master role.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & \\
+\hline
+{\em close\+Gently} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a9aa1953764777765fa5c2b58498534a1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a9aa1953764777765fa5c2b58498534a1}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!remove\+Slave\+Host@{remove\+Slave\+Host}}
+\index{remove\+Slave\+Host@{remove\+Slave\+Host}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{remove\+Slave\+Host()}{removeSlaveHost()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+remove\+Slave\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair,  }\item[{boolean}]{close\+Gently }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Removes a host from the slaves hosts list.
+
+We can safely assume that if this host was removed from the slaves list, then it must be removed from each one of the replication connections from this group as well. Unnecessary calls to \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_ac4e3f61d87c2f40d760917c843b4a4aa}{Replication\+Connection\#remove\+Slave(\+String, boolean)}} could result in undesirable locking issues, assuming that this method is synchronized by nature.
+
+This is a no-\/op if the group doesn\textquotesingle{}t have this host in a slave role.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & \\
+\hline
+{\em close\+Gently} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a3acb730154c5ca1be9bef539ac44d4ed}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection_group_a3acb730154c5ca1be9bef539ac44d4ed}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection\+Group.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/ha/\mbox{\hyperlink{_replication_connection_group_8java}{Replication\+Connection\+Group.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,48 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_binary_row_factory}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Binary\+Row\+Factory Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_binary_row_factory}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Binary\+Row\+Factory@{com.\+mysql.\+cj.\+protocol.\+a.\+Binary\+Row\+Factory}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_abstract_row_factory}{com.\+mysql.\+cj.\+protocol.\+a.\+Abstract\+Row\+Factory}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity\+Factory$<$ T, M extends Message $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_binary_row_factory_a5a203b6e4cd92e3ac271a55815a4d3b5}{Binary\+Row\+Factory}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol}{Native\+Protocol}} protocol, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_abstract_row_factory_a7aef40ef79169af177fd41fe37bc4dec}{column\+Definition}}, Resultset.\+Concurrency \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_abstract_row_factory_ac68967cbb94b27d270217cdd4dec3203}{result\+Set\+Concurrency}}, boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_binary_row_factory_a01899a9aa9f25f09a64fe8b3d43379f8}{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row}})
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_row}{Resultset\+Row}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_binary_row_factory_a02bc6bd4142c4797180e402e70065e7e}{create\+From\+Message}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} row\+Packet)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_binary_row_factory_a01899a9aa9f25f09a64fe8b3d43379f8}{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Handle binary-\/encoded data for server-\/side Prepared\+Statements 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_binary_row_factory_a5a203b6e4cd92e3ac271a55815a4d3b5}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_binary_row_factory_a5a203b6e4cd92e3ac271a55815a4d3b5}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Binary\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Binary\+Row\+Factory}!Binary\+Row\+Factory@{Binary\+Row\+Factory}}
+\index{Binary\+Row\+Factory@{Binary\+Row\+Factory}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Binary\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Binary\+Row\+Factory}}
+\subsubsection{\texorpdfstring{Binary\+Row\+Factory()}{BinaryRowFactory()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+Binary\+Row\+Factory.\+Binary\+Row\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol}{Native\+Protocol}}}]{protocol,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}}]{column\+Definition,  }\item[{Resultset.\+Concurrency}]{result\+Set\+Concurrency,  }\item[{boolean}]{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_binary_row_factory_a01899a9aa9f25f09a64fe8b3d43379f8}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_binary_row_factory_a01899a9aa9f25f09a64fe8b3d43379f8}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Binary\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Binary\+Row\+Factory}!can\+Reuse\+Row\+Packet\+For\+Buffer\+Row@{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row}}
+\index{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row@{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Binary\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Binary\+Row\+Factory}}
+\subsubsection{\texorpdfstring{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row()}{canReuseRowPacketForBufferRow()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Binary\+Row\+Factory.\+can\+Reuse\+Row\+Packet\+For\+Buffer\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_binary_row_factory_a02bc6bd4142c4797180e402e70065e7e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_binary_row_factory_a02bc6bd4142c4797180e402e70065e7e}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Binary\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Binary\+Row\+Factory}!create\+From\+Message@{create\+From\+Message}}
+\index{create\+From\+Message@{create\+From\+Message}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Binary\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Binary\+Row\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Message()}{createFromMessage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_row}{Resultset\+Row}} com.\+mysql.\+cj.\+protocol.\+a.\+Binary\+Row\+Factory.\+create\+From\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}}]{row\+Packet }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/\mbox{\hyperlink{_binary_row_factory_8java}{Binary\+Row\+Factory.\+java}}\end{DoxyCompactItemize}

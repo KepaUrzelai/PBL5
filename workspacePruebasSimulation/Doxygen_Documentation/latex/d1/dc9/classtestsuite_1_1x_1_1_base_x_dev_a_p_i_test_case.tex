@@ -1,0 +1,77 @@
+\hypertarget{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case}{}\section{testsuite.\+x.\+Base\+X\+Dev\+A\+P\+I\+Test\+Case Class Reference}
+\label{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case}\index{testsuite.\+x.\+Base\+X\+Dev\+A\+P\+I\+Test\+Case@{testsuite.\+x.\+Base\+X\+Dev\+A\+P\+I\+Test\+Case}}
+
+
+Inherited by \mbox{\hyperlink{classtestsuite_1_1x_1_1_test_x_dev_a_p_i_requirements}{testsuite.\+x.\+Test\+X\+Dev\+A\+P\+I\+Requirements}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_ad943b876db31d0e1bb386c89b2b135fa}{Base\+X\+Dev\+A\+P\+I\+Test\+Case}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} \mbox{\hyperlink{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_a61c03b936df28ace5d4458def5252eb7}{get\+Session}} (String url)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} \mbox{\hyperlink{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_a362d347ff4b2c8f0a44262d2f57e534b}{get\+Session}} (Properties props)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_a94e9be8bb82a4130d5a8fc48fb8645b1}{base\+Url}} = System.\+get\+Property(\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_property_definitions_a3952b559e0b2ffabf6b1c21eccd179e7}{Property\+Definitions.\+S\+Y\+S\+P\+\_\+testsuite\+\_\+url\+\_\+mysqlx}})
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_a23802eeb5cfd30dec1f476c94d909285}{is\+Set\+For\+X\+Tests}} = this.\+base\+Url != null \&\& this.\+base\+Url.\+length() $>$ 0
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_factory}{Session\+Factory}} \mbox{\hyperlink{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_aa5304216e343498a6ae2d1d9a90016df}{f}} = new \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_factory}{Session\+Factory}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_ad943b876db31d0e1bb386c89b2b135fa}\label{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_ad943b876db31d0e1bb386c89b2b135fa}} 
+\index{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case@{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case}!Base\+X\+Dev\+A\+P\+I\+Test\+Case@{Base\+X\+Dev\+A\+P\+I\+Test\+Case}}
+\index{Base\+X\+Dev\+A\+P\+I\+Test\+Case@{Base\+X\+Dev\+A\+P\+I\+Test\+Case}!testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case@{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case}}
+\subsubsection{\texorpdfstring{Base\+X\+Dev\+A\+P\+I\+Test\+Case()}{BaseXDevAPITestCase()}}
+{\footnotesize\ttfamily testsuite.\+x.\+Base\+X\+Dev\+A\+P\+I\+Test\+Case.\+Base\+X\+Dev\+A\+P\+I\+Test\+Case (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_a61c03b936df28ace5d4458def5252eb7}\label{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_a61c03b936df28ace5d4458def5252eb7}} 
+\index{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case@{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case}!get\+Session@{get\+Session}}
+\index{get\+Session@{get\+Session}!testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case@{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case}}
+\subsubsection{\texorpdfstring{get\+Session()}{getSession()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} testsuite.\+x.\+Base\+X\+Dev\+A\+P\+I\+Test\+Case.\+get\+Session (\begin{DoxyParamCaption}\item[{String}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_a362d347ff4b2c8f0a44262d2f57e534b}\label{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_a362d347ff4b2c8f0a44262d2f57e534b}} 
+\index{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case@{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case}!get\+Session@{get\+Session}}
+\index{get\+Session@{get\+Session}!testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case@{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case}}
+\subsubsection{\texorpdfstring{get\+Session()}{getSession()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} testsuite.\+x.\+Base\+X\+Dev\+A\+P\+I\+Test\+Case.\+get\+Session (\begin{DoxyParamCaption}\item[{Properties}]{props }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_a94e9be8bb82a4130d5a8fc48fb8645b1}\label{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_a94e9be8bb82a4130d5a8fc48fb8645b1}} 
+\index{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case@{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case}!base\+Url@{base\+Url}}
+\index{base\+Url@{base\+Url}!testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case@{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case}}
+\subsubsection{\texorpdfstring{base\+Url}{baseUrl}}
+{\footnotesize\ttfamily String testsuite.\+x.\+Base\+X\+Dev\+A\+P\+I\+Test\+Case.\+base\+Url = System.\+get\+Property(\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_property_definitions_a3952b559e0b2ffabf6b1c21eccd179e7}{Property\+Definitions.\+S\+Y\+S\+P\+\_\+testsuite\+\_\+url\+\_\+mysqlx}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_aa5304216e343498a6ae2d1d9a90016df}\label{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_aa5304216e343498a6ae2d1d9a90016df}} 
+\index{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case@{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case}!f@{f}}
+\index{f@{f}!testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case@{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case}}
+\subsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_factory}{Session\+Factory}} testsuite.\+x.\+Base\+X\+Dev\+A\+P\+I\+Test\+Case.\+f = new \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_factory}{Session\+Factory}}()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_a23802eeb5cfd30dec1f476c94d909285}\label{classtestsuite_1_1x_1_1_base_x_dev_a_p_i_test_case_a23802eeb5cfd30dec1f476c94d909285}} 
+\index{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case@{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case}!is\+Set\+For\+X\+Tests@{is\+Set\+For\+X\+Tests}}
+\index{is\+Set\+For\+X\+Tests@{is\+Set\+For\+X\+Tests}!testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case@{testsuite\+::x\+::\+Base\+X\+Dev\+A\+P\+I\+Test\+Case}}
+\subsubsection{\texorpdfstring{is\+Set\+For\+X\+Tests}{isSetForXTests}}
+{\footnotesize\ttfamily boolean testsuite.\+x.\+Base\+X\+Dev\+A\+P\+I\+Test\+Case.\+is\+Set\+For\+X\+Tests = this.\+base\+Url != null \&\& this.\+base\+Url.\+length() $>$ 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/test/java/testsuite/x/\mbox{\hyperlink{_base_x_dev_a_p_i_test_case_8java}{Base\+X\+Dev\+A\+P\+I\+Test\+Case.\+java}}\end{DoxyCompactItemize}

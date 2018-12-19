@@ -1,0 +1,124 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Reader Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Reader@{com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Reader}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a5a10a043137ff4dd4c39577d98013861}{Tracing\+Packet\+Reader}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ packet\+Reader, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a67550eb953a1d19c2ea8663e2336e2a3}{read\+Header}} ()  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_aff5267e4134fe6e81a0122eb5e2d2455}{read\+Message}} (Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ reuse, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}} header)  throws I\+O\+Exception 
+\item 
+byte \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a35edadc0834493cc9536aa1c624c13ac}{get\+Message\+Sequence}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a750a22688863ef18d02baaccd7f8475d}{reset\+Message\+Sequence}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a92981daf5c4331ba841e31d90d6b43ed}{undecorate\+All}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a5fab05e4e4ab55adf0f0755d7ca6513d}{undecorate}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A decorating \mbox{\hyperlink{}{Packet\+Reader}} which traces all received packets to the provided logger. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a5a10a043137ff4dd4c39577d98013861}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a5a10a043137ff4dd4c39577d98013861}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader}!Tracing\+Packet\+Reader@{Tracing\+Packet\+Reader}}
+\index{Tracing\+Packet\+Reader@{Tracing\+Packet\+Reader}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{Tracing\+Packet\+Reader()}{TracingPacketReader()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Reader.\+Tracing\+Packet\+Reader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$}]{packet\+Reader,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}}}]{log }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a35edadc0834493cc9536aa1c624c13ac}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a35edadc0834493cc9536aa1c624c13ac}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader}!get\+Message\+Sequence@{get\+Message\+Sequence}}
+\index{get\+Message\+Sequence@{get\+Message\+Sequence}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{get\+Message\+Sequence()}{getMessageSequence()}}
+{\footnotesize\ttfamily byte com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Reader.\+get\+Message\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get last message sequence number, as it was stored by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a67550eb953a1d19c2ea8663e2336e2a3}{read\+Header()}}.
+
+\begin{DoxyReturn}{Returns}
+number 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader_ac4a36fb287c5308dd3d7e6157ef4e237}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a67550eb953a1d19c2ea8663e2336e2a3}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a67550eb953a1d19c2ea8663e2336e2a3}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader}!read\+Header@{read\+Header}}
+\index{read\+Header@{read\+Header}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{read\+Header()}{readHeader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}} com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Reader.\+read\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Read the next message header from server, possibly blocking indefinitely until the message is received.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_header}{Message\+Header}} of the next message 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader_a09745b0e30f74fa13e2b32f22ce70cbb}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_aff5267e4134fe6e81a0122eb5e2d2455}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_aff5267e4134fe6e81a0122eb5e2d2455}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader}!read\+Message@{read\+Message}}
+\index{read\+Message@{read\+Message}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{read\+Message()}{readMessage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Reader.\+read\+Message (\begin{DoxyParamCaption}\item[{Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$}]{reuse,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}}]{header }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a750a22688863ef18d02baaccd7f8475d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a750a22688863ef18d02baaccd7f8475d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader}!reset\+Message\+Sequence@{reset\+Message\+Sequence}}
+\index{reset\+Message\+Sequence@{reset\+Message\+Sequence}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{reset\+Message\+Sequence()}{resetMessageSequence()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Reader.\+reset\+Message\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set stored message sequence number to 0. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader_a3161e55ab8c1bb4d533aa6d2700fb14d}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a5fab05e4e4ab55adf0f0755d7ca6513d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a5fab05e4e4ab55adf0f0755d7ca6513d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader}!undecorate@{undecorate}}
+\index{undecorate@{undecorate}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{undecorate()}{undecorate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Reader.\+undecorate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the previous \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}} instance from the decorators chain or the current \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}} if it is the first entry in a chain.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader_a59b0e118857c167ad4a270845f19e89b}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a92981daf5c4331ba841e31d90d6b43ed}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_reader_a92981daf5c4331ba841e31d90d6b43ed}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader}!undecorate\+All@{undecorate\+All}}
+\index{undecorate\+All@{undecorate\+All}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{undecorate\+All()}{undecorateAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Reader.\+undecorate\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return a \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}} instance free of decorators.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader_a22a326215a91e4d7bff08d1f2c3e1b6d}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/\mbox{\hyperlink{_tracing_packet_reader_8java}{Tracing\+Packet\+Reader.\+java}}\end{DoxyCompactItemize}

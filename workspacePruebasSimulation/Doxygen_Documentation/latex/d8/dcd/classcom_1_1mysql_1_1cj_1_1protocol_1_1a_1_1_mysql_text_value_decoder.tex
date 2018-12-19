@@ -1,0 +1,73 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Mysql\+Text\+Value\+Decoder Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Mysql\+Text\+Value\+Decoder@{com.\+mysql.\+cj.\+protocol.\+a.\+Mysql\+Text\+Value\+Decoder}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_value_decoder}{com.\+mysql.\+cj.\+protocol.\+Value\+Decoder}}.
+
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_ad74c2b34e9bdadb001053eba8200ef0a}{D\+A\+T\+E\+\_\+\+B\+U\+F\+\_\+\+L\+EN}} = 10
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a36008c724f45f33bef588c9512a4e4d3}{T\+I\+M\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+IN}} = 8
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a52b40d9392ee253f42bf6b0b40e595a8}{T\+I\+M\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+AX}} = 17
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a8231f45af061c93c4b82283c5f00d0dc}{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+N\+O\+F\+R\+A\+C\+\_\+\+S\+T\+R\+\_\+\+L\+EN}} = 19
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_ab5c28f2e213994f87306b36be8f01b2f}{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+AX}} = \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a8231f45af061c93c4b82283c5f00d0dc}{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+N\+O\+F\+R\+A\+C\+\_\+\+S\+T\+R\+\_\+\+L\+EN}} + 7
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a79a11dfba22b1f847056904c57132565}{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+W\+I\+T\+H\+\_\+\+N\+A\+N\+OS}} = \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a8231f45af061c93c4b82283c5f00d0dc}{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+N\+O\+F\+R\+A\+C\+\_\+\+S\+T\+R\+\_\+\+L\+EN}} + 10
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implementation of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_value_decoder}{com.\+mysql.\+cj.\+protocol.\+Value\+Decoder}} for the My\+S\+QL text protocol. All values will be received as {\itshape Length\+Encoded\+String} values. 
+
+Refer to My\+S\+QL documentation for format of values as strings. 
+
+Numeric values are returned as A\+S\+C\+II (encoding=63/binary). 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_ad74c2b34e9bdadb001053eba8200ef0a}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_ad74c2b34e9bdadb001053eba8200ef0a}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder}!D\+A\+T\+E\+\_\+\+B\+U\+F\+\_\+\+L\+EN@{D\+A\+T\+E\+\_\+\+B\+U\+F\+\_\+\+L\+EN}}
+\index{D\+A\+T\+E\+\_\+\+B\+U\+F\+\_\+\+L\+EN@{D\+A\+T\+E\+\_\+\+B\+U\+F\+\_\+\+L\+EN}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder}}
+\subsubsection{\texorpdfstring{D\+A\+T\+E\+\_\+\+B\+U\+F\+\_\+\+L\+EN}{DATE\_BUF\_LEN}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Mysql\+Text\+Value\+Decoder.\+D\+A\+T\+E\+\_\+\+B\+U\+F\+\_\+\+L\+EN = 10\hspace{0.3cm}{\ttfamily [static]}}
+
+Buffer length of My\+S\+QL date string\+: \textquotesingle{}Y\+Y\+Y\+Y-\/\+M\+M-\/\+DD\textquotesingle{}. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a52b40d9392ee253f42bf6b0b40e595a8}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a52b40d9392ee253f42bf6b0b40e595a8}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder}!T\+I\+M\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+AX@{T\+I\+M\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+AX}}
+\index{T\+I\+M\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+AX@{T\+I\+M\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+AX}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+AX}{TIME\_STR\_LEN\_MAX}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Mysql\+Text\+Value\+Decoder.\+T\+I\+M\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+AX = 17\hspace{0.3cm}{\ttfamily [static]}}
+
+Max string length of My\+S\+QL time string (with microsecs)\+: \textquotesingle{}-\/\+H\+HH\+:MM\+:S\+S.\+mmmmmm\textquotesingle{}. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a36008c724f45f33bef588c9512a4e4d3}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a36008c724f45f33bef588c9512a4e4d3}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder}!T\+I\+M\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+IN@{T\+I\+M\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+IN}}
+\index{T\+I\+M\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+IN@{T\+I\+M\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+IN}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+IN}{TIME\_STR\_LEN\_MIN}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Mysql\+Text\+Value\+Decoder.\+T\+I\+M\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+IN = 8\hspace{0.3cm}{\ttfamily [static]}}
+
+Min string length of My\+S\+QL time string\+: \textquotesingle{}H\+H\+:\+MM\+:SS\textquotesingle{}. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a8231f45af061c93c4b82283c5f00d0dc}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a8231f45af061c93c4b82283c5f00d0dc}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder}!T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+N\+O\+F\+R\+A\+C\+\_\+\+S\+T\+R\+\_\+\+L\+EN@{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+N\+O\+F\+R\+A\+C\+\_\+\+S\+T\+R\+\_\+\+L\+EN}}
+\index{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+N\+O\+F\+R\+A\+C\+\_\+\+S\+T\+R\+\_\+\+L\+EN@{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+N\+O\+F\+R\+A\+C\+\_\+\+S\+T\+R\+\_\+\+L\+EN}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+N\+O\+F\+R\+A\+C\+\_\+\+S\+T\+R\+\_\+\+L\+EN}{TIMESTAMP\_NOFRAC\_STR\_LEN}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Mysql\+Text\+Value\+Decoder.\+T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+N\+O\+F\+R\+A\+C\+\_\+\+S\+T\+R\+\_\+\+L\+EN = 19\hspace{0.3cm}{\ttfamily [static]}}
+
+String length of My\+S\+QL timestamp string (no microsecs)\+: \textquotesingle{}Y\+Y\+Y\+Y-\/\+M\+M-\/\+DD H\+H\+:\+MM\+:SS\textquotesingle{}. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_ab5c28f2e213994f87306b36be8f01b2f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_ab5c28f2e213994f87306b36be8f01b2f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder}!T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+AX@{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+AX}}
+\index{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+AX@{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+AX}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+AX}{TIMESTAMP\_STR\_LEN\_MAX}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Mysql\+Text\+Value\+Decoder.\+T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+M\+AX = \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a8231f45af061c93c4b82283c5f00d0dc}{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+N\+O\+F\+R\+A\+C\+\_\+\+S\+T\+R\+\_\+\+L\+EN}} + 7\hspace{0.3cm}{\ttfamily [static]}}
+
+Max string length of My\+S\+QL timestamp (with microsecs)\+: \textquotesingle{}Y\+Y\+Y\+Y-\/\+M\+M-\/\+DD H\+H\+:\+MM\+:S\+S.\+mmmmmm\textquotesingle{}. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a79a11dfba22b1f847056904c57132565}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a79a11dfba22b1f847056904c57132565}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder}!T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+W\+I\+T\+H\+\_\+\+N\+A\+N\+OS@{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+W\+I\+T\+H\+\_\+\+N\+A\+N\+OS}}
+\index{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+W\+I\+T\+H\+\_\+\+N\+A\+N\+OS@{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+W\+I\+T\+H\+\_\+\+N\+A\+N\+OS}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Mysql\+Text\+Value\+Decoder}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+W\+I\+T\+H\+\_\+\+N\+A\+N\+OS}{TIMESTAMP\_STR\_LEN\_WITH\_NANOS}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+protocol.\+a.\+Mysql\+Text\+Value\+Decoder.\+T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N\+\_\+\+W\+I\+T\+H\+\_\+\+N\+A\+N\+OS = \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_mysql_text_value_decoder_a8231f45af061c93c4b82283c5f00d0dc}{T\+I\+M\+E\+S\+T\+A\+M\+P\+\_\+\+N\+O\+F\+R\+A\+C\+\_\+\+S\+T\+R\+\_\+\+L\+EN}} + 10\hspace{0.3cm}{\ttfamily [static]}}
+
+String length of String timestamp with nanos. This does not come from My\+S\+QL server but we support it via string conversion. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/\mbox{\hyperlink{_mysql_text_value_decoder_8java}{Mysql\+Text\+Value\+Decoder.\+java}}\end{DoxyCompactItemize}

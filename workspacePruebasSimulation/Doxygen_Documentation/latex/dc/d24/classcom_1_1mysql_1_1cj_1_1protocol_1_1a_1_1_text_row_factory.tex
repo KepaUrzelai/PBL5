@@ -1,0 +1,90 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Text\+Row\+Factory Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Text\+Row\+Factory@{com.\+mysql.\+cj.\+protocol.\+a.\+Text\+Row\+Factory}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_abstract_row_factory}{com.\+mysql.\+cj.\+protocol.\+a.\+Abstract\+Row\+Factory}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity\+Factory$<$ T, M extends Message $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a0655493ffefb46e843346cc24bdc2db9}{Text\+Row\+Factory}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol}{Native\+Protocol}} protocol, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a723ac4ba54ca214d91299abaa333693e}{column\+Definition}}, Resultset.\+Concurrency \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a7bf45e9680bd7908c812398a3206c79d}{result\+Set\+Concurrency}}, boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_ad1c4d5c8f2bab424674be72ed7a4bb21}{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row}})
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_row}{Resultset\+Row}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_abb512d21748eabdf15597e3fd8015aac}{create\+From\+Message}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} row\+Packet)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a330ee4eed94a0c86cf6fa3aa65ad902f}{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a723ac4ba54ca214d91299abaa333693e}{column\+Definition}}
+\item 
+Resultset.\+Concurrency \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a7bf45e9680bd7908c812398a3206c79d}{result\+Set\+Concurrency}}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_ad1c4d5c8f2bab424674be72ed7a4bb21}{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Integer $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a71885b432fc6c0822fc2ba168fb4977a}{use\+Buffer\+Row\+Size\+Threshold}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a946b99bee4caa665f11a74d7a21af42b}{exception\+Interceptor}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a0655493ffefb46e843346cc24bdc2db9}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a0655493ffefb46e843346cc24bdc2db9}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}!Text\+Row\+Factory@{Text\+Row\+Factory}}
+\index{Text\+Row\+Factory@{Text\+Row\+Factory}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}}
+\subsubsection{\texorpdfstring{Text\+Row\+Factory()}{TextRowFactory()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+Text\+Row\+Factory.\+Text\+Row\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol}{Native\+Protocol}}}]{protocol,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}}]{column\+Definition,  }\item[{Resultset.\+Concurrency}]{result\+Set\+Concurrency,  }\item[{boolean}]{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a330ee4eed94a0c86cf6fa3aa65ad902f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a330ee4eed94a0c86cf6fa3aa65ad902f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}!can\+Reuse\+Row\+Packet\+For\+Buffer\+Row@{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row}}
+\index{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row@{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}}
+\subsubsection{\texorpdfstring{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row()}{canReuseRowPacketForBufferRow()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Text\+Row\+Factory.\+can\+Reuse\+Row\+Packet\+For\+Buffer\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_abb512d21748eabdf15597e3fd8015aac}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_abb512d21748eabdf15597e3fd8015aac}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}!create\+From\+Message@{create\+From\+Message}}
+\index{create\+From\+Message@{create\+From\+Message}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Message()}{createFromMessage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_row}{Resultset\+Row}} com.\+mysql.\+cj.\+protocol.\+a.\+Text\+Row\+Factory.\+create\+From\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}}]{row\+Packet }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_ad1c4d5c8f2bab424674be72ed7a4bb21}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_ad1c4d5c8f2bab424674be72ed7a4bb21}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}!can\+Reuse\+Row\+Packet\+For\+Buffer\+Row@{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row}}
+\index{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row@{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}}
+\subsubsection{\texorpdfstring{can\+Reuse\+Row\+Packet\+For\+Buffer\+Row}{canReuseRowPacketForBufferRow}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Text\+Row\+Factory.\+can\+Reuse\+Row\+Packet\+For\+Buffer\+Row\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a723ac4ba54ca214d91299abaa333693e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a723ac4ba54ca214d91299abaa333693e}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}!column\+Definition@{column\+Definition}}
+\index{column\+Definition@{column\+Definition}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}}
+\subsubsection{\texorpdfstring{column\+Definition}{columnDefinition}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} com.\+mysql.\+cj.\+protocol.\+a.\+Text\+Row\+Factory.\+column\+Definition\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a946b99bee4caa665f11a74d7a21af42b}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a946b99bee4caa665f11a74d7a21af42b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}!exception\+Interceptor@{exception\+Interceptor}}
+\index{exception\+Interceptor@{exception\+Interceptor}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}}
+\subsubsection{\texorpdfstring{exception\+Interceptor}{exceptionInterceptor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} com.\+mysql.\+cj.\+protocol.\+a.\+Text\+Row\+Factory.\+exception\+Interceptor\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a7bf45e9680bd7908c812398a3206c79d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a7bf45e9680bd7908c812398a3206c79d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}!result\+Set\+Concurrency@{result\+Set\+Concurrency}}
+\index{result\+Set\+Concurrency@{result\+Set\+Concurrency}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}}
+\subsubsection{\texorpdfstring{result\+Set\+Concurrency}{resultSetConcurrency}}
+{\footnotesize\ttfamily Resultset.\+Concurrency com.\+mysql.\+cj.\+protocol.\+a.\+Text\+Row\+Factory.\+result\+Set\+Concurrency\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a71885b432fc6c0822fc2ba168fb4977a}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_row_factory_a71885b432fc6c0822fc2ba168fb4977a}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}!use\+Buffer\+Row\+Size\+Threshold@{use\+Buffer\+Row\+Size\+Threshold}}
+\index{use\+Buffer\+Row\+Size\+Threshold@{use\+Buffer\+Row\+Size\+Threshold}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Text\+Row\+Factory}}
+\subsubsection{\texorpdfstring{use\+Buffer\+Row\+Size\+Threshold}{useBufferRowSizeThreshold}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$Integer$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Text\+Row\+Factory.\+use\+Buffer\+Row\+Size\+Threshold\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/\mbox{\hyperlink{_text_row_factory_8java}{Text\+Row\+Factory.\+java}}\end{DoxyCompactItemize}

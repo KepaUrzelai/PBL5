@@ -1,0 +1,183 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser}\index{com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser@{com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+interface {\bfseries Parse\+Expr}
+\item 
+class {\bfseries Token}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_ad70ff0dd3eb608b91d106978a6740d49}{Expr\+Parser}} (String s)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a77381c9ab6c86b7c5fb792ffa16366cc}{Expr\+Parser}} (String s, boolean allow\+Relational\+Columns)
+\item 
+List$<$ Document\+Path\+Item $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a5739c15d14dc9c0cf24656cd095e2e11}{document\+Path}} ()
+\item 
+Expr \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_aaabe0dbc40e4e4a9e8af0ee1c357dcdd}{document\+Field}} ()
+\item 
+Expr \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a4b585b964454cc26c544d824d33b3498}{parse}} ()
+\item 
+List$<$ Order $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_aa948ecc19739c733f80c170943ce53fe}{parse\+Order\+Spec}} ()
+\item 
+List$<$ Projection $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a236fa3f356e511f04e6dfb64a333b354}{parse\+Table\+Select\+Projection}} ()
+\item 
+Column \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a2c759e26260efb3a807ea8ca178d7f55}{parse\+Table\+Insert\+Field}} ()
+\item 
+Column\+Identifier \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_ab2e27d666920b2b5e2985b98a7c658d7}{parse\+Table\+Update\+Field}} ()
+\item 
+List$<$ Projection $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a93ace436851f9df69c5e69828b19d02c}{parse\+Document\+Projection}} ()
+\item 
+List$<$ Expr $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_ae0e58b00609560b6a43556d12491d152}{parse\+Expr\+List}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a1966233da75608f47433e709b6493adf}{get\+Positional\+Placeholder\+Count}} ()
+\item 
+Map$<$ String, Integer $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a71d5c16a61ebe39a18c6e861f93acaa7}{get\+Placeholder\+Name\+To\+Position\+Map}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expression}{Expression}} parser for X protocol. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_ad70ff0dd3eb608b91d106978a6740d49}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_ad70ff0dd3eb608b91d106978a6740d49}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}!Expr\+Parser@{Expr\+Parser}}
+\index{Expr\+Parser@{Expr\+Parser}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}}
+\subsubsection{\texorpdfstring{Expr\+Parser()}{ExprParser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser.\+Expr\+Parser (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a77381c9ab6c86b7c5fb792ffa16366cc}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a77381c9ab6c86b7c5fb792ffa16366cc}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}!Expr\+Parser@{Expr\+Parser}}
+\index{Expr\+Parser@{Expr\+Parser}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}}
+\subsubsection{\texorpdfstring{Expr\+Parser()}{ExprParser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser.\+Expr\+Parser (\begin{DoxyParamCaption}\item[{String}]{s,  }\item[{boolean}]{allow\+Relational\+Columns }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_aaabe0dbc40e4e4a9e8af0ee1c357dcdd}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_aaabe0dbc40e4e4a9e8af0ee1c357dcdd}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}!document\+Field@{document\+Field}}
+\index{document\+Field@{document\+Field}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}}
+\subsubsection{\texorpdfstring{document\+Field()}{documentField()}}
+{\footnotesize\ttfamily Expr com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser.\+document\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Parse a document field.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{}{Expr}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a5739c15d14dc9c0cf24656cd095e2e11}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a5739c15d14dc9c0cf24656cd095e2e11}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}!document\+Path@{document\+Path}}
+\index{document\+Path@{document\+Path}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}}
+\subsubsection{\texorpdfstring{document\+Path()}{documentPath()}}
+{\footnotesize\ttfamily List$<$Document\+Path\+Item$>$ com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser.\+document\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Parse a J\+S\+O\+N-\/style document path, like WL\#7909, but prefix by . instead of \$.
+
+\begin{DoxyReturn}{Returns}
+list of \mbox{\hyperlink{}{Document\+Path\+Item}} objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a71d5c16a61ebe39a18c6e861f93acaa7}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a71d5c16a61ebe39a18c6e861f93acaa7}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}!get\+Placeholder\+Name\+To\+Position\+Map@{get\+Placeholder\+Name\+To\+Position\+Map}}
+\index{get\+Placeholder\+Name\+To\+Position\+Map@{get\+Placeholder\+Name\+To\+Position\+Map}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}}
+\subsubsection{\texorpdfstring{get\+Placeholder\+Name\+To\+Position\+Map()}{getPlaceholderNameToPositionMap()}}
+{\footnotesize\ttfamily Map$<$String, Integer$>$ com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser.\+get\+Placeholder\+Name\+To\+Position\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+a mapping of parameter names to positions. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a1966233da75608f47433e709b6493adf}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a1966233da75608f47433e709b6493adf}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}!get\+Positional\+Placeholder\+Count@{get\+Positional\+Placeholder\+Count}}
+\index{get\+Positional\+Placeholder\+Count@{get\+Positional\+Placeholder\+Count}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}}
+\subsubsection{\texorpdfstring{get\+Positional\+Placeholder\+Count()}{getPositionalPlaceholderCount()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser.\+get\+Positional\+Placeholder\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the number of positional placeholders in the expression.
+
+\begin{DoxyReturn}{Returns}
+the number of positional placeholders in the expression 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a4b585b964454cc26c544d824d33b3498}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a4b585b964454cc26c544d824d33b3498}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}!parse@{parse}}
+\index{parse@{parse}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily Expr com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser.\+parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Parse the entire string as an expression.
+
+\begin{DoxyReturn}{Returns}
+an X protocol expression tree 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a93ace436851f9df69c5e69828b19d02c}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a93ace436851f9df69c5e69828b19d02c}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}!parse\+Document\+Projection@{parse\+Document\+Projection}}
+\index{parse\+Document\+Projection@{parse\+Document\+Projection}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}}
+\subsubsection{\texorpdfstring{parse\+Document\+Projection()}{parseDocumentProjection()}}
+{\footnotesize\ttfamily List$<$Projection$>$ com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser.\+parse\+Document\+Projection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Parse a document projection which is similar to S\+E\+L\+E\+CT but with document paths as the target alias.
+
+\begin{DoxyReturn}{Returns}
+list of \mbox{\hyperlink{}{Projection}} objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_ae0e58b00609560b6a43556d12491d152}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_ae0e58b00609560b6a43556d12491d152}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}!parse\+Expr\+List@{parse\+Expr\+List}}
+\index{parse\+Expr\+List@{parse\+Expr\+List}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}}
+\subsubsection{\texorpdfstring{parse\+Expr\+List()}{parseExprList()}}
+{\footnotesize\ttfamily List$<$Expr$>$ com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser.\+parse\+Expr\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Parse a list of expressions used for G\+R\+O\+UP BY.
+
+\begin{DoxyReturn}{Returns}
+list of \mbox{\hyperlink{}{Expr}} objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_aa948ecc19739c733f80c170943ce53fe}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_aa948ecc19739c733f80c170943ce53fe}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}!parse\+Order\+Spec@{parse\+Order\+Spec}}
+\index{parse\+Order\+Spec@{parse\+Order\+Spec}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}}
+\subsubsection{\texorpdfstring{parse\+Order\+Spec()}{parseOrderSpec()}}
+{\footnotesize\ttfamily List$<$Order$>$ com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser.\+parse\+Order\+Spec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Parse an O\+R\+D\+ER BY specification which is a comma-\/separated list of expressions, each may be optionally suffixed by A\+S\+C/\+D\+E\+SC.
+
+\begin{DoxyReturn}{Returns}
+list of \mbox{\hyperlink{}{Order}} objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a2c759e26260efb3a807ea8ca178d7f55}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a2c759e26260efb3a807ea8ca178d7f55}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}!parse\+Table\+Insert\+Field@{parse\+Table\+Insert\+Field}}
+\index{parse\+Table\+Insert\+Field@{parse\+Table\+Insert\+Field}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}}
+\subsubsection{\texorpdfstring{parse\+Table\+Insert\+Field()}{parseTableInsertField()}}
+{\footnotesize\ttfamily Column com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser.\+parse\+Table\+Insert\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Parse an I\+N\+S\+E\+RT field name.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_column}{Column}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a236fa3f356e511f04e6dfb64a333b354}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_a236fa3f356e511f04e6dfb64a333b354}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}!parse\+Table\+Select\+Projection@{parse\+Table\+Select\+Projection}}
+\index{parse\+Table\+Select\+Projection@{parse\+Table\+Select\+Projection}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}}
+\subsubsection{\texorpdfstring{parse\+Table\+Select\+Projection()}{parseTableSelectProjection()}}
+{\footnotesize\ttfamily List$<$Projection$>$ com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser.\+parse\+Table\+Select\+Projection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Parse a S\+E\+L\+E\+CT projection which is a comma-\/separated list of expressions, each optionally suffixed with a target alias.
+
+\begin{DoxyReturn}{Returns}
+list of \mbox{\hyperlink{}{Projection}} objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_ab2e27d666920b2b5e2985b98a7c658d7}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_parser_ab2e27d666920b2b5e2985b98a7c658d7}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}!parse\+Table\+Update\+Field@{parse\+Table\+Update\+Field}}
+\index{parse\+Table\+Update\+Field@{parse\+Table\+Update\+Field}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Parser}}
+\subsubsection{\texorpdfstring{parse\+Table\+Update\+Field()}{parseTableUpdateField()}}
+{\footnotesize\ttfamily Column\+Identifier com.\+mysql.\+cj.\+xdevapi.\+Expr\+Parser.\+parse\+Table\+Update\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Parse an U\+P\+D\+A\+TE field which can include can document paths.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{}{Column\+Identifier}} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_expr_parser_8java}{Expr\+Parser.\+java}}\end{DoxyCompactItemize}

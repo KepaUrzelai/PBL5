@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['xa_5fdata_5fsource_5fclass_5fname',['XA_DATA_SOURCE_CLASS_NAME',['../d2/d4e/classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_data_source_factory.html#a638c5fed8d71a1a6e3a79e93eaa82711',1,'com::mysql::cj::jdbc::MysqlDataSourceFactory']]],
+  ['xdevapi_5fsession',['XDEVAPI_SESSION',['../df/dbe/enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_type.html#ac40e1e74b0d797302f6c1caf03b015e1',1,'com::mysql::cj::conf::ConnectionUrl::Type']]],
+  ['xml',['XML',['../d8/dc9/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_resultset_1_1_content_type___b_y_t_e_s.html#aad070c4b8803fae679a573e2c5088de5',1,'com::mysql::cj::x::protobuf::MysqlxResultset::ContentType_BYTES']]],
+  ['xml_5fvalue',['XML_VALUE',['../d8/dc9/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_resultset_1_1_content_type___b_y_t_e_s.html#aadfad96a778ee358721f0eb095cb72a4',1,'com::mysql::cj::x::protobuf::MysqlxResultset::ContentType_BYTES']]],
+  ['xplugin_5fstmt_5fcreate_5fcollection',['XPLUGIN_STMT_CREATE_COLLECTION',['../d0/d2c/enumcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_xplugin_statement_command.html#a65981b3f328343ade10964ed27ce74c4',1,'com::mysql::cj::protocol::x::XpluginStatementCommand']]],
+  ['xplugin_5fstmt_5fcreate_5fcollection_5findex',['XPLUGIN_STMT_CREATE_COLLECTION_INDEX',['../d0/d2c/enumcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_xplugin_statement_command.html#abfc5ac3306dac629ca92693a0426d4de',1,'com::mysql::cj::protocol::x::XpluginStatementCommand']]],
+  ['xplugin_5fstmt_5fdisable_5fnotices',['XPLUGIN_STMT_DISABLE_NOTICES',['../d0/d2c/enumcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_xplugin_statement_command.html#a198d0cd923d70e7474030acd651fda00',1,'com::mysql::cj::protocol::x::XpluginStatementCommand']]],
+  ['xplugin_5fstmt_5fdrop_5fcollection',['XPLUGIN_STMT_DROP_COLLECTION',['../d0/d2c/enumcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_xplugin_statement_command.html#aa4c2e1b6e470e98fa48729bb89bdf0f9',1,'com::mysql::cj::protocol::x::XpluginStatementCommand']]],
+  ['xplugin_5fstmt_5fdrop_5fcollection_5findex',['XPLUGIN_STMT_DROP_COLLECTION_INDEX',['../d0/d2c/enumcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_xplugin_statement_command.html#a075e70b0148956e8146acd445ffc0626',1,'com::mysql::cj::protocol::x::XpluginStatementCommand']]],
+  ['xplugin_5fstmt_5fenable_5fnotices',['XPLUGIN_STMT_ENABLE_NOTICES',['../d0/d2c/enumcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_xplugin_statement_command.html#a1ae437e3f224f097e1ac8439e42dd537',1,'com::mysql::cj::protocol::x::XpluginStatementCommand']]],
+  ['xplugin_5fstmt_5flist_5fnotices',['XPLUGIN_STMT_LIST_NOTICES',['../d0/d2c/enumcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_xplugin_statement_command.html#aff5e57912e2d26c16df45d2602b3b020',1,'com::mysql::cj::protocol::x::XpluginStatementCommand']]],
+  ['xplugin_5fstmt_5flist_5fobjects',['XPLUGIN_STMT_LIST_OBJECTS',['../d0/d2c/enumcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_xplugin_statement_command.html#a6d0e30e0cacca921202e137c43dd794c',1,'com::mysql::cj::protocol::x::XpluginStatementCommand']]],
+  ['xplugin_5fstmt_5fping',['XPLUGIN_STMT_PING',['../d0/d2c/enumcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_xplugin_statement_command.html#a079fbb646d2173d4338b51626f35a8ec',1,'com::mysql::cj::protocol::x::XpluginStatementCommand']]],
+  ['xprotocolnoticeframetype_5fsess_5fstate_5fchanged',['XProtocolNoticeFrameType_SESS_STATE_CHANGED',['../d0/d1c/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_notice.html#abd827c545c711230257c652ac3375418',1,'com::mysql::cj::protocol::x::Notice']]],
+  ['xprotocolnoticeframetype_5fsess_5fvar_5fchanged',['XProtocolNoticeFrameType_SESS_VAR_CHANGED',['../d0/d1c/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_notice.html#af74c4f7e379a384b60419a5da0dc6078',1,'com::mysql::cj::protocol::x::Notice']]],
+  ['xprotocolnoticeframetype_5fwarning',['XProtocolNoticeFrameType_WARNING',['../d0/d1c/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_notice.html#a9b6f1846f75fe7b30c9f3d976a3036fd',1,'com::mysql::cj::protocol::x::Notice']]]
+];

@@ -1,0 +1,85 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Sender Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Sender@{com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Sender}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_a01a618aba9572be7d375093b4984a827}{Tracing\+Packet\+Sender}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ packet\+Sender, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log, String host, long server\+Thread\+Id)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_a97d2d479b56668ca11369ad3702483bf}{set\+Server\+Thread\+Id}} (long server\+Thread\+Id)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_addcfce3e7ea16adf7933a367fb8f5904}{send}} (byte\mbox{[}$\,$\mbox{]} packet, int packet\+Len, byte packet\+Sequence)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_a57670e7bdafb2dd88cb711fb7e60266d}{undecorate\+All}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_aed3dc47d6e7a4dad4761e05b2f9213de}{undecorate}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A decorating \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}} which traces all sent packets to the provided logger. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_a01a618aba9572be7d375093b4984a827}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_a01a618aba9572be7d375093b4984a827}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender}!Tracing\+Packet\+Sender@{Tracing\+Packet\+Sender}}
+\index{Tracing\+Packet\+Sender@{Tracing\+Packet\+Sender}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender}}
+\subsubsection{\texorpdfstring{Tracing\+Packet\+Sender()}{TracingPacketSender()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Sender.\+Tracing\+Packet\+Sender (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$}]{packet\+Sender,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}}}]{log,  }\item[{String}]{host,  }\item[{long}]{server\+Thread\+Id }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_addcfce3e7ea16adf7933a367fb8f5904}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_addcfce3e7ea16adf7933a367fb8f5904}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender}!send@{send}}
+\index{send@{send}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Sender.\+send (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{packet,  }\item[{int}]{packet\+Len,  }\item[{byte}]{packet\+Sequence }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a0c7192449eae4aa0f0dbbc9778dac002}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_a97d2d479b56668ca11369ad3702483bf}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_a97d2d479b56668ca11369ad3702483bf}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender}!set\+Server\+Thread\+Id@{set\+Server\+Thread\+Id}}
+\index{set\+Server\+Thread\+Id@{set\+Server\+Thread\+Id}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender}}
+\subsubsection{\texorpdfstring{set\+Server\+Thread\+Id()}{setServerThreadId()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Sender.\+set\+Server\+Thread\+Id (\begin{DoxyParamCaption}\item[{long}]{server\+Thread\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_aed3dc47d6e7a4dad4761e05b2f9213de}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_aed3dc47d6e7a4dad4761e05b2f9213de}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender}!undecorate@{undecorate}}
+\index{undecorate@{undecorate}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender}}
+\subsubsection{\texorpdfstring{undecorate()}{undecorate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Sender.\+undecorate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the previous Packet\+Sender instance from the decorators chain or the current Packet\+Sender if it is the first entry in a chain.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}} instance 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a3a352bf35ad98dc6cea7c1f4ac9480da}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_a57670e7bdafb2dd88cb711fb7e60266d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_a57670e7bdafb2dd88cb711fb7e60266d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender}!undecorate\+All@{undecorate\+All}}
+\index{undecorate\+All@{undecorate\+All}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Tracing\+Packet\+Sender}}
+\subsubsection{\texorpdfstring{undecorate\+All()}{undecorateAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Sender.\+undecorate\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return a Packet\+Sender instance free of decorators.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}} instance 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a8066931f03c2fa9cc705716fa10a4517}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/\mbox{\hyperlink{_tracing_packet_sender_8java}{Tracing\+Packet\+Sender.\+java}}\end{DoxyCompactItemize}

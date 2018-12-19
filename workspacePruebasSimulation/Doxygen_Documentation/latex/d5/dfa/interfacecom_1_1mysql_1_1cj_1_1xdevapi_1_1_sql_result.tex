@@ -1,0 +1,41 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result}\index{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result@{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{com.\+mysql.\+cj.\+xdevapi.\+Result}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_insert_result}{com.\+mysql.\+cj.\+xdevapi.\+Insert\+Result}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result}{com.\+mysql.\+cj.\+xdevapi.\+Row\+Result}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Data\+Result}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_update_result}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Update\+Result}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_ad5c821bd2efe2e952aef48dc574e913d}{next\+Result}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A result from a S\+QL statement which may have several sets of data following by a D\+ML result. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_ad5c821bd2efe2e952aef48dc574e913d}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_ad5c821bd2efe2e952aef48dc574e913d}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result}!next\+Result@{next\+Result}}
+\index{next\+Result@{next\+Result}!com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result}}
+\subsubsection{\texorpdfstring{next\+Result()}{nextResult()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result.\+next\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Move to the next result. This method has no effect after returning {\ttfamily false} for the first time.
+
+\begin{DoxyReturn}{Returns}
+was there a next result that we moved to? 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a63d1fa4f9bdb44615cb07d3324e96341}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_update_result_a3fad012f9b23f87f7aac62edd51c604a}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Update\+Result}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_data_result_a4dc2d012228a58a9ebe74f93f9a007a9}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Data\+Result}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_sql_result_8java}{Sql\+Result.\+java}}\end{DoxyCompactItemize}

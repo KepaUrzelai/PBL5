@@ -1,0 +1,426 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session}{}\section{com.\+mysql.\+cj.\+Core\+Session Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1_core_session}\index{com.\+mysql.\+cj.\+Core\+Session@{com.\+mysql.\+cj.\+Core\+Session}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{com.\+mysql.\+cj.\+Session}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_mysqlx_session}{com.\+mysql.\+cj.\+Mysqlx\+Session}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_native_session}{com.\+mysql.\+cj.\+Native\+Session}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a3f839aecfd1bdcd957ddf4a6a653e7ba}{Core\+Session}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_ac60f96087dc4f9a719f136f8fb74fddf}{host\+Info}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} prop\+Set)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_afd7da447c9a92c0a51ba81a6ac82e89f}{change\+User}} (String user, String password, String database)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a1b6c6041a2c657d34bb369939f6b49d2}{get\+Property\+Set}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a8718a19455dcfc23e1f3e36d3278d7bd}{get\+Exception\+Interceptor}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_ab034a178b27542d0d67bbb95283d3f03}{set\+Exception\+Interceptor}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a60aecfa7655db14a1c4d4c2e7bbfab64}{exception\+Interceptor}})
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_ae6ee08b5d613e57d0f9e16f037ecb6cf}{get\+Log}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_aebba972c5e1c2f61230c8be4b2819230}{get\+Server\+Session}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_ac8cdb7493dd85ef25abc436061e704eb}{version\+Meets\+Minimum}} (int major, int minor, int subminor)
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_ae141e5eacf82d93db417cb2e97acfece}{get\+Thread\+Id}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a9a0da3cad1f23cae2481b9e8788e4bff}{force\+Close}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a126e95932ffb8fdf73b7c4ae4d43972b}{is\+Set\+Needed\+For\+Auto\+Commit\+Mode}} (boolean auto\+Commit\+Flag)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_profiler_event_handler}{Profiler\+Event\+Handler}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_ada22cc07db1eb2fb753966f8b0e74183}{get\+Profiler\+Event\+Handler}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_aaeca771625df6bef13ffa37281b39bad}{set\+Profiler\+Event\+Handler}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_profiler_event_handler}{Profiler\+Event\+Handler}} h)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_ae1223b9bea2fae5aa55cc356aab2c079}{is\+S\+S\+L\+Established}} ()
+\item 
+Socket\+Address \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_aeab5194dc712d997482f989571df4ab2}{get\+Remote\+Socket\+Address}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a902a4736229fd40f8133480966ebcf3b}{add\+Listener}} (Session\+Event\+Listener l)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a28bc7a6e10e2af13fce4219b7d5557e3}{remove\+Listener}} (Session\+Event\+Listener l)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_aaefdfad2df641e33d77e2b53f855afbd}{get\+Identifier\+Quote\+String}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_data_store_metadata}{Data\+Store\+Metadata}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a470a60dea06a09fe2c519aa4ca88faf4}{get\+Data\+Store\+Metadata}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_aaa42c32fbec5d044050f66d5bd9ed1cd}{property\+Set}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a60aecfa7655db14a1c4d4c2e7bbfab64}{exception\+Interceptor}}
+\item 
+transient \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a6926baf1d1d13a6ebdced04244ebfe3d}{log}}
+\item 
+transient \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{Protocol}}$<$? extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_adaf1b16630ef19f657dd0b191ee51fe2}{protocol}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_message_builder}{Message\+Builder}}$<$? extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a563e6b084b83c72df32f407cd6c201ac}{message\+Builder}}
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_afe99c9d8a829f985f424087e61f4cad6}{connection\+Creation\+Time\+Millis}} = 0
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_ac60f96087dc4f9a719f136f8fb74fddf}{host\+Info}} = null
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Boolean $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a2c48e0425ac9766f888c25ae3705d501}{gather\+Perf\+Metrics}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_modifiable_property}{Modifiable\+Property}}$<$ String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a3dba50e7a4c89b198f729e4afdf8a081}{character\+Encoding}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Boolean $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_ad95983b250a85e6fa0bd358a96a94aa8}{use\+Old\+U\+T\+F8\+Behavior}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Boolean $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a92fb2049f7ab1f3c1cc931e972c79852}{disconnect\+On\+Expired\+Passwords}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Boolean $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_ad38cfd927b1a30ec9eae15278c861fda}{cache\+Server\+Configuration}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_modifiable_property}{Modifiable\+Property}}$<$ Boolean $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a560aaa84ad31aff44b20e35eebc1a0df}{auto\+Reconnect}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Boolean $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a11b8896105ef5ba529bfd8794548ea23}{auto\+Reconnect\+For\+Pools}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Boolean $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a3c26bae0303430033c3bd5dcd7fe130b}{maintain\+Time\+Stats}}
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_a6206b6d3a13ba61a394fd6ab6e93eafc}{session\+Max\+Rows}} = -\/1
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_abab1c389edfdd2699a26784b836d1faa}{N\+U\+L\+L\+\_\+\+L\+O\+G\+G\+ER}} = new \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger}{Null\+Logger}}(\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_aa34677968e5974954c41aaa7f5c6ddec}{Log.\+L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a3f839aecfd1bdcd957ddf4a6a653e7ba}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a3f839aecfd1bdcd957ddf4a6a653e7ba}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!Core\+Session@{Core\+Session}}
+\index{Core\+Session@{Core\+Session}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{Core\+Session()}{CoreSession()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+Core\+Session.\+Core\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}}}]{host\+Info,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}}}]{prop\+Set }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a902a4736229fd40f8133480966ebcf3b}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a902a4736229fd40f8133480966ebcf3b}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!add\+Listener@{add\+Listener}}
+\index{add\+Listener@{add\+Listener}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{add\+Listener()}{addListener()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+Core\+Session.\+add\+Listener (\begin{DoxyParamCaption}\item[{Session\+Event\+Listener}]{l }\end{DoxyParamCaption})}
+
+Add listener for this session status changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & \mbox{\hyperlink{}{Session\+Event\+Listener}} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a10e70a1ef528b3a067cd682cc5eddfb9}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_afd7da447c9a92c0a51ba81a6ac82e89f}\label{classcom_1_1mysql_1_1cj_1_1_core_session_afd7da447c9a92c0a51ba81a6ac82e89f}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!change\+User@{change\+User}}
+\index{change\+User@{change\+User}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{change\+User()}{changeUser()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+Core\+Session.\+change\+User (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password,  }\item[{String}]{database }\end{DoxyParamCaption})}
+
+Change user as given by parameters. This implementation only supports calling this during the initial handshake. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_ae89407fa6e67fd4537f06c85f0a2695b}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a9a0da3cad1f23cae2481b9e8788e4bff}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a9a0da3cad1f23cae2481b9e8788e4bff}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!force\+Close@{force\+Close}}
+\index{force\+Close@{force\+Close}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{force\+Close()}{forceClose()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+Core\+Session.\+force\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clobbers the physical network connection and marks this session as closed. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a4394068e5b6e4534ae8d2d90ea4be2c6}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a470a60dea06a09fe2c519aa4ca88faf4}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a470a60dea06a09fe2c519aa4ca88faf4}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!get\+Data\+Store\+Metadata@{get\+Data\+Store\+Metadata}}
+\index{get\+Data\+Store\+Metadata@{get\+Data\+Store\+Metadata}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{get\+Data\+Store\+Metadata()}{getDataStoreMetadata()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_data_store_metadata}{Data\+Store\+Metadata}} com.\+mysql.\+cj.\+Core\+Session.\+get\+Data\+Store\+Metadata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a863ee0712226bd70718bcc1f812c592d}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a8718a19455dcfc23e1f3e36d3278d7bd}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a8718a19455dcfc23e1f3e36d3278d7bd}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!get\+Exception\+Interceptor@{get\+Exception\+Interceptor}}
+\index{get\+Exception\+Interceptor@{get\+Exception\+Interceptor}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{get\+Exception\+Interceptor()}{getExceptionInterceptor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} com.\+mysql.\+cj.\+Core\+Session.\+get\+Exception\+Interceptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a7e83fb6016b811e8bf9903c183a814ca}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_aaefdfad2df641e33d77e2b53f855afbd}\label{classcom_1_1mysql_1_1cj_1_1_core_session_aaefdfad2df641e33d77e2b53f855afbd}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!get\+Identifier\+Quote\+String@{get\+Identifier\+Quote\+String}}
+\index{get\+Identifier\+Quote\+String@{get\+Identifier\+Quote\+String}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{get\+Identifier\+Quote\+String()}{getIdentifierQuoteString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+Core\+Session.\+get\+Identifier\+Quote\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a5e11ee96316b575dcdf04270c90cc783}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_ae6ee08b5d613e57d0f9e16f037ecb6cf}\label{classcom_1_1mysql_1_1cj_1_1_core_session_ae6ee08b5d613e57d0f9e16f037ecb6cf}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!get\+Log@{get\+Log}}
+\index{get\+Log@{get\+Log}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{get\+Log()}{getLog()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} com.\+mysql.\+cj.\+Core\+Session.\+get\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the log mechanism that should be used to log information from/for this \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}}.
+
+\begin{DoxyReturn}{Returns}
+the Log instance to use for logging messages. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a25f2c23d8ac5ae3e87491a66aabddceb}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_ada22cc07db1eb2fb753966f8b0e74183}\label{classcom_1_1mysql_1_1cj_1_1_core_session_ada22cc07db1eb2fb753966f8b0e74183}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!get\+Profiler\+Event\+Handler@{get\+Profiler\+Event\+Handler}}
+\index{get\+Profiler\+Event\+Handler@{get\+Profiler\+Event\+Handler}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{get\+Profiler\+Event\+Handler()}{getProfilerEventHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_profiler_event_handler}{Profiler\+Event\+Handler}} com.\+mysql.\+cj.\+Core\+Session.\+get\+Profiler\+Event\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_ae756dd958f6327818e84c16066b288df}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a1b6c6041a2c657d34bb369939f6b49d2}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a1b6c6041a2c657d34bb369939f6b49d2}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!get\+Property\+Set@{get\+Property\+Set}}
+\index{get\+Property\+Set@{get\+Property\+Set}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{get\+Property\+Set()}{getPropertySet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} com.\+mysql.\+cj.\+Core\+Session.\+get\+Property\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a76c18a20fdd1ad088a8053f236c57eb5}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_aeab5194dc712d997482f989571df4ab2}\label{classcom_1_1mysql_1_1cj_1_1_core_session_aeab5194dc712d997482f989571df4ab2}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!get\+Remote\+Socket\+Address@{get\+Remote\+Socket\+Address}}
+\index{get\+Remote\+Socket\+Address@{get\+Remote\+Socket\+Address}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{get\+Remote\+Socket\+Address()}{getRemoteSocketAddress()}}
+{\footnotesize\ttfamily Socket\+Address com.\+mysql.\+cj.\+Core\+Session.\+get\+Remote\+Socket\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_aa003329ef0d9384f7fccc8386d125c6d}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_aebba972c5e1c2f61230c8be4b2819230}\label{classcom_1_1mysql_1_1cj_1_1_core_session_aebba972c5e1c2f61230c8be4b2819230}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!get\+Server\+Session@{get\+Server\+Session}}
+\index{get\+Server\+Session@{get\+Server\+Session}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{get\+Server\+Session()}{getServerSession()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} com.\+mysql.\+cj.\+Core\+Session.\+get\+Server\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_afbb4c17c563ed89e60172341fbea39ca}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_ae141e5eacf82d93db417cb2e97acfece}\label{classcom_1_1mysql_1_1cj_1_1_core_session_ae141e5eacf82d93db417cb2e97acfece}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!get\+Thread\+Id@{get\+Thread\+Id}}
+\index{get\+Thread\+Id@{get\+Thread\+Id}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{get\+Thread\+Id()}{getThreadId()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+Core\+Session.\+get\+Thread\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a01afd0778a66788ef0d93cb9c20baf5a}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a126e95932ffb8fdf73b7c4ae4d43972b}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a126e95932ffb8fdf73b7c4ae4d43972b}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!is\+Set\+Needed\+For\+Auto\+Commit\+Mode@{is\+Set\+Needed\+For\+Auto\+Commit\+Mode}}
+\index{is\+Set\+Needed\+For\+Auto\+Commit\+Mode@{is\+Set\+Needed\+For\+Auto\+Commit\+Mode}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{is\+Set\+Needed\+For\+Auto\+Commit\+Mode()}{isSetNeededForAutoCommitMode()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+Core\+Session.\+is\+Set\+Needed\+For\+Auto\+Commit\+Mode (\begin{DoxyParamCaption}\item[{boolean}]{auto\+Commit\+Flag }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a3f747951ef258e5219237177aa3d4311}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_ae1223b9bea2fae5aa55cc356aab2c079}\label{classcom_1_1mysql_1_1cj_1_1_core_session_ae1223b9bea2fae5aa55cc356aab2c079}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!is\+S\+S\+L\+Established@{is\+S\+S\+L\+Established}}
+\index{is\+S\+S\+L\+Established@{is\+S\+S\+L\+Established}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{is\+S\+S\+L\+Established()}{isSSLEstablished()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+Core\+Session.\+is\+S\+S\+L\+Established (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a495638620a1d409d7da49b3cedf0e41d}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a28bc7a6e10e2af13fce4219b7d5557e3}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a28bc7a6e10e2af13fce4219b7d5557e3}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!remove\+Listener@{remove\+Listener}}
+\index{remove\+Listener@{remove\+Listener}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{remove\+Listener()}{removeListener()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+Core\+Session.\+remove\+Listener (\begin{DoxyParamCaption}\item[{Session\+Event\+Listener}]{l }\end{DoxyParamCaption})}
+
+Remove session listener.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & \mbox{\hyperlink{}{Session\+Event\+Listener}} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a1adcdda54ca553c5449119570e072c7a}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_ab034a178b27542d0d67bbb95283d3f03}\label{classcom_1_1mysql_1_1cj_1_1_core_session_ab034a178b27542d0d67bbb95283d3f03}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!set\+Exception\+Interceptor@{set\+Exception\+Interceptor}}
+\index{set\+Exception\+Interceptor@{set\+Exception\+Interceptor}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{set\+Exception\+Interceptor()}{setExceptionInterceptor()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+Core\+Session.\+set\+Exception\+Interceptor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_ad05f11c98222964b8b57be538e65d805}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_aaeca771625df6bef13ffa37281b39bad}\label{classcom_1_1mysql_1_1cj_1_1_core_session_aaeca771625df6bef13ffa37281b39bad}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!set\+Profiler\+Event\+Handler@{set\+Profiler\+Event\+Handler}}
+\index{set\+Profiler\+Event\+Handler@{set\+Profiler\+Event\+Handler}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{set\+Profiler\+Event\+Handler()}{setProfilerEventHandler()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+Core\+Session.\+set\+Profiler\+Event\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_profiler_event_handler}{Profiler\+Event\+Handler}}}]{h }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a1ecb6f06b795dd7d51c0622bef9b1047}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_ac8cdb7493dd85ef25abc436061e704eb}\label{classcom_1_1mysql_1_1cj_1_1_core_session_ac8cdb7493dd85ef25abc436061e704eb}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!version\+Meets\+Minimum@{version\+Meets\+Minimum}}
+\index{version\+Meets\+Minimum@{version\+Meets\+Minimum}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{version\+Meets\+Minimum()}{versionMeetsMinimum()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+Core\+Session.\+version\+Meets\+Minimum (\begin{DoxyParamCaption}\item[{int}]{major,  }\item[{int}]{minor,  }\item[{int}]{subminor }\end{DoxyParamCaption})}
+
+Does the version of the My\+S\+QL server we are connected to meet the given minimums?
+
+
+\begin{DoxyParams}{Parameters}
+{\em major} & major version number \\
+\hline
+{\em minor} & minor version number \\
+\hline
+{\em subminor} & sub-\/minor version number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if current server version equal or higher than provided one 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a480ce810135103101a0d39c5fbcd2ff0}{com.\+mysql.\+cj.\+Session}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a560aaa84ad31aff44b20e35eebc1a0df}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a560aaa84ad31aff44b20e35eebc1a0df}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!auto\+Reconnect@{auto\+Reconnect}}
+\index{auto\+Reconnect@{auto\+Reconnect}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{auto\+Reconnect}{autoReconnect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_modifiable_property}{Modifiable\+Property}}$<$Boolean$>$ com.\+mysql.\+cj.\+Core\+Session.\+auto\+Reconnect\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a11b8896105ef5ba529bfd8794548ea23}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a11b8896105ef5ba529bfd8794548ea23}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!auto\+Reconnect\+For\+Pools@{auto\+Reconnect\+For\+Pools}}
+\index{auto\+Reconnect\+For\+Pools@{auto\+Reconnect\+For\+Pools}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{auto\+Reconnect\+For\+Pools}{autoReconnectForPools}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$Boolean$>$ com.\+mysql.\+cj.\+Core\+Session.\+auto\+Reconnect\+For\+Pools\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_ad38cfd927b1a30ec9eae15278c861fda}\label{classcom_1_1mysql_1_1cj_1_1_core_session_ad38cfd927b1a30ec9eae15278c861fda}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!cache\+Server\+Configuration@{cache\+Server\+Configuration}}
+\index{cache\+Server\+Configuration@{cache\+Server\+Configuration}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{cache\+Server\+Configuration}{cacheServerConfiguration}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$Boolean$>$ com.\+mysql.\+cj.\+Core\+Session.\+cache\+Server\+Configuration\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a3dba50e7a4c89b198f729e4afdf8a081}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a3dba50e7a4c89b198f729e4afdf8a081}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!character\+Encoding@{character\+Encoding}}
+\index{character\+Encoding@{character\+Encoding}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{character\+Encoding}{characterEncoding}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_modifiable_property}{Modifiable\+Property}}$<$String$>$ com.\+mysql.\+cj.\+Core\+Session.\+character\+Encoding\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_afe99c9d8a829f985f424087e61f4cad6}\label{classcom_1_1mysql_1_1cj_1_1_core_session_afe99c9d8a829f985f424087e61f4cad6}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!connection\+Creation\+Time\+Millis@{connection\+Creation\+Time\+Millis}}
+\index{connection\+Creation\+Time\+Millis@{connection\+Creation\+Time\+Millis}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{connection\+Creation\+Time\+Millis}{connectionCreationTimeMillis}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+Core\+Session.\+connection\+Creation\+Time\+Millis = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+The point in time when this connection was created \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a92fb2049f7ab1f3c1cc931e972c79852}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a92fb2049f7ab1f3c1cc931e972c79852}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!disconnect\+On\+Expired\+Passwords@{disconnect\+On\+Expired\+Passwords}}
+\index{disconnect\+On\+Expired\+Passwords@{disconnect\+On\+Expired\+Passwords}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{disconnect\+On\+Expired\+Passwords}{disconnectOnExpiredPasswords}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$Boolean$>$ com.\+mysql.\+cj.\+Core\+Session.\+disconnect\+On\+Expired\+Passwords\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a60aecfa7655db14a1c4d4c2e7bbfab64}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a60aecfa7655db14a1c4d4c2e7bbfab64}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!exception\+Interceptor@{exception\+Interceptor}}
+\index{exception\+Interceptor@{exception\+Interceptor}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{exception\+Interceptor}{exceptionInterceptor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} com.\+mysql.\+cj.\+Core\+Session.\+exception\+Interceptor\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a2c48e0425ac9766f888c25ae3705d501}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a2c48e0425ac9766f888c25ae3705d501}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!gather\+Perf\+Metrics@{gather\+Perf\+Metrics}}
+\index{gather\+Perf\+Metrics@{gather\+Perf\+Metrics}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{gather\+Perf\+Metrics}{gatherPerfMetrics}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$Boolean$>$ com.\+mysql.\+cj.\+Core\+Session.\+gather\+Perf\+Metrics\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_ac60f96087dc4f9a719f136f8fb74fddf}\label{classcom_1_1mysql_1_1cj_1_1_core_session_ac60f96087dc4f9a719f136f8fb74fddf}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!host\+Info@{host\+Info}}
+\index{host\+Info@{host\+Info}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{host\+Info}{hostInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} com.\+mysql.\+cj.\+Core\+Session.\+host\+Info = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a6926baf1d1d13a6ebdced04244ebfe3d}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a6926baf1d1d13a6ebdced04244ebfe3d}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!log@{log}}
+\index{log@{log}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily transient \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} com.\+mysql.\+cj.\+Core\+Session.\+log\hspace{0.3cm}{\ttfamily [protected]}}
+
+The logger we\textquotesingle{}re going to use \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a3c26bae0303430033c3bd5dcd7fe130b}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a3c26bae0303430033c3bd5dcd7fe130b}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!maintain\+Time\+Stats@{maintain\+Time\+Stats}}
+\index{maintain\+Time\+Stats@{maintain\+Time\+Stats}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{maintain\+Time\+Stats}{maintainTimeStats}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$Boolean$>$ com.\+mysql.\+cj.\+Core\+Session.\+maintain\+Time\+Stats\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a563e6b084b83c72df32f407cd6c201ac}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a563e6b084b83c72df32f407cd6c201ac}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!message\+Builder@{message\+Builder}}
+\index{message\+Builder@{message\+Builder}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{message\+Builder}{messageBuilder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_message_builder}{Message\+Builder}}$<$? extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}}$>$ com.\+mysql.\+cj.\+Core\+Session.\+message\+Builder\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_abab1c389edfdd2699a26784b836d1faa}\label{classcom_1_1mysql_1_1cj_1_1_core_session_abab1c389edfdd2699a26784b836d1faa}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!N\+U\+L\+L\+\_\+\+L\+O\+G\+G\+ER@{N\+U\+L\+L\+\_\+\+L\+O\+G\+G\+ER}}
+\index{N\+U\+L\+L\+\_\+\+L\+O\+G\+G\+ER@{N\+U\+L\+L\+\_\+\+L\+O\+G\+G\+ER}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{N\+U\+L\+L\+\_\+\+L\+O\+G\+G\+ER}{NULL\_LOGGER}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} com.\+mysql.\+cj.\+Core\+Session.\+N\+U\+L\+L\+\_\+\+L\+O\+G\+G\+ER = new \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger}{Null\+Logger}}(\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_aa34677968e5974954c41aaa7f5c6ddec}{Log.\+L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Null logger shared by all connections at startup \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_aaa42c32fbec5d044050f66d5bd9ed1cd}\label{classcom_1_1mysql_1_1cj_1_1_core_session_aaa42c32fbec5d044050f66d5bd9ed1cd}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!property\+Set@{property\+Set}}
+\index{property\+Set@{property\+Set}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{property\+Set}{propertySet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} com.\+mysql.\+cj.\+Core\+Session.\+property\+Set\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_adaf1b16630ef19f657dd0b191ee51fe2}\label{classcom_1_1mysql_1_1cj_1_1_core_session_adaf1b16630ef19f657dd0b191ee51fe2}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!protocol@{protocol}}
+\index{protocol@{protocol}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{protocol}{protocol}}
+{\footnotesize\ttfamily transient \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{Protocol}}$<$? extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}}$>$ com.\+mysql.\+cj.\+Core\+Session.\+protocol\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_a6206b6d3a13ba61a394fd6ab6e93eafc}\label{classcom_1_1mysql_1_1cj_1_1_core_session_a6206b6d3a13ba61a394fd6ab6e93eafc}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!session\+Max\+Rows@{session\+Max\+Rows}}
+\index{session\+Max\+Rows@{session\+Max\+Rows}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{session\+Max\+Rows}{sessionMaxRows}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+Core\+Session.\+session\+Max\+Rows = -\/1\hspace{0.3cm}{\ttfamily [protected]}}
+
+The max-\/rows setting for current session \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_core_session_ad95983b250a85e6fa0bd358a96a94aa8}\label{classcom_1_1mysql_1_1cj_1_1_core_session_ad95983b250a85e6fa0bd358a96a94aa8}} 
+\index{com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}!use\+Old\+U\+T\+F8\+Behavior@{use\+Old\+U\+T\+F8\+Behavior}}
+\index{use\+Old\+U\+T\+F8\+Behavior@{use\+Old\+U\+T\+F8\+Behavior}!com\+::mysql\+::cj\+::\+Core\+Session@{com\+::mysql\+::cj\+::\+Core\+Session}}
+\subsubsection{\texorpdfstring{use\+Old\+U\+T\+F8\+Behavior}{useOldUTF8Behavior}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$Boolean$>$ com.\+mysql.\+cj.\+Core\+Session.\+use\+Old\+U\+T\+F8\+Behavior\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/\mbox{\hyperlink{_core_session_8java}{Core\+Session.\+java}}\end{DoxyCompactItemize}

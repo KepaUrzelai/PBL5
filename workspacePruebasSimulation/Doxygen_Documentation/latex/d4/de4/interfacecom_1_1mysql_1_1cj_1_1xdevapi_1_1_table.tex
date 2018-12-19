@@ -1,0 +1,175 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Table Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}\index{com.\+mysql.\+cj.\+xdevapi.\+Table@{com.\+mysql.\+cj.\+xdevapi.\+Table}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object}{com.\+mysql.\+cj.\+xdevapi.\+Database\+Object}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_impl}{com.\+mysql.\+cj.\+xdevapi.\+Table\+Impl}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_insert_statement}{Insert\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_ae9faedd85539146509fa68982fc346f9}{insert}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_insert_statement}{Insert\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a67eccc4ea9487430c524001bdd912180}{insert}} (String... projection)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_insert_statement}{Insert\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a2a66f6dde400c00f896c02673e7fdc84}{insert}} (Map$<$ String, Object $>$ fields\+And\+Values)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a36559f114d9638a63d8743f1f1630017}{select}} (String... projections)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement}{Update\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a941215cefeb7236388db7d0390621a17}{update}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement}{Delete\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a52be4284a88e0a4f243580be570018e2}{delete}} ()
+\item 
+long \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a4f0524bd76d54d6b053187ea09ab2956}{count}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a17dc243982bdbd3c0024699d3fb5bd5e}{is\+View}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A client-\/side representation of a database table. Provides access to the table through standard I\+N\+S\+E\+R\+T/\+S\+E\+L\+E\+C\+T/\+U\+P\+D\+A\+T\+E/\+D\+E\+L\+E\+TE statements. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a4f0524bd76d54d6b053187ea09ab2956}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a4f0524bd76d54d6b053187ea09ab2956}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}!count@{count}}
+\index{count@{count}!com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+xdevapi.\+Table.\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} the number of rows in this table.
+
+\begin{DoxyReturn}{Returns}
+Number of rows in this table 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_impl_a855ae05acfd531e69738a8a88824fe8c}{com.\+mysql.\+cj.\+xdevapi.\+Table\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a52be4284a88e0a4f243580be570018e2}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a52be4284a88e0a4f243580be570018e2}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}!delete@{delete}}
+\index{delete@{delete}!com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement}{Delete\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Table.\+delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create a new delete statement.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement}{Delete\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_impl_ab12665d608984e6774957947f6a22c7c}{com.\+mysql.\+cj.\+xdevapi.\+Table\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_ae9faedd85539146509fa68982fc346f9}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_ae9faedd85539146509fa68982fc346f9}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}!insert@{insert}}
+\index{insert@{insert}!com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}}
+\subsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_insert_statement}{Insert\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Table.\+insert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create an insert statement using the list of all columns in the table.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_insert_statement}{Insert\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_impl_a1da24c004f76d313383111cb4f250a3c}{com.\+mysql.\+cj.\+xdevapi.\+Table\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a67eccc4ea9487430c524001bdd912180}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a67eccc4ea9487430c524001bdd912180}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}!insert@{insert}}
+\index{insert@{insert}!com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}}
+\subsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_insert_statement}{Insert\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Table.\+insert (\begin{DoxyParamCaption}\item[{String...}]{projection }\end{DoxyParamCaption})}
+
+Create an insert statement using the given list columns.
+
+
+\begin{DoxyParams}{Parameters}
+{\em projection} & one or more projection expressions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_insert_statement}{Insert\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_impl_a6ead605c582f7e5d5e95c0704a17686a}{com.\+mysql.\+cj.\+xdevapi.\+Table\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a2a66f6dde400c00f896c02673e7fdc84}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a2a66f6dde400c00f896c02673e7fdc84}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}!insert@{insert}}
+\index{insert@{insert}!com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}}
+\subsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_insert_statement}{Insert\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Table.\+insert (\begin{DoxyParamCaption}\item[{Map$<$ String, Object $>$}]{fields\+And\+Values }\end{DoxyParamCaption})}
+
+Create an insert statement using the given key/value pairs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fields\+And\+Values} & table name-\/value pairs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_insert_statement}{Insert\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_impl_acc6cac6129c86ac4ec2a7ce02303b4bb}{com.\+mysql.\+cj.\+xdevapi.\+Table\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a17dc243982bdbd3c0024699d3fb5bd5e}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a17dc243982bdbd3c0024699d3fb5bd5e}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}!is\+View@{is\+View}}
+\index{is\+View@{is\+View}!com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}}
+\subsubsection{\texorpdfstring{is\+View()}{isView()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+xdevapi.\+Table.\+is\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if the underlying object is a view or not.
+
+\begin{DoxyReturn}{Returns}
+true if this \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}} is a View 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_impl_a92b2db897ad5ce4f950422956bfc4027}{com.\+mysql.\+cj.\+xdevapi.\+Table\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a36559f114d9638a63d8743f1f1630017}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a36559f114d9638a63d8743f1f1630017}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}!select@{select}}
+\index{select@{select}!com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}}
+\subsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Table.\+select (\begin{DoxyParamCaption}\item[{String...}]{projections }\end{DoxyParamCaption})}
+
+Create a new select statement using the given projections.
+
+
+\begin{DoxyParams}{Parameters}
+{\em projections} & one or more projection expressions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_impl_a048429d90cca804cd60ce9a49f5b12fd}{com.\+mysql.\+cj.\+xdevapi.\+Table\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a941215cefeb7236388db7d0390621a17}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_a941215cefeb7236388db7d0390621a17}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}!update@{update}}
+\index{update@{update}!com\+::mysql\+::cj\+::xdevapi\+::\+Table@{com\+::mysql\+::cj\+::xdevapi\+::\+Table}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement}{Update\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Table.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create a new update statement.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement}{Update\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_impl_a4f6da4761f5ff7becb0737c11b0ea0db}{com.\+mysql.\+cj.\+xdevapi.\+Table\+Impl}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_table_8java}{Table.\+java}}\end{DoxyCompactItemize}

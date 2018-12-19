@@ -1,0 +1,72 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_parser}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Json\+Parser Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_parser}\index{com.\+mysql.\+cj.\+xdevapi.\+Json\+Parser@{com.\+mysql.\+cj.\+xdevapi.\+Json\+Parser}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Escape\+Char}
+\item 
+enum {\bfseries Structural\+Token}
+\item 
+enum {\bfseries Whitespace}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_parser_ad779f7c1563d2bcca7481d3655519501}{parse\+Doc}} (String json\+String)
+\item 
+static \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_parser_a09f9af593473756e34e7e87fb3022cc4}{parse\+Doc}} (String\+Reader reader)  throws I\+O\+Exception 
+\item 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_array}{Json\+Array}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_parser_a93178bb203463520aef663bd3d411ea2}{parse\+Array}} (String\+Reader reader)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_parser_a93178bb203463520aef663bd3d411ea2}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_parser_a93178bb203463520aef663bd3d411ea2}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Json\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Json\+Parser}!parse\+Array@{parse\+Array}}
+\index{parse\+Array@{parse\+Array}!com\+::mysql\+::cj\+::xdevapi\+::\+Json\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Json\+Parser}}
+\subsubsection{\texorpdfstring{parse\+Array()}{parseArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_array}{Json\+Array}} com.\+mysql.\+cj.\+xdevapi.\+Json\+Parser.\+parse\+Array (\begin{DoxyParamCaption}\item[{String\+Reader}]{reader }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & J\+S\+ON string reader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_array}{Json\+Array}} object initialized by parsed J\+S\+ON string. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if can\textquotesingle{}t read \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_parser_ad779f7c1563d2bcca7481d3655519501}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_parser_ad779f7c1563d2bcca7481d3655519501}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Json\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Json\+Parser}!parse\+Doc@{parse\+Doc}}
+\index{parse\+Doc@{parse\+Doc}!com\+::mysql\+::cj\+::xdevapi\+::\+Json\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Json\+Parser}}
+\subsubsection{\texorpdfstring{parse\+Doc()}{parseDoc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} com.\+mysql.\+cj.\+xdevapi.\+Json\+Parser.\+parse\+Doc (\begin{DoxyParamCaption}\item[{String}]{json\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_parser_a09f9af593473756e34e7e87fb3022cc4}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_parser_a09f9af593473756e34e7e87fb3022cc4}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Json\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Json\+Parser}!parse\+Doc@{parse\+Doc}}
+\index{parse\+Doc@{parse\+Doc}!com\+::mysql\+::cj\+::xdevapi\+::\+Json\+Parser@{com\+::mysql\+::cj\+::xdevapi\+::\+Json\+Parser}}
+\subsubsection{\texorpdfstring{parse\+Doc()}{parseDoc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} com.\+mysql.\+cj.\+xdevapi.\+Json\+Parser.\+parse\+Doc (\begin{DoxyParamCaption}\item[{String\+Reader}]{reader }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & J\+S\+ON string reader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} object initialized by parsed J\+S\+ON string. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if can\textquotesingle{}t read \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_json_parser_8java}{Json\+Parser.\+java}}\end{DoxyCompactItemize}

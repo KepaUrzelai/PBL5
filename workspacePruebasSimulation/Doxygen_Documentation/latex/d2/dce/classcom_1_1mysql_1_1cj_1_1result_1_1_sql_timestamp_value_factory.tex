@@ -1,0 +1,89 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory}{}\section{com.\+mysql.\+cj.\+result.\+Sql\+Timestamp\+Value\+Factory Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory}\index{com.\+mysql.\+cj.\+result.\+Sql\+Timestamp\+Value\+Factory@{com.\+mysql.\+cj.\+result.\+Sql\+Timestamp\+Value\+Factory}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory$<$ Timestamp $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a443de10f7aa6daa9ecf3e43bcd6d21fb}{Sql\+Timestamp\+Value\+Factory}} (Time\+Zone tz)
+\item 
+Time\+Zone \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a68ae23c7eb1c8944883b854ddf595a77}{get\+Time\+Zone}} ()
+\item 
+Timestamp \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a87b52f4c2804aead4fd10c776c88295a}{create\+From\+Date}} (int year, int month, int day)
+\item 
+Timestamp \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a8fbb0901790f2aa3a7175ba7f1f5727d}{create\+From\+Time}} (int hours, int minutes, int seconds, int nanos)
+\item 
+Timestamp \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a78551233e571fb77da40368363d35cca}{create\+From\+Timestamp}} (int year, int month, int day, int hours, int minutes, int seconds, int nanos)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a08bd94d6bde7df9a086111e17b86d60a}{get\+Target\+Type\+Name}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Value factory to create \mbox{\hyperlink{}{java.\+sql.\+Timestamp}} instances. Timestamp instances are created from fields returned from the db without a timezone. In order to create a {\itshape point-\/in-\/time}, a time zone must be provided to interpret the fields. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a443de10f7aa6daa9ecf3e43bcd6d21fb}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a443de10f7aa6daa9ecf3e43bcd6d21fb}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory}!Sql\+Timestamp\+Value\+Factory@{Sql\+Timestamp\+Value\+Factory}}
+\index{Sql\+Timestamp\+Value\+Factory@{Sql\+Timestamp\+Value\+Factory}!com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory}}
+\subsubsection{\texorpdfstring{Sql\+Timestamp\+Value\+Factory()}{SqlTimestampValueFactory()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+result.\+Sql\+Timestamp\+Value\+Factory.\+Sql\+Timestamp\+Value\+Factory (\begin{DoxyParamCaption}\item[{Time\+Zone}]{tz }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em tz} & The time zone used to interpret the fields. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a87b52f4c2804aead4fd10c776c88295a}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a87b52f4c2804aead4fd10c776c88295a}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory}!create\+From\+Date@{create\+From\+Date}}
+\index{create\+From\+Date@{create\+From\+Date}!com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Date()}{createFromDate()}}
+{\footnotesize\ttfamily Timestamp com.\+mysql.\+cj.\+result.\+Sql\+Timestamp\+Value\+Factory.\+create\+From\+Date (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month,  }\item[{int}]{day }\end{DoxyParamCaption})}
+
+Create a Timestamp from a D\+A\+TE value.
+
+\begin{DoxyReturn}{Returns}
+a timestamp at midnight on the day given by the D\+A\+TE value 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Result\+Set.\+get\+Timestamp(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a8fbb0901790f2aa3a7175ba7f1f5727d}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a8fbb0901790f2aa3a7175ba7f1f5727d}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory}!create\+From\+Time@{create\+From\+Time}}
+\index{create\+From\+Time@{create\+From\+Time}!com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Time()}{createFromTime()}}
+{\footnotesize\ttfamily Timestamp com.\+mysql.\+cj.\+result.\+Sql\+Timestamp\+Value\+Factory.\+create\+From\+Time (\begin{DoxyParamCaption}\item[{int}]{hours,  }\item[{int}]{minutes,  }\item[{int}]{seconds,  }\item[{int}]{nanos }\end{DoxyParamCaption})}
+
+Create a Timestamp from a T\+I\+ME value.
+
+\begin{DoxyReturn}{Returns}
+a timestamp at the given time on 1970 Jan 1. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a78551233e571fb77da40368363d35cca}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a78551233e571fb77da40368363d35cca}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory}!create\+From\+Timestamp@{create\+From\+Timestamp}}
+\index{create\+From\+Timestamp@{create\+From\+Timestamp}!com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Timestamp()}{createFromTimestamp()}}
+{\footnotesize\ttfamily Timestamp com.\+mysql.\+cj.\+result.\+Sql\+Timestamp\+Value\+Factory.\+create\+From\+Timestamp (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month,  }\item[{int}]{day,  }\item[{int}]{hours,  }\item[{int}]{minutes,  }\item[{int}]{seconds,  }\item[{int}]{nanos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a08bd94d6bde7df9a086111e17b86d60a}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a08bd94d6bde7df9a086111e17b86d60a}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory}!get\+Target\+Type\+Name@{get\+Target\+Type\+Name}}
+\index{get\+Target\+Type\+Name@{get\+Target\+Type\+Name}!com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory}}
+\subsubsection{\texorpdfstring{get\+Target\+Type\+Name()}{getTargetTypeName()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+result.\+Sql\+Timestamp\+Value\+Factory.\+get\+Target\+Type\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a68ae23c7eb1c8944883b854ddf595a77}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_sql_timestamp_value_factory_a68ae23c7eb1c8944883b854ddf595a77}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory}!get\+Time\+Zone@{get\+Time\+Zone}}
+\index{get\+Time\+Zone@{get\+Time\+Zone}!com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Sql\+Timestamp\+Value\+Factory}}
+\subsubsection{\texorpdfstring{get\+Time\+Zone()}{getTimeZone()}}
+{\footnotesize\ttfamily Time\+Zone com.\+mysql.\+cj.\+result.\+Sql\+Timestamp\+Value\+Factory.\+get\+Time\+Zone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/result/\mbox{\hyperlink{_sql_timestamp_value_factory_8java}{Sql\+Timestamp\+Value\+Factory.\+java}}\end{DoxyCompactItemize}

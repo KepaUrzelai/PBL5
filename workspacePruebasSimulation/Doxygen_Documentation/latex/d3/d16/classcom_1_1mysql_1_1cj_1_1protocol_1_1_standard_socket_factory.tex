@@ -1,0 +1,179 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory}{}\section{com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory}\index{com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory@{com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory}{com.\+mysql.\+cj.\+protocol.\+Socket\+Factory}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_socks_proxy_socket_factory}{com.\+mysql.\+cj.\+protocol.\+Socks\+Proxy\+Socket\+Factory}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_socket_factory_wrapper}{com.\+mysql.\+jdbc.\+Socket\+Factory\+Wrapper}}, testsuite.\+regression.\+Connection\+Regression\+Test.\+Port\+Number\+Socket\+Factory, testsuite.\+regression.\+Connection\+Regression\+Test.\+Test\+Bug73053\+Socket\+Factory, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_non_local_socket_factory}{testsuite.\+regression.\+Non\+Local\+Socket\+Factory}}, and \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory}{testsuite.\+Unreliable\+Socket\+Factory}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a4e13a5c155c986e139058ab3933017fe}{before\+Handshake}} ()  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a3d55f3b14d5d46d75ab93c88a339a72a}{after\+Handshake}} ()  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Socket \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a439fda55f4c2b8c5af6dd2eff89b45ae}{create\+Socket}} (Properties props)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a204052d6c208e52dd0d833dba77a7060}{reset\+Login\+Time\+Countdown}} ()  throws Socket\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a175915453d16906ae2af7bdcbae4210f}{get\+Real\+Timeout}} (int expected\+Timeout)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a61a6781433c3290f82de3629497c74c5}{host}} = null
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_ae354b398ef8c4ffc1772d3ff0d5c671a}{port}} = 3306
+\item 
+Socket \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_ae74434dafb7028bd70980bd3c648c170}{raw\+Socket}} = null
+\item 
+Socket \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_aece3a18276dc380df45049ac5d58f731}{ssl\+Socket}} = null
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a71fb7fd435ce8e4b8ef9b31e9707f728}{login\+Timeout\+Countdown}} = 0
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a443e8bc4c1aa5ffa40dd212193077cdf}{login\+Timeout\+Check\+Timestamp}} = System.\+current\+Time\+Millis()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a15bf8ebd7425eb36e786e8ab7c4fe10e}{socket\+Timeout\+Backup}} = 0
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Socket factory for vanilla T\+C\+P/\+IP sockets (the standard) 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a3d55f3b14d5d46d75ab93c88a339a72a}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a3d55f3b14d5d46d75ab93c88a339a72a}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}!after\+Handshake@{after\+Handshake}}
+\index{after\+Handshake@{after\+Handshake}!com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{after\+Handshake()}{afterHandshake()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory.\+after\+Handshake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Called by the driver after completing the My\+S\+QL protocol handshake and reading the results of the authentication.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an I/O error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_acfbef33f9924346f5fbfc476bf0667d9}{com.\+mysql.\+cj.\+protocol.\+Socket\+Factory}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a4e13a5c155c986e139058ab3933017fe}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a4e13a5c155c986e139058ab3933017fe}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}!before\+Handshake@{before\+Handshake}}
+\index{before\+Handshake@{before\+Handshake}!com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{before\+Handshake()}{beforeHandshake()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory.\+before\+Handshake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Called by the driver before issuing the My\+S\+QL protocol handshake.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an I/O error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_afc456b268ae05cf284598c3acc33829f}{com.\+mysql.\+cj.\+protocol.\+Socket\+Factory}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a439fda55f4c2b8c5af6dd2eff89b45ae}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a439fda55f4c2b8c5af6dd2eff89b45ae}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}!create\+Socket@{create\+Socket}}
+\index{create\+Socket@{create\+Socket}!com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{create\+Socket()}{createSocket()}}
+{\footnotesize\ttfamily Socket com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory.\+create\+Socket (\begin{DoxyParamCaption}\item[{Properties}]{props }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the raw socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em props} & properties available to affect behaviour during socket creation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+socket 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a175915453d16906ae2af7bdcbae4210f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a175915453d16906ae2af7bdcbae4210f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}!get\+Real\+Timeout@{get\+Real\+Timeout}}
+\index{get\+Real\+Timeout@{get\+Real\+Timeout}!com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{get\+Real\+Timeout()}{getRealTimeout()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory.\+get\+Real\+Timeout (\begin{DoxyParamCaption}\item[{int}]{expected\+Timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validates the connection/socket timeout that must really be used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em expected\+Timeout} & The timeout to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The timeout to be used. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a204052d6c208e52dd0d833dba77a7060}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a204052d6c208e52dd0d833dba77a7060}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}!reset\+Login\+Time\+Countdown@{reset\+Login\+Time\+Countdown}}
+\index{reset\+Login\+Time\+Countdown@{reset\+Login\+Time\+Countdown}!com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{reset\+Login\+Time\+Countdown()}{resetLoginTimeCountdown()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory.\+reset\+Login\+Time\+Countdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Socket\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Decrements elapsed time since last reset from login timeout count down.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Socket\+Exception} & If the login timeout is reached or exceeded. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a61a6781433c3290f82de3629497c74c5}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a61a6781433c3290f82de3629497c74c5}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}!host@{host}}
+\index{host@{host}!com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{host}{host}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory.\+host = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+The hostname to connect to \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a443e8bc4c1aa5ffa40dd212193077cdf}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a443e8bc4c1aa5ffa40dd212193077cdf}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}!login\+Timeout\+Check\+Timestamp@{login\+Timeout\+Check\+Timestamp}}
+\index{login\+Timeout\+Check\+Timestamp@{login\+Timeout\+Check\+Timestamp}!com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{login\+Timeout\+Check\+Timestamp}{loginTimeoutCheckTimestamp}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory.\+login\+Timeout\+Check\+Timestamp = System.\+current\+Time\+Millis()\hspace{0.3cm}{\ttfamily [protected]}}
+
+Time when last Login Timeout check occurred \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a71fb7fd435ce8e4b8ef9b31e9707f728}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a71fb7fd435ce8e4b8ef9b31e9707f728}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}!login\+Timeout\+Countdown@{login\+Timeout\+Countdown}}
+\index{login\+Timeout\+Countdown@{login\+Timeout\+Countdown}!com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{login\+Timeout\+Countdown}{loginTimeoutCountdown}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory.\+login\+Timeout\+Countdown = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+The remaining login time in milliseconds. Initial value set from defined Driver\+Manager.\+set\+Login\+Timeout() \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_ae354b398ef8c4ffc1772d3ff0d5c671a}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_ae354b398ef8c4ffc1772d3ff0d5c671a}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}!port@{port}}
+\index{port@{port}!com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory.\+port = 3306\hspace{0.3cm}{\ttfamily [protected]}}
+
+The port number to connect to \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_ae74434dafb7028bd70980bd3c648c170}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_ae74434dafb7028bd70980bd3c648c170}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}!raw\+Socket@{raw\+Socket}}
+\index{raw\+Socket@{raw\+Socket}!com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{raw\+Socket}{rawSocket}}
+{\footnotesize\ttfamily Socket com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory.\+raw\+Socket = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+The underlying T\+C\+P/\+IP socket to use \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a15bf8ebd7425eb36e786e8ab7c4fe10e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a15bf8ebd7425eb36e786e8ab7c4fe10e}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}!socket\+Timeout\+Backup@{socket\+Timeout\+Backup}}
+\index{socket\+Timeout\+Backup@{socket\+Timeout\+Backup}!com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{socket\+Timeout\+Backup}{socketTimeoutBackup}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory.\+socket\+Timeout\+Backup = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+Backup original Socket timeout to be restored after handshake \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_aece3a18276dc380df45049ac5d58f731}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_aece3a18276dc380df45049ac5d58f731}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}!ssl\+Socket@{ssl\+Socket}}
+\index{ssl\+Socket@{ssl\+Socket}!com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Standard\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{ssl\+Socket}{sslSocket}}
+{\footnotesize\ttfamily Socket com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory.\+ssl\+Socket = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+The wrapper for underlying T\+C\+P/\+IP socket 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/protocol/\mbox{\hyperlink{_standard_socket_factory_8java}{Standard\+Socket\+Factory.\+java}}\end{DoxyCompactItemize}

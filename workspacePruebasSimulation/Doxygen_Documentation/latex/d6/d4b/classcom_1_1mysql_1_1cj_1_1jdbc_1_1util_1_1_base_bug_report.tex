@@ -1,0 +1,261 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report}{}\section{com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report}\index{com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report@{com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_ab1f1c9976f81472afdb89476bf540830}{Base\+Bug\+Report}} ()
+\item 
+abstract void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_ad320a1b51efdb6c84a11050708d59d51}{set\+Up}} ()  throws Exception
+\item 
+abstract void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a425288fa4310585fc86c736ec94e8033}{tear\+Down}} ()  throws Exception
+\item 
+abstract void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_ac3abccb9a116e7fadc6087927166909c}{run\+Test}} ()  throws Exception
+\item 
+final void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_aa9c59d5f6ff687784bd96bebd5e3dc87}{run}} ()  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_af253a8d960912715ba0cc0fe1766c4d6}{get\+Url}} ()
+\item 
+final synchronized Connection \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_aef144ede71b00b26e1435e42314192c9}{get\+Connection}} ()  throws S\+Q\+L\+Exception 
+\item 
+final synchronized Connection \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a52dfde9282d44dc1b96c28bb0d08f731}{get\+New\+Connection}} ()  throws S\+Q\+L\+Exception 
+\item 
+final synchronized Connection \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a0bd5313cdb5db035162bf6ad01a1f507}{get\+Connection}} (String url)  throws S\+Q\+L\+Exception 
+\item 
+final synchronized Connection \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a6eea476d9a67e9c328c88541f7a11ca3}{get\+Connection}} (String url, Properties props)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+final void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_aeca0d41a625cbf52168bca12a8ba62c8}{assert\+True}} (String message, boolean condition)  throws Exception 
+\item 
+final void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a70e82a2b3e425014402a19483020f278}{assert\+True}} (boolean condition)  throws Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class to help file bug reports for Connector/J.
+
+My\+S\+QL AB, 2008 Sun Microsystems, 2009 Oracle Corporation
+
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}appreciates repeatable testcases when reporting bugs, so we\textquotesingle{}re giving you this class to make that job a bit easier (and standarized).
+
+To create a testcase, create a class that inherits from this class (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report}{com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report}}), and override the methods \textquotesingle{}set\+Up\textquotesingle{}, \textquotesingle{}tear\+Down\textquotesingle{} and \textquotesingle{}run\+Test\textquotesingle{}.
+
+In the \textquotesingle{}set\+Up\textquotesingle{} method, create code that creates your tables, and populates them with any data needed to demonstrate the bug.
+
+In the \textquotesingle{}run\+Test\textquotesingle{} method, create code that demonstrates the bug using the tables and data you created in the \textquotesingle{}set\+Up\textquotesingle{} method.
+
+In the \textquotesingle{}tear\+Down\textquotesingle{} method, drop any tables you created in the \textquotesingle{}set\+Up\textquotesingle{} method.
+
+In any of the above three methods, you should use one of the variants of the \textquotesingle{}get\+Connection\textquotesingle{} method to create a J\+D\+BC connection to My\+S\+QL, which will use the default J\+D\+BC U\+RL of \textquotesingle{}jdbc\+:mysql\+:///test\textquotesingle{}.
+
+If you need to use a J\+D\+BC U\+RL that is different than \textquotesingle{}jdbc\+:mysql\+:///test\textquotesingle{}, then override the method \textquotesingle{}get\+Url\textquotesingle{} as well.
+
+Use the \textquotesingle{}assert\+True\textquotesingle{} methods to create conditions that must be met in your testcase demonstrating the behavior you are expecting (vs. the behavior you are observing, which is why you are most likely filing a bug report).
+
+Finally, create a \textquotesingle{}main\textquotesingle{} method that creates a new instance of your testcase, and calls the \textquotesingle{}run\textquotesingle{} method\+:
+
+
+\begin{DoxyPre}
+public static void main(String[] args) throws Exception \{
+    new MyBugReport().\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_aa9c59d5f6ff687784bd96bebd5e3dc87}{run()}};
+\}
+\end{DoxyPre}
+
+
+When filing a potential bug with My\+S\+QL Connector/J at \href{http://bugs.mysql.com/}{\tt http\+://bugs.\+mysql.\+com/} or on the bugs mailing list, please include the code that you have just written using this class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_ab1f1c9976f81472afdb89476bf540830}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_ab1f1c9976f81472afdb89476bf540830}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}!Base\+Bug\+Report@{Base\+Bug\+Report}}
+\index{Base\+Bug\+Report@{Base\+Bug\+Report}!com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}}
+\subsubsection{\texorpdfstring{Base\+Bug\+Report()}{BaseBugReport()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report.\+Base\+Bug\+Report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor for this Bug\+Report, sets up J\+D\+BC driver used to create connections. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_aeca0d41a625cbf52168bca12a8ba62c8}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_aeca0d41a625cbf52168bca12a8ba62c8}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}!assert\+True@{assert\+True}}
+\index{assert\+True@{assert\+True}!com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}}
+\subsubsection{\texorpdfstring{assert\+True()}{assertTrue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily final void com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report.\+assert\+True (\begin{DoxyParamCaption}\item[{String}]{message,  }\item[{boolean}]{condition }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Throws an exception with the given message if condition evalutates to \textquotesingle{}false\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & the message to use in the exception \\
+\hline
+{\em condition} & the condition to test for \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if !condition \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a70e82a2b3e425014402a19483020f278}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a70e82a2b3e425014402a19483020f278}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}!assert\+True@{assert\+True}}
+\index{assert\+True@{assert\+True}!com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}}
+\subsubsection{\texorpdfstring{assert\+True()}{assertTrue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily final void com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report.\+assert\+True (\begin{DoxyParamCaption}\item[{boolean}]{condition }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Throws an exception if condition evalutates to \textquotesingle{}false\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em condition} & the condition to test for \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if !condition \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_aef144ede71b00b26e1435e42314192c9}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_aef144ede71b00b26e1435e42314192c9}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}!get\+Connection@{get\+Connection}}
+\index{get\+Connection@{get\+Connection}!com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}}
+\subsubsection{\texorpdfstring{get\+Connection()}{getConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily final synchronized Connection com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report.\+get\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Provides a connection to the J\+D\+BC U\+RL specified in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_af253a8d960912715ba0cc0fe1766c4d6}{get\+Url()}}.
+
+If a connection already exists, that connection is returned. Otherwise a new connection is created.
+
+\begin{DoxyReturn}{Returns}
+a connection to the J\+D\+BC U\+RL specified in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_af253a8d960912715ba0cc0fe1766c4d6}{get\+Url()}}.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error is caused while creating the connection. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a0bd5313cdb5db035162bf6ad01a1f507}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a0bd5313cdb5db035162bf6ad01a1f507}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}!get\+Connection@{get\+Connection}}
+\index{get\+Connection@{get\+Connection}!com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}}
+\subsubsection{\texorpdfstring{get\+Connection()}{getConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily final synchronized Connection com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report.\+get\+Connection (\begin{DoxyParamCaption}\item[{String}]{url }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Returns a connection using the given U\+RL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & the J\+D\+BC U\+RL to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new java.\+sql.\+Connection to the J\+D\+BC U\+RL. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs getting the connection. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a6eea476d9a67e9c328c88541f7a11ca3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a6eea476d9a67e9c328c88541f7a11ca3}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}!get\+Connection@{get\+Connection}}
+\index{get\+Connection@{get\+Connection}!com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}}
+\subsubsection{\texorpdfstring{get\+Connection()}{getConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily final synchronized Connection com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report.\+get\+Connection (\begin{DoxyParamCaption}\item[{String}]{url,  }\item[{Properties}]{props }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Returns a connection using the given U\+RL and properties.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & the J\+D\+BC U\+RL to use \\
+\hline
+{\em props} & the J\+D\+BC properties to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new java.\+sql.\+Connection to the J\+D\+BC U\+RL. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs getting the connection. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a52dfde9282d44dc1b96c28bb0d08f731}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a52dfde9282d44dc1b96c28bb0d08f731}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}!get\+New\+Connection@{get\+New\+Connection}}
+\index{get\+New\+Connection@{get\+New\+Connection}!com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}}
+\subsubsection{\texorpdfstring{get\+New\+Connection()}{getNewConnection()}}
+{\footnotesize\ttfamily final synchronized Connection com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report.\+get\+New\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Use this if you need to get a new connection for your bug report (i.\+e. there\textquotesingle{}s more than one connection involved).
+
+\begin{DoxyReturn}{Returns}
+a new connection to the J\+D\+BC U\+RL specified in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_af253a8d960912715ba0cc0fe1766c4d6}{get\+Url()}}.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error is caused while creating the connection. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_af253a8d960912715ba0cc0fe1766c4d6}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_af253a8d960912715ba0cc0fe1766c4d6}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}!get\+Url@{get\+Url}}
+\index{get\+Url@{get\+Url}!com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}}
+\subsubsection{\texorpdfstring{get\+Url()}{getUrl()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report.\+get\+Url (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Provides the J\+D\+BC U\+RL to use to demonstrate the bug. The java.\+sql.\+Connection that you use to demonstrate this bug will be provided by the \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_aef144ede71b00b26e1435e42314192c9}{get\+Connection()}} method using this U\+RL.
+
+The default value is \textquotesingle{}jdbc\+:mysql\+:///test\textquotesingle{} \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_aa9c59d5f6ff687784bd96bebd5e3dc87}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_aa9c59d5f6ff687784bd96bebd5e3dc87}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}!run@{run}}
+\index{run@{run}!com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily final void com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Runs the testcase by calling the \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_ad320a1b51efdb6c84a11050708d59d51}{set\+Up()}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_ac3abccb9a116e7fadc6087927166909c}{run\+Test()}} and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a425288fa4310585fc86c736ec94e8033}{tear\+Down()}} methods. The \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a425288fa4310585fc86c736ec94e8033}{tear\+Down()}} method is run regardless of any errors occuring in the other methods.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if an error occurs in any of the aforementioned methods. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_ac3abccb9a116e7fadc6087927166909c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_ac3abccb9a116e7fadc6087927166909c}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}!run\+Test@{run\+Test}}
+\index{run\+Test@{run\+Test}!com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}}
+\subsubsection{\texorpdfstring{run\+Test()}{runTest()}}
+{\footnotesize\ttfamily abstract void com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report.\+run\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Override this method with code that demonstrates the bug. This method will be called after \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_ad320a1b51efdb6c84a11050708d59d51}{set\+Up()}}, and before \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a425288fa4310585fc86c736ec94e8033}{tear\+Down()}}.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if an error occurs during your test run. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_ad320a1b51efdb6c84a11050708d59d51}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_ad320a1b51efdb6c84a11050708d59d51}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}!set\+Up@{set\+Up}}
+\index{set\+Up@{set\+Up}!com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}}
+\subsubsection{\texorpdfstring{set\+Up()}{setUp()}}
+{\footnotesize\ttfamily abstract void com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report.\+set\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Override this method with code that sets up the testcase for demonstrating your bug (creating tables, populating data, etc).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if an error occurs during the \textquotesingle{}set\+Up\textquotesingle{} phase. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a425288fa4310585fc86c736ec94e8033}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_a425288fa4310585fc86c736ec94e8033}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}!tear\+Down@{tear\+Down}}
+\index{tear\+Down@{tear\+Down}!com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report@{com\+::mysql\+::cj\+::jdbc\+::util\+::\+Base\+Bug\+Report}}
+\subsubsection{\texorpdfstring{tear\+Down()}{tearDown()}}
+{\footnotesize\ttfamily abstract void com.\+mysql.\+cj.\+jdbc.\+util.\+Base\+Bug\+Report.\+tear\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Override this method with code that cleans up anything created in the \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1util_1_1_base_bug_report_ad320a1b51efdb6c84a11050708d59d51}{set\+Up()}} method.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if an error occurs during the \textquotesingle{}tear\+Down\textquotesingle{} phase. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/util/\mbox{\hyperlink{_base_bug_report_8java}{Base\+Bug\+Report.\+java}}\end{DoxyCompactItemize}

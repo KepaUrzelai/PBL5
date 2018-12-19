@@ -1,0 +1,296 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{}\section{com.\+mysql.\+cj.\+conf.\+Property\+Definition$<$ T $>$ Interface Template Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}\index{com.\+mysql.\+cj.\+conf.\+Property\+Definition$<$ T $>$@{com.\+mysql.\+cj.\+conf.\+Property\+Definition$<$ T $>$}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a8f2457ea9870439d45581873ff8f3855}{has\+Value\+Constraints}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a2bf2cf38bb5d0aad4d150cda93042052}{is\+Range\+Based}} ()
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a3d5fc7338338459e82d187c1255a67af}{get\+Name}} ()
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_acc0fa0247711c6fdacc8eff41cf31259}{get\+Cc\+Alias}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a665ced842d6e306f68c31df34587afca}{has\+Cc\+Alias}} ()
+\item 
+T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a8e30238016964be2b882a2a9cbffc6a1}{get\+Default\+Value}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a72d0e665c12ca2bfa7c2fd6cf7d50656}{is\+Runtime\+Modifiable}} ()
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a0bdca9976b161458af766cc1e6929cf6}{get\+Description}} ()
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_ab2e3a44b28b1f7d76ae0f3a38029270d}{get\+Since\+Version}} ()
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a3def2907e92eb8015dcbe406d3a55a24}{get\+Category}} ()
+\item 
+int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a4e40dac46393e75d5b57db4024a5ecf4}{get\+Order}} ()
+\item 
+String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_af0b3b3dc66dde20cb65b69eb2ec70738}{get\+Allowable\+Values}} ()
+\item 
+int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_aa5c2d6bf96e66cccf887454f038806bc}{get\+Lower\+Bound}} ()
+\item 
+int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a6cebd6abc58605df93dbf06fc6c6d487}{get\+Upper\+Bound}} ()
+\item 
+T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a6abfb25b6102c876eddc4f10aca5687c}{parse\+Object}} (String value, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_runtime_property}{Runtime\+Property}}$<$ T $>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a60e957593314e41c73275bd5f4c6708e}{create\+Runtime\+Property}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a60e957593314e41c73275bd5f4c6708e}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a60e957593314e41c73275bd5f4c6708e}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!create\+Runtime\+Property@{create\+Runtime\+Property}}
+\index{create\+Runtime\+Property@{create\+Runtime\+Property}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{create\+Runtime\+Property()}{createRuntimeProperty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_runtime_property}{Runtime\+Property}}$<$T$>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.create\+Runtime\+Property (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates instance of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}} or \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_modifiable_property}{Modifiable\+Property}} depending on \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a72d0e665c12ca2bfa7c2fd6cf7d50656}{is\+Runtime\+Modifiable()}} result.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_runtime_property}{Runtime\+Property}} instance 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition_a463e1e063d6969ca3d352b31ea9324b5}{com.\+mysql.\+cj.\+conf.\+Enum\+Property\+Definition$<$ T extends Enum$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_af0b3b3dc66dde20cb65b69eb2ec70738}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_af0b3b3dc66dde20cb65b69eb2ec70738}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!get\+Allowable\+Values@{get\+Allowable\+Values}}
+\index{get\+Allowable\+Values@{get\+Allowable\+Values}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{get\+Allowable\+Values()}{getAllowableValues()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.get\+Allowable\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the list of allowable values.
+
+\begin{DoxyReturn}{Returns}
+the list of allowable values 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_a3dc8d82d1870d9a7ad201b6552f77610}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition_a7e2ff8f6f7baf418abdae017a6bd8136}{com.\+mysql.\+cj.\+conf.\+Enum\+Property\+Definition$<$ T extends Enum$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a3def2907e92eb8015dcbe406d3a55a24}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a3def2907e92eb8015dcbe406d3a55a24}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!get\+Category@{get\+Category}}
+\index{get\+Category@{get\+Category}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{get\+Category()}{getCategory()}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the property category.
+
+\begin{DoxyReturn}{Returns}
+property category 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_a42152845862ecc58cab2f76ff8359e5c}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_acc0fa0247711c6fdacc8eff41cf31259}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_acc0fa0247711c6fdacc8eff41cf31259}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!get\+Cc\+Alias@{get\+Cc\+Alias}}
+\index{get\+Cc\+Alias@{get\+Cc\+Alias}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{get\+Cc\+Alias()}{getCcAlias()}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.get\+Cc\+Alias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the property camel-\/case alias.
+
+\begin{DoxyReturn}{Returns}
+the property camel-\/case alias. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_af42f8fd9bb3feef2843558105b4246a1}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a8e30238016964be2b882a2a9cbffc6a1}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a8e30238016964be2b882a2a9cbffc6a1}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!get\+Default\+Value@{get\+Default\+Value}}
+\index{get\+Default\+Value@{get\+Default\+Value}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{get\+Default\+Value()}{getDefaultValue()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.get\+Default\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the default value.
+
+\begin{DoxyReturn}{Returns}
+default value 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_a3ed1c7b670a446214f7e08b450c8688c}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a0bdca9976b161458af766cc1e6929cf6}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a0bdca9976b161458af766cc1e6929cf6}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!get\+Description@{get\+Description}}
+\index{get\+Description@{get\+Description}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{get\+Description()}{getDescription()}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the property description. Used for documentation.
+
+\begin{DoxyReturn}{Returns}
+property description 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_af4a34d8afb26e311ff0f2290d9189bb5}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_aa5c2d6bf96e66cccf887454f038806bc}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_aa5c2d6bf96e66cccf887454f038806bc}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!get\+Lower\+Bound@{get\+Lower\+Bound}}
+\index{get\+Lower\+Bound@{get\+Lower\+Bound}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{get\+Lower\+Bound()}{getLowerBound()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.get\+Lower\+Bound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The lowest possible value of range-\/based property
+
+\begin{DoxyReturn}{Returns}
+the lowest possible value of range-\/based property 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_a834649a1010def340ecfda489b8e4c86}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a3d5fc7338338459e82d187c1255a67af}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a3d5fc7338338459e82d187c1255a67af}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the property name.
+
+\begin{DoxyReturn}{Returns}
+the property name 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_a7b5a7c72c029a0d0b25658f61f2bca01}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a4e40dac46393e75d5b57db4024a5ecf4}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a4e40dac46393e75d5b57db4024a5ecf4}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!get\+Order@{get\+Order}}
+\index{get\+Order@{get\+Order}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{get\+Order()}{getOrder()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.get\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the property order. Used as preferred property position in properties table in documentation.
+
+\begin{DoxyReturn}{Returns}
+property order 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_ace6e9092bf122ffc61f14b1893cb2d22}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_ab2e3a44b28b1f7d76ae0f3a38029270d}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_ab2e3a44b28b1f7d76ae0f3a38029270d}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!get\+Since\+Version@{get\+Since\+Version}}
+\index{get\+Since\+Version@{get\+Since\+Version}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{get\+Since\+Version()}{getSinceVersion()}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.get\+Since\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the driver version where the property was introduced first. Used for documentation.
+
+\begin{DoxyReturn}{Returns}
+the driver version where the property was introduced first 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_a7f8ad00dc040a63ca6ec46ebda863a1d}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a6cebd6abc58605df93dbf06fc6c6d487}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a6cebd6abc58605df93dbf06fc6c6d487}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!get\+Upper\+Bound@{get\+Upper\+Bound}}
+\index{get\+Upper\+Bound@{get\+Upper\+Bound}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{get\+Upper\+Bound()}{getUpperBound()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.get\+Upper\+Bound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The highest possible value of range-\/based property
+
+\begin{DoxyReturn}{Returns}
+the highest possible value of range-\/based property 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_ad5fda7a2939d0525ae139dcb9489a100}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a665ced842d6e306f68c31df34587afca}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a665ced842d6e306f68c31df34587afca}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!has\+Cc\+Alias@{has\+Cc\+Alias}}
+\index{has\+Cc\+Alias@{has\+Cc\+Alias}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{has\+Cc\+Alias()}{hasCcAlias()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.has\+Cc\+Alias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if property has a camel-\/case alias.
+
+\begin{DoxyReturn}{Returns}
+true if property has a camel-\/case alias. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_a5c08adb553273bffe89b193a112c21d3}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a8f2457ea9870439d45581873ff8f3855}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a8f2457ea9870439d45581873ff8f3855}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!has\+Value\+Constraints@{has\+Value\+Constraints}}
+\index{has\+Value\+Constraints@{has\+Value\+Constraints}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{has\+Value\+Constraints()}{hasValueConstraints()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.has\+Value\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Does the property have fixed values based constraints.
+
+\begin{DoxyReturn}{Returns}
+true if property has fixed values based constraints. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_a2a34114907269a32b04a433c42982355}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a2bf2cf38bb5d0aad4d150cda93042052}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a2bf2cf38bb5d0aad4d150cda93042052}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!is\+Range\+Based@{is\+Range\+Based}}
+\index{is\+Range\+Based@{is\+Range\+Based}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{is\+Range\+Based()}{isRangeBased()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.is\+Range\+Based (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if property has range-\/based constraints
+
+\begin{DoxyReturn}{Returns}
+true if property has range-\/based constraints 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_a9395e63d016a2cf36bd19860dc160a29}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a72d0e665c12ca2bfa7c2fd6cf7d50656}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a72d0e665c12ca2bfa7c2fd6cf7d50656}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!is\+Runtime\+Modifiable@{is\+Runtime\+Modifiable}}
+\index{is\+Runtime\+Modifiable@{is\+Runtime\+Modifiable}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{is\+Runtime\+Modifiable()}{isRuntimeModifiable()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.is\+Runtime\+Modifiable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+May the property be changed after initialization.
+
+\begin{DoxyReturn}{Returns}
+true if the property value may be changed after initialization. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_a6c98140b2db84ccd0ff29ce165ec9ef5}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a6abfb25b6102c876eddc4f10aca5687c}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a6abfb25b6102c876eddc4f10aca5687c}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}!parse\+Object@{parse\+Object}}
+\index{parse\+Object@{parse\+Object}!com\+::mysql\+::cj\+::conf\+::\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Property\+Definition}}
+\subsubsection{\texorpdfstring{parse\+Object()}{parseObject()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition}{com.\+mysql.\+cj.\+conf.\+Property\+Definition}}$<$ T $>$.parse\+Object (\begin{DoxyParamCaption}\item[{String}]{value,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption})}
+
+Returns the value object parsed from it\textquotesingle{}s string representation and checked against allowable values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & value \\
+\hline
+{\em exception\+Interceptor} & exception interceptor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value object 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_aa8a990e4882d80051332cacda3886747}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition_a00a259a5d83a0a7c6522309ff44146ba}{com.\+mysql.\+cj.\+conf.\+Enum\+Property\+Definition$<$ T extends Enum$<$ T $>$}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/conf/\mbox{\hyperlink{_property_definition_8java}{Property\+Definition.\+java}}\end{DoxyCompactItemize}

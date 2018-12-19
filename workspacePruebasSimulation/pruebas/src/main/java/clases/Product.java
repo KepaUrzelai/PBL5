@@ -13,7 +13,6 @@ import javax.persistence.Table;
 @Table(name = "product")
 public class Product {
 
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)	
 	private Integer id;
@@ -43,13 +42,11 @@ public class Product {
 	@JoinColumn(name = "vehicleId")
 	private Integer vehicleId;
 	
-
 	/**
 	 * @class The class for products, it is formed by an identificator(ID),
 	 * an origin segment from which it comes ,a destination segment where it has to go to be shipped
 	 * A name to descript the product itself and the time that takes to the workstation to make that product.
 	 * */
-
 	int time;
 	String name;
 	

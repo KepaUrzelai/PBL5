@@ -1,0 +1,280 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder}{}\section{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder}\index{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder@{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_message_builder}{com.\+mysql.\+cj.\+Message\+Builder$<$ M extends Message $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_af5e34f66571b0fb764fea7592006ed32}{build\+Capabilities\+Get}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a19763fe5132b791e239585e6c579b424}{build\+Capabilities\+Set}} (String name, Object value)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ae1ef598fc705f1ad12007f1961281561}{build\+Doc\+Insert}} (String schema\+Name, String collection\+Name, List$<$ String $>$ json, boolean upsert)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a0004da51444c3ff97fbc092e9fa4ac38}{build\+Row\+Insert}} (String schema\+Name, String table\+Name, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_insert_params}{Insert\+Params}} insert\+Params)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_abec48224a549de8ccba9b21ad44edb18}{build\+Doc\+Update}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_filter_params}{Filter\+Params}} filter\+Params, List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_spec}{Update\+Spec}} $>$ updates)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a16b907086f40db7465be3eedf12788ae}{build\+Row\+Update}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_filter_params}{Filter\+Params}} filter\+Params, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_params}{Update\+Params}} update\+Params)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a3907b7f639b9a80350f731a96073a2d4}{build\+Find}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params}{Find\+Params}} find\+Params)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a15cf6f85f675dae1f0405b5c0d800ee1}{build\+Delete}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_filter_params}{Filter\+Params}} filter\+Params)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_af62045f3c8ab379984af2dc1dbc19059}{build\+Close}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a4a96b13e3499668ebb6321cd9e7a25ea}{build\+Create\+Collection}} (String schema\+Name, String collection\+Name)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ae29a2e6af7f8d764d772e61f86bfcf06}{build\+Drop\+Collection}} (String schema\+Name, String collection\+Name)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a961f7a690c9c3f57eddf39e332f6871d}{build\+List\+Objects}} (String schema\+Name, String pattern)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a2b92f5fdc863a45a9fcd2a1855f2de9d}{build\+Enable\+Notices}} (String... notices)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ae47857a6385f7d0647d87266250f5a33}{build\+Disable\+Notices}} (String... notices)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_aa5a1aea26a2067395d8fc8c37598dfea}{build\+List\+Notices}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a2c975ab1cc6f224fdba48917fa073826}{build\+Create\+Collection\+Index}} (String schema\+Name, String collection\+Name, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_create_index_params}{Create\+Index\+Params}} params)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ae1efcf214920ddfa0d3dff1cadc4e423}{build\+Drop\+Collection\+Index}} (String schema\+Name, String collection\+Name, String index\+Name)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a60e482092bcdce0fd60ecd466daed306}{build\+Sql\+Statement}} (String statement)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a2c3993eeb6a20211b7a81f15784fb537}{build\+Sql\+Statement}} (String statement, List$<$ Object $>$ args)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_abff8c32a0e149ac708648441a53e160f}{build\+Sha256\+Memory\+Auth\+Start}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a590a0e110a2f72f252fcf4ef7c528a4f}{build\+Sha256\+Memory\+Auth\+Continue}} (String user, String password, byte\mbox{[}$\,$\mbox{]} nonce, String database)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a57de6765909deabbc8dc2ed1fd6a4c57}{build\+Mysql41\+Auth\+Start}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ac2db2e94fe80fb5b661a8cf05303487c}{build\+Mysql41\+Auth\+Continue}} (String user, String password, byte\mbox{[}$\,$\mbox{]} salt, String database)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_af517dd056ab2ea661d42df011f60fd1e}{build\+Plain\+Auth\+Start}} (String user, String password, String database)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a905274bec5dac7689e4c96b5b6ef5a5c}{build\+External\+Auth\+Start}} (String database)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_af5e34f66571b0fb764fea7592006ed32}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_af5e34f66571b0fb764fea7592006ed32}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Capabilities\+Get@{build\+Capabilities\+Get}}
+\index{build\+Capabilities\+Get@{build\+Capabilities\+Get}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Capabilities\+Get()}{buildCapabilitiesGet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Capabilities\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a19763fe5132b791e239585e6c579b424}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a19763fe5132b791e239585e6c579b424}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Capabilities\+Set@{build\+Capabilities\+Set}}
+\index{build\+Capabilities\+Set@{build\+Capabilities\+Set}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Capabilities\+Set()}{buildCapabilitiesSet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Capabilities\+Set (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{Object}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_af62045f3c8ab379984af2dc1dbc19059}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_af62045f3c8ab379984af2dc1dbc19059}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Close@{build\+Close}}
+\index{build\+Close@{build\+Close}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Close()}{buildClose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_message_builder_a8e2e854f8680445177dfb45482990c34}{com.\+mysql.\+cj.\+Message\+Builder$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a4a96b13e3499668ebb6321cd9e7a25ea}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a4a96b13e3499668ebb6321cd9e7a25ea}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Create\+Collection@{build\+Create\+Collection}}
+\index{build\+Create\+Collection@{build\+Create\+Collection}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Create\+Collection()}{buildCreateCollection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Create\+Collection (\begin{DoxyParamCaption}\item[{String}]{schema\+Name,  }\item[{String}]{collection\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a2c975ab1cc6f224fdba48917fa073826}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a2c975ab1cc6f224fdba48917fa073826}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Create\+Collection\+Index@{build\+Create\+Collection\+Index}}
+\index{build\+Create\+Collection\+Index@{build\+Create\+Collection\+Index}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Create\+Collection\+Index()}{buildCreateCollectionIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Create\+Collection\+Index (\begin{DoxyParamCaption}\item[{String}]{schema\+Name,  }\item[{String}]{collection\+Name,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_create_index_params}{Create\+Index\+Params}}}]{params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a15cf6f85f675dae1f0405b5c0d800ee1}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a15cf6f85f675dae1f0405b5c0d800ee1}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Delete@{build\+Delete}}
+\index{build\+Delete@{build\+Delete}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Delete()}{buildDelete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_filter_params}{Filter\+Params}}}]{filter\+Params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ae47857a6385f7d0647d87266250f5a33}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ae47857a6385f7d0647d87266250f5a33}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Disable\+Notices@{build\+Disable\+Notices}}
+\index{build\+Disable\+Notices@{build\+Disable\+Notices}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Disable\+Notices()}{buildDisableNotices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Disable\+Notices (\begin{DoxyParamCaption}\item[{String...}]{notices }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ae1ef598fc705f1ad12007f1961281561}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ae1ef598fc705f1ad12007f1961281561}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Doc\+Insert@{build\+Doc\+Insert}}
+\index{build\+Doc\+Insert@{build\+Doc\+Insert}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Doc\+Insert()}{buildDocInsert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Doc\+Insert (\begin{DoxyParamCaption}\item[{String}]{schema\+Name,  }\item[{String}]{collection\+Name,  }\item[{List$<$ String $>$}]{json,  }\item[{boolean}]{upsert }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_abec48224a549de8ccba9b21ad44edb18}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_abec48224a549de8ccba9b21ad44edb18}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Doc\+Update@{build\+Doc\+Update}}
+\index{build\+Doc\+Update@{build\+Doc\+Update}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Doc\+Update()}{buildDocUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Doc\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_filter_params}{Filter\+Params}}}]{filter\+Params,  }\item[{List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_spec}{Update\+Spec}} $>$}]{updates }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ae29a2e6af7f8d764d772e61f86bfcf06}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ae29a2e6af7f8d764d772e61f86bfcf06}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Drop\+Collection@{build\+Drop\+Collection}}
+\index{build\+Drop\+Collection@{build\+Drop\+Collection}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Drop\+Collection()}{buildDropCollection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Drop\+Collection (\begin{DoxyParamCaption}\item[{String}]{schema\+Name,  }\item[{String}]{collection\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ae1efcf214920ddfa0d3dff1cadc4e423}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ae1efcf214920ddfa0d3dff1cadc4e423}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Drop\+Collection\+Index@{build\+Drop\+Collection\+Index}}
+\index{build\+Drop\+Collection\+Index@{build\+Drop\+Collection\+Index}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Drop\+Collection\+Index()}{buildDropCollectionIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Drop\+Collection\+Index (\begin{DoxyParamCaption}\item[{String}]{schema\+Name,  }\item[{String}]{collection\+Name,  }\item[{String}]{index\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a2b92f5fdc863a45a9fcd2a1855f2de9d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a2b92f5fdc863a45a9fcd2a1855f2de9d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Enable\+Notices@{build\+Enable\+Notices}}
+\index{build\+Enable\+Notices@{build\+Enable\+Notices}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Enable\+Notices()}{buildEnableNotices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Enable\+Notices (\begin{DoxyParamCaption}\item[{String...}]{notices }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a905274bec5dac7689e4c96b5b6ef5a5c}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a905274bec5dac7689e4c96b5b6ef5a5c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+External\+Auth\+Start@{build\+External\+Auth\+Start}}
+\index{build\+External\+Auth\+Start@{build\+External\+Auth\+Start}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+External\+Auth\+Start()}{buildExternalAuthStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+External\+Auth\+Start (\begin{DoxyParamCaption}\item[{String}]{database }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a3907b7f639b9a80350f731a96073a2d4}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a3907b7f639b9a80350f731a96073a2d4}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Find@{build\+Find}}
+\index{build\+Find@{build\+Find}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Find()}{buildFind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params}{Find\+Params}}}]{find\+Params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_aa5a1aea26a2067395d8fc8c37598dfea}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_aa5a1aea26a2067395d8fc8c37598dfea}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+List\+Notices@{build\+List\+Notices}}
+\index{build\+List\+Notices@{build\+List\+Notices}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+List\+Notices()}{buildListNotices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+List\+Notices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+List the notices the server allows subscribing to. Returns a table as so\+:
+
+
+\begin{DoxyPre}
+| notice (string)     | enabled (int) |
+|---------------------+---------------|
+| warnings            | 1             |
+\end{DoxyPre}
+ \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a961f7a690c9c3f57eddf39e332f6871d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a961f7a690c9c3f57eddf39e332f6871d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+List\+Objects@{build\+List\+Objects}}
+\index{build\+List\+Objects@{build\+List\+Objects}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+List\+Objects()}{buildListObjects()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+List\+Objects (\begin{DoxyParamCaption}\item[{String}]{schema\+Name,  }\item[{String}]{pattern }\end{DoxyParamCaption})}
+
+List the objects in the given schema. Returns a table as so\+:
+
+
+\begin{DoxyPre}
+| name                | type       |
+|---------------------+------------|
+| CollectionTest      | COLLECTION |
+| some\_view           | VIEW       |
+| xprotocol\_test\_test | TABLE      |
+\end{DoxyPre}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em schema\+Name} & schema name \\
+\hline
+{\em pattern} & object name pattern \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ac2db2e94fe80fb5b661a8cf05303487c}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_ac2db2e94fe80fb5b661a8cf05303487c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Mysql41\+Auth\+Continue@{build\+Mysql41\+Auth\+Continue}}
+\index{build\+Mysql41\+Auth\+Continue@{build\+Mysql41\+Auth\+Continue}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Mysql41\+Auth\+Continue()}{buildMysql41AuthContinue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Mysql41\+Auth\+Continue (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{salt,  }\item[{String}]{database }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a57de6765909deabbc8dc2ed1fd6a4c57}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a57de6765909deabbc8dc2ed1fd6a4c57}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Mysql41\+Auth\+Start@{build\+Mysql41\+Auth\+Start}}
+\index{build\+Mysql41\+Auth\+Start@{build\+Mysql41\+Auth\+Start}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Mysql41\+Auth\+Start()}{buildMysql41AuthStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Mysql41\+Auth\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_af517dd056ab2ea661d42df011f60fd1e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_af517dd056ab2ea661d42df011f60fd1e}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Plain\+Auth\+Start@{build\+Plain\+Auth\+Start}}
+\index{build\+Plain\+Auth\+Start@{build\+Plain\+Auth\+Start}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Plain\+Auth\+Start()}{buildPlainAuthStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Plain\+Auth\+Start (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password,  }\item[{String}]{database }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a0004da51444c3ff97fbc092e9fa4ac38}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a0004da51444c3ff97fbc092e9fa4ac38}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Row\+Insert@{build\+Row\+Insert}}
+\index{build\+Row\+Insert@{build\+Row\+Insert}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Row\+Insert()}{buildRowInsert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Row\+Insert (\begin{DoxyParamCaption}\item[{String}]{schema\+Name,  }\item[{String}]{table\+Name,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_insert_params}{Insert\+Params}}}]{insert\+Params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a16b907086f40db7465be3eedf12788ae}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a16b907086f40db7465be3eedf12788ae}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Row\+Update@{build\+Row\+Update}}
+\index{build\+Row\+Update@{build\+Row\+Update}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Row\+Update()}{buildRowUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Row\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_filter_params}{Filter\+Params}}}]{filter\+Params,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_params}{Update\+Params}}}]{update\+Params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a590a0e110a2f72f252fcf4ef7c528a4f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a590a0e110a2f72f252fcf4ef7c528a4f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Sha256\+Memory\+Auth\+Continue@{build\+Sha256\+Memory\+Auth\+Continue}}
+\index{build\+Sha256\+Memory\+Auth\+Continue@{build\+Sha256\+Memory\+Auth\+Continue}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Sha256\+Memory\+Auth\+Continue()}{buildSha256MemoryAuthContinue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Sha256\+Memory\+Auth\+Continue (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{nonce,  }\item[{String}]{database }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_abff8c32a0e149ac708648441a53e160f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_abff8c32a0e149ac708648441a53e160f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Sha256\+Memory\+Auth\+Start@{build\+Sha256\+Memory\+Auth\+Start}}
+\index{build\+Sha256\+Memory\+Auth\+Start@{build\+Sha256\+Memory\+Auth\+Start}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Sha256\+Memory\+Auth\+Start()}{buildSha256MemoryAuthStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Sha256\+Memory\+Auth\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a60e482092bcdce0fd60ecd466daed306}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a60e482092bcdce0fd60ecd466daed306}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Sql\+Statement@{build\+Sql\+Statement}}
+\index{build\+Sql\+Statement@{build\+Sql\+Statement}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Sql\+Statement()}{buildSqlStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Sql\+Statement (\begin{DoxyParamCaption}\item[{String}]{statement }\end{DoxyParamCaption})}
+
+Build a {\itshape Stmt\+Execute} message for a S\+QL statement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em statement} & S\+QL statement string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{\} wrapping  Stmt\+Execute\} }}
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_message_builder_ab18c136ad40edd22c321cae8c222e6ad}{com.\+mysql.\+cj.\+Message\+Builder$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a2c3993eeb6a20211b7a81f15784fb537}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder_a2c3993eeb6a20211b7a81f15784fb537}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}!build\+Sql\+Statement@{build\+Sql\+Statement}}
+\index{build\+Sql\+Statement@{build\+Sql\+Statement}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Message\+Builder}}
+\subsubsection{\texorpdfstring{build\+Sql\+Statement()}{buildSqlStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message\+Builder.\+build\+Sql\+Statement (\begin{DoxyParamCaption}\item[{String}]{statement,  }\item[{List$<$ Object $>$}]{args }\end{DoxyParamCaption})}
+
+Build a {\itshape Stmt\+Execute} message for a S\+QL statement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em statement} & S\+QL statement string \\
+\hline
+{\em args} & list of \mbox{\hyperlink{}{Object}} arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{\} wrapping  Stmt\+Execute\} }}
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_message_builder_a592efa3bace2a15138d4bed34dd37e28}{com.\+mysql.\+cj.\+Message\+Builder$<$ M extends Message $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/x/\mbox{\hyperlink{_x_message_builder_8java}{X\+Message\+Builder.\+java}}\end{DoxyCompactItemize}

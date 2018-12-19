@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['name',['name',['../dd/db8/classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def.html#a4db4c67f053ba22dcaa75459c5fa68c3',1,'com::mysql::cj::xdevapi::AbstractColumnDef']]],
+  ['named_5fpipe_5fprop_5fname',['NAMED_PIPE_PROP_NAME',['../d3/d3f/classcom_1_1mysql_1_1cj_1_1conf_1_1_property_definitions.html#ad03d85afee4096d1aeb0bde451700aaa',1,'com::mysql::cj::conf::PropertyDefinitions']]],
+  ['nextresultset',['nextResultset',['../d5/d07/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset.html#a60ece486b7010abcf502f602c8a4512f',1,'com::mysql::cj::protocol::a::result::NativeResultset']]],
+  ['no',['NO',['../d3/dc6/enumcom_1_1mysql_1_1cj_1_1conf_1_1_boolean_property_definition_1_1_allowable_values.html#a6fbd99656bca34e8d4dee3760653e546',1,'com::mysql::cj::conf::BooleanPropertyDefinition::AllowableValues']]],
+  ['no_5falias',['NO_ALIAS',['../d3/d3f/classcom_1_1mysql_1_1cj_1_1conf_1_1_property_definitions.html#ae71e485e663f4e38c8775a0a5ee3ff6d',1,'com::mysql::cj::conf::PropertyDefinitions']]],
+  ['no_5fcharset_5finfo',['NO_CHARSET_INFO',['../da/d9a/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_constants.html#a0f6cae1c28c039be213a26bf86340106',1,'com::mysql::cj::protocol::a::NativeConstants']]],
+  ['not_5fcanceled',['NOT_CANCELED',['../d0/d61/enumcom_1_1mysql_1_1cj_1_1_query_1_1_cancel_status.html#ad749d0879dbc21cb3be4cbf52b7a2dd4',1,'com::mysql::cj::Query::CancelStatus']]],
+  ['not_5fexists',['NOT_EXISTS',['../d2/db7/enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_1_1_db_object_status.html#a9f8e319c4f1c12abb733d11495de154a',1,'com::mysql::cj::xdevapi::DatabaseObject::DbObjectStatus']]],
+  ['not_5fupdateable_5fmessage',['NOT_UPDATEABLE_MESSAGE',['../d4/da9/classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_not_updatable.html#af1e8c6cf85e5f8967b93a32b16b7a837',1,'com::mysql::cj::jdbc::exceptions::NotUpdatable']]],
+  ['not_5fused',['NOT_USED',['../d3/db7/classcom_1_1mysql_1_1cj_1_1_charset_mapping.html#ab5a568e79b06bf2c7598e8ec2cbb5ca6',1,'com::mysql::cj::CharsetMapping']]],
+  ['note',['NOTE',['../d0/d27/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_notice_1_1_warning_1_1_level.html#ac2667c96d72322268a45472daccdf93c',1,'com::mysql::cj::x::protobuf::MysqlxNotice::Warning::Level']]],
+  ['note_5fvalue',['NOTE_VALUE',['../d0/d27/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_notice_1_1_warning_1_1_level.html#a88e0dedd605ca8867bb65dee9910cc62',1,'com::mysql::cj::x::protobuf::MysqlxNotice::Warning::Level']]],
+  ['notice',['NOTICE',['../d9/d92/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_1_1_server_messages_1_1_type.html#a27c7bf5927ad771b8fb2252c626189c9',1,'com::mysql::cj::x::protobuf::Mysqlx::ServerMessages::Type']]],
+  ['notice_5fvalue',['NOTICE_VALUE',['../d9/d92/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_1_1_server_messages_1_1_type.html#a0f8fb78aa18c6760e2d842fa8e45e997',1,'com::mysql::cj::x::protobuf::Mysqlx::ServerMessages::Type']]],
+  ['notnull',['notNull',['../dd/db8/classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def.html#abb40ee636a965f01d902673dc919fbba',1,'com::mysql::cj::xdevapi::AbstractColumnDef']]],
+  ['nowait',['NOWAIT',['../db/de1/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_crud_1_1_find_1_1_row_lock_options.html#a46bd28c80d8a1dbe711607733bb10867',1,'com.mysql.cj.x.protobuf.MysqlxCrud.Find.RowLockOptions.NOWAIT()'],['../d4/d96/enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params_1_1_row_lock_options.html#a2652b9f0cf6fc16491dd4539320f7333',1,'com.mysql.cj.xdevapi.FindParams.RowLockOptions.NOWAIT()'],['../de/d16/enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_1_1_lock_contention.html#aeee9ef730095721fb0fb801706ad6a7f',1,'com.mysql.cj.xdevapi.Statement.LockContention.NOWAIT()']]],
+  ['nowait_5fvalue',['NOWAIT_VALUE',['../db/de1/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_crud_1_1_find_1_1_row_lock_options.html#a14ebc10d0029275b1275e94082e4e018',1,'com::mysql::cj::x::protobuf::MysqlxCrud::Find::RowLockOptions']]],
+  ['null',['NULL',['../d1/d4f/enumcom_1_1mysql_1_1cj_1_1_mysql_type.html#afd999a269aedd95acf6ae2453b95e2a3',1,'com.mysql.cj.MysqlType.NULL()'],['../da/d75/enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_json_literal.html#ac7dcd6501113b4b9941a96fb4d91ae2c',1,'com.mysql.cj.xdevapi.JsonLiteral.NULL()']]],
+  ['null_5flength',['NULL_LENGTH',['../d3/d25/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload.html#aa433964e3274cf5500def5db6794b18d',1,'com::mysql::cj::protocol::a::NativePacketPayload']]],
+  ['null_5flogger',['NULL_LOGGER',['../d6/d8c/classcom_1_1mysql_1_1cj_1_1_core_session.html#abab1c389edfdd2699a26784b836d1faa',1,'com::mysql::cj::CoreSession']]],
+  ['nullcatalogmeanscurrent',['nullCatalogMeansCurrent',['../dd/dbc/classcom_1_1mysql_1_1cj_1_1jdbc_1_1_database_meta_data.html#a4725e50078ee6414b6f2e78692e3109d',1,'com::mysql::cj::jdbc::DatabaseMetaData']]],
+  ['nullstatementresultsetfactory',['nullStatementResultSetFactory',['../d1/d2b/classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl.html#aabe1561ec0dc4066916c76fcefa1db68',1,'com::mysql::cj::jdbc::ConnectionImpl']]],
+  ['numberofexecutions',['numberOfExecutions',['../d5/d42/classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings.html#afc729305171e8a1cf48109919d7a7e33',1,'com::mysql::cj::AbstractQueryBindings']]]
+];

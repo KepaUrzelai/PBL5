@@ -1,0 +1,128 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender}{}\section{com.\+mysql.\+cj.\+protocol.\+x.\+Sync\+Message\+Sender Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender}\index{com.\+mysql.\+cj.\+protocol.\+x.\+Sync\+Message\+Sender@{com.\+mysql.\+cj.\+protocol.\+x.\+Sync\+Message\+Sender}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_packet_sent_time_holder}{com.\+mysql.\+cj.\+protocol.\+Packet\+Sent\+Time\+Holder}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_a166b97eef951d91fcd64f0db3db5fbce}{Sync\+Message\+Sender}} (Buffered\+Output\+Stream os)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_af1f0d9d9427519379b24b2fb991d4ea7}{send}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} message)
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_a43022535ec5a2b7c1ac10cf339009439}{get\+Last\+Packet\+Sent\+Time}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_aa403c14cdcc078b9250830c85f6dbbf9}{set\+Max\+Allowed\+Packet}} (int max\+Allowed\+Packet)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_a3fdd323d523578fb3c30b25eda718c0c}{send}} (byte\mbox{[}$\,$\mbox{]} message, int message\+Len, byte message\+Sequence)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_a7228daf021acf6d8505108645317825d}{undecorate\+All}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_aa8fd388e5d4e5e86cb35add7f6e45c7b}{undecorate}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Synchronous-\/only implementation of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_a166b97eef951d91fcd64f0db3db5fbce}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_a166b97eef951d91fcd64f0db3db5fbce}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender}!Sync\+Message\+Sender@{Sync\+Message\+Sender}}
+\index{Sync\+Message\+Sender@{Sync\+Message\+Sender}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender}}
+\subsubsection{\texorpdfstring{Sync\+Message\+Sender()}{SyncMessageSender()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+x.\+Sync\+Message\+Sender.\+Sync\+Message\+Sender (\begin{DoxyParamCaption}\item[{Buffered\+Output\+Stream}]{os }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_a43022535ec5a2b7c1ac10cf339009439}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_a43022535ec5a2b7c1ac10cf339009439}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender}!get\+Last\+Packet\+Sent\+Time@{get\+Last\+Packet\+Sent\+Time}}
+\index{get\+Last\+Packet\+Sent\+Time@{get\+Last\+Packet\+Sent\+Time}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender}}
+\subsubsection{\texorpdfstring{get\+Last\+Packet\+Sent\+Time()}{getLastPacketSentTime()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+protocol.\+x.\+Sync\+Message\+Sender.\+get\+Last\+Packet\+Sent\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_packet_sent_time_holder_a0f02a4b248787dd3852b5258a9aa5918}{com.\+mysql.\+cj.\+protocol.\+Packet\+Sent\+Time\+Holder}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_af1f0d9d9427519379b24b2fb991d4ea7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_af1f0d9d9427519379b24b2fb991d4ea7}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender}!send@{send}}
+\index{send@{send}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender}}
+\subsubsection{\texorpdfstring{send()}{send()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Sync\+Message\+Sender.\+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}}}]{message }\end{DoxyParamCaption})}
+
+Send a message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message to send \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em C\+J\+Communications\+Exception} & to wrap any occurring I\+O\+Exception \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_a3fdd323d523578fb3c30b25eda718c0c}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_a3fdd323d523578fb3c30b25eda718c0c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender}!send@{send}}
+\index{send@{send}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender}}
+\subsubsection{\texorpdfstring{send()}{send()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Sync\+Message\+Sender.\+send (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{message,  }\item[{int}]{message\+Len,  }\item[{byte}]{message\+Sequence }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a0c7192449eae4aa0f0dbbc9778dac002}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_aa403c14cdcc078b9250830c85f6dbbf9}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_aa403c14cdcc078b9250830c85f6dbbf9}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender}!set\+Max\+Allowed\+Packet@{set\+Max\+Allowed\+Packet}}
+\index{set\+Max\+Allowed\+Packet@{set\+Max\+Allowed\+Packet}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender}}
+\subsubsection{\texorpdfstring{set\+Max\+Allowed\+Packet()}{setMaxAllowedPacket()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Sync\+Message\+Sender.\+set\+Max\+Allowed\+Packet (\begin{DoxyParamCaption}\item[{int}]{max\+Allowed\+Packet }\end{DoxyParamCaption})}
+
+Set max allowed packet size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Allowed\+Packet} & max allowed packet size \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a31345b7817dcc7e982bb96dba97b3a01}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_aa8fd388e5d4e5e86cb35add7f6e45c7b}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_aa8fd388e5d4e5e86cb35add7f6e45c7b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender}!undecorate@{undecorate}}
+\index{undecorate@{undecorate}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender}}
+\subsubsection{\texorpdfstring{undecorate()}{undecorate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}}$>$ com.\+mysql.\+cj.\+protocol.\+x.\+Sync\+Message\+Sender.\+undecorate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the previous Packet\+Sender instance from the decorators chain or the current Packet\+Sender if it is the first entry in a chain.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}} instance 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a3a352bf35ad98dc6cea7c1f4ac9480da}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_a7228daf021acf6d8505108645317825d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_a7228daf021acf6d8505108645317825d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender}!undecorate\+All@{undecorate\+All}}
+\index{undecorate\+All@{undecorate\+All}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Sender}}
+\subsubsection{\texorpdfstring{undecorate\+All()}{undecorateAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}}$>$ com.\+mysql.\+cj.\+protocol.\+x.\+Sync\+Message\+Sender.\+undecorate\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return a Packet\+Sender instance free of decorators.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}} instance 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a8066931f03c2fa9cc705716fa10a4517}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/x/\mbox{\hyperlink{_sync_message_sender_8java}{Sync\+Message\+Sender.\+java}}\end{DoxyCompactItemize}

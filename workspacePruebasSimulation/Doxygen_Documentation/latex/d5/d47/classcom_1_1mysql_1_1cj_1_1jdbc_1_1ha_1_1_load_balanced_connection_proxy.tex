@@ -1,0 +1,350 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy}{}\section{com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy}\index{com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy@{com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_connection_proxy}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+Connection\+Proxy}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_ping_target}{com.\+mysql.\+cj.\+Ping\+Target}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a236928d6a49c1bbc3dfd6e4615a34f0d}{Load\+Balanced\+Connection\+Proxy}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_loadbalance_connection_url}{Loadbalance\+Connection\+Url}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_connection_proxy_aae3d1ff31056ba5a6686ce6e692a64a8}{connection\+Url}})  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a89ff36a24aa0df79fb9363ef5c6e5be2}{should\+Exception\+Trigger\+Failover}} (Throwable t)
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a3a91f1004880ec0566519ad4af6e3c34}{pick\+New\+Connection}} ()  throws S\+Q\+L\+Exception 
+\item 
+synchronized \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_ad26b7e7a242eeab7a90983f6e5095779}{create\+Connection\+For\+Host}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} host\+Info)  throws S\+Q\+L\+Exception 
+\item 
+synchronized \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a27662d65e82acb86f3cc6af3f4f331ee}{create\+Connection\+For\+Host}} (String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+synchronized Object \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a77ff10a73000704f3d23fbe59510bab4}{invoke\+More}} (Object proxy, Method method, Object\mbox{[}$\,$\mbox{]} args)  throws Throwable 
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a735361812f6c57f687ad6512e4bd3809}{do\+Ping}} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_aa51cafef5f72668308cba5c93c1ec2be}{add\+To\+Global\+Blacklist}} (String host, long timeout)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a27a3da948290bb7ce8ee8e5bac850443}{add\+To\+Global\+Blacklist}} (String host)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a2051b9a1b9ffc14c9aa4190a61eb5b15}{is\+Global\+Blacklist\+Enabled}} ()
+\item 
+synchronized Map$<$ String, Long $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a166490bbe3865b511ff7df42813a97d8}{get\+Global\+Blacklist}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a979d78c2f78920bb885e9eb73c4b37d0}{remove\+Host\+When\+Not\+In\+Use}} (String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a77e171c52a2cc37e2b2d0f854bf4d050}{remove\+Host}} (String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+synchronized boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a02279adacc22183bb7e8c8a4d6e61d5a}{add\+Host}} (String host\+Port\+Pair)
+\item 
+synchronized boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_aa3b950fc8a61d19e82b3b29660a0f36d}{in\+Transaction}} ()
+\item 
+synchronized long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a529a4a6245e7baac3eb2eb8688597328}{get\+Transaction\+Count}} ()
+\item 
+synchronized long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a12463c009b1bc22d617d2bfa6c531430}{get\+Active\+Physical\+Connection\+Count}} ()
+\item 
+synchronized long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_aa02df5b0f92d38804979c7ca65e9ecf0}{get\+Total\+Physical\+Connection\+Count}} ()
+\item 
+synchronized long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a34c97945360e9b266c0f6430797769bd}{get\+Connection\+Group\+Proxy\+ID}} ()
+\item 
+synchronized String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a20e2022c18d8a82ca349b33b46a1f36f}{get\+Current\+Active\+Host}} ()
+\item 
+synchronized long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_acfcd1603c08d3641fdbef195539f2e46}{get\+Current\+Transaction\+Duration}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection}{Load\+Balanced\+Connection}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_afc3968a242b38d47fdd116d3fdb8ac73}{create\+Proxy\+Instance}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_loadbalance_connection_url}{Loadbalance\+Connection\+Url}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_connection_proxy_aae3d1ff31056ba5a6686ce6e692a64a8}{connection\+Url}})  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a881993ea0bb478eade30076498853833}{propagate\+Proxy\+Down}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} proxy\+Conn)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Map$<$ String, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a675cf5baac8ce2e4d6ba049def5a373e}{live\+Connections}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A proxy for a dynamic \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection}} implementation that load balances requests across a series of My\+S\+QL J\+D\+BC connections, where the balancing takes place at transaction commit.
+
+Therefore, for this to work (at all), you must use transactions, even if only reading data.
+
+This implementation will invalidate connections that it detects have had communication errors when processing a request. Problematic hosts will be added to a global blacklist for load\+Balance\+Blacklist\+Timeout ms, after which they will be removed from the blacklist and made eligible once again to be selected for new connections.
+
+This implementation is thread-\/safe, but it\textquotesingle{}s questionable whether sharing a connection instance amongst threads is a good idea, given that transactions are scoped to connections in J\+D\+BC. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a236928d6a49c1bbc3dfd6e4615a34f0d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a236928d6a49c1bbc3dfd6e4615a34f0d}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!Load\+Balanced\+Connection\+Proxy@{Load\+Balanced\+Connection\+Proxy}}
+\index{Load\+Balanced\+Connection\+Proxy@{Load\+Balanced\+Connection\+Proxy}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{Load\+Balanced\+Connection\+Proxy()}{LoadBalancedConnectionProxy()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+Load\+Balanced\+Connection\+Proxy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_loadbalance_connection_url}{Loadbalance\+Connection\+Url}}}]{connection\+Url }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Creates a proxy for java.\+sql.\+Connection that routes requests between the hosts in the connection U\+RL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Url} & The connection U\+RL containing the hosts to load balance. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a02279adacc22183bb7e8c8a4d6e61d5a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a02279adacc22183bb7e8c8a4d6e61d5a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!add\+Host@{add\+Host}}
+\index{add\+Host@{add\+Host}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{add\+Host()}{addHost()}}
+{\footnotesize\ttfamily synchronized boolean com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+add\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption})}
+
+Adds a host to the hosts list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & The host to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_aa51cafef5f72668308cba5c93c1ec2be}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_aa51cafef5f72668308cba5c93c1ec2be}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!add\+To\+Global\+Blacklist@{add\+To\+Global\+Blacklist}}
+\index{add\+To\+Global\+Blacklist@{add\+To\+Global\+Blacklist}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{add\+To\+Global\+Blacklist()}{addToGlobalBlacklist()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+add\+To\+Global\+Blacklist (\begin{DoxyParamCaption}\item[{String}]{host,  }\item[{long}]{timeout }\end{DoxyParamCaption})}
+
+Adds a host to the blacklist with the given timeout.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & The host to be blacklisted. \\
+\hline
+{\em timeout} & The blacklist timeout for this entry. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a27a3da948290bb7ce8ee8e5bac850443}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a27a3da948290bb7ce8ee8e5bac850443}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!add\+To\+Global\+Blacklist@{add\+To\+Global\+Blacklist}}
+\index{add\+To\+Global\+Blacklist@{add\+To\+Global\+Blacklist}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{add\+To\+Global\+Blacklist()}{addToGlobalBlacklist()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+add\+To\+Global\+Blacklist (\begin{DoxyParamCaption}\item[{String}]{host }\end{DoxyParamCaption})}
+
+Adds a host to the blacklist.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & The host to be blacklisted. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_ad26b7e7a242eeab7a90983f6e5095779}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_ad26b7e7a242eeab7a90983f6e5095779}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!create\+Connection\+For\+Host@{create\+Connection\+For\+Host}}
+\index{create\+Connection\+For\+Host@{create\+Connection\+For\+Host}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{create\+Connection\+For\+Host()}{createConnectionForHost()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily synchronized \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+create\+Connection\+For\+Host (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}}}]{host\+Info }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Creates a new physical connection for the given \mbox{\hyperlink{}{Host\+Info}} and updates required internal mappings and statistics for that connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Info} & The host info instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new Connection instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a27662d65e82acb86f3cc6af3f4f331ee}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a27662d65e82acb86f3cc6af3f4f331ee}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!create\+Connection\+For\+Host@{create\+Connection\+For\+Host}}
+\index{create\+Connection\+For\+Host@{create\+Connection\+For\+Host}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{create\+Connection\+For\+Host()}{createConnectionForHost()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily synchronized \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+create\+Connection\+For\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Creates a new physical connection for the given host\+:port info. If the this connection\textquotesingle{}s connection U\+RL knows about this host\+:port then its host info is used, otherwise a new host info based on current connection U\+RL defaults is spawned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & The host\+:port pair identifying the host to connect to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new Connection instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_afc3968a242b38d47fdd116d3fdb8ac73}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_afc3968a242b38d47fdd116d3fdb8ac73}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!create\+Proxy\+Instance@{create\+Proxy\+Instance}}
+\index{create\+Proxy\+Instance@{create\+Proxy\+Instance}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{create\+Proxy\+Instance()}{createProxyInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection}{Load\+Balanced\+Connection}} com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+create\+Proxy\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_loadbalance_connection_url}{Loadbalance\+Connection\+Url}}}]{connection\+Url }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Static factory to create \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection}{Load\+Balanced\+Connection}} instances.
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Url} & The connection U\+RL containing the hosts in a load-\/balance setup. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection}{Load\+Balanced\+Connection}} proxy. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a735361812f6c57f687ad6512e4bd3809}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a735361812f6c57f687ad6512e4bd3809}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!do\+Ping@{do\+Ping}}
+\index{do\+Ping@{do\+Ping}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{do\+Ping()}{doPing()}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+do\+Ping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Pings live connections. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_ping_target_a25b7277324c8bd6e4fc6334c042812b6}{com.\+mysql.\+cj.\+Ping\+Target}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a12463c009b1bc22d617d2bfa6c531430}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a12463c009b1bc22d617d2bfa6c531430}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!get\+Active\+Physical\+Connection\+Count@{get\+Active\+Physical\+Connection\+Count}}
+\index{get\+Active\+Physical\+Connection\+Count@{get\+Active\+Physical\+Connection\+Count}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{get\+Active\+Physical\+Connection\+Count()}{getActivePhysicalConnectionCount()}}
+{\footnotesize\ttfamily synchronized long com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+get\+Active\+Physical\+Connection\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a34c97945360e9b266c0f6430797769bd}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a34c97945360e9b266c0f6430797769bd}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!get\+Connection\+Group\+Proxy\+ID@{get\+Connection\+Group\+Proxy\+ID}}
+\index{get\+Connection\+Group\+Proxy\+ID@{get\+Connection\+Group\+Proxy\+ID}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{get\+Connection\+Group\+Proxy\+I\+D()}{getConnectionGroupProxyID()}}
+{\footnotesize\ttfamily synchronized long com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+get\+Connection\+Group\+Proxy\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a20e2022c18d8a82ca349b33b46a1f36f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a20e2022c18d8a82ca349b33b46a1f36f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!get\+Current\+Active\+Host@{get\+Current\+Active\+Host}}
+\index{get\+Current\+Active\+Host@{get\+Current\+Active\+Host}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{get\+Current\+Active\+Host()}{getCurrentActiveHost()}}
+{\footnotesize\ttfamily synchronized String com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+get\+Current\+Active\+Host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_acfcd1603c08d3641fdbef195539f2e46}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_acfcd1603c08d3641fdbef195539f2e46}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!get\+Current\+Transaction\+Duration@{get\+Current\+Transaction\+Duration}}
+\index{get\+Current\+Transaction\+Duration@{get\+Current\+Transaction\+Duration}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{get\+Current\+Transaction\+Duration()}{getCurrentTransactionDuration()}}
+{\footnotesize\ttfamily synchronized long com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+get\+Current\+Transaction\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a166490bbe3865b511ff7df42813a97d8}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a166490bbe3865b511ff7df42813a97d8}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!get\+Global\+Blacklist@{get\+Global\+Blacklist}}
+\index{get\+Global\+Blacklist@{get\+Global\+Blacklist}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{get\+Global\+Blacklist()}{getGlobalBlacklist()}}
+{\footnotesize\ttfamily synchronized Map$<$String, Long$>$ com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+get\+Global\+Blacklist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a local hosts blacklist, while cleaning up expired records from the global blacklist, or a blacklist with the hosts to be removed.
+
+\begin{DoxyReturn}{Returns}
+A local hosts blacklist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_aa02df5b0f92d38804979c7ca65e9ecf0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_aa02df5b0f92d38804979c7ca65e9ecf0}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!get\+Total\+Physical\+Connection\+Count@{get\+Total\+Physical\+Connection\+Count}}
+\index{get\+Total\+Physical\+Connection\+Count@{get\+Total\+Physical\+Connection\+Count}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{get\+Total\+Physical\+Connection\+Count()}{getTotalPhysicalConnectionCount()}}
+{\footnotesize\ttfamily synchronized long com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+get\+Total\+Physical\+Connection\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a529a4a6245e7baac3eb2eb8688597328}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a529a4a6245e7baac3eb2eb8688597328}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!get\+Transaction\+Count@{get\+Transaction\+Count}}
+\index{get\+Transaction\+Count@{get\+Transaction\+Count}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{get\+Transaction\+Count()}{getTransactionCount()}}
+{\footnotesize\ttfamily synchronized long com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+get\+Transaction\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_aa3b950fc8a61d19e82b3b29660a0f36d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_aa3b950fc8a61d19e82b3b29660a0f36d}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!in\+Transaction@{in\+Transaction}}
+\index{in\+Transaction@{in\+Transaction}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{in\+Transaction()}{inTransaction()}}
+{\footnotesize\ttfamily synchronized boolean com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+in\+Transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a77ff10a73000704f3d23fbe59510bab4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a77ff10a73000704f3d23fbe59510bab4}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!invoke\+More@{invoke\+More}}
+\index{invoke\+More@{invoke\+More}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{invoke\+More()}{invokeMore()}}
+{\footnotesize\ttfamily synchronized Object com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+invoke\+More (\begin{DoxyParamCaption}\item[{Object}]{proxy,  }\item[{Method}]{method,  }\item[{Object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws Throwable}
+
+Proxies method invocation on the java.\+sql.\+Connection interface, trapping \char`\"{}close\char`\"{}, \char`\"{}is\+Closed\char`\"{} and \char`\"{}commit/rollback\char`\"{} to switch connections for load balancing. This is the continuation of Multi\+Host\+Connection\+Proxy\+::invoke(\+Object, Method, Object\mbox{[}$\,$\mbox{]}). \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a2051b9a1b9ffc14c9aa4190a61eb5b15}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a2051b9a1b9ffc14c9aa4190a61eb5b15}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!is\+Global\+Blacklist\+Enabled@{is\+Global\+Blacklist\+Enabled}}
+\index{is\+Global\+Blacklist\+Enabled@{is\+Global\+Blacklist\+Enabled}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{is\+Global\+Blacklist\+Enabled()}{isGlobalBlacklistEnabled()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+is\+Global\+Blacklist\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks if host blacklist management was enabled.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a3a91f1004880ec0566519ad4af6e3c34}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a3a91f1004880ec0566519ad4af6e3c34}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!pick\+New\+Connection@{pick\+New\+Connection}}
+\index{pick\+New\+Connection@{pick\+New\+Connection}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{pick\+New\+Connection()}{pickNewConnection()}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+pick\+New\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Picks the \char`\"{}best\char`\"{} connection to use for the next transaction based on the \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_balance_strategy}{Balance\+Strategy}} in use.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a881993ea0bb478eade30076498853833}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a881993ea0bb478eade30076498853833}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!propagate\+Proxy\+Down@{propagate\+Proxy\+Down}}
+\index{propagate\+Proxy\+Down@{propagate\+Proxy\+Down}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{propagate\+Proxy\+Down()}{propagateProxyDown()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+propagate\+Proxy\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}}}]{proxy\+Conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Propagates the connection proxy down through all live connections.
+
+
+\begin{DoxyParams}{Parameters}
+{\em proxy\+Conn} & The top level connection in the multi-\/host connections chain. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a77e171c52a2cc37e2b2d0f854bf4d050}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a77e171c52a2cc37e2b2d0f854bf4d050}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!remove\+Host@{remove\+Host}}
+\index{remove\+Host@{remove\+Host}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{remove\+Host()}{removeHost()}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+remove\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Removes a host from the host list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & The host to be removed. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a979d78c2f78920bb885e9eb73c4b37d0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a979d78c2f78920bb885e9eb73c4b37d0}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!remove\+Host\+When\+Not\+In\+Use@{remove\+Host\+When\+Not\+In\+Use}}
+\index{remove\+Host\+When\+Not\+In\+Use@{remove\+Host\+When\+Not\+In\+Use}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{remove\+Host\+When\+Not\+In\+Use()}{removeHostWhenNotInUse()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+remove\+Host\+When\+Not\+In\+Use (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Removes a host from the host list, allowing it some time to be released gracefully if needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & The host to be removed. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a89ff36a24aa0df79fb9363ef5c6e5be2}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a89ff36a24aa0df79fb9363ef5c6e5be2}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!should\+Exception\+Trigger\+Failover@{should\+Exception\+Trigger\+Failover}}
+\index{should\+Exception\+Trigger\+Failover@{should\+Exception\+Trigger\+Failover}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{should\+Exception\+Trigger\+Failover()}{shouldExceptionTriggerFailover()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+should\+Exception\+Trigger\+Failover (\begin{DoxyParamCaption}\item[{Throwable}]{t }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a675cf5baac8ce2e4d6ba049def5a373e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a675cf5baac8ce2e4d6ba049def5a373e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}!live\+Connections@{live\+Connections}}
+\index{live\+Connections@{live\+Connections}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{live\+Connections}{liveConnections}}
+{\footnotesize\ttfamily Map$<$String, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl}{Connection\+Impl}}$>$ com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection\+Proxy.\+live\+Connections\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/ha/\mbox{\hyperlink{_load_balanced_connection_proxy_8java}{Load\+Balanced\+Connection\+Proxy.\+java}}\end{DoxyCompactItemize}

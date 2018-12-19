@@ -1,0 +1,218 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def$<$ T extends Column\+Definition$<$ T $>$ Class Template Reference}
+\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}\index{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def$<$ T extends Column\+Definition$<$ T $>$@{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def$<$ T extends Column\+Definition$<$ T $>$}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{com.\+mysql.\+cj.\+protocol.\+Column\+Definition$<$ T $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_aeae3341e23e3d78d7f43cc18aed47265}{not\+Null}} ()
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a6b005a70236307ef894d31446ad22954}{unique\+Index}} ()
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a4d84c108b3cc2b67fcb9aa52b16c3716}{primary\+Key}} ()
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a418c217117b75a152071102d3fa092bb}{comment}} (String cmt)
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a409637118254f8a15d86b22428117146}{unsigned}} ()
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a86ae5ea61f8d0de3576b024c6e8a8a38}{decimals}} (int val)
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_ac2b2f3a49740b1fc7524858838bc1538}{charset}} (String charset\+Name)
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a12516ef6518ca1be210f3fc715d21313}{collation}} (String collation\+Name)
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_ab0a33d432060ea2c41dc221435eaaa59}{binary}} ()
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a707a799028bb4075fae6548a272cc310}{values}} (String... val)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a22068306f5eba4cdc8515ffb4f8fb95a}{get\+Mysql\+Type}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a4db4c67f053ba22dcaa75459c5fa68c3}{name}}
+\item 
+\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_type}{Type}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_ad9708106f48191a9e6442fe1b2c5641d}{type}}
+\item 
+Number \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a78d0c29138f467d0a661dacc2700ceab}{length}}
+\item 
+Boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_abb40ee636a965f01d902673dc919fbba}{not\+Null}}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a659651092323c1e7020c7b3736e112a7}{unique\+Index}} = false
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a1423c7e3a878867c655235240c5fa8cc}{primary\+Key}} = false
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a21a8d5369ff2d35bd3f744ffeee4fef6}{comment}} = null
+\item 
+Boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a2196259cc3567816b76588aeb01b90ba}{unsigned}}
+\item 
+Number \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_ab14eae5148b99ba2b6d90ccb92f5fa20}{decimals}}
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a9fe0a018372ddc610696b8ff8c6150f6}{charset}} = null
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a1abcf922d11f6c95966ce2b4e52e9e55}{collation}} = null
+\item 
+Boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_abc425b280afa935ee2a8973bc1d2d85a}{binary}}
+\item 
+String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a19e2f7c1bacd7ae112ed78d603b66400}{values}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_ab0a33d432060ea2c41dc221435eaaa59}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_ab0a33d432060ea2c41dc221435eaaa59}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!binary@{binary}}
+\index{binary@{binary}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{binary()}{binary()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.binary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_ac2b2f3a49740b1fc7524858838bc1538}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_ac2b2f3a49740b1fc7524858838bc1538}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!charset@{charset}}
+\index{charset@{charset}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{charset()}{charset()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.charset (\begin{DoxyParamCaption}\item[{String}]{charset\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a12516ef6518ca1be210f3fc715d21313}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a12516ef6518ca1be210f3fc715d21313}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!collation@{collation}}
+\index{collation@{collation}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{collation()}{collation()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.collation (\begin{DoxyParamCaption}\item[{String}]{collation\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a418c217117b75a152071102d3fa092bb}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a418c217117b75a152071102d3fa092bb}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!comment@{comment}}
+\index{comment@{comment}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{comment()}{comment()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.comment (\begin{DoxyParamCaption}\item[{String}]{cmt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a86ae5ea61f8d0de3576b024c6e8a8a38}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a86ae5ea61f8d0de3576b024c6e8a8a38}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!decimals@{decimals}}
+\index{decimals@{decimals}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{decimals()}{decimals()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.decimals (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a22068306f5eba4cdc8515ffb4f8fb95a}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a22068306f5eba4cdc8515ffb4f8fb95a}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!get\+Mysql\+Type@{get\+Mysql\+Type}}
+\index{get\+Mysql\+Type@{get\+Mysql\+Type}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{get\+Mysql\+Type()}{getMysqlType()}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.get\+Mysql\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_aeae3341e23e3d78d7f43cc18aed47265}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_aeae3341e23e3d78d7f43cc18aed47265}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!not\+Null@{not\+Null}}
+\index{not\+Null@{not\+Null}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{not\+Null()}{notNull()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.not\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a4d84c108b3cc2b67fcb9aa52b16c3716}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a4d84c108b3cc2b67fcb9aa52b16c3716}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!primary\+Key@{primary\+Key}}
+\index{primary\+Key@{primary\+Key}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{primary\+Key()}{primaryKey()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.primary\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a6b005a70236307ef894d31446ad22954}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a6b005a70236307ef894d31446ad22954}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!unique\+Index@{unique\+Index}}
+\index{unique\+Index@{unique\+Index}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{unique\+Index()}{uniqueIndex()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.unique\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a409637118254f8a15d86b22428117146}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a409637118254f8a15d86b22428117146}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!unsigned@{unsigned}}
+\index{unsigned@{unsigned}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{unsigned()}{unsigned()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.unsigned (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a707a799028bb4075fae6548a272cc310}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a707a799028bb4075fae6548a272cc310}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!values@{values}}
+\index{values@{values}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{values()}{values()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.values (\begin{DoxyParamCaption}\item[{String...}]{val }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_abc425b280afa935ee2a8973bc1d2d85a}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_abc425b280afa935ee2a8973bc1d2d85a}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!binary@{binary}}
+\index{binary@{binary}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{binary}{binary}}
+{\footnotesize\ttfamily Boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.binary\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a9fe0a018372ddc610696b8ff8c6150f6}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a9fe0a018372ddc610696b8ff8c6150f6}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!charset@{charset}}
+\index{charset@{charset}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{charset}{charset}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.charset = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a1abcf922d11f6c95966ce2b4e52e9e55}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a1abcf922d11f6c95966ce2b4e52e9e55}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!collation@{collation}}
+\index{collation@{collation}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{collation}{collation}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.collation = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a21a8d5369ff2d35bd3f744ffeee4fef6}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a21a8d5369ff2d35bd3f744ffeee4fef6}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!comment@{comment}}
+\index{comment@{comment}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{comment}{comment}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.comment = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_ab14eae5148b99ba2b6d90ccb92f5fa20}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_ab14eae5148b99ba2b6d90ccb92f5fa20}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!decimals@{decimals}}
+\index{decimals@{decimals}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{decimals}{decimals}}
+{\footnotesize\ttfamily Number \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.decimals\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a78d0c29138f467d0a661dacc2700ceab}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a78d0c29138f467d0a661dacc2700ceab}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!length@{length}}
+\index{length@{length}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily Number \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.length\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a4db4c67f053ba22dcaa75459c5fa68c3}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a4db4c67f053ba22dcaa75459c5fa68c3}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!name@{name}}
+\index{name@{name}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_abb40ee636a965f01d902673dc919fbba}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_abb40ee636a965f01d902673dc919fbba}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!not\+Null@{not\+Null}}
+\index{not\+Null@{not\+Null}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{not\+Null}{notNull}}
+{\footnotesize\ttfamily Boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.not\+Null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a1423c7e3a878867c655235240c5fa8cc}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a1423c7e3a878867c655235240c5fa8cc}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!primary\+Key@{primary\+Key}}
+\index{primary\+Key@{primary\+Key}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{primary\+Key}{primaryKey}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.primary\+Key = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_ad9708106f48191a9e6442fe1b2c5641d}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_ad9708106f48191a9e6442fe1b2c5641d}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!type@{type}}
+\index{type@{type}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_type}{Type}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.type\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a659651092323c1e7020c7b3736e112a7}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a659651092323c1e7020c7b3736e112a7}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!unique\+Index@{unique\+Index}}
+\index{unique\+Index@{unique\+Index}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{unique\+Index}{uniqueIndex}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.unique\+Index = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a2196259cc3567816b76588aeb01b90ba}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a2196259cc3567816b76588aeb01b90ba}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!unsigned@{unsigned}}
+\index{unsigned@{unsigned}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{unsigned}{unsigned}}
+{\footnotesize\ttfamily Boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.unsigned\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a19e2f7c1bacd7ae112ed78d603b66400}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def_a19e2f7c1bacd7ae112ed78d603b66400}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}!values@{values}}
+\index{values@{values}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Column\+Def}}
+\subsubsection{\texorpdfstring{values}{values}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}$<$ T $>$.values\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_abstract_column_def_8java}{Abstract\+Column\+Def.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,47 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler}{}\section{com.\+mysql.\+cj.\+protocol.\+x.\+Error\+To\+Future\+Completion\+Handler$<$ T $>$ Class Template Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler}\index{com.\+mysql.\+cj.\+protocol.\+x.\+Error\+To\+Future\+Completion\+Handler$<$ T $>$@{com.\+mysql.\+cj.\+protocol.\+x.\+Error\+To\+Future\+Completion\+Handler$<$ T $>$}}
+
+
+Inherits Completion\+Handler$<$ T, Void $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler_a8cc938c3d98024b23ca6466064e6f13f}{Error\+To\+Future\+Completion\+Handler}} (Completable\+Future$<$?$>$ future, Runnable success\+Callback)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler_adeccf1e0e505f757456485c7773f72fc}{completed}} (T result, Void attachment)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler_a2fd335c55b05e10109894b888d27c5df}{failed}} (Throwable ex, Void attachment)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class that propagates any error to the given future allowing only implementation of the success callback. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler_a8cc938c3d98024b23ca6466064e6f13f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler_a8cc938c3d98024b23ca6466064e6f13f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Error\+To\+Future\+Completion\+Handler@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Error\+To\+Future\+Completion\+Handler}!Error\+To\+Future\+Completion\+Handler@{Error\+To\+Future\+Completion\+Handler}}
+\index{Error\+To\+Future\+Completion\+Handler@{Error\+To\+Future\+Completion\+Handler}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Error\+To\+Future\+Completion\+Handler@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Error\+To\+Future\+Completion\+Handler}}
+\subsubsection{\texorpdfstring{Error\+To\+Future\+Completion\+Handler()}{ErrorToFutureCompletionHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler}{com.\+mysql.\+cj.\+protocol.\+x.\+Error\+To\+Future\+Completion\+Handler}}$<$ T $>$.\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler}{Error\+To\+Future\+Completion\+Handler}} (\begin{DoxyParamCaption}\item[{Completable\+Future$<$?$>$}]{future,  }\item[{Runnable}]{success\+Callback }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler_adeccf1e0e505f757456485c7773f72fc}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler_adeccf1e0e505f757456485c7773f72fc}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Error\+To\+Future\+Completion\+Handler@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Error\+To\+Future\+Completion\+Handler}!completed@{completed}}
+\index{completed@{completed}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Error\+To\+Future\+Completion\+Handler@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Error\+To\+Future\+Completion\+Handler}}
+\subsubsection{\texorpdfstring{completed()}{completed()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler}{com.\+mysql.\+cj.\+protocol.\+x.\+Error\+To\+Future\+Completion\+Handler}}$<$ T $>$.completed (\begin{DoxyParamCaption}\item[{T}]{result,  }\item[{Void}]{attachment }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler_a2fd335c55b05e10109894b888d27c5df}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler_a2fd335c55b05e10109894b888d27c5df}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Error\+To\+Future\+Completion\+Handler@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Error\+To\+Future\+Completion\+Handler}!failed@{failed}}
+\index{failed@{failed}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Error\+To\+Future\+Completion\+Handler@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Error\+To\+Future\+Completion\+Handler}}
+\subsubsection{\texorpdfstring{failed()}{failed()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_error_to_future_completion_handler}{com.\+mysql.\+cj.\+protocol.\+x.\+Error\+To\+Future\+Completion\+Handler}}$<$ T $>$.failed (\begin{DoxyParamCaption}\item[{Throwable}]{ex,  }\item[{Void}]{attachment }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/x/\mbox{\hyperlink{_error_to_future_completion_handler_8java}{Error\+To\+Future\+Completion\+Handler.\+java}}\end{DoxyCompactItemize}

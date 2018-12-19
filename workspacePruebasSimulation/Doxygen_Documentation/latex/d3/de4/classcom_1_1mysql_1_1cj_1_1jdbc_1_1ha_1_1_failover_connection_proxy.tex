@@ -1,0 +1,45 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_failover_connection_proxy}{}\section{com.\+mysql.\+cj.\+jdbc.\+ha.\+Failover\+Connection\+Proxy Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_failover_connection_proxy}\index{com.\+mysql.\+cj.\+jdbc.\+ha.\+Failover\+Connection\+Proxy@{com.\+mysql.\+cj.\+jdbc.\+ha.\+Failover\+Connection\+Proxy}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_connection_proxy}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+Connection\+Proxy}}.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Failover\+Jdbc\+Interface\+Proxy}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized Object \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_failover_connection_proxy_ad05c49207de1dc3e35f5f56461f70036}{invoke\+More}} (Object proxy, Method method, Object\mbox{[}$\,$\mbox{]} args)  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_failover_connection_proxy_ae28f0509d52d59d9da141399ea8d3fc4}{create\+Proxy\+Instance}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url}{Connection\+Url}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_connection_proxy_aae3d1ff31056ba5a6686ce6e692a64a8}{connection\+Url}})  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A proxy for a dynamic \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection}} implementation that provides failover features for list of hosts. Connection switching occurs on communications related exceptions and/or user defined settings, namely when one of the conditions set in \textquotesingle{}seconds\+Before\+Retry\+Master\textquotesingle{} or \textquotesingle{}queries\+Before\+Retry\+Master\textquotesingle{} is met. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_failover_connection_proxy_ae28f0509d52d59d9da141399ea8d3fc4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_failover_connection_proxy_ae28f0509d52d59d9da141399ea8d3fc4}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Failover\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Failover\+Connection\+Proxy}!create\+Proxy\+Instance@{create\+Proxy\+Instance}}
+\index{create\+Proxy\+Instance@{create\+Proxy\+Instance}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Failover\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Failover\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{create\+Proxy\+Instance()}{createProxyInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} com.\+mysql.\+cj.\+jdbc.\+ha.\+Failover\+Connection\+Proxy.\+create\+Proxy\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url}{Connection\+Url}}}]{connection\+Url }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_failover_connection_proxy_ad05c49207de1dc3e35f5f56461f70036}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_failover_connection_proxy_ad05c49207de1dc3e35f5f56461f70036}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Failover\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Failover\+Connection\+Proxy}!invoke\+More@{invoke\+More}}
+\index{invoke\+More@{invoke\+More}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Failover\+Connection\+Proxy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Failover\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{invoke\+More()}{invokeMore()}}
+{\footnotesize\ttfamily synchronized Object com.\+mysql.\+cj.\+jdbc.\+ha.\+Failover\+Connection\+Proxy.\+invoke\+More (\begin{DoxyParamCaption}\item[{Object}]{proxy,  }\item[{Method}]{method,  }\item[{Object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws Throwable}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/ha/\mbox{\hyperlink{_failover_connection_proxy_8java}{Failover\+Connection\+Proxy.\+java}}\end{DoxyCompactItemize}

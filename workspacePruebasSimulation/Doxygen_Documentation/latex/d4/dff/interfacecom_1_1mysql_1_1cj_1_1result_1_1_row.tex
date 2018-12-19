@@ -1,0 +1,147 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{}\section{com.\+mysql.\+cj.\+result.\+Row Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}\index{com.\+mysql.\+cj.\+result.\+Row@{com.\+mysql.\+cj.\+result.\+Row}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity}}.
+
+
+
+Inherited by \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_row}{com.\+mysql.\+cj.\+protocol.\+Resultset\+Row}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol\+Row}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_impl}{com.\+mysql.\+cj.\+xdevapi.\+Row\+Impl}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+$<$ T $>$ T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_adb3bafc1a031d4ea40a2123f6cc42aba}{get\+Value}} (int column\+Index, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory}{Value\+Factory}}$<$ T $>$ vf)
+\item 
+default \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_ab80b0f47123d2771840acead9bc094d0}{set\+Metadata}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} column\+Definition)
+\item 
+default byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_a063918cd10fe7c3ef5df95b33e21f19e}{get\+Bytes}} (int column\+Index)
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_aaa1223e3df4e0f2b1b383d86095e7789}{set\+Bytes}} (int column\+Index, byte\mbox{[}$\,$\mbox{]} value)
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_aaf07357d53c30067dfa87183a1e60a18}{get\+Null}} (int column\+Index)
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_a6a915f3dfaf8f9997f705b7762f9c6cb}{was\+Null}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_a063918cd10fe7c3ef5df95b33e21f19e}\label{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_a063918cd10fe7c3ef5df95b33e21f19e}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Row@{com\+::mysql\+::cj\+::result\+::\+Row}!get\+Bytes@{get\+Bytes}}
+\index{get\+Bytes@{get\+Bytes}!com\+::mysql\+::cj\+::result\+::\+Row@{com\+::mysql\+::cj\+::result\+::\+Row}}
+\subsubsection{\texorpdfstring{get\+Bytes()}{getBytes()}}
+{\footnotesize\ttfamily default byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+result.\+Row.\+get\+Bytes (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption})}
+
+Returns the value at the given column as a byte array. The bytes represent the raw values returned by the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & index of column (starting at 0) to return from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value for the given column; if the value is S\+QL {\ttfamily N\+U\+LL}, the value returned is {\ttfamily null} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_binary_buffer_row_a2d51fe0441a52cbc0d93b23a5c1c0364}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Binary\+Buffer\+Row}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_a54253c1dda65ca0c96dc3ca1adf4b908}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Text\+Buffer\+Row}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_byte_array_row_a51fcdd0efd6909d54dc395077c800768}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Byte\+Array\+Row}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_aaf07357d53c30067dfa87183a1e60a18}\label{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_aaf07357d53c30067dfa87183a1e60a18}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Row@{com\+::mysql\+::cj\+::result\+::\+Row}!get\+Null@{get\+Null}}
+\index{get\+Null@{get\+Null}!com\+::mysql\+::cj\+::result\+::\+Row@{com\+::mysql\+::cj\+::result\+::\+Row}}
+\subsubsection{\texorpdfstring{get\+Null()}{getNull()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+result.\+Row.\+get\+Null (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption})}
+
+Check whether a column is N\+U\+LL and update the \textquotesingle{}was\+Null\textquotesingle{} status.
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & of the column value (starting at 0) to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the column value is N\+U\+LL, false if not. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_binary_buffer_row_af16fb029bdd91774e95d8ee502a85e07}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Binary\+Buffer\+Row}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row_adeaa06e6fee80085ce70902ed77ce16a}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol\+Row}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_a7539d7bd87e15e6e315e67f7cc535aa6}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Text\+Buffer\+Row}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_byte_array_row_a53f7e5fef1221819ac7c48db6dc9ce94}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Byte\+Array\+Row}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_adb3bafc1a031d4ea40a2123f6cc42aba}\label{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_adb3bafc1a031d4ea40a2123f6cc42aba}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Row@{com\+::mysql\+::cj\+::result\+::\+Row}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!com\+::mysql\+::cj\+::result\+::\+Row@{com\+::mysql\+::cj\+::result\+::\+Row}}
+\subsubsection{\texorpdfstring{get\+Value()}{getValue()}}
+{\footnotesize\ttfamily $<$T$>$ T com.\+mysql.\+cj.\+result.\+Row.\+get\+Value (\begin{DoxyParamCaption}\item[{int}]{column\+Index,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory}{Value\+Factory}}$<$ T $>$}]{vf }\end{DoxyParamCaption})}
+
+Retrieve a value for the given column. This is the main facility to access values from the \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} involving \mbox{\hyperlink{}{Value\+Decoder}} and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory}{Value\+Factory}} chain. Metadata {\itshape must} be set via \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} constructor or \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_ab80b0f47123d2771840acead9bc094d0}{set\+Metadata(\+Column\+Definition)}} call before calling this method to allow correct column\+Index boundaries check and data type recognition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+T$>$} & type to decode to \\
+\hline
+{\em column\+Index} & index of column to retrieve value from (0-\/indexed, not J\+D\+BC 1-\/indexed) \\
+\hline
+{\em vf} & value factory used to create the return value after decoding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value from the value factory 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_aaa1223e3df4e0f2b1b383d86095e7789}\label{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_aaa1223e3df4e0f2b1b383d86095e7789}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Row@{com\+::mysql\+::cj\+::result\+::\+Row}!set\+Bytes@{set\+Bytes}}
+\index{set\+Bytes@{set\+Bytes}!com\+::mysql\+::cj\+::result\+::\+Row@{com\+::mysql\+::cj\+::result\+::\+Row}}
+\subsubsection{\texorpdfstring{set\+Bytes()}{setBytes()}}
+{\footnotesize\ttfamily default void com.\+mysql.\+cj.\+result.\+Row.\+set\+Bytes (\begin{DoxyParamCaption}\item[{int}]{column\+Index,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{value }\end{DoxyParamCaption})}
+
+Sets the given byte array as a raw column value (only works currently with Byte\+Array\+Row).
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & index of the column (starting at 0) to set to. \\
+\hline
+{\em value} & the (raw) value to set \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_binary_buffer_row_ab30b2392287e18d1a0d7662a3090493a}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Binary\+Buffer\+Row}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_byte_array_row_a2606ac2688da3531d2e72bfd51949632}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Byte\+Array\+Row}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_ab80b0f47123d2771840acead9bc094d0}\label{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_ab80b0f47123d2771840acead9bc094d0}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Row@{com\+::mysql\+::cj\+::result\+::\+Row}!set\+Metadata@{set\+Metadata}}
+\index{set\+Metadata@{set\+Metadata}!com\+::mysql\+::cj\+::result\+::\+Row@{com\+::mysql\+::cj\+::result\+::\+Row}}
+\subsubsection{\texorpdfstring{set\+Metadata()}{setMetadata()}}
+{\footnotesize\ttfamily default \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} com.\+mysql.\+cj.\+result.\+Row.\+set\+Metadata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}}]{column\+Definition }\end{DoxyParamCaption})}
+
+Set metadata to enable get\+Value functionality.
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Definition} & \mbox{\hyperlink{}{Column\+Definition}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1result_1_1_abstract_resultset_row_a9f17330b25a79a752370017c78d73d08}{com.\+mysql.\+cj.\+protocol.\+result.\+Abstract\+Resultset\+Row}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_binary_buffer_row_a2bd5930ed5755dca5600e9ee96bad328}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Binary\+Buffer\+Row}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_a09f38001a62bec7e4723062fb7b1c156}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Text\+Buffer\+Row}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_a6a915f3dfaf8f9997f705b7762f9c6cb}\label{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_a6a915f3dfaf8f9997f705b7762f9c6cb}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Row@{com\+::mysql\+::cj\+::result\+::\+Row}!was\+Null@{was\+Null}}
+\index{was\+Null@{was\+Null}!com\+::mysql\+::cj\+::result\+::\+Row@{com\+::mysql\+::cj\+::result\+::\+Row}}
+\subsubsection{\texorpdfstring{was\+Null()}{wasNull()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+result.\+Row.\+was\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Was the last value retrieved a N\+U\+LL value?
+
+\begin{DoxyReturn}{Returns}
+true if the last retrieved value was N\+U\+LL. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1result_1_1_abstract_resultset_row_a9d1a54529c6a83e356e4d6bf079f8548}{com.\+mysql.\+cj.\+protocol.\+result.\+Abstract\+Resultset\+Row}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row_ae6fd328d9a5ac92bdbb910fb9c8c043a}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol\+Row}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/result/\mbox{\hyperlink{core-api_2java_2com_2mysql_2cj_2result_2_row_8java}{Row.\+java}}\end{DoxyCompactItemize}

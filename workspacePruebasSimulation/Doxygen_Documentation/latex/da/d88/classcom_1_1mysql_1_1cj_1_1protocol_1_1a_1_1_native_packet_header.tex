@@ -1,0 +1,91 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Header Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Header@{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Header}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_header}{com.\+mysql.\+cj.\+protocol.\+Message\+Header}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_aa058ef3509b0c0724645265ea4f52099}{Native\+Packet\+Header}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_a835faea36a24b4d257415f21bfac6e1c}{Native\+Packet\+Header}} (byte\mbox{[}$\,$\mbox{]} buf)
+\item 
+Byte\+Buffer \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_a4a2e68d77caa301eab35d33743c8a9ae}{get\+Buffer}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_a334336fd736a087bae40bfbb288e27e4}{get\+Message\+Size}} ()
+\item 
+byte \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_aa711f4d714447b1e2cd4901af7f4d824}{get\+Message\+Sequence}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Byte\+Buffer \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_acc38ab1e40bb3c988932ceb4165b114c}{packet\+Header\+Buf}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents the legacy protocol packet header, consisting of 3-\/bytes payload\+\_\+length and 1-\/byte sequence\+\_\+id.
+
+see \href{http://dev.mysql.com/doc/internals/en/mysql-packet.html}{\tt http\+://dev.\+mysql.\+com/doc/internals/en/mysql-\/packet.\+html} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_aa058ef3509b0c0724645265ea4f52099}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_aa058ef3509b0c0724645265ea4f52099}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header}!Native\+Packet\+Header@{Native\+Packet\+Header}}
+\index{Native\+Packet\+Header@{Native\+Packet\+Header}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header}}
+\subsubsection{\texorpdfstring{Native\+Packet\+Header()}{NativePacketHeader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Header.\+Native\+Packet\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_a835faea36a24b4d257415f21bfac6e1c}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_a835faea36a24b4d257415f21bfac6e1c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header}!Native\+Packet\+Header@{Native\+Packet\+Header}}
+\index{Native\+Packet\+Header@{Native\+Packet\+Header}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header}}
+\subsubsection{\texorpdfstring{Native\+Packet\+Header()}{NativePacketHeader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Header.\+Native\+Packet\+Header (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buf }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_a4a2e68d77caa301eab35d33743c8a9ae}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_a4a2e68d77caa301eab35d33743c8a9ae}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header}!get\+Buffer@{get\+Buffer}}
+\index{get\+Buffer@{get\+Buffer}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header}}
+\subsubsection{\texorpdfstring{get\+Buffer()}{getBuffer()}}
+{\footnotesize\ttfamily Byte\+Buffer com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Header.\+get\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_header_a623366dac16a7c2c5a879588afc4ed92}{com.\+mysql.\+cj.\+protocol.\+Message\+Header}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_aa711f4d714447b1e2cd4901af7f4d824}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_aa711f4d714447b1e2cd4901af7f4d824}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header}!get\+Message\+Sequence@{get\+Message\+Sequence}}
+\index{get\+Message\+Sequence@{get\+Message\+Sequence}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header}}
+\subsubsection{\texorpdfstring{get\+Message\+Sequence()}{getMessageSequence()}}
+{\footnotesize\ttfamily byte com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Header.\+get\+Message\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_header_addc9db095cb10062d2a3b0e3ad180750}{com.\+mysql.\+cj.\+protocol.\+Message\+Header}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_a334336fd736a087bae40bfbb288e27e4}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_a334336fd736a087bae40bfbb288e27e4}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header}!get\+Message\+Size@{get\+Message\+Size}}
+\index{get\+Message\+Size@{get\+Message\+Size}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header}}
+\subsubsection{\texorpdfstring{get\+Message\+Size()}{getMessageSize()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Header.\+get\+Message\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_header_a8192e2c73dd6c3ed31e569034950f163}{com.\+mysql.\+cj.\+protocol.\+Message\+Header}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_acc38ab1e40bb3c988932ceb4165b114c}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header_acc38ab1e40bb3c988932ceb4165b114c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header}!packet\+Header\+Buf@{packet\+Header\+Buf}}
+\index{packet\+Header\+Buf@{packet\+Header\+Buf}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Header}}
+\subsubsection{\texorpdfstring{packet\+Header\+Buf}{packetHeaderBuf}}
+{\footnotesize\ttfamily Byte\+Buffer com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Header.\+packet\+Header\+Buf\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/\mbox{\hyperlink{_native_packet_header_8java}{Native\+Packet\+Header.\+java}}\end{DoxyCompactItemize}

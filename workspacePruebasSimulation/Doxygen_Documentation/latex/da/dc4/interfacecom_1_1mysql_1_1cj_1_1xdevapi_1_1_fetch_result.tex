@@ -1,0 +1,118 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Fetch\+Result$<$ T $>$ Interface Template Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result}\index{com.\+mysql.\+cj.\+xdevapi.\+Fetch\+Result$<$ T $>$@{com.\+mysql.\+cj.\+xdevapi.\+Fetch\+Result$<$ T $>$}}
+
+
+Inherits Iterator$<$ T $>$, and \mbox{\hyperlink{class_iterable}{Iterable$<$ T $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+default boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_acb85a5473a550decd72e07fddf950358}{has\+Data}} ()
+\item 
+default T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_ad5e5532da2f3d92187cfdfb6a1c5f3db}{fetch\+One}} ()
+\item 
+default Iterator$<$ T $>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_a98165eec59f65bc0dfb8e96b9ddce40c}{iterator}} ()
+\item 
+long \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_acd63b4c5515ea1932ea1333544deb5b4}{count}} ()
+\item 
+List$<$ T $>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_ac6b0c7cf034f9137539e36bf4a2efb57}{fetch\+All}} ()
+\item 
+int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_aa7381aaeb95c8fcc7ec6166ed02e2780}{get\+Warnings\+Count}} ()
+\item 
+Iterator$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_warning}{Warning}} $>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_ae7e96688f6f01a6c8a932dadf65a6daf}{get\+Warnings}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A set of elements from a query command.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+T$>$} & the type of element returned from the query (doc or row) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_acd63b4c5515ea1932ea1333544deb5b4}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_acd63b4c5515ea1932ea1333544deb5b4}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result}!count@{count}}
+\index{count@{count}!com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily long \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result}{com.\+mysql.\+cj.\+xdevapi.\+Fetch\+Result}}$<$ T $>$.count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+How many items are in this result? This method forces internal buffering of the entire result.
+
+\begin{DoxyReturn}{Returns}
+number of elements in result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_ac6b0c7cf034f9137539e36bf4a2efb57}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_ac6b0c7cf034f9137539e36bf4a2efb57}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result}!fetch\+All@{fetch\+All}}
+\index{fetch\+All@{fetch\+All}!com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result}}
+\subsubsection{\texorpdfstring{fetch\+All()}{fetchAll()}}
+{\footnotesize\ttfamily List$<$T$>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result}{com.\+mysql.\+cj.\+xdevapi.\+Fetch\+Result}}$<$ T $>$.fetch\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create a list of all elements in the result forcing internal buffering.
+
+\begin{DoxyReturn}{Returns}
+list of result elements 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_ad5e5532da2f3d92187cfdfb6a1c5f3db}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_ad5e5532da2f3d92187cfdfb6a1c5f3db}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result}!fetch\+One@{fetch\+One}}
+\index{fetch\+One@{fetch\+One}!com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result}}
+\subsubsection{\texorpdfstring{fetch\+One()}{fetchOne()}}
+{\footnotesize\ttfamily default T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result}{com.\+mysql.\+cj.\+xdevapi.\+Fetch\+Result}}$<$ T $>$.fetch\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fetch the next element.
+
+\begin{DoxyReturn}{Returns}
+element of type T 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_ae7e96688f6f01a6c8a932dadf65a6daf}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_ae7e96688f6f01a6c8a932dadf65a6daf}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result}!get\+Warnings@{get\+Warnings}}
+\index{get\+Warnings@{get\+Warnings}!com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result}}
+\subsubsection{\texorpdfstring{get\+Warnings()}{getWarnings()}}
+{\footnotesize\ttfamily Iterator$<$\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_warning}{Warning}}$>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result}{com.\+mysql.\+cj.\+xdevapi.\+Fetch\+Result}}$<$ T $>$.get\+Warnings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Warnings generated during statement execution. This method forces internal buffering of the result.
+
+\begin{DoxyReturn}{Returns}
+iterator over warnings 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_aa7381aaeb95c8fcc7ec6166ed02e2780}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_aa7381aaeb95c8fcc7ec6166ed02e2780}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result}!get\+Warnings\+Count@{get\+Warnings\+Count}}
+\index{get\+Warnings\+Count@{get\+Warnings\+Count}!com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result}}
+\subsubsection{\texorpdfstring{get\+Warnings\+Count()}{getWarningsCount()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result}{com.\+mysql.\+cj.\+xdevapi.\+Fetch\+Result}}$<$ T $>$.get\+Warnings\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Count of warnings generated during statement execution. This method forces internal buffering of the result.
+
+\begin{DoxyReturn}{Returns}
+number of warnings 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_acb85a5473a550decd72e07fddf950358}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_acb85a5473a550decd72e07fddf950358}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result}!has\+Data@{has\+Data}}
+\index{has\+Data@{has\+Data}!com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result}}
+\subsubsection{\texorpdfstring{has\+Data()}{hasData()}}
+{\footnotesize\ttfamily default boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result}{com.\+mysql.\+cj.\+xdevapi.\+Fetch\+Result}}$<$ T $>$.has\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Does this result have data? This indicates that the result was produced from a data-\/returning query. It does not indicate whether there are more than 0 rows in the result.
+
+\begin{DoxyReturn}{Returns}
+true if has data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_a98165eec59f65bc0dfb8e96b9ddce40c}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result_a98165eec59f65bc0dfb8e96b9ddce40c}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result}!iterator@{iterator}}
+\index{iterator@{iterator}!com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Fetch\+Result}}
+\subsubsection{\texorpdfstring{iterator()}{iterator()}}
+{\footnotesize\ttfamily default Iterator$<$T$>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result}{com.\+mysql.\+cj.\+xdevapi.\+Fetch\+Result}}$<$ T $>$.iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create an iterator over all elements of the result.
+
+\begin{DoxyReturn}{Returns}
+iterator over result items 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_fetch_result_8java}{Fetch\+Result.\+java}}\end{DoxyCompactItemize}

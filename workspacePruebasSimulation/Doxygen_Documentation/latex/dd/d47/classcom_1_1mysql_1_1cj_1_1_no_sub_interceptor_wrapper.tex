@@ -1,0 +1,98 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper}{}\section{com.\+mysql.\+cj.\+No\+Sub\+Interceptor\+Wrapper Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper}\index{com.\+mysql.\+cj.\+No\+Sub\+Interceptor\+Wrapper@{com.\+mysql.\+cj.\+No\+Sub\+Interceptor\+Wrapper}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a16d59d2656f58460d8d986caf02508ff}{No\+Sub\+Interceptor\+Wrapper}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} underlying\+Interceptor)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a196b252abd96fbdd70d0dd6f844145b8}{destroy}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a84d3030e0055b60ed0bb2b56fd5a0dbe}{execute\+Top\+Level\+Only}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a1d037e783990bcd80c1ce5a16a1cf254}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection}{Mysql\+Connection}} conn, Properties props, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_ab3778df7a64125bbc4121fa747c6b5a4}{get\+Underlying\+Interceptor}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wraps query interceptors during driver startup so that they don\textquotesingle{}t produce different result sets than we expect. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a16d59d2656f58460d8d986caf02508ff}\label{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a16d59d2656f58460d8d986caf02508ff}} 
+\index{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper@{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper}!No\+Sub\+Interceptor\+Wrapper@{No\+Sub\+Interceptor\+Wrapper}}
+\index{No\+Sub\+Interceptor\+Wrapper@{No\+Sub\+Interceptor\+Wrapper}!com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper@{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper}}
+\subsubsection{\texorpdfstring{No\+Sub\+Interceptor\+Wrapper()}{NoSubInterceptorWrapper()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+No\+Sub\+Interceptor\+Wrapper.\+No\+Sub\+Interceptor\+Wrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}}}]{underlying\+Interceptor }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a196b252abd96fbdd70d0dd6f844145b8}\label{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a196b252abd96fbdd70d0dd6f844145b8}} 
+\index{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper@{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper}!destroy@{destroy}}
+\index{destroy@{destroy}!com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper@{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+No\+Sub\+Interceptor\+Wrapper.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a123809a91800f4f4409f5f37717bf9c8}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a84d3030e0055b60ed0bb2b56fd5a0dbe}\label{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a84d3030e0055b60ed0bb2b56fd5a0dbe}} 
+\index{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper@{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper}!execute\+Top\+Level\+Only@{execute\+Top\+Level\+Only}}
+\index{execute\+Top\+Level\+Only@{execute\+Top\+Level\+Only}!com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper@{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper}}
+\subsubsection{\texorpdfstring{execute\+Top\+Level\+Only()}{executeTopLevelOnly()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+No\+Sub\+Interceptor\+Wrapper.\+execute\+Top\+Level\+Only (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Should the driver execute this interceptor only for the \char`\"{}original\char`\"{} top-\/level query, and not put it in the execution path for queries that may be executed from other interceptors?
+
+If an interceptor issues queries using the connection it was created for, and does not return {\ttfamily true} for this method, it must ensure that it does not cause infinite recursion.
+
+\begin{DoxyReturn}{Returns}
+true if the driver should ensure that this interceptor is only executed for the top-\/level \char`\"{}original\char`\"{} query. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_ab12edf90713df907ba400dbe3ba03ea6}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_ab3778df7a64125bbc4121fa747c6b5a4}\label{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_ab3778df7a64125bbc4121fa747c6b5a4}} 
+\index{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper@{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper}!get\+Underlying\+Interceptor@{get\+Underlying\+Interceptor}}
+\index{get\+Underlying\+Interceptor@{get\+Underlying\+Interceptor}!com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper@{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper}}
+\subsubsection{\texorpdfstring{get\+Underlying\+Interceptor()}{getUnderlyingInterceptor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} com.\+mysql.\+cj.\+No\+Sub\+Interceptor\+Wrapper.\+get\+Underlying\+Interceptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a1d037e783990bcd80c1ce5a16a1cf254}\label{classcom_1_1mysql_1_1cj_1_1_no_sub_interceptor_wrapper_a1d037e783990bcd80c1ce5a16a1cf254}} 
+\index{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper@{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper}!init@{init}}
+\index{init@{init}!com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper@{com\+::mysql\+::cj\+::\+No\+Sub\+Interceptor\+Wrapper}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} com.\+mysql.\+cj.\+No\+Sub\+Interceptor\+Wrapper.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection}{Mysql\+Connection}}}]{conn,  }\item[{Properties}]{props,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}}}]{log }\end{DoxyParamCaption})}
+
+Called once per connection that wants to use the interceptor
+
+The properties are the same ones passed in in the U\+RL or arguments to Driver.\+connect() or Driver\+Manager.\+get\+Connection().
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection for which this interceptor is being created \\
+\hline
+{\em props} & configuration values as passed to the connection. Note that in order to support javax.\+sql.\+Data\+Sources, configuration properties specific to an interceptor {\bfseries must} be passed via set\+U\+R\+L() on the Data\+Source. Query\+Interceptor properties are not exposed via accessor/mutator methods on Data\+Sources. \\
+\hline
+{\em log} & logger \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{}{Query\+Interceptor}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a1613f5491fdb4610d5727d60c904e7e2}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/\mbox{\hyperlink{_no_sub_interceptor_wrapper_8java}{No\+Sub\+Interceptor\+Wrapper.\+java}}\end{DoxyCompactItemize}

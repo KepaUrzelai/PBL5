@@ -1,0 +1,64 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_connection_pool_data_source}{}\section{com.\+mysql.\+cj.\+jdbc.\+Mysql\+Connection\+Pool\+Data\+Source Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_connection_pool_data_source}\index{com.\+mysql.\+cj.\+jdbc.\+Mysql\+Connection\+Pool\+Data\+Source@{com.\+mysql.\+cj.\+jdbc.\+Mysql\+Connection\+Pool\+Data\+Source}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_data_source}{com.\+mysql.\+cj.\+jdbc.\+Mysql\+Data\+Source}}, and Connection\+Pool\+Data\+Source.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized Pooled\+Connection \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_connection_pool_data_source_a7de9afe8a9a4514f810aa226abb8fa7f}{get\+Pooled\+Connection}} ()  throws S\+Q\+L\+Exception 
+\item 
+synchronized Pooled\+Connection \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_connection_pool_data_source_afd5aea7cfab2ff2787bdf918d6ac8f8c}{get\+Pooled\+Connection}} (String s, String s1)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is used to obtain a physical connection and instantiate and return a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection}{Mysql\+Pooled\+Connection}}. J2\+EE application servers map client calls to data\+Source.\+get\+Connection to this class based upon mapping set within deployment descriptor. This class extends \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_data_source}{Mysql\+Data\+Source}}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_connection_pool_data_source_a7de9afe8a9a4514f810aa226abb8fa7f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_connection_pool_data_source_a7de9afe8a9a4514f810aa226abb8fa7f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Connection\+Pool\+Data\+Source@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Connection\+Pool\+Data\+Source}!get\+Pooled\+Connection@{get\+Pooled\+Connection}}
+\index{get\+Pooled\+Connection@{get\+Pooled\+Connection}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Connection\+Pool\+Data\+Source@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Connection\+Pool\+Data\+Source}}
+\subsubsection{\texorpdfstring{get\+Pooled\+Connection()}{getPooledConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily synchronized Pooled\+Connection com.\+mysql.\+cj.\+jdbc.\+Mysql\+Connection\+Pool\+Data\+Source.\+get\+Pooled\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Returns a pooled connection.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+a Pooled\+Connection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_connection_pool_data_source_afd5aea7cfab2ff2787bdf918d6ac8f8c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_connection_pool_data_source_afd5aea7cfab2ff2787bdf918d6ac8f8c}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Connection\+Pool\+Data\+Source@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Connection\+Pool\+Data\+Source}!get\+Pooled\+Connection@{get\+Pooled\+Connection}}
+\index{get\+Pooled\+Connection@{get\+Pooled\+Connection}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Connection\+Pool\+Data\+Source@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Connection\+Pool\+Data\+Source}}
+\subsubsection{\texorpdfstring{get\+Pooled\+Connection()}{getPooledConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily synchronized Pooled\+Connection com.\+mysql.\+cj.\+jdbc.\+Mysql\+Connection\+Pool\+Data\+Source.\+get\+Pooled\+Connection (\begin{DoxyParamCaption}\item[{String}]{s,  }\item[{String}]{s1 }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+This method is invoked by the container. Obtains physical connection using my\+Sql.\+Driver class and returns a mysql\+Pooled\+Connection object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & user name \\
+\hline
+{\em s1} & password \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+a Pooled\+Connection 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/\mbox{\hyperlink{_mysql_connection_pool_data_source_8java}{Mysql\+Connection\+Pool\+Data\+Source.\+java}}\end{DoxyCompactItemize}

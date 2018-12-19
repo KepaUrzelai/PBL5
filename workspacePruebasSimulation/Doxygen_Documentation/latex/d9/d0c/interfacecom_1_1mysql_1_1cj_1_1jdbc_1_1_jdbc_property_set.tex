@@ -1,0 +1,58 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_property_set}{}\section{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Property\+Set Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_property_set}\index{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Property\+Set@{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Property\+Set}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{com.\+mysql.\+cj.\+conf.\+Property\+Set}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_property_set_impl}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Property\+Set\+Impl}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_data_source}{com.\+mysql.\+cj.\+jdbc.\+Mysql\+Data\+Source}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+$<$ T $>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_modifiable_property}{Modifiable\+Property}}$<$ T $>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_property_set_ab32dd5fed2dd7e715e1d95b0dbc4f587}{get\+Jdbc\+Modifiable\+Property}} (String name)  throws S\+Q\+L\+Exception
+\item 
+Driver\+Property\+Info \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_property_set_a3d74db3873b64c6ed704a443e9993359}{expose\+As\+Driver\+Property\+Info}} (Properties info, int slots\+To\+Reserve)  throws S\+Q\+L\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_property_set_a3d74db3873b64c6ed704a443e9993359}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_property_set_a3d74db3873b64c6ed704a443e9993359}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Property\+Set@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Property\+Set}!expose\+As\+Driver\+Property\+Info@{expose\+As\+Driver\+Property\+Info}}
+\index{expose\+As\+Driver\+Property\+Info@{expose\+As\+Driver\+Property\+Info}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Property\+Set@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Property\+Set}}
+\subsubsection{\texorpdfstring{expose\+As\+Driver\+Property\+Info()}{exposeAsDriverPropertyInfo()}}
+{\footnotesize\ttfamily Driver\+Property\+Info \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Property\+Set.\+expose\+As\+Driver\+Property\+Info (\begin{DoxyParamCaption}\item[{Properties}]{info,  }\item[{int}]{slots\+To\+Reserve }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Exposes all Connection\+Property\+Info instances as Driver\+Property\+Info
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & the properties to load into these Connection\+Property\+Info instances \\
+\hline
+{\em slots\+To\+Reserve} & the number of D\+PI slots to reserve for \textquotesingle{}standard\textquotesingle{} D\+PI properties (user, host, password, etc)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of all Connection\+Property\+Info instances, as Driver\+Property\+Info
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_property_set_impl_a0bcb782acac24d633f1c6b5108102dcd}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Property\+Set\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_property_set_ab32dd5fed2dd7e715e1d95b0dbc4f587}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_property_set_ab32dd5fed2dd7e715e1d95b0dbc4f587}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Property\+Set@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Property\+Set}!get\+Jdbc\+Modifiable\+Property@{get\+Jdbc\+Modifiable\+Property}}
+\index{get\+Jdbc\+Modifiable\+Property@{get\+Jdbc\+Modifiable\+Property}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Property\+Set@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Property\+Set}}
+\subsubsection{\texorpdfstring{get\+Jdbc\+Modifiable\+Property()}{getJdbcModifiableProperty()}}
+{\footnotesize\ttfamily $<$T$>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_modifiable_property}{Modifiable\+Property}}$<$T$>$ com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Property\+Set.\+get\+Jdbc\+Modifiable\+Property (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/jdbc/\mbox{\hyperlink{_jdbc_property_set_8java}{Jdbc\+Property\+Set.\+java}}\end{DoxyCompactItemize}

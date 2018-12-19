@@ -1,0 +1,318 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows}{}\section{com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows}\index{com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows@{com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list}{com.\+mysql.\+cj.\+result.\+Row\+List}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_resultset_rows}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Resultset\+Rows}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_cursor}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Cursor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Streaming$<$ T extends Protocol\+Entity $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a0af5754ee23ac440b3ce31543ed3c339}{add\+Row}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} row)
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a9b69d770817c03e132e2561a228e5951}{after\+Last}} ()
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_ae7c525fda08befaf356a5a0df5c78086}{before\+First}} ()
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a5e79d9c2bb5bcfb947e02b71121d74d2}{before\+Last}} ()
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_aae10da1813382e04a356d4e282d1a7f9}{close}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_owner}{Resultset\+Rows\+Owner}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a495e468d6fb9aee61f47343ab45cdd52}{get\+Owner}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a8599e016249b697a11560806dc290a87}{is\+After\+Last}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a748205e182d8b1b1263ebe78c7062517}{is\+Before\+First}} ()
+\item 
+default boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_aa9dd39e935202eca58365a9f0c166db8}{is\+Dynamic}} ()
+\item 
+default boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_ae130183c4bba57a93d3fe890f14b6c25}{is\+Empty}} ()
+\item 
+default boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_ae7d5b7ca8787eaca7ee5e0ca69ac2818}{is\+First}} ()
+\item 
+default boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_ae52ab20020adafaf87c2f45bae82980d}{is\+Last}} ()
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a81d7635ad38c59a3160e3edc46327bac}{move\+Row\+Relative}} (int rows)
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a813efe790e18424a02b692a3f9213446}{set\+Current\+Row}} (int row\+Number)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a2ab1ce5f29431a54097987b58fbb942c}{set\+Owner}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_owner}{Resultset\+Rows\+Owner}} rs)
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a46258b5b85f7536a54d62054403e6cf8}{was\+Empty}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a5121e355be1da17a4085068bb5611fb0}{set\+Metadata}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} column\+Definition)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a8c98725ac82f59abb6eb000489624ce6}{get\+Metadata}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This interface abstracts away how row data is accessed by the result set. It is meant to allow a static implementation (Current version), and a streaming one. It extends the \mbox{\hyperlink{}{Row\+List}} functionality by providing row positioning, updatability and ownership. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a0af5754ee23ac440b3ce31543ed3c339}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a0af5754ee23ac440b3ce31543ed3c339}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!add\+Row@{add\+Row}}
+\index{add\+Row@{add\+Row}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{add\+Row()}{addRow()}}
+{\footnotesize\ttfamily default void com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+add\+Row (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}}}]{row }\end{DoxyParamCaption})}
+
+Adds a row.
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & the row to add \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_cursor_a34e3f6465619fc988b570afca93db969}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Cursor}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_a4546e3ad8ce7f65d7c37d306ec4a1e48}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a9b69d770817c03e132e2561a228e5951}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a9b69d770817c03e132e2561a228e5951}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!after\+Last@{after\+Last}}
+\index{after\+Last@{after\+Last}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{after\+Last()}{afterLast()}}
+{\footnotesize\ttfamily default void com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+after\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Moves to after last. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_cursor_a1fc9c638ba70a1fd6cabeb6ba0a2b0fe}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Cursor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_af58c1ee8e6bddf5ef73508bc9292a0a2}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Streaming$<$ T extends Protocol\+Entity $>$}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_a2714df97d4c52ca2993214815e6d5594}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_ae7c525fda08befaf356a5a0df5c78086}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_ae7c525fda08befaf356a5a0df5c78086}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!before\+First@{before\+First}}
+\index{before\+First@{before\+First}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{before\+First()}{beforeFirst()}}
+{\footnotesize\ttfamily default void com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+before\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Moves to before first. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_cursor_a3f7a11c46baddfde2c6ad5cc16c101d7}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Cursor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a09c61e1550747c9af885193ffe222c04}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Streaming$<$ T extends Protocol\+Entity $>$}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_a0621988f2c4896700500decf7b6298a2}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a5e79d9c2bb5bcfb947e02b71121d74d2}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a5e79d9c2bb5bcfb947e02b71121d74d2}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!before\+Last@{before\+Last}}
+\index{before\+Last@{before\+Last}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{before\+Last()}{beforeLast()}}
+{\footnotesize\ttfamily default void com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+before\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Moves to before last. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_cursor_ad9ecb4a99d00c5fc3c2ada068b3d78e3}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Cursor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a11ccbda4e0c40207c02253c5a2931748}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Streaming$<$ T extends Protocol\+Entity $>$}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_ae4eeeb6d930a55f44a5c80338115ef96}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_aae10da1813382e04a356d4e282d1a7f9}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_aae10da1813382e04a356d4e282d1a7f9}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!close@{close}}
+\index{close@{close}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily default void com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+We\textquotesingle{}re done. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_cursor_a51a20849a2912a6869f24911f3334f76}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Cursor}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_ae16b87b06548b980f3b0e3d9df020296}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Streaming$<$ T extends Protocol\+Entity $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a8c98725ac82f59abb6eb000489624ce6}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a8c98725ac82f59abb6eb000489624ce6}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!get\+Metadata@{get\+Metadata}}
+\index{get\+Metadata@{get\+Metadata}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{get\+Metadata()}{getMetadata()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+get\+Metadata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_resultset_rows_af9d20b6a50813a1c1bf8695e68f46467}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Resultset\+Rows}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a495e468d6fb9aee61f47343ab45cdd52}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a495e468d6fb9aee61f47343ab45cdd52}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!get\+Owner@{get\+Owner}}
+\index{get\+Owner@{get\+Owner}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{get\+Owner()}{getOwner()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_owner}{Resultset\+Rows\+Owner}} com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+get\+Owner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the result set that \textquotesingle{}owns\textquotesingle{} this Row\+Data
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_owner}{Resultset\+Rows\+Owner}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_resultset_rows_ae7b769392c5668dabf45c80e36ec216e}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Resultset\+Rows}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a8599e016249b697a11560806dc290a87}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a8599e016249b697a11560806dc290a87}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!is\+After\+Last@{is\+After\+Last}}
+\index{is\+After\+Last@{is\+After\+Last}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{is\+After\+Last()}{isAfterLast()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+is\+After\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if we got the last element.
+
+\begin{DoxyReturn}{Returns}
+true if after last row 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a87d9941d48a1d379d2387082904ebe6c}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Streaming$<$ T extends Protocol\+Entity $>$}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_a7b010d9bacc8bb948e66a76d4ef4e0d4}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_cursor_a26d45087615e0f6baa7a8b52d33a0ec4}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Cursor}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a748205e182d8b1b1263ebe78c7062517}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a748205e182d8b1b1263ebe78c7062517}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!is\+Before\+First@{is\+Before\+First}}
+\index{is\+Before\+First@{is\+Before\+First}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{is\+Before\+First()}{isBeforeFirst()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+is\+Before\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns if iteration has not occured yet.
+
+\begin{DoxyReturn}{Returns}
+true if before first row 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_aea0a6d7632abca3ff7a6f6d69412c011}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Streaming$<$ T extends Protocol\+Entity $>$}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_adbab4e5b2490a9e147a79de4cc7d6e1d}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_cursor_a6ca4bec845f7589a9182c52c8f81e0c2}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Cursor}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_aa9dd39e935202eca58365a9f0c166db8}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_aa9dd39e935202eca58365a9f0c166db8}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!is\+Dynamic@{is\+Dynamic}}
+\index{is\+Dynamic@{is\+Dynamic}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{is\+Dynamic()}{isDynamic()}}
+{\footnotesize\ttfamily default boolean com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+is\+Dynamic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if the result set is dynamic.
+
+This means that move back and move forward won\textquotesingle{}t work because we do not hold on to the records.
+
+\begin{DoxyReturn}{Returns}
+true if this result set is streaming from the server 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_acf9221e596a879c793000246688ff8f6}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_ae130183c4bba57a93d3fe890f14b6c25}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_ae130183c4bba57a93d3fe890f14b6c25}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{is\+Empty()}{isEmpty()}}
+{\footnotesize\ttfamily default boolean com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Has no records.
+
+\begin{DoxyReturn}{Returns}
+true if no records 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a477080ab4c378e7bf32d5c1230ecedbe}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Streaming$<$ T extends Protocol\+Entity $>$}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_a6e253f009ce83647195f60954d021cff}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_cursor_a3fcb0eaca47918a78033b083af35b02a}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Cursor}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_ae7d5b7ca8787eaca7ee5e0ca69ac2818}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_ae7d5b7ca8787eaca7ee5e0ca69ac2818}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!is\+First@{is\+First}}
+\index{is\+First@{is\+First}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{is\+First()}{isFirst()}}
+{\footnotesize\ttfamily default boolean com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+is\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Are we on the first row of the result set?
+
+\begin{DoxyReturn}{Returns}
+true if on first row 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a723004a61b6ca61f2da79c7876c62502}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Streaming$<$ T extends Protocol\+Entity $>$}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_ad16947839519d3bf8c5bc679f6920b5c}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_cursor_a8d0ae8e04f7731f461437563ea13c6b9}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Cursor}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_ae52ab20020adafaf87c2f45bae82980d}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_ae52ab20020adafaf87c2f45bae82980d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!is\+Last@{is\+Last}}
+\index{is\+Last@{is\+Last}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{is\+Last()}{isLast()}}
+{\footnotesize\ttfamily default boolean com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+is\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Are we on the last row of the result set?
+
+\begin{DoxyReturn}{Returns}
+true if on last row 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_abe926437ff8f266271a0e2403404dbc4}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Streaming$<$ T extends Protocol\+Entity $>$}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_a2714d5e0fe10d3cb3b148a3fb2d6fec4}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_cursor_ae16f7cc758e2518a8cf1c6acfddeed10}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Cursor}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a81d7635ad38c59a3160e3edc46327bac}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a81d7635ad38c59a3160e3edc46327bac}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!move\+Row\+Relative@{move\+Row\+Relative}}
+\index{move\+Row\+Relative@{move\+Row\+Relative}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{move\+Row\+Relative()}{moveRowRelative()}}
+{\footnotesize\ttfamily default void com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+move\+Row\+Relative (\begin{DoxyParamCaption}\item[{int}]{rows }\end{DoxyParamCaption})}
+
+Moves the current position relative \textquotesingle{}rows\textquotesingle{} from the current position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & the relative number of rows to move \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_cursor_af4a1433311e5089d29b554c81d0b006c}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Cursor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a737e87ca2de64978c94ecd245f1b9cf4}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Streaming$<$ T extends Protocol\+Entity $>$}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_ac6527b7e8cbc7cb3ec0c67c854f145b7}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a813efe790e18424a02b692a3f9213446}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a813efe790e18424a02b692a3f9213446}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!set\+Current\+Row@{set\+Current\+Row}}
+\index{set\+Current\+Row@{set\+Current\+Row}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{set\+Current\+Row()}{setCurrentRow()}}
+{\footnotesize\ttfamily default void com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+set\+Current\+Row (\begin{DoxyParamCaption}\item[{int}]{row\+Number }\end{DoxyParamCaption})}
+
+Moves the current position in the result set to the given row number.
+
+
+\begin{DoxyParams}{Parameters}
+{\em row\+Number} & row to move to \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_cursor_aab53d9374408ceaf15369f0b515ab56e}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Cursor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_ac2448082c41dad09ccd418eaf3f400e0}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Streaming$<$ T extends Protocol\+Entity $>$}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_a6975dcd56b2033fcfc7dbfe7a4fa83d8}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a5121e355be1da17a4085068bb5611fb0}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a5121e355be1da17a4085068bb5611fb0}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!set\+Metadata@{set\+Metadata}}
+\index{set\+Metadata@{set\+Metadata}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{set\+Metadata()}{setMetadata()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+set\+Metadata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}}]{column\+Definition }\end{DoxyParamCaption})}
+
+Sometimes the driver doesn\textquotesingle{}t have metadata until after the statement has the result set in-\/hand (because it\textquotesingle{}s cached), so it can call this to set it after the fact.
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Definition} & field-\/level metadata for the result set \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_resultset_rows_a13f4342893e5c2c6ca06237af1e585a7}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Resultset\+Rows}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a2ab1ce5f29431a54097987b58fbb942c}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a2ab1ce5f29431a54097987b58fbb942c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!set\+Owner@{set\+Owner}}
+\index{set\+Owner@{set\+Owner}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{set\+Owner()}{setOwner()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+set\+Owner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_owner}{Resultset\+Rows\+Owner}}}]{rs }\end{DoxyParamCaption})}
+
+Set the result set that \textquotesingle{}owns\textquotesingle{} this Row\+Data
+
+
+\begin{DoxyParams}{Parameters}
+{\em rs} & the result set that \textquotesingle{}owns\textquotesingle{} this Row\+Data \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_resultset_rows_aa020316d48045e8ade0aaeddf40d1de6}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Resultset\+Rows}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a46258b5b85f7536a54d62054403e6cf8}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a46258b5b85f7536a54d62054403e6cf8}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}!was\+Empty@{was\+Empty}}
+\index{was\+Empty@{was\+Empty}!com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows@{com\+::mysql\+::cj\+::protocol\+::\+Resultset\+Rows}}
+\subsubsection{\texorpdfstring{was\+Empty()}{wasEmpty()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows.\+was\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Did this result set have no rows?
+
+\begin{DoxyReturn}{Returns}
+true if the result set did not have rows 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_ad18792e2f43667c3dc0b6e41a6de3026}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_resultset_rows_ae97f8b33948868aab21df7320f9f91f4}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Resultset\+Rows}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/\mbox{\hyperlink{_resultset_rows_8java}{Resultset\+Rows.\+java}}\end{DoxyCompactItemize}

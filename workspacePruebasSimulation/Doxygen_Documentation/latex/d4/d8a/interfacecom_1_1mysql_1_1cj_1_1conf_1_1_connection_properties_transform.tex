@@ -1,0 +1,42 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_connection_properties_transform}{}\section{com.\+mysql.\+cj.\+conf.\+Connection\+Properties\+Transform Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_connection_properties_transform}\index{com.\+mysql.\+cj.\+conf.\+Connection\+Properties\+Transform@{com.\+mysql.\+cj.\+conf.\+Connection\+Properties\+Transform}}
+
+
+Inherited by \mbox{\hyperlink{classtestsuite_1_1simple_1_1_simple_transformer}{testsuite.\+simple.\+Simple\+Transformer}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Properties \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_connection_properties_transform_ab1b0ebd09935c348ec99fb122e1a220b}{transform\+Properties}} (Properties props)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implement this interface, and pass the class name as the \textquotesingle{}properties\+Transform\textquotesingle{} property in your U\+RL, and the driver will pass the properties it has parsed to your transform implementation so that you can modify/substitute/add any that you desire. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_connection_properties_transform_ab1b0ebd09935c348ec99fb122e1a220b}\label{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_connection_properties_transform_ab1b0ebd09935c348ec99fb122e1a220b}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Properties\+Transform@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Properties\+Transform}!transform\+Properties@{transform\+Properties}}
+\index{transform\+Properties@{transform\+Properties}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Properties\+Transform@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Properties\+Transform}}
+\subsubsection{\texorpdfstring{transform\+Properties()}{transformProperties()}}
+{\footnotesize\ttfamily Properties com.\+mysql.\+cj.\+conf.\+Connection\+Properties\+Transform.\+transform\+Properties (\begin{DoxyParamCaption}\item[{Properties}]{props }\end{DoxyParamCaption})}
+
+The driver will call this method if the user has loaded your implementation of this interface by specifying the \textquotesingle{}properties\+Transform\textquotesingle{} property in their U\+RL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em props} & the properties as passed by the driver (never null)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the same properties with any transformations that your implementation has made 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classtestsuite_1_1simple_1_1_simple_transformer_aadfc91d352f3a7b94257f30b319cb258}{testsuite.\+simple.\+Simple\+Transformer}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/conf/\mbox{\hyperlink{_connection_properties_transform_8java}{Connection\+Properties\+Transform.\+java}}\end{DoxyCompactItemize}

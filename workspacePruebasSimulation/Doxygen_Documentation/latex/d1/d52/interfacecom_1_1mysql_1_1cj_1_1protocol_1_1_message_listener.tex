@@ -1,0 +1,50 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener}{}\section{com.\+mysql.\+cj.\+protocol.\+Message\+Listener$<$ M extends Message $>$ Interface Template Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener}\index{com.\+mysql.\+cj.\+protocol.\+Message\+Listener$<$ M extends Message $>$@{com.\+mysql.\+cj.\+protocol.\+Message\+Listener$<$ M extends Message $>$}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity\+Factory$<$ Boolean, M $>$}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener}{com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Message\+Listener}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sql_result_message_listener}{com.\+mysql.\+cj.\+protocol.\+x.\+Sql\+Result\+Message\+Listener}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok_message_listener}{com.\+mysql.\+cj.\+protocol.\+x.\+Statement\+Execute\+Ok\+Message\+Listener}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener_a7bc6393234bbbfa7609efc6fb7ff8c0b}{closed}} ()
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener_a9e06f02beaf29eb065149ac4f819761f}{error}} (Throwable ex)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Sink for messages that are read asynchonously from the socket.
+
+Return whether the listener is done receiving messages. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener_a7bc6393234bbbfa7609efc6fb7ff8c0b}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener_a7bc6393234bbbfa7609efc6fb7ff8c0b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Message\+Listener@{com\+::mysql\+::cj\+::protocol\+::\+Message\+Listener}!closed@{closed}}
+\index{closed@{closed}!com\+::mysql\+::cj\+::protocol\+::\+Message\+Listener@{com\+::mysql\+::cj\+::protocol\+::\+Message\+Listener}}
+\subsubsection{\texorpdfstring{closed()}{closed()}}
+{\footnotesize\ttfamily default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener}{com.\+mysql.\+cj.\+protocol.\+Message\+Listener}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener_a72527b705b89b553d393412f88615f86}{com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Message\+Listener}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sql_result_message_listener_a6d9d429bc58631ea5146aca4e841090f}{com.\+mysql.\+cj.\+protocol.\+x.\+Sql\+Result\+Message\+Listener}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok_message_listener_a9451a156729766ae954e065537f03178}{com.\+mysql.\+cj.\+protocol.\+x.\+Statement\+Execute\+Ok\+Message\+Listener}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener_a9e06f02beaf29eb065149ac4f819761f}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener_a9e06f02beaf29eb065149ac4f819761f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Message\+Listener@{com\+::mysql\+::cj\+::protocol\+::\+Message\+Listener}!error@{error}}
+\index{error@{error}!com\+::mysql\+::cj\+::protocol\+::\+Message\+Listener@{com\+::mysql\+::cj\+::protocol\+::\+Message\+Listener}}
+\subsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener}{com.\+mysql.\+cj.\+protocol.\+Message\+Listener}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.error (\begin{DoxyParamCaption}\item[{Throwable}]{ex }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_message_listener_ad8c3856e573b2bcad94f5b914e5f9c82}{com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Message\+Listener}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sql_result_message_listener_a3ca9df6d049404bea5161c1ac4e3be29}{com.\+mysql.\+cj.\+protocol.\+x.\+Sql\+Result\+Message\+Listener}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok_message_listener_abce681bc363086c23732d92c3fb8bce9}{com.\+mysql.\+cj.\+protocol.\+x.\+Statement\+Execute\+Ok\+Message\+Listener}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/\mbox{\hyperlink{_message_listener_8java}{Message\+Listener.\+java}}\end{DoxyCompactItemize}

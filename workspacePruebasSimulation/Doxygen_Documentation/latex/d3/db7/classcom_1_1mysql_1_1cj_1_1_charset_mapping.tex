@@ -1,0 +1,209 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping}{}\section{com.\+mysql.\+cj.\+Charset\+Mapping Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping}\index{com.\+mysql.\+cj.\+Charset\+Mapping@{com.\+mysql.\+cj.\+Charset\+Mapping}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a45a0491159f7d586e8b73253f8a7d66f}{get\+Mysql\+Charset\+For\+Java\+Encoding}} (String java\+Encoding, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}} version)
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a1a1f492ed1ad7d1bf4209508f4b9df69}{get\+Collation\+Index\+For\+Java\+Encoding}} (String java\+Encoding, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}} version)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_abf5e68749ab0b4a9c5ee8259435ac614}{get\+Mysql\+Charset\+Name\+For\+Collation\+Index}} (Integer collation\+Index)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_adcf497aaea2895c19f34687c266346e8}{get\+Java\+Encoding\+For\+Mysql\+Charset}} (String mysql\+Charset\+Name, String java\+Encoding)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a9c7e097901eb66aa023c4c0cf7638fca}{get\+Java\+Encoding\+For\+Mysql\+Charset}} (String mysql\+Charset\+Name)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a147550cb73d4a301fb41352263ccc6a2}{get\+Java\+Encoding\+For\+Collation\+Index}} (Integer collation\+Index, String java\+Encoding)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_ab115c04c08a0186854fbff12ba9c6168}{get\+Java\+Encoding\+For\+Collation\+Index}} (Integer collation\+Index)
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a244f431cb6b92e6479a3b492723d8942}{get\+Number\+Of\+Charsets\+Configured}} ()
+\item 
+final static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a391d1057e001d901ed4a4b4170513f31}{is\+Multibyte\+Charset}} (String java\+Encoding\+Name)
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_af089a4b1c57135f56e6112fc1abdaeae}{get\+Mblen}} (String charset\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a9425e1f5843d162962dea3b0230181c1}{M\+A\+P\+\_\+\+S\+I\+ZE}} = 2048
+\item 
+static final String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_aaef0faa62527de38522133ab2bd7dc7f}{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+O\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+N\+A\+ME}}
+\item 
+static final Mysql\+Charset \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a26d7028102246354923910a17e2e1ee4}{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+S\+ET}}
+\item 
+static final Map$<$ String, Mysql\+Charset $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a4e8f3b6a18adf7f56d95cd1678793808}{C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+S\+ET}}
+\item 
+static final Map$<$ String, Integer $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_adc45544deed277897844cfad6a367a4c}{C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+\+T\+O\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+EX}}
+\item 
+static final Set$<$ Integer $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a4d6abca534483a116a4255827b3f43e5}{U\+T\+F8\+M\+B4\+\_\+\+I\+N\+D\+E\+X\+ES}}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_ab5a568e79b06bf2c7598e8ec2cbb5ca6}{N\+O\+T\+\_\+\+U\+S\+ED}} = M\+Y\+S\+Q\+L\+\_\+\+C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+latin1
+\item 
+static final String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a9eb3ea147d46febde2f4ce191db98728}{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+D\+E\+F\+I\+N\+ED}} = \char`\"{}none\char`\"{}
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_ae2239d1170e14b584ff627fe59a2b4be}{M\+Y\+S\+Q\+L\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+utf8}} = 33
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a8c5acfb9b1dcf8c7835a9c006280c3fc}{M\+Y\+S\+Q\+L\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+binary}} = 63
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Mapping between My\+S\+QL charset names and Java charset names. I\textquotesingle{}ve investigated placing these in a .properties file, but unfortunately under most appservers this complicates configuration because the security policy needs to be changed by the user to allow the driver to read them \+:( 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a1a1f492ed1ad7d1bf4209508f4b9df69}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a1a1f492ed1ad7d1bf4209508f4b9df69}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!get\+Collation\+Index\+For\+Java\+Encoding@{get\+Collation\+Index\+For\+Java\+Encoding}}
+\index{get\+Collation\+Index\+For\+Java\+Encoding@{get\+Collation\+Index\+For\+Java\+Encoding}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Collation\+Index\+For\+Java\+Encoding()}{getCollationIndexForJavaEncoding()}}
+{\footnotesize\ttfamily static int com.\+mysql.\+cj.\+Charset\+Mapping.\+get\+Collation\+Index\+For\+Java\+Encoding (\begin{DoxyParamCaption}\item[{String}]{java\+Encoding,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}}}]{version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a147550cb73d4a301fb41352263ccc6a2}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a147550cb73d4a301fb41352263ccc6a2}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!get\+Java\+Encoding\+For\+Collation\+Index@{get\+Java\+Encoding\+For\+Collation\+Index}}
+\index{get\+Java\+Encoding\+For\+Collation\+Index@{get\+Java\+Encoding\+For\+Collation\+Index}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Java\+Encoding\+For\+Collation\+Index()}{getJavaEncodingForCollationIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static String com.\+mysql.\+cj.\+Charset\+Mapping.\+get\+Java\+Encoding\+For\+Collation\+Index (\begin{DoxyParamCaption}\item[{Integer}]{collation\+Index,  }\item[{String}]{java\+Encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_ab115c04c08a0186854fbff12ba9c6168}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_ab115c04c08a0186854fbff12ba9c6168}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!get\+Java\+Encoding\+For\+Collation\+Index@{get\+Java\+Encoding\+For\+Collation\+Index}}
+\index{get\+Java\+Encoding\+For\+Collation\+Index@{get\+Java\+Encoding\+For\+Collation\+Index}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Java\+Encoding\+For\+Collation\+Index()}{getJavaEncodingForCollationIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static String com.\+mysql.\+cj.\+Charset\+Mapping.\+get\+Java\+Encoding\+For\+Collation\+Index (\begin{DoxyParamCaption}\item[{Integer}]{collation\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_adcf497aaea2895c19f34687c266346e8}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_adcf497aaea2895c19f34687c266346e8}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!get\+Java\+Encoding\+For\+Mysql\+Charset@{get\+Java\+Encoding\+For\+Mysql\+Charset}}
+\index{get\+Java\+Encoding\+For\+Mysql\+Charset@{get\+Java\+Encoding\+For\+Mysql\+Charset}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Java\+Encoding\+For\+Mysql\+Charset()}{getJavaEncodingForMysqlCharset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static String com.\+mysql.\+cj.\+Charset\+Mapping.\+get\+Java\+Encoding\+For\+Mysql\+Charset (\begin{DoxyParamCaption}\item[{String}]{mysql\+Charset\+Name,  }\item[{String}]{java\+Encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+My\+S\+QL charset could map to several Java encodings. So here we choose the one according to next rules\+: 
+\begin{DoxyItemize}
+\item if there is no static mapping for this charset then return java\+Encoding value as is because this could be a custom charset for example 
+\item if static mapping exists and java\+Encoding equals to one of Java encoding canonical names or aliases available for this mapping then java\+Encoding value as is; this is required when result should match to connection encoding, for example if connection encoding is Cp943 we must avoid getting S\+H\+I\+F\+T\+\_\+\+J\+IS for sjis mysql charset 
+\item if static mapping exists and java\+Encoding doesn\textquotesingle{}t match any Java encoding canonical names or aliases available for this mapping then return default Java encoding (the first in mapping list) 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mysql\+Charset\+Name} & My\+S\+QL charset name \\
+\hline
+{\em java\+Encoding} & fall-\/back java encoding name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+java encoding name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a9c7e097901eb66aa023c4c0cf7638fca}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a9c7e097901eb66aa023c4c0cf7638fca}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!get\+Java\+Encoding\+For\+Mysql\+Charset@{get\+Java\+Encoding\+For\+Mysql\+Charset}}
+\index{get\+Java\+Encoding\+For\+Mysql\+Charset@{get\+Java\+Encoding\+For\+Mysql\+Charset}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Java\+Encoding\+For\+Mysql\+Charset()}{getJavaEncodingForMysqlCharset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static String com.\+mysql.\+cj.\+Charset\+Mapping.\+get\+Java\+Encoding\+For\+Mysql\+Charset (\begin{DoxyParamCaption}\item[{String}]{mysql\+Charset\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_af089a4b1c57135f56e6112fc1abdaeae}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_af089a4b1c57135f56e6112fc1abdaeae}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!get\+Mblen@{get\+Mblen}}
+\index{get\+Mblen@{get\+Mblen}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Mblen()}{getMblen()}}
+{\footnotesize\ttfamily static int com.\+mysql.\+cj.\+Charset\+Mapping.\+get\+Mblen (\begin{DoxyParamCaption}\item[{String}]{charset\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a45a0491159f7d586e8b73253f8a7d66f}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a45a0491159f7d586e8b73253f8a7d66f}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!get\+Mysql\+Charset\+For\+Java\+Encoding@{get\+Mysql\+Charset\+For\+Java\+Encoding}}
+\index{get\+Mysql\+Charset\+For\+Java\+Encoding@{get\+Mysql\+Charset\+For\+Java\+Encoding}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Mysql\+Charset\+For\+Java\+Encoding()}{getMysqlCharsetForJavaEncoding()}}
+{\footnotesize\ttfamily static final String com.\+mysql.\+cj.\+Charset\+Mapping.\+get\+Mysql\+Charset\+For\+Java\+Encoding (\begin{DoxyParamCaption}\item[{String}]{java\+Encoding,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}}}]{version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_abf5e68749ab0b4a9c5ee8259435ac614}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_abf5e68749ab0b4a9c5ee8259435ac614}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!get\+Mysql\+Charset\+Name\+For\+Collation\+Index@{get\+Mysql\+Charset\+Name\+For\+Collation\+Index}}
+\index{get\+Mysql\+Charset\+Name\+For\+Collation\+Index@{get\+Mysql\+Charset\+Name\+For\+Collation\+Index}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Mysql\+Charset\+Name\+For\+Collation\+Index()}{getMysqlCharsetNameForCollationIndex()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+cj.\+Charset\+Mapping.\+get\+Mysql\+Charset\+Name\+For\+Collation\+Index (\begin{DoxyParamCaption}\item[{Integer}]{collation\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a244f431cb6b92e6479a3b492723d8942}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a244f431cb6b92e6479a3b492723d8942}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!get\+Number\+Of\+Charsets\+Configured@{get\+Number\+Of\+Charsets\+Configured}}
+\index{get\+Number\+Of\+Charsets\+Configured@{get\+Number\+Of\+Charsets\+Configured}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Number\+Of\+Charsets\+Configured()}{getNumberOfCharsetsConfigured()}}
+{\footnotesize\ttfamily static final int com.\+mysql.\+cj.\+Charset\+Mapping.\+get\+Number\+Of\+Charsets\+Configured (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a391d1057e001d901ed4a4b4170513f31}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a391d1057e001d901ed4a4b4170513f31}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!is\+Multibyte\+Charset@{is\+Multibyte\+Charset}}
+\index{is\+Multibyte\+Charset@{is\+Multibyte\+Charset}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{is\+Multibyte\+Charset()}{isMultibyteCharset()}}
+{\footnotesize\ttfamily final static boolean com.\+mysql.\+cj.\+Charset\+Mapping.\+is\+Multibyte\+Charset (\begin{DoxyParamCaption}\item[{String}]{java\+Encoding\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Does the character set contain multi-\/byte encoded characters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em java\+Encoding\+Name} & java encoding name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the character set contains multi-\/byte encoded characters. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a4e8f3b6a18adf7f56d95cd1678793808}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a4e8f3b6a18adf7f56d95cd1678793808}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+S\+ET@{C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+S\+ET}}
+\index{C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+S\+ET@{C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+S\+ET}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+S\+ET}{CHARSET\_NAME\_TO\_CHARSET}}
+{\footnotesize\ttfamily final Map$<$String, Mysql\+Charset$>$ com.\+mysql.\+cj.\+Charset\+Mapping.\+C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+S\+ET\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_adc45544deed277897844cfad6a367a4c}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_adc45544deed277897844cfad6a367a4c}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+\+T\+O\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+EX@{C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+\+T\+O\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+EX}}
+\index{C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+\+T\+O\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+EX@{C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+\+T\+O\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+EX}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+\+T\+O\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+EX}{CHARSET\_NAME\_TO\_COLLATION\_INDEX}}
+{\footnotesize\ttfamily final Map$<$String, Integer$>$ com.\+mysql.\+cj.\+Charset\+Mapping.\+C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+\+T\+O\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+EX\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a26d7028102246354923910a17e2e1ee4}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a26d7028102246354923910a17e2e1ee4}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+S\+ET@{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+S\+ET}}
+\index{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+S\+ET@{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+S\+ET}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+S\+ET}{COLLATION\_INDEX\_TO\_CHARSET}}
+{\footnotesize\ttfamily final Mysql\+Charset \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+Charset\+Mapping.\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+S\+ET\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_aaef0faa62527de38522133ab2bd7dc7f}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_aaef0faa62527de38522133ab2bd7dc7f}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+O\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+N\+A\+ME@{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+O\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+N\+A\+ME}}
+\index{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+O\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+N\+A\+ME@{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+O\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+N\+A\+ME}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+O\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+N\+A\+ME}{COLLATION\_INDEX\_TO\_COLLATION\_NAME}}
+{\footnotesize\ttfamily final String \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+Charset\+Mapping.\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+O\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+N\+A\+ME\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a9eb3ea147d46febde2f4ce191db98728}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a9eb3ea147d46febde2f4ce191db98728}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+D\+E\+F\+I\+N\+ED@{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+D\+E\+F\+I\+N\+ED}}
+\index{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+D\+E\+F\+I\+N\+ED@{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+D\+E\+F\+I\+N\+ED}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+D\+E\+F\+I\+N\+ED}{COLLATION\_NOT\_DEFINED}}
+{\footnotesize\ttfamily final String com.\+mysql.\+cj.\+Charset\+Mapping.\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+D\+E\+F\+I\+N\+ED = \char`\"{}none\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a9425e1f5843d162962dea3b0230181c1}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a9425e1f5843d162962dea3b0230181c1}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!M\+A\+P\+\_\+\+S\+I\+ZE@{M\+A\+P\+\_\+\+S\+I\+ZE}}
+\index{M\+A\+P\+\_\+\+S\+I\+ZE@{M\+A\+P\+\_\+\+S\+I\+ZE}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{M\+A\+P\+\_\+\+S\+I\+ZE}{MAP\_SIZE}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+Charset\+Mapping.\+M\+A\+P\+\_\+\+S\+I\+ZE = 2048\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a8c5acfb9b1dcf8c7835a9c006280c3fc}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a8c5acfb9b1dcf8c7835a9c006280c3fc}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!M\+Y\+S\+Q\+L\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+binary@{M\+Y\+S\+Q\+L\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+binary}}
+\index{M\+Y\+S\+Q\+L\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+binary@{M\+Y\+S\+Q\+L\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+binary}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{M\+Y\+S\+Q\+L\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+binary}{MYSQL\_COLLATION\_INDEX\_binary}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+Charset\+Mapping.\+M\+Y\+S\+Q\+L\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+binary = 63\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_ae2239d1170e14b584ff627fe59a2b4be}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_ae2239d1170e14b584ff627fe59a2b4be}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!M\+Y\+S\+Q\+L\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+utf8@{M\+Y\+S\+Q\+L\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+utf8}}
+\index{M\+Y\+S\+Q\+L\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+utf8@{M\+Y\+S\+Q\+L\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+utf8}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{M\+Y\+S\+Q\+L\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+utf8}{MYSQL\_COLLATION\_INDEX\_utf8}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+Charset\+Mapping.\+M\+Y\+S\+Q\+L\+\_\+\+C\+O\+L\+L\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+E\+X\+\_\+utf8 = 33\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_ab5a568e79b06bf2c7598e8ec2cbb5ca6}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_ab5a568e79b06bf2c7598e8ec2cbb5ca6}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!N\+O\+T\+\_\+\+U\+S\+ED@{N\+O\+T\+\_\+\+U\+S\+ED}}
+\index{N\+O\+T\+\_\+\+U\+S\+ED@{N\+O\+T\+\_\+\+U\+S\+ED}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{N\+O\+T\+\_\+\+U\+S\+ED}{NOT\_USED}}
+{\footnotesize\ttfamily final String com.\+mysql.\+cj.\+Charset\+Mapping.\+N\+O\+T\+\_\+\+U\+S\+ED = M\+Y\+S\+Q\+L\+\_\+\+C\+H\+A\+R\+S\+E\+T\+\_\+\+N\+A\+M\+E\+\_\+latin1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a4d6abca534483a116a4255827b3f43e5}\label{classcom_1_1mysql_1_1cj_1_1_charset_mapping_a4d6abca534483a116a4255827b3f43e5}} 
+\index{com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}!U\+T\+F8\+M\+B4\+\_\+\+I\+N\+D\+E\+X\+ES@{U\+T\+F8\+M\+B4\+\_\+\+I\+N\+D\+E\+X\+ES}}
+\index{U\+T\+F8\+M\+B4\+\_\+\+I\+N\+D\+E\+X\+ES@{U\+T\+F8\+M\+B4\+\_\+\+I\+N\+D\+E\+X\+ES}!com\+::mysql\+::cj\+::\+Charset\+Mapping@{com\+::mysql\+::cj\+::\+Charset\+Mapping}}
+\subsubsection{\texorpdfstring{U\+T\+F8\+M\+B4\+\_\+\+I\+N\+D\+E\+X\+ES}{UTF8MB4\_INDEXES}}
+{\footnotesize\ttfamily final Set$<$Integer$>$ com.\+mysql.\+cj.\+Charset\+Mapping.\+U\+T\+F8\+M\+B4\+\_\+\+I\+N\+D\+E\+X\+ES\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/\mbox{\hyperlink{_charset_mapping_8java}{Charset\+Mapping.\+java}}\end{DoxyCompactItemize}

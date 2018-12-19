@@ -1,0 +1,188 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader}{}\section{com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader}\index{com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader@{com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader}}
+
+
+Inherits Completion\+Handler$<$ Integer, Void $>$, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a00db6ec79141ba00ebce6e28e146d11b}{Async\+Message\+Reader}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} property\+Set, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}} socket\+Connection)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a703e921ede276cb42cb6088a40256eb4}{start}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a5d7ad4e6d2faa3d5fa7ca04feaf6070f}{stop\+After\+Next\+Message}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a04d85ade49b7e9bc20370600a526f5e6}{push\+Message\+Listener}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener}{Message\+Listener}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ l)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a24e1c3793c356604d062932c4165b387}{completed}} (Integer bytes\+Read, Void v)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a32777998d2ffe63d50fcaeaff9774c59}{failed}} (Throwable exc, Void v)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_header}{X\+Message\+Header}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a6c755b53680af84a699114422348db84}{read\+Header}} ()  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_afd39b008eb7407f677e2e36f6ac640a6}{read\+Message}} (Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ reuse, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_header}{X\+Message\+Header}} hdr)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a10b24093eb7fc6fdb4b5e3a68b0b18a2}{read\+Message}} (Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ reuse, int expected\+Type)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Asynchronous low-\/level message reader for X \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{Protocol}} protobuf-\/encoded messages. The {\itshape \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}} will generally be used in one of two ways (See note regarding exceptions for Error messages)\+: 
+\begin{DoxyItemize}
+\item The next message type is known and it\textquotesingle{}s an error to read any other type of message. The caller will generally call the reader like so\+:
+
+
+\begin{DoxyPre}
+MessageType msg = reader.readPayload(null, 0, ServerMessages.Type.THE\_TYPE\_VALUE);
+\end{DoxyPre}
+
+
+
+\item The next message type is not known and the caller must conditionally decide what to do based on the type of the next message. The \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a6c755b53680af84a699114422348db84}{read\+Header()}} method supports this use case. The caller will generally call the reader like so\+:
+
+
+\begin{DoxyPre}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_header}{XMessageHeader}} header = reader.readHeader();
+if (header.getMessageType() == ServerMessages.Type.TYPE\_1\_VALUE) \{
+    MessageType1 msg1 = reader.readPayload(null, 0, ServerMessages.Type.TYPE\_1\_VALUE);
+    // do something with msg1
+\} else if (header.getMessageType() == ServerMessages.Type.TYPE\_2\_VALUE) \{
+    MessageType2 msg2 = reader.readPayload(null, 0, ServerMessages.Type.TYPE\_2\_VALUE);
+    // do something with msg2
+\}
+\end{DoxyPre}
+
+
+
+\end{DoxyItemize}
+
+If the {\itshape \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}} encounters an {\itshape Error} message, it will throw a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_error}{X\+Protocol\+Error}} exception to indicate that an error was returned from the server. 
+
+All external interaction should know about message {\itshape types} listed in com.\+mysql.\+cj.\+x.\+protobuf.\+Mysqlx.\+Server\+Messages. 
+
+T\+O\+DO\+: write about async usage 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a00db6ec79141ba00ebce6e28e146d11b}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a00db6ec79141ba00ebce6e28e146d11b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}!Async\+Message\+Reader@{Async\+Message\+Reader}}
+\index{Async\+Message\+Reader@{Async\+Message\+Reader}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}}
+\subsubsection{\texorpdfstring{Async\+Message\+Reader()}{AsyncMessageReader()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader.\+Async\+Message\+Reader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}}}]{property\+Set,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}}}]{socket\+Connection }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a24e1c3793c356604d062932c4165b387}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a24e1c3793c356604d062932c4165b387}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}!completed@{completed}}
+\index{completed@{completed}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}}
+\subsubsection{\texorpdfstring{completed()}{completed()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader.\+completed (\begin{DoxyParamCaption}\item[{Integer}]{bytes\+Read,  }\item[{Void}]{v }\end{DoxyParamCaption})}
+
+Handler for \char`\"{}read completed\char`\"{} event. We check the state and handle the incoming data. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a32777998d2ffe63d50fcaeaff9774c59}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a32777998d2ffe63d50fcaeaff9774c59}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}!failed@{failed}}
+\index{failed@{failed}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}}
+\subsubsection{\texorpdfstring{failed()}{failed()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader.\+failed (\begin{DoxyParamCaption}\item[{Throwable}]{exc,  }\item[{Void}]{v }\end{DoxyParamCaption})}
+
+Handler for \char`\"{}read failed\char`\"{} event. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a04d85ade49b7e9bc20370600a526f5e6}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a04d85ade49b7e9bc20370600a526f5e6}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}!push\+Message\+Listener@{push\+Message\+Listener}}
+\index{push\+Message\+Listener@{push\+Message\+Listener}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}}
+\subsubsection{\texorpdfstring{push\+Message\+Listener()}{pushMessageListener()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader.\+push\+Message\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener}{Message\+Listener}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$}]{l }\end{DoxyParamCaption})}
+
+Queue a \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener}{Message\+Listener}} to receive messages.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_listener}{Message\+Listener}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a6c755b53680af84a699114422348db84}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a6c755b53680af84a699114422348db84}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}!read\+Header@{read\+Header}}
+\index{read\+Header@{read\+Header}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}}
+\subsubsection{\texorpdfstring{read\+Header()}{readHeader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_header}{X\+Message\+Header}} com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader.\+read\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Peek into the pending message for it\textquotesingle{}s class/type. This method blocks until a message is available. A message will not become available to peek until there are no pending message listeners on this reader.
+
+\begin{DoxyReturn}{Returns}
+the header of the next message to be delivered 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader_a09745b0e30f74fa13e2b32f22ce70cbb}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_afd39b008eb7407f677e2e36f6ac640a6}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_afd39b008eb7407f677e2e36f6ac640a6}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}!read\+Message@{read\+Message}}
+\index{read\+Message@{read\+Message}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}}
+\subsubsection{\texorpdfstring{read\+Message()}{readMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader.\+read\+Message (\begin{DoxyParamCaption}\item[{Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$}]{reuse,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_header}{X\+Message\+Header}}}]{hdr }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Synchronously read a message of the given type into to the given \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} instance or into the new one if not present.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reuse} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} object to reuse \\
+\hline
+{\em hdr} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_header}{Message\+Header}} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+{\em C\+J\+Communications\+Exception} & wrapping an \mbox{\hyperlink{}{I\+O\+Exception}} during read or parse \\
+\hline
+{\em \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_error}{X\+Protocol\+Error}}} & if an {\itshape Error} message is received from the server \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a10b24093eb7fc6fdb4b5e3a68b0b18a2}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a10b24093eb7fc6fdb4b5e3a68b0b18a2}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}!read\+Message@{read\+Message}}
+\index{read\+Message@{read\+Message}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}}
+\subsubsection{\texorpdfstring{read\+Message()}{readMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader.\+read\+Message (\begin{DoxyParamCaption}\item[{Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$}]{reuse,  }\item[{int}]{expected\+Type }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Synchronously read a message of the given type into to the given \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} instance or into the new one if not present.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reuse} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} object to reuse \\
+\hline
+{\em expected\+Type} & Expected type of message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+{\em Wrong\+Argument\+Exception} & if the message is of a different type \\
+\hline
+{\em C\+J\+Communications\+Exception} & wrapping an \mbox{\hyperlink{}{I\+O\+Exception}} during read or parse \\
+\hline
+{\em \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_error}{X\+Protocol\+Error}}} & if an {\itshape Error} message is received from the server \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a703e921ede276cb42cb6088a40256eb4}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a703e921ede276cb42cb6088a40256eb4}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}!start@{start}}
+\index{start@{start}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Start the message reader on the provided channel. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a5d7ad4e6d2faa3d5fa7ca04feaf6070f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_a5d7ad4e6d2faa3d5fa7ca04feaf6070f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}!stop\+After\+Next\+Message@{stop\+After\+Next\+Message}}
+\index{stop\+After\+Next\+Message@{stop\+After\+Next\+Message}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader}}
+\subsubsection{\texorpdfstring{stop\+After\+Next\+Message()}{stopAfterNextMessage()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader.\+stop\+After\+Next\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Signal to the reader that it should stop reading messages after delivering the next message. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/x/\mbox{\hyperlink{_async_message_reader_8java}{Async\+Message\+Reader.\+java}}\end{DoxyCompactItemize}

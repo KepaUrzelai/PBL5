@@ -1,0 +1,235 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}\index{com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement@{com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement}{com.\+mysql.\+cj.\+xdevapi.\+Statement$<$ Select\+Statement, Row\+Result $>$}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_impl}{com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement\+Impl}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_af8a0e6c10a2091b4e6a8d6ae74e5713f}{where}} (String search\+Condition)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_aa711a5de1c387d46ff0a940329837ae0}{group\+By}} (String... group\+By)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_ab1dde96bbcd60811cce5a6181008d441}{having}} (String having)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a79a5fd02de586c02a6179002efe76efa}{order\+By}} (String... sort\+Fields)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a434d35e15b13407d7a67df13c5c0d0f9}{limit}} (long number\+Of\+Rows)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_af36d8c50049615adbb960284711af58b}{offset}} (long limit\+Offset)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_aeee3b8b28d07cd0609e01164fda0bfd3}{lock\+Shared}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a2ada4b9bb1be4e07ef8593ff9e777ad0}{lock\+Shared}} (Lock\+Contention lock\+Contention)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a86b185579eb689c07a5691ba33c59821}{lock\+Exclusive}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a993dc3e6fa92a41a1ce2cb1aff9e7c4a}{lock\+Exclusive}} (Lock\+Contention lock\+Contention)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params}{Find\+Params}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_aba9e71159f41003a6514960d37e4021b}{get\+Find\+Params}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A statement representing a S\+E\+L\+E\+CT query. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_aba9e71159f41003a6514960d37e4021b}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_aba9e71159f41003a6514960d37e4021b}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}!get\+Find\+Params@{get\+Find\+Params}}
+\index{get\+Find\+Params@{get\+Find\+Params}!com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}}
+\subsubsection{\texorpdfstring{get\+Find\+Params()}{getFindParams()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params}{Find\+Params}} com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement.\+get\+Find\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params}{Find\+Params}} defined for this statement.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params}{Find\+Params}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_impl_a887ea3a5dcdb37d2bc6845cfc67631a9}{com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_aa711a5de1c387d46ff0a940329837ae0}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_aa711a5de1c387d46ff0a940329837ae0}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}!group\+By@{group\+By}}
+\index{group\+By@{group\+By}!com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}}
+\subsubsection{\texorpdfstring{group\+By()}{groupBy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement.\+group\+By (\begin{DoxyParamCaption}\item[{String...}]{group\+By }\end{DoxyParamCaption})}
+
+Add/replace the aggregation fields for this query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+By} & group\+By expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_impl_a88dd14474574f8e6f785aa2341b7c382}{com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_ab1dde96bbcd60811cce5a6181008d441}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_ab1dde96bbcd60811cce5a6181008d441}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}!having@{having}}
+\index{having@{having}!com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}}
+\subsubsection{\texorpdfstring{having()}{having()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement.\+having (\begin{DoxyParamCaption}\item[{String}]{having }\end{DoxyParamCaption})}
+
+Add/replace the aggregate criteria for this query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em having} & having expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_impl_a7c95308255a21648ee6bbe698e934552}{com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a434d35e15b13407d7a67df13c5c0d0f9}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a434d35e15b13407d7a67df13c5c0d0f9}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}!limit@{limit}}
+\index{limit@{limit}!com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}}
+\subsubsection{\texorpdfstring{limit()}{limit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement.\+limit (\begin{DoxyParamCaption}\item[{long}]{number\+Of\+Rows }\end{DoxyParamCaption})}
+
+Add/replace the row limit for this query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Rows} & limit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a86b185579eb689c07a5691ba33c59821}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a86b185579eb689c07a5691ba33c59821}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}!lock\+Exclusive@{lock\+Exclusive}}
+\index{lock\+Exclusive@{lock\+Exclusive}!com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}}
+\subsubsection{\texorpdfstring{lock\+Exclusive()}{lockExclusive()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement.\+lock\+Exclusive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Locks matching rows exclusively so no other transactions can read or write to them.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_impl_a53aaa86b0305024bdd172a02e975b006}{com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a993dc3e6fa92a41a1ce2cb1aff9e7c4a}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a993dc3e6fa92a41a1ce2cb1aff9e7c4a}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}!lock\+Exclusive@{lock\+Exclusive}}
+\index{lock\+Exclusive@{lock\+Exclusive}!com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}}
+\subsubsection{\texorpdfstring{lock\+Exclusive()}{lockExclusive()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement.\+lock\+Exclusive (\begin{DoxyParamCaption}\item[{Lock\+Contention}]{lock\+Contention }\end{DoxyParamCaption})}
+
+Locks matching rows exclusively so no other transactions can read or write to them, using the provided lock contention option.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock\+Contention} & The \mbox{\hyperlink{}{Lock\+Contention}} value to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_impl_afbaa870747c558133a85fcc536658503}{com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_aeee3b8b28d07cd0609e01164fda0bfd3}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_aeee3b8b28d07cd0609e01164fda0bfd3}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}!lock\+Shared@{lock\+Shared}}
+\index{lock\+Shared@{lock\+Shared}!com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}}
+\subsubsection{\texorpdfstring{lock\+Shared()}{lockShared()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement.\+lock\+Shared (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Locks matching rows against updates.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_impl_a4c2746728bcf0ed59e1604d57f94f8b2}{com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a2ada4b9bb1be4e07ef8593ff9e777ad0}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a2ada4b9bb1be4e07ef8593ff9e777ad0}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}!lock\+Shared@{lock\+Shared}}
+\index{lock\+Shared@{lock\+Shared}!com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}}
+\subsubsection{\texorpdfstring{lock\+Shared()}{lockShared()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement.\+lock\+Shared (\begin{DoxyParamCaption}\item[{Lock\+Contention}]{lock\+Contention }\end{DoxyParamCaption})}
+
+Locks matching rows against updates using the provided lock contention option.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock\+Contention} & The \mbox{\hyperlink{}{Lock\+Contention}} value to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_impl_a94383dd2bc539f35e3faa4de023248a1}{com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_af36d8c50049615adbb960284711af58b}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_af36d8c50049615adbb960284711af58b}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}!offset@{offset}}
+\index{offset@{offset}!com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}}
+\subsubsection{\texorpdfstring{offset()}{offset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement.\+offset (\begin{DoxyParamCaption}\item[{long}]{limit\+Offset }\end{DoxyParamCaption})}
+
+Add/replace the row offset for this query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit\+Offset} & limit offset \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a79a5fd02de586c02a6179002efe76efa}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_a79a5fd02de586c02a6179002efe76efa}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}!order\+By@{order\+By}}
+\index{order\+By@{order\+By}!com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}}
+\subsubsection{\texorpdfstring{order\+By()}{orderBy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement.\+order\+By (\begin{DoxyParamCaption}\item[{String...}]{sort\+Fields }\end{DoxyParamCaption})}
+
+Add/replace the order specification for this query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sort\+Fields} & sort expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_af8a0e6c10a2091b4e6a8d6ae74e5713f}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement_af8a0e6c10a2091b4e6a8d6ae74e5713f}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}!where@{where}}
+\index{where@{where}!com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Select\+Statement}}
+\subsubsection{\texorpdfstring{where()}{where()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Select\+Statement.\+where (\begin{DoxyParamCaption}\item[{String}]{search\+Condition }\end{DoxyParamCaption})}
+
+Add/replace the search condition for this query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+Condition} & search condition expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_select_statement}{Select\+Statement}} 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_select_statement_8java}{Select\+Statement.\+java}}\end{DoxyCompactItemize}

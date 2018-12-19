@@ -1,0 +1,101 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory}{}\section{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Factory Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory}\index{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Factory@{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Factory}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity\+Factory$<$ T, M extends Message $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_aa9098e8cd6c53ba10c3de594a9b600d0}{Result\+Set\+Factory}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} connection, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl}{Statement\+Impl}} creator\+Stmt)  throws S\+Q\+L\+Exception 
+\item 
+Resultset.\+Type \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_a09f8de6edd7696e5095a1b04ae26c573}{get\+Result\+Set\+Type}} ()
+\item 
+Resultset.\+Concurrency \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_aec51b1445e56580f9cdaba1427d8b861}{get\+Result\+Set\+Concurrency}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_ab49f2c0b4d9ce728f023c3af158cffd9}{get\+Fetch\+Size}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl}{Result\+Set\+Impl}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_a5638ebeb2a785cacf994cadafbfbaac7}{create\+From\+Protocol\+Entity}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}} protocol\+Entity)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl}{Result\+Set\+Impl}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_a30cd3345dd9bdba80ee0ab3f3708da57}{create\+From\+Resultset\+Rows}} (int result\+Set\+Concurrency, int result\+Set\+Type, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows}{Resultset\+Rows}} rows)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_aa9098e8cd6c53ba10c3de594a9b600d0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_aa9098e8cd6c53ba10c3de594a9b600d0}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory}!Result\+Set\+Factory@{Result\+Set\+Factory}}
+\index{Result\+Set\+Factory@{Result\+Set\+Factory}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory}}
+\subsubsection{\texorpdfstring{Result\+Set\+Factory()}{ResultSetFactory()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Factory.\+Result\+Set\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}}}]{connection,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl}{Statement\+Impl}}}]{creator\+Stmt }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_a5638ebeb2a785cacf994cadafbfbaac7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_a5638ebeb2a785cacf994cadafbfbaac7}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory}!create\+From\+Protocol\+Entity@{create\+From\+Protocol\+Entity}}
+\index{create\+From\+Protocol\+Entity@{create\+From\+Protocol\+Entity}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Protocol\+Entity()}{createFromProtocolEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl}{Result\+Set\+Impl}} com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Factory.\+create\+From\+Protocol\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}}}]{protocol\+Entity }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em protocol\+Entity} & the \mbox{\hyperlink{}{Protocol\+Entity}} to create from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new Protocol\+Entity 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory_a282b14fecc86c7202cd9361333235ef8}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity\+Factory$<$ T, M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_a30cd3345dd9bdba80ee0ab3f3708da57}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_a30cd3345dd9bdba80ee0ab3f3708da57}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory}!create\+From\+Resultset\+Rows@{create\+From\+Resultset\+Rows}}
+\index{create\+From\+Resultset\+Rows@{create\+From\+Resultset\+Rows}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Resultset\+Rows()}{createFromResultsetRows()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl}{Result\+Set\+Impl}} com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Factory.\+create\+From\+Resultset\+Rows (\begin{DoxyParamCaption}\item[{int}]{result\+Set\+Concurrency,  }\item[{int}]{result\+Set\+Type,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows}{Resultset\+Rows}}}]{rows }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Build Result\+Set from Resultset\+Rows
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+Set\+Type} & scrollability (T\+Y\+P\+E\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+O\+N\+LY, T\+Y\+P\+E\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+????) \\
+\hline
+{\em result\+Set\+Concurrency} & the type of result set (C\+O\+N\+C\+U\+R\+\_\+\+U\+P\+D\+A\+T\+A\+B\+LE or R\+E\+A\+D\+\_\+\+O\+N\+LY) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_ab49f2c0b4d9ce728f023c3af158cffd9}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_ab49f2c0b4d9ce728f023c3af158cffd9}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory}!get\+Fetch\+Size@{get\+Fetch\+Size}}
+\index{get\+Fetch\+Size@{get\+Fetch\+Size}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory}}
+\subsubsection{\texorpdfstring{get\+Fetch\+Size()}{getFetchSize()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Factory.\+get\+Fetch\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory_aa0fc4c08a86fe8f58381439d04389afd}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity\+Factory$<$ T, M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_aec51b1445e56580f9cdaba1427d8b861}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_aec51b1445e56580f9cdaba1427d8b861}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory}!get\+Result\+Set\+Concurrency@{get\+Result\+Set\+Concurrency}}
+\index{get\+Result\+Set\+Concurrency@{get\+Result\+Set\+Concurrency}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory}}
+\subsubsection{\texorpdfstring{get\+Result\+Set\+Concurrency()}{getResultSetConcurrency()}}
+{\footnotesize\ttfamily Resultset.\+Concurrency com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Factory.\+get\+Result\+Set\+Concurrency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory_ab5bf153eafa066fe2d98fd6bd8372972}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity\+Factory$<$ T, M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_a09f8de6edd7696e5095a1b04ae26c573}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_factory_a09f8de6edd7696e5095a1b04ae26c573}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory}!get\+Result\+Set\+Type@{get\+Result\+Set\+Type}}
+\index{get\+Result\+Set\+Type@{get\+Result\+Set\+Type}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Factory}}
+\subsubsection{\texorpdfstring{get\+Result\+Set\+Type()}{getResultSetType()}}
+{\footnotesize\ttfamily Resultset.\+Type com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Factory.\+get\+Result\+Set\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory_a288de4370d4af19186625e7404b4cca5}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity\+Factory$<$ T, M extends Message $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/result/\mbox{\hyperlink{user-impl_2java_2com_2mysql_2cj_2jdbc_2result_2_resultset_factory_8java}{Result\+Set\+Factory.\+java}}\end{DoxyCompactItemize}

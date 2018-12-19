@@ -1,0 +1,90 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor}{}\section{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Result\+Set\+Scanner\+Interceptor Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor}\index{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Result\+Set\+Scanner\+Interceptor@{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Result\+Set\+Scanner\+Interceptor}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a8b4dccb5d9c1fd75ed0e04fe50a2c087}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection}{Mysql\+Connection}} conn, Properties props, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a3f3a48cedb6de0c16b6ea146aaff4af0}{execute\+Top\+Level\+Only}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a6e0fa82b6d4827d34c1db0676419efa5}{destroy}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Pattern \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a1546575c417e1be4a380a9154c1aa05a}{regexP}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a6e0fa82b6d4827d34c1db0676419efa5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a6e0fa82b6d4827d34c1db0676419efa5}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor@{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor}!destroy@{destroy}}
+\index{destroy@{destroy}!com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor@{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Result\+Set\+Scanner\+Interceptor.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a123809a91800f4f4409f5f37717bf9c8}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a3f3a48cedb6de0c16b6ea146aaff4af0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a3f3a48cedb6de0c16b6ea146aaff4af0}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor@{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor}!execute\+Top\+Level\+Only@{execute\+Top\+Level\+Only}}
+\index{execute\+Top\+Level\+Only@{execute\+Top\+Level\+Only}!com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor@{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor}}
+\subsubsection{\texorpdfstring{execute\+Top\+Level\+Only()}{executeTopLevelOnly()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Result\+Set\+Scanner\+Interceptor.\+execute\+Top\+Level\+Only (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Should the driver execute this interceptor only for the \char`\"{}original\char`\"{} top-\/level query, and not put it in the execution path for queries that may be executed from other interceptors?
+
+If an interceptor issues queries using the connection it was created for, and does not return {\ttfamily true} for this method, it must ensure that it does not cause infinite recursion.
+
+\begin{DoxyReturn}{Returns}
+true if the driver should ensure that this interceptor is only executed for the top-\/level \char`\"{}original\char`\"{} query. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_ab12edf90713df907ba400dbe3ba03ea6}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a8b4dccb5d9c1fd75ed0e04fe50a2c087}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a8b4dccb5d9c1fd75ed0e04fe50a2c087}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor@{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor}!init@{init}}
+\index{init@{init}!com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor@{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Result\+Set\+Scanner\+Interceptor.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection}{Mysql\+Connection}}}]{conn,  }\item[{Properties}]{props,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}}}]{log }\end{DoxyParamCaption})}
+
+Called once per connection that wants to use the interceptor
+
+The properties are the same ones passed in in the U\+RL or arguments to \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_ab3fd3d522550db032eab6c240b554e3e}{Driver.\+connect()}} or Driver\+Manager.\+get\+Connection().
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection for which this interceptor is being created \\
+\hline
+{\em props} & configuration values as passed to the connection. Note that in order to support javax.\+sql.\+Data\+Sources, configuration properties specific to an interceptor {\bfseries must} be passed via set\+U\+R\+L() on the Data\+Source. Query\+Interceptor properties are not exposed via accessor/mutator methods on Data\+Sources. \\
+\hline
+{\em log} & logger \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{}{Query\+Interceptor}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a1613f5491fdb4610d5727d60c904e7e2}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a1546575c417e1be4a380a9154c1aa05a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a1546575c417e1be4a380a9154c1aa05a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor@{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor}!regexP@{regexP}}
+\index{regexP@{regexP}!com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor@{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Result\+Set\+Scanner\+Interceptor}}
+\subsubsection{\texorpdfstring{regexP}{regexP}}
+{\footnotesize\ttfamily Pattern com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Result\+Set\+Scanner\+Interceptor.\+regexP\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/interceptors/\mbox{\hyperlink{_result_set_scanner_interceptor_8java}{Result\+Set\+Scanner\+Interceptor.\+java}}\end{DoxyCompactItemize}

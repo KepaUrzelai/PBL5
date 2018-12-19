@@ -1,0 +1,181 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url}{}\section{com.\+mysql.\+cj.\+conf.\+url.\+Replication\+Connection\+Url Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url}\index{com.\+mysql.\+cj.\+conf.\+url.\+Replication\+Connection\+Url@{com.\+mysql.\+cj.\+conf.\+url.\+Replication\+Connection\+Url}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url}{com.\+mysql.\+cj.\+conf.\+Connection\+Url}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a47f9dd61da2b65fffb464040033f39d1}{Replication\+Connection\+Url}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}} conn\+Str\+Parser, Properties info)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a5f5fa218d72c2bdba66c694143ad568d}{Replication\+Connection\+Url}} (List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} $>$ masters, List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} $>$ slaves, Map$<$ String, String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_afc53ba40da35bf161d2df6fbd785b09b}{properties}})
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_ab075191dbdcebb32ccbbe1eeb9896c1c}{get\+Master\+Host\+Or\+Spawn\+Isolated}} (String host\+Port\+Pair)
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_aea588a641fe3e6352f0ca5c9940fc80a}{get\+Masters\+List}} ()
+\item 
+List$<$ String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a23e035f89d2356bf7939b354266efc3d}{get\+Masters\+List\+As\+Host\+Port\+Pairs}} ()
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a210692bdc210c25db156b88f7024e8bb}{get\+Master\+Hosts\+List\+From\+Host\+Port\+Pairs}} (Collection$<$ String $>$ host\+Port\+Pairs)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a7f3ecb4637ad23b6731d2fc9f70c55dd}{get\+Slave\+Host\+Or\+Spawn\+Isolated}} (String host\+Port\+Pair)
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_ad187e71f456d74a6e9d5533944a10489}{get\+Slaves\+List}} ()
+\item 
+List$<$ String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_aaf09eba8b7c2e3d417b6a9d4df7264a4}{get\+Slaves\+List\+As\+Host\+Port\+Pairs}} ()
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a8298b0962db02256dc6f0e6cbf475d8c}{get\+Slave\+Hosts\+List\+From\+Host\+Port\+Pairs}} (Collection$<$ String $>$ host\+Port\+Pairs)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a47f9dd61da2b65fffb464040033f39d1}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a47f9dd61da2b65fffb464040033f39d1}} 
+\index{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}!Replication\+Connection\+Url@{Replication\+Connection\+Url}}
+\index{Replication\+Connection\+Url@{Replication\+Connection\+Url}!com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}}
+\subsubsection{\texorpdfstring{Replication\+Connection\+Url()}{ReplicationConnectionUrl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+conf.\+url.\+Replication\+Connection\+Url.\+Replication\+Connection\+Url (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}}}]{conn\+Str\+Parser,  }\item[{Properties}]{info }\end{DoxyParamCaption})}
+
+Constructs an instance of \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url}{Replication\+Connection\+Url}}, performing all the required initializations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn\+Str\+Parser} & a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}} instance containing the parsed version of the original connection string \\
+\hline
+{\em info} & the connection arguments map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a5f5fa218d72c2bdba66c694143ad568d}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a5f5fa218d72c2bdba66c694143ad568d}} 
+\index{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}!Replication\+Connection\+Url@{Replication\+Connection\+Url}}
+\index{Replication\+Connection\+Url@{Replication\+Connection\+Url}!com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}}
+\subsubsection{\texorpdfstring{Replication\+Connection\+Url()}{ReplicationConnectionUrl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+conf.\+url.\+Replication\+Connection\+Url.\+Replication\+Connection\+Url (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} $>$}]{masters,  }\item[{List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} $>$}]{slaves,  }\item[{Map$<$ String, String $>$}]{properties }\end{DoxyParamCaption})}
+
+Constructs an instance of a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url}{Replication\+Connection\+Url}} based on a list of master hosts, a list of slave hosts and a global set of properties instead of connection string parsing. \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url}{Connection\+Url}} instances created by this process are not cached.
+
+
+\begin{DoxyParams}{Parameters}
+{\em masters} & the master hosts list to use in this connection string \\
+\hline
+{\em slaves} & the slave hosts list to use in this connection string \\
+\hline
+{\em properties} & the properties common to all hosts \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_ab075191dbdcebb32ccbbe1eeb9896c1c}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_ab075191dbdcebb32ccbbe1eeb9896c1c}} 
+\index{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}!get\+Master\+Host\+Or\+Spawn\+Isolated@{get\+Master\+Host\+Or\+Spawn\+Isolated}}
+\index{get\+Master\+Host\+Or\+Spawn\+Isolated@{get\+Master\+Host\+Or\+Spawn\+Isolated}!com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Master\+Host\+Or\+Spawn\+Isolated()}{getMasterHostOrSpawnIsolated()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} com.\+mysql.\+cj.\+conf.\+url.\+Replication\+Connection\+Url.\+get\+Master\+Host\+Or\+Spawn\+Isolated (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption})}
+
+Returns an existing master host info with the same host\+:port part or spawns a new isolated host info based on this connection U\+RL if none was found.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & the host\+:port part to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the existing host info or a new independent one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a210692bdc210c25db156b88f7024e8bb}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a210692bdc210c25db156b88f7024e8bb}} 
+\index{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}!get\+Master\+Hosts\+List\+From\+Host\+Port\+Pairs@{get\+Master\+Hosts\+List\+From\+Host\+Port\+Pairs}}
+\index{get\+Master\+Hosts\+List\+From\+Host\+Port\+Pairs@{get\+Master\+Hosts\+List\+From\+Host\+Port\+Pairs}!com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Master\+Hosts\+List\+From\+Host\+Port\+Pairs()}{getMasterHostsListFromHostPortPairs()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}}$>$ com.\+mysql.\+cj.\+conf.\+url.\+Replication\+Connection\+Url.\+get\+Master\+Hosts\+List\+From\+Host\+Port\+Pairs (\begin{DoxyParamCaption}\item[{Collection$<$ String $>$}]{host\+Port\+Pairs }\end{DoxyParamCaption})}
+
+Returns the list of \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} instances that matches the given collection of host\+:port pairs in the corresponding hosts list. Isolated host info elements are spawned for the missing elements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pairs} & a list of host\+:port pairs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} instances corresponding to the given host\+:port pairs 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_aea588a641fe3e6352f0ca5c9940fc80a}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_aea588a641fe3e6352f0ca5c9940fc80a}} 
+\index{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}!get\+Masters\+List@{get\+Masters\+List}}
+\index{get\+Masters\+List@{get\+Masters\+List}!com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Masters\+List()}{getMastersList()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}}$>$ com.\+mysql.\+cj.\+conf.\+url.\+Replication\+Connection\+Url.\+get\+Masters\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the list of master hosts.
+
+\begin{DoxyReturn}{Returns}
+the list of master hosts. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a23e035f89d2356bf7939b354266efc3d}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a23e035f89d2356bf7939b354266efc3d}} 
+\index{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}!get\+Masters\+List\+As\+Host\+Port\+Pairs@{get\+Masters\+List\+As\+Host\+Port\+Pairs}}
+\index{get\+Masters\+List\+As\+Host\+Port\+Pairs@{get\+Masters\+List\+As\+Host\+Port\+Pairs}!com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Masters\+List\+As\+Host\+Port\+Pairs()}{getMastersListAsHostPortPairs()}}
+{\footnotesize\ttfamily List$<$String$>$ com.\+mysql.\+cj.\+conf.\+url.\+Replication\+Connection\+Url.\+get\+Masters\+List\+As\+Host\+Port\+Pairs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a list of this connection U\+RL master hosts in the form of host\+:port pairs.
+
+\begin{DoxyReturn}{Returns}
+a list of this connection U\+RL master hosts in the form of host\+:port pairs 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a7f3ecb4637ad23b6731d2fc9f70c55dd}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a7f3ecb4637ad23b6731d2fc9f70c55dd}} 
+\index{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}!get\+Slave\+Host\+Or\+Spawn\+Isolated@{get\+Slave\+Host\+Or\+Spawn\+Isolated}}
+\index{get\+Slave\+Host\+Or\+Spawn\+Isolated@{get\+Slave\+Host\+Or\+Spawn\+Isolated}!com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Slave\+Host\+Or\+Spawn\+Isolated()}{getSlaveHostOrSpawnIsolated()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} com.\+mysql.\+cj.\+conf.\+url.\+Replication\+Connection\+Url.\+get\+Slave\+Host\+Or\+Spawn\+Isolated (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption})}
+
+Returns an existing slave host info with the same host\+:port part or spawns a new isolated host info based on this connection U\+RL if none was found.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & the host\+:port part to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the existing host info or a new independent one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a8298b0962db02256dc6f0e6cbf475d8c}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_a8298b0962db02256dc6f0e6cbf475d8c}} 
+\index{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}!get\+Slave\+Hosts\+List\+From\+Host\+Port\+Pairs@{get\+Slave\+Hosts\+List\+From\+Host\+Port\+Pairs}}
+\index{get\+Slave\+Hosts\+List\+From\+Host\+Port\+Pairs@{get\+Slave\+Hosts\+List\+From\+Host\+Port\+Pairs}!com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Slave\+Hosts\+List\+From\+Host\+Port\+Pairs()}{getSlaveHostsListFromHostPortPairs()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}}$>$ com.\+mysql.\+cj.\+conf.\+url.\+Replication\+Connection\+Url.\+get\+Slave\+Hosts\+List\+From\+Host\+Port\+Pairs (\begin{DoxyParamCaption}\item[{Collection$<$ String $>$}]{host\+Port\+Pairs }\end{DoxyParamCaption})}
+
+Returns the list of \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} instances that matches the given collection of host\+:port pairs in the corresponding hosts list. Isolated host info elements are spawned for the missing elements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pairs} & a list of host\+:port pairs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} instances corresponding to the given host\+:port pairs 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_ad187e71f456d74a6e9d5533944a10489}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_ad187e71f456d74a6e9d5533944a10489}} 
+\index{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}!get\+Slaves\+List@{get\+Slaves\+List}}
+\index{get\+Slaves\+List@{get\+Slaves\+List}!com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Slaves\+List()}{getSlavesList()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}}$>$ com.\+mysql.\+cj.\+conf.\+url.\+Replication\+Connection\+Url.\+get\+Slaves\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the list of slave hosts.
+
+\begin{DoxyReturn}{Returns}
+the list of slave hosts. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_aaf09eba8b7c2e3d417b6a9d4df7264a4}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url_aaf09eba8b7c2e3d417b6a9d4df7264a4}} 
+\index{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}!get\+Slaves\+List\+As\+Host\+Port\+Pairs@{get\+Slaves\+List\+As\+Host\+Port\+Pairs}}
+\index{get\+Slaves\+List\+As\+Host\+Port\+Pairs@{get\+Slaves\+List\+As\+Host\+Port\+Pairs}!com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+Replication\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Slaves\+List\+As\+Host\+Port\+Pairs()}{getSlavesListAsHostPortPairs()}}
+{\footnotesize\ttfamily List$<$String$>$ com.\+mysql.\+cj.\+conf.\+url.\+Replication\+Connection\+Url.\+get\+Slaves\+List\+As\+Host\+Port\+Pairs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a list of this connection U\+RL master hosts in the form of host\+:port pairs.
+
+\begin{DoxyReturn}{Returns}
+a list of this connection U\+RL master hosts in the form of host\+:port pairs 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/conf/url/\mbox{\hyperlink{_replication_connection_url_8java}{Replication\+Connection\+Url.\+java}}\end{DoxyCompactItemize}

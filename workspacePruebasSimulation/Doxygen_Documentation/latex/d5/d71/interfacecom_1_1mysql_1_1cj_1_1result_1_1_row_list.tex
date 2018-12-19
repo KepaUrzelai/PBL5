@@ -1,0 +1,113 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list}{}\section{com.\+mysql.\+cj.\+result.\+Row\+List Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list}\index{com.\+mysql.\+cj.\+result.\+Row\+List@{com.\+mysql.\+cj.\+result.\+Row\+List}}
+
+
+Inherits Iterator$<$ Row $>$.
+
+
+
+Inherited by \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows}{com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row_input_stream}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol\+Row\+Input\+Stream}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_buffered_row_list}{com.\+mysql.\+cj.\+result.\+Buffered\+Row\+List}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+default \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_a8fcbee0be0e6e13ee3862c46ec7e8e39}{previous}} ()
+\item 
+default \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_ac5f33b198acdb87ba7ab84da6cddef93}{get}} (int n)
+\item 
+default int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_a403554a1f4945bd623ed3b7489674a2e}{get\+Position}} ()
+\item 
+default int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_a2b6e2d9ed59e362e06b9fc8a110ccd89}{size}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_ab7beb738ba9b15d5697c610b86282ac9}{R\+E\+S\+U\+L\+T\+\_\+\+S\+E\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+U\+N\+K\+N\+O\+WN}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A list of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}}s. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_ac5f33b198acdb87ba7ab84da6cddef93}\label{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_ac5f33b198acdb87ba7ab84da6cddef93}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Row\+List@{com\+::mysql\+::cj\+::result\+::\+Row\+List}!get@{get}}
+\index{get@{get}!com\+::mysql\+::cj\+::result\+::\+Row\+List@{com\+::mysql\+::cj\+::result\+::\+Row\+List}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily default \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} com.\+mysql.\+cj.\+result.\+Row\+List.\+get (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+Optionally retrieve \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} at index {\itshape n}.
+
+Only works on non dynamic row lists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & row number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_a142d0e620806f94e5e35b761587bda0d}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_buffered_row_list_a84d3adb0ccd22e7ea988a25a6421948a}{com.\+mysql.\+cj.\+result.\+Buffered\+Row\+List}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_a403554a1f4945bd623ed3b7489674a2e}\label{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_a403554a1f4945bd623ed3b7489674a2e}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Row\+List@{com\+::mysql\+::cj\+::result\+::\+Row\+List}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!com\+::mysql\+::cj\+::result\+::\+Row\+List@{com\+::mysql\+::cj\+::result\+::\+Row\+List}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily default int com.\+mysql.\+cj.\+result.\+Row\+List.\+get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the current position.
+
+\begin{DoxyReturn}{Returns}
+the current row number 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_cursor_ab1ee40d0ad7227af904036a217b226e4}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Cursor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_a3177c1c1350ee04c5d9ab5130e40e97f}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_buffered_row_list_a6d18ed3e3cf3ebced974d1cd7d8ca9ec}{com.\+mysql.\+cj.\+result.\+Buffered\+Row\+List}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row_input_stream_ae168f4e9360c0d78dcb34cd3e3842d7c}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol\+Row\+Input\+Stream}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_a8fcbee0be0e6e13ee3862c46ec7e8e39}\label{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_a8fcbee0be0e6e13ee3862c46ec7e8e39}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Row\+List@{com\+::mysql\+::cj\+::result\+::\+Row\+List}!previous@{previous}}
+\index{previous@{previous}!com\+::mysql\+::cj\+::result\+::\+Row\+List@{com\+::mysql\+::cj\+::result\+::\+Row\+List}}
+\subsubsection{\texorpdfstring{previous()}{previous()}}
+{\footnotesize\ttfamily default \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} com.\+mysql.\+cj.\+result.\+Row\+List.\+previous (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Optionally iterate backwards on the list.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_buffered_row_list_a899cd7f256715f653cb2faa2d8026491}{com.\+mysql.\+cj.\+result.\+Buffered\+Row\+List}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_a2b6e2d9ed59e362e06b9fc8a110ccd89}\label{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_a2b6e2d9ed59e362e06b9fc8a110ccd89}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Row\+List@{com\+::mysql\+::cj\+::result\+::\+Row\+List}!size@{size}}
+\index{size@{size}!com\+::mysql\+::cj\+::result\+::\+Row\+List@{com\+::mysql\+::cj\+::result\+::\+Row\+List}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily default int com.\+mysql.\+cj.\+result.\+Row\+List.\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Only works on non dynamic row lists.
+
+\begin{DoxyReturn}{Returns}
+the size of this row list 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_static_a1063d6dd64edbd0a400922e9c371ff5f}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Static}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_buffered_row_list_a237ee911857a3afeb8641811508bb5b9}{com.\+mysql.\+cj.\+result.\+Buffered\+Row\+List}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_ab7beb738ba9b15d5697c610b86282ac9}\label{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list_ab7beb738ba9b15d5697c610b86282ac9}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Row\+List@{com\+::mysql\+::cj\+::result\+::\+Row\+List}!R\+E\+S\+U\+L\+T\+\_\+\+S\+E\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+U\+N\+K\+N\+O\+WN@{R\+E\+S\+U\+L\+T\+\_\+\+S\+E\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+U\+N\+K\+N\+O\+WN}}
+\index{R\+E\+S\+U\+L\+T\+\_\+\+S\+E\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+U\+N\+K\+N\+O\+WN@{R\+E\+S\+U\+L\+T\+\_\+\+S\+E\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+U\+N\+K\+N\+O\+WN}!com\+::mysql\+::cj\+::result\+::\+Row\+List@{com\+::mysql\+::cj\+::result\+::\+Row\+List}}
+\subsubsection{\texorpdfstring{R\+E\+S\+U\+L\+T\+\_\+\+S\+E\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+U\+N\+K\+N\+O\+WN}{RESULT\_SET\_SIZE\_UNKNOWN}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+result.\+Row\+List.\+R\+E\+S\+U\+L\+T\+\_\+\+S\+E\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+U\+N\+K\+N\+O\+WN = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+What\textquotesingle{}s returned for the size of a row list when its size can not be determined. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/result/\mbox{\hyperlink{_row_list_8java}{Row\+List.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,161 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result$<$ T $>$ Class Template Reference}
+\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}\index{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result$<$ T $>$@{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result$<$ T $>$}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer}{com.\+mysql.\+cj.\+protocol.\+Result\+Streamer}}, and Iterator$<$ T $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a662bf16eb25a6e01e053580bc63f020d}{Abstract\+Data\+Result}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list}{Row\+List}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ae04b2bf0af10423f89abe996549946f9}{rows}}, Supplier$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aec36caa2d5404a5748add97ebab8bc1e}{completer}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ T, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a05558a272c6983191c011faaf3de89ad}{row\+To\+Data}})
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a275a94d6439506bd062c6c38e911283c}{next}} ()
+\item 
+List$<$ T $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa0376cefb0ca352d431b392149481588}{fetch\+All}} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a7825d8f19a7fd60da5c89755219a22d2}{count}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_af873fff3d2449cd6a1f189be25d58ec6}{has\+Next}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ab2e2a86090761e83b3198b2581a31d69}{get\+Statement\+Execute\+Ok}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a6a37bb1022bc6bea43edf1f996dca4d4}{finish\+Streaming}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa3c13a06303670b7e9720befa3daf72b}{get\+Warnings\+Count}} ()
+\item 
+Iterator$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_warning}{Warning}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ac75c20b55a1923cac43c52ca6df9bdca}{get\+Warnings}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa3f163eb4a252399c9aa0bdb8e02ca9b}{position}} = -\/1
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ac8f7cdced67df259befd51e1e7d9a2b7}{count}} = -\/1
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list}{Row\+List}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ae04b2bf0af10423f89abe996549946f9}{rows}}
+\item 
+Supplier$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aec36caa2d5404a5748add97ebab8bc1e}{completer}}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a685a1078d618fe85fa65e7511f512985}{ok}}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ T, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a05558a272c6983191c011faaf3de89ad}{row\+To\+Data}}
+\item 
+List$<$ T $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a77a21d804536b015015d39ad4b45a1c0}{all}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for data set results. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a662bf16eb25a6e01e053580bc63f020d}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a662bf16eb25a6e01e053580bc63f020d}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!Abstract\+Data\+Result@{Abstract\+Data\+Result}}
+\index{Abstract\+Data\+Result@{Abstract\+Data\+Result}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{Abstract\+Data\+Result()}{AbstractDataResult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{Abstract\+Data\+Result}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list}{Row\+List}}}]{rows,  }\item[{Supplier$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} $>$}]{completer,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ T, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$}]{row\+To\+Data }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a7825d8f19a7fd60da5c89755219a22d2}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a7825d8f19a7fd60da5c89755219a22d2}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!count@{count}}
+\index{count@{count}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa0376cefb0ca352d431b392149481588}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa0376cefb0ca352d431b392149481588}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!fetch\+All@{fetch\+All}}
+\index{fetch\+All@{fetch\+All}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{fetch\+All()}{fetchAll()}}
+{\footnotesize\ttfamily List$<$T$>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.fetch\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a6a37bb1022bc6bea43edf1f996dca4d4}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a6a37bb1022bc6bea43edf1f996dca4d4}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!finish\+Streaming@{finish\+Streaming}}
+\index{finish\+Streaming@{finish\+Streaming}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{finish\+Streaming()}{finishStreaming()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.finish\+Streaming (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Finish the result streaming. This happens if a new command is started or the warnings/etc are requested. This is safe to call multiple times and only has an effect the first time. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer_a58007e9c29f81c5e681f3df64fc4a055}{com.\+mysql.\+cj.\+protocol.\+Result\+Streamer}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ab2e2a86090761e83b3198b2581a31d69}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ab2e2a86090761e83b3198b2581a31d69}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!get\+Statement\+Execute\+Ok@{get\+Statement\+Execute\+Ok}}
+\index{get\+Statement\+Execute\+Ok@{get\+Statement\+Execute\+Ok}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{get\+Statement\+Execute\+Ok()}{getStatementExecuteOk()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.get\+Statement\+Execute\+Ok (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ac75c20b55a1923cac43c52ca6df9bdca}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ac75c20b55a1923cac43c52ca6df9bdca}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!get\+Warnings@{get\+Warnings}}
+\index{get\+Warnings@{get\+Warnings}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{get\+Warnings()}{getWarnings()}}
+{\footnotesize\ttfamily Iterator$<$\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_warning}{Warning}}$>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.get\+Warnings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa3c13a06303670b7e9720befa3daf72b}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa3c13a06303670b7e9720befa3daf72b}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!get\+Warnings\+Count@{get\+Warnings\+Count}}
+\index{get\+Warnings\+Count@{get\+Warnings\+Count}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{get\+Warnings\+Count()}{getWarningsCount()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.get\+Warnings\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_af873fff3d2449cd6a1f189be25d58ec6}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_af873fff3d2449cd6a1f189be25d58ec6}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!has\+Next@{has\+Next}}
+\index{has\+Next@{has\+Next}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{has\+Next()}{hasNext()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.has\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a275a94d6439506bd062c6c38e911283c}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a275a94d6439506bd062c6c38e911283c}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!next@{next}}
+\index{next@{next}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a77a21d804536b015015d39ad4b45a1c0}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a77a21d804536b015015d39ad4b45a1c0}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!all@{all}}
+\index{all@{all}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily List$<$T$>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.all\hspace{0.3cm}{\ttfamily [protected]}}
+
+List of all elements. {\ttfamily null} until requested via \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa0376cefb0ca352d431b392149481588}{fetch\+All()}}. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aec36caa2d5404a5748add97ebab8bc1e}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aec36caa2d5404a5748add97ebab8bc1e}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!completer@{completer}}
+\index{completer@{completer}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{completer}{completer}}
+{\footnotesize\ttfamily Supplier$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}}$>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.completer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ac8f7cdced67df259befd51e1e7d9a2b7}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ac8f7cdced67df259befd51e1e7d9a2b7}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!count@{count}}
+\index{count@{count}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.count = -\/1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a685a1078d618fe85fa65e7511f512985}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a685a1078d618fe85fa65e7511f512985}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!ok@{ok}}
+\index{ok@{ok}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{ok}{ok}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.ok\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa3f163eb4a252399c9aa0bdb8e02ca9b}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa3f163eb4a252399c9aa0bdb8e02ca9b}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!position@{position}}
+\index{position@{position}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.position = -\/1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ae04b2bf0af10423f89abe996549946f9}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ae04b2bf0af10423f89abe996549946f9}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!rows@{rows}}
+\index{rows@{rows}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{rows}{rows}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list}{Row\+List}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.rows\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a05558a272c6983191c011faaf3de89ad}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a05558a272c6983191c011faaf3de89ad}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!row\+To\+Data@{row\+To\+Data}}
+\index{row\+To\+Data@{row\+To\+Data}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{row\+To\+Data}{rowToData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$T, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}}$>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.row\+To\+Data\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_abstract_data_result_8java}{Abstract\+Data\+Result.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,272 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}\index{com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement@{com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement}{com.\+mysql.\+cj.\+xdevapi.\+Statement$<$ Modify\+Statement, Result $>$}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl}{com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement\+Impl}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a55eabda9b2689157d35a7c56fcce51fe}{sort}} (String... sort\+Fields)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a06d66de8b558408213f7efe0e84b55c0}{limit}} (long number\+Of\+Rows)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a224c3d0f2d2218a7d20ecb35ab48bccb}{set}} (String doc\+Path, Object value)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_acb3745c970e50cf538e8d9b2295a08e1}{change}} (String doc\+Path, Object value)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a32c8da3dfdab70bf211d44db0c2f7ca2}{unset}} (String... fields)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a479a30f18124563becbdb944587a35a1}{merge}} (String document)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_adb4e6de8bc815f50dc9ee5241454786c}{patch}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} document)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_afc2985a9cf8d2624c16428d2be2427b4}{patch}} (String document)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_ac2c03d79835985d8b8771aee0945aea8}{array\+Insert}} (String field, Object value)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a236afae470efde69f0276fe532b16f52}{array\+Append}} (String field, Object value)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_ab65173595a82dfa001a5217896e73cfc}{array\+Delete}} (String field, int position)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A statement representing a set of document modifications. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a236afae470efde69f0276fe532b16f52}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a236afae470efde69f0276fe532b16f52}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}!array\+Append@{array\+Append}}
+\index{array\+Append@{array\+Append}!com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}}
+\subsubsection{\texorpdfstring{array\+Append()}{arrayAppend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement.\+array\+Append (\begin{DoxyParamCaption}\item[{String}]{field,  }\item[{Object}]{value }\end{DoxyParamCaption})}
+
+Append a value to the specified array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & document path to the array field \\
+\hline
+{\em value} & value to append \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_afca543cf08b9d3ad6177c9e6dfde63bd}{com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_ab65173595a82dfa001a5217896e73cfc}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_ab65173595a82dfa001a5217896e73cfc}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}!array\+Delete@{array\+Delete}}
+\index{array\+Delete@{array\+Delete}!com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}}
+\subsubsection{\texorpdfstring{array\+Delete()}{arrayDelete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement.\+array\+Delete (\begin{DoxyParamCaption}\item[{String}]{field,  }\item[{int}]{position }\end{DoxyParamCaption})}
+
+Unsupported.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & document path to the array field \\
+\hline
+{\em position} & array index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_ac765892bc25e09147fa11c5171a9287b}{com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_ac2c03d79835985d8b8771aee0945aea8}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_ac2c03d79835985d8b8771aee0945aea8}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}!array\+Insert@{array\+Insert}}
+\index{array\+Insert@{array\+Insert}!com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}}
+\subsubsection{\texorpdfstring{array\+Insert()}{arrayInsert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement.\+array\+Insert (\begin{DoxyParamCaption}\item[{String}]{field,  }\item[{Object}]{value }\end{DoxyParamCaption})}
+
+Insert a value into the specified array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & document path to the array field \\
+\hline
+{\em value} & value to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_a902a626ef8ba98170a0653ca3799c0c8}{com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_acb3745c970e50cf538e8d9b2295a08e1}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_acb3745c970e50cf538e8d9b2295a08e1}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}!change@{change}}
+\index{change@{change}!com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}}
+\subsubsection{\texorpdfstring{change()}{change()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement.\+change (\begin{DoxyParamCaption}\item[{String}]{doc\+Path,  }\item[{Object}]{value }\end{DoxyParamCaption})}
+
+Add an update to the statement setting the field, if it exists at the document path, to the given value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em doc\+Path} & document path to the given value \\
+\hline
+{\em value} & value to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_abd17a3775a262741791dd5688a0e480e}{com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a06d66de8b558408213f7efe0e84b55c0}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a06d66de8b558408213f7efe0e84b55c0}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}!limit@{limit}}
+\index{limit@{limit}!com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}}
+\subsubsection{\texorpdfstring{limit()}{limit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement.\+limit (\begin{DoxyParamCaption}\item[{long}]{number\+Of\+Rows }\end{DoxyParamCaption})}
+
+Add/replace the document limit for this statement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Rows} & limit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a479a30f18124563becbdb944587a35a1}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a479a30f18124563becbdb944587a35a1}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}!merge@{merge}}
+\index{merge@{merge}!com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}}
+\subsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement.\+merge (\begin{DoxyParamCaption}\item[{String}]{document }\end{DoxyParamCaption})}
+
+Unsupported.
+
+
+\begin{DoxyParams}{Parameters}
+{\em document} & document \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_acd828dfa9665ae9290662791d1e0da96}{com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_adb4e6de8bc815f50dc9ee5241454786c}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_adb4e6de8bc815f50dc9ee5241454786c}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}!patch@{patch}}
+\index{patch@{patch}!com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}}
+\subsubsection{\texorpdfstring{patch()}{patch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement.\+patch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}}}]{document }\end{DoxyParamCaption})}
+
+Takes in a patch object and applies it on all documents matching the modify() filter, using the J\+S\+O\+N\+\_\+\+M\+E\+R\+G\+E\+\_\+\+P\+A\+T\+C\+H() function. Please note that \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} does not support expressions as a field values, please use \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_afc2985a9cf8d2624c16428d2be2427b4}{patch(\+String)}} method if you need such functionality.
+
+
+\begin{DoxyParams}{Parameters}
+{\em document} & patch object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_a685044daafc9ed7a37d743ac62db9465}{com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_afc2985a9cf8d2624c16428d2be2427b4}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_afc2985a9cf8d2624c16428d2be2427b4}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}!patch@{patch}}
+\index{patch@{patch}!com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}}
+\subsubsection{\texorpdfstring{patch()}{patch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement.\+patch (\begin{DoxyParamCaption}\item[{String}]{document }\end{DoxyParamCaption})}
+
+Takes in a document patch and applies it on all documents matching the modify() filter, using the J\+S\+O\+N\+\_\+\+M\+E\+R\+G\+E\+\_\+\+P\+A\+T\+C\+H() function. A document patch is similar to a J\+S\+ON object, with the key difference that document field values can be nested expressions in addition to literal values. ~\newline
+ Example\+:~\newline
+ collection.\+modify(\char`\"{}\+\_\+id = \+:id\char`\"{})~\newline
+ .patch(\char`\"{}\{\textbackslash{}\char`\"{}zip"\+: address.\+zip-\/300000, "street"\+: C\+O\+N\+C\+AT(\$.name, \textquotesingle{}\textquotesingle{}\textquotesingle{}s street\+: \textquotesingle{}, \$.address.\+street)\}\char`\"{})$<$br$>$
+.\+bind(\char`\"{}id\char`\"{}, \char`\"{}2").\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_ae92dce50b119561fd532303ad491c610}{execute()}};
+
+
+\begin{DoxyParams}{Parameters}
+{\em document} & patch object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_a67bbbca2a519b79e54c1957e4d2f7c92}{com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a224c3d0f2d2218a7d20ecb35ab48bccb}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a224c3d0f2d2218a7d20ecb35ab48bccb}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}!set@{set}}
+\index{set@{set}!com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement.\+set (\begin{DoxyParamCaption}\item[{String}]{doc\+Path,  }\item[{Object}]{value }\end{DoxyParamCaption})}
+
+Add an update to the statement setting the field as the document path to the given value for all documents matching the search criteria.
+
+
+\begin{DoxyParams}{Parameters}
+{\em doc\+Path} & document path to the given value \\
+\hline
+{\em value} & value to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_a4d22ce888e1c809740310f56cba2b6a3}{com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a55eabda9b2689157d35a7c56fcce51fe}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a55eabda9b2689157d35a7c56fcce51fe}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}!sort@{sort}}
+\index{sort@{sort}!com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}}
+\subsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement.\+sort (\begin{DoxyParamCaption}\item[{String...}]{sort\+Fields }\end{DoxyParamCaption})}
+
+Add/replace the order specification for this statement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sort\+Fields} & sort expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a32c8da3dfdab70bf211d44db0c2f7ca2}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_a32c8da3dfdab70bf211d44db0c2f7ca2}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}!unset@{unset}}
+\index{unset@{unset}!com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement}}
+\subsubsection{\texorpdfstring{unset()}{unset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement.\+unset (\begin{DoxyParamCaption}\item[{String...}]{fields }\end{DoxyParamCaption})}
+
+Nullify the given fields.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fields} & one or more field names \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_ae2479079b83bdbefcabdf68380467a6d}{com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement\+Impl}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_modify_statement_8java}{Modify\+Statement.\+java}}\end{DoxyCompactItemize}

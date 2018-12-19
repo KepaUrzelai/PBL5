@@ -1,0 +1,524 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload@{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{com.\+mysql.\+cj.\+protocol.\+Message}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a5cf38824eb92c94a8282c2c5a4176807}{to\+String}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aa97701b593cd96d676faffcc0d8c39b9}{to\+Super\+String}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a510e5503de0411a6a71d4d49d8be1b63}{Native\+Packet\+Payload}} (byte\mbox{[}$\,$\mbox{]} buf)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a8a2eaf0647d9df50af08e7d34ff95916}{Native\+Packet\+Payload}} (int size)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ac1c1fac4baf8675645a98e43fef6ffc9}{get\+Capacity}} ()
+\item 
+final void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a5ac2d3e7b29e3d19ba69dd7cc2942856}{ensure\+Capacity}} (int additional\+Data)
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a9aad2cb05c0a41d027987a601991e1a0}{get\+Byte\+Buffer}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a291159b7dd115f45c9c384f59c33ebbb}{set\+Byte\+Buffer}} (byte\mbox{[}$\,$\mbox{]} byte\+Buffer\+To\+Set)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aabf5bb67ce83f25d25373f902c403754}{get\+Payload\+Length}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_af87d8023608d4744b22b047335ac69a5}{set\+Payload\+Length}} (int buf\+Length\+To\+Set)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a89ff1dc3fa0998b1362a9fc2351d6797}{get\+Position}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aa6b85c7f35aa9286b9b6f462dd82623d}{set\+Position}} (int position\+To\+Set)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a4367996e181d7956f2b586c27f1c04ee}{is\+Error\+Packet}} ()
+\item 
+final boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aebc952e2498deecf37b0b02c313b7bb8}{is\+E\+O\+F\+Packet}} ()
+\item 
+final boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aa4a35c30b6d281a9aace69b8c2996432}{is\+Auth\+Method\+Switch\+Request\+Packet}} ()
+\item 
+final boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a0636ef9a0086c5caef961b567fd92f80}{is\+O\+K\+Packet}} ()
+\item 
+final boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a0066c5b03b5cb03b5178a6927b9b32ee}{is\+Result\+Set\+O\+K\+Packet}} ()
+\item 
+final boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a54b7b6f463139cb3d33d84212db442d3}{is\+Auth\+More\+Data}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ad9d225e02fbb482471592f99b5a16958}{write\+Integer}} (\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_constants_1_1_integer_data_type}{Integer\+Data\+Type}} type, long l)
+\item 
+final long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a1e4284bb772c7244ad163927017f13dc}{read\+Integer}} (\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_constants_1_1_integer_data_type}{Integer\+Data\+Type}} type)
+\item 
+final void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_add0512948b6c89c36d0e88b75666e181}{write\+Bytes}} (String\+Self\+Data\+Type type, byte\mbox{[}$\,$\mbox{]} b)
+\item 
+final void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a980a8f52827e0084c623c0d0c6b27e5f}{write\+Bytes}} (String\+Length\+Data\+Type type, byte\mbox{[}$\,$\mbox{]} b)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ac5301ca0c4705a68a1be3815410bef3b}{write\+Bytes}} (String\+Self\+Data\+Type type, byte\mbox{[}$\,$\mbox{]} b, int offset, int len)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ad5aec078f1f7185c3a4bf9cb3512cf86}{write\+Bytes}} (String\+Length\+Data\+Type type, byte\mbox{[}$\,$\mbox{]} b, int offset, int len)
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a58481f149631e0df20f8070d086dc7a1}{read\+Bytes}} (String\+Self\+Data\+Type type)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_afea96a6e9c4a2fc5e4faf2582a0899b1}{skip\+Bytes}} (String\+Self\+Data\+Type type)
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a11abcbc7ccdaa3c84eb67d2b7f194270}{read\+Bytes}} (String\+Length\+Data\+Type type, int len)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a63ebde96c09048957ca95498c76d3a36}{read\+String}} (String\+Self\+Data\+Type type, String encoding)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ac700d17fde03d8cc82d3e04eaa7ac596}{read\+String}} (String\+Length\+Data\+Type type, String encoding, int len)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a8ca35d465ee7fe7c94dc8eb828d52b82}{extract\+Sql\+From\+Packet}} (String possible\+Sql\+Query, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} packet, int end\+Of\+Query\+Packet\+Position, int max\+Query\+Size\+To\+Log)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aa433964e3274cf5500def5db6794b18d}{N\+U\+L\+L\+\_\+\+L\+E\+N\+G\+TH}} = -\/1
+\item 
+static final short \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aaa3e674a10a430e623fe2b836dbd63c3}{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+R\+R\+OR}} = 0x\+FF
+\item 
+static final short \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a5e6f1efc8b1c366b74219d7de151b15e}{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+OF}} = 0x\+FE
+\item 
+static final short \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a7877c9cad9d781274ac6c8efa78cfbce}{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+A\+U\+T\+H\+\_\+\+S\+W\+I\+T\+CH}} = 0x\+FE
+\item 
+static final short \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aeda83ee2cea335a96baa7a12e048c6bc}{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+N\+F\+I\+LE}} = 0x\+FB
+\item 
+static final short \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a6c870c37287d975707cae76682221e08}{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+OK}} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Packet\+Payload is the content of a full single packet (independent from on-\/wire splitting) communicated with the server. We can manipulate the packet\textquotesingle{}s underlying buffer when sending commands with \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ad9d225e02fbb482471592f99b5a16958}{write\+Integer()}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_add0512948b6c89c36d0e88b75666e181}{write\+Bytes()}}, etc. We can check the packet type with \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aebc952e2498deecf37b0b02c313b7bb8}{is\+E\+O\+F\+Packet()}}, etc predicates.
+
+A position is maintained for reading/writing data. A payload length is maintained allowing the Packet\+Payload to be decoupled from the size of the underlying buffer. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a510e5503de0411a6a71d4d49d8be1b63}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a510e5503de0411a6a71d4d49d8be1b63}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!Native\+Packet\+Payload@{Native\+Packet\+Payload}}
+\index{Native\+Packet\+Payload@{Native\+Packet\+Payload}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{Native\+Packet\+Payload()}{NativePacketPayload()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+Native\+Packet\+Payload (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buf }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a8a2eaf0647d9df50af08e7d34ff95916}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a8a2eaf0647d9df50af08e7d34ff95916}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!Native\+Packet\+Payload@{Native\+Packet\+Payload}}
+\index{Native\+Packet\+Payload@{Native\+Packet\+Payload}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{Native\+Packet\+Payload()}{NativePacketPayload()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+Native\+Packet\+Payload (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a5ac2d3e7b29e3d19ba69dd7cc2942856}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a5ac2d3e7b29e3d19ba69dd7cc2942856}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!ensure\+Capacity@{ensure\+Capacity}}
+\index{ensure\+Capacity@{ensure\+Capacity}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{ensure\+Capacity()}{ensureCapacity()}}
+{\footnotesize\ttfamily final void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+ensure\+Capacity (\begin{DoxyParamCaption}\item[{int}]{additional\+Data }\end{DoxyParamCaption})}
+
+Checks that underlying buffer has enough space to store additional\+Data bytes starting from current position. If buffer size is smaller than required then it is re-\/allocated with bigger size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em additional\+Data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a8ca35d465ee7fe7c94dc8eb828d52b82}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a8ca35d465ee7fe7c94dc8eb828d52b82}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!extract\+Sql\+From\+Packet@{extract\+Sql\+From\+Packet}}
+\index{extract\+Sql\+From\+Packet@{extract\+Sql\+From\+Packet}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{extract\+Sql\+From\+Packet()}{extractSqlFromPacket()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+extract\+Sql\+From\+Packet (\begin{DoxyParamCaption}\item[{String}]{possible\+Sql\+Query,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}}]{packet,  }\item[{int}]{end\+Of\+Query\+Packet\+Position,  }\item[{int}]{max\+Query\+Size\+To\+Log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a9aad2cb05c0a41d027987a601991e1a0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a9aad2cb05c0a41d027987a601991e1a0}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!get\+Byte\+Buffer@{get\+Byte\+Buffer}}
+\index{get\+Byte\+Buffer@{get\+Byte\+Buffer}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{get\+Byte\+Buffer()}{getByteBuffer()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+get\+Byte\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the array of bytes this Buffer is using to read from.
+
+\begin{DoxyReturn}{Returns}
+byte array being read from 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_a853af9bf4f09a55058141c7b041a8815}{com.\+mysql.\+cj.\+protocol.\+Message}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ac1c1fac4baf8675645a98e43fef6ffc9}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ac1c1fac4baf8675645a98e43fef6ffc9}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!get\+Capacity@{get\+Capacity}}
+\index{get\+Capacity@{get\+Capacity}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{get\+Capacity()}{getCapacity()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aabf5bb67ce83f25d25373f902c403754}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aabf5bb67ce83f25d25373f902c403754}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!get\+Payload\+Length@{get\+Payload\+Length}}
+\index{get\+Payload\+Length@{get\+Payload\+Length}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{get\+Payload\+Length()}{getPayloadLength()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+get\+Payload\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the actual length of payload the buffer contains. It can be smaller than underlying buffer size because it can be reused after a big packet.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a89ff1dc3fa0998b1362a9fc2351d6797}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a89ff1dc3fa0998b1362a9fc2351d6797}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the current position to write to/ read from
+
+\begin{DoxyReturn}{Returns}
+the current position to write to/ read from 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_a87a2626f6e5aceccffe224bcaf0e126b}{com.\+mysql.\+cj.\+protocol.\+Message}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aa4a35c30b6d281a9aace69b8c2996432}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aa4a35c30b6d281a9aace69b8c2996432}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!is\+Auth\+Method\+Switch\+Request\+Packet@{is\+Auth\+Method\+Switch\+Request\+Packet}}
+\index{is\+Auth\+Method\+Switch\+Request\+Packet@{is\+Auth\+Method\+Switch\+Request\+Packet}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{is\+Auth\+Method\+Switch\+Request\+Packet()}{isAuthMethodSwitchRequestPacket()}}
+{\footnotesize\ttfamily final boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+is\+Auth\+Method\+Switch\+Request\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is it a Protocol\+::\+Auth\+Switch\+Request packet. See \href{http://dev.mysql.com/doc/internals/en/connection-phase-packets.html}{\tt http\+://dev.\+mysql.\+com/doc/internals/en/connection-\/phase-\/packets.\+html}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a54b7b6f463139cb3d33d84212db442d3}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a54b7b6f463139cb3d33d84212db442d3}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!is\+Auth\+More\+Data@{is\+Auth\+More\+Data}}
+\index{is\+Auth\+More\+Data@{is\+Auth\+More\+Data}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{is\+Auth\+More\+Data()}{isAuthMoreData()}}
+{\footnotesize\ttfamily final boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+is\+Auth\+More\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is it a Protocol\+::\+Auth\+More\+Data packet. See \href{http://dev.mysql.com/doc/internals/en/connection-phase-packets.html#packet-Protocol::AuthMoreData}{\tt http\+://dev.\+mysql.\+com/doc/internals/en/connection-\/phase-\/packets.\+html\#packet-\/\+Protocol\+::\+Auth\+More\+Data}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aebc952e2498deecf37b0b02c313b7bb8}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aebc952e2498deecf37b0b02c313b7bb8}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!is\+E\+O\+F\+Packet@{is\+E\+O\+F\+Packet}}
+\index{is\+E\+O\+F\+Packet@{is\+E\+O\+F\+Packet}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{is\+E\+O\+F\+Packet()}{isEOFPacket()}}
+{\footnotesize\ttfamily final boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+is\+E\+O\+F\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is it a E\+OF packet. See \href{http://dev.mysql.com/doc/internals/en/packet-EOF_Packet.html}{\tt http\+://dev.\+mysql.\+com/doc/internals/en/packet-\/\+E\+O\+F\+\_\+\+Packet.\+html}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a4367996e181d7956f2b586c27f1c04ee}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a4367996e181d7956f2b586c27f1c04ee}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!is\+Error\+Packet@{is\+Error\+Packet}}
+\index{is\+Error\+Packet@{is\+Error\+Packet}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{is\+Error\+Packet()}{isErrorPacket()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+is\+Error\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is it a E\+R\+R\+OR packet.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a0636ef9a0086c5caef961b567fd92f80}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a0636ef9a0086c5caef961b567fd92f80}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!is\+O\+K\+Packet@{is\+O\+K\+Packet}}
+\index{is\+O\+K\+Packet@{is\+O\+K\+Packet}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{is\+O\+K\+Packet()}{isOKPacket()}}
+{\footnotesize\ttfamily final boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+is\+O\+K\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is it an OK packet. See \href{http://dev.mysql.com/doc/internals/en/packet-OK_Packet.html}{\tt http\+://dev.\+mysql.\+com/doc/internals/en/packet-\/\+O\+K\+\_\+\+Packet.\+html}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a0066c5b03b5cb03b5178a6927b9b32ee}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a0066c5b03b5cb03b5178a6927b9b32ee}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!is\+Result\+Set\+O\+K\+Packet@{is\+Result\+Set\+O\+K\+Packet}}
+\index{is\+Result\+Set\+O\+K\+Packet@{is\+Result\+Set\+O\+K\+Packet}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{is\+Result\+Set\+O\+K\+Packet()}{isResultSetOKPacket()}}
+{\footnotesize\ttfamily final boolean com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+is\+Result\+Set\+O\+K\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is it an OK packet for Result\+Set. Unlike usual 0x00 signature it has 0xfe signature. See \href{http://dev.mysql.com/doc/internals/en/packet-OK_Packet.html}{\tt http\+://dev.\+mysql.\+com/doc/internals/en/packet-\/\+O\+K\+\_\+\+Packet.\+html}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a58481f149631e0df20f8070d086dc7a1}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a58481f149631e0df20f8070d086dc7a1}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!read\+Bytes@{read\+Bytes}}
+\index{read\+Bytes@{read\+Bytes}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{read\+Bytes()}{readBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+read\+Bytes (\begin{DoxyParamCaption}\item[{String\+Self\+Data\+Type}]{type }\end{DoxyParamCaption})}
+
+Read bytes from internal buffer starting from current position into the new byte array. The length of data to read depends on \mbox{\hyperlink{}{String\+Self\+Data\+Type}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a11abcbc7ccdaa3c84eb67d2b7f194270}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a11abcbc7ccdaa3c84eb67d2b7f194270}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!read\+Bytes@{read\+Bytes}}
+\index{read\+Bytes@{read\+Bytes}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{read\+Bytes()}{readBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+read\+Bytes (\begin{DoxyParamCaption}\item[{String\+Length\+Data\+Type}]{type,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+Read len bytes from internal buffer starting from current position into the new byte array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+{\em len} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a1e4284bb772c7244ad163927017f13dc}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a1e4284bb772c7244ad163927017f13dc}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!read\+Integer@{read\+Integer}}
+\index{read\+Integer@{read\+Integer}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{read\+Integer()}{readInteger()}}
+{\footnotesize\ttfamily final long com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+read\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_constants_1_1_integer_data_type}{Integer\+Data\+Type}}}]{type }\end{DoxyParamCaption})}
+
+Read data according to provided Integer type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a63ebde96c09048957ca95498c76d3a36}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a63ebde96c09048957ca95498c76d3a36}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!read\+String@{read\+String}}
+\index{read\+String@{read\+String}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{read\+String()}{readString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+read\+String (\begin{DoxyParamCaption}\item[{String\+Self\+Data\+Type}]{type,  }\item[{String}]{encoding }\end{DoxyParamCaption})}
+
+Read bytes from internal buffer starting from current position decoding them into String using the specified character encoding. The length of data to read depends on \mbox{\hyperlink{}{String\+Self\+Data\+Type}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+{\em encoding} & if null then platform default encoding is used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ac700d17fde03d8cc82d3e04eaa7ac596}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ac700d17fde03d8cc82d3e04eaa7ac596}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!read\+String@{read\+String}}
+\index{read\+String@{read\+String}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{read\+String()}{readString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+read\+String (\begin{DoxyParamCaption}\item[{String\+Length\+Data\+Type}]{type,  }\item[{String}]{encoding,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+Read len bytes from internal buffer starting from current position decoding them into String using the specified character encoding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+{\em encoding} & if null then platform default encoding is used \\
+\hline
+{\em len} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a291159b7dd115f45c9c384f59c33ebbb}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a291159b7dd115f45c9c384f59c33ebbb}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!set\+Byte\+Buffer@{set\+Byte\+Buffer}}
+\index{set\+Byte\+Buffer@{set\+Byte\+Buffer}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{set\+Byte\+Buffer()}{setByteBuffer()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+set\+Byte\+Buffer (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{byte\+Buffer\+To\+Set }\end{DoxyParamCaption})}
+
+Sets the array of bytes to use as a buffer to read from.
+
+
+\begin{DoxyParams}{Parameters}
+{\em byte\+Buffer} & the array of bytes to use as a buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_af87d8023608d4744b22b047335ac69a5}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_af87d8023608d4744b22b047335ac69a5}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!set\+Payload\+Length@{set\+Payload\+Length}}
+\index{set\+Payload\+Length@{set\+Payload\+Length}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{set\+Payload\+Length()}{setPayloadLength()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+set\+Payload\+Length (\begin{DoxyParamCaption}\item[{int}]{buf\+Length\+To\+Set }\end{DoxyParamCaption})}
+
+Set the actual length of payload written to buffer. It can be smaller or equal to underlying buffer size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf\+Length\+To\+Set} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aa6b85c7f35aa9286b9b6f462dd82623d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aa6b85c7f35aa9286b9b6f462dd82623d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+set\+Position (\begin{DoxyParamCaption}\item[{int}]{position\+To\+Set }\end{DoxyParamCaption})}
+
+Set the current position to write to/ read from
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the position (0-\/based index) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_afea96a6e9c4a2fc5e4faf2582a0899b1}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_afea96a6e9c4a2fc5e4faf2582a0899b1}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!skip\+Bytes@{skip\+Bytes}}
+\index{skip\+Bytes@{skip\+Bytes}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{skip\+Bytes()}{skipBytes()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+skip\+Bytes (\begin{DoxyParamCaption}\item[{String\+Self\+Data\+Type}]{type }\end{DoxyParamCaption})}
+
+Set position to next value in internal buffer skipping the current value according to \mbox{\hyperlink{}{String\+Self\+Data\+Type}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a5cf38824eb92c94a8282c2c5a4176807}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a5cf38824eb92c94a8282c2c5a4176807}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aa97701b593cd96d676faffcc0d8c39b9}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aa97701b593cd96d676faffcc0d8c39b9}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!to\+Super\+String@{to\+Super\+String}}
+\index{to\+Super\+String@{to\+Super\+String}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{to\+Super\+String()}{toSuperString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+to\+Super\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_add0512948b6c89c36d0e88b75666e181}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_add0512948b6c89c36d0e88b75666e181}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!write\+Bytes@{write\+Bytes}}
+\index{write\+Bytes@{write\+Bytes}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{write\+Bytes()}{writeBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily final void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+write\+Bytes (\begin{DoxyParamCaption}\item[{String\+Self\+Data\+Type}]{type,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{b }\end{DoxyParamCaption})}
+
+Write all bytes from given byte array into internal buffer starting with current buffer position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & on-\/wire data type \\
+\hline
+{\em b} & from byte array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a980a8f52827e0084c623c0d0c6b27e5f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a980a8f52827e0084c623c0d0c6b27e5f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!write\+Bytes@{write\+Bytes}}
+\index{write\+Bytes@{write\+Bytes}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{write\+Bytes()}{writeBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily final void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+write\+Bytes (\begin{DoxyParamCaption}\item[{String\+Length\+Data\+Type}]{type,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{b }\end{DoxyParamCaption})}
+
+Write all bytes from given byte array into internal buffer starting with current buffer position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & on-\/wire data type \\
+\hline
+{\em b} & from byte array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ac5301ca0c4705a68a1be3815410bef3b}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ac5301ca0c4705a68a1be3815410bef3b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!write\+Bytes@{write\+Bytes}}
+\index{write\+Bytes@{write\+Bytes}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{write\+Bytes()}{writeBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+write\+Bytes (\begin{DoxyParamCaption}\item[{String\+Self\+Data\+Type}]{type,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{b,  }\item[{int}]{offset,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+Write len bytes from given byte array into internal buffer. Read starts from given offset, write starts with current buffer position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & on-\/wire data type \\
+\hline
+{\em b} & from byte array \\
+\hline
+{\em offset} & starting index of b \\
+\hline
+{\em len} & number of bytes to be written \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ad5aec078f1f7185c3a4bf9cb3512cf86}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ad5aec078f1f7185c3a4bf9cb3512cf86}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!write\+Bytes@{write\+Bytes}}
+\index{write\+Bytes@{write\+Bytes}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{write\+Bytes()}{writeBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+write\+Bytes (\begin{DoxyParamCaption}\item[{String\+Length\+Data\+Type}]{type,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{b,  }\item[{int}]{offset,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+Write len bytes from given byte array into internal buffer. Read starts from given offset, write starts with current buffer position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & on-\/wire data type \\
+\hline
+{\em b} & from byte array \\
+\hline
+{\em offset} & starting index of b \\
+\hline
+{\em len} & number of bytes to be written \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ad9d225e02fbb482471592f99b5a16958}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_ad9d225e02fbb482471592f99b5a16958}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!write\+Integer@{write\+Integer}}
+\index{write\+Integer@{write\+Integer}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{write\+Integer()}{writeInteger()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+write\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_constants_1_1_integer_data_type}{Integer\+Data\+Type}}}]{type,  }\item[{long}]{l }\end{DoxyParamCaption})}
+
+Write data according to provided Integer type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+{\em l} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aa433964e3274cf5500def5db6794b18d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aa433964e3274cf5500def5db6794b18d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!N\+U\+L\+L\+\_\+\+L\+E\+N\+G\+TH@{N\+U\+L\+L\+\_\+\+L\+E\+N\+G\+TH}}
+\index{N\+U\+L\+L\+\_\+\+L\+E\+N\+G\+TH@{N\+U\+L\+L\+\_\+\+L\+E\+N\+G\+TH}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{N\+U\+L\+L\+\_\+\+L\+E\+N\+G\+TH}{NULL\_LENGTH}}
+{\footnotesize\ttfamily final long com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+N\+U\+L\+L\+\_\+\+L\+E\+N\+G\+TH = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a7877c9cad9d781274ac6c8efa78cfbce}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a7877c9cad9d781274ac6c8efa78cfbce}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+A\+U\+T\+H\+\_\+\+S\+W\+I\+T\+CH@{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+A\+U\+T\+H\+\_\+\+S\+W\+I\+T\+CH}}
+\index{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+A\+U\+T\+H\+\_\+\+S\+W\+I\+T\+CH@{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+A\+U\+T\+H\+\_\+\+S\+W\+I\+T\+CH}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+A\+U\+T\+H\+\_\+\+S\+W\+I\+T\+CH}{TYPE\_ID\_AUTH\_SWITCH}}
+{\footnotesize\ttfamily final short com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+A\+U\+T\+H\+\_\+\+S\+W\+I\+T\+CH = 0x\+FE\hspace{0.3cm}{\ttfamily [static]}}
+
+It has the same signature as E\+OF, but may be issued by server only during handshake phase \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a5e6f1efc8b1c366b74219d7de151b15e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a5e6f1efc8b1c366b74219d7de151b15e}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+OF@{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+OF}}
+\index{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+OF@{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+OF}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+OF}{TYPE\_ID\_EOF}}
+{\footnotesize\ttfamily final short com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+OF = 0x\+FE\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aaa3e674a10a430e623fe2b836dbd63c3}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aaa3e674a10a430e623fe2b836dbd63c3}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+R\+R\+OR@{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+R\+R\+OR}}
+\index{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+R\+R\+OR@{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+R\+R\+OR}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+R\+R\+OR}{TYPE\_ID\_ERROR}}
+{\footnotesize\ttfamily final short com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+R\+R\+OR = 0x\+FF\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aeda83ee2cea335a96baa7a12e048c6bc}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_aeda83ee2cea335a96baa7a12e048c6bc}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+N\+F\+I\+LE@{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+N\+F\+I\+LE}}
+\index{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+N\+F\+I\+LE@{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+N\+F\+I\+LE}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+N\+F\+I\+LE}{TYPE\_ID\_LOCAL\_INFILE}}
+{\footnotesize\ttfamily final short com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+N\+F\+I\+LE = 0x\+FB\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a6c870c37287d975707cae76682221e08}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a6c870c37287d975707cae76682221e08}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}!T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+OK@{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+OK}}
+\index{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+OK@{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+OK}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Packet\+Payload}}
+\subsubsection{\texorpdfstring{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+OK}{TYPE\_ID\_OK}}
+{\footnotesize\ttfamily final short com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload.\+T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+OK = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/\mbox{\hyperlink{_native_packet_payload_8java}{Native\+Packet\+Payload.\+java}}\end{DoxyCompactItemize}

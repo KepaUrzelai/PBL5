@@ -1,0 +1,203 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection}{}\section{com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection}\index{com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection@{com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection}}
+
+
+Inherits Pooled\+Connection.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection}{com.\+mysql.\+cj.\+jdbc.\+Mysql\+X\+A\+Connection}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection}{com.\+mysql.\+cj.\+jdbc.\+Suspendable\+X\+A\+Connection}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a43cdb60be4556fa920df1f9825251e34}{Mysql\+Pooled\+Connection}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection}} connection)
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a78b602d37e0fa7a264bf701a20b0a524}{add\+Connection\+Event\+Listener}} (Connection\+Event\+Listener connectioneventlistener)
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a04e5a3da33510961ae371ab051926e9f}{remove\+Connection\+Event\+Listener}} (Connection\+Event\+Listener connectioneventlistener)
+\item 
+synchronized Connection \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a0aa675b4e16ec148099680b9651d90e7}{get\+Connection}} ()  throws S\+Q\+L\+Exception 
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_aea456ba604e6a1a157182698ab58b2ef}{close}} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_aa2d07be72ad7852dec58ce9c5e32f7da}{add\+Statement\+Event\+Listener}} (Statement\+Event\+Listener listener)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a9f58a333cb514007a999c93879dcfe51}{remove\+Statement\+Event\+Listener}} (Statement\+Event\+Listener listener)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_ab6f2b2f8756ecc1ae0672be11de86066}{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+V\+E\+NT}} = 1
+\item 
+static final int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a0d53e8b5f1ba1fb67bf1f46adfd2dd3f}{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+L\+O\+S\+E\+D\+\_\+\+E\+V\+E\+NT}} = 2
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized Connection \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_af11a94c2e295f24a352a705b8cec6318}{get\+Connection}} (boolean reset\+Server\+State, boolean for\+Xa)  throws S\+Q\+L\+Exception 
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a6b4c7d8f141c670b4fd01246fb88d45b}{call\+Connection\+Event\+Listeners}} (int event\+Type, S\+Q\+L\+Exception sql\+Exception)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a900b07bbc0861fcdc04ef70092ce2ee0}{get\+Exception\+Interceptor}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection}{Mysql\+Pooled\+Connection}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a032132b2437e23862f9d1f8d2c0788c0}{get\+Instance}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection}} connection)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to wrap and return a physical connection within a logical handle. It also registers and notifies Connection\+Event\+Listeners of any Connection\+Events 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a43cdb60be4556fa920df1f9825251e34}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a43cdb60be4556fa920df1f9825251e34}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}!Mysql\+Pooled\+Connection@{Mysql\+Pooled\+Connection}}
+\index{Mysql\+Pooled\+Connection@{Mysql\+Pooled\+Connection}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{Mysql\+Pooled\+Connection()}{MysqlPooledConnection()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection.\+Mysql\+Pooled\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection}}}]{connection }\end{DoxyParamCaption})}
+
+Construct a new \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection}{Mysql\+Pooled\+Connection}} and set instance variables
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & physical connection to db \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a78b602d37e0fa7a264bf701a20b0a524}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a78b602d37e0fa7a264bf701a20b0a524}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}!add\+Connection\+Event\+Listener@{add\+Connection\+Event\+Listener}}
+\index{add\+Connection\+Event\+Listener@{add\+Connection\+Event\+Listener}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{add\+Connection\+Event\+Listener()}{addConnectionEventListener()}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection.\+add\+Connection\+Event\+Listener (\begin{DoxyParamCaption}\item[{Connection\+Event\+Listener}]{connectioneventlistener }\end{DoxyParamCaption})}
+
+Adds Connection\+Event\+Listeners to a hash table to be used for notification of Connection\+Events
+
+
+\begin{DoxyParams}{Parameters}
+{\em connectioneventlistener} & listener to be notified with Connection\+Events \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_aa2d07be72ad7852dec58ce9c5e32f7da}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_aa2d07be72ad7852dec58ce9c5e32f7da}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}!add\+Statement\+Event\+Listener@{add\+Statement\+Event\+Listener}}
+\index{add\+Statement\+Event\+Listener@{add\+Statement\+Event\+Listener}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{add\+Statement\+Event\+Listener()}{addStatementEventListener()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection.\+add\+Statement\+Event\+Listener (\begin{DoxyParamCaption}\item[{Statement\+Event\+Listener}]{listener }\end{DoxyParamCaption})}
+
+Registers a {\ttfamily Statement\+Event\+Listener} with this {\ttfamily Pooled\+Connection} object. Components that wish to be notified when {\ttfamily Prepared\+Statement}s created by the connection are closed or are detected to be invalid may use this method to register a {\ttfamily Statement\+Event\+Listener} with this {\ttfamily Pooled\+Connection} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & an component which implements the {\ttfamily Statement\+Event\+Listener} interface that is to be registered with this {\ttfamily Pooled\+Connection} object\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+6 
+\end{DoxySince}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a6b4c7d8f141c670b4fd01246fb88d45b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a6b4c7d8f141c670b4fd01246fb88d45b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}!call\+Connection\+Event\+Listeners@{call\+Connection\+Event\+Listeners}}
+\index{call\+Connection\+Event\+Listeners@{call\+Connection\+Event\+Listeners}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{call\+Connection\+Event\+Listeners()}{callConnectionEventListeners()}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection.\+call\+Connection\+Event\+Listeners (\begin{DoxyParamCaption}\item[{int}]{event\+Type,  }\item[{S\+Q\+L\+Exception}]{sql\+Exception }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Notifies all registered Connection\+Event\+Listeners of Connection\+Events. Instantiates a new Connection\+Event which wraps sql\+Exception and invokes either connection\+Close or connection\+Error\+Occurred on listener as appropriate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Type} & value indicating whether connection\+Closed or connection\+Error\+Occurred called \\
+\hline
+{\em sql\+Exception} & the exception being thrown \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_aea456ba604e6a1a157182698ab58b2ef}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_aea456ba604e6a1a157182698ab58b2ef}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}!close@{close}}
+\index{close@{close}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Invoked by the container (not the client), and should close the physical connection. This will be called if the pool is destroyed or the connection\+Event\+Listener receives a connection\+Error\+Occurred event.
+
+\begin{DoxySeeAlso}{See also}
+javax.\+sql.\+Pooled\+Connection\+::close() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a0aa675b4e16ec148099680b9651d90e7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a0aa675b4e16ec148099680b9651d90e7}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}!get\+Connection@{get\+Connection}}
+\index{get\+Connection@{get\+Connection}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{get\+Connection()}{getConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily synchronized Connection com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection.\+get\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Invoked by the container. Return a logical\+Handle object that wraps a physical connection.
+
+\begin{DoxySeeAlso}{See also}
+javax.\+sql.\+Data\+Source\+::get\+Connection() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_af11a94c2e295f24a352a705b8cec6318}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_af11a94c2e295f24a352a705b8cec6318}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}!get\+Connection@{get\+Connection}}
+\index{get\+Connection@{get\+Connection}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{get\+Connection()}{getConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily synchronized Connection com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection.\+get\+Connection (\begin{DoxyParamCaption}\item[{boolean}]{reset\+Server\+State,  }\item[{boolean}]{for\+Xa }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a900b07bbc0861fcdc04ef70092ce2ee0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a900b07bbc0861fcdc04ef70092ce2ee0}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}!get\+Exception\+Interceptor@{get\+Exception\+Interceptor}}
+\index{get\+Exception\+Interceptor@{get\+Exception\+Interceptor}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{get\+Exception\+Interceptor()}{getExceptionInterceptor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection.\+get\+Exception\+Interceptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a032132b2437e23862f9d1f8d2c0788c0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a032132b2437e23862f9d1f8d2c0788c0}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection}{Mysql\+Pooled\+Connection}} com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection.\+get\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection}}}]{connection }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a04e5a3da33510961ae371ab051926e9f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a04e5a3da33510961ae371ab051926e9f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}!remove\+Connection\+Event\+Listener@{remove\+Connection\+Event\+Listener}}
+\index{remove\+Connection\+Event\+Listener@{remove\+Connection\+Event\+Listener}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{remove\+Connection\+Event\+Listener()}{removeConnectionEventListener()}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection.\+remove\+Connection\+Event\+Listener (\begin{DoxyParamCaption}\item[{Connection\+Event\+Listener}]{connectioneventlistener }\end{DoxyParamCaption})}
+
+Removes Connection\+Event\+Listeners from hash table used for notification of Connection\+Events
+
+
+\begin{DoxyParams}{Parameters}
+{\em connectioneventlistener} & listener to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a9f58a333cb514007a999c93879dcfe51}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a9f58a333cb514007a999c93879dcfe51}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}!remove\+Statement\+Event\+Listener@{remove\+Statement\+Event\+Listener}}
+\index{remove\+Statement\+Event\+Listener@{remove\+Statement\+Event\+Listener}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{remove\+Statement\+Event\+Listener()}{removeStatementEventListener()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection.\+remove\+Statement\+Event\+Listener (\begin{DoxyParamCaption}\item[{Statement\+Event\+Listener}]{listener }\end{DoxyParamCaption})}
+
+Removes the specified {\ttfamily Statement\+Event\+Listener} from the list of components that will be notified when the driver detects that a {\ttfamily Prepared\+Statement} has been closed or is invalid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & the component which implements the {\ttfamily Statement\+Event\+Listener} interface that was previously registered with this {\ttfamily Pooled\+Connection} object\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+6 
+\end{DoxySince}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a0d53e8b5f1ba1fb67bf1f46adfd2dd3f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_a0d53e8b5f1ba1fb67bf1f46adfd2dd3f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}!C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+L\+O\+S\+E\+D\+\_\+\+E\+V\+E\+NT@{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+L\+O\+S\+E\+D\+\_\+\+E\+V\+E\+NT}}
+\index{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+L\+O\+S\+E\+D\+\_\+\+E\+V\+E\+NT@{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+L\+O\+S\+E\+D\+\_\+\+E\+V\+E\+NT}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+L\+O\+S\+E\+D\+\_\+\+E\+V\+E\+NT}{CONNECTION\_CLOSED\_EVENT}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection.\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+L\+O\+S\+E\+D\+\_\+\+E\+V\+E\+NT = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+The flag for a connection being closed. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_ab6f2b2f8756ecc1ae0672be11de86066}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection_ab6f2b2f8756ecc1ae0672be11de86066}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}!C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+V\+E\+NT@{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+V\+E\+NT}}
+\index{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+V\+E\+NT@{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+V\+E\+NT}!com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+V\+E\+NT}{CONNECTION\_ERROR\_EVENT}}
+{\footnotesize\ttfamily final int com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection.\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+V\+E\+NT = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+The flag for an exception being thrown. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/\mbox{\hyperlink{_mysql_pooled_connection_8java}{Mysql\+Pooled\+Connection.\+java}}\end{DoxyCompactItemize}

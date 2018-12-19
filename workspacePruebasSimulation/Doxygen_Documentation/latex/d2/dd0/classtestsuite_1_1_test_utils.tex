@@ -1,0 +1,87 @@
+\hypertarget{classtestsuite_1_1_test_utils}{}\section{testsuite.\+Test\+Utils Class Reference}
+\label{classtestsuite_1_1_test_utils}\index{testsuite.\+Test\+Utils@{testsuite.\+Test\+Utils}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classtestsuite_1_1_test_utils_aa56c16bde9485cf06427278716fc80f0}{encode\+Percent}} (String str\+To\+Encode)
+\item 
+static List$<$ Inet6\+Address $>$ \mbox{\hyperlink{classtestsuite_1_1_test_utils_a7b4afe11135792d356ef72338be74054}{get\+Ipv6\+List}} ()
+\item 
+static boolean \mbox{\hyperlink{classtestsuite_1_1_test_utils_a6a23cc4c25f5ec50a93d7735d8591f74}{server\+Listening}} (String host\+Name, int port)
+\item 
+static boolean \mbox{\hyperlink{classtestsuite_1_1_test_utils_a12975c2246ae1be20b9352ad1cff9460}{server\+Listening}} (Inet\+Address addr, int port)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility functions to use in tests. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1_test_utils_aa56c16bde9485cf06427278716fc80f0}\label{classtestsuite_1_1_test_utils_aa56c16bde9485cf06427278716fc80f0}} 
+\index{testsuite\+::\+Test\+Utils@{testsuite\+::\+Test\+Utils}!encode\+Percent@{encode\+Percent}}
+\index{encode\+Percent@{encode\+Percent}!testsuite\+::\+Test\+Utils@{testsuite\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{encode\+Percent()}{encodePercent()}}
+{\footnotesize\ttfamily static String testsuite.\+Test\+Utils.\+encode\+Percent (\begin{DoxyParamCaption}\item[{String}]{str\+To\+Encode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Percent-\/encode all occurrence of the the percent sign (\%) in the given string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+To\+Encode} & the string to encode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the encoded string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtestsuite_1_1_test_utils_a7b4afe11135792d356ef72338be74054}\label{classtestsuite_1_1_test_utils_a7b4afe11135792d356ef72338be74054}} 
+\index{testsuite\+::\+Test\+Utils@{testsuite\+::\+Test\+Utils}!get\+Ipv6\+List@{get\+Ipv6\+List}}
+\index{get\+Ipv6\+List@{get\+Ipv6\+List}!testsuite\+::\+Test\+Utils@{testsuite\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{get\+Ipv6\+List()}{getIpv6List()}}
+{\footnotesize\ttfamily static List$<$Inet6\+Address$>$ testsuite.\+Test\+Utils.\+get\+Ipv6\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get all I\+Pv6 addresses defined in local network adapters.
+
+\begin{DoxyReturn}{Returns}
+a list of \mbox{\hyperlink{}{Inet6\+Address}}s 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtestsuite_1_1_test_utils_a6a23cc4c25f5ec50a93d7735d8591f74}\label{classtestsuite_1_1_test_utils_a6a23cc4c25f5ec50a93d7735d8591f74}} 
+\index{testsuite\+::\+Test\+Utils@{testsuite\+::\+Test\+Utils}!server\+Listening@{server\+Listening}}
+\index{server\+Listening@{server\+Listening}!testsuite\+::\+Test\+Utils@{testsuite\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{server\+Listening()}{serverListening()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static boolean testsuite.\+Test\+Utils.\+server\+Listening (\begin{DoxyParamCaption}\item[{String}]{host\+Name,  }\item[{int}]{port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if there is a server socket listening in the given host and port.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & the host where to look for the server socket \\
+\hline
+{\em port} & the expected port the server is listening \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if there is a server socket listening in the given address and port, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtestsuite_1_1_test_utils_a12975c2246ae1be20b9352ad1cff9460}\label{classtestsuite_1_1_test_utils_a12975c2246ae1be20b9352ad1cff9460}} 
+\index{testsuite\+::\+Test\+Utils@{testsuite\+::\+Test\+Utils}!server\+Listening@{server\+Listening}}
+\index{server\+Listening@{server\+Listening}!testsuite\+::\+Test\+Utils@{testsuite\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{server\+Listening()}{serverListening()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static boolean testsuite.\+Test\+Utils.\+server\+Listening (\begin{DoxyParamCaption}\item[{Inet\+Address}]{addr,  }\item[{int}]{port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if there is a server socket listening in the given address and port.
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & the address where to look for the server socket \\
+\hline
+{\em port} & the expected port the server is listening \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if there is a server socket listening in the given address and port, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/test/java/testsuite/\mbox{\hyperlink{test_2java_2testsuite_2_test_utils_8java}{Test\+Utils.\+java}}\end{DoxyCompactItemize}

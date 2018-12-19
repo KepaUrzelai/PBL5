@@ -1,0 +1,382 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Collection Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection}\index{com.\+mysql.\+cj.\+xdevapi.\+Collection@{com.\+mysql.\+cj.\+xdevapi.\+Collection}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object}{com.\+mysql.\+cj.\+xdevapi.\+Database\+Object}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a93ea1bd694426124c92aa5ae3bf29d2b}{add}} (Map$<$ String, ?$>$ doc)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_aab1599c23da452aa0ad03eb89ede38a0}{add}} (String... json\+Strings)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a3dd00ea68a8c58d35090215f2371765f}{add}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} document)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_acb233dbad895da2bf9fbe3b26627075c}{add}} (Db\+Doc... documents)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_acb0746735df861e86f37d50f4a6b67f0}{find}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a3d2d6fba415d80c26d525057f628f45f}{find}} (String search\+Condition)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_ad98b2d273d43ca6a029979c82e2d250a}{modify}} (String search\+Condition)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_remove_statement}{Remove\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_aff45631a403d8370067af7c4f0a4fab1}{remove}} (String search\+Condition)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a3c707f2c50914f02347a05dcfa8e77d7}{create\+Index}} (String index\+Name, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} index\+Definition)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a2de7cddb075e95bfb3b880cb58fe703f}{create\+Index}} (String index\+Name, String json\+Index\+Definition)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a148bfe19c511fac4e0117d596fd08aa4}{drop\+Index}} (String index\+Name)
+\item 
+long \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a515922bba92c3d82c776095a2692dcd2}{count}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a3f57db07e47da44f25e96c70b301fac1}{new\+Doc}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a7c5c6cf51afb021bd225926bd22a3c67}{replace\+One}} (String id, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} doc)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a618e9acc463938e78aaa0be592204060}{replace\+One}} (String id, String json\+String)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a5b6db06712b9a26fa1f33860ad37301f}{add\+Or\+Replace\+One}} (String id, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} doc)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_adf42b24e9ac93397cdd86f485ac93919}{add\+Or\+Replace\+One}} (String id, String json\+String)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_afbb44f5ae7c315f07d02a22abfc5a204}{get\+One}} (String id)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a60a716403dff168734c61966dccf016c}{remove\+One}} (String id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A client-\/side representation of a collection of documents. This interface allows access/manipulation to the collection through add/find/modify/remove statements. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a93ea1bd694426124c92aa5ae3bf29d2b}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a93ea1bd694426124c92aa5ae3bf29d2b}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!add@{add}}
+\index{add@{add}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+add (\begin{DoxyParamCaption}\item[{Map$<$ String, ?$>$}]{doc }\end{DoxyParamCaption})}
+
+Add a document in the form of a Map.
+
+
+\begin{DoxyParams}{Parameters}
+{\em doc} & map of key-\/value parameters representing the document fields \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_aab1599c23da452aa0ad03eb89ede38a0}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_aab1599c23da452aa0ad03eb89ede38a0}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!add@{add}}
+\index{add@{add}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+add (\begin{DoxyParamCaption}\item[{String...}]{json\+Strings }\end{DoxyParamCaption})}
+
+Add one or more documents.
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Strings} & one or more documents given as J\+S\+ON strings \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a3dd00ea68a8c58d35090215f2371765f}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a3dd00ea68a8c58d35090215f2371765f}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!add@{add}}
+\index{add@{add}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}}}]{document }\end{DoxyParamCaption})}
+
+Add a document in the form of a \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em document} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_acb233dbad895da2bf9fbe3b26627075c}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_acb233dbad895da2bf9fbe3b26627075c}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!add@{add}}
+\index{add@{add}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+add (\begin{DoxyParamCaption}\item[{Db\+Doc...}]{documents }\end{DoxyParamCaption})}
+
+Add a sequence of documents.
+
+
+\begin{DoxyParams}{Parameters}
+{\em documents} & one or more documents given as \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a5b6db06712b9a26fa1f33860ad37301f}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a5b6db06712b9a26fa1f33860ad37301f}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!add\+Or\+Replace\+One@{add\+Or\+Replace\+One}}
+\index{add\+Or\+Replace\+One@{add\+Or\+Replace\+One}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{add\+Or\+Replace\+One()}{addOrReplaceOne()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+add\+Or\+Replace\+One (\begin{DoxyParamCaption}\item[{String}]{id,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}}}]{doc }\end{DoxyParamCaption})}
+
+Adds the document to the collection. The following algorithm applies\+:
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the document id of the document to be replaced \\
+\hline
+{\em doc} & the new document, which may contain expressions. If doc contains an \+\_\+id value and it does not match the given id then the error will be thrown. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} object, which will indicate the number of affected documents (0 -\/ if none, 1 -\/ if added, 2 -\/ if replaced) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_adf42b24e9ac93397cdd86f485ac93919}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_adf42b24e9ac93397cdd86f485ac93919}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!add\+Or\+Replace\+One@{add\+Or\+Replace\+One}}
+\index{add\+Or\+Replace\+One@{add\+Or\+Replace\+One}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{add\+Or\+Replace\+One()}{addOrReplaceOne()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+add\+Or\+Replace\+One (\begin{DoxyParamCaption}\item[{String}]{id,  }\item[{String}]{json\+String }\end{DoxyParamCaption})}
+
+Adds the document to the collection. The following algorithm applies\+:
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the document id of the document to be replaced \\
+\hline
+{\em json\+String} & the new document, given as J\+S\+ON string, which may contain expressions. If doc contains an \+\_\+id value and it does not match the given id then the error will be thrown. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} object, which will indicate the number of affected documents (0 -\/ if none, 1 -\/ if added, 2 -\/ if replaced) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a515922bba92c3d82c776095a2692dcd2}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a515922bba92c3d82c776095a2692dcd2}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!count@{count}}
+\index{count@{count}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+xdevapi.\+Collection.\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} the number of documents in this collection.
+
+\begin{DoxyReturn}{Returns}
+The number of documents in this collection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a3c707f2c50914f02347a05dcfa8e77d7}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a3c707f2c50914f02347a05dcfa8e77d7}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!create\+Index@{create\+Index}}
+\index{create\+Index@{create\+Index}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{create\+Index()}{createIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+create\+Index (\begin{DoxyParamCaption}\item[{String}]{index\+Name,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}}}]{index\+Definition }\end{DoxyParamCaption})}
+
+Create a new statement defining the creation of an index on this collection. 
+
+Example\+: collection.\+create\+Index(\char`\"{}my\+Index\char`\"{}, \char`\"{}\{\textbackslash{}\char`\"{}fields"\+: \mbox{[}\{"field"\+: "\$.my\+Geo\+Json\+Field", "type"\+: "G\+E\+O\+J\+S\+ON", "required"\+: true, "options"\+: 2, "srid"\+: 4326\}\mbox{]}, "type"\+:"S\+P\+A\+T\+I\+AL"\}");
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Name} & index name \\
+\hline
+{\em index\+Definition} & J\+S\+ON document with the following fields\+: 
+\begin{DoxyItemize}
+\item fields\+: array of Index\+Field objects, each describing a single document member to be included in the index (see below) 
+\item type\+: string, (optional) the type of index. One of I\+N\+D\+EX or S\+P\+A\+T\+I\+AL (case insensitive). Default is I\+N\+D\+EX and may be omitted. 
+\end{DoxyItemize}where single Index\+Field description consists of the following fields\+: 
+\begin{DoxyItemize}
+\item field\+: string, the full document path to the document member or field to be indexed 
+\item type\+: string, one of the supported S\+QL column types to map the field into (see below for a list). For numeric types, the optional U\+N\+S\+I\+G\+N\+ED keyword may follow. For the T\+E\+XT type, the length to consider for indexing may be added. \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_type}{Type}} descriptions are case insensitive. 
+\item required\+: bool, (optional) true if the field is required to exist in the document. Defaults to false, except for G\+E\+O\+J\+S\+ON where it defaults to true 
+\item options\+: int, (optional) special option flags for use when decoding G\+E\+O\+J\+S\+ON data 
+\item srid\+: int, (optional) srid value for use when decoding G\+E\+O\+J\+S\+ON data 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a2de7cddb075e95bfb3b880cb58fe703f}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a2de7cddb075e95bfb3b880cb58fe703f}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!create\+Index@{create\+Index}}
+\index{create\+Index@{create\+Index}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{create\+Index()}{createIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+create\+Index (\begin{DoxyParamCaption}\item[{String}]{index\+Name,  }\item[{String}]{json\+Index\+Definition }\end{DoxyParamCaption})}
+
+Create a new statement defining the creation of an index on this collection. 
+
+Example\+: collection.\+create\+Index(\char`\"{}my\+Index\char`\"{}, \char`\"{}\{\textbackslash{}\char`\"{}fields"\+: \mbox{[}\{"field"\+: "\$.my\+Geo\+Json\+Field", "type"\+: "G\+E\+O\+J\+S\+ON", "required"\+: true, "options"\+: 2, "srid"\+: 4326\}\mbox{]}, "type"\+:"S\+P\+A\+T\+I\+AL"\}");
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Name} & index name \\
+\hline
+{\em json\+Index\+Definition} & J\+S\+ON document with the following fields\+: 
+\begin{DoxyItemize}
+\item fields\+: array of Index\+Field objects, each describing a single document member to be included in the index (see below) 
+\item type\+: string, (optional) the type of index. One of I\+N\+D\+EX or S\+P\+A\+T\+I\+AL. Default is I\+N\+D\+EX and may be omitted. 
+\end{DoxyItemize}where single Index\+Field description consists of the following fields\+: 
+\begin{DoxyItemize}
+\item field\+: string, the full document path to the document member or field to be indexed 
+\item type\+: string, one of the supported S\+QL column types to map the field into (see below for a list). For numeric types, the optional U\+N\+S\+I\+G\+N\+ED keyword may follow. For the T\+E\+XT type, the length to consider for indexing may be added. 
+\item required\+: bool, (optional) true if the field is required to exist in the document. Defaults to false, except for G\+E\+O\+J\+S\+ON where it defaults to true 
+\item options\+: int, (optional) special option flags for use when decoding G\+E\+O\+J\+S\+ON data 
+\item srid\+: int, (optional) srid value for use when decoding G\+E\+O\+J\+S\+ON data 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a148bfe19c511fac4e0117d596fd08aa4}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a148bfe19c511fac4e0117d596fd08aa4}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!drop\+Index@{drop\+Index}}
+\index{drop\+Index@{drop\+Index}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{drop\+Index()}{dropIndex()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+xdevapi.\+Collection.\+drop\+Index (\begin{DoxyParamCaption}\item[{String}]{index\+Name }\end{DoxyParamCaption})}
+
+Create a new statement defining the removal of an index on this collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Name} & index name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_acb0746735df861e86f37d50f4a6b67f0}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_acb0746735df861e86f37d50f4a6b67f0}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!find@{find}}
+\index{find@{find}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+find (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create a new find statement retrieving all documents in the collection.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a3d2d6fba415d80c26d525057f628f45f}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a3d2d6fba415d80c26d525057f628f45f}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!find@{find}}
+\index{find@{find}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+find (\begin{DoxyParamCaption}\item[{String}]{search\+Condition }\end{DoxyParamCaption})}
+
+Create a new find statement retrieving documents matching the given search condition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+Condition} & condition expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_afbb44f5ae7c315f07d02a22abfc5a204}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_afbb44f5ae7c315f07d02a22abfc5a204}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!get\+One@{get\+One}}
+\index{get\+One@{get\+One}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{get\+One()}{getOne()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+get\+One (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})}
+
+Return the document with the given id.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the document id of the document to be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the document, or N\+U\+LL if no match found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_ad98b2d273d43ca6a029979c82e2d250a}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_ad98b2d273d43ca6a029979c82e2d250a}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!modify@{modify}}
+\index{modify@{modify}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{modify()}{modify()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+modify (\begin{DoxyParamCaption}\item[{String}]{search\+Condition }\end{DoxyParamCaption})}
+
+Create a new modify statement affecting documents matching the given search condition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+Condition} & condition expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a3f57db07e47da44f25e96c70b301fac1}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a3f57db07e47da44f25e96c70b301fac1}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!new\+Doc@{new\+Doc}}
+\index{new\+Doc@{new\+Doc}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{new\+Doc()}{newDoc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+new\+Doc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create a new document.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_aff45631a403d8370067af7c4f0a4fab1}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_aff45631a403d8370067af7c4f0a4fab1}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!remove@{remove}}
+\index{remove@{remove}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_remove_statement}{Remove\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+remove (\begin{DoxyParamCaption}\item[{String}]{search\+Condition }\end{DoxyParamCaption})}
+
+Create a new removal statement affecting documents matching the given search condition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+Condition} & condition expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_remove_statement}{Remove\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a60a716403dff168734c61966dccf016c}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a60a716403dff168734c61966dccf016c}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!remove\+One@{remove\+One}}
+\index{remove\+One@{remove\+One}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{remove\+One()}{removeOne()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+remove\+One (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})}
+
+Removes the document with the given id.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the document id of the document to be removed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} object, which will indicate the number of removed documents (1 or 0, if none) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a7c5c6cf51afb021bd225926bd22a3c67}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a7c5c6cf51afb021bd225926bd22a3c67}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!replace\+One@{replace\+One}}
+\index{replace\+One@{replace\+One}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{replace\+One()}{replaceOne()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+replace\+One (\begin{DoxyParamCaption}\item[{String}]{id,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}}}]{doc }\end{DoxyParamCaption})}
+
+Takes in a document object that will replace the matching document. If no matches are found, the function returns normally with no changes being made.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the document id of the document to be replaced \\
+\hline
+{\em doc} & the new document, which may contain expressions. If document contains an \+\_\+id value, it is ignored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} object, which will indicate the number of affected documents (1 or 0, if none) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a618e9acc463938e78aaa0be592204060}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection_a618e9acc463938e78aaa0be592204060}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}!replace\+One@{replace\+One}}
+\index{replace\+One@{replace\+One}!com\+::mysql\+::cj\+::xdevapi\+::\+Collection@{com\+::mysql\+::cj\+::xdevapi\+::\+Collection}}
+\subsubsection{\texorpdfstring{replace\+One()}{replaceOne()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} com.\+mysql.\+cj.\+xdevapi.\+Collection.\+replace\+One (\begin{DoxyParamCaption}\item[{String}]{id,  }\item[{String}]{json\+String }\end{DoxyParamCaption})}
+
+Takes in a document object that will replace the matching document. If no matches are found, the function returns normally with no changes being made.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the document id of the document to be replaced \\
+\hline
+{\em json\+String} & the new document, given as J\+S\+ON string, which may contain expressions. If document contains an \+\_\+id value, it is ignored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} object, which will indicate the number of affected documents (1 or 0, if none) 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_collection_8java}{Collection.\+java}}\end{DoxyCompactItemize}

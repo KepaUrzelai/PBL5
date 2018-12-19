@@ -1,0 +1,89 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1_mysqlx_session}{}\section{com.\+mysql.\+cj.\+Mysqlx\+Session Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1_mysqlx_session}\index{com.\+mysql.\+cj.\+Mysqlx\+Session@{com.\+mysql.\+cj.\+Mysqlx\+Session}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session}{com.\+mysql.\+cj.\+Core\+Session}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a1a2c1972d8de7a5e18da310e81ba0547}{Mysqlx\+Session}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_core_session_ac60f96087dc4f9a719f136f8fb74fddf}{host\+Info}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} prop\+Set)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_aacede9795b96289068a7fe193700cb2c}{get\+Process\+Host}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a8d8bbd10169ac9d49040a093ec723c35}{get\+Port}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a20bd0339551fe3c5bb9b5806e2036ed3}{quit}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result}{Sql\+Result}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a736c9d536b35c8ffce3da389060de4d6}{execute\+Sql}} (String sql, List$<$ Object $>$ args)
+\item 
+Completable\+Future$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result}{Sql\+Result}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a309528046194a468f181727415fddb51}{async\+Execute\+Sql}} (String sql, List$<$ Object $>$ args)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a1507b9d1e31b712971270eb58a291f3b}{is\+Closed}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a1a2c1972d8de7a5e18da310e81ba0547}\label{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a1a2c1972d8de7a5e18da310e81ba0547}} 
+\index{com\+::mysql\+::cj\+::\+Mysqlx\+Session@{com\+::mysql\+::cj\+::\+Mysqlx\+Session}!Mysqlx\+Session@{Mysqlx\+Session}}
+\index{Mysqlx\+Session@{Mysqlx\+Session}!com\+::mysql\+::cj\+::\+Mysqlx\+Session@{com\+::mysql\+::cj\+::\+Mysqlx\+Session}}
+\subsubsection{\texorpdfstring{Mysqlx\+Session()}{MysqlxSession()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+Mysqlx\+Session.\+Mysqlx\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}}}]{host\+Info,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}}}]{prop\+Set }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a309528046194a468f181727415fddb51}\label{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a309528046194a468f181727415fddb51}} 
+\index{com\+::mysql\+::cj\+::\+Mysqlx\+Session@{com\+::mysql\+::cj\+::\+Mysqlx\+Session}!async\+Execute\+Sql@{async\+Execute\+Sql}}
+\index{async\+Execute\+Sql@{async\+Execute\+Sql}!com\+::mysql\+::cj\+::\+Mysqlx\+Session@{com\+::mysql\+::cj\+::\+Mysqlx\+Session}}
+\subsubsection{\texorpdfstring{async\+Execute\+Sql()}{asyncExecuteSql()}}
+{\footnotesize\ttfamily Completable\+Future$<$\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result}{Sql\+Result}}$>$ com.\+mysql.\+cj.\+Mysqlx\+Session.\+async\+Execute\+Sql (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{List$<$ Object $>$}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a736c9d536b35c8ffce3da389060de4d6}\label{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a736c9d536b35c8ffce3da389060de4d6}} 
+\index{com\+::mysql\+::cj\+::\+Mysqlx\+Session@{com\+::mysql\+::cj\+::\+Mysqlx\+Session}!execute\+Sql@{execute\+Sql}}
+\index{execute\+Sql@{execute\+Sql}!com\+::mysql\+::cj\+::\+Mysqlx\+Session@{com\+::mysql\+::cj\+::\+Mysqlx\+Session}}
+\subsubsection{\texorpdfstring{execute\+Sql()}{executeSql()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result}{Sql\+Result}} com.\+mysql.\+cj.\+Mysqlx\+Session.\+execute\+Sql (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{List$<$ Object $>$}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a8d8bbd10169ac9d49040a093ec723c35}\label{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a8d8bbd10169ac9d49040a093ec723c35}} 
+\index{com\+::mysql\+::cj\+::\+Mysqlx\+Session@{com\+::mysql\+::cj\+::\+Mysqlx\+Session}!get\+Port@{get\+Port}}
+\index{get\+Port@{get\+Port}!com\+::mysql\+::cj\+::\+Mysqlx\+Session@{com\+::mysql\+::cj\+::\+Mysqlx\+Session}}
+\subsubsection{\texorpdfstring{get\+Port()}{getPort()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+Mysqlx\+Session.\+get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_aacede9795b96289068a7fe193700cb2c}\label{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_aacede9795b96289068a7fe193700cb2c}} 
+\index{com\+::mysql\+::cj\+::\+Mysqlx\+Session@{com\+::mysql\+::cj\+::\+Mysqlx\+Session}!get\+Process\+Host@{get\+Process\+Host}}
+\index{get\+Process\+Host@{get\+Process\+Host}!com\+::mysql\+::cj\+::\+Mysqlx\+Session@{com\+::mysql\+::cj\+::\+Mysqlx\+Session}}
+\subsubsection{\texorpdfstring{get\+Process\+Host()}{getProcessHost()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+Mysqlx\+Session.\+get\+Process\+Host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a04063248e91bc3aa9dbe8d4db1d0a4c2}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a1507b9d1e31b712971270eb58a291f3b}\label{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a1507b9d1e31b712971270eb58a291f3b}} 
+\index{com\+::mysql\+::cj\+::\+Mysqlx\+Session@{com\+::mysql\+::cj\+::\+Mysqlx\+Session}!is\+Closed@{is\+Closed}}
+\index{is\+Closed@{is\+Closed}!com\+::mysql\+::cj\+::\+Mysqlx\+Session@{com\+::mysql\+::cj\+::\+Mysqlx\+Session}}
+\subsubsection{\texorpdfstring{is\+Closed()}{isClosed()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+Mysqlx\+Session.\+is\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_a82714d0d3979d474bcafd3884f3ea0de}{com.\+mysql.\+cj.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a20bd0339551fe3c5bb9b5806e2036ed3}\label{classcom_1_1mysql_1_1cj_1_1_mysqlx_session_a20bd0339551fe3c5bb9b5806e2036ed3}} 
+\index{com\+::mysql\+::cj\+::\+Mysqlx\+Session@{com\+::mysql\+::cj\+::\+Mysqlx\+Session}!quit@{quit}}
+\index{quit@{quit}!com\+::mysql\+::cj\+::\+Mysqlx\+Session@{com\+::mysql\+::cj\+::\+Mysqlx\+Session}}
+\subsubsection{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+Mysqlx\+Session.\+quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Log-\/off of the My\+S\+QL server and close the socket. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session_af29d73c4e1343fb4bee53b0bac720108}{com.\+mysql.\+cj.\+Session}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/\mbox{\hyperlink{main_2core-impl_2java_2com_2mysql_2cj_2_mysqlx_session_8java}{Mysqlx\+Session.\+java}}\end{DoxyCompactItemize}

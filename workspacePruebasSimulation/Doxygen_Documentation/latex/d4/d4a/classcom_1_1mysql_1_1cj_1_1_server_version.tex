@@ -1,0 +1,123 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1_server_version}{}\section{com.\+mysql.\+cj.\+Server\+Version Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1_server_version}\index{com.\+mysql.\+cj.\+Server\+Version@{com.\+mysql.\+cj.\+Server\+Version}}
+
+
+Inherits \mbox{\hyperlink{class_comparable}{Comparable$<$ Server\+Version $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version_a958c017aeaff68e3129d98c08c9428bc}{Server\+Version}} (String complete\+Version, int major, int minor, int subminor)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version_a7c16c47ebd3efda6d118efed484aed12}{Server\+Version}} (int major, int minor, int subminor)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version_afaaface05180f229b80bdd95c0a11113}{get\+Major}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version_a53bc82dac08a5c6446b1750ef48872eb}{get\+Minor}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version_a753b8e6fb4e9546cb331dd6b3b2d70e4}{get\+Subminor}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version_ac6732acde7ab4125a366f4c6d2f957f0}{to\+String}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version_a4c7863cc27ebd138be35a2959eb2adb4}{compare\+To}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}} other)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version_abc8b53b9a5a5bf7acc4665d620c07fda}{meets\+Minimum}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}} min)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version_a058b132076121d8763c12432b943b219}{parse\+Version}} (final String version\+String)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A server version. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_version_a958c017aeaff68e3129d98c08c9428bc}\label{classcom_1_1mysql_1_1cj_1_1_server_version_a958c017aeaff68e3129d98c08c9428bc}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}!Server\+Version@{Server\+Version}}
+\index{Server\+Version@{Server\+Version}!com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}}
+\subsubsection{\texorpdfstring{Server\+Version()}{ServerVersion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+Server\+Version.\+Server\+Version (\begin{DoxyParamCaption}\item[{String}]{complete\+Version,  }\item[{int}]{major,  }\item[{int}]{minor,  }\item[{int}]{subminor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_version_a7c16c47ebd3efda6d118efed484aed12}\label{classcom_1_1mysql_1_1cj_1_1_server_version_a7c16c47ebd3efda6d118efed484aed12}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}!Server\+Version@{Server\+Version}}
+\index{Server\+Version@{Server\+Version}!com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}}
+\subsubsection{\texorpdfstring{Server\+Version()}{ServerVersion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+Server\+Version.\+Server\+Version (\begin{DoxyParamCaption}\item[{int}]{major,  }\item[{int}]{minor,  }\item[{int}]{subminor }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_version_a4c7863cc27ebd138be35a2959eb2adb4}\label{classcom_1_1mysql_1_1cj_1_1_server_version_a4c7863cc27ebd138be35a2959eb2adb4}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}!compare\+To@{compare\+To}}
+\index{compare\+To@{compare\+To}!com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}}
+\subsubsection{\texorpdfstring{compare\+To()}{compareTo()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+Server\+Version.\+compare\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}}}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_version_afaaface05180f229b80bdd95c0a11113}\label{classcom_1_1mysql_1_1cj_1_1_server_version_afaaface05180f229b80bdd95c0a11113}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}!get\+Major@{get\+Major}}
+\index{get\+Major@{get\+Major}!com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}}
+\subsubsection{\texorpdfstring{get\+Major()}{getMajor()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+Server\+Version.\+get\+Major (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_version_a53bc82dac08a5c6446b1750ef48872eb}\label{classcom_1_1mysql_1_1cj_1_1_server_version_a53bc82dac08a5c6446b1750ef48872eb}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}!get\+Minor@{get\+Minor}}
+\index{get\+Minor@{get\+Minor}!com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}}
+\subsubsection{\texorpdfstring{get\+Minor()}{getMinor()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+Server\+Version.\+get\+Minor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_version_a753b8e6fb4e9546cb331dd6b3b2d70e4}\label{classcom_1_1mysql_1_1cj_1_1_server_version_a753b8e6fb4e9546cb331dd6b3b2d70e4}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}!get\+Subminor@{get\+Subminor}}
+\index{get\+Subminor@{get\+Subminor}!com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}}
+\subsubsection{\texorpdfstring{get\+Subminor()}{getSubminor()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+Server\+Version.\+get\+Subminor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_version_abc8b53b9a5a5bf7acc4665d620c07fda}\label{classcom_1_1mysql_1_1cj_1_1_server_version_abc8b53b9a5a5bf7acc4665d620c07fda}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}!meets\+Minimum@{meets\+Minimum}}
+\index{meets\+Minimum@{meets\+Minimum}!com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}}
+\subsubsection{\texorpdfstring{meets\+Minimum()}{meetsMinimum()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+Server\+Version.\+meets\+Minimum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}}}]{min }\end{DoxyParamCaption})}
+
+Does this version meet the minimum specified by `min'?
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & The minimum version to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if version meets the minimum specified by `min' 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_version_a058b132076121d8763c12432b943b219}\label{classcom_1_1mysql_1_1cj_1_1_server_version_a058b132076121d8763c12432b943b219}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}!parse\+Version@{parse\+Version}}
+\index{parse\+Version@{parse\+Version}!com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}}
+\subsubsection{\texorpdfstring{parse\+Version()}{parseVersion()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}} com.\+mysql.\+cj.\+Server\+Version.\+parse\+Version (\begin{DoxyParamCaption}\item[{final String}]{version\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parse the server version into major/minor/subminor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em version\+String} & string version representation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_version_ac6732acde7ab4125a366f4c6d2f957f0}\label{classcom_1_1mysql_1_1cj_1_1_server_version_ac6732acde7ab4125a366f4c6d2f957f0}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!com\+::mysql\+::cj\+::\+Server\+Version@{com\+::mysql\+::cj\+::\+Server\+Version}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+Server\+Version.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A string representation of this version. If this version was parsed from, or provided with, a \char`\"{}complete\char`\"{} string which may contain more than just the version number, this string is returned verbatim. Otherwise, a string representation of the version numbers is given.
+
+\begin{DoxyReturn}{Returns}
+string version representation 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/\mbox{\hyperlink{_server_version_8java}{Server\+Version.\+java}}\end{DoxyCompactItemize}

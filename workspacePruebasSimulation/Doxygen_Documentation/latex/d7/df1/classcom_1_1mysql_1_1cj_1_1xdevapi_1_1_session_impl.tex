@@ -1,0 +1,380 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl}\index{com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl@{com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_accebe952a26b96f742b99bdbcfcd27f7}{Session\+Impl}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} host\+Info)
+\item 
+List$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a2d607f33ef3231038642b5836b813531}{get\+Schemas}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_aeb00f17f0c469af51f790c4a73666904}{get\+Schema}} (String schema\+Name)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a4aa237ed5d2cfe61c302a11907533b61}{get\+Default\+Schema\+Name}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_adba641099e94d53a50b08abc745d761b}{get\+Default\+Schema}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a21dd320f0e162d26784465aa6bb859ce}{create\+Schema}} (String schema\+Name)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_ae98234f9b7a73f758946297806aeb639}{create\+Schema}} (String schema\+Name, boolean reuse\+Existing\+Object)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_acc48589d267536ca687a05dfb315415c}{drop\+Schema}} (String schema\+Name)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a765f8d81a34ca32d608bdeb5e56e3119}{start\+Transaction}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a63bd825fc3c1d7b27cd7294bef2c8a65}{commit}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a7c11c5d1f54f7a1f6ad2c0891dd59a67}{rollback}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a3eb7fd3b8ff1e2fc436fc271f1129fae}{set\+Savepoint}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a4425c6c14d6b1159a23c0ede2b2e120d}{set\+Savepoint}} (String name)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_adcd0910556c2529fe20a6fa85c96a88d}{rollback\+To}} (String name)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a8bf42a1928a6bb71f3047e072b9210b4}{release\+Savepoint}} (String name)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_af181caf1c47641912a47ef9445a9ddca}{get\+Uri}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a0b6cff692d4e7882a546118b25820978}{is\+Open}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a84c222e009725cc3984f4edd56effec8}{close}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_statement_impl}{Sql\+Statement\+Impl}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a28b412626c5f92aa146ede32d4e8033d}{sql}} (String sql)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_aafbc9f570d539e57379332bb227257b0}{Session\+Impl}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_mysqlx_session}{Mysqlx\+Session}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a24bb736eef317972feb7dfeaad760f82}{session}}
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_adce486defa0eedb92c66d0a7daf58551}{default\+Schema\+Name}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_accebe952a26b96f742b99bdbcfcd27f7}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_accebe952a26b96f742b99bdbcfcd27f7}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!Session\+Impl@{Session\+Impl}}
+\index{Session\+Impl@{Session\+Impl}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{Session\+Impl()}{SessionImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+Session\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}}}]{host\+Info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_aafbc9f570d539e57379332bb227257b0}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_aafbc9f570d539e57379332bb227257b0}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!Session\+Impl@{Session\+Impl}}
+\index{Session\+Impl@{Session\+Impl}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{Session\+Impl()}{SessionImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+Session\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a84c222e009725cc3984f4edd56effec8}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a84c222e009725cc3984f4edd56effec8}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!close@{close}}
+\index{close@{close}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Close this session. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_a20f640c1ca28e28d415a1927cbd67ee5}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a63bd825fc3c1d7b27cd7294bef2c8a65}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a63bd825fc3c1d7b27cd7294bef2c8a65}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!commit@{commit}}
+\index{commit@{commit}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{commit()}{commit()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+commit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Commit the transaction. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_ada6a17d457c7b1387c094862e465dc01}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a21dd320f0e162d26784465aa6bb859ce}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a21dd320f0e162d26784465aa6bb859ce}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!create\+Schema@{create\+Schema}}
+\index{create\+Schema@{create\+Schema}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{create\+Schema()}{createSchema()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+create\+Schema (\begin{DoxyParamCaption}\item[{String}]{schema\+Name }\end{DoxyParamCaption})}
+
+Create and return a new schema with the name given by name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em schema\+Name} & name of schema to create \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} created 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_a09866b1dd34b22cfc24ef9517387da9f}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_ae98234f9b7a73f758946297806aeb639}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_ae98234f9b7a73f758946297806aeb639}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!create\+Schema@{create\+Schema}}
+\index{create\+Schema@{create\+Schema}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{create\+Schema()}{createSchema()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+create\+Schema (\begin{DoxyParamCaption}\item[{String}]{schema\+Name,  }\item[{boolean}]{reuse\+Existing\+Object }\end{DoxyParamCaption})}
+
+Create and return a new schema with the name given by name. If the schema already exists, a reference to it is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em schema\+Name} & name of schema to create \\
+\hline
+{\em reuse\+Existing\+Object} & true to reuse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} created 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_aef9311823fd5a36cba753a953f3613d3}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_acc48589d267536ca687a05dfb315415c}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_acc48589d267536ca687a05dfb315415c}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!drop\+Schema@{drop\+Schema}}
+\index{drop\+Schema@{drop\+Schema}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{drop\+Schema()}{dropSchema()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+drop\+Schema (\begin{DoxyParamCaption}\item[{String}]{schema\+Name }\end{DoxyParamCaption})}
+
+Drop the existing schema with the name given by name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em schema\+Name} & name of schema to drop \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_af292b70a8b7a6a159e98d36a2729b0e7}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_adba641099e94d53a50b08abc745d761b}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_adba641099e94d53a50b08abc745d761b}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!get\+Default\+Schema@{get\+Default\+Schema}}
+\index{get\+Default\+Schema@{get\+Default\+Schema}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{get\+Default\+Schema()}{getDefaultSchema()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+get\+Default\+Schema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the default schema which may be configured at connect time.
+
+\begin{DoxyReturn}{Returns}
+default \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_a8ead4f7e01e906447c15d9e6ce38ead2}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a4aa237ed5d2cfe61c302a11907533b61}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a4aa237ed5d2cfe61c302a11907533b61}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!get\+Default\+Schema\+Name@{get\+Default\+Schema\+Name}}
+\index{get\+Default\+Schema\+Name@{get\+Default\+Schema\+Name}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{get\+Default\+Schema\+Name()}{getDefaultSchemaName()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+get\+Default\+Schema\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the default schema name which may be configured at connect time.
+
+\begin{DoxyReturn}{Returns}
+default schema name 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_a9c612e7b080af6467b718dcaa3081a84}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_aeb00f17f0c469af51f790c4a73666904}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_aeb00f17f0c469af51f790c4a73666904}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!get\+Schema@{get\+Schema}}
+\index{get\+Schema@{get\+Schema}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{get\+Schema()}{getSchema()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+get\+Schema (\begin{DoxyParamCaption}\item[{String}]{schema\+Name }\end{DoxyParamCaption})}
+
+Retrieve the \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} corresponding to name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em schema\+Name} & name of schema to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_a70703d4853bdfee2b32da36a27fa2e52}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a2d607f33ef3231038642b5836b813531}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a2d607f33ef3231038642b5836b813531}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!get\+Schemas@{get\+Schemas}}
+\index{get\+Schemas@{get\+Schemas}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{get\+Schemas()}{getSchemas()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}}$>$ com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+get\+Schemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the list of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} objects for which the current user has access.
+
+\begin{DoxyReturn}{Returns}
+list of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} objects 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_ac2c871a98ae18a178d73e76c89655ed3}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_af181caf1c47641912a47ef9445a9ddca}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_af181caf1c47641912a47ef9445a9ddca}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!get\+Uri@{get\+Uri}}
+\index{get\+Uri@{get\+Uri}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{get\+Uri()}{getUri()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+get\+Uri (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the U\+RL used to create this session.
+
+\begin{DoxyReturn}{Returns}
+U\+RI 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_a8c5c670815d5fab8edb586c4a4e684ac}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a0b6cff692d4e7882a546118b25820978}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a0b6cff692d4e7882a546118b25820978}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!is\+Open@{is\+Open}}
+\index{is\+Open@{is\+Open}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{is\+Open()}{isOpen()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is this session open?
+
+\begin{DoxyReturn}{Returns}
+true if session is open 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_a8054b47c7bdc370ab26b41ec9ba527a6}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a8bf42a1928a6bb71f3047e072b9210b4}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a8bf42a1928a6bb71f3047e072b9210b4}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!release\+Savepoint@{release\+Savepoint}}
+\index{release\+Savepoint@{release\+Savepoint}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{release\+Savepoint()}{releaseSavepoint()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+release\+Savepoint (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+Releases the named savepoint. This method will succeed as long as the given save point has not been already rolled back or released. Rolling back to a savepoint prior to the one named will release or rollback any that came after.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & savepoint name \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_ad372434e6431ce9a396a29d03f3ad8c4}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a7c11c5d1f54f7a1f6ad2c0891dd59a67}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a7c11c5d1f54f7a1f6ad2c0891dd59a67}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!rollback@{rollback}}
+\index{rollback@{rollback}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{rollback()}{rollback()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+rollback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Rollback the transaction. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_a7c850a35b858307dd253bac93a187e8b}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_adcd0910556c2529fe20a6fa85c96a88d}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_adcd0910556c2529fe20a6fa85c96a88d}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!rollback\+To@{rollback\+To}}
+\index{rollback\+To@{rollback\+To}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{rollback\+To()}{rollbackTo()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+rollback\+To (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+Rolls back the transaction to the named savepoint. This method will succeed as long as the given save point has not been already rolled back or released. Rolling back to a savepoint prior to the one named will release or rollback any that came after.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & savepoint name \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_a31dc4b454a765a159c591d5cc4f3d1cc}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a3eb7fd3b8ff1e2fc436fc271f1129fae}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a3eb7fd3b8ff1e2fc436fc271f1129fae}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!set\+Savepoint@{set\+Savepoint}}
+\index{set\+Savepoint@{set\+Savepoint}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{set\+Savepoint()}{setSavepoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+set\+Savepoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a transaction savepoint with an implementation-\/defined generated name and returns its name, which can be used in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_adcd0910556c2529fe20a6fa85c96a88d}{rollback\+To(\+String)}} or \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a8bf42a1928a6bb71f3047e072b9210b4}{release\+Savepoint(\+String)}}. Calling this method more than once should always work. The generated name shall be unique per session.
+
+\begin{DoxyReturn}{Returns}
+savepoint name 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_a4878e02a60bbf177ea77ab94c697cbbf}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a4425c6c14d6b1159a23c0ede2b2e120d}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a4425c6c14d6b1159a23c0ede2b2e120d}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!set\+Savepoint@{set\+Savepoint}}
+\index{set\+Savepoint@{set\+Savepoint}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{set\+Savepoint()}{setSavepoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+set\+Savepoint (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+Creates or replaces a transaction savepoint with the given name. Calling this method more than once should always work.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & savepoint name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+savepoint name 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_a0729993f853b93bd8c819194aaa5f258}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a28b412626c5f92aa146ede32d4e8033d}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a28b412626c5f92aa146ede32d4e8033d}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!sql@{sql}}
+\index{sql@{sql}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{sql()}{sql()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_statement_impl}{Sql\+Statement\+Impl}} com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+sql (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption})}
+
+Create a native S\+QL command. Placeholders are supported using the native \char`\"{}?\char`\"{} syntax.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & native S\+QL statement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_statement}{Sql\+Statement}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_a4409e5c0f5917851f9875342b8d38b18}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a765f8d81a34ca32d608bdeb5e56e3119}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a765f8d81a34ca32d608bdeb5e56e3119}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!start\+Transaction@{start\+Transaction}}
+\index{start\+Transaction@{start\+Transaction}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{start\+Transaction()}{startTransaction()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+start\+Transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Start a new transaction. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_a1c0d0951a9c3f1d92f9bd22f337dd86c}{com.\+mysql.\+cj.\+xdevapi.\+Session}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_adce486defa0eedb92c66d0a7daf58551}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_adce486defa0eedb92c66d0a7daf58551}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!default\+Schema\+Name@{default\+Schema\+Name}}
+\index{default\+Schema\+Name@{default\+Schema\+Name}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{default\+Schema\+Name}{defaultSchemaName}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+default\+Schema\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a24bb736eef317972feb7dfeaad760f82}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_session_impl_a24bb736eef317972feb7dfeaad760f82}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}!session@{session}}
+\index{session@{session}!com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Session\+Impl}}
+\subsubsection{\texorpdfstring{session}{session}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_mysqlx_session}{Mysqlx\+Session}} com.\+mysql.\+cj.\+xdevapi.\+Session\+Impl.\+session\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_session_impl_8java}{Session\+Impl.\+java}}\end{DoxyCompactItemize}

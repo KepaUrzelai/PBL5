@@ -1,0 +1,57 @@
+\hypertarget{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality}{}\section{com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+Hosts\+Cardinality Enum Reference}
+\label{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality}\index{com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+Hosts\+Cardinality@{com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+Hosts\+Cardinality}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract boolean \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality_ac284db6b3b9a93d35d400c1d05cfb717}{assert\+Size}} (int n)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality_a841d1e01689174a7e5f02fe698ccbd5f}{assert\+Size}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The rules describing the number of hosts a database U\+RL may contain. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality_ac284db6b3b9a93d35d400c1d05cfb717}\label{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality_ac284db6b3b9a93d35d400c1d05cfb717}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+::\+Hosts\+Cardinality@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+::\+Hosts\+Cardinality}!assert\+Size@{assert\+Size}}
+\index{assert\+Size@{assert\+Size}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+::\+Hosts\+Cardinality@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+::\+Hosts\+Cardinality}}
+\subsubsection{\texorpdfstring{assert\+Size()}{assertSize()}}
+{\footnotesize\ttfamily abstract boolean com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+Hosts\+Cardinality.\+assert\+Size (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality_a841d1e01689174a7e5f02fe698ccbd5f}\label{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality_a841d1e01689174a7e5f02fe698ccbd5f}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+::\+Hosts\+Cardinality@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+::\+Hosts\+Cardinality}!assert\+Size@{assert\+Size}}
+\index{assert\+Size@{assert\+Size}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+::\+Hosts\+Cardinality@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url\+::\+Hosts\+Cardinality}}
+\subsubsection{\texorpdfstring{assert\+Size}{assertSize}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+Hosts\+Cardinality.\+assert\+Size}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=(\textcolor{keywordtype}{int} n) \{
+                \textcolor{keywordflow}{return} n == 1;
+            \}
+        \},
+        MULTIPLE \{
+            @Override
+            \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality_a841d1e01689174a7e5f02fe698ccbd5f}{assertSize}}(\textcolor{keywordtype}{int} n) \{
+                \textcolor{keywordflow}{return} n > 1;
+            \}
+        \},
+        ONE\_OR\_MORE \{
+            @Override
+            \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality_a841d1e01689174a7e5f02fe698ccbd5f}{assertSize}}(\textcolor{keywordtype}{int} n) \{
+                \textcolor{keywordflow}{return} n >= 1;
+            \}
+        \}
+\end{DoxyCode}
+
+
+The documentation for this enum was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/conf/\mbox{\hyperlink{_connection_url_8java}{Connection\+Url.\+java}}\end{DoxyCompactItemize}
