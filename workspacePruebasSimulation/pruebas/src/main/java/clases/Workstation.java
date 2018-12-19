@@ -7,8 +7,8 @@ import control.ControlVehicles;
 
 public class Workstation extends Segment{
 	
-	int correspondientLineId;
-	String name;
+/*	int correspondientLineId;
+	String name;*/
 	List<Product> listaProductos;
 	boolean productTaken;
 

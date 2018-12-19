@@ -1,24 +1,44 @@
 package clases;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
 import control.ControlVehicles;
 
 public class Vehicle implements Runnable{
 	
-	int ID;
-	Segment currentSegment, nextSegment;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)	
+	private Integer id;
+	
+	@OneToOne
+	@JoinColumn(name = "currentSegment")
+	private Segment currentSegment;
+	
+	@OneToOne
+	@JoinColumn(name = "nextSegment")
+	private Segment nextSegment;
+	
+	@Column(name = "status")
+	private String status;
+	
 	ControlVehicles controlVehicles;
 	boolean waiting;
 	Product productToMove;
 	
 	public Vehicle(int id, ControlVehicles control) {//aqui se tendra que inicializar tmb con el current segment, pero de momento pa no tener que andar pasando la lista de segments pues no se hace. cuando este la base de datos echa se hace.
-		this.ID=id;
+		this.id=id;
 		controlVehicles=control;
 		this.waiting=true;
 	}
 
 	public void move(Product product) throws InterruptedException {
 		try {
-			System.out.println("El vehiculo=" + this.ID + " ha pillau el producto=" + product.getName());
+			System.out.println("El vehiculo=" + this.id + " ha pillau el producto=" + product.getName());
 			Thread.sleep(6000);
 			System.out.println("Se ha entregado el producto. El vehiculo vuelve a estar disponible.");
 			controlVehicles.addVehicle(this);
@@ -34,7 +54,7 @@ public class Vehicle implements Runnable{
 	}
 
 	public int getID() {
-		return ID;
+		return id;
 	}
 
 	public void run() {

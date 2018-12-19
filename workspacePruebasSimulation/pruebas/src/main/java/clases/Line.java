@@ -4,7 +4,6 @@ import control.ControlVehicles;
 
 public class Line extends Segment{
 	
-	int nextSegment, nextSegment2;
 
 	public Line(int id, int nextSegment, int nextSegment2, ControlVehicles control) {
 		super(id, control);

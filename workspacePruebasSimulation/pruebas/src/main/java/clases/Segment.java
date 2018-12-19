@@ -1,23 +1,59 @@
 package clases;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import control.ControlVehicles;
 
+@Entity
+@Table(name = "Segment")
 public abstract class Segment implements Runnable{
 	
-	int ID;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)	
+	private Integer id;
+	
+	@Column(name = "state")
+	private String state;
+	
+	@Column(name = "nextSegment")
+	public int nextSegment;
+	
+	@Column(name = "nextSegment2")
+	public int nextSegment2;
+	
+	@Column(name = "correspondientLineId")
+	public int correspondientLineId;
+	
+	@Column(name = "name")
+	public String name;
 	
 	ControlVehicles controlVehicles;
 
 	
 	public Segment(int id, ControlVehicles control) {
-		this.ID=id;
+		this.id=id;
 		this.controlVehicles=control;
 		
 	}
 
 
-	public int getID() {
-		return ID;
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+
+	public String getState() {
+		return state;
+	}
+
+
+	public void setState(String state) {
+		this.state = state;
 	}
 
 

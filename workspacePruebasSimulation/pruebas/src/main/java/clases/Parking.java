@@ -4,8 +4,8 @@ import control.ControlVehicles;
 
 public class Parking extends Segment{
 	
-	int correspondientLineId;
-	String name;
+/*	int correspondientLineId;
+	String name;*/
 
 	public Parking(int id,String name, int correspondient, ControlVehicles control) {
 		super(id, control);
