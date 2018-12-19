@@ -1,0 +1,199 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider}{}\section{com.\+mysql.\+cj.\+jdbc.\+Comment\+Client\+Info\+Provider Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider}\index{com.\+mysql.\+cj.\+jdbc.\+Comment\+Client\+Info\+Provider@{com.\+mysql.\+cj.\+jdbc.\+Comment\+Client\+Info\+Provider}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_client_info_provider}{com.\+mysql.\+cj.\+jdbc.\+Client\+Info\+Provider}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a97c8c3819905e4745f248350c01dd479}{initialize}} (java.\+sql.\+Connection conn, Properties configuration\+Props)  throws S\+Q\+L\+Exception 
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_adc5904bfd14f15ad4976e4df42d004b7}{destroy}} ()  throws S\+Q\+L\+Exception 
+\item 
+synchronized Properties \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a6e6267820c12e2f4180b01e3053c9c64}{get\+Client\+Info}} (java.\+sql.\+Connection conn)  throws S\+Q\+L\+Exception 
+\item 
+synchronized String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a6f82ab824da3031d66cf52b027077f9a}{get\+Client\+Info}} (java.\+sql.\+Connection conn, String name)  throws S\+Q\+L\+Exception 
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a7bcec16d4a0597f7912dd99db90018c1}{set\+Client\+Info}} (java.\+sql.\+Connection conn, Properties properties)  throws S\+Q\+L\+Client\+Info\+Exception 
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a76cfb73296a575e078acf7228e36b2dc}{set\+Client\+Info}} (java.\+sql.\+Connection conn, String name, String value)  throws S\+Q\+L\+Client\+Info\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An implementation of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_client_info_provider}{Client\+Info\+Provider}} that exposes the client info as a comment prepended to all statements issued by the driver.
+
+Client information is {\itshape never} read from the server with this implementation, it is always cached locally. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_adc5904bfd14f15ad4976e4df42d004b7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_adc5904bfd14f15ad4976e4df42d004b7}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider@{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider}!destroy@{destroy}}
+\index{destroy@{destroy}!com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider@{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+cj.\+jdbc.\+Comment\+Client\+Info\+Provider.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called once by the driver when the connection this provider instance belongs to is being closed.
+
+Implementations are expected to clean up and resources at this point in time.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_client_info_provider_a994581557bab4982ec5699fa1114ef5a}{com.\+mysql.\+cj.\+jdbc.\+Client\+Info\+Provider}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a6e6267820c12e2f4180b01e3053c9c64}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a6e6267820c12e2f4180b01e3053c9c64}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider@{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider}!get\+Client\+Info@{get\+Client\+Info}}
+\index{get\+Client\+Info@{get\+Client\+Info}!com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider@{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider}}
+\subsubsection{\texorpdfstring{get\+Client\+Info()}{getClientInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily synchronized Properties com.\+mysql.\+cj.\+jdbc.\+Comment\+Client\+Info\+Provider.\+get\+Client\+Info (\begin{DoxyParamCaption}\item[{java.\+sql.\+Connection}]{conn }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Returns the client info for the connection that this provider instance belongs to. The connection instance is passed as an argument for convenience\textquotesingle{}s sake.
+
+Providers can use the connection to communicate with the database, but it will be within the scope of any ongoing transactions, so therefore implementations should not attempt to change isolation level, autocommit settings or call rollback() or commit() on the connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & connection object \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+client info as Properties 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::get\+Client\+Info() 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_client_info_provider_ac0bf93f0436618158753cb1f7ce7b463}{com.\+mysql.\+cj.\+jdbc.\+Client\+Info\+Provider}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a6f82ab824da3031d66cf52b027077f9a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a6f82ab824da3031d66cf52b027077f9a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider@{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider}!get\+Client\+Info@{get\+Client\+Info}}
+\index{get\+Client\+Info@{get\+Client\+Info}!com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider@{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider}}
+\subsubsection{\texorpdfstring{get\+Client\+Info()}{getClientInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily synchronized String com.\+mysql.\+cj.\+jdbc.\+Comment\+Client\+Info\+Provider.\+get\+Client\+Info (\begin{DoxyParamCaption}\item[{java.\+sql.\+Connection}]{conn,  }\item[{String}]{name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Returns the client info for the connection that this provider instance belongs to. The connection instance is passed as an argument for convenience\textquotesingle{}s sake.
+
+Providers can use the connection to communicate with the database, but it will be within the scope of any ongoing transactions, so therefore implementations should not attempt to change isolation level, autocommit settings or call rollback() or commit() on the connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & connection object \\
+\hline
+{\em name} & property name \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+the client info by given property name 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::get\+Client\+Info(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_client_info_provider_a0447982e2a9eeec5776288384f7db3c1}{com.\+mysql.\+cj.\+jdbc.\+Client\+Info\+Provider}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a97c8c3819905e4745f248350c01dd479}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a97c8c3819905e4745f248350c01dd479}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider@{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider}!initialize@{initialize}}
+\index{initialize@{initialize}!com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider@{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+cj.\+jdbc.\+Comment\+Client\+Info\+Provider.\+initialize (\begin{DoxyParamCaption}\item[{java.\+sql.\+Connection}]{conn,  }\item[{Properties}]{configuration\+Props }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called once by the driver when it needs to configure the provider.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection that the provider belongs too. \\
+\hline
+{\em configuration\+Props} & a java.\+util.\+Properties instance that contains configuration information for the connection. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if initialization fails. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_client_info_provider_aacf1104fd90e2c5b1ca940d63e884cf6}{com.\+mysql.\+cj.\+jdbc.\+Client\+Info\+Provider}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a7bcec16d4a0597f7912dd99db90018c1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a7bcec16d4a0597f7912dd99db90018c1}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider@{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider}!set\+Client\+Info@{set\+Client\+Info}}
+\index{set\+Client\+Info@{set\+Client\+Info}!com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider@{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider}}
+\subsubsection{\texorpdfstring{set\+Client\+Info()}{setClientInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+cj.\+jdbc.\+Comment\+Client\+Info\+Provider.\+set\+Client\+Info (\begin{DoxyParamCaption}\item[{java.\+sql.\+Connection}]{conn,  }\item[{Properties}]{properties }\end{DoxyParamCaption}) throws S\+Q\+L\+Client\+Info\+Exception}
+
+Sets the client info for the connection that this provider instance belongs to. The connection instance is passed as an argument for convenience\textquotesingle{}s sake.
+
+Providers can use the connection to communicate with the database, but it will be within the scope of any ongoing transactions, so therefore implementations should not attempt to change isolation level, autocommit settings or call rollback() or commit() on the connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & connection object \\
+\hline
+{\em properties} & Properties object \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Client\+Info\+Exception} & if an error occurs\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::set\+Client\+Info(java.\+util.\+Properties) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_client_info_provider_aa6e19d37534651d9916fb45ea7392044}{com.\+mysql.\+cj.\+jdbc.\+Client\+Info\+Provider}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a76cfb73296a575e078acf7228e36b2dc}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_comment_client_info_provider_a76cfb73296a575e078acf7228e36b2dc}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider@{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider}!set\+Client\+Info@{set\+Client\+Info}}
+\index{set\+Client\+Info@{set\+Client\+Info}!com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider@{com\+::mysql\+::cj\+::jdbc\+::\+Comment\+Client\+Info\+Provider}}
+\subsubsection{\texorpdfstring{set\+Client\+Info()}{setClientInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+cj.\+jdbc.\+Comment\+Client\+Info\+Provider.\+set\+Client\+Info (\begin{DoxyParamCaption}\item[{java.\+sql.\+Connection}]{conn,  }\item[{String}]{name,  }\item[{String}]{value }\end{DoxyParamCaption}) throws S\+Q\+L\+Client\+Info\+Exception}
+
+Sets the client info for the connection that this provider instance belongs to. The connection instance is passed as an argument for convenience\textquotesingle{}s sake.
+
+Providers can use the connection to communicate with the database, but it will be within the scope of any ongoing transactions, so therefore implementations should not attempt to change isolation level, autocommit settings or call rollback() or commit() on the connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & connection object \\
+\hline
+{\em name} & property name \\
+\hline
+{\em value} & property value \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Client\+Info\+Exception} & if an error occurs\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::set\+Client\+Info(java.\+lang.\+String,java.\+lang.\+String) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_client_info_provider_a441ebd918daad38ab349ba676b75e8bd}{com.\+mysql.\+cj.\+jdbc.\+Client\+Info\+Provider}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/Comment\+Client\+Info\+Provider.\+java\end{DoxyCompactItemize}

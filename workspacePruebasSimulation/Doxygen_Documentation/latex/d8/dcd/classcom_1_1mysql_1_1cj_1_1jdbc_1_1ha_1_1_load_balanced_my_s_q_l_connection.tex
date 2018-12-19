@@ -1,0 +1,61 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection}{}\section{com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+My\+S\+Q\+L\+Connection Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection}\index{com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+My\+S\+Q\+L\+Connection@{com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+My\+S\+Q\+L\+Connection}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_a818d820179932bd4115a4e8447b3fdec}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_a818d820179932bd4115a4e8447b3fdec}} 
+{\bfseries Load\+Balanced\+My\+S\+Q\+L\+Connection} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy}{Load\+Balanced\+Connection\+Proxy}} proxy)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_af9de092f120ef290b55055372dea8a1a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_af9de092f120ef290b55055372dea8a1a}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy}{Load\+Balanced\+Connection\+Proxy}} {\bfseries get\+This\+As\+Proxy} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_aa5aadbcc364a3ca64c27a08166914f8f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_aa5aadbcc364a3ca64c27a08166914f8f}} 
+void {\bfseries close} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_a58a06fe0caa8144988fb2464d9fc4b0a}{ping}} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_a62e8d4c1e4cea88eeb9b2c87d5f230c3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_a62e8d4c1e4cea88eeb9b2c87d5f230c3}} 
+void {\bfseries ping} (boolean all\+Connections)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_affe5003f09c7d3e9fba41cf93dbe77ad}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_affe5003f09c7d3e9fba41cf93dbe77ad}} 
+boolean {\bfseries add\+Host} (String host)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_aa6bab7fffe3955a425bbcf99174154c3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_aa6bab7fffe3955a425bbcf99174154c3}} 
+void {\bfseries remove\+Host} (String host)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_ad127c1ba70ff4bdba22ad3c70cd1ecff}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_ad127c1ba70ff4bdba22ad3c70cd1ecff}} 
+void {\bfseries remove\+Host\+When\+Not\+In\+Use} (String host)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_a0a4d5ec928636709cb6aac4fd6f3c435}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_a0a4d5ec928636709cb6aac4fd6f3c435}} 
+boolean {\bfseries is\+Wrapper\+For} (Class$<$?$>$ iface)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_a58a06fe0caa8144988fb2464d9fc4b0a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_a58a06fe0caa8144988fb2464d9fc4b0a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+My\+S\+Q\+L\+Connection}!ping@{ping}}
+\index{ping@{ping}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Load\+Balanced\+My\+S\+Q\+L\+Connection}}
+\subsubsection{\texorpdfstring{ping()}{ping()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+My\+S\+Q\+L\+Connection.\+ping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Detect if the connection is still good by sending a ping command to the server.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if the ping fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a6d078258f83ddc438d64bafb0f665004}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/ha/Load\+Balanced\+My\+S\+Q\+L\+Connection.\+java\end{DoxyCompactItemize}

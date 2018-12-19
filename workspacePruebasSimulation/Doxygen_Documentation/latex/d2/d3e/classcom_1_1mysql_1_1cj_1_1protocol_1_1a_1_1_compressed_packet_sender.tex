@@ -1,0 +1,88 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Packet\+Sender Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Packet\+Sender@{com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Packet\+Sender}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_ab6d47e91936124c65c9c980ed73af907}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_ab6d47e91936124c65c9c980ed73af907}} 
+{\bfseries Compressed\+Packet\+Sender} (Buffered\+Output\+Stream output\+Stream)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a5491c16d427d8343f0417b9e5bebd1f1}{stop}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a643c7e9a053e2704786f8319ef8a06e7}{send}} (byte\mbox{[}$\,$\mbox{]} packet, int packet\+Len, byte packet\+Sequence)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a06ec74d67adf77498b1f95148cd59323}{undecorate\+All}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a3784dddfd77b45c384a6bb19f67fc2cc}{undecorate}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_af23eba021b7b5002ef05f27bba7733e8}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_af23eba021b7b5002ef05f27bba7733e8}} 
+static final int {\bfseries C\+O\+M\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+L\+E\+N\+G\+TH} = 7
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a5db21027c99a6cb911a6a286d291a326}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a5db21027c99a6cb911a6a286d291a326}} 
+static final int {\bfseries M\+I\+N\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+\_\+\+L\+EN} = 50
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}} for the compressed protocol.
+
+T\+O\+DO\+: add support for pre-\/allocated buffer for large packets (if there\textquotesingle{}s a demonstrable perf improvement) 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a643c7e9a053e2704786f8319ef8a06e7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a643c7e9a053e2704786f8319ef8a06e7}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender}!send@{send}}
+\index{send@{send}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Packet\+Sender.\+send (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{packet,  }\item[{int}]{packet\+Len,  }\item[{byte}]{packet\+Sequence }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Packet sender implementation for the compressed My\+S\+QL protocol. For compressed transmission of multi-\/packets, split the packets up in the same way as the uncompressed protocol. We fit up to M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE bytes of split uncompressed packet, including the header, into an compressed packet. The first packet of the multi-\/packet is 4 bytes of header and M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE -\/ 4 bytes of the payload. The next packet must send the remaining four bytes of the payload followed by a new header and payload. If the second split packet is also around M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE in length, then only M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE -\/ 4 (from the previous packet) -\/ 4 (for the new header) can be sent. This means the payload will be limited by 8 bytes and this will continue to increase by 4 at every iteration. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a5491c16d427d8343f0417b9e5bebd1f1}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a5491c16d427d8343f0417b9e5bebd1f1}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender}!stop@{stop}}
+\index{stop@{stop}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Packet\+Sender.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Shut down this packet sender and deallocate any resources. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a3784dddfd77b45c384a6bb19f67fc2cc}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a3784dddfd77b45c384a6bb19f67fc2cc}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender}!undecorate@{undecorate}}
+\index{undecorate@{undecorate}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender}}
+\subsubsection{\texorpdfstring{undecorate()}{undecorate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Packet\+Sender.\+undecorate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the previous Packet\+Sender instance from the decorators chain or the current Packet\+Sender if it is the first entry in a chain.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}} instance 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a3a352bf35ad98dc6cea7c1f4ac9480da}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a06ec74d67adf77498b1f95148cd59323}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a06ec74d67adf77498b1f95148cd59323}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender}!undecorate\+All@{undecorate\+All}}
+\index{undecorate\+All@{undecorate\+All}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Packet\+Sender}}
+\subsubsection{\texorpdfstring{undecorate\+All()}{undecorateAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Packet\+Sender.\+undecorate\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return a Packet\+Sender instance free of decorators.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}} instance 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a8066931f03c2fa9cc705716fa10a4517}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/Compressed\+Packet\+Sender.\+java\end{DoxyCompactItemize}

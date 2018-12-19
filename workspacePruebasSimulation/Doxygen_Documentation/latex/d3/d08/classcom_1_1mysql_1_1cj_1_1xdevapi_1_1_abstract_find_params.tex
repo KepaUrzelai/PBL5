@@ -1,0 +1,81 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Find\+Params Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params}\index{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Find\+Params@{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Find\+Params}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_filter_params}{com.\+mysql.\+cj.\+xdevapi.\+Filter\+Params}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params}{com.\+mysql.\+cj.\+xdevapi.\+Find\+Params}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_doc_find_params}{com.\+mysql.\+cj.\+xdevapi.\+Doc\+Find\+Params}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_table_find_params}{com.\+mysql.\+cj.\+xdevapi.\+Table\+Find\+Params}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a1a25b8361fcaa3bb7b30a1a3f5fa51f7}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a1a25b8361fcaa3bb7b30a1a3f5fa51f7}} 
+{\bfseries Abstract\+Find\+Params} (String schema\+Name, String collection\+Name, boolean is\+Relational)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a77a35f3333221318a073b1f52faee04f}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a77a35f3333221318a073b1f52faee04f}} 
+{\bfseries Abstract\+Find\+Params} (String schema\+Name, String collection\+Name, String criteria\+String, boolean is\+Relational)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a65e9b75d89ac2fa9d13280bcba7404f3}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a65e9b75d89ac2fa9d13280bcba7404f3}} 
+abstract void {\bfseries set\+Fields} (String... projection)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_aec128ea6b15a2530e3bfb119bab740dc}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_aec128ea6b15a2530e3bfb119bab740dc}} 
+Object {\bfseries get\+Fields} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a073faf8afae62dea57a7af9dd31988e8}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a073faf8afae62dea57a7af9dd31988e8}} 
+void {\bfseries set\+Grouping} (String... group\+By)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a5b322e19422e65c1e08db87b16ce77f0}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a5b322e19422e65c1e08db87b16ce77f0}} 
+Object {\bfseries get\+Grouping} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a8e7b9f8acb811c6da58817a5d09e0444}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a8e7b9f8acb811c6da58817a5d09e0444}} 
+void {\bfseries set\+Grouping\+Criteria} (String having)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a3c3efcc6eb2e92825829e0f0e79b3a4b}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a3c3efcc6eb2e92825829e0f0e79b3a4b}} 
+Object {\bfseries get\+Grouping\+Criteria} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_ab7fd8c9c27d43e696a0c0bdfc207efba}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_ab7fd8c9c27d43e696a0c0bdfc207efba}} 
+\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params_1_1_row_lock}{Row\+Lock}} {\bfseries get\+Lock} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a5363ab2b37ba6e1f800ea99bbbb4503f}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a5363ab2b37ba6e1f800ea99bbbb4503f}} 
+void {\bfseries set\+Lock} (\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params_1_1_row_lock}{Row\+Lock}} row\+Lock)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_aca952c3798af9960461b683aee46117e}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_aca952c3798af9960461b683aee46117e}} 
+\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params_1_1_row_lock_options}{Row\+Lock\+Options}} {\bfseries get\+Lock\+Option} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_af4699947772c548ae743375658898d7e}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_af4699947772c548ae743375658898d7e}} 
+void {\bfseries set\+Lock\+Option} (\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params_1_1_row_lock_options}{Row\+Lock\+Options}} lock\+Option)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_ab6ea9d60c82a25e090429565e563d9fa}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_ab6ea9d60c82a25e090429565e563d9fa}} 
+{\bfseries Abstract\+Find\+Params} (Collection coll, boolean is\+Relational)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_ac5fff4e345888b472e9468487e7b7621}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_ac5fff4e345888b472e9468487e7b7621}} 
+abstract \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params}{Find\+Params}} {\bfseries clone} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_af3bcff376fbbd9c8844219fb37404547}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_af3bcff376fbbd9c8844219fb37404547}} 
+String \mbox{[}$\,$\mbox{]} {\bfseries group\+By}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_aa2f21464c6948fd8938d5663b997a18a}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_aa2f21464c6948fd8938d5663b997a18a}} 
+String \mbox{[}$\,$\mbox{]} {\bfseries projection}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a910c634442c878086a71cfac6f984f3f}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a910c634442c878086a71cfac6f984f3f}} 
+List$<$ Projection $>$ {\bfseries fields}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a5678caf52fa61223c04440a9d9c0a63b}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a5678caf52fa61223c04440a9d9c0a63b}} 
+\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params_1_1_row_lock}{Row\+Lock}} {\bfseries lock}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a377d2b6854306fcce18c8a69f5ee5453}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_find_params_a377d2b6854306fcce18c8a69f5ee5453}} 
+\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_params_1_1_row_lock_options}{Row\+Lock\+Options}} {\bfseries lock\+Option}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/Abstract\+Find\+Params.\+java\end{DoxyCompactItemize}

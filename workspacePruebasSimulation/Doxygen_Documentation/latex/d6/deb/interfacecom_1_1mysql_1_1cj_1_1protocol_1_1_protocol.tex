@@ -1,0 +1,393 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{}\section{com.\+mysql.\+cj.\+protocol.\+Protocol$<$ M extends Message $>$ Interface Template Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}\index{com.\+mysql.\+cj.\+protocol.\+Protocol$<$ M extends Message $>$@{com.\+mysql.\+cj.\+protocol.\+Protocol$<$ M extends Message $>$}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Protocol}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol}}.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+interface {\bfseries Get\+Profiler\+Event\+Handler\+Instance\+Function}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a5475394532c7c3ff809b46ee47715bdb}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}} session, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}} socket\+Connection, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} property\+Set, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_transaction_event_handler}{Transaction\+Event\+Handler}} transaction\+Manager)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a131dda37d8f18893894e2671d4c18005}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a131dda37d8f18893894e2671d4c18005}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} {\bfseries get\+Property\+Set} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a870e0a7a79b5248e942b165fe1a9593c}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a870e0a7a79b5248e942b165fe1a9593c}} 
+void {\bfseries set\+Property\+Set} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} property\+Set)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a6a924ac14232063c3eab7b70a376ab29}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a6a924ac14232063c3eab7b70a376ab29}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_message_builder}{Message\+Builder}}$<$ M $>$ {\bfseries get\+Message\+Builder} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_capabilities}{Server\+Capabilities}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ac7608c87247ae3467a9f1e3e8c254042}{read\+Server\+Capabilities}} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a1dade0f0b8da9ec87055ff8b86323bd3}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a1dade0f0b8da9ec87055ff8b86323bd3}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} {\bfseries get\+Server\+Session} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_aacade9d5c60b79758ba4d55f6b7d886e}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_aacade9d5c60b79758ba4d55f6b7d886e}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}} {\bfseries get\+Socket\+Connection} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a6a80b7350b8911a0894cf7481412af82}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a6a80b7350b8911a0894cf7481412af82}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_provider}{Authentication\+Provider}}$<$ M $>$ {\bfseries get\+Authentication\+Provider} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a788184c5580bc30795094cefce935156}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a788184c5580bc30795094cefce935156}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} {\bfseries get\+Exception\+Interceptor} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a412e8ba9beb161548f142a1178c910d2}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a412e8ba9beb161548f142a1178c910d2}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_packet_sent_time_holder}{Packet\+Sent\+Time\+Holder}} {\bfseries get\+Packet\+Sent\+Time\+Holder} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a7fab6d818df57a243bf9a0b8e41005f2}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a7fab6d818df57a243bf9a0b8e41005f2}} 
+void {\bfseries set\+Packet\+Sent\+Time\+Holder} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_packet_sent_time_holder}{Packet\+Sent\+Time\+Holder}} packet\+Sent\+Time\+Holder)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a68bc036cd22a70fe8947ed43339c4fa0}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a68bc036cd22a70fe8947ed43339c4fa0}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_packet_received_time_holder}{Packet\+Received\+Time\+Holder}} {\bfseries get\+Packet\+Received\+Time\+Holder} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a764d00412edae6ab570dec2a849e89e3}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a764d00412edae6ab570dec2a849e89e3}} 
+void {\bfseries set\+Packet\+Received\+Time\+Holder} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_packet_received_time_holder}{Packet\+Received\+Time\+Holder}} packet\+Received\+Time\+Holder)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a62fc4a0bb330ef36eb91217c33b36ab8}{connect}} (String user, String password, String database)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_adb74cf66c1d6f69ff114d3d6c45db6dd}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_adb74cf66c1d6f69ff114d3d6c45db6dd}} 
+void {\bfseries negotiate\+S\+S\+L\+Connection} (int pack\+Length)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ab775cf8ac0a9bec0df8c4a473c804ae8}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ab775cf8ac0a9bec0df8c4a473c804ae8}} 
+void {\bfseries before\+Handshake} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ab5abac8e23590e55ada2b133ce963a5c}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ab5abac8e23590e55ada2b133ce963a5c}} 
+void {\bfseries after\+Handshake} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a02558c9b17a492adb2e5b9cb0fb82778}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a02558c9b17a492adb2e5b9cb0fb82778}} 
+void {\bfseries change\+Database} (String database)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ae7c8eae149543f5b736a905864b8c1f2}{change\+User}} (String user, String password, String database)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a60c0f5b5a210c088b9bf761e828031b1}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a60c0f5b5a210c088b9bf761e828031b1}} 
+String {\bfseries get\+Password\+Character\+Encoding} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ace7057295ed6873e77e7998bbf5fa082}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ace7057295ed6873e77e7998bbf5fa082}} 
+boolean {\bfseries version\+Meets\+Minimum} (int major, int minor, int subminor)
+\item 
+M \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a5eb63441ad97f1ba2c97b4785c7ca16d}{read\+Message}} (M reuse)
+\item 
+M \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a7176330712bc7aa3ba67261d4a8ef0ca}{check\+Error\+Message}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ae917ec7bc23dc3244bea8e745318c725}{send}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} message, int packet\+Len)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_aa26c38c00e4f25607756ad93288603df}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_aa26c38c00e4f25607756ad93288603df}} 
+$<$ R\+ES extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_result}{Query\+Result}} $>$ Completable\+Future$<$ R\+ES $>$ {\bfseries send\+Async} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} message)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a65f8a3d80ead4cf22ffe65c539f2f851}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a65f8a3d80ead4cf22ffe65c539f2f851}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} {\bfseries read\+Metadata} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a9e859d7ef531819c5bdef288f650ab83}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a9e859d7ef531819c5bdef288f650ab83}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list}{Row\+List}} {\bfseries get\+Row\+Input\+Stream} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} metadata)
+\item 
+M \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_aaef9b7f93e895f19b2f6bc13ec5c2295}{send\+Command}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} query\+Packet, boolean skip\+Check, int timeout\+Millis)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a48ee5ee3c590b73b47b2094694730319}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a48ee5ee3c590b73b47b2094694730319}} 
+$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}} $>$ T {\bfseries read} (Class$<$ T $>$ required\+Class, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ T, M $>$ protocol\+Entity\+Factory)  throws I\+O\+Exception
+\item 
+$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}} $>$ T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ae33a71067b314435408526d35f521207}{read}} (Class$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}} $>$ required\+Class, int max\+Rows, boolean stream\+Results, M result\+Packet, boolean is\+Binary\+Encoded, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} metadata, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ T, M $>$ protocol\+Entity\+Factory)  throws I\+O\+Exception
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a995483a591a66d63e273140ef0ac47e7}{set\+Local\+Infile\+Input\+Stream}} (Input\+Stream stream)
+\item 
+Input\+Stream \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a14849c71b76edabc8dae60d7c22d9fee}{get\+Local\+Infile\+Input\+Stream}} ()
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a8a25c27a012f47ca25de357e65829884}{get\+Query\+Comment}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ace5604859b8b79df6dcf91bee7c1cc6c}{set\+Query\+Comment}} (String comment)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a4c6224539df13885a570b5865377ef01}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a4c6224539df13885a570b5865377ef01}} 
+$<$ QR extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_result}{Query\+Result}} $>$ QR {\bfseries read\+Query\+Result} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ac38e74b2af853f10e7f9a97f6c4836f8}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ac38e74b2af853f10e7f9a97f6c4836f8}} 
+void {\bfseries close} ()  throws I\+O\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a3923a0d582d653fae714775c3ae6db13}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a3923a0d582d653fae714775c3ae6db13}} 
+void {\bfseries set\+Current\+Result\+Streamer} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer}{Result\+Streamer}} current\+Result\+Streamer)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a21ceb9181ddbbf615ead4ad2e24e5544}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a21ceb9181ddbbf615ead4ad2e24e5544}} 
+void {\bfseries configure\+Timezone} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ab0e2c37f1f3ab785fee8c60abd7f9e9a}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ab0e2c37f1f3ab785fee8c60abd7f9e9a}} 
+void {\bfseries init\+Server\+Session} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A protocol provides the facilities to communicate with a My\+S\+QL server. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ae7c8eae149543f5b736a905864b8c1f2}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ae7c8eae149543f5b736a905864b8c1f2}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}!change\+User@{change\+User}}
+\index{change\+User@{change\+User}!com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}}
+\subsubsection{\texorpdfstring{change\+User()}{changeUser()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{com.\+mysql.\+cj.\+protocol.\+Protocol}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.change\+User (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password,  }\item[{String}]{database }\end{DoxyParamCaption})}
+
+Re-\/authenticates as the given user and password
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & DB user name \\
+\hline
+{\em password} & DB user password \\
+\hline
+{\em database} & database name \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol_a7f356b98ad856e135cfbdcae35d87009}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Protocol}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_ada78c49db272f6f4a680c7d552f5be86}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a7176330712bc7aa3ba67261d4a8ef0ca}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a7176330712bc7aa3ba67261d4a8ef0ca}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}!check\+Error\+Message@{check\+Error\+Message}}
+\index{check\+Error\+Message@{check\+Error\+Message}!com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}}
+\subsubsection{\texorpdfstring{check\+Error\+Message()}{checkErrorMessage()}}
+{\footnotesize\ttfamily M \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{com.\+mysql.\+cj.\+protocol.\+Protocol}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.check\+Error\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read one message from the My\+S\+QL server, checks for errors in it, and if none, returns the message, ready for reading
+
+\begin{DoxyReturn}{Returns}
+a message ready for reading. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol_a7c2558549dd31879ef27e087724c3c44}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Protocol}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_a3774ce524cf53d4c5412c0b4d5a3dbda}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a62fc4a0bb330ef36eb91217c33b36ab8}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a62fc4a0bb330ef36eb91217c33b36ab8}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}!connect@{connect}}
+\index{connect@{connect}!com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{com.\+mysql.\+cj.\+protocol.\+Protocol}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.connect (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password,  }\item[{String}]{database }\end{DoxyParamCaption})}
+
+Create a new session. This generally happens once at the beginning of a connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & DB user name \\
+\hline
+{\em password} & DB user password \\
+\hline
+{\em database} & database name \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol_ad567528560d84a107a288dd1c08fb9ce}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Protocol}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_ad9932aa9ac2484e47e8a4d34e3a8d691}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a14849c71b76edabc8dae60d7c22d9fee}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a14849c71b76edabc8dae60d7c22d9fee}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}!get\+Local\+Infile\+Input\+Stream@{get\+Local\+Infile\+Input\+Stream}}
+\index{get\+Local\+Infile\+Input\+Stream@{get\+Local\+Infile\+Input\+Stream}!com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}}
+\subsubsection{\texorpdfstring{get\+Local\+Infile\+Input\+Stream()}{getLocalInfileInputStream()}}
+{\footnotesize\ttfamily Input\+Stream \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{com.\+mysql.\+cj.\+protocol.\+Protocol}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.get\+Local\+Infile\+Input\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the Input\+Stream instance that will be used to send data in response to a \char`\"{}\+L\+O\+A\+D D\+A\+T\+A L\+O\+C\+A\+L I\+N\+F\+I\+L\+E\char`\"{} statement.
+
+This method returns N\+U\+LL if no such stream has been set via \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a995483a591a66d63e273140ef0ac47e7}{set\+Local\+Infile\+Input\+Stream()}}.
+
+\begin{DoxyReturn}{Returns}
+input stream 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol_a27e42d277d58cc8bc89f098b9ac90691}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Protocol}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_a5a291c17d84fa71984b3a65ecbb91315}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a8a25c27a012f47ca25de357e65829884}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a8a25c27a012f47ca25de357e65829884}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}!get\+Query\+Comment@{get\+Query\+Comment}}
+\index{get\+Query\+Comment@{get\+Query\+Comment}!com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}}
+\subsubsection{\texorpdfstring{get\+Query\+Comment()}{getQueryComment()}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{com.\+mysql.\+cj.\+protocol.\+Protocol}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.get\+Query\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the comment that will be prepended to all statements sent to the server.
+
+\begin{DoxyReturn}{Returns}
+query comment string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol_a49cbec750255abc9a23f447effd70d1d}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Protocol}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_aa6abdec32fdb1e18c44c33b831b40e20}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a5475394532c7c3ff809b46ee47715bdb}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a5475394532c7c3ff809b46ee47715bdb}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}!init@{init}}
+\index{init@{init}!com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{com.\+mysql.\+cj.\+protocol.\+Protocol}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}}}]{session,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}}}]{socket\+Connection,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}}}]{property\+Set,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_transaction_event_handler}{Transaction\+Event\+Handler}}}]{transaction\+Manager }\end{DoxyParamCaption})}
+
+Init method takes the place of constructor.
+
+A constructor should be used unless the encapsulation of Protocol\+Factory is necessary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}} \\
+\hline
+{\em socket\+Connection} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}} \\
+\hline
+{\em property\+Set} & \mbox{\hyperlink{}{Property\+Set}} \\
+\hline
+{\em transaction\+Manager} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_transaction_event_handler}{Transaction\+Event\+Handler}} \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol_a78d72401af5414a2271b9f1012b8a2f9}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Protocol}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_a4007f4bf0c11af18162121e030183839}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ae33a71067b314435408526d35f521207}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ae33a71067b314435408526d35f521207}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}!read@{read}}
+\index{read@{read}!com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily $<$T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}}$>$ T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{com.\+mysql.\+cj.\+protocol.\+Protocol}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.read (\begin{DoxyParamCaption}\item[{Class$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}} $>$}]{required\+Class,  }\item[{int}]{max\+Rows,  }\item[{boolean}]{stream\+Results,  }\item[{M}]{result\+Packet,  }\item[{boolean}]{is\+Binary\+Encoded,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}}]{metadata,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ T, M $>$}]{protocol\+Entity\+Factory }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Read protocol entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em required\+Class} & required \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}} class \\
+\hline
+{\em max\+Rows} & the maximum number of rows to read (-\/1 means all rows) \\
+\hline
+{\em stream\+Results} & should the driver leave the results on the wire, and read them only when needed? \\
+\hline
+{\em result\+Packet} & the first packet of information in the result set \\
+\hline
+{\em is\+Binary\+Encoded} & true if the binary protocol is used (for server prepared statements) \\
+\hline
+{\em metadata} & use this metadata instead of the one provided on wire \\
+\hline
+{\em protocol\+Entity\+Factory} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}} instance \\
+\hline
+{\em $<$\+T$>$} & object extending the \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}} instance 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a5eb63441ad97f1ba2c97b4785c7ca16d}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a5eb63441ad97f1ba2c97b4785c7ca16d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}!read\+Message@{read\+Message}}
+\index{read\+Message@{read\+Message}!com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}}
+\subsubsection{\texorpdfstring{read\+Message()}{readMessage()}}
+{\footnotesize\ttfamily M \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{com.\+mysql.\+cj.\+protocol.\+Protocol}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.read\+Message (\begin{DoxyParamCaption}\item[{M}]{reuse }\end{DoxyParamCaption})}
+
+Read one message from the My\+S\+QL server into the reusable buffer if provided or into the new one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reuse} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} instance to read into, may be null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the message from the server. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ac7608c87247ae3467a9f1e3e8c254042}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ac7608c87247ae3467a9f1e3e8c254042}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}!read\+Server\+Capabilities@{read\+Server\+Capabilities}}
+\index{read\+Server\+Capabilities@{read\+Server\+Capabilities}!com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}}
+\subsubsection{\texorpdfstring{read\+Server\+Capabilities()}{readServerCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_capabilities}{Server\+Capabilities}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{com.\+mysql.\+cj.\+protocol.\+Protocol}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.read\+Server\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_capabilities}{Server\+Capabilities}} from server.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_capabilities}{Server\+Capabilities}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol_acfce17a81631146efc0ca8d9cef22880}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Protocol}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_ade4f8f02c047acca33185b6460027ddb}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ae917ec7bc23dc3244bea8e745318c725}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ae917ec7bc23dc3244bea8e745318c725}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}!send@{send}}
+\index{send@{send}!com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{com.\+mysql.\+cj.\+protocol.\+Protocol}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}}}]{message,  }\item[{int}]{packet\+Len }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} instance \\
+\hline
+{\em packet\+Len} & length of header + payload \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol_ab8fc56f3c8cbc5abba6cb7c485f534f1}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Protocol}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_ac6e989e8d119f8c1efd0fda253199727}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_aaef9b7f93e895f19b2f6bc13ec5c2295}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_aaef9b7f93e895f19b2f6bc13ec5c2295}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}!send\+Command@{send\+Command}}
+\index{send\+Command@{send\+Command}!com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}}
+\subsubsection{\texorpdfstring{send\+Command()}{sendCommand()}}
+{\footnotesize\ttfamily M \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{com.\+mysql.\+cj.\+protocol.\+Protocol}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.send\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}}}]{query\+Packet,  }\item[{boolean}]{skip\+Check,  }\item[{int}]{timeout\+Millis }\end{DoxyParamCaption})}
+
+Send a command to the My\+S\+QL server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Packet} & a packet pre-\/loaded with data for the protocol (eg. from a client-\/side prepared statement). The first byte of this packet is the My\+S\+QL protocol \textquotesingle{}command\textquotesingle{} from Mysql\+Defs \\
+\hline
+{\em skip\+Check} & do not call check\+Error\+Packet() if true \\
+\hline
+{\em timeout\+Millis} & timeout\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the response packet from the server
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em C\+J\+Exception} & if an I/O error or S\+QL error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol_ad0ee17f4275b06e46244520a03a6afdd}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Protocol}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_a0ecabba038f9c769909e05a53d6c9657}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a995483a591a66d63e273140ef0ac47e7}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_a995483a591a66d63e273140ef0ac47e7}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}!set\+Local\+Infile\+Input\+Stream@{set\+Local\+Infile\+Input\+Stream}}
+\index{set\+Local\+Infile\+Input\+Stream@{set\+Local\+Infile\+Input\+Stream}!com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}}
+\subsubsection{\texorpdfstring{set\+Local\+Infile\+Input\+Stream()}{setLocalInfileInputStream()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{com.\+mysql.\+cj.\+protocol.\+Protocol}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.set\+Local\+Infile\+Input\+Stream (\begin{DoxyParamCaption}\item[{Input\+Stream}]{stream }\end{DoxyParamCaption})}
+
+Sets an Input\+Stream instance that will be used to send data to the My\+S\+QL server for a \char`\"{}\+L\+O\+A\+D D\+A\+T\+A L\+O\+C\+A\+L I\+N\+F\+I\+L\+E\char`\"{} statement rather than a File\+Input\+Stream or U\+R\+L\+Input\+Stream that represents the path given as an argument to the statement.
+
+This stream will be read to completion upon execution of a \char`\"{}\+L\+O\+A\+D D\+A\+T\+A L\+O\+C\+A\+L I\+N\+F\+I\+L\+E\char`\"{} statement, and will automatically be closed by the driver, so it needs to be reset before each call to execute$\ast$() that would cause the My\+S\+QL server to request data to fulfill the request for \char`\"{}\+L\+O\+A\+D D\+A\+T\+A L\+O\+C\+A\+L I\+N\+F\+I\+L\+E\char`\"{}.
+
+If this value is set to N\+U\+LL, the driver will revert to using a File\+Input\+Stream or U\+R\+L\+Input\+Stream as required.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & input stream \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol_a366f28e9d5a564e582932d16ce9d778f}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Protocol}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_a4f539adc72747ef03c94bc92acde5efb}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ace5604859b8b79df6dcf91bee7c1cc6c}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_ace5604859b8b79df6dcf91bee7c1cc6c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}!set\+Query\+Comment@{set\+Query\+Comment}}
+\index{set\+Query\+Comment@{set\+Query\+Comment}!com\+::mysql\+::cj\+::protocol\+::\+Protocol@{com\+::mysql\+::cj\+::protocol\+::\+Protocol}}
+\subsubsection{\texorpdfstring{set\+Query\+Comment()}{setQueryComment()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{com.\+mysql.\+cj.\+protocol.\+Protocol}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.set\+Query\+Comment (\begin{DoxyParamCaption}\item[{String}]{comment }\end{DoxyParamCaption})}
+
+Sets the comment that will be prepended to all statements sent to the server. Do not use slash-\/star or star-\/slash tokens in the comment as these will be added by the driver itself.
+
+
+\begin{DoxyParams}{Parameters}
+{\em comment} & query comment string \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol_a31d74c4c65825a8c0b875831e4884f58}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Protocol}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_ab009a2b06f09d53869c8983bed6c96b8}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/Protocol.\+java\end{DoxyCompactItemize}

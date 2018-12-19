@@ -1,0 +1,280 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{}\section{com.\+mysql.\+cj.\+conf.\+Host\+Info Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}\index{com.\+mysql.\+cj.\+conf.\+Host\+Info@{com.\+mysql.\+cj.\+conf.\+Host\+Info}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_database_url_container}{com.\+mysql.\+cj.\+conf.\+Database\+Url\+Container}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a4560d8ddc8f66b75d4285b0bb1e3a2c0}{Host\+Info}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_abf279f3212ad1fe272189757ef090d90}{Host\+Info}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_database_url_container}{Database\+Url\+Container}} url, String host, int port, String user, String password)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a8a1fe5f76612d02152c4c8256adf5a01}{Host\+Info}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_database_url_container}{Database\+Url\+Container}} url, String host, int port, String user, String password, Map$<$ String, String $>$ properties)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a0fcc1bf37adac929b5b66642f535beff}{Host\+Info}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_database_url_container}{Database\+Url\+Container}} url, String host, int port, String user, String password, boolean is\+Passwordless, Map$<$ String, String $>$ properties)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a9fe0d4cd94cfc72b8fdb56ac6f72a810}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a9fe0d4cd94cfc72b8fdb56ac6f72a810}} 
+{\bfseries Host\+Info} (Properties props)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_acae50ff394b02e8a7c6874b8d00d48f5}{get\+Host}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_af0c2b397e445567f8217eb989a9f4fbf}{get\+Port}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a700c311c9f63a8f0031c15713ef92d6b}{get\+Host\+Port\+Pair}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a5e80ba60a558bf41f970aa488f849c10}{get\+User}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_aebe3979385ac27249cae703ec4c5ea6c}{get\+Password}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a6bb33f0cf17ac943b76138e3813898da}{is\+Passwordless}} ()
+\item 
+Map$<$ String, String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_aac017e83698627d6cf91a8eb3b1f263b}{get\+Host\+Properties}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_ac8fc2bf397e189fe33af42d098220dd3}{get\+Property}} (String key)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_aac3a26a2ad40c40bd6a2a8dfb4856a58}{get\+Database}} ()
+\item 
+Properties \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_aa316f9e75ff79e0db70ac527bbfe8cf3}{expose\+As\+Properties}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a84c5d1cc48b3d5d1d9911513777f9152}{get\+Database\+Url}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_ac3d7e44e2787c35c23b99127865233c0}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class holds the following My\+S\+QL host information\+: 
+\begin{DoxyItemize}
+\item host\+: an IP or host name. 
+\item port\+: the port number or 0 if not known. 
+\item user info\+: a structure containing the user name and password. 
+\item host properties\+: host specific connection arguments. 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a4560d8ddc8f66b75d4285b0bb1e3a2c0}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a4560d8ddc8f66b75d4285b0bb1e3a2c0}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!Host\+Info@{Host\+Info}}
+\index{Host\+Info@{Host\+Info}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{Host\+Info()}{HostInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+conf.\+Host\+Info.\+Host\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs an empty \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} instance. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_abf279f3212ad1fe272189757ef090d90}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_abf279f3212ad1fe272189757ef090d90}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!Host\+Info@{Host\+Info}}
+\index{Host\+Info@{Host\+Info}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{Host\+Info()}{HostInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+conf.\+Host\+Info.\+Host\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_database_url_container}{Database\+Url\+Container}}}]{url,  }\item[{String}]{host,  }\item[{int}]{port,  }\item[{String}]{user,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+Constructs a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} instance initialized with the provided host, port and user info.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & a reference to the original database U\+RL that produced this host info \\
+\hline
+{\em host} & the host ip or name \\
+\hline
+{\em port} & the port \\
+\hline
+{\em user} & the user name \\
+\hline
+{\em password} & the user\textquotesingle{}s password \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a8a1fe5f76612d02152c4c8256adf5a01}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a8a1fe5f76612d02152c4c8256adf5a01}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!Host\+Info@{Host\+Info}}
+\index{Host\+Info@{Host\+Info}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{Host\+Info()}{HostInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+conf.\+Host\+Info.\+Host\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_database_url_container}{Database\+Url\+Container}}}]{url,  }\item[{String}]{host,  }\item[{int}]{port,  }\item[{String}]{user,  }\item[{String}]{password,  }\item[{Map$<$ String, String $>$}]{properties }\end{DoxyParamCaption})}
+
+Constructs a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} instance initialized with the provided host, port, user, password and connection arguments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & a reference to the original database U\+RL that produced this host info \\
+\hline
+{\em host} & the host ip or name \\
+\hline
+{\em port} & the port \\
+\hline
+{\em user} & the user name \\
+\hline
+{\em password} & this user\textquotesingle{}s password \\
+\hline
+{\em properties} & a connection arguments map. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a0fcc1bf37adac929b5b66642f535beff}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a0fcc1bf37adac929b5b66642f535beff}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!Host\+Info@{Host\+Info}}
+\index{Host\+Info@{Host\+Info}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{Host\+Info()}{HostInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+conf.\+Host\+Info.\+Host\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_database_url_container}{Database\+Url\+Container}}}]{url,  }\item[{String}]{host,  }\item[{int}]{port,  }\item[{String}]{user,  }\item[{String}]{password,  }\item[{boolean}]{is\+Passwordless,  }\item[{Map$<$ String, String $>$}]{properties }\end{DoxyParamCaption})}
+
+Constructs a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} instance initialized with the provided host, port, user, password and connection arguments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & a reference to the original database U\+RL that produced this host info \\
+\hline
+{\em host} & the host ip or name \\
+\hline
+{\em port} & the port \\
+\hline
+{\em user} & the user name \\
+\hline
+{\em password} & this user\textquotesingle{}s password \\
+\hline
+{\em is\+Passwordless} & no password was provided in the connection U\+RL or arguments? \\
+\hline
+{\em properties} & a connection arguments map. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_aa316f9e75ff79e0db70ac527bbfe8cf3}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_aa316f9e75ff79e0db70ac527bbfe8cf3}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!expose\+As\+Properties@{expose\+As\+Properties}}
+\index{expose\+As\+Properties@{expose\+As\+Properties}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{expose\+As\+Properties()}{exposeAsProperties()}}
+{\footnotesize\ttfamily Properties com.\+mysql.\+cj.\+conf.\+Host\+Info.\+expose\+As\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Exposes this host info as a single properties instance. The values for host, port, user and password are added to the properties map with their standard keys.
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{}{Properties}} instance containing the full host information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_aac3a26a2ad40c40bd6a2a8dfb4856a58}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_aac3a26a2ad40c40bd6a2a8dfb4856a58}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!get\+Database@{get\+Database}}
+\index{get\+Database@{get\+Database}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{get\+Database()}{getDatabase()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Host\+Info.\+get\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Shortcut to the database connection argument.
+
+\begin{DoxyReturn}{Returns}
+the database name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a84c5d1cc48b3d5d1d9911513777f9152}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a84c5d1cc48b3d5d1d9911513777f9152}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!get\+Database\+Url@{get\+Database\+Url}}
+\index{get\+Database\+Url@{get\+Database\+Url}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{get\+Database\+Url()}{getDatabaseUrl()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Host\+Info.\+get\+Database\+Url (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the original database U\+RL that produced this host info.
+
+\begin{DoxyReturn}{Returns}
+the original database U\+RL 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_database_url_container_a5a2570fc547da50c4d8f0486de2fb13e}{com.\+mysql.\+cj.\+conf.\+Database\+Url\+Container}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_acae50ff394b02e8a7c6874b8d00d48f5}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_acae50ff394b02e8a7c6874b8d00d48f5}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!get\+Host@{get\+Host}}
+\index{get\+Host@{get\+Host}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{get\+Host()}{getHost()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Host\+Info.\+get\+Host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the host.
+
+\begin{DoxyReturn}{Returns}
+the host 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a700c311c9f63a8f0031c15713ef92d6b}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a700c311c9f63a8f0031c15713ef92d6b}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!get\+Host\+Port\+Pair@{get\+Host\+Port\+Pair}}
+\index{get\+Host\+Port\+Pair@{get\+Host\+Port\+Pair}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{get\+Host\+Port\+Pair()}{getHostPortPair()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Host\+Info.\+get\+Host\+Port\+Pair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a host\+:port representation of this host.
+
+\begin{DoxyReturn}{Returns}
+the host\+:port representation of this host 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_aac017e83698627d6cf91a8eb3b1f263b}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_aac017e83698627d6cf91a8eb3b1f263b}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!get\+Host\+Properties@{get\+Host\+Properties}}
+\index{get\+Host\+Properties@{get\+Host\+Properties}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{get\+Host\+Properties()}{getHostProperties()}}
+{\footnotesize\ttfamily Map$<$String, String$>$ com.\+mysql.\+cj.\+conf.\+Host\+Info.\+get\+Host\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the properties specific to this host.
+
+\begin{DoxyReturn}{Returns}
+this host specific properties 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_aebe3979385ac27249cae703ec4c5ea6c}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_aebe3979385ac27249cae703ec4c5ea6c}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!get\+Password@{get\+Password}}
+\index{get\+Password@{get\+Password}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{get\+Password()}{getPassword()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Host\+Info.\+get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the password.
+
+\begin{DoxyReturn}{Returns}
+the password 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_af0c2b397e445567f8217eb989a9f4fbf}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_af0c2b397e445567f8217eb989a9f4fbf}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!get\+Port@{get\+Port}}
+\index{get\+Port@{get\+Port}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{get\+Port()}{getPort()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+conf.\+Host\+Info.\+get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the port.
+
+\begin{DoxyReturn}{Returns}
+the port 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_ac8fc2bf397e189fe33af42d098220dd3}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_ac8fc2bf397e189fe33af42d098220dd3}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!get\+Property@{get\+Property}}
+\index{get\+Property@{get\+Property}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{get\+Property()}{getProperty()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Host\+Info.\+get\+Property (\begin{DoxyParamCaption}\item[{String}]{key }\end{DoxyParamCaption})}
+
+Returns the connection argument for the given key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the connection argument for the given key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a5e80ba60a558bf41f970aa488f849c10}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a5e80ba60a558bf41f970aa488f849c10}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Host\+Info.\+get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the user name.
+
+\begin{DoxyReturn}{Returns}
+the user name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a6bb33f0cf17ac943b76138e3813898da}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_a6bb33f0cf17ac943b76138e3813898da}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!is\+Passwordless@{is\+Passwordless}}
+\index{is\+Passwordless@{is\+Passwordless}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{is\+Passwordless()}{isPasswordless()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+conf.\+Host\+Info.\+is\+Passwordless (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if the is the default one, i.\+e., no password was provided in the connection U\+RL or arguments.
+
+\begin{DoxyReturn}{Returns}
+true if no password was provided in the connection U\+RL or arguments. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_ac3d7e44e2787c35c23b99127865233c0}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info_ac3d7e44e2787c35c23b99127865233c0}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!com\+::mysql\+::cj\+::conf\+::\+Host\+Info@{com\+::mysql\+::cj\+::conf\+::\+Host\+Info}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Host\+Info.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string representation of this object.
+
+\begin{DoxyReturn}{Returns}
+a string representation of this object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/conf/Host\+Info.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+\hypertarget{classtestsuite_1_1_base_query_interceptor}{}\section{testsuite.\+Base\+Query\+Interceptor Class Reference}
+\label{classtestsuite_1_1_base_query_interceptor}\index{testsuite.\+Base\+Query\+Interceptor@{testsuite.\+Base\+Query\+Interceptor}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+
+
+Inherited by testsuite.\+regression.\+Charset\+Regression\+Test.\+Bug73663\+Query\+Interceptor, testsuite.\+regression.\+Connection\+Regression\+Test.\+Bug56100\+Query\+Interceptor, testsuite.\+regression.\+Connection\+Regression\+Test.\+Bug71038\+Query\+Interceptor, testsuite.\+regression.\+Connection\+Regression\+Test.\+Bug72712\+Query\+Interceptor, testsuite.\+regression.\+Connection\+Regression\+Test.\+Bug75168\+Query\+Interceptor, testsuite.\+regression.\+Connection\+Regression\+Test.\+Bug75592\+Query\+Interceptor, testsuite.\+regression.\+Connection\+Regression\+Test.\+Bug88227\+Query\+Interceptor, testsuite.\+regression.\+Connection\+Regression\+Test.\+Test\+Bug64205\+Query\+Interceptor, testsuite.\+regression.\+Meta\+Data\+Regression\+Test.\+Query\+Interceptor\+Bug61332, testsuite.\+regression.\+Statement\+Regression\+Test.\+Bug39426\+Interceptor, testsuite.\+regression.\+Statement\+Regression\+Test.\+Scan\+Detecting\+Interceptor, testsuite.\+regression.\+Statement\+Regression\+Test.\+Test\+Bug51666\+Query\+Interceptor, testsuite.\+regression.\+Statement\+Regression\+Test.\+Test\+Bug77449\+Query\+Interceptor, testsuite.\+regression.\+Statement\+Regression\+Test.\+Test\+Bug77681\+Query\+Interceptor, testsuite.\+regression.\+Statement\+Regression\+Test.\+Test\+Bug81706\+Query\+Interceptor, and testsuite.\+simple.\+Connection\+Test.\+Test\+Enable\+Escape\+Processing\+Query\+Interceptor.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} \mbox{\hyperlink{classtestsuite_1_1_base_query_interceptor_a9772ae8ec3555a8f2d3a49658c90b3c7}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection}{Mysql\+Connection}} conn, Properties props, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log)
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1_base_query_interceptor_ad806e1659dde0537e052f1825ee6a40e}{execute\+Top\+Level\+Only}} ()
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1_base_query_interceptor_a8f368e0057821e78db66d4282c4d3b8e}{destroy}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1_base_query_interceptor_a8f368e0057821e78db66d4282c4d3b8e}\label{classtestsuite_1_1_base_query_interceptor_a8f368e0057821e78db66d4282c4d3b8e}} 
+\index{testsuite\+::\+Base\+Query\+Interceptor@{testsuite\+::\+Base\+Query\+Interceptor}!destroy@{destroy}}
+\index{destroy@{destroy}!testsuite\+::\+Base\+Query\+Interceptor@{testsuite\+::\+Base\+Query\+Interceptor}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void testsuite.\+Base\+Query\+Interceptor.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a123809a91800f4f4409f5f37717bf9c8}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1_base_query_interceptor_ad806e1659dde0537e052f1825ee6a40e}\label{classtestsuite_1_1_base_query_interceptor_ad806e1659dde0537e052f1825ee6a40e}} 
+\index{testsuite\+::\+Base\+Query\+Interceptor@{testsuite\+::\+Base\+Query\+Interceptor}!execute\+Top\+Level\+Only@{execute\+Top\+Level\+Only}}
+\index{execute\+Top\+Level\+Only@{execute\+Top\+Level\+Only}!testsuite\+::\+Base\+Query\+Interceptor@{testsuite\+::\+Base\+Query\+Interceptor}}
+\subsubsection{\texorpdfstring{execute\+Top\+Level\+Only()}{executeTopLevelOnly()}}
+{\footnotesize\ttfamily boolean testsuite.\+Base\+Query\+Interceptor.\+execute\+Top\+Level\+Only (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Should the driver execute this interceptor only for the \char`\"{}original\char`\"{} top-\/level query, and not put it in the execution path for queries that may be executed from other interceptors?
+
+If an interceptor issues queries using the connection it was created for, and does not return {\ttfamily true} for this method, it must ensure that it does not cause infinite recursion.
+
+\begin{DoxyReturn}{Returns}
+true if the driver should ensure that this interceptor is only executed for the top-\/level \char`\"{}original\char`\"{} query. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_ab12edf90713df907ba400dbe3ba03ea6}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1_base_query_interceptor_a9772ae8ec3555a8f2d3a49658c90b3c7}\label{classtestsuite_1_1_base_query_interceptor_a9772ae8ec3555a8f2d3a49658c90b3c7}} 
+\index{testsuite\+::\+Base\+Query\+Interceptor@{testsuite\+::\+Base\+Query\+Interceptor}!init@{init}}
+\index{init@{init}!testsuite\+::\+Base\+Query\+Interceptor@{testsuite\+::\+Base\+Query\+Interceptor}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} testsuite.\+Base\+Query\+Interceptor.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection}{Mysql\+Connection}}}]{conn,  }\item[{Properties}]{props,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}}}]{log }\end{DoxyParamCaption})}
+
+Called once per connection that wants to use the interceptor
+
+The properties are the same ones passed in in the U\+RL or arguments to Driver.\+connect() or Driver\+Manager.\+get\+Connection().
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection for which this interceptor is being created \\
+\hline
+{\em props} & configuration values as passed to the connection. Note that in order to support javax.\+sql.\+Data\+Sources, configuration properties specific to an interceptor {\bfseries must} be passed via set\+U\+R\+L() on the Data\+Source. Query\+Interceptor properties are not exposed via accessor/mutator methods on Data\+Sources. \\
+\hline
+{\em log} & logger \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{}{Query\+Interceptor}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a1613f5491fdb4610d5727d60c904e7e2}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/test/java/testsuite/Base\+Query\+Interceptor.\+java\end{DoxyCompactItemize}

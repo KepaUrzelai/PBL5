@@ -1,0 +1,264 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}\index{com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement@{com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement}{com.\+mysql.\+cj.\+xdevapi.\+Statement$<$ Find\+Statement, Doc\+Result $>$}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_impl}{com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement\+Impl}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a31dcef3b4852a5eb361a03b549eddeaf}{fields}} (String... projections)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_ad4cbafb2eb15a77355ddcacf12188ba2}{fields}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expression}{Expression}} doc\+Projection)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a05535b09958e5196723d4eb8911f0360}{group\+By}} (String... group\+By)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_af151c43e0c862bd983c6c737320a6a5f}{having}} (String having)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a0542751a290783fd73d1049dff5f8163}{order\+By}} (String... sort\+Fields)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_aa08256e0b22e4353c966b184e211c4a6}{sort}} (String... sort\+Fields)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a7bd11b1e008d429927ccf72c16f79d54}{skip}} (long limit\+Offset)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a62c093679f1d534a4e7e40c5f78f7ed0}{limit}} (long number\+Of\+Rows)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_aaa2bf84ac564387d2909bf201aa57fc1}{lock\+Shared}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a462ecf53c1ba4a9d6e0d29a2a244bd62}{lock\+Shared}} (Lock\+Contention lock\+Contention)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_af7d8cbf89d9c5c6caf6c0d89490b5d06}{lock\+Exclusive}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a45a87d77da29808cb82617f003de584d}{lock\+Exclusive}} (Lock\+Contention lock\+Contention)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A statement to {\itshape find} the set of documents according to the given specification. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a31dcef3b4852a5eb361a03b549eddeaf}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a31dcef3b4852a5eb361a03b549eddeaf}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}!fields@{fields}}
+\index{fields@{fields}!com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}}
+\subsubsection{\texorpdfstring{fields()}{fields()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement.\+fields (\begin{DoxyParamCaption}\item[{String...}]{projections }\end{DoxyParamCaption})}
+
+Add/replace the field projections defining the result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em projections} & projection expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_impl_a0949083d6d4ba7dff81c2ead999373bf}{com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_ad4cbafb2eb15a77355ddcacf12188ba2}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_ad4cbafb2eb15a77355ddcacf12188ba2}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}!fields@{fields}}
+\index{fields@{fields}!com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}}
+\subsubsection{\texorpdfstring{fields()}{fields()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement.\+fields (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expression}{Expression}}}]{doc\+Projection }\end{DoxyParamCaption})}
+
+Add/replace the field projection defining the result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em doc\+Projection} & projection expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_impl_a52d3c488bb46564fdab7629781d6c99b}{com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a05535b09958e5196723d4eb8911f0360}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a05535b09958e5196723d4eb8911f0360}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}!group\+By@{group\+By}}
+\index{group\+By@{group\+By}!com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}}
+\subsubsection{\texorpdfstring{group\+By()}{groupBy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement.\+group\+By (\begin{DoxyParamCaption}\item[{String...}]{group\+By }\end{DoxyParamCaption})}
+
+Add/replace the aggregation fields for this query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+By} & group\+By expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_impl_ad75d9465a8dec5c2340ab8b25678f97d}{com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_af151c43e0c862bd983c6c737320a6a5f}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_af151c43e0c862bd983c6c737320a6a5f}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}!having@{having}}
+\index{having@{having}!com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}}
+\subsubsection{\texorpdfstring{having()}{having()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement.\+having (\begin{DoxyParamCaption}\item[{String}]{having }\end{DoxyParamCaption})}
+
+Add/replace the aggregate criteria for this query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em having} & having expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_impl_aa5772a01729fde08c5959498e56b5448}{com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a62c093679f1d534a4e7e40c5f78f7ed0}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a62c093679f1d534a4e7e40c5f78f7ed0}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}!limit@{limit}}
+\index{limit@{limit}!com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}}
+\subsubsection{\texorpdfstring{limit()}{limit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement.\+limit (\begin{DoxyParamCaption}\item[{long}]{number\+Of\+Rows }\end{DoxyParamCaption})}
+
+Add/replace the document limit for this query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Rows} & limit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_af7d8cbf89d9c5c6caf6c0d89490b5d06}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_af7d8cbf89d9c5c6caf6c0d89490b5d06}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}!lock\+Exclusive@{lock\+Exclusive}}
+\index{lock\+Exclusive@{lock\+Exclusive}!com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}}
+\subsubsection{\texorpdfstring{lock\+Exclusive()}{lockExclusive()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement.\+lock\+Exclusive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Locks matching rows exclusively so no other transactions can read or write to them.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_impl_a3486c67a7e4b354ff3101b9c5734c5f1}{com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a45a87d77da29808cb82617f003de584d}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a45a87d77da29808cb82617f003de584d}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}!lock\+Exclusive@{lock\+Exclusive}}
+\index{lock\+Exclusive@{lock\+Exclusive}!com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}}
+\subsubsection{\texorpdfstring{lock\+Exclusive()}{lockExclusive()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement.\+lock\+Exclusive (\begin{DoxyParamCaption}\item[{Lock\+Contention}]{lock\+Contention }\end{DoxyParamCaption})}
+
+Locks matching rows exclusively so no other transactions can read or write to them, using the provided lock contention option.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock\+Contention} & The \mbox{\hyperlink{}{Lock\+Contention}} value to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_impl_abb488a09f4ad595edcb2725712182e38}{com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_aaa2bf84ac564387d2909bf201aa57fc1}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_aaa2bf84ac564387d2909bf201aa57fc1}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}!lock\+Shared@{lock\+Shared}}
+\index{lock\+Shared@{lock\+Shared}!com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}}
+\subsubsection{\texorpdfstring{lock\+Shared()}{lockShared()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement.\+lock\+Shared (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Locks matching rows against updates.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_impl_acdc867ddce32e3776d059f72a601fbdd}{com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a462ecf53c1ba4a9d6e0d29a2a244bd62}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a462ecf53c1ba4a9d6e0d29a2a244bd62}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}!lock\+Shared@{lock\+Shared}}
+\index{lock\+Shared@{lock\+Shared}!com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}}
+\subsubsection{\texorpdfstring{lock\+Shared()}{lockShared()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement.\+lock\+Shared (\begin{DoxyParamCaption}\item[{Lock\+Contention}]{lock\+Contention }\end{DoxyParamCaption})}
+
+Locks matching rows against updates using the provided lock contention option.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock\+Contention} & The \mbox{\hyperlink{}{Lock\+Contention}} value to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_impl_aecf5ef40361b9b8646b416543c82d2d4}{com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a0542751a290783fd73d1049dff5f8163}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a0542751a290783fd73d1049dff5f8163}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}!order\+By@{order\+By}}
+\index{order\+By@{order\+By}!com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}}
+\subsubsection{\texorpdfstring{order\+By()}{orderBy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement.\+order\+By (\begin{DoxyParamCaption}\item[{String...}]{sort\+Fields }\end{DoxyParamCaption})}
+
+Add/replace the order specification for this query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sort\+Fields} & sort expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a7bd11b1e008d429927ccf72c16f79d54}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_a7bd11b1e008d429927ccf72c16f79d54}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}!skip@{skip}}
+\index{skip@{skip}!com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}}
+\subsubsection{\texorpdfstring{skip()}{skip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement.\+skip (\begin{DoxyParamCaption}\item[{long}]{limit\+Offset }\end{DoxyParamCaption})}
+
+Add/replace the document offset for this query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit\+Offset} & number of documents to skip \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_aa08256e0b22e4353c966b184e211c4a6}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement_aa08256e0b22e4353c966b184e211c4a6}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}!sort@{sort}}
+\index{sort@{sort}!com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Find\+Statement}}
+\subsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Find\+Statement.\+sort (\begin{DoxyParamCaption}\item[{String...}]{sort\+Fields }\end{DoxyParamCaption})}
+
+Add/replace the order specification for this query. 
+
+Synonym for \mbox{\hyperlink{}{order\+By(\+String...)}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sort\+Fields} & sort expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_find_statement}{Find\+Statement}} 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/Find\+Statement.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,70 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement_impl}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Update\+Statement\+Impl Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement_impl}\index{com.\+mysql.\+cj.\+xdevapi.\+Update\+Statement\+Impl@{com.\+mysql.\+cj.\+xdevapi.\+Update\+Statement\+Impl}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_filterable_statement}{com.\+mysql.\+cj.\+xdevapi.\+Filterable\+Statement$<$ Update\+Statement, Result $>$}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement}{com.\+mysql.\+cj.\+xdevapi.\+Update\+Statement}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement_impl_a788b498a7eaccac3a60041232221b24a}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement_impl_a788b498a7eaccac3a60041232221b24a}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} {\bfseries execute} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement_impl_abf6e7151f999adf63e8302a46f389887}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement_impl_abf6e7151f999adf63e8302a46f389887}} 
+Completable\+Future$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} $>$ {\bfseries execute\+Async} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement}{Update\+Statement}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement_impl_ad3e9fc6db7805042b6f73938782c2173}{set}} (Map$<$ String, Object $>$ fields\+And\+Values)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement}{Update\+Statement}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement_impl_a6100d1574e2958c9aa1229e70a476e37}{set}} (String field, Object value)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement_impl_ad3e9fc6db7805042b6f73938782c2173}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement_impl_ad3e9fc6db7805042b6f73938782c2173}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Statement\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Statement\+Impl}!set@{set}}
+\index{set@{set}!com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Statement\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement}{Update\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Update\+Statement\+Impl.\+set (\begin{DoxyParamCaption}\item[{Map$<$ String, Object $>$}]{fields\+And\+Values }\end{DoxyParamCaption})}
+
+Add the given set of updates to the statement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fields\+And\+Values} & table name-\/value pairs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement}{Update\+Statement}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement_a55ee82b73b4faf50fa2ba7dbbd723819}{com.\+mysql.\+cj.\+xdevapi.\+Update\+Statement}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement_impl_a6100d1574e2958c9aa1229e70a476e37}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement_impl_a6100d1574e2958c9aa1229e70a476e37}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Statement\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Statement\+Impl}!set@{set}}
+\index{set@{set}!com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Statement\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement}{Update\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Update\+Statement\+Impl.\+set (\begin{DoxyParamCaption}\item[{String}]{field,  }\item[{Object}]{value }\end{DoxyParamCaption})}
+
+Add the given update to the statement setting field to value for all rows matching the search criteria.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & field name \\
+\hline
+{\em value} & value to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement}{Update\+Statement}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_statement_a01e50a32f4bf89c98b112b7e22a6f140}{com.\+mysql.\+cj.\+xdevapi.\+Update\+Statement}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/Update\+Statement\+Impl.\+java\end{DoxyCompactItemize}

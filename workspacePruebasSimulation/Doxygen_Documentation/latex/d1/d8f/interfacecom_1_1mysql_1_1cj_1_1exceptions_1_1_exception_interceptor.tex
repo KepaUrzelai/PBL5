@@ -1,0 +1,58 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{}\section{com.\+mysql.\+cj.\+exceptions.\+Exception\+Interceptor Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}\index{com.\+mysql.\+cj.\+exceptions.\+Exception\+Interceptor@{com.\+mysql.\+cj.\+exceptions.\+Exception\+Interceptor}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor_chain}{com.\+mysql.\+cj.\+exceptions.\+Exception\+Interceptor\+Chain}}, testsuite.\+regression.\+Connection\+Regression\+Test.\+Test\+Bug21934573\+Exception\+Interceptor, testsuite.\+regression.\+Connection\+Regression\+Test.\+Test\+Bug67803\+Exception\+Interceptor, testsuite.\+regression.\+Connection\+Regression\+Test.\+Test\+Bug71850\+Exception\+Interceptor, and testsuite.\+regression.\+Result\+Set\+Regression\+Test.\+Test\+Bug67318\+Exception\+Interceptor.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor_a5488d80601434446f3f5f73c27226417}{init}} (Properties props, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor_a225145c1c4b2c7e2d20cfd0bc4e1d332}{destroy}} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor_ab77cba0ffef1d2d6921d29e2eb79b072}\label{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor_ab77cba0ffef1d2d6921d29e2eb79b072}} 
+Exception {\bfseries intercept\+Exception} (Exception sql\+Ex)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor_a225145c1c4b2c7e2d20cfd0bc4e1d332}\label{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor_a225145c1c4b2c7e2d20cfd0bc4e1d332}} 
+\index{com\+::mysql\+::cj\+::exceptions\+::\+Exception\+Interceptor@{com\+::mysql\+::cj\+::exceptions\+::\+Exception\+Interceptor}!destroy@{destroy}}
+\index{destroy@{destroy}!com\+::mysql\+::cj\+::exceptions\+::\+Exception\+Interceptor@{com\+::mysql\+::cj\+::exceptions\+::\+Exception\+Interceptor}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+exceptions.\+Exception\+Interceptor.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor_chain_a23c40128c6933d51a1c29055494180db}{com.\+mysql.\+cj.\+exceptions.\+Exception\+Interceptor\+Chain}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor_a5488d80601434446f3f5f73c27226417}\label{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor_a5488d80601434446f3f5f73c27226417}} 
+\index{com\+::mysql\+::cj\+::exceptions\+::\+Exception\+Interceptor@{com\+::mysql\+::cj\+::exceptions\+::\+Exception\+Interceptor}!init@{init}}
+\index{init@{init}!com\+::mysql\+::cj\+::exceptions\+::\+Exception\+Interceptor@{com\+::mysql\+::cj\+::exceptions\+::\+Exception\+Interceptor}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} com.\+mysql.\+cj.\+exceptions.\+Exception\+Interceptor.\+init (\begin{DoxyParamCaption}\item[{Properties}]{props,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}}}]{log }\end{DoxyParamCaption})}
+
+Called once per connection that wants to use the extension
+
+The properties are the same ones passed in in the U\+RL or arguments to Driver.\+connect() or Driver\+Manager.\+get\+Connection().
+
+
+\begin{DoxyParams}{Parameters}
+{\em props} & configuration values as passed to the connection. Note that in order to support javax.\+sql.\+Data\+Sources, configuration properties specific to an interceptor {\bfseries must} be passed via set\+U\+R\+L() on the Data\+Source. Extension properties are not exposed via accessor/mutator methods on Data\+Sources. \\
+\hline
+{\em log} & logger instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor_chain_ae29710eae9d22d426baabd3b2e589fec}{com.\+mysql.\+cj.\+exceptions.\+Exception\+Interceptor\+Chain}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/exceptions/Exception\+Interceptor.\+java\end{DoxyCompactItemize}

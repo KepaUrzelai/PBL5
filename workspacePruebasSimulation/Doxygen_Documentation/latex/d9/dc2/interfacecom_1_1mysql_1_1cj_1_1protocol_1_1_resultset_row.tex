@@ -1,0 +1,26 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_row}{}\section{com.\+mysql.\+cj.\+protocol.\+Resultset\+Row Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_row}\index{com.\+mysql.\+cj.\+protocol.\+Resultset\+Row@{com.\+mysql.\+cj.\+protocol.\+Resultset\+Row}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{com.\+mysql.\+cj.\+result.\+Row}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1result_1_1_abstract_resultset_row}{com.\+mysql.\+cj.\+protocol.\+result.\+Abstract\+Resultset\+Row}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_row_a7460706550d3aea6a340ff6676bd7062}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_row_a7460706550d3aea6a340ff6676bd7062}} 
+default boolean {\bfseries is\+Binary\+Encoded} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classes that implement this interface represent one row of data from the My\+S\+QL server that might be stored in different ways depending on whether the result set was streaming (so they wrap a reusable packet), or whether the result set was cached or via a server-\/side cursor (so they represent a byte\mbox{[}\mbox{]}\mbox{[}\mbox{]}).
+
+Notice that {\bfseries no} bounds checking is expected for implementors of this interface, it happens in Result\+Set\+Impl. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/Resultset\+Row.\+java\end{DoxyCompactItemize}

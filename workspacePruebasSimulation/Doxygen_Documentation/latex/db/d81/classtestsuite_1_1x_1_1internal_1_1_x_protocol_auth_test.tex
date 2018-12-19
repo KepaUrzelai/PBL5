@@ -1,0 +1,60 @@
+\hypertarget{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test}{}\section{testsuite.\+x.\+internal.\+X\+Protocol\+Auth\+Test Class Reference}
+\label{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test}\index{testsuite.\+x.\+internal.\+X\+Protocol\+Auth\+Test@{testsuite.\+x.\+internal.\+X\+Protocol\+Auth\+Test}}
+
+
+Inherits \mbox{\hyperlink{classtestsuite_1_1x_1_1internal_1_1_internal_x_base_test_case}{testsuite.\+x.\+internal.\+Internal\+X\+Base\+Test\+Case}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a57430feba87ab0193bb09121d9ad49a6}\label{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a57430feba87ab0193bb09121d9ad49a6}} 
+void {\bfseries setup\+Test\+Protocol} ()  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a18ba2416ae6c99ffb77b8365f9555a0d}\label{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a18ba2416ae6c99ffb77b8365f9555a0d}} 
+void {\bfseries destroy\+Test\+Protocol} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a15c56d0e66e32bb2906ca10e99e87aef}{test\+Bad\+Auth\+Message}} ()  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a535fb0dc31d27ef08facfe31f5969523}\label{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a535fb0dc31d27ef08facfe31f5969523}} 
+void {\bfseries test\+Basic\+Sasl\+Plain\+Auth} ()  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a7b4ee549a5e581fda55eb659d75909b5}\label{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a7b4ee549a5e581fda55eb659d75909b5}} 
+void {\bfseries test\+Basic\+Sasl\+Mysql41\+Auth} ()  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a502f91ff41c06ef067fa9845718fe7f5}\label{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a502f91ff41c06ef067fa9845718fe7f5}} 
+void {\bfseries test\+Basic\+Sasl\+Plain\+Auth\+Failure} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a76e75605e16d62562cc640dee2c1f97f}{test\+Empty\+Database\+M\+Y\+S\+Q\+L41}} ()
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a0399a6526726159d237bed0441d195c2}{test\+Empty\+Database\+P\+L\+A\+IN}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Tests for protocol-\/level auth A\+P\+Is against X Plugin via X Protocol. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a15c56d0e66e32bb2906ca10e99e87aef}\label{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a15c56d0e66e32bb2906ca10e99e87aef}} 
+\index{testsuite\+::x\+::internal\+::\+X\+Protocol\+Auth\+Test@{testsuite\+::x\+::internal\+::\+X\+Protocol\+Auth\+Test}!test\+Bad\+Auth\+Message@{test\+Bad\+Auth\+Message}}
+\index{test\+Bad\+Auth\+Message@{test\+Bad\+Auth\+Message}!testsuite\+::x\+::internal\+::\+X\+Protocol\+Auth\+Test@{testsuite\+::x\+::internal\+::\+X\+Protocol\+Auth\+Test}}
+\subsubsection{\texorpdfstring{test\+Bad\+Auth\+Message()}{testBadAuthMessage()}}
+{\footnotesize\ttfamily void testsuite.\+x.\+internal.\+X\+Protocol\+Auth\+Test.\+test\+Bad\+Auth\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Test that we are disconnected with an error if we send a bad authentication message. The server responds by immediately closing the socket. The async implementation may block indefinitely here and we need to prevent any regression. \mbox{\Hypertarget{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a76e75605e16d62562cc640dee2c1f97f}\label{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a76e75605e16d62562cc640dee2c1f97f}} 
+\index{testsuite\+::x\+::internal\+::\+X\+Protocol\+Auth\+Test@{testsuite\+::x\+::internal\+::\+X\+Protocol\+Auth\+Test}!test\+Empty\+Database\+M\+Y\+S\+Q\+L41@{test\+Empty\+Database\+M\+Y\+S\+Q\+L41}}
+\index{test\+Empty\+Database\+M\+Y\+S\+Q\+L41@{test\+Empty\+Database\+M\+Y\+S\+Q\+L41}!testsuite\+::x\+::internal\+::\+X\+Protocol\+Auth\+Test@{testsuite\+::x\+::internal\+::\+X\+Protocol\+Auth\+Test}}
+\subsubsection{\texorpdfstring{test\+Empty\+Database\+M\+Y\+S\+Q\+L41()}{testEmptyDatabaseMYSQL41()}}
+{\footnotesize\ttfamily void testsuite.\+x.\+internal.\+X\+Protocol\+Auth\+Test.\+test\+Empty\+Database\+M\+Y\+S\+Q\+L41 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Bug\#21680263 -\/ Null\+Pointer\+Exception When Try to connect without DB Name. \mbox{\Hypertarget{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a0399a6526726159d237bed0441d195c2}\label{classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test_a0399a6526726159d237bed0441d195c2}} 
+\index{testsuite\+::x\+::internal\+::\+X\+Protocol\+Auth\+Test@{testsuite\+::x\+::internal\+::\+X\+Protocol\+Auth\+Test}!test\+Empty\+Database\+P\+L\+A\+IN@{test\+Empty\+Database\+P\+L\+A\+IN}}
+\index{test\+Empty\+Database\+P\+L\+A\+IN@{test\+Empty\+Database\+P\+L\+A\+IN}!testsuite\+::x\+::internal\+::\+X\+Protocol\+Auth\+Test@{testsuite\+::x\+::internal\+::\+X\+Protocol\+Auth\+Test}}
+\subsubsection{\texorpdfstring{test\+Empty\+Database\+P\+L\+A\+I\+N()}{testEmptyDatabasePLAIN()}}
+{\footnotesize\ttfamily void testsuite.\+x.\+internal.\+X\+Protocol\+Auth\+Test.\+test\+Empty\+Database\+P\+L\+A\+IN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Bug\#21680263 -\/ Null\+Pointer\+Exception When Try to connect without DB Name. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/test/java/testsuite/x/internal/X\+Protocol\+Auth\+Test.\+java\end{DoxyCompactItemize}

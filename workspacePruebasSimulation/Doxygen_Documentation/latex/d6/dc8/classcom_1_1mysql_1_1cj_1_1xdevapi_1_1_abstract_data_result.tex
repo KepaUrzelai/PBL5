@@ -1,0 +1,88 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result$<$ T $>$ Class Template Reference}
+\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}\index{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result$<$ T $>$@{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result$<$ T $>$}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer}{com.\+mysql.\+cj.\+protocol.\+Result\+Streamer}}, and Iterator$<$ T $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a662bf16eb25a6e01e053580bc63f020d}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a662bf16eb25a6e01e053580bc63f020d}} 
+{\bfseries Abstract\+Data\+Result} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list}{Row\+List}} rows, Supplier$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} $>$ completer, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ T, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ row\+To\+Data)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a275a94d6439506bd062c6c38e911283c}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a275a94d6439506bd062c6c38e911283c}} 
+T {\bfseries next} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa0376cefb0ca352d431b392149481588}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa0376cefb0ca352d431b392149481588}} 
+List$<$ T $>$ {\bfseries fetch\+All} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a7825d8f19a7fd60da5c89755219a22d2}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a7825d8f19a7fd60da5c89755219a22d2}} 
+long {\bfseries count} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_af873fff3d2449cd6a1f189be25d58ec6}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_af873fff3d2449cd6a1f189be25d58ec6}} 
+boolean {\bfseries has\+Next} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ab2e2a86090761e83b3198b2581a31d69}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ab2e2a86090761e83b3198b2581a31d69}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} {\bfseries get\+Statement\+Execute\+Ok} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a6a37bb1022bc6bea43edf1f996dca4d4}{finish\+Streaming}} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa3c13a06303670b7e9720befa3daf72b}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa3c13a06303670b7e9720befa3daf72b}} 
+int {\bfseries get\+Warnings\+Count} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ac75c20b55a1923cac43c52ca6df9bdca}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ac75c20b55a1923cac43c52ca6df9bdca}} 
+Iterator$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_warning}{Warning}} $>$ {\bfseries get\+Warnings} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa3f163eb4a252399c9aa0bdb8e02ca9b}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aa3f163eb4a252399c9aa0bdb8e02ca9b}} 
+int {\bfseries position} = -\/1
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ac8f7cdced67df259befd51e1e7d9a2b7}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ac8f7cdced67df259befd51e1e7d9a2b7}} 
+int {\bfseries count} = -\/1
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ae04b2bf0af10423f89abe996549946f9}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_ae04b2bf0af10423f89abe996549946f9}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list}{Row\+List}} {\bfseries rows}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aec36caa2d5404a5748add97ebab8bc1e}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_aec36caa2d5404a5748add97ebab8bc1e}} 
+Supplier$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} $>$ {\bfseries completer}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a685a1078d618fe85fa65e7511f512985}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a685a1078d618fe85fa65e7511f512985}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} {\bfseries ok}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a05558a272c6983191c011faaf3de89ad}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a05558a272c6983191c011faaf3de89ad}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ T, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ {\bfseries row\+To\+Data}
+\item 
+List$<$ T $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a77a21d804536b015015d39ad4b45a1c0}{all}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for data set results. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a6a37bb1022bc6bea43edf1f996dca4d4}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a6a37bb1022bc6bea43edf1f996dca4d4}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!finish\+Streaming@{finish\+Streaming}}
+\index{finish\+Streaming@{finish\+Streaming}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{finish\+Streaming()}{finishStreaming()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.finish\+Streaming (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Finish the result streaming. This happens if a new command is started or the warnings/etc are requested. This is safe to call multiple times and only has an effect the first time. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer}{com.\+mysql.\+cj.\+protocol.\+Result\+Streamer}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a77a21d804536b015015d39ad4b45a1c0}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a77a21d804536b015015d39ad4b45a1c0}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}!all@{all}}
+\index{all@{all}!com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Abstract\+Data\+Result}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily List$<$T$>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result}}$<$ T $>$.all\hspace{0.3cm}{\ttfamily [protected]}}
+
+List of all elements. {\ttfamily null} until requested via \mbox{\hyperlink{}{fetch\+All()}}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/Abstract\+Data\+Result.\+java\end{DoxyCompactItemize}

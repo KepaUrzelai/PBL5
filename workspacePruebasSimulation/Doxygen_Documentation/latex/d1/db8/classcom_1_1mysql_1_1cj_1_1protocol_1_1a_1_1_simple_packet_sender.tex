@@ -1,0 +1,60 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Simple\+Packet\+Sender Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Simple\+Packet\+Sender@{com.\+mysql.\+cj.\+protocol.\+a.\+Simple\+Packet\+Sender}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_a0cfdd0d43649fedca7f4ba2fccb983ce}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_a0cfdd0d43649fedca7f4ba2fccb983ce}} 
+{\bfseries Simple\+Packet\+Sender} (Buffered\+Output\+Stream output\+Stream)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_a88b66f65476a850c58ffa47bc862661e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_a88b66f65476a850c58ffa47bc862661e}} 
+void {\bfseries send} (byte\mbox{[}$\,$\mbox{]} packet, int packet\+Len, byte packet\+Sequence)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_a2fa36445cf29dff6e32000dc6c95c831}{undecorate\+All}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_a7258a5245f263cf4635daba8be258e36}{undecorate}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple implementation of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}} which handles the transmission of logical My\+S\+QL packets to the provided output stream. Large packets will be split into multiple chunks. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_a7258a5245f263cf4635daba8be258e36}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_a7258a5245f263cf4635daba8be258e36}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Sender}!undecorate@{undecorate}}
+\index{undecorate@{undecorate}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Sender}}
+\subsubsection{\texorpdfstring{undecorate()}{undecorate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Simple\+Packet\+Sender.\+undecorate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the previous Packet\+Sender instance from the decorators chain or the current Packet\+Sender if it is the first entry in a chain.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}} instance 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a3a352bf35ad98dc6cea7c1f4ac9480da}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_a2fa36445cf29dff6e32000dc6c95c831}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_a2fa36445cf29dff6e32000dc6c95c831}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Sender}!undecorate\+All@{undecorate\+All}}
+\index{undecorate\+All@{undecorate\+All}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Sender}}
+\subsubsection{\texorpdfstring{undecorate\+All()}{undecorateAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Simple\+Packet\+Sender.\+undecorate\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return a Packet\+Sender instance free of decorators.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}} instance 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a8066931f03c2fa9cc705716fa10a4517}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/Simple\+Packet\+Sender.\+java\end{DoxyCompactItemize}

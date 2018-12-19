@@ -1,0 +1,629 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper}{}\section{com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper}\index{com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper@{com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_prepared_statement_wrapper}{com.\+mysql.\+cj.\+jdbc.\+Prepared\+Statement\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement}{com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a60a04ffa9e3517620a85c8c64169050f}{Callable\+Statement\+Wrapper}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper}{Connection\+Wrapper}} c, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection}{Mysql\+Pooled\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement}{Callable\+Statement}} to\+Wrap)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_aae06c94e8cf571f5349751c14df82160}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_aae06c94e8cf571f5349751c14df82160}} 
+void {\bfseries register\+Out\+Parameter} (int parameter\+Index, int sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a4de616b8da8f3443d0920d13442e81ed}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a4de616b8da8f3443d0920d13442e81ed}} 
+void {\bfseries register\+Out\+Parameter} (int parameter\+Index, int sql\+Type, int scale)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a22610654afb6f387f1b2cec382db2d77}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a22610654afb6f387f1b2cec382db2d77}} 
+boolean {\bfseries was\+Null} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a7fde9ad7a833b2c7ba285efaf7dabc7a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a7fde9ad7a833b2c7ba285efaf7dabc7a}} 
+String {\bfseries get\+String} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ad8b6b2d6283febac1be43695a2ba4fe6}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ad8b6b2d6283febac1be43695a2ba4fe6}} 
+boolean {\bfseries get\+Boolean} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af77928ea8b1e57f114b720f577d3dc87}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af77928ea8b1e57f114b720f577d3dc87}} 
+byte {\bfseries get\+Byte} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a0ab483116a0ce4623a5175bd7180a700}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a0ab483116a0ce4623a5175bd7180a700}} 
+short {\bfseries get\+Short} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a3751d784b7710faee7534a932450d64e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a3751d784b7710faee7534a932450d64e}} 
+int {\bfseries get\+Int} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a62fcfa4febd178fab887009064cd6ba8}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a62fcfa4febd178fab887009064cd6ba8}} 
+long {\bfseries get\+Long} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a7a5920621690a03b6a879c970baca451}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a7a5920621690a03b6a879c970baca451}} 
+float {\bfseries get\+Float} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a71b16cdb9e9f4bc2a1264b00cd8157de}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a71b16cdb9e9f4bc2a1264b00cd8157de}} 
+double {\bfseries get\+Double} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_aabb06a7543c93357c408fcbf1451d241}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_aabb06a7543c93357c408fcbf1451d241}} 
+Big\+Decimal {\bfseries get\+Big\+Decimal} (int parameter\+Index, int scale)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a33a04c98fb179f10044fd3ecf6acd81b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a33a04c98fb179f10044fd3ecf6acd81b}} 
+byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Bytes} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ad72f6af2c2145a0b711e39c35d8de37a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ad72f6af2c2145a0b711e39c35d8de37a}} 
+Date {\bfseries get\+Date} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ac6ae348f75727284f4ee244e731109fb}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ac6ae348f75727284f4ee244e731109fb}} 
+Time {\bfseries get\+Time} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a4c42eb1a7e9d3d711ebbfab24783ba54}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a4c42eb1a7e9d3d711ebbfab24783ba54}} 
+Timestamp {\bfseries get\+Timestamp} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a1559252d0b3ea2b04ca1b6cbba5cd022}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a1559252d0b3ea2b04ca1b6cbba5cd022}} 
+Object {\bfseries get\+Object} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a008af4c155c1e7a47eafaf9c10f6488c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a008af4c155c1e7a47eafaf9c10f6488c}} 
+Big\+Decimal {\bfseries get\+Big\+Decimal} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a878edbe5b4d6d8a93cbe01e2072f0cd3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a878edbe5b4d6d8a93cbe01e2072f0cd3}} 
+Object {\bfseries get\+Object} (int parameter\+Index, Map$<$ String, Class$<$?$>$$>$ type\+Map)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_abbd6aeb5202c2b47ce1d7e7744412225}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_abbd6aeb5202c2b47ce1d7e7744412225}} 
+Ref {\bfseries get\+Ref} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ac75427678f74f49dbf8690cdee217fdc}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ac75427678f74f49dbf8690cdee217fdc}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} {\bfseries get\+Blob} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_aae139c525a34c2d423a40fa07ea69ad8}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_aae139c525a34c2d423a40fa07ea69ad8}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob}{Clob}} {\bfseries get\+Clob} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ae343283c26893f40b7be056d8d0f83f6}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ae343283c26893f40b7be056d8d0f83f6}} 
+Array {\bfseries get\+Array} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_afc9ffea1b1711d7ef544823419c14a35}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_afc9ffea1b1711d7ef544823419c14a35}} 
+Date {\bfseries get\+Date} (int parameter\+Index, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a9dc51c18369430187127cad02d36a78a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a9dc51c18369430187127cad02d36a78a}} 
+Time {\bfseries get\+Time} (int parameter\+Index, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a1385ec0e56f4901f387c1c26c4723074}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a1385ec0e56f4901f387c1c26c4723074}} 
+Timestamp {\bfseries get\+Timestamp} (int parameter\+Index, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_aa73b795acf00d96a54ffba608c998d38}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_aa73b795acf00d96a54ffba608c998d38}} 
+void {\bfseries register\+Out\+Parameter} (int param\+Index, int sql\+Type, String type\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a87efd78c0e24c7db45bcf5e6014bb04e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a87efd78c0e24c7db45bcf5e6014bb04e}} 
+void {\bfseries register\+Out\+Parameter} (String parameter\+Name, int sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ac072baf8059157a74bdde54913beee05}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ac072baf8059157a74bdde54913beee05}} 
+void {\bfseries register\+Out\+Parameter} (String parameter\+Name, int sql\+Type, int scale)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a503747e708b63d81f76eed2355eeee4b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a503747e708b63d81f76eed2355eeee4b}} 
+void {\bfseries register\+Out\+Parameter} (String parameter\+Name, int sql\+Type, String type\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a32f5cc4d287750f693b15882d1ea2e0e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a32f5cc4d287750f693b15882d1ea2e0e}} 
+U\+RL {\bfseries get\+U\+RL} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a71715dae5249e3879a3ca05ac024c029}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a71715dae5249e3879a3ca05ac024c029}} 
+void {\bfseries set\+U\+RL} (String parameter\+Name, U\+RL val)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a62b55a81daba512cbbc2982972617bd3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a62b55a81daba512cbbc2982972617bd3}} 
+void {\bfseries set\+Null} (String parameter\+Name, int sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a33df115ee96292a0c31bb211afcf282e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a33df115ee96292a0c31bb211afcf282e}} 
+void {\bfseries set\+Boolean} (String parameter\+Name, boolean x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ae2b48a9d09239f8a4d926cef704377a3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ae2b48a9d09239f8a4d926cef704377a3}} 
+void {\bfseries set\+Byte} (String parameter\+Name, byte x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a112bd04ba7dd189742daa30aef1da739}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a112bd04ba7dd189742daa30aef1da739}} 
+void {\bfseries set\+Short} (String parameter\+Name, short x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a7d812d44b0d5e37d66428f715070206e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a7d812d44b0d5e37d66428f715070206e}} 
+void {\bfseries set\+Int} (String parameter\+Name, int x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a0a765b0c5f70097c9e3d72cb1a1698f3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a0a765b0c5f70097c9e3d72cb1a1698f3}} 
+void {\bfseries set\+Long} (String parameter\+Name, long x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a49b690d2b867b9d0310edf8311e3a9c8}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a49b690d2b867b9d0310edf8311e3a9c8}} 
+void {\bfseries set\+Float} (String parameter\+Name, float x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a0b65754371fd01a89813e96633d52316}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a0b65754371fd01a89813e96633d52316}} 
+void {\bfseries set\+Double} (String parameter\+Name, double x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a2cfdfb18f2c4ba250ba0b21ee1f40d5d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a2cfdfb18f2c4ba250ba0b21ee1f40d5d}} 
+void {\bfseries set\+Big\+Decimal} (String parameter\+Name, Big\+Decimal x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a547393c40956e849783f2898927b9b26}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a547393c40956e849783f2898927b9b26}} 
+void {\bfseries set\+String} (String parameter\+Name, String x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_adc76b65c6928e58d246b0685340e9a1f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_adc76b65c6928e58d246b0685340e9a1f}} 
+void {\bfseries set\+Bytes} (String parameter\+Name, byte\mbox{[}$\,$\mbox{]} x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a8d910d860632c24bd1535385cc45a4a5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a8d910d860632c24bd1535385cc45a4a5}} 
+void {\bfseries set\+Date} (String parameter\+Name, Date x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_aaa0f355af4e93751195a5c39b0a02e53}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_aaa0f355af4e93751195a5c39b0a02e53}} 
+void {\bfseries set\+Time} (String parameter\+Name, Time x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af2d167eb255b3dac1761533d2d1e1213}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af2d167eb255b3dac1761533d2d1e1213}} 
+void {\bfseries set\+Timestamp} (String parameter\+Name, Timestamp x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a60afc64a12c8b426d3f42c0a1e604702}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a60afc64a12c8b426d3f42c0a1e604702}} 
+void {\bfseries set\+Ascii\+Stream} (String parameter\+Name, Input\+Stream x, int length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_acbdfc72c07621040626f00e680fca646}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_acbdfc72c07621040626f00e680fca646}} 
+void {\bfseries set\+Binary\+Stream} (String parameter\+Name, Input\+Stream x, int length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a5c36cfd344951a9188d77462b60752fa}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a5c36cfd344951a9188d77462b60752fa}} 
+void {\bfseries set\+Object} (String parameter\+Name, Object x, int target\+Sql\+Type, int scale)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ab93232c15dfdd7025bc2d8487c8da13c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ab93232c15dfdd7025bc2d8487c8da13c}} 
+void {\bfseries set\+Object} (String parameter\+Name, Object x, int target\+Sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a5ea9e2ab5e7665bbacaca16851b2ce9e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a5ea9e2ab5e7665bbacaca16851b2ce9e}} 
+void {\bfseries set\+Object} (String parameter\+Name, Object x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a46aca7f74e0a632658427955c50a4da0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a46aca7f74e0a632658427955c50a4da0}} 
+void {\bfseries set\+Character\+Stream} (String parameter\+Name, Reader reader, int length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ae9be256e798242308dde5910a49b54a5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ae9be256e798242308dde5910a49b54a5}} 
+void {\bfseries set\+Date} (String parameter\+Name, Date x, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a432c8819032ad333b071fff3835d7e30}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a432c8819032ad333b071fff3835d7e30}} 
+void {\bfseries set\+Time} (String parameter\+Name, Time x, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a2b701395e2b90c9adb246dfe95a8bc7e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a2b701395e2b90c9adb246dfe95a8bc7e}} 
+void {\bfseries set\+Timestamp} (String parameter\+Name, Timestamp x, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a6972139bd2b0b31d08cd37e0fa13a5a5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a6972139bd2b0b31d08cd37e0fa13a5a5}} 
+void {\bfseries set\+Null} (String parameter\+Name, int sql\+Type, String type\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a43d2c19deea6e401535ad9dfa096effb}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a43d2c19deea6e401535ad9dfa096effb}} 
+String {\bfseries get\+String} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a950b8d4dbca00bbded312d43ed360ddd}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a950b8d4dbca00bbded312d43ed360ddd}} 
+boolean {\bfseries get\+Boolean} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a5a41d9a92823e2b8915919bac988e911}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a5a41d9a92823e2b8915919bac988e911}} 
+byte {\bfseries get\+Byte} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a59d2cdb9c0390c9c04486bec29c47117}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a59d2cdb9c0390c9c04486bec29c47117}} 
+short {\bfseries get\+Short} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a9e8fdf85022e6262dbbccd281f60078c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a9e8fdf85022e6262dbbccd281f60078c}} 
+int {\bfseries get\+Int} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a13ca9c4345afcde3661a1ecf038570d6}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a13ca9c4345afcde3661a1ecf038570d6}} 
+long {\bfseries get\+Long} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a64e2ecf36edf8ff34d8b8ffc7d55690b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a64e2ecf36edf8ff34d8b8ffc7d55690b}} 
+float {\bfseries get\+Float} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a55141cd8e8c5167c0549ce8b325bc8eb}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a55141cd8e8c5167c0549ce8b325bc8eb}} 
+double {\bfseries get\+Double} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a37dffc82be3393b4438493a401336084}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a37dffc82be3393b4438493a401336084}} 
+byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Bytes} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a00944061d831545b4860902e6a3920f3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a00944061d831545b4860902e6a3920f3}} 
+Date {\bfseries get\+Date} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af92be3b226666058f63f49b9d0778adb}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af92be3b226666058f63f49b9d0778adb}} 
+Time {\bfseries get\+Time} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a41c8fc1aa3cb81aef6ff6c05c8f16f8c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a41c8fc1aa3cb81aef6ff6c05c8f16f8c}} 
+Timestamp {\bfseries get\+Timestamp} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a6af6d4ae1d6e709da1fe3e471fbcab77}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a6af6d4ae1d6e709da1fe3e471fbcab77}} 
+Object {\bfseries get\+Object} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a2ddabacaa9eba16e7653d4815c81b77a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a2ddabacaa9eba16e7653d4815c81b77a}} 
+Big\+Decimal {\bfseries get\+Big\+Decimal} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a0eb0c9c1f8a075273a7679e5727109e0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a0eb0c9c1f8a075273a7679e5727109e0}} 
+Object {\bfseries get\+Object} (String parameter\+Name, Map$<$ String, Class$<$?$>$$>$ type\+Map)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ac41a322eae0ec0a363097b1c6f076079}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ac41a322eae0ec0a363097b1c6f076079}} 
+Ref {\bfseries get\+Ref} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a2b12fc6b7d41574fee85d3d29bdac1ae}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a2b12fc6b7d41574fee85d3d29bdac1ae}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} {\bfseries get\+Blob} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_addab29ed70d9401251f7c06fd04544da}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_addab29ed70d9401251f7c06fd04544da}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob}{Clob}} {\bfseries get\+Clob} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af2332647da6d6ae32a12137c3236111f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af2332647da6d6ae32a12137c3236111f}} 
+Array {\bfseries get\+Array} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a19f1375d9f558bc8d13e2e343a06f46b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a19f1375d9f558bc8d13e2e343a06f46b}} 
+Date {\bfseries get\+Date} (String parameter\+Name, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a01c9e9f2e6c9c990ad0078651fbbc583}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a01c9e9f2e6c9c990ad0078651fbbc583}} 
+Time {\bfseries get\+Time} (String parameter\+Name, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a5f49b8fd25a3d99b225ae1c7a8b6669d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a5f49b8fd25a3d99b225ae1c7a8b6669d}} 
+Timestamp {\bfseries get\+Timestamp} (String parameter\+Name, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a61e5e0b9815931dbf92c57ad246fcdcf}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a61e5e0b9815931dbf92c57ad246fcdcf}} 
+U\+RL {\bfseries get\+U\+RL} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ab13ba2b030b4633c90f4ff764d466c7d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ab13ba2b030b4633c90f4ff764d466c7d}} 
+Row\+Id {\bfseries get\+Row\+Id} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_abb6bffb51f12728815f6a5e35ed0038b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_abb6bffb51f12728815f6a5e35ed0038b}} 
+Row\+Id {\bfseries get\+Row\+Id} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a06fb28a492e2d132899b38498db870ee}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a06fb28a492e2d132899b38498db870ee}} 
+void {\bfseries set\+Row\+Id} (String parameter\+Name, Row\+Id x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a541d6ad71c70ca117fad5b601fbc332b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a541d6ad71c70ca117fad5b601fbc332b}} 
+void {\bfseries set\+N\+String} (String parameter\+Name, String value)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a43950dd560f5be72b6c7136db24791d2}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a43950dd560f5be72b6c7136db24791d2}} 
+void {\bfseries set\+N\+Character\+Stream} (String parameter\+Name, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a760d8d5eeb6beda2136975b75a59ba3c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a760d8d5eeb6beda2136975b75a59ba3c}} 
+void {\bfseries set\+N\+Clob} (String parameter\+Name, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_n_clob}{N\+Clob}} value)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a4f0c0d2c54d1f606b358f14cd813c512}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a4f0c0d2c54d1f606b358f14cd813c512}} 
+void {\bfseries set\+Clob} (String parameter\+Name, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a1974f16b798c706bd3681e3389f53fe3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a1974f16b798c706bd3681e3389f53fe3}} 
+void {\bfseries set\+Blob} (String parameter\+Name, Input\+Stream x, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a4935cb1ad5e7c4f68ce3a3a5f7e2b542}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a4935cb1ad5e7c4f68ce3a3a5f7e2b542}} 
+void {\bfseries set\+N\+Clob} (String parameter\+Name, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af5b953f4902e3556ae6413d8a4511d67}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af5b953f4902e3556ae6413d8a4511d67}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_n_clob}{N\+Clob}} {\bfseries get\+N\+Clob} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_abe8d5eac91ef25deeb1ea7d93347f4ab}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_abe8d5eac91ef25deeb1ea7d93347f4ab}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_n_clob}{N\+Clob}} {\bfseries get\+N\+Clob} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a885797b88f92cf77bf9db32504077b0c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a885797b88f92cf77bf9db32504077b0c}} 
+void {\bfseries set\+S\+Q\+L\+X\+ML} (String parameter\+Name, S\+Q\+L\+X\+ML xml\+Object)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_acaea5b4f0f7a3c49b2aa04b100b5ba97}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_acaea5b4f0f7a3c49b2aa04b100b5ba97}} 
+S\+Q\+L\+X\+ML {\bfseries get\+S\+Q\+L\+X\+ML} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a2a75a8688d617b3469a58574bb1d2ba7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a2a75a8688d617b3469a58574bb1d2ba7}} 
+S\+Q\+L\+X\+ML {\bfseries get\+S\+Q\+L\+X\+ML} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a0f35a6165ab26337a2d2501ede1e5616}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a0f35a6165ab26337a2d2501ede1e5616}} 
+String {\bfseries get\+N\+String} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a51e2115d2f86be9a535d0eded9cedcf0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a51e2115d2f86be9a535d0eded9cedcf0}} 
+String {\bfseries get\+N\+String} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a901c8803e72bd7120f17b9235379d3d5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a901c8803e72bd7120f17b9235379d3d5}} 
+Reader {\bfseries get\+N\+Character\+Stream} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a27261d421ab4d0f76421435281a0e69c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a27261d421ab4d0f76421435281a0e69c}} 
+Reader {\bfseries get\+N\+Character\+Stream} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a039096af3fce288f9be2f23fa9639cc9}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a039096af3fce288f9be2f23fa9639cc9}} 
+Reader {\bfseries get\+Character\+Stream} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a9f98975895bddea7ea81e076697576a6}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a9f98975895bddea7ea81e076697576a6}} 
+Reader {\bfseries get\+Character\+Stream} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a1851ea6263ffd0bdfb7d9ff99bc0b005}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a1851ea6263ffd0bdfb7d9ff99bc0b005}} 
+void {\bfseries set\+Blob} (String parameter\+Name, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af470b6517c5682d0dcb97ba5a8ae6793}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af470b6517c5682d0dcb97ba5a8ae6793}} 
+void {\bfseries set\+Clob} (String parameter\+Name, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob}{Clob}} x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a8696452651a545d08fa35fcd409653b4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a8696452651a545d08fa35fcd409653b4}} 
+void {\bfseries set\+Ascii\+Stream} (String parameter\+Name, Input\+Stream x, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af8ccc9962716995b1fce2b70f2dfa584}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af8ccc9962716995b1fce2b70f2dfa584}} 
+void {\bfseries set\+Binary\+Stream} (String parameter\+Name, Input\+Stream x, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af9333c7ad778e02028067ccd121fdd66}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af9333c7ad778e02028067ccd121fdd66}} 
+void {\bfseries set\+Character\+Stream} (String parameter\+Name, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a5889ef071cb5ed26ee3136e5b18a4fe7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a5889ef071cb5ed26ee3136e5b18a4fe7}} 
+void {\bfseries set\+Ascii\+Stream} (String parameter\+Name, Input\+Stream x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a706189ca9c4467d5b91906a376fe3774}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a706189ca9c4467d5b91906a376fe3774}} 
+void {\bfseries set\+Binary\+Stream} (String parameter\+Name, Input\+Stream x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a893fb5d17115cba6a90a16b9191a72e7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a893fb5d17115cba6a90a16b9191a72e7}} 
+void {\bfseries set\+Character\+Stream} (String parameter\+Name, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a6c84ab6864480e3be64630516cf06d37}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a6c84ab6864480e3be64630516cf06d37}} 
+void {\bfseries set\+N\+Character\+Stream} (String parameter\+Name, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a1538788a23a7c20ad0e677ff9aefd6fa}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a1538788a23a7c20ad0e677ff9aefd6fa}} 
+void {\bfseries set\+Clob} (String parameter\+Name, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af2ea894427fc22d18316aa88356946cc}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af2ea894427fc22d18316aa88356946cc}} 
+void {\bfseries set\+Blob} (String parameter\+Name, Input\+Stream x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_aab6be9977f1f392d2773a3b36bccccbe}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_aab6be9977f1f392d2773a3b36bccccbe}} 
+void {\bfseries set\+N\+Clob} (String parameter\+Name, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ad588d39d1deeda920f425e77bc3d167a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_ad588d39d1deeda920f425e77bc3d167a}} 
+boolean {\bfseries is\+Wrapper\+For} (Class$<$?$>$ iface)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a2afbb0b1bef5811e72e7b4f2bb4b3263}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a2afbb0b1bef5811e72e7b4f2bb4b3263}} 
+void {\bfseries close} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_aa7ce77aa93341891ae30260b6f45f44c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_aa7ce77aa93341891ae30260b6f45f44c}} 
+synchronized$<$ T $>$ T {\bfseries unwrap} (java.\+lang.\+Class$<$ T $>$ iface)  throws java.\+sql.\+S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af4aee929eae36cbfce7e4117ef082022}{register\+Out\+Parameter}} (int parameter\+Index, S\+Q\+L\+Type sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_afae5e49fafc4ef1689f150d9b3fd68d7}{register\+Out\+Parameter}} (int parameter\+Index, S\+Q\+L\+Type sql\+Type, int scale)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af76a8454598300c9faa06bcc13ca8356}{register\+Out\+Parameter}} (int parameter\+Index, S\+Q\+L\+Type sql\+Type, String type\+Name)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a8a349c3129cd8b7debe8235cfaf005cf}{register\+Out\+Parameter}} (String parameter\+Name, S\+Q\+L\+Type sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a3e4ad60bf29fe1256bbc49a301242e31}{register\+Out\+Parameter}} (String parameter\+Name, S\+Q\+L\+Type sql\+Type, int scale)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a896a5964296a43bfe85a30f9670b6164}{register\+Out\+Parameter}} (String parameter\+Name, S\+Q\+L\+Type sql\+Type, String type\+Name)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a8afb5f2b99f3996c750784b0b64b1400}{set\+Object}} (int parameter\+Index, Object x, S\+Q\+L\+Type target\+Sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a9ae0fd6a5dbe913227b9460cc91b7afe}{set\+Object}} (int parameter\+Index, Object x, S\+Q\+L\+Type target\+Sql\+Type, int scale\+Or\+Length)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a98e6163466b99b12af477410c077e3b1}{set\+Object}} (String parameter\+Name, Object x, S\+Q\+L\+Type target\+Sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a581e216a4043776d8b182adc802d93bc}{set\+Object}} (String parameter\+Name, Object x, S\+Q\+L\+Type target\+Sql\+Type, int scale\+Or\+Length)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a7694068936a8af45dd84485c25548659}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a7694068936a8af45dd84485c25548659}} 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper}{Callable\+Statement\+Wrapper}} {\bfseries get\+Instance} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper}{Connection\+Wrapper}} c, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection}{Mysql\+Pooled\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement}{Callable\+Statement}} to\+Wrap)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Wraps callable statements created by pooled connections. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a60a04ffa9e3517620a85c8c64169050f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a60a04ffa9e3517620a85c8c64169050f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}!Callable\+Statement\+Wrapper@{Callable\+Statement\+Wrapper}}
+\index{Callable\+Statement\+Wrapper@{Callable\+Statement\+Wrapper}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}}
+\subsubsection{\texorpdfstring{Callable\+Statement\+Wrapper()}{CallableStatementWrapper()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper.\+Callable\+Statement\+Wrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper}{Connection\+Wrapper}}}]{c,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection}{Mysql\+Pooled\+Connection}}}]{conn,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement}{Callable\+Statement}}}]{to\+Wrap }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+{\em conn} & \\
+\hline
+{\em to\+Wrap} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af4aee929eae36cbfce7e4117ef082022}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af4aee929eae36cbfce7e4117ef082022}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}!register\+Out\+Parameter@{register\+Out\+Parameter}}
+\index{register\+Out\+Parameter@{register\+Out\+Parameter}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}}
+\subsubsection{\texorpdfstring{register\+Out\+Parameter()}{registerOutParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper.\+register\+Out\+Parameter (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{S\+Q\+L\+Type}]{sql\+Type }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Support for java.\+sql.\+J\+D\+B\+C\+Type/java.sql.\+S\+Q\+L\+Type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & \\
+\hline
+{\em sql\+Type} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_afae5e49fafc4ef1689f150d9b3fd68d7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_afae5e49fafc4ef1689f150d9b3fd68d7}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}!register\+Out\+Parameter@{register\+Out\+Parameter}}
+\index{register\+Out\+Parameter@{register\+Out\+Parameter}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}}
+\subsubsection{\texorpdfstring{register\+Out\+Parameter()}{registerOutParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper.\+register\+Out\+Parameter (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{S\+Q\+L\+Type}]{sql\+Type,  }\item[{int}]{scale }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Support for java.\+sql.\+J\+D\+B\+C\+Type/java.sql.\+S\+Q\+L\+Type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & \\
+\hline
+{\em sql\+Type} & \\
+\hline
+{\em scale} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af76a8454598300c9faa06bcc13ca8356}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_af76a8454598300c9faa06bcc13ca8356}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}!register\+Out\+Parameter@{register\+Out\+Parameter}}
+\index{register\+Out\+Parameter@{register\+Out\+Parameter}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}}
+\subsubsection{\texorpdfstring{register\+Out\+Parameter()}{registerOutParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper.\+register\+Out\+Parameter (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{S\+Q\+L\+Type}]{sql\+Type,  }\item[{String}]{type\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Support for java.\+sql.\+J\+D\+B\+C\+Type/java.sql.\+S\+Q\+L\+Type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & \\
+\hline
+{\em sql\+Type} & \\
+\hline
+{\em type\+Name} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a8a349c3129cd8b7debe8235cfaf005cf}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a8a349c3129cd8b7debe8235cfaf005cf}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}!register\+Out\+Parameter@{register\+Out\+Parameter}}
+\index{register\+Out\+Parameter@{register\+Out\+Parameter}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}}
+\subsubsection{\texorpdfstring{register\+Out\+Parameter()}{registerOutParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper.\+register\+Out\+Parameter (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{S\+Q\+L\+Type}]{sql\+Type }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Support for java.\+sql.\+J\+D\+B\+C\+Type/java.sql.\+S\+Q\+L\+Type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Name} & \\
+\hline
+{\em sql\+Type} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a3e4ad60bf29fe1256bbc49a301242e31}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a3e4ad60bf29fe1256bbc49a301242e31}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}!register\+Out\+Parameter@{register\+Out\+Parameter}}
+\index{register\+Out\+Parameter@{register\+Out\+Parameter}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}}
+\subsubsection{\texorpdfstring{register\+Out\+Parameter()}{registerOutParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper.\+register\+Out\+Parameter (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{S\+Q\+L\+Type}]{sql\+Type,  }\item[{int}]{scale }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Support for java.\+sql.\+J\+D\+B\+C\+Type/java.sql.\+S\+Q\+L\+Type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Name} & \\
+\hline
+{\em sql\+Type} & \\
+\hline
+{\em scale} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a896a5964296a43bfe85a30f9670b6164}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a896a5964296a43bfe85a30f9670b6164}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}!register\+Out\+Parameter@{register\+Out\+Parameter}}
+\index{register\+Out\+Parameter@{register\+Out\+Parameter}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}}
+\subsubsection{\texorpdfstring{register\+Out\+Parameter()}{registerOutParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper.\+register\+Out\+Parameter (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{S\+Q\+L\+Type}]{sql\+Type,  }\item[{String}]{type\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Support for java.\+sql.\+J\+D\+B\+C\+Type/java.sql.\+S\+Q\+L\+Type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Name} & \\
+\hline
+{\em sql\+Type} & \\
+\hline
+{\em type\+Name} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a8afb5f2b99f3996c750784b0b64b1400}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a8afb5f2b99f3996c750784b0b64b1400}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}!set\+Object@{set\+Object}}
+\index{set\+Object@{set\+Object}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}}
+\subsubsection{\texorpdfstring{set\+Object()}{setObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper.\+set\+Object (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Object}]{x,  }\item[{S\+Q\+L\+Type}]{target\+Sql\+Type }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Support for java.\+sql.\+J\+D\+B\+C\+Type/java.sql.\+S\+Q\+L\+Type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & \\
+\hline
+{\em x} & \\
+\hline
+{\em target\+Sql\+Type} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a9ae0fd6a5dbe913227b9460cc91b7afe}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a9ae0fd6a5dbe913227b9460cc91b7afe}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}!set\+Object@{set\+Object}}
+\index{set\+Object@{set\+Object}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}}
+\subsubsection{\texorpdfstring{set\+Object()}{setObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper.\+set\+Object (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Object}]{x,  }\item[{S\+Q\+L\+Type}]{target\+Sql\+Type,  }\item[{int}]{scale\+Or\+Length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Support for java.\+sql.\+J\+D\+B\+C\+Type/java.sql.\+S\+Q\+L\+Type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & \\
+\hline
+{\em x} & \\
+\hline
+{\em target\+Sql\+Type} & \\
+\hline
+{\em scale\+Or\+Length} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a98e6163466b99b12af477410c077e3b1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a98e6163466b99b12af477410c077e3b1}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}!set\+Object@{set\+Object}}
+\index{set\+Object@{set\+Object}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}}
+\subsubsection{\texorpdfstring{set\+Object()}{setObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper.\+set\+Object (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Object}]{x,  }\item[{S\+Q\+L\+Type}]{target\+Sql\+Type }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Support for java.\+sql.\+J\+D\+B\+C\+Type/java.sql.\+S\+Q\+L\+Type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Name} & \\
+\hline
+{\em x} & \\
+\hline
+{\em target\+Sql\+Type} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a581e216a4043776d8b182adc802d93bc}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper_a581e216a4043776d8b182adc802d93bc}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}!set\+Object@{set\+Object}}
+\index{set\+Object@{set\+Object}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement\+Wrapper}}
+\subsubsection{\texorpdfstring{set\+Object()}{setObject()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper.\+set\+Object (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Object}]{x,  }\item[{S\+Q\+L\+Type}]{target\+Sql\+Type,  }\item[{int}]{scale\+Or\+Length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Support for java.\+sql.\+J\+D\+B\+C\+Type/java.sql.\+S\+Q\+L\+Type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Name} & \\
+\hline
+{\em x} & \\
+\hline
+{\em target\+Sql\+Type} & \\
+\hline
+{\em scale\+Or\+Length} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/Callable\+Statement\+Wrapper.\+java\end{DoxyCompactItemize}

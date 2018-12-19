@@ -1,0 +1,38 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl}{}\section{com.\+mysql.\+cj.\+Cancel\+Query\+Task\+Impl Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl}\index{com.\+mysql.\+cj.\+Cancel\+Query\+Task\+Impl@{com.\+mysql.\+cj.\+Cancel\+Query\+Task\+Impl}}
+
+
+Inherits Timer\+Task, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_cancel_query_task}{com.\+mysql.\+cj.\+Cancel\+Query\+Task}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl_a9a2ee8d146a3c365162fe26c214aa440}\label{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl_a9a2ee8d146a3c365162fe26c214aa440}} 
+{\bfseries Cancel\+Query\+Task\+Impl} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} cancellee)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl_aa279eeabcc803503e806f552ee3fd46a}\label{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl_aa279eeabcc803503e806f552ee3fd46a}} 
+boolean {\bfseries cancel} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl_aca7be2b8368718d9f3901e44256385cb}\label{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl_aca7be2b8368718d9f3901e44256385cb}} 
+void {\bfseries run} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl_a15fc1cf4ae9eaf9fdaa427bae226b210}\label{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl_a15fc1cf4ae9eaf9fdaa427bae226b210}} 
+Throwable {\bfseries get\+Caught\+While\+Cancelling} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl_a6ed7124ec0547111f98f3d9c32c0046f}\label{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl_a6ed7124ec0547111f98f3d9c32c0046f}} 
+void {\bfseries set\+Caught\+While\+Cancelling} (Throwable caught\+While\+Cancelling)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl_ac478b7b9bd6ffb2803fbaf31d5e28943}\label{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl_ac478b7b9bd6ffb2803fbaf31d5e28943}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} {\bfseries get\+Query\+To\+Cancel} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl_a8091c01445defc1368fb90fab42eca5d}\label{classcom_1_1mysql_1_1cj_1_1_cancel_query_task_impl_a8091c01445defc1368fb90fab42eca5d}} 
+void {\bfseries set\+Query\+To\+Cancel} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} query\+To\+Cancel)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_thread}{Thread}} used to implement query timeouts...Eventually we could be more efficient and have one thread with timers, but this is a straightforward and simple way to implement a feature that isn\textquotesingle{}t used all that often. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/Cancel\+Query\+Task\+Impl.\+java\end{DoxyCompactItemize}

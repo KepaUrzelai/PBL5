@@ -1,0 +1,39 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_output_stream_watcher}{}\section{com.\+mysql.\+cj.\+protocol.\+Output\+Stream\+Watcher Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_output_stream_watcher}\index{com.\+mysql.\+cj.\+protocol.\+Output\+Stream\+Watcher@{com.\+mysql.\+cj.\+protocol.\+Output\+Stream\+Watcher}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{com.\+mysql.\+cj.\+jdbc.\+Blob}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob}{com.\+mysql.\+cj.\+jdbc.\+Clob}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_output_stream_watcher_ab830e1917ebb2d14757c5fd1f5dc35ab}{stream\+Closed}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_watchable_stream}{Watchable\+Stream}} out)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Objects that want to be notified of lifecycle events on a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_watchable_output_stream}{Watchable\+Output\+Stream}} should implement this interface, and register themselves with set\+Watcher() on the \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_watchable_output_stream}{Watchable\+Output\+Stream}} instance. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_output_stream_watcher_ab830e1917ebb2d14757c5fd1f5dc35ab}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_output_stream_watcher_ab830e1917ebb2d14757c5fd1f5dc35ab}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Output\+Stream\+Watcher@{com\+::mysql\+::cj\+::protocol\+::\+Output\+Stream\+Watcher}!stream\+Closed@{stream\+Closed}}
+\index{stream\+Closed@{stream\+Closed}!com\+::mysql\+::cj\+::protocol\+::\+Output\+Stream\+Watcher@{com\+::mysql\+::cj\+::protocol\+::\+Output\+Stream\+Watcher}}
+\subsubsection{\texorpdfstring{stream\+Closed()}{streamClosed()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Output\+Stream\+Watcher.\+stream\+Closed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_watchable_stream}{Watchable\+Stream}}}]{out }\end{DoxyParamCaption})}
+
+Called when the Output\+Stream being watched has .close() called
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_watchable_stream}{Watchable\+Stream}} \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_a891c76fb3123f5d9f736e05d50ed1fe8}{com.\+mysql.\+cj.\+jdbc.\+Blob}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_afce3b43001378654ee8a1d99c8685eeb}{com.\+mysql.\+cj.\+jdbc.\+Clob}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/Output\+Stream\+Watcher.\+java\end{DoxyCompactItemize}

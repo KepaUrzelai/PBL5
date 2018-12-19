@@ -1,0 +1,79 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util}{}\section{com.\+mysql.\+cj.\+util.\+Time\+Util Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util}\index{com.\+mysql.\+cj.\+util.\+Time\+Util@{com.\+mysql.\+cj.\+util.\+Time\+Util}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_a51171936513c71403df7272e2919783f}\label{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_a51171936513c71403df7272e2919783f}} 
+static boolean {\bfseries nano\+Time\+Available} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_a224da639d5b047ba110cc88396c793f4}\label{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_a224da639d5b047ba110cc88396c793f4}} 
+static long {\bfseries get\+Current\+Time\+Nanos\+Or\+Millis} ()
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_a1b38bb130406d82a66ace616a2966b74}{get\+Canonical\+Timezone}} (String timezone\+Str, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_a1dec8e63da6144ebf8d74f535566c4be}\label{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_a1dec8e63da6144ebf8d74f535566c4be}} 
+static String {\bfseries format\+Nanos} (int nanos, boolean using\+Micros)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_a49515b1a7c233172bd5fae6f0326c9be}\label{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_a49515b1a7c233172bd5fae6f0326c9be}} 
+static Timestamp {\bfseries truncate\+Fractional\+Seconds} (Timestamp timestamp)
+\item 
+static final String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_a1da7f3d2dfbeaf21b375380c2d90b36a}{get\+Date\+Time\+Pattern}} (String dt, boolean to\+Time)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_ae26197a4c1007ca664e0be1cc14ca3e2}\label{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_ae26197a4c1007ca664e0be1cc14ca3e2}} 
+static final Method {\bfseries system\+Nano\+Time\+Method}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Timezone conversion routines and other time related methods 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_a1b38bb130406d82a66ace616a2966b74}\label{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_a1b38bb130406d82a66ace616a2966b74}} 
+\index{com\+::mysql\+::cj\+::util\+::\+Time\+Util@{com\+::mysql\+::cj\+::util\+::\+Time\+Util}!get\+Canonical\+Timezone@{get\+Canonical\+Timezone}}
+\index{get\+Canonical\+Timezone@{get\+Canonical\+Timezone}!com\+::mysql\+::cj\+::util\+::\+Time\+Util@{com\+::mysql\+::cj\+::util\+::\+Time\+Util}}
+\subsubsection{\texorpdfstring{get\+Canonical\+Timezone()}{getCanonicalTimezone()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+cj.\+util.\+Time\+Util.\+get\+Canonical\+Timezone (\begin{DoxyParamCaption}\item[{String}]{timezone\+Str,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the \textquotesingle{}official\textquotesingle{} Java timezone name for the given timezone
+
+
+\begin{DoxyParams}{Parameters}
+{\em timezone\+Str} & the \textquotesingle{}common\textquotesingle{} timezone name \\
+\hline
+{\em exception\+Interceptor} & exception interceptor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Java timezone name for the given timezone 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_a1da7f3d2dfbeaf21b375380c2d90b36a}\label{classcom_1_1mysql_1_1cj_1_1util_1_1_time_util_a1da7f3d2dfbeaf21b375380c2d90b36a}} 
+\index{com\+::mysql\+::cj\+::util\+::\+Time\+Util@{com\+::mysql\+::cj\+::util\+::\+Time\+Util}!get\+Date\+Time\+Pattern@{get\+Date\+Time\+Pattern}}
+\index{get\+Date\+Time\+Pattern@{get\+Date\+Time\+Pattern}!com\+::mysql\+::cj\+::util\+::\+Time\+Util@{com\+::mysql\+::cj\+::util\+::\+Time\+Util}}
+\subsubsection{\texorpdfstring{get\+Date\+Time\+Pattern()}{getDateTimePattern()}}
+{\footnotesize\ttfamily static final String com.\+mysql.\+cj.\+util.\+Time\+Util.\+get\+Date\+Time\+Pattern (\begin{DoxyParamCaption}\item[{String}]{dt,  }\item[{boolean}]{to\+Time }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Used in prepared statements
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Date\+Time string \\
+\hline
+{\em to\+Time} & true if get Time pattern \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pattern 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/util/Time\+Util.\+java\end{DoxyCompactItemize}

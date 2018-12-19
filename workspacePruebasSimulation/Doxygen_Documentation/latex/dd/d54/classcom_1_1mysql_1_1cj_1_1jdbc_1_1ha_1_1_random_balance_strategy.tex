@@ -1,0 +1,59 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_random_balance_strategy}{}\section{com.\+mysql.\+cj.\+jdbc.\+ha.\+Random\+Balance\+Strategy Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_random_balance_strategy}\index{com.\+mysql.\+cj.\+jdbc.\+ha.\+Random\+Balance\+Strategy@{com.\+mysql.\+cj.\+jdbc.\+ha.\+Random\+Balance\+Strategy}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_balance_strategy}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Balance\+Strategy}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_server_affinity_strategy}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Server\+Affinity\+Strategy}}, testsuite.\+regression.\+Connection\+Regression\+Test.\+Counting\+Re\+Balance\+Strategy, and testsuite.\+regression.\+Connection\+Regression\+Test.\+Forced\+Load\+Balance\+Strategy.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_random_balance_strategy_aefbfa275d5d20205e6eb812224da5a2c}{pick\+Connection}} (Invocation\+Handler proxy, List$<$ String $>$ configured\+Hosts, Map$<$ String, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} $>$ live\+Connections, long\mbox{[}$\,$\mbox{]} response\+Times, int num\+Retries)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_random_balance_strategy_aefbfa275d5d20205e6eb812224da5a2c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_random_balance_strategy_aefbfa275d5d20205e6eb812224da5a2c}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Random\+Balance\+Strategy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Random\+Balance\+Strategy}!pick\+Connection@{pick\+Connection}}
+\index{pick\+Connection@{pick\+Connection}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Random\+Balance\+Strategy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Random\+Balance\+Strategy}}
+\subsubsection{\texorpdfstring{pick\+Connection()}{pickConnection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} com.\+mysql.\+cj.\+jdbc.\+ha.\+Random\+Balance\+Strategy.\+pick\+Connection (\begin{DoxyParamCaption}\item[{Invocation\+Handler}]{proxy,  }\item[{List$<$ String $>$}]{configured\+Hosts,  }\item[{Map$<$ String, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} $>$}]{live\+Connections,  }\item[{long \mbox{[}$\,$\mbox{]}}]{response\+Times,  }\item[{int}]{num\+Retries }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called by the driver to pick a new connection to route requests over. See \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection_proxy_a27662d65e82acb86f3cc6af3f4f331ee}{Load\+Balanced\+Connection\+Proxy.\+create\+Connection\+For\+Host(\+String)}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em proxy} & the Invocation\+Handler that deals with actual method calls to the J\+D\+BC connection, and serves as a factory for new connections for this strategy via the create\+Connection\+For\+Host() method.\\
+\hline
+\end{DoxyParams}
+This proxy takes care of maintaining the response time list, map of host/ports to live connections, and taking connections out of the live connections map if they receive a network-\/related error while they are in use by the application. 
+\begin{DoxyParams}{Parameters}
+{\em configured\+Hosts} & the list of hosts/ports (in \char`\"{}host\+:port\char`\"{} form) as passed in by the user. \\
+\hline
+{\em live\+Connections} & a map of host/ports to \char`\"{}live\char`\"{} connections to them. \\
+\hline
+{\em response\+Times} & the list of response times for a {\bfseries transaction} for each host in the configured hosts list. \\
+\hline
+{\em num\+Retries} & the number of times the driver expects this strategy to re-\/try connection attempts if creating a new connection fails. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the physical J\+D\+BC connection for the application to use, based upon the strategy employed. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a new connection can not be found or created by this strategy. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_balance_strategy_a754b8e7a4e4baad812f650b3222cfbd5}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Balance\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/ha/Random\+Balance\+Strategy.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,78 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement}{}\section{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Prepared\+Statement Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement}\index{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Prepared\+Statement@{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Prepared\+Statement}}
+
+
+Inherits Prepared\+Statement, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_client_prepared_statement}{com.\+mysql.\+cj.\+jdbc.\+Client\+Prepared\+Statement}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_a141eeee85d7c5f0b1a3cb6efbe2b052a}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_a141eeee85d7c5f0b1a3cb6efbe2b052a}} 
+void {\bfseries real\+Close} (boolean called\+Explicitly, boolean close\+Open\+Results)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_a1d95958c32c8174c267e3d91e7371a13}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_a1d95958c32c8174c267e3d91e7371a13}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_bindings}{Query\+Bindings}}$<$?$>$ {\bfseries get\+Query\+Bindings} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_ae8f9f48f17aec65c48330d444f0a3a5f}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_ae8f9f48f17aec65c48330d444f0a3a5f}} 
+byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Bytes\+Representation} (int parameter\+Index)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_ac7a61028280256f1c0360f7cdfefa0e7}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_ac7a61028280256f1c0360f7cdfefa0e7}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_parse_info}{Parse\+Info}} {\bfseries get\+Parse\+Info} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_afdd7b92fa3a45b8643a7f992807b487a}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_afdd7b92fa3a45b8643a7f992807b487a}} 
+boolean {\bfseries is\+Null} (int param\+Index)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_a20618e9a216f90d8366fd7e931783dda}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_a20618e9a216f90d8366fd7e931783dda}} 
+String {\bfseries get\+Prepared\+Sql} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_ab355e6fcc10a4fae67e0425b76bc218f}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_ab355e6fcc10a4fae67e0425b76bc218f}} 
+void {\bfseries set\+Bytes} (int parameter\+Index, byte\mbox{[}$\,$\mbox{]} x, boolean check\+For\+Introducer, boolean escape\+For\+M\+B\+Chars)  throws S\+Q\+L\+Exception
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_a46f072b1d5f3463b8371262dc5ed9ead}{set\+Bytes\+No\+Escape}} (int parameter\+Index, byte\mbox{[}$\,$\mbox{]} parameter\+As\+Bytes)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_aac822ef5e0e6cb44d83c2b0afb4078fe}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_aac822ef5e0e6cb44d83c2b0afb4078fe}} 
+void {\bfseries set\+Bytes\+No\+Escape\+No\+Quotes} (int parameter\+Index, byte\mbox{[}$\,$\mbox{]} parameter\+As\+Bytes)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_a6af501f3841da06821f86578cc154116}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_a6af501f3841da06821f86578cc154116}} 
+void {\bfseries set\+Big\+Integer} (int parameter\+Index, Big\+Integer x)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_a3a6d8662a3372f19ead94698c2cf3ed1}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_a3a6d8662a3372f19ead94698c2cf3ed1}} 
+void {\bfseries set\+Null} (int parameter\+Index, \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_mysql_type}{Mysql\+Type}} mysql\+Type)  throws S\+Q\+L\+Exception
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_a46f072b1d5f3463b8371262dc5ed9ead}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement_a46f072b1d5f3463b8371262dc5ed9ead}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Prepared\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Prepared\+Statement}!set\+Bytes\+No\+Escape@{set\+Bytes\+No\+Escape}}
+\index{set\+Bytes\+No\+Escape@{set\+Bytes\+No\+Escape}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Prepared\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Bytes\+No\+Escape()}{setBytesNoEscape()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Prepared\+Statement.\+set\+Bytes\+No\+Escape (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{parameter\+As\+Bytes }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Used by updatable result sets for refresh\+Row() because the parameter has already been escaped for updater or inserter prepared statements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the parameter to set. \\
+\hline
+{\em parameter\+As\+Bytes} & the parameter as a string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_client_prepared_statement_a7db4bf1c51418004ea1482b72d2c7913}{com.\+mysql.\+cj.\+jdbc.\+Client\+Prepared\+Statement}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/jdbc/Jdbc\+Prepared\+Statement.\+java\end{DoxyCompactItemize}

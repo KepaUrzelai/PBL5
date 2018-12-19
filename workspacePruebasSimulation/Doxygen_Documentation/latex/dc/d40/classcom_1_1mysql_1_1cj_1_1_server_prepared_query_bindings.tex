@@ -1,0 +1,194 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings}{}\section{com.\+mysql.\+cj.\+Server\+Prepared\+Query\+Bindings Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings}\index{com.\+mysql.\+cj.\+Server\+Prepared\+Query\+Bindings@{com.\+mysql.\+cj.\+Server\+Prepared\+Query\+Bindings}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings}{com.\+mysql.\+cj.\+Abstract\+Query\+Bindings$<$ Server\+Prepared\+Query\+Bind\+Value $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ab65a68783b4405e29b56c86ba0f58d30}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ab65a68783b4405e29b56c86ba0f58d30}} 
+{\bfseries Server\+Prepared\+Query\+Bindings} (int parameter\+Count, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}} sess)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a846a05c42a42c694efa17b4320d5b428}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a846a05c42a42c694efa17b4320d5b428}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings}{Server\+Prepared\+Query\+Bindings}} {\bfseries clone} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value}{Server\+Prepared\+Query\+Bind\+Value}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a15f0b3974435b3e95fcbbe4a050fb5d6}{get\+Binding}} (int parameter\+Index, boolean for\+Long\+Data)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a2fe01e3785026b382a42326560cf3ea9}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a2fe01e3785026b382a42326560cf3ea9}} 
+void {\bfseries check\+Parameter\+Set} (int column\+Index)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ae8828a315e21c8947dc86d0ef3868f89}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ae8828a315e21c8947dc86d0ef3868f89}} 
+Atomic\+Boolean {\bfseries get\+Send\+Types\+To\+Server} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a042277eb60cfb95149365faf474b5188}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a042277eb60cfb95149365faf474b5188}} 
+boolean {\bfseries is\+Long\+Parameter\+Switch\+Detected} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a3fabbd97aff480c661dcf94c166ef0fa}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a3fabbd97aff480c661dcf94c166ef0fa}} 
+void {\bfseries set\+Long\+Parameter\+Switch\+Detected} (boolean long\+Parameter\+Switch\+Detected)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_abaa9240c510b15134f50869c2d0b1d72}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_abaa9240c510b15134f50869c2d0b1d72}} 
+void {\bfseries set\+Ascii\+Stream} (int parameter\+Index, Input\+Stream x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a97f2e32edbc3ed6d41828e4a4a64d254}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a97f2e32edbc3ed6d41828e4a4a64d254}} 
+void {\bfseries set\+Ascii\+Stream} (int parameter\+Index, Input\+Stream x, int length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a2d986bf9be7f32708e2e4865072d9d15}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a2d986bf9be7f32708e2e4865072d9d15}} 
+void {\bfseries set\+Ascii\+Stream} (int parameter\+Index, Input\+Stream x, long length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_abd26c15490cfb64143c3422cb30bfccc}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_abd26c15490cfb64143c3422cb30bfccc}} 
+void {\bfseries set\+Big\+Decimal} (int parameter\+Index, Big\+Decimal x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ab81e179cfe11eae84351444568fbee4d}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ab81e179cfe11eae84351444568fbee4d}} 
+void {\bfseries set\+Big\+Integer} (int parameter\+Index, Big\+Integer x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a7b8bb84e6cb781aab13abb84d2a3276c}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a7b8bb84e6cb781aab13abb84d2a3276c}} 
+void {\bfseries set\+Binary\+Stream} (int parameter\+Index, Input\+Stream x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a2c8a07aee8516156266725bc69297b86}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a2c8a07aee8516156266725bc69297b86}} 
+void {\bfseries set\+Binary\+Stream} (int parameter\+Index, Input\+Stream x, int length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_aa81aca5e6bb04f6c6cfc24d4f2d26379}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_aa81aca5e6bb04f6c6cfc24d4f2d26379}} 
+void {\bfseries set\+Binary\+Stream} (int parameter\+Index, Input\+Stream x, long length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_acf46739f3b451c6cc8c43db12b7d9224}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_acf46739f3b451c6cc8c43db12b7d9224}} 
+void {\bfseries set\+Blob} (int parameter\+Index, Input\+Stream input\+Stream)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a24fc6f66b7713d7e0b97be6d5ea7df53}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a24fc6f66b7713d7e0b97be6d5ea7df53}} 
+void {\bfseries set\+Blob} (int parameter\+Index, Input\+Stream input\+Stream, long length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_af6a3ba466e49614d3fc89f149064c8a8}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_af6a3ba466e49614d3fc89f149064c8a8}} 
+void {\bfseries set\+Blob} (int parameter\+Index, Blob x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a7650f0c71b10f4031e0618c67caa49c4}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a7650f0c71b10f4031e0618c67caa49c4}} 
+void {\bfseries set\+Boolean} (int parameter\+Index, boolean x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_aa5eb382beb3a3f46e3b10c241d0e08b9}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_aa5eb382beb3a3f46e3b10c241d0e08b9}} 
+void {\bfseries set\+Byte} (int parameter\+Index, byte x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a2a41a80f8d33e94789246c672600b59b}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a2a41a80f8d33e94789246c672600b59b}} 
+void {\bfseries set\+Bytes} (int parameter\+Index, byte\mbox{[}$\,$\mbox{]} x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a437398de7d3ea2b63585fd8f70757977}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a437398de7d3ea2b63585fd8f70757977}} 
+void {\bfseries set\+Bytes} (int parameter\+Index, byte\mbox{[}$\,$\mbox{]} x, boolean check\+For\+Introducer, boolean escape\+For\+M\+B\+Chars)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ae5db575417b547ac58cf4576fc48d547}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ae5db575417b547ac58cf4576fc48d547}} 
+void {\bfseries set\+Bytes\+No\+Escape} (int parameter\+Index, byte\mbox{[}$\,$\mbox{]} parameter\+As\+Bytes)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a1de1bfdb273582492d793feb80bdb893}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a1de1bfdb273582492d793feb80bdb893}} 
+void {\bfseries set\+Bytes\+No\+Escape\+No\+Quotes} (int parameter\+Index, byte\mbox{[}$\,$\mbox{]} parameter\+As\+Bytes)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_adc6219857846482f9a5baefdbd8c352a}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_adc6219857846482f9a5baefdbd8c352a}} 
+void {\bfseries set\+Character\+Stream} (int parameter\+Index, Reader reader)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a632b1e99892136a3c50f8350a0339b67}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a632b1e99892136a3c50f8350a0339b67}} 
+void {\bfseries set\+Character\+Stream} (int parameter\+Index, Reader reader, int length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a171e8671bae919df048e8c7d23d025cf}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a171e8671bae919df048e8c7d23d025cf}} 
+void {\bfseries set\+Character\+Stream} (int parameter\+Index, Reader reader, long length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_af017a913aaa0f7c3e12a9babc2ace30d}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_af017a913aaa0f7c3e12a9babc2ace30d}} 
+void {\bfseries set\+Clob} (int parameter\+Index, Reader reader)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a7a2d4a739f08e642b65a9cbd5aa122ed}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a7a2d4a739f08e642b65a9cbd5aa122ed}} 
+void {\bfseries set\+Clob} (int parameter\+Index, Reader reader, long length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_af568e7385932d1444fa71e74dcf39f1f}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_af568e7385932d1444fa71e74dcf39f1f}} 
+void {\bfseries set\+Clob} (int parameter\+Index, Clob x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a7158774ba21734eeafa31e3d4ae66457}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a7158774ba21734eeafa31e3d4ae66457}} 
+void {\bfseries set\+Date} (int parameter\+Index, Date x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a38a1c3be64866814f58b93d10f4685ce}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a38a1c3be64866814f58b93d10f4685ce}} 
+void {\bfseries set\+Date} (int parameter\+Index, Date x, Calendar cal)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a67bfe576432c4dca3e132e13178c5b54}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a67bfe576432c4dca3e132e13178c5b54}} 
+void {\bfseries set\+Date} (int parameter\+Index, Date x, Time\+Zone tz)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a3e91d4ab9f8e4188780d9bf16e1773ad}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a3e91d4ab9f8e4188780d9bf16e1773ad}} 
+void {\bfseries set\+Double} (int parameter\+Index, double x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_aeea814ec8fc7531c133a4acfcda7b013}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_aeea814ec8fc7531c133a4acfcda7b013}} 
+void {\bfseries set\+Float} (int parameter\+Index, float x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ad6bd01513aca9fc76b1e7e476ca4e9b2}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ad6bd01513aca9fc76b1e7e476ca4e9b2}} 
+void {\bfseries set\+Int} (int parameter\+Index, int x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a44be4a4c225e130dbedba40929d0b6c3}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a44be4a4c225e130dbedba40929d0b6c3}} 
+void {\bfseries set\+Long} (int parameter\+Index, long x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_aad5346da528491502560f4fcc5ef0192}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_aad5346da528491502560f4fcc5ef0192}} 
+void {\bfseries set\+N\+Character\+Stream} (int parameter\+Index, Reader value)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a55138ad85c98d697e5e6df738e1876a5}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a55138ad85c98d697e5e6df738e1876a5}} 
+void {\bfseries set\+N\+Character\+Stream} (int parameter\+Index, Reader reader, long length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a0ed6559f381bdb4253c9f37d78ced0f3}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a0ed6559f381bdb4253c9f37d78ced0f3}} 
+void {\bfseries set\+N\+Clob} (int parameter\+Index, Reader reader)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ab47c539ceb173224c2c22e987ad2fe9f}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ab47c539ceb173224c2c22e987ad2fe9f}} 
+void {\bfseries set\+N\+Clob} (int parameter\+Index, Reader reader, long length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a878777f1d89169e9f1ab98c1d4854f58}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a878777f1d89169e9f1ab98c1d4854f58}} 
+void {\bfseries set\+N\+Clob} (int parameter\+Index, N\+Clob value)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a19c4481c4e40a28b993f8e1d69325f6b}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a19c4481c4e40a28b993f8e1d69325f6b}} 
+void {\bfseries set\+N\+String} (int parameter\+Index, String x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a3e11a022dac2c5b0a735f452ea8c2588}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a3e11a022dac2c5b0a735f452ea8c2588}} 
+void {\bfseries set\+Null} (int parameter\+Index)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a6b496d959186ca1943bdc60330cd23ab}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a6b496d959186ca1943bdc60330cd23ab}} 
+void {\bfseries set\+Short} (int parameter\+Index, short x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ab71256302bcb79547e65d7b0192487a4}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ab71256302bcb79547e65d7b0192487a4}} 
+void {\bfseries set\+String} (int parameter\+Index, String x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a36923d88cb42bd53c4a6a6815a757426}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a36923d88cb42bd53c4a6a6815a757426}} 
+void {\bfseries set\+Time} (int parameter\+Index, Time x, Calendar cal)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_aa746ec4d5279c4987fc95f8d8c14c950}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_aa746ec4d5279c4987fc95f8d8c14c950}} 
+void {\bfseries set\+Time} (int parameter\+Index, Time x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a0ad6b210931aaf77c8038142968b3f54}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a0ad6b210931aaf77c8038142968b3f54}} 
+void {\bfseries set\+Time} (int parameter\+Index, Time x, Time\+Zone tz)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a163546356d456fa9ebeea955ec61ad35}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a163546356d456fa9ebeea955ec61ad35}} 
+void {\bfseries set\+Timestamp} (int parameter\+Index, Timestamp x)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a8483a3d5f6743cb4e6b678c407e2a7a0}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a8483a3d5f6743cb4e6b678c407e2a7a0}} 
+void {\bfseries set\+Timestamp} (int parameter\+Index, Timestamp x, Calendar cal)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a01f10892a7da4f61c5b91958ac6d57b2}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a01f10892a7da4f61c5b91958ac6d57b2}} 
+void {\bfseries set\+Timestamp} (int parameter\+Index, Timestamp x, Time\+Zone tz)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ae502eedc58e9ab3740bcae8c62e09cc6}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_ae502eedc58e9ab3740bcae8c62e09cc6}} 
+void {\bfseries init\+Bind\+Values} (int parameter\+Count)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a15f0b3974435b3e95fcbbe4a050fb5d6}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings_a15f0b3974435b3e95fcbbe4a050fb5d6}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bindings@{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bindings}!get\+Binding@{get\+Binding}}
+\index{get\+Binding@{get\+Binding}!com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bindings@{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bindings}}
+\subsubsection{\texorpdfstring{get\+Binding()}{getBinding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value}{Server\+Prepared\+Query\+Bind\+Value}} com.\+mysql.\+cj.\+Server\+Prepared\+Query\+Bindings.\+get\+Binding (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{boolean}]{for\+Long\+Data }\end{DoxyParamCaption})}
+
+Returns the structure representing the value that (can be)/(is) bound at the given parameter index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & 0-\/based \\
+\hline
+{\em for\+Long\+Data} & is this for a stream? \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/Server\+Prepared\+Query\+Bindings.\+java\end{DoxyCompactItemize}

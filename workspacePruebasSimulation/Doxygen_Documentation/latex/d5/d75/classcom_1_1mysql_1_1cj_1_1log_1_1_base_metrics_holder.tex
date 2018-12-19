@@ -1,0 +1,52 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder}{}\section{com.\+mysql.\+cj.\+log.\+Base\+Metrics\+Holder Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder}\index{com.\+mysql.\+cj.\+log.\+Base\+Metrics\+Holder@{com.\+mysql.\+cj.\+log.\+Base\+Metrics\+Holder}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_a4f2787da929ecc62efd5a93acda4ba58}{register\+Query\+Execution\+Time}} (long query\+Time\+Ms)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_ab7fb39a092cd81f015cc3c3d4eac9846}\label{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_ab7fb39a092cd81f015cc3c3d4eac9846}} 
+void {\bfseries report\+Metrics} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_a75061da20b187347e1bd4d07e0c7db34}{report\+Number\+Of\+Tables\+Accessed}} (int num\+Tables\+Accessed)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_a8f77e2819880c83046e9ce70805eca81}\label{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_a8f77e2819880c83046e9ce70805eca81}} 
+void {\bfseries increment\+Number\+Of\+Prepared\+Executes} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_a64a51a4972740262da8c2f4ccbe2b23d}\label{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_a64a51a4972740262da8c2f4ccbe2b23d}} 
+void {\bfseries increment\+Number\+Of\+Prepares} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_a9810296c9d133eba09bf2b9677e63b88}\label{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_a9810296c9d133eba09bf2b9677e63b88}} 
+void {\bfseries increment\+Number\+Of\+Result\+Sets\+Created} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_a46e6e0b9a7b352ab1ed37dea9d193913}\label{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_a46e6e0b9a7b352ab1ed37dea9d193913}} 
+void {\bfseries report\+Query\+Time} (long millis\+Or\+Nanos)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_abe821df45163288d358e3b60a65c9fe5}\label{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_abe821df45163288d358e3b60a65c9fe5}} 
+boolean {\bfseries is\+Abonormally\+Long\+Query} (long millis\+Or\+Nanos)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_a4f2787da929ecc62efd5a93acda4ba58}\label{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_a4f2787da929ecc62efd5a93acda4ba58}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Base\+Metrics\+Holder@{com\+::mysql\+::cj\+::log\+::\+Base\+Metrics\+Holder}!register\+Query\+Execution\+Time@{register\+Query\+Execution\+Time}}
+\index{register\+Query\+Execution\+Time@{register\+Query\+Execution\+Time}!com\+::mysql\+::cj\+::log\+::\+Base\+Metrics\+Holder@{com\+::mysql\+::cj\+::log\+::\+Base\+Metrics\+Holder}}
+\subsubsection{\texorpdfstring{register\+Query\+Execution\+Time()}{registerQueryExecutionTime()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+log.\+Base\+Metrics\+Holder.\+register\+Query\+Execution\+Time (\begin{DoxyParamCaption}\item[{long}]{query\+Time\+Ms }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Time\+Ms} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_a75061da20b187347e1bd4d07e0c7db34}\label{classcom_1_1mysql_1_1cj_1_1log_1_1_base_metrics_holder_a75061da20b187347e1bd4d07e0c7db34}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Base\+Metrics\+Holder@{com\+::mysql\+::cj\+::log\+::\+Base\+Metrics\+Holder}!report\+Number\+Of\+Tables\+Accessed@{report\+Number\+Of\+Tables\+Accessed}}
+\index{report\+Number\+Of\+Tables\+Accessed@{report\+Number\+Of\+Tables\+Accessed}!com\+::mysql\+::cj\+::log\+::\+Base\+Metrics\+Holder@{com\+::mysql\+::cj\+::log\+::\+Base\+Metrics\+Holder}}
+\subsubsection{\texorpdfstring{report\+Number\+Of\+Tables\+Accessed()}{reportNumberOfTablesAccessed()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+log.\+Base\+Metrics\+Holder.\+report\+Number\+Of\+Tables\+Accessed (\begin{DoxyParamCaption}\item[{int}]{num\+Tables\+Accessed }\end{DoxyParamCaption})}
+
+Reports currently collected metrics if this feature is enabled and the timeout has passed. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/log/Base\+Metrics\+Holder.\+java\end{DoxyCompactItemize}

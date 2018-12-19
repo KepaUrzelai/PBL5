@@ -1,0 +1,20 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer}{}\section{com.\+mysql.\+cj.\+protocol.\+Result\+Streamer Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer}\index{com.\+mysql.\+cj.\+protocol.\+Result\+Streamer@{com.\+mysql.\+cj.\+protocol.\+Result\+Streamer}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result$<$ T $>$}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer_a58007e9c29f81c5e681f3df64fc4a055}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer_a58007e9c29f81c5e681f3df64fc4a055}} 
+void {\bfseries finish\+Streaming} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A result streamer is a result object that is streaming results from the current connection. It allows to stream as long as nothing else needs to happen on the connection. Once something else needs to happen the streamed is notified to \char`\"{}complete streaming\char`\"{} at which point he can throw an exception, discard rows, buffer rows, etc. The connection is then free to execute the next command. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/Result\+Streamer.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Expr\+Unparser Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser}\index{com.\+mysql.\+cj.\+xdevapi.\+Expr\+Unparser@{com.\+mysql.\+cj.\+xdevapi.\+Expr\+Unparser}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser_a3f26cf7209c6f96203ffdd8c650b1daa}{escape\+Literal}} (String s)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser_a52a7b2d7c18161f35f023ee84c945a18}{quote\+Identifier}} (String ident)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser_af9c17dbc6d53424297626f93e2bc1c1e}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser_af9c17dbc6d53424297626f93e2bc1c1e}} 
+static String {\bfseries quote\+Json\+Key} (String key)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser_aa9069ddb4fdddddcc2839161c40a97e1}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser_aa9069ddb4fdddddcc2839161c40a97e1}} 
+static String {\bfseries quote\+Document\+Path\+Member} (String member)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser_a1f7f5393339cc4696a3fd63c43fb2ca4}{expr\+To\+String}} (Expr e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Serializer utility for dealing with X Protocol expression trees. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser_a3f26cf7209c6f96203ffdd8c650b1daa}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser_a3f26cf7209c6f96203ffdd8c650b1daa}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Unparser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Unparser}!escape\+Literal@{escape\+Literal}}
+\index{escape\+Literal@{escape\+Literal}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Unparser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Unparser}}
+\subsubsection{\texorpdfstring{escape\+Literal()}{escapeLiteral()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+cj.\+xdevapi.\+Expr\+Unparser.\+escape\+Literal (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Escape a string literal.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & literal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+escaped literal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser_a1f7f5393339cc4696a3fd63c43fb2ca4}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser_a1f7f5393339cc4696a3fd63c43fb2ca4}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Unparser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Unparser}!expr\+To\+String@{expr\+To\+String}}
+\index{expr\+To\+String@{expr\+To\+String}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Unparser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Unparser}}
+\subsubsection{\texorpdfstring{expr\+To\+String()}{exprToString()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+cj.\+xdevapi.\+Expr\+Unparser.\+expr\+To\+String (\begin{DoxyParamCaption}\item[{Expr}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Serialize an expression to a string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \mbox{\hyperlink{}{Expr}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string expression 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser_a52a7b2d7c18161f35f023ee84c945a18}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_expr_unparser_a52a7b2d7c18161f35f023ee84c945a18}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Unparser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Unparser}!quote\+Identifier@{quote\+Identifier}}
+\index{quote\+Identifier@{quote\+Identifier}!com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Unparser@{com\+::mysql\+::cj\+::xdevapi\+::\+Expr\+Unparser}}
+\subsubsection{\texorpdfstring{quote\+Identifier()}{quoteIdentifier()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+cj.\+xdevapi.\+Expr\+Unparser.\+quote\+Identifier (\begin{DoxyParamCaption}\item[{String}]{ident }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Quote a named identifier.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ident} & identifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+quoted identifier 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/Expr\+Unparser.\+java\end{DoxyCompactItemize}

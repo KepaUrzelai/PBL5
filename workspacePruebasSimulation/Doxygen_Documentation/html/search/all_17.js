@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['xa_5fdata_5fsource_5fclass_5fname',['XA_DATA_SOURCE_CLASS_NAME',['../d2/d4e/classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_data_source_factory.html#a638c5fed8d71a1a6e3a79e93eaa82711',1,'com::mysql::cj::jdbc::MysqlDataSourceFactory']]],
+  ['xasyncsocketconnection',['XAsyncSocketConnection',['../dc/df6/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection.html',1,'com::mysql::cj::protocol::x']]],
+  ['xatest',['XATest',['../da/d2c/classtestsuite_1_1simple_1_1_x_a_test.html',1,'testsuite::simple']]],
+  ['xauthenticationprovider',['XAuthenticationProvider',['../d5/d79/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_authentication_provider.html',1,'com::mysql::cj::protocol::x']]],
+  ['xdevapiconnectionurl',['XDevAPIConnectionUrl',['../d3/d7d/classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url.html',1,'com.mysql.cj.conf.url.XDevAPIConnectionUrl'],['../d3/d7d/classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url.html#a81df74119f400043949eb96ebec792e0',1,'com.mysql.cj.conf.url.XDevAPIConnectionUrl.XDevAPIConnectionUrl()']]],
+  ['xdevapierror',['XDevAPIError',['../df/d13/classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_x_dev_a_p_i_error.html',1,'com::mysql::cj::xdevapi']]],
+  ['xmessage',['XMessage',['../da/d9e/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message.html',1,'com::mysql::cj::protocol::x']]],
+  ['xmessagebuilder',['XMessageBuilder',['../d5/d13/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_builder.html',1,'com::mysql::cj::protocol::x']]],
+  ['xmessageheader',['XMessageHeader',['../de/d72/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_header.html',1,'com::mysql::cj::protocol::x']]],
+  ['xml',['XML',['../d8/dc9/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_resultset_1_1_content_type___b_y_t_e_s.html#aad070c4b8803fae679a573e2c5088de5',1,'com::mysql::cj::x::protobuf::MysqlxResultset::ContentType_BYTES']]],
+  ['xml_5fvalue',['XML_VALUE',['../d8/dc9/enumcom_1_1mysql_1_1cj_1_1x_1_1protobuf_1_1_mysqlx_resultset_1_1_content_type___b_y_t_e_s.html#aadfad96a778ee358721f0eb095cb72a4',1,'com::mysql::cj::x::protobuf::MysqlxResultset::ContentType_BYTES']]],
+  ['xorstring',['xorString',['../d0/da3/classcom_1_1mysql_1_1cj_1_1protocol_1_1_security.html#a6529697fb27ef62f6a21cb347f5e4c99',1,'com::mysql::cj::protocol::Security']]],
+  ['xpluginstatementcommand',['XpluginStatementCommand',['../d0/d2c/enumcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_xplugin_statement_command.html',1,'com::mysql::cj::protocol::x']]],
+  ['xprotocol',['XProtocol',['../db/d91/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol.html',1,'com::mysql::cj::protocol::x']]],
+  ['xprotocolasynctest',['XProtocolAsyncTest',['../d4/d9e/classtestsuite_1_1x_1_1internal_1_1_x_protocol_async_test.html',1,'testsuite::x::internal']]],
+  ['xprotocolauthtest',['XProtocolAuthTest',['../db/d81/classtestsuite_1_1x_1_1internal_1_1_x_protocol_auth_test.html',1,'testsuite::x::internal']]],
+  ['xprotocoldecoder',['XProtocolDecoder',['../dd/db7/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_decoder.html',1,'com::mysql::cj::protocol::x']]],
+  ['xprotocolerror',['XProtocolError',['../da/de5/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_error.html',1,'com::mysql::cj::protocol::x']]],
+  ['xprotocolrow',['XProtocolRow',['../de/df9/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row.html',1,'com::mysql::cj::protocol::x']]],
+  ['xprotocolrowinputstream',['XProtocolRowInputStream',['../df/deb/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row_input_stream.html',1,'com::mysql::cj::protocol::x']]],
+  ['xprotocoltest',['XProtocolTest',['../d3/d8e/classtestsuite_1_1x_1_1internal_1_1_x_protocol_test.html',1,'testsuite::x::internal']]],
+  ['xservercapabilities',['XServerCapabilities',['../dd/ddf/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_server_capabilities.html',1,'com::mysql::cj::protocol::x']]],
+  ['xserversession',['XServerSession',['../d5/d2b/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_server_session.html',1,'com::mysql::cj::protocol::x']]]
+];

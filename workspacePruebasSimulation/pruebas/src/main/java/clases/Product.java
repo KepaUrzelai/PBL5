@@ -1,7 +1,11 @@
 package clases;
 
 public class Product {
-	
+	/**
+	 * The class for products, it is formed by an identificator(ID),
+	 * an origin segment from which it comes ,a destination segment where it has to go to be shipped
+	 * A name to descript the product itself and the time that takes to the workstation to make that product.
+	 * */
 	int ID;
 	Workstation segmentOrigin, segmentDestination;
 	int time;
@@ -14,7 +18,11 @@ public class Product {
 		this.time=time;
 		this.name=name;
 	}
-
+	
+	/**
+	 * 
+	 * 
+	 */
 	public Workstation getSegmentOrigin() {
 		return segmentOrigin;
 	}

@@ -1,0 +1,41 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Utils Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Utils@{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Utils}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a219c3474ed3459976b78e6db24078981}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a219c3474ed3459976b78e6db24078981}} 
+static byte \mbox{[}$\,$\mbox{]} {\bfseries encode\+Mysql\+Three\+Byte\+Integer} (int i)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a5965327577eb5373eba1db4543ab62d7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a5965327577eb5373eba1db4543ab62d7}} 
+static void {\bfseries encode\+Mysql\+Three\+Byte\+Integer} (int i, byte\mbox{[}$\,$\mbox{]} b, int offset)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a6908531afd3be465ad595bbbf4bd7926}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_a6908531afd3be465ad595bbbf4bd7926}} 
+static int {\bfseries decode\+Mysql\+Three\+Byte\+Integer} (byte\mbox{[}$\,$\mbox{]} b)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_aa4d8ecb6bae28aac66f4a6fd53e88cd7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_aa4d8ecb6bae28aac66f4a6fd53e88cd7}} 
+static int {\bfseries decode\+Mysql\+Three\+Byte\+Integer} (byte\mbox{[}$\,$\mbox{]} b, int offset)
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_ac3519c674780b347ccf3b3e4a4c00193}{get\+Binary\+Encoded\+Length}} (int type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utilities to manipulate My\+S\+QL protocol-\/specific formats. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_ac3519c674780b347ccf3b3e4a4c00193}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_utils_ac3519c674780b347ccf3b3e4a4c00193}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils}!get\+Binary\+Encoded\+Length@{get\+Binary\+Encoded\+Length}}
+\index{get\+Binary\+Encoded\+Length@{get\+Binary\+Encoded\+Length}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Utils}}
+\subsubsection{\texorpdfstring{get\+Binary\+Encoded\+Length()}{getBinaryEncodedLength()}}
+{\footnotesize\ttfamily static int com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Utils.\+get\+Binary\+Encoded\+Length (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the length of a binary-\/encoded value of the given type.
+
+\begin{DoxyReturn}{Returns}
+the length ($>$0), 0 for a length-\/prefixed type, or -\/1 for unknown 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/Native\+Utils.\+java\end{DoxyCompactItemize}

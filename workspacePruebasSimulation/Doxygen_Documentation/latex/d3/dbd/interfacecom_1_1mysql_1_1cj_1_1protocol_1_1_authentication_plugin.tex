@@ -1,0 +1,161 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin}{}\section{com.\+mysql.\+cj.\+protocol.\+Authentication\+Plugin$<$ M extends Message $>$ Interface Template Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin}\index{com.\+mysql.\+cj.\+protocol.\+Authentication\+Plugin$<$ M extends Message $>$@{com.\+mysql.\+cj.\+protocol.\+Authentication\+Plugin$<$ M extends Message $>$}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_clear_password_plugin}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Clear\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_native_password_plugin}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Native\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_old_password_plugin}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Old\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_sha256_password_plugin}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Sha256\+Password\+Plugin}}, testsuite.\+regression.\+Connection\+Regression\+Test.\+Auth\+Test\+Plugin, testsuite.\+regression.\+Connection\+Regression\+Test.\+Three\+Attempts\+Plugin, and testsuite.\+regression.\+Connection\+Regression\+Test.\+Two\+Questions\+Plugin.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a418637ae8546057f1bb34fde86f5b99d}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{Protocol}}$<$ M $>$ protocol)
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a504193fb759e76fedc7ca7b00effb44d}{reset}} ()
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a1978dd8a16052ae403299d59a4412ac8}{destroy}} ()
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_ab428486b799598c36f4506c95ff5b94b}{get\+Protocol\+Plugin\+Name}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a7dfc5f9b4c1e27d33982f8843254ee18}{requires\+Confidentiality}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_afff2eda7e67e6847d2401461100e2c69}{is\+Reusable}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a22458c3992dbf9f91560d75a99e234d3}{set\+Authentication\+Parameters}} (String user, String password)
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a333faf4b02378d71449b6d7c44e2167c}{next\+Authentication\+Step}} (M from\+Server, List$<$ M $>$ to\+Server)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementors of this interface can be installed via the \char`\"{}authentication\+Plugins\char`\"{} configuration property.
+
+The driver will create one instance of a given plugin per Mysql\+IO instance if it\textquotesingle{}s reusable (see \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_afff2eda7e67e6847d2401461100e2c69}{is\+Reusable()}}) or a new instance in each Mysql\+I\+O\+::proceed\+Handshake\+With\+Pluggable\+Authentication(\+String, String, String, Buffer) call. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a1978dd8a16052ae403299d59a4412ac8}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a1978dd8a16052ae403299d59a4412ac8}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}!destroy@{destroy}}
+\index{destroy@{destroy}!com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin}{com.\+mysql.\+cj.\+protocol.\+Authentication\+Plugin}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_sha256_password_plugin_a4755bae2cd1dda2546c6a338a192e7ca}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Sha256\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_caching_sha2_password_plugin_ae1487e57db91585f60ffa884c6f10a54}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Caching\+Sha2\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_old_password_plugin_a4f0ccfe554748824d036259089e8475d}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Old\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_clear_password_plugin_aba0d857281cb3a18fe00d3e3d8b63016}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Clear\+Password\+Plugin}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_native_password_plugin_aaf129d7de527f4b5f703903067f44f5f}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Native\+Password\+Plugin}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_ab428486b799598c36f4506c95ff5b94b}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_ab428486b799598c36f4506c95ff5b94b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}!get\+Protocol\+Plugin\+Name@{get\+Protocol\+Plugin\+Name}}
+\index{get\+Protocol\+Plugin\+Name@{get\+Protocol\+Plugin\+Name}!com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}}
+\subsubsection{\texorpdfstring{get\+Protocol\+Plugin\+Name()}{getProtocolPluginName()}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin}{com.\+mysql.\+cj.\+protocol.\+Authentication\+Plugin}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.get\+Protocol\+Plugin\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the name that the My\+S\+QL server uses on the wire for this plugin
+
+\begin{DoxyReturn}{Returns}
+plugin name 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_sha256_password_plugin_a37166ed37c83a82c995bee4f1edb43eb}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Sha256\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_caching_sha2_password_plugin_adefb39fe1f5c9624bf96076a6be9ffc0}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Caching\+Sha2\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_old_password_plugin_aa71d4dbe9fa1ed67725f89b14fa06e72}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Old\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_clear_password_plugin_aa462c22d7def92918450800cdeb62893}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Clear\+Password\+Plugin}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_native_password_plugin_ad008264c483755da1987a7a9a6401039}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Native\+Password\+Plugin}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a418637ae8546057f1bb34fde86f5b99d}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a418637ae8546057f1bb34fde86f5b99d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}!init@{init}}
+\index{init@{init}!com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin}{com.\+mysql.\+cj.\+protocol.\+Authentication\+Plugin}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{Protocol}}$<$ M $>$}]{protocol }\end{DoxyParamCaption})}
+
+We need direct \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{Protocol}} reference because it isn\textquotesingle{}t available from Connection before authentication complete.
+
+
+\begin{DoxyParams}{Parameters}
+{\em protocol} & protocol instance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_afff2eda7e67e6847d2401461100e2c69}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_afff2eda7e67e6847d2401461100e2c69}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}!is\+Reusable@{is\+Reusable}}
+\index{is\+Reusable@{is\+Reusable}!com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}}
+\subsubsection{\texorpdfstring{is\+Reusable()}{isReusable()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin}{com.\+mysql.\+cj.\+protocol.\+Authentication\+Plugin}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.is\+Reusable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true if plugin instance may be reused, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_sha256_password_plugin_abaae26641bf351f5aafb4a6e49d178f0}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Sha256\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_old_password_plugin_a9d16dfa8345a0c98297c3e1ddd01924e}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Old\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_clear_password_plugin_a8ffe3c702b20c1efd428dfef9ba58228}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Clear\+Password\+Plugin}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_native_password_plugin_a70160aeab582b3ddfbe93a80b46d2a4e}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Native\+Password\+Plugin}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a333faf4b02378d71449b6d7c44e2167c}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a333faf4b02378d71449b6d7c44e2167c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}!next\+Authentication\+Step@{next\+Authentication\+Step}}
+\index{next\+Authentication\+Step@{next\+Authentication\+Step}!com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}}
+\subsubsection{\texorpdfstring{next\+Authentication\+Step()}{nextAuthenticationStep()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin}{com.\+mysql.\+cj.\+protocol.\+Authentication\+Plugin}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.next\+Authentication\+Step (\begin{DoxyParamCaption}\item[{M}]{from\+Server,  }\item[{List$<$ M $>$}]{to\+Server }\end{DoxyParamCaption})}
+
+Process authentication handshake data from server and optionally produce data to be sent back to the server. The driver will keep calling this method until either an Exception is thrown (authentication failure, please use appropriate S\+Q\+L\+States) or the method returns false or driver receives an OK packet from the server which indicates that the connection has been already approved.
+
+If, on return from this method, to\+Server is a non-\/empty list of buffers, then these buffers should be sent to the server in order and without any reads in between them. If to\+Server is an empty list, no data should be sent to server.
+
+If method returns true, it means that this plugin does not need any more data from the server to conclude the handshake and this method should not be called again. (Note that server can send an Auth Method Switch request and then another handshake will start, possibly using a different plugin.)
+
+If this method returns false, it means that plugin needs more data from the server to conclude the handshake. In that case next handshake data payload should be read from the server (after possibly writing data from to\+Server as explained above). Then this method should be called again with the new data in from\+Server parameter.
+
+In case of errors the method should throw Exception.
+
+
+\begin{DoxyParams}{Parameters}
+{\em from\+Server} & a buffer containing handshake data payload from server (can be empty). \\
+\hline
+{\em to\+Server} & list of buffers with data to be sent to the server (the list can be empty, but buffers in the list should contain data).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+False if more data should be read from the server and next call to this method made, true otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a7dfc5f9b4c1e27d33982f8843254ee18}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a7dfc5f9b4c1e27d33982f8843254ee18}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}!requires\+Confidentiality@{requires\+Confidentiality}}
+\index{requires\+Confidentiality@{requires\+Confidentiality}!com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}}
+\subsubsection{\texorpdfstring{requires\+Confidentiality()}{requiresConfidentiality()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin}{com.\+mysql.\+cj.\+protocol.\+Authentication\+Plugin}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.requires\+Confidentiality (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Does this plugin require the connection itself to be confidential (i.\+e. tls/ssl)...Highly recommended to return \char`\"{}true\char`\"{} for plugins that return the credentials in the clear.
+
+\begin{DoxyReturn}{Returns}
+true if secure connection is required 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_sha256_password_plugin_a13372ce1bdd725d30b81b938202e5cdc}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Sha256\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_old_password_plugin_a651b0a7b0418bdc2ed5c000da1046d9c}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Old\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_clear_password_plugin_a3e8370e46183b941e2fc6d72f06a37a1}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Clear\+Password\+Plugin}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_native_password_plugin_afec5c68644de44be777a78a96e1fabd7}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Native\+Password\+Plugin}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a504193fb759e76fedc7ca7b00effb44d}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a504193fb759e76fedc7ca7b00effb44d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}!reset@{reset}}
+\index{reset@{reset}!com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin}{com.\+mysql.\+cj.\+protocol.\+Authentication\+Plugin}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the authentication steps sequence. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_caching_sha2_password_plugin_a7f042851c3087a8bdf431023ed01b29c}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Caching\+Sha2\+Password\+Plugin}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a22458c3992dbf9f91560d75a99e234d3}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin_a22458c3992dbf9f91560d75a99e234d3}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}!set\+Authentication\+Parameters@{set\+Authentication\+Parameters}}
+\index{set\+Authentication\+Parameters@{set\+Authentication\+Parameters}!com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin@{com\+::mysql\+::cj\+::protocol\+::\+Authentication\+Plugin}}
+\subsubsection{\texorpdfstring{set\+Authentication\+Parameters()}{setAuthenticationParameters()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_plugin}{com.\+mysql.\+cj.\+protocol.\+Authentication\+Plugin}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.set\+Authentication\+Parameters (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+This method called from cJ before first next\+Authentication\+Step call. Values of user and password parameters are passed from those in Mysql\+I\+O.\+change\+User(String user\+Name, String password, String database) or Mysql\+I\+O.\+do\+Handshake(String user, String password, String database).
+
+Plugin should use these values instead of values from connection properties because parent method may be a change\+User call which saves user and password into connection only after successful handshake.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & user name \\
+\hline
+{\em password} & user password \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_sha256_password_plugin_a3094a9ba3e8a9543ec5e4d89bbb23d47}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Sha256\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_old_password_plugin_a0d3234b9087f06e3d10a3fe13566c6a8}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Old\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_clear_password_plugin_aac79ca0c6d0e4fd7207f2de8e6f1e6a8}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Clear\+Password\+Plugin}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1authentication_1_1_mysql_native_password_plugin_a24947d4cf7090930c52d6451e87c027f}{com.\+mysql.\+cj.\+protocol.\+a.\+authentication.\+Mysql\+Native\+Password\+Plugin}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/Authentication\+Plugin.\+java\end{DoxyCompactItemize}

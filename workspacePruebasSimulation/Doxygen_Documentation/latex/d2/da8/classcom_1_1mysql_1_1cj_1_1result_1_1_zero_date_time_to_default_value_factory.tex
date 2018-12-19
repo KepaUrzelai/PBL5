@@ -1,0 +1,30 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_zero_date_time_to_default_value_factory}{}\section{com.\+mysql.\+cj.\+result.\+Zero\+Date\+Time\+To\+Default\+Value\+Factory$<$ T $>$ Class Template Reference}
+\label{classcom_1_1mysql_1_1cj_1_1result_1_1_zero_date_time_to_default_value_factory}\index{com.\+mysql.\+cj.\+result.\+Zero\+Date\+Time\+To\+Default\+Value\+Factory$<$ T $>$@{com.\+mysql.\+cj.\+result.\+Zero\+Date\+Time\+To\+Default\+Value\+Factory$<$ T $>$}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_base_decorating_value_factory}{com.\+mysql.\+cj.\+result.\+Base\+Decorating\+Value\+Factory$<$ T $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_zero_date_time_to_default_value_factory_a760b32c06c80ba6719cee9aae77066b6}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_zero_date_time_to_default_value_factory_a760b32c06c80ba6719cee9aae77066b6}} 
+{\bfseries Zero\+Date\+Time\+To\+Default\+Value\+Factory} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory}{Value\+Factory}}$<$ T $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_base_decorating_value_factory_a64c2c62bd9906ec3af7fc62e58bf34b3}{target\+Vf}})
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_zero_date_time_to_default_value_factory_ae629c81471dfdf02f153bb84afcba93e}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_zero_date_time_to_default_value_factory_ae629c81471dfdf02f153bb84afcba93e}} 
+T {\bfseries create\+From\+Date} (int year, int month, int day)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_zero_date_time_to_default_value_factory_a97adb0b51c3cf9d2bd908ea650f25f2d}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_zero_date_time_to_default_value_factory_a97adb0b51c3cf9d2bd908ea650f25f2d}} 
+T {\bfseries create\+From\+Time} (int hours, int minutes, int seconds, int nanos)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_zero_date_time_to_default_value_factory_a5b0935e9804d9f90a3fd09ce5bb78fc8}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_zero_date_time_to_default_value_factory_a5b0935e9804d9f90a3fd09ce5bb78fc8}} 
+T {\bfseries create\+From\+Timestamp} (int year, int month, int day, int hours, int minutes, int seconds, int nanos)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A decorating value factory which \char`\"{}rounds\char`\"{} zero date/time values into defaults. All fields are set to their lowest permissible value. e.\+g. 0000-\/00-\/00 is returned as 0001-\/01-\/01. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/result/Zero\+Date\+Time\+To\+Default\+Value\+Factory.\+java\end{DoxyCompactItemize}

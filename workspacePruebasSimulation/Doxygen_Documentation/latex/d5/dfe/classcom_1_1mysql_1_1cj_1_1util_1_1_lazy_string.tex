@@ -1,0 +1,35 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_lazy_string}{}\section{com.\+mysql.\+cj.\+util.\+Lazy\+String Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1util_1_1_lazy_string}\index{com.\+mysql.\+cj.\+util.\+Lazy\+String@{com.\+mysql.\+cj.\+util.\+Lazy\+String}}
+
+
+Inherits Supplier$<$ String $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_lazy_string_a35e42f1528797d95f7d136a743ebb715}\label{classcom_1_1mysql_1_1cj_1_1util_1_1_lazy_string_a35e42f1528797d95f7d136a743ebb715}} 
+{\bfseries Lazy\+String} (String string)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_lazy_string_af6a71f4638561312d98f625211b94a28}\label{classcom_1_1mysql_1_1cj_1_1util_1_1_lazy_string_af6a71f4638561312d98f625211b94a28}} 
+{\bfseries Lazy\+String} (byte\mbox{[}$\,$\mbox{]} buffer, int offset, int length, String encoding)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_lazy_string_a217eff2af32cb57ef5307c96e45e621b}\label{classcom_1_1mysql_1_1cj_1_1util_1_1_lazy_string_a217eff2af32cb57ef5307c96e45e621b}} 
+{\bfseries Lazy\+String} (byte\mbox{[}$\,$\mbox{]} buffer, int offset, int length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_lazy_string_a25acdb668b2966e6e99764dd08177869}\label{classcom_1_1mysql_1_1cj_1_1util_1_1_lazy_string_a25acdb668b2966e6e99764dd08177869}} 
+String {\bfseries to\+String} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_lazy_string_aba17c82b57c45d15d1d8ec1ba9581a2a}\label{classcom_1_1mysql_1_1cj_1_1util_1_1_lazy_string_aba17c82b57c45d15d1d8ec1ba9581a2a}} 
+int {\bfseries length} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1util_1_1_lazy_string_ac58f7776e68ba38901a9aa8a356d4adb}\label{classcom_1_1mysql_1_1cj_1_1util_1_1_lazy_string_ac58f7776e68ba38901a9aa8a356d4adb}} 
+String {\bfseries get} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A lazy string that can take a byte buffer and encoding and interpret it as a string if/when requested. The string is cached and saved for any further requests. \char`\"{}\+N\+U\+L\+L\char`\"{} values can be represented by a 0-\/len string or a {\itshape null} passed to Lazy\+String(\+String). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/util/Lazy\+String.\+java\end{DoxyCompactItemize}

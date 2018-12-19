@@ -1,0 +1,74 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Add\+Statement Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}\index{com.\+mysql.\+cj.\+xdevapi.\+Add\+Statement@{com.\+mysql.\+cj.\+xdevapi.\+Add\+Statement}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement}{com.\+mysql.\+cj.\+xdevapi.\+Statement$<$ Add\+Statement, Add\+Result $>$}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement_impl}{com.\+mysql.\+cj.\+xdevapi.\+Add\+Statement\+Impl}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement_a74f363f3bc32c51f83c4ae69722b179c}{add}} (String json\+String)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement_a886e1294099cf00085c882aba48bf06e}{add}} (Db\+Doc... documents)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement_a22f74388f89be049d0f1c591e143874c}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement_a22f74388f89be049d0f1c591e143874c}} 
+boolean {\bfseries is\+Upsert} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement_ab2681842a71332f6170cb5b227ff6ebd}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement_ab2681842a71332f6170cb5b227ff6ebd}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} {\bfseries set\+Upsert} (boolean upsert)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A statement adding documents to a collection. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement_a74f363f3bc32c51f83c4ae69722b179c}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement_a74f363f3bc32c51f83c4ae69722b179c}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Add\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Add\+Statement}!add@{add}}
+\index{add@{add}!com\+::mysql\+::cj\+::xdevapi\+::\+Add\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Add\+Statement}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Add\+Statement.\+add (\begin{DoxyParamCaption}\item[{String}]{json\+String }\end{DoxyParamCaption})}
+
+Add a document as a J\+S\+ON string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+String} & document as a J\+S\+ON string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement_impl_abba297ed8c7bfb2afad21bebcb3ca13a}{com.\+mysql.\+cj.\+xdevapi.\+Add\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement_a886e1294099cf00085c882aba48bf06e}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement_a886e1294099cf00085c882aba48bf06e}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Add\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Add\+Statement}!add@{add}}
+\index{add@{add}!com\+::mysql\+::cj\+::xdevapi\+::\+Add\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Add\+Statement}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Add\+Statement.\+add (\begin{DoxyParamCaption}\item[{Db\+Doc...}]{documents }\end{DoxyParamCaption})}
+
+Add a sequence of Db\+Docs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em documents} & one or more \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc}{Db\+Doc}} documents \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement}{Add\+Statement}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_statement_impl_a59bdfcc8a26ee55966f9a1ad5a7b2303}{com.\+mysql.\+cj.\+xdevapi.\+Add\+Statement\+Impl}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/Add\+Statement.\+java\end{DoxyCompactItemize}

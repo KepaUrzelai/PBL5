@@ -1,0 +1,188 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller}{}\section{com.\+mysql.\+cj.\+admin.\+Server\+Controller Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller}\index{com.\+mysql.\+cj.\+admin.\+Server\+Controller@{com.\+mysql.\+cj.\+admin.\+Server\+Controller}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a4bfd555ef5a52f89d6edd72232d8f4d8}{Server\+Controller}} (String base\+Dir)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_ab9a8133153b7cfe56d8071deb50dc307}{Server\+Controller}} (String basedir, String datadir)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a966e07b0c4528fa8cae51975705dd8d2}{set\+Base\+Dir}} (String base\+Dir)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a7289db6d097f54749cb6cd16e06c1607}{set\+Data\+Dir}} (String data\+Dir)
+\item 
+Process \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a6fa88d496021c33b2a334171749cd615}{start}} ()  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a2b02c22e29bec215e59ec6d1f2995f48}{stop}} (boolean force\+If\+Necessary)  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a02305d83af6ee295f85ac23768227a53}{force\+Stop}} ()
+\item 
+synchronized Properties \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a382fcf708f4a1ce600dbd5d387fe4751}{get\+Server\+Props}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a0693abdab3ee64cb24b7c8c015f92900}{B\+A\+S\+E\+D\+I\+R\+\_\+\+K\+EY}} = \char`\"{}basedir\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a92440361cf73bb8dc8933a0416291c97}{D\+A\+T\+A\+D\+I\+R\+\_\+\+K\+EY}} = \char`\"{}datadir\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a19adde7fe6ba494c9202852a8203903f}{D\+E\+F\+A\+U\+L\+T\+S\+\_\+\+F\+I\+L\+E\+\_\+\+K\+EY}} = \char`\"{}defaults-\/file\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_aecb230cd383088e3ae1e982950b71c02}{E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+K\+EY}} = \char`\"{}executable\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a4539d88beb132dc82a97a5003777ad7e}{E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+P\+A\+T\+H\+\_\+\+K\+EY}} = \char`\"{}executable\+Path\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Controls a My\+S\+QL server using Java Run\+Time methods 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a4bfd555ef5a52f89d6edd72232d8f4d8}\label{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a4bfd555ef5a52f89d6edd72232d8f4d8}} 
+\index{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}!Server\+Controller@{Server\+Controller}}
+\index{Server\+Controller@{Server\+Controller}!com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}}
+\subsubsection{\texorpdfstring{Server\+Controller()}{ServerController()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+admin.\+Server\+Controller.\+Server\+Controller (\begin{DoxyParamCaption}\item[{String}]{base\+Dir }\end{DoxyParamCaption})}
+
+The system properties Creates a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller}{Server\+Controller}} with the directory for the My\+S\+QL server.
+
+The \textquotesingle{}datadir\textquotesingle{} is set to the same directory.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Dir} & the base directory for the My\+S\+QL server. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_ab9a8133153b7cfe56d8071deb50dc307}\label{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_ab9a8133153b7cfe56d8071deb50dc307}} 
+\index{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}!Server\+Controller@{Server\+Controller}}
+\index{Server\+Controller@{Server\+Controller}!com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}}
+\subsubsection{\texorpdfstring{Server\+Controller()}{ServerController()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+admin.\+Server\+Controller.\+Server\+Controller (\begin{DoxyParamCaption}\item[{String}]{basedir,  }\item[{String}]{datadir }\end{DoxyParamCaption})}
+
+Creates a server controller for the My\+S\+QL server with the given basedir and datadir.
+
+
+\begin{DoxyParams}{Parameters}
+{\em basedir} & the basedir to use when starting My\+S\+QL. \\
+\hline
+{\em datadir} & the datadir to use when starting My\+S\+QL. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a02305d83af6ee295f85ac23768227a53}\label{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a02305d83af6ee295f85ac23768227a53}} 
+\index{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}!force\+Stop@{force\+Stop}}
+\index{force\+Stop@{force\+Stop}!com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}}
+\subsubsection{\texorpdfstring{force\+Stop()}{forceStop()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+admin.\+Server\+Controller.\+force\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Forcefully terminates the server process (if started). \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a382fcf708f4a1ce600dbd5d387fe4751}\label{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a382fcf708f4a1ce600dbd5d387fe4751}} 
+\index{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}!get\+Server\+Props@{get\+Server\+Props}}
+\index{get\+Server\+Props@{get\+Server\+Props}!com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}}
+\subsubsection{\texorpdfstring{get\+Server\+Props()}{getServerProps()}}
+{\footnotesize\ttfamily synchronized Properties com.\+mysql.\+cj.\+admin.\+Server\+Controller.\+get\+Server\+Props (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the list of properties that will be used to start/control the server.
+
+\begin{DoxyReturn}{Returns}
+Properties the list of properties. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a966e07b0c4528fa8cae51975705dd8d2}\label{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a966e07b0c4528fa8cae51975705dd8d2}} 
+\index{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}!set\+Base\+Dir@{set\+Base\+Dir}}
+\index{set\+Base\+Dir@{set\+Base\+Dir}!com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}}
+\subsubsection{\texorpdfstring{set\+Base\+Dir()}{setBaseDir()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+admin.\+Server\+Controller.\+set\+Base\+Dir (\begin{DoxyParamCaption}\item[{String}]{base\+Dir }\end{DoxyParamCaption})}
+
+Sets the basedir to use when starting My\+S\+QL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Dir} & the basedir to use when starting My\+S\+QL. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a7289db6d097f54749cb6cd16e06c1607}\label{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a7289db6d097f54749cb6cd16e06c1607}} 
+\index{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}!set\+Data\+Dir@{set\+Data\+Dir}}
+\index{set\+Data\+Dir@{set\+Data\+Dir}!com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}}
+\subsubsection{\texorpdfstring{set\+Data\+Dir()}{setDataDir()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+admin.\+Server\+Controller.\+set\+Data\+Dir (\begin{DoxyParamCaption}\item[{String}]{data\+Dir }\end{DoxyParamCaption})}
+
+Sets the data to use when starting My\+S\+QL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Dir} & the basedir to use when starting My\+S\+QL. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a6fa88d496021c33b2a334171749cd615}\label{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a6fa88d496021c33b2a334171749cd615}} 
+\index{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}!start@{start}}
+\index{start@{start}!com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily Process com.\+mysql.\+cj.\+admin.\+Server\+Controller.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Starts the server, returning a java.\+lang.\+Process instance that represents the mysql server.
+
+\begin{DoxyReturn}{Returns}
+Process a java.\+lang.\+Process instance representing the mysql server process. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an error occurs while starting the mysql server. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a2b02c22e29bec215e59ec6d1f2995f48}\label{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a2b02c22e29bec215e59ec6d1f2995f48}} 
+\index{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}!stop@{stop}}
+\index{stop@{stop}!com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+admin.\+Server\+Controller.\+stop (\begin{DoxyParamCaption}\item[{boolean}]{force\+If\+Necessary }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Stops the server (if started)
+
+
+\begin{DoxyParams}{Parameters}
+{\em force\+If\+Necessary} & use force\+Stop if mysqladmin doesn\textquotesingle{}t shut the server down\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an error occurs while stopping the server \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a0693abdab3ee64cb24b7c8c015f92900}\label{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a0693abdab3ee64cb24b7c8c015f92900}} 
+\index{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}!B\+A\+S\+E\+D\+I\+R\+\_\+\+K\+EY@{B\+A\+S\+E\+D\+I\+R\+\_\+\+K\+EY}}
+\index{B\+A\+S\+E\+D\+I\+R\+\_\+\+K\+EY@{B\+A\+S\+E\+D\+I\+R\+\_\+\+K\+EY}!com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}}
+\subsubsection{\texorpdfstring{B\+A\+S\+E\+D\+I\+R\+\_\+\+K\+EY}{BASEDIR\_KEY}}
+{\footnotesize\ttfamily final String com.\+mysql.\+cj.\+admin.\+Server\+Controller.\+B\+A\+S\+E\+D\+I\+R\+\_\+\+K\+EY = \char`\"{}basedir\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+Where is the server installed? \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a92440361cf73bb8dc8933a0416291c97}\label{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a92440361cf73bb8dc8933a0416291c97}} 
+\index{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}!D\+A\+T\+A\+D\+I\+R\+\_\+\+K\+EY@{D\+A\+T\+A\+D\+I\+R\+\_\+\+K\+EY}}
+\index{D\+A\+T\+A\+D\+I\+R\+\_\+\+K\+EY@{D\+A\+T\+A\+D\+I\+R\+\_\+\+K\+EY}!com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}}
+\subsubsection{\texorpdfstring{D\+A\+T\+A\+D\+I\+R\+\_\+\+K\+EY}{DATADIR\_KEY}}
+{\footnotesize\ttfamily final String com.\+mysql.\+cj.\+admin.\+Server\+Controller.\+D\+A\+T\+A\+D\+I\+R\+\_\+\+K\+EY = \char`\"{}datadir\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+Where are the databases installed? \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a19adde7fe6ba494c9202852a8203903f}\label{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a19adde7fe6ba494c9202852a8203903f}} 
+\index{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}!D\+E\+F\+A\+U\+L\+T\+S\+\_\+\+F\+I\+L\+E\+\_\+\+K\+EY@{D\+E\+F\+A\+U\+L\+T\+S\+\_\+\+F\+I\+L\+E\+\_\+\+K\+EY}}
+\index{D\+E\+F\+A\+U\+L\+T\+S\+\_\+\+F\+I\+L\+E\+\_\+\+K\+EY@{D\+E\+F\+A\+U\+L\+T\+S\+\_\+\+F\+I\+L\+E\+\_\+\+K\+EY}!com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+S\+\_\+\+F\+I\+L\+E\+\_\+\+K\+EY}{DEFAULTS\_FILE\_KEY}}
+{\footnotesize\ttfamily final String com.\+mysql.\+cj.\+admin.\+Server\+Controller.\+D\+E\+F\+A\+U\+L\+T\+S\+\_\+\+F\+I\+L\+E\+\_\+\+K\+EY = \char`\"{}defaults-\/file\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+Where is the config file located? \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_aecb230cd383088e3ae1e982950b71c02}\label{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_aecb230cd383088e3ae1e982950b71c02}} 
+\index{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}!E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+K\+EY@{E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+K\+EY}}
+\index{E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+K\+EY@{E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+K\+EY}!com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}}
+\subsubsection{\texorpdfstring{E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+K\+EY}{EXECUTABLE\_NAME\_KEY}}
+{\footnotesize\ttfamily final String com.\+mysql.\+cj.\+admin.\+Server\+Controller.\+E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+K\+EY = \char`\"{}executable\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+What is the name of the executable to run? \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a4539d88beb132dc82a97a5003777ad7e}\label{classcom_1_1mysql_1_1cj_1_1admin_1_1_server_controller_a4539d88beb132dc82a97a5003777ad7e}} 
+\index{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}!E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+P\+A\+T\+H\+\_\+\+K\+EY@{E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+P\+A\+T\+H\+\_\+\+K\+EY}}
+\index{E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+P\+A\+T\+H\+\_\+\+K\+EY@{E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+P\+A\+T\+H\+\_\+\+K\+EY}!com\+::mysql\+::cj\+::admin\+::\+Server\+Controller@{com\+::mysql\+::cj\+::admin\+::\+Server\+Controller}}
+\subsubsection{\texorpdfstring{E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+P\+A\+T\+H\+\_\+\+K\+EY}{EXECUTABLE\_PATH\_KEY}}
+{\footnotesize\ttfamily final String com.\+mysql.\+cj.\+admin.\+Server\+Controller.\+E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+P\+A\+T\+H\+\_\+\+K\+EY = \char`\"{}executable\+Path\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+What is the path to the mysql server executable (if not standard?) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/admin/Server\+Controller.\+java\end{DoxyCompactItemize}

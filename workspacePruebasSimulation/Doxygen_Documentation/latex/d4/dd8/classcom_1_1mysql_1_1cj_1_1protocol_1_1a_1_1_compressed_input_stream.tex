@@ -1,0 +1,106 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Input\+Stream Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Input\+Stream@{com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Input\+Stream}}
+
+
+Inherits Input\+Stream.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_aba7d9e3700e281f4098e7b63a1143a46}{Compressed\+Input\+Stream}} (Input\+Stream stream\+From\+Server, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Boolean $>$ trace\+Protocol, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_a1ff871810891e136ffa3b395ee34e4af}{available}} ()  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_ae2a7fb47e255d6f525144d85e4267acf}{close}} ()  throws I\+O\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_ab7cb778b77e62b7937557ae73795734c}{read}} ()  throws I\+O\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_afdf745c00f204f70927ceb1543b468e4}{read}} (byte\mbox{[}$\,$\mbox{]} b)  throws I\+O\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_aff0d5a3015ea7bee362c9f17c3653905}{read}} (byte\mbox{[}$\,$\mbox{]} b, int off, int len)  throws I\+O\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_af52c6a22e9a2c960a9bc5b7d5b9a95e7}{skip}} (long n)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to de-\/compress packets from the My\+S\+QL server when protocol-\/level compression is turned on. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_aba7d9e3700e281f4098e7b63a1143a46}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_aba7d9e3700e281f4098e7b63a1143a46}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream}!Compressed\+Input\+Stream@{Compressed\+Input\+Stream}}
+\index{Compressed\+Input\+Stream@{Compressed\+Input\+Stream}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Compressed\+Input\+Stream()}{CompressedInputStream()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Input\+Stream.\+Compressed\+Input\+Stream (\begin{DoxyParamCaption}\item[{Input\+Stream}]{stream\+From\+Server,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Boolean $>$}]{trace\+Protocol,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}}}]{log }\end{DoxyParamCaption})}
+
+Creates a new \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream}{Compressed\+Input\+Stream}} that reads the given stream from the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & \\
+\hline
+{\em stream\+From\+Server} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_a1ff871810891e136ffa3b395ee34e4af}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_a1ff871810891e136ffa3b395ee34e4af}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream}!available@{available}}
+\index{available@{available}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream}}
+\subsubsection{\texorpdfstring{available()}{available()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Input\+Stream.\+available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+io.\+Input\+Stream\+::available() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_ae2a7fb47e255d6f525144d85e4267acf}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_ae2a7fb47e255d6f525144d85e4267acf}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream}!close@{close}}
+\index{close@{close}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Input\+Stream.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+io.\+Input\+Stream\+::close() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_ab7cb778b77e62b7937557ae73795734c}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_ab7cb778b77e62b7937557ae73795734c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream}!read@{read}}
+\index{read@{read}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream}}
+\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Input\+Stream.\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+io.\+Input\+Stream\+::read() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_afdf745c00f204f70927ceb1543b468e4}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_afdf745c00f204f70927ceb1543b468e4}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream}!read@{read}}
+\index{read@{read}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream}}
+\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Input\+Stream.\+read (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{b }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+io.\+Input\+Stream\+::read(byte) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_aff0d5a3015ea7bee362c9f17c3653905}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_aff0d5a3015ea7bee362c9f17c3653905}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream}!read@{read}}
+\index{read@{read}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream}}
+\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Input\+Stream.\+read (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{b,  }\item[{int}]{off,  }\item[{int}]{len }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+io.\+Input\+Stream\+::read(byte, int, int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_af52c6a22e9a2c960a9bc5b7d5b9a95e7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_input_stream_af52c6a22e9a2c960a9bc5b7d5b9a95e7}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream}!skip@{skip}}
+\index{skip@{skip}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Compressed\+Input\+Stream}}
+\subsubsection{\texorpdfstring{skip()}{skip()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Input\+Stream.\+skip (\begin{DoxyParamCaption}\item[{long}]{n }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+io.\+Input\+Stream\+::skip(long) 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/Compressed\+Input\+Stream.\+java\end{DoxyCompactItemize}

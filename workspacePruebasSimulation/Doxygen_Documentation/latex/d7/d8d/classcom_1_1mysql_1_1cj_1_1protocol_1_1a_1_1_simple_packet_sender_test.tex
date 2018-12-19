@@ -1,0 +1,38 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_test}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Simple\+Packet\+Sender\+Test Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_test}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Simple\+Packet\+Sender\+Test@{com.\+mysql.\+cj.\+protocol.\+a.\+Simple\+Packet\+Sender\+Test}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_packet_sender_test_base}{com.\+mysql.\+cj.\+protocol.\+a.\+Packet\+Sender\+Test\+Base}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_test_a5c78726ca165427e15d365c78cfcb2ea}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_test_a5c78726ca165427e15d365c78cfcb2ea}} 
+void {\bfseries cleanup\+Byte\+Array\+Output\+Stream} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_test_a1e427d6e3fdd095ee9b5788a65a72bc2}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_test_a1e427d6e3fdd095ee9b5788a65a72bc2}} 
+void {\bfseries basic\+Packet\+Sanity\+Test} ()  throws I\+O\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_test_a2e967f47da2c1c278edc1d355c9d4a89}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_test_a2e967f47da2c1c278edc1d355c9d4a89}} 
+void {\bfseries split\+Packet\+Test} ()  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_test_a5936ffe2c8c3738af9838f7fa5a05624}{packet\+Size\+Multiple\+Of\+Max\+Test}} ()  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Tests for simple/direct packet sender. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_test_a5936ffe2c8c3738af9838f7fa5a05624}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_test_a5936ffe2c8c3738af9838f7fa5a05624}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Sender\+Test@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Sender\+Test}!packet\+Size\+Multiple\+Of\+Max\+Test@{packet\+Size\+Multiple\+Of\+Max\+Test}}
+\index{packet\+Size\+Multiple\+Of\+Max\+Test@{packet\+Size\+Multiple\+Of\+Max\+Test}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Sender\+Test@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Sender\+Test}}
+\subsubsection{\texorpdfstring{packet\+Size\+Multiple\+Of\+Max\+Test()}{packetSizeMultipleOfMaxTest()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Simple\+Packet\+Sender\+Test.\+packet\+Size\+Multiple\+Of\+Max\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Test the case where the packet size is a multiple of the max packet size. We need to send an extra empty packet to signal that the payload is complete. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/test/java/com/mysql/cj/protocol/a/Simple\+Packet\+Sender\+Test.\+java\end{DoxyCompactItemize}

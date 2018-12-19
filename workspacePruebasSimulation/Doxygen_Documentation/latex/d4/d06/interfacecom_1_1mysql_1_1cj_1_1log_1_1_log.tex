@@ -1,0 +1,376 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{}\section{com.\+mysql.\+cj.\+log.\+Log Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}\index{com.\+mysql.\+cj.\+log.\+Log@{com.\+mysql.\+cj.\+log.\+Log}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a8340f13152932af117ec2f5884c06dd3}{is\+Debug\+Enabled}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_abda4b698026fdb26c74b211b521628c9}{is\+Error\+Enabled}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a61464d2603e609442da19c59c5c62f62}{is\+Fatal\+Enabled}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_aecb7f781b61b516d6bad9ada8e7dd3aa}{is\+Info\+Enabled}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a814070e176d987da656b45662bc63ccd}{is\+Trace\+Enabled}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a7877db04f22a78b801a8f2f8989d7043}{is\+Warn\+Enabled}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a6149f715730ea0615ef6e341dd3e8a39}{log\+Debug}} (Object msg)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a42c9900bc643b771d7e337686ac4f799}{log\+Debug}} (Object msg, Throwable thrown)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_ab6f35d1efab89f0c0316106fa4a15d2c}{log\+Error}} (Object msg)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a96aab6e63a2ab9ebe3b640b7e253dd4f}{log\+Error}} (Object msg, Throwable thrown)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a4f36fdcde6b1c88a4f1ba25a70555e3f}{log\+Fatal}} (Object msg)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a54cd5e19bf210ab86b373400e2213229}{log\+Fatal}} (Object msg, Throwable thrown)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a7f117433067520dd682da12ff9194f4b}{log\+Info}} (Object msg)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_abad2a5a44ff04b24bf46a58997e4f7da}{log\+Info}} (Object msg, Throwable thrown)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a04f51d4b9464df28c94695ae8159440e}{log\+Trace}} (Object msg)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_aa93fa5550a3152afd64479adca676200}{log\+Trace}} (Object msg, Throwable thrown)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a3a30dcfb7f5790b79e9db64431107cfc}{log\+Warn}} (Object msg)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a36af866ddfdda47938c768d3d0e68572}{log\+Warn}} (Object msg, Throwable thrown)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_aa34677968e5974954c41aaa7f5c6ddec}{L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME}} = \char`\"{}My\+S\+QL\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Unified interface to logging facilities on different platforms 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a8340f13152932af117ec2f5884c06dd3}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a8340f13152932af117ec2f5884c06dd3}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!is\+Debug\+Enabled@{is\+Debug\+Enabled}}
+\index{is\+Debug\+Enabled@{is\+Debug\+Enabled}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{is\+Debug\+Enabled()}{isDebugEnabled()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+log.\+Log.\+is\+Debug\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is the \textquotesingle{}debug\textquotesingle{} log level enabled?
+
+\begin{DoxyReturn}{Returns}
+true if so. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_ae2a40a552ba3dec4a358cecb436341a3}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_a91af3e97f6fbf354b88532b8aaa50453}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_acd9c06dcf57d15d16653d31aca25d885}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_a2063aafb5440a0a1a8b9038603916773}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_abda4b698026fdb26c74b211b521628c9}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_abda4b698026fdb26c74b211b521628c9}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!is\+Error\+Enabled@{is\+Error\+Enabled}}
+\index{is\+Error\+Enabled@{is\+Error\+Enabled}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{is\+Error\+Enabled()}{isErrorEnabled()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+log.\+Log.\+is\+Error\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is the \textquotesingle{}error\textquotesingle{} log level enabled?
+
+\begin{DoxyReturn}{Returns}
+true if so. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_ab2e1961de9eba2577b779cb970abc000}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_ae42f076b115e190b2c7bb186493ea171}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_af10dc1e8e5216c051f786d1d7578bb07}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_a3401a68eb92f0e0eec87e8140c36faa7}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a61464d2603e609442da19c59c5c62f62}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a61464d2603e609442da19c59c5c62f62}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!is\+Fatal\+Enabled@{is\+Fatal\+Enabled}}
+\index{is\+Fatal\+Enabled@{is\+Fatal\+Enabled}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{is\+Fatal\+Enabled()}{isFatalEnabled()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+log.\+Log.\+is\+Fatal\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is the \textquotesingle{}fatal\textquotesingle{} log level enabled?
+
+\begin{DoxyReturn}{Returns}
+true if so. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_a622ab5114bddae2c0893a08e53c66cff}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_af740a8480a6f4332aca8118b1143f311}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_a70814db9a009e9da80bc67c4e084120c}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_ae5ee0af225f5bc993dc023b8b31de983}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_aecb7f781b61b516d6bad9ada8e7dd3aa}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_aecb7f781b61b516d6bad9ada8e7dd3aa}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!is\+Info\+Enabled@{is\+Info\+Enabled}}
+\index{is\+Info\+Enabled@{is\+Info\+Enabled}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{is\+Info\+Enabled()}{isInfoEnabled()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+log.\+Log.\+is\+Info\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is the \textquotesingle{}info\textquotesingle{} log level enabled?
+
+\begin{DoxyReturn}{Returns}
+true if so. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_afa3c624bf9920c0131a8d0581c571ef8}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_ac01fd7e8de57ff3e72b588c86dcf7e32}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_af0ad62bbe84bd85359d474e58cd94316}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_ab21b243a10ab8a46a4706658298ecd5e}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a814070e176d987da656b45662bc63ccd}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a814070e176d987da656b45662bc63ccd}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!is\+Trace\+Enabled@{is\+Trace\+Enabled}}
+\index{is\+Trace\+Enabled@{is\+Trace\+Enabled}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{is\+Trace\+Enabled()}{isTraceEnabled()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+log.\+Log.\+is\+Trace\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is the \textquotesingle{}trace\textquotesingle{} log level enabled?
+
+\begin{DoxyReturn}{Returns}
+true if so. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_afb271f7134e427754d35ae250b222f9e}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_abc67efb3ab231c21151dba192b032919}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_aec3c94f0980a5539603a7ab12b270356}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_afbf9106392050f7ca64b0ad7582b7517}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a7877db04f22a78b801a8f2f8989d7043}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a7877db04f22a78b801a8f2f8989d7043}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!is\+Warn\+Enabled@{is\+Warn\+Enabled}}
+\index{is\+Warn\+Enabled@{is\+Warn\+Enabled}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{is\+Warn\+Enabled()}{isWarnEnabled()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+log.\+Log.\+is\+Warn\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is the \textquotesingle{}warn\textquotesingle{} log level enabled?
+
+\begin{DoxyReturn}{Returns}
+true if so. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_aad87d184634e72518bbc1a162fb06200}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_a878077a85d6821f2b7ba2eca93e9e01d}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_ae2749400e4e820f091a583795111f5a7}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_aaf12f87af0d37c01118649ba65220a69}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a6149f715730ea0615ef6e341dd3e8a39}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a6149f715730ea0615ef6e341dd3e8a39}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!log\+Debug@{log\+Debug}}
+\index{log\+Debug@{log\+Debug}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{log\+Debug()}{logDebug()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+log.\+Log.\+log\+Debug (\begin{DoxyParamCaption}\item[{Object}]{msg }\end{DoxyParamCaption})}
+
+Logs the given message instance using the \textquotesingle{}debug\textquotesingle{} level
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message to log \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_a99571fed95c82bb8356f213c3a4b0fa8}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_a9675c51be991227aaa6d395fb618eef2}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_ae46ab625efa73570bb45757cacdf32f4}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_aef79b4ff2ba3058fe4f713db62707e6c}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a42c9900bc643b771d7e337686ac4f799}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a42c9900bc643b771d7e337686ac4f799}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!log\+Debug@{log\+Debug}}
+\index{log\+Debug@{log\+Debug}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{log\+Debug()}{logDebug()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+log.\+Log.\+log\+Debug (\begin{DoxyParamCaption}\item[{Object}]{msg,  }\item[{Throwable}]{thrown }\end{DoxyParamCaption})}
+
+Logs the given message and Throwable at the \textquotesingle{}debug\textquotesingle{} level.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message to log \\
+\hline
+{\em thrown} & the throwable to log (may be null) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_a8f641c61351e0b4242bc14c49d72f603}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_a3be3b804fac31009afe4dcbc9a399027}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_aafdb325726af974c0ebfd5c134e934e4}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_aeaf3ce8432b63f1b631e7ad698ea7aa6}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_ab6f35d1efab89f0c0316106fa4a15d2c}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_ab6f35d1efab89f0c0316106fa4a15d2c}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!log\+Error@{log\+Error}}
+\index{log\+Error@{log\+Error}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{log\+Error()}{logError()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+log.\+Log.\+log\+Error (\begin{DoxyParamCaption}\item[{Object}]{msg }\end{DoxyParamCaption})}
+
+Logs the given message instance using the \textquotesingle{}error\textquotesingle{} level
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message to log \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_a190ac11ebc3b482ff9016af3e9a14ca4}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_ab800a4f68be1be1e0e90581ea6239506}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_aa955e1f3a7fa6eaa275d60833b56ce79}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_a1a99e9a4f586e0678a68d1145cd26bc5}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a96aab6e63a2ab9ebe3b640b7e253dd4f}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a96aab6e63a2ab9ebe3b640b7e253dd4f}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!log\+Error@{log\+Error}}
+\index{log\+Error@{log\+Error}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{log\+Error()}{logError()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+log.\+Log.\+log\+Error (\begin{DoxyParamCaption}\item[{Object}]{msg,  }\item[{Throwable}]{thrown }\end{DoxyParamCaption})}
+
+Logs the given message and Throwable at the \textquotesingle{}error\textquotesingle{} level.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message to log \\
+\hline
+{\em thrown} & the throwable to log (may be null) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_a536975e1d72a19baef92a859e27d2e7a}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_ada15522843be28970a27cfb2892147d0}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_a5e2cc9bc22d59ed5f1531cb73b3b48c5}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_a30a623739677aa264670ff888fff2958}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a4f36fdcde6b1c88a4f1ba25a70555e3f}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a4f36fdcde6b1c88a4f1ba25a70555e3f}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!log\+Fatal@{log\+Fatal}}
+\index{log\+Fatal@{log\+Fatal}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{log\+Fatal()}{logFatal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+log.\+Log.\+log\+Fatal (\begin{DoxyParamCaption}\item[{Object}]{msg }\end{DoxyParamCaption})}
+
+Logs the given message instance using the \textquotesingle{}fatal\textquotesingle{} level
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message to log \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_af6f7c3848e7c6df645dd52b95b312aaa}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_a6f21dd8deaa592dba6d0dcdca158ad8e}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_a68d852a1b707ebdbf2288d9e4a1c0335}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_a60d9438bd9dfae5451a25543e2d4584a}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a54cd5e19bf210ab86b373400e2213229}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a54cd5e19bf210ab86b373400e2213229}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!log\+Fatal@{log\+Fatal}}
+\index{log\+Fatal@{log\+Fatal}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{log\+Fatal()}{logFatal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+log.\+Log.\+log\+Fatal (\begin{DoxyParamCaption}\item[{Object}]{msg,  }\item[{Throwable}]{thrown }\end{DoxyParamCaption})}
+
+Logs the given message and Throwable at the \textquotesingle{}fatal\textquotesingle{} level.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message to log \\
+\hline
+{\em thrown} & the throwable to log (may be null) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_a69e98cb3f558bb0403c602a83dbb515c}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_a63cb086965547119c85338b7238594b9}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_ac61e11ed170d64dec00903990ac86778}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_a41fac550645e2405ce00932de06fd9cb}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a7f117433067520dd682da12ff9194f4b}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a7f117433067520dd682da12ff9194f4b}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!log\+Info@{log\+Info}}
+\index{log\+Info@{log\+Info}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{log\+Info()}{logInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+log.\+Log.\+log\+Info (\begin{DoxyParamCaption}\item[{Object}]{msg }\end{DoxyParamCaption})}
+
+Logs the given message instance using the \textquotesingle{}info\textquotesingle{} level
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message to log \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_aeeb1226e65e7183722939e8ae666a910}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_afb7e72826582a918eb3ec8b14549a7d0}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_a3444f6e7cb48a80d3cf82acf93a74c27}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_a26d58956fed92b00593c66b1d7d3fed0}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_abad2a5a44ff04b24bf46a58997e4f7da}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_abad2a5a44ff04b24bf46a58997e4f7da}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!log\+Info@{log\+Info}}
+\index{log\+Info@{log\+Info}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{log\+Info()}{logInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+log.\+Log.\+log\+Info (\begin{DoxyParamCaption}\item[{Object}]{msg,  }\item[{Throwable}]{thrown }\end{DoxyParamCaption})}
+
+Logs the given message and Throwable at the \textquotesingle{}info\textquotesingle{} level.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message to log \\
+\hline
+{\em thrown} & the throwable to log (may be null) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_a9086549846486165e052a7e1ce190864}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_a439d3b7c7b21fd3f766bed9729e77551}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_ad6eaf1dfaaa8f7f4c7a092852a4add0f}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_a0dc09cf6b7ae8266a850c79bc226e714}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a04f51d4b9464df28c94695ae8159440e}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a04f51d4b9464df28c94695ae8159440e}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!log\+Trace@{log\+Trace}}
+\index{log\+Trace@{log\+Trace}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{log\+Trace()}{logTrace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+log.\+Log.\+log\+Trace (\begin{DoxyParamCaption}\item[{Object}]{msg }\end{DoxyParamCaption})}
+
+Logs the given message instance using the \textquotesingle{}trace\textquotesingle{} level
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message to log \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_a31c4a397719a30877e689fcba2e1054a}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_a31e22a245c6b07299ada95de3858d960}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_aa2d6ea6567c9c148b7170d771686386b}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_a090baffde957c89a83f1941bcb7cd4d7}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_aa93fa5550a3152afd64479adca676200}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_aa93fa5550a3152afd64479adca676200}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!log\+Trace@{log\+Trace}}
+\index{log\+Trace@{log\+Trace}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{log\+Trace()}{logTrace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+log.\+Log.\+log\+Trace (\begin{DoxyParamCaption}\item[{Object}]{msg,  }\item[{Throwable}]{thrown }\end{DoxyParamCaption})}
+
+Logs the given message and Throwable at the \textquotesingle{}trace\textquotesingle{} level.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message to log \\
+\hline
+{\em thrown} & the throwable to log (may be null) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_ae77a38e81b2d0ecb1ccbeafee9294bd3}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_a294191637fa5aadb2991b412b1fadde8}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_aa93d48c2e1172db2949b2ac64e58052a}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_a49552fc2c395b97c7916eb698ddd3315}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a3a30dcfb7f5790b79e9db64431107cfc}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a3a30dcfb7f5790b79e9db64431107cfc}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!log\+Warn@{log\+Warn}}
+\index{log\+Warn@{log\+Warn}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{log\+Warn()}{logWarn()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+log.\+Log.\+log\+Warn (\begin{DoxyParamCaption}\item[{Object}]{msg }\end{DoxyParamCaption})}
+
+Logs the given message instance using the \textquotesingle{}warn\textquotesingle{} level
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message to log \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_a5197952ca4b6dfe59a54c1aa095717f7}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_ae7bb8949ce0f06e610b7c2f285432ffd}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_a9b6bd04f7179ae6e572fb9ac91ade49e}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_aa9e190bc8cca0fb1c78bbc3e9d05cb26}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a36af866ddfdda47938c768d3d0e68572}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_a36af866ddfdda47938c768d3d0e68572}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!log\+Warn@{log\+Warn}}
+\index{log\+Warn@{log\+Warn}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{log\+Warn()}{logWarn()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+log.\+Log.\+log\+Warn (\begin{DoxyParamCaption}\item[{Object}]{msg,  }\item[{Throwable}]{thrown }\end{DoxyParamCaption})}
+
+Logs the given message and Throwable at the \textquotesingle{}warn\textquotesingle{} level.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message to log \\
+\hline
+{\em thrown} & the throwable to log (may be null) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_standard_logger_a3e05a95a97a95afb400144f652f43c78}{com.\+mysql.\+cj.\+log.\+Standard\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_jdk14_logger_ae61cfdb92166273f90bec4fbbac6374c}{com.\+mysql.\+cj.\+log.\+Jdk14\+Logger}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_slf4_j_logger_a617f07e2c9b52bc774d8e8ea83ace092}{com.\+mysql.\+cj.\+log.\+Slf4\+J\+Logger}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1log_1_1_null_logger_a93b1146368f2a30e7b4c74c043c4c00e}{com.\+mysql.\+cj.\+log.\+Null\+Logger}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_aa34677968e5974954c41aaa7f5c6ddec}\label{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log_aa34677968e5974954c41aaa7f5c6ddec}} 
+\index{com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}!L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME@{L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME}}
+\index{L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME@{L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME}!com\+::mysql\+::cj\+::log\+::\+Log@{com\+::mysql\+::cj\+::log\+::\+Log}}
+\subsubsection{\texorpdfstring{L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME}{LOGGER\_INSTANCE\_NAME}}
+{\footnotesize\ttfamily final String com.\+mysql.\+cj.\+log.\+Log.\+L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME = \char`\"{}My\+S\+QL\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+Logger instance name 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/log/Log.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_local_date_time_value_factory}{}\section{com.\+mysql.\+cj.\+result.\+Local\+Date\+Time\+Value\+Factory Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1result_1_1_local_date_time_value_factory}\index{com.\+mysql.\+cj.\+result.\+Local\+Date\+Time\+Value\+Factory@{com.\+mysql.\+cj.\+result.\+Local\+Date\+Time\+Value\+Factory}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory$<$ Local\+Date\+Time $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Local\+Date\+Time \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_local_date_time_value_factory_acc1132dc0e12080882860fa3e4449594}{create\+From\+Date}} (int year, int month, int day)
+\item 
+Local\+Date\+Time \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_local_date_time_value_factory_a19f3b513bc3edf16cf9958886c6b2233}{create\+From\+Time}} (int hours, int minutes, int seconds, int nanos)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_local_date_time_value_factory_a581f20c2279af34eb22091352a12271b}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_local_date_time_value_factory_a581f20c2279af34eb22091352a12271b}} 
+Local\+Date\+Time {\bfseries create\+From\+Timestamp} (int year, int month, int day, int hours, int minutes, int seconds, int nanos)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_local_date_time_value_factory_a900e37dad9b8f0167f8dc251ebe72846}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_local_date_time_value_factory_a900e37dad9b8f0167f8dc251ebe72846}} 
+String {\bfseries get\+Target\+Type\+Name} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Value factory to create \mbox{\hyperlink{}{Local\+Date\+Time}} instances. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_local_date_time_value_factory_acc1132dc0e12080882860fa3e4449594}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_local_date_time_value_factory_acc1132dc0e12080882860fa3e4449594}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Local\+Date\+Time\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Local\+Date\+Time\+Value\+Factory}!create\+From\+Date@{create\+From\+Date}}
+\index{create\+From\+Date@{create\+From\+Date}!com\+::mysql\+::cj\+::result\+::\+Local\+Date\+Time\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Local\+Date\+Time\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Date()}{createFromDate()}}
+{\footnotesize\ttfamily Local\+Date\+Time com.\+mysql.\+cj.\+result.\+Local\+Date\+Time\+Value\+Factory.\+create\+From\+Date (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month,  }\item[{int}]{day }\end{DoxyParamCaption})}
+
+Create a Local\+Date\+Time from a D\+A\+TE value.
+
+\begin{DoxyReturn}{Returns}
+a Local\+Date\+Time at midnight on the day given by the D\+A\+TE value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_local_date_time_value_factory_a19f3b513bc3edf16cf9958886c6b2233}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_local_date_time_value_factory_a19f3b513bc3edf16cf9958886c6b2233}} 
+\index{com\+::mysql\+::cj\+::result\+::\+Local\+Date\+Time\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Local\+Date\+Time\+Value\+Factory}!create\+From\+Time@{create\+From\+Time}}
+\index{create\+From\+Time@{create\+From\+Time}!com\+::mysql\+::cj\+::result\+::\+Local\+Date\+Time\+Value\+Factory@{com\+::mysql\+::cj\+::result\+::\+Local\+Date\+Time\+Value\+Factory}}
+\subsubsection{\texorpdfstring{create\+From\+Time()}{createFromTime()}}
+{\footnotesize\ttfamily Local\+Date\+Time com.\+mysql.\+cj.\+result.\+Local\+Date\+Time\+Value\+Factory.\+create\+From\+Time (\begin{DoxyParamCaption}\item[{int}]{hours,  }\item[{int}]{minutes,  }\item[{int}]{seconds,  }\item[{int}]{nanos }\end{DoxyParamCaption})}
+
+Create a Local\+Date\+Time from a T\+I\+ME value.
+
+\begin{DoxyReturn}{Returns}
+a Local\+Date\+Time at the given time on 1970 Jan 1. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/result/Local\+Date\+Time\+Value\+Factory.\+java\end{DoxyCompactItemize}

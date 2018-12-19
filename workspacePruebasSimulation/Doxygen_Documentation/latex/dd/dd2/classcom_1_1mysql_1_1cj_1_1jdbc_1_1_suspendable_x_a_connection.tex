@@ -1,0 +1,63 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection}{}\section{com.\+mysql.\+cj.\+jdbc.\+Suspendable\+X\+A\+Connection Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection}\index{com.\+mysql.\+cj.\+jdbc.\+Suspendable\+X\+A\+Connection@{com.\+mysql.\+cj.\+jdbc.\+Suspendable\+X\+A\+Connection}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection}{com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection}}, X\+A\+Connection, and X\+A\+Resource.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_ac685fd6cf1d33191f66a837e07be273c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_ac685fd6cf1d33191f66a837e07be273c}} 
+{\bfseries Suspendable\+X\+A\+Connection} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} connection)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a46b973eb31a0e5df5d099ad677e81ab8}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a46b973eb31a0e5df5d099ad677e81ab8}} 
+X\+A\+Resource {\bfseries get\+X\+A\+Resource} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a3a411547db0758969a131730f0f11f4f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a3a411547db0758969a131730f0f11f4f}} 
+void {\bfseries commit} (Xid xid, boolean arg1)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a1235ee5810bd34b54230b86cb43a9ecd}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a1235ee5810bd34b54230b86cb43a9ecd}} 
+void {\bfseries end} (Xid xid, int arg1)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a586078a515789ca4c1868d063c4db65a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a586078a515789ca4c1868d063c4db65a}} 
+void {\bfseries forget} (Xid xid)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_aaa0f3a39cd5176332c3fd5cf2a9c7ab6}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_aaa0f3a39cd5176332c3fd5cf2a9c7ab6}} 
+int {\bfseries get\+Transaction\+Timeout} ()  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_ad24346eedc086b1ce39a677d2b4a00c5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_ad24346eedc086b1ce39a677d2b4a00c5}} 
+boolean {\bfseries is\+Same\+RM} (X\+A\+Resource xa\+Res)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_aeea86b3e132c2fb1baa8d181c593b5dd}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_aeea86b3e132c2fb1baa8d181c593b5dd}} 
+int {\bfseries prepare} (Xid xid)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_ac136b715627473b77b2668485a189dad}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_ac136b715627473b77b2668485a189dad}} 
+Xid \mbox{[}$\,$\mbox{]} {\bfseries recover} (int flag)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a9167b090a36d780e18fc699e0aa2cbcb}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a9167b090a36d780e18fc699e0aa2cbcb}} 
+void {\bfseries rollback} (Xid xid)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a9e5215a340c576da77edd4f523bfb71e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a9e5215a340c576da77edd4f523bfb71e}} 
+boolean {\bfseries set\+Transaction\+Timeout} (int arg0)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a8d0fbd3c10412c014ba642b955435d8c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a8d0fbd3c10412c014ba642b955435d8c}} 
+void {\bfseries start} (Xid xid, int arg1)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a1a7f46f44b6433f57b5126ba6879f7d4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_a1a7f46f44b6433f57b5126ba6879f7d4}} 
+synchronized java.\+sql.\+Connection {\bfseries get\+Connection} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_ae22f87e04caefd066bf411f203a7ff5c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_ae22f87e04caefd066bf411f203a7ff5c}} 
+void {\bfseries close} ()  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_aa201aea08292a81433d1061bfa4eef15}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection_aa201aea08292a81433d1061bfa4eef15}} 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_suspendable_x_a_connection}{Suspendable\+X\+A\+Connection}} {\bfseries get\+Instance} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} mysql\+Connection)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/Suspendable\+X\+A\+Connection.\+java\end{DoxyCompactItemize}

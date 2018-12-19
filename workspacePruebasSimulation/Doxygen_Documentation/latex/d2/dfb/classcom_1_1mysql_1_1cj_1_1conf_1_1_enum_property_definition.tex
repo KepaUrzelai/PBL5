@@ -1,0 +1,78 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition}{}\section{com.\+mysql.\+cj.\+conf.\+Enum\+Property\+Definition$<$ T extends Enum$<$ T $>$ Class Template Reference}
+\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition}\index{com.\+mysql.\+cj.\+conf.\+Enum\+Property\+Definition$<$ T extends Enum$<$ T $>$@{com.\+mysql.\+cj.\+conf.\+Enum\+Property\+Definition$<$ T extends Enum$<$ T $>$}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition}{com.\+mysql.\+cj.\+conf.\+Abstract\+Property\+Definition$<$ T $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition_a9e287073983d3b7f018138692ac1960d}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition_a9e287073983d3b7f018138692ac1960d}} 
+{\bfseries Enum\+Property\+Definition} (String name, String alias, T default\+Value, boolean is\+Runtime\+Modifiable, String description, String since\+Version, String category, int order\+In\+Category)
+\item 
+String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition_a7e2ff8f6f7baf418abdae017a6bd8136}{get\+Allowable\+Values}} ()
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition_a00a259a5d83a0a7c6522309ff44146ba}{parse\+Object}} (String value, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_runtime_property}{Runtime\+Property}}$<$ T $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition_a463e1e063d6969ca3d352b31ea9324b5}{create\+Runtime\+Property}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition_a463e1e063d6969ca3d352b31ea9324b5}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition_a463e1e063d6969ca3d352b31ea9324b5}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Enum\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Enum\+Property\+Definition}!create\+Runtime\+Property@{create\+Runtime\+Property}}
+\index{create\+Runtime\+Property@{create\+Runtime\+Property}!com\+::mysql\+::cj\+::conf\+::\+Enum\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Enum\+Property\+Definition}}
+\subsubsection{\texorpdfstring{create\+Runtime\+Property()}{createRuntimeProperty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_runtime_property}{Runtime\+Property}}$<$T$>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition}{com.\+mysql.\+cj.\+conf.\+Enum\+Property\+Definition}}$<$ T extends Enum$<$ T $>$.create\+Runtime\+Property (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates an instance of \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_readable_enum_property}{Readable\+Enum\+Property}} or \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_modifiable_enum_property}{Modifiable\+Enum\+Property}} depending on \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_abstract_property_definition_a6c98140b2db84ccd0ff29ce165ec9ef5}{is\+Runtime\+Modifiable()}} result.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a60e957593314e41c73275bd5f4c6708e}{com.\+mysql.\+cj.\+conf.\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition_a7e2ff8f6f7baf418abdae017a6bd8136}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition_a7e2ff8f6f7baf418abdae017a6bd8136}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Enum\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Enum\+Property\+Definition}!get\+Allowable\+Values@{get\+Allowable\+Values}}
+\index{get\+Allowable\+Values@{get\+Allowable\+Values}!com\+::mysql\+::cj\+::conf\+::\+Enum\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Enum\+Property\+Definition}}
+\subsubsection{\texorpdfstring{get\+Allowable\+Values()}{getAllowableValues()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition}{com.\+mysql.\+cj.\+conf.\+Enum\+Property\+Definition}}$<$ T extends Enum$<$ T $>$.get\+Allowable\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the list of allowable values.
+
+\begin{DoxyReturn}{Returns}
+the list of allowable values 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_af0b3b3dc66dde20cb65b69eb2ec70738}{com.\+mysql.\+cj.\+conf.\+Property\+Definition$<$ T $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition_a00a259a5d83a0a7c6522309ff44146ba}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition_a00a259a5d83a0a7c6522309ff44146ba}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Enum\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Enum\+Property\+Definition}!parse\+Object@{parse\+Object}}
+\index{parse\+Object@{parse\+Object}!com\+::mysql\+::cj\+::conf\+::\+Enum\+Property\+Definition@{com\+::mysql\+::cj\+::conf\+::\+Enum\+Property\+Definition}}
+\subsubsection{\texorpdfstring{parse\+Object()}{parseObject()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_enum_property_definition}{com.\+mysql.\+cj.\+conf.\+Enum\+Property\+Definition}}$<$ T extends Enum$<$ T $>$.parse\+Object (\begin{DoxyParamCaption}\item[{String}]{value,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption})}
+
+Returns the value object parsed from it\textquotesingle{}s string representation and checked against allowable values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & value \\
+\hline
+{\em exception\+Interceptor} & exception interceptor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_definition_a6abfb25b6102c876eddc4f10aca5687c}{com.\+mysql.\+cj.\+conf.\+Property\+Definition$<$ T $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/conf/Enum\+Property\+Definition.\+java\end{DoxyCompactItemize}

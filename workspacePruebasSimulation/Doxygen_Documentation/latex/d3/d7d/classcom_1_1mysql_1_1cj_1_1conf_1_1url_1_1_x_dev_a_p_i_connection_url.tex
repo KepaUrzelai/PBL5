@@ -1,0 +1,50 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url}{}\section{com.\+mysql.\+cj.\+conf.\+url.\+X\+Dev\+A\+P\+I\+Connection\+Url Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url}\index{com.\+mysql.\+cj.\+conf.\+url.\+X\+Dev\+A\+P\+I\+Connection\+Url@{com.\+mysql.\+cj.\+conf.\+url.\+X\+Dev\+A\+P\+I\+Connection\+Url}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url}{com.\+mysql.\+cj.\+conf.\+Connection\+Url}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url_a81df74119f400043949eb96ebec792e0}{X\+Dev\+A\+P\+I\+Connection\+Url}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}} conn\+Str\+Parser, Properties info)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url_aa04f1d1cab569006945ddfe93314a0de}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url_aa04f1d1cab569006945ddfe93314a0de}} 
+int {\bfseries get\+Default\+Port} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url_af0d83e17264427f0a92e9b58531c5b5a}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url_af0d83e17264427f0a92e9b58531c5b5a}} 
+void {\bfseries process\+Cold\+Fusion\+Auto\+Configuration} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url_a548bba93e1640c9943483458a49a3dd4}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url_a548bba93e1640c9943483458a49a3dd4}} 
+Map$<$ String, String $>$ {\bfseries preprocess\+Per\+Type\+Host\+Properties} (Map$<$ String, String $>$ host\+Props)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url_a26ddac3fdb0a85e6f5dfb869bd218e52}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url_a26ddac3fdb0a85e6f5dfb869bd218e52}} 
+void {\bfseries fix\+Protocol\+Dependencies} (Map$<$ String, String $>$ host\+Props)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url_a81df74119f400043949eb96ebec792e0}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url_a81df74119f400043949eb96ebec792e0}} 
+\index{com\+::mysql\+::cj\+::conf\+::url\+::\+X\+Dev\+A\+P\+I\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+X\+Dev\+A\+P\+I\+Connection\+Url}!X\+Dev\+A\+P\+I\+Connection\+Url@{X\+Dev\+A\+P\+I\+Connection\+Url}}
+\index{X\+Dev\+A\+P\+I\+Connection\+Url@{X\+Dev\+A\+P\+I\+Connection\+Url}!com\+::mysql\+::cj\+::conf\+::url\+::\+X\+Dev\+A\+P\+I\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::url\+::\+X\+Dev\+A\+P\+I\+Connection\+Url}}
+\subsubsection{\texorpdfstring{X\+Dev\+A\+P\+I\+Connection\+Url()}{XDevAPIConnectionUrl()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+conf.\+url.\+X\+Dev\+A\+P\+I\+Connection\+Url.\+X\+Dev\+A\+P\+I\+Connection\+Url (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}}}]{conn\+Str\+Parser,  }\item[{Properties}]{info }\end{DoxyParamCaption})}
+
+Constructs an instance of \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url}{X\+Dev\+A\+P\+I\+Connection\+Url}}, performing all the required initializations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn\+Str\+Parser} & a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}} instance containing the parsed version of the original connection string \\
+\hline
+{\em info} & the connection arguments map \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/conf/url/X\+Dev\+A\+P\+I\+Connection\+Url.\+java\end{DoxyCompactItemize}

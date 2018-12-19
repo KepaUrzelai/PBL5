@@ -1,0 +1,74 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener}{}\section{com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Creating\+Result\+Listener$<$ R\+E\+S\+\_\+T $>$ Class Template Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener}\index{com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Creating\+Result\+Listener$<$ R\+E\+S\+\_\+\+T $>$@{com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Creating\+Result\+Listener$<$ R\+E\+S\+\_\+\+T $>$}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener}{com.\+mysql.\+cj.\+protocol.\+Result\+Listener$<$ O\+K extends Protocol\+Entity $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener_a1ffb4216e90c5ce744b6a13b877e7aca}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener_a1ffb4216e90c5ce744b6a13b877e7aca}} 
+{\bfseries Result\+Creating\+Result\+Listener} (Function$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}, Bi\+Function$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_list}{Row\+List}}, Supplier$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} $>$, R\+E\+S\+\_\+T $>$$>$ result\+Ctor, Completable\+Future$<$ R\+E\+S\+\_\+T $>$ future)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener_a453e531bc60f8e74d1f19ae2ddd2fd37}{on\+Metadata}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} metadata\+Fields)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener_a3b582384d167ddc242cffd7805de375c}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener_a3b582384d167ddc242cffd7805de375c}} 
+void {\bfseries on\+Row} (Row r)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener_a32f73b53b927ed85fbd03d4f8d18eaf0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener_a32f73b53b927ed85fbd03d4f8d18eaf0}} 
+void {\bfseries on\+Complete} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} ok)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener_af44c32d4ea694aea93998ebbba341605}{on\+Exception}} (Throwable t)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Create an entire (buffered) result from the data fed to this result listener.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+R\+E\+S\+\_\+\+T$>$} & The type of result that will be created (and posted to the future) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener_af44c32d4ea694aea93998ebbba341605}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener_af44c32d4ea694aea93998ebbba341605}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Creating\+Result\+Listener@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Creating\+Result\+Listener}!on\+Exception@{on\+Exception}}
+\index{on\+Exception@{on\+Exception}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Creating\+Result\+Listener@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Creating\+Result\+Listener}}
+\subsubsection{\texorpdfstring{on\+Exception()}{onException()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener}{com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Creating\+Result\+Listener}}$<$ R\+E\+S\+\_\+T $>$.on\+Exception (\begin{DoxyParamCaption}\item[{Throwable}]{t }\end{DoxyParamCaption})}
+
+Called when an exception occurs. No additional notifications will be delivered.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \mbox{\hyperlink{}{Throwable}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener_ab3ea59c10a6ea7cba54923bc4237dddc}{com.\+mysql.\+cj.\+protocol.\+Result\+Listener$<$ O\+K extends Protocol\+Entity $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener_a453e531bc60f8e74d1f19ae2ddd2fd37}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener_a453e531bc60f8e74d1f19ae2ddd2fd37}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Creating\+Result\+Listener@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Creating\+Result\+Listener}!on\+Metadata@{on\+Metadata}}
+\index{on\+Metadata@{on\+Metadata}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Creating\+Result\+Listener@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Result\+Creating\+Result\+Listener}}
+\subsubsection{\texorpdfstring{on\+Metadata()}{onMetadata()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener}{com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Creating\+Result\+Listener}}$<$ R\+E\+S\+\_\+T $>$.on\+Metadata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}}]{metadata }\end{DoxyParamCaption})}
+
+Called when metadata is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em metadata} & list of \mbox{\hyperlink{}{Field}} objects \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener_a7252b90a18c4d3dc585cb7ded00b06f9}{com.\+mysql.\+cj.\+protocol.\+Result\+Listener$<$ O\+K extends Protocol\+Entity $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/x/Result\+Creating\+Result\+Listener.\+java\end{DoxyCompactItemize}

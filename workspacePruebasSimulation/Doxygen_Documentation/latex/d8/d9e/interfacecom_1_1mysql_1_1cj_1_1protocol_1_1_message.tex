@@ -1,0 +1,54 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{}\section{com.\+mysql.\+cj.\+protocol.\+Message Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}\index{com.\+mysql.\+cj.\+protocol.\+Message@{com.\+mysql.\+cj.\+protocol.\+Message}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_a853af9bf4f09a55058141c7b041a8815}{get\+Byte\+Buffer}} ()
+\item 
+int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_a87a2626f6e5aceccffe224bcaf0e126b}{get\+Position}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} is the content of a full single message (native protocol packet or protobuf message), independent from on-\/wire splitting, communicated with the server. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_a853af9bf4f09a55058141c7b041a8815}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_a853af9bf4f09a55058141c7b041a8815}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Message@{com\+::mysql\+::cj\+::protocol\+::\+Message}!get\+Byte\+Buffer@{get\+Byte\+Buffer}}
+\index{get\+Byte\+Buffer@{get\+Byte\+Buffer}!com\+::mysql\+::cj\+::protocol\+::\+Message@{com\+::mysql\+::cj\+::protocol\+::\+Message}}
+\subsubsection{\texorpdfstring{get\+Byte\+Buffer()}{getByteBuffer()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+protocol.\+Message.\+get\+Byte\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the array of bytes this Buffer is using to read from.
+
+\begin{DoxyReturn}{Returns}
+byte array being read from 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a9aad2cb05c0a41d027987a601991e1a0}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_ae2dfe8871615d85dbd7a8a7320a5025a}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_a87a2626f6e5aceccffe224bcaf0e126b}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_a87a2626f6e5aceccffe224bcaf0e126b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Message@{com\+::mysql\+::cj\+::protocol\+::\+Message}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!com\+::mysql\+::cj\+::protocol\+::\+Message@{com\+::mysql\+::cj\+::protocol\+::\+Message}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+Message.\+get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the current position to write to/ read from
+
+\begin{DoxyReturn}{Returns}
+the current position to write to/ read from 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload_a89ff1dc3fa0998b1362a9fc2351d6797}{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Packet\+Payload}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_a5aa5c54128a10a7280a2113c4e24aeb9}{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Message}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/Message.\+java\end{DoxyCompactItemize}

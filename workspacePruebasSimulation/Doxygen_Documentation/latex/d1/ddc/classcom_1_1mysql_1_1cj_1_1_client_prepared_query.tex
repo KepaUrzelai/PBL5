@@ -1,0 +1,62 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1_client_prepared_query}{}\section{com.\+mysql.\+cj.\+Client\+Prepared\+Query Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1_client_prepared_query}\index{com.\+mysql.\+cj.\+Client\+Prepared\+Query@{com.\+mysql.\+cj.\+Client\+Prepared\+Query}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_prepared_query}{com.\+mysql.\+cj.\+Abstract\+Prepared\+Query$<$ Client\+Prepared\+Query\+Bindings $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_a61b8c76c05ef30b155a9b86c302f7876}\label{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_a61b8c76c05ef30b155a9b86c302f7876}} 
+{\bfseries Client\+Prepared\+Query} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_native_session}{Native\+Session}} sess)
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_af02746970c69db882201f0613d22084a}{get\+Bytes\+Representation}} (int parameter\+Index)
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_a591dea27c5fc2a48b36978c8c23a92de}{get\+Bytes\+Representation\+For\+Batch}} (int parameter\+Index, int command\+Index)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_aa235acebc5003992485e6d8f2b138686}{compute\+Max\+Parameter\+Set\+Size\+And\+Batch\+Size}} (int num\+Batched\+Args)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_aa235acebc5003992485e6d8f2b138686}\label{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_aa235acebc5003992485e6d8f2b138686}} 
+\index{com\+::mysql\+::cj\+::\+Client\+Prepared\+Query@{com\+::mysql\+::cj\+::\+Client\+Prepared\+Query}!compute\+Max\+Parameter\+Set\+Size\+And\+Batch\+Size@{compute\+Max\+Parameter\+Set\+Size\+And\+Batch\+Size}}
+\index{compute\+Max\+Parameter\+Set\+Size\+And\+Batch\+Size@{compute\+Max\+Parameter\+Set\+Size\+And\+Batch\+Size}!com\+::mysql\+::cj\+::\+Client\+Prepared\+Query@{com\+::mysql\+::cj\+::\+Client\+Prepared\+Query}}
+\subsubsection{\texorpdfstring{compute\+Max\+Parameter\+Set\+Size\+And\+Batch\+Size()}{computeMaxParameterSetSizeAndBatchSize()}}
+{\footnotesize\ttfamily long \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+Client\+Prepared\+Query.\+compute\+Max\+Parameter\+Set\+Size\+And\+Batch\+Size (\begin{DoxyParamCaption}\item[{int}]{num\+Batched\+Args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Computes the maximum parameter set size, and entire batch size given the number of arguments in the batch. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_af02746970c69db882201f0613d22084a}\label{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_af02746970c69db882201f0613d22084a}} 
+\index{com\+::mysql\+::cj\+::\+Client\+Prepared\+Query@{com\+::mysql\+::cj\+::\+Client\+Prepared\+Query}!get\+Bytes\+Representation@{get\+Bytes\+Representation}}
+\index{get\+Bytes\+Representation@{get\+Bytes\+Representation}!com\+::mysql\+::cj\+::\+Client\+Prepared\+Query@{com\+::mysql\+::cj\+::\+Client\+Prepared\+Query}}
+\subsubsection{\texorpdfstring{get\+Bytes\+Representation()}{getBytesRepresentation()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+Client\+Prepared\+Query.\+get\+Bytes\+Representation (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_a591dea27c5fc2a48b36978c8c23a92de}\label{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_a591dea27c5fc2a48b36978c8c23a92de}} 
+\index{com\+::mysql\+::cj\+::\+Client\+Prepared\+Query@{com\+::mysql\+::cj\+::\+Client\+Prepared\+Query}!get\+Bytes\+Representation\+For\+Batch@{get\+Bytes\+Representation\+For\+Batch}}
+\index{get\+Bytes\+Representation\+For\+Batch@{get\+Bytes\+Representation\+For\+Batch}!com\+::mysql\+::cj\+::\+Client\+Prepared\+Query@{com\+::mysql\+::cj\+::\+Client\+Prepared\+Query}}
+\subsubsection{\texorpdfstring{get\+Bytes\+Representation\+For\+Batch()}{getBytesRepresentationForBatch()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+Client\+Prepared\+Query.\+get\+Bytes\+Representation\+For\+Batch (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{int}]{command\+Index }\end{DoxyParamCaption})}
+
+Get bytes representation for a parameter in a statement batch.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & \\
+\hline
+{\em command\+Index} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/Client\+Prepared\+Query.\+java\end{DoxyCompactItemize}

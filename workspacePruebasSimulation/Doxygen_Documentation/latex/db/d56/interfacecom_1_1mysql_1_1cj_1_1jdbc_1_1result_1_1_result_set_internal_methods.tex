@@ -1,0 +1,254 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{}\section{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Internal\+Methods Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}\index{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Internal\+Methods@{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Internal\+Methods}}
+
+
+Inherits Result\+Set, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_owner}{com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows\+Owner}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{com.\+mysql.\+cj.\+protocol.\+Resultset}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl}{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Impl}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a2a06ef27f3e32523ff5d6b8e04f7586b}{get\+Object\+Stored\+Proc}} (int column\+Index, int desired\+Sql\+Type)  throws S\+Q\+L\+Exception
+\item 
+Object \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_ab099352f36bb8af21d47fbfebe9a515a}{get\+Object\+Stored\+Proc}} (int i, java.\+util.\+Map$<$ Object, Object $>$ map, int desired\+Sql\+Type)  throws S\+Q\+L\+Exception
+\item 
+Object \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a403c7181f28d44398e8ba4865edf8fb0}{get\+Object\+Stored\+Proc}} (String column\+Name, int desired\+Sql\+Type)  throws S\+Q\+L\+Exception
+\item 
+Object \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a435054bb5cb1913347350cbbb21fa591}{get\+Object\+Stored\+Proc}} (String col\+Name, java.\+util.\+Map$<$ Object, Object $>$ map, int desired\+Sql\+Type)  throws S\+Q\+L\+Exception
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a0102042bd0710772308db537f40e2286}{real\+Close}} (boolean called\+Explicitly)  throws S\+Q\+L\+Exception
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a0cf0d8b631bb6bc7a7453ee35399889f}{set\+First\+Char\+Of\+Query}} (char first\+Char\+Upper\+Case)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_aaa893384996564b579f90c25c1c0e8c1}{set\+Owning\+Statement}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement}{Jdbc\+Statement}} owning\+Statement)
+\item 
+char \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_ab58d42f08a9145dcff574389fcb697ff}{get\+First\+Char\+Of\+Query}} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_ae1258b1e6de19952cd438a340122cc81}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_ae1258b1e6de19952cd438a340122cc81}} 
+void {\bfseries set\+Statement\+Used\+For\+Fetching\+Rows} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement}{Jdbc\+Prepared\+Statement}} stmt)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_aeaa719d2c55d3e0c32bd5b47b4020009}{set\+Wrapper\+Statement}} (java.\+sql.\+Statement wrapper\+Statement)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_aee66378b04271c5eacc9811a8d884a06}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_aee66378b04271c5eacc9811a8d884a06}} 
+void {\bfseries initialize\+With\+Metadata} ()  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_ac9b67f368406db152383d3244f7c2d08}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_ac9b67f368406db152383d3244f7c2d08}} 
+void {\bfseries populate\+Cached\+Meta\+Data} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_cached_result_set_meta_data}{Cached\+Result\+Set\+Meta\+Data}} cached\+Meta\+Data)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_abc94356474330c07d9404386b2a373b5}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_abc94356474330c07d9404386b2a373b5}} 
+Big\+Integer {\bfseries get\+Big\+Integer} (int column\+Index)  throws S\+Q\+L\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This interface is intended to be used by implementors of statement interceptors so that implementors can create static or dynamic (via java.\+lang.\+reflect.\+Proxy) proxy instances of Result\+Sets. It consists of methods outside of java.\+sql.\+Result that are used internally by other classes in the driver.
+
+This interface, although public is {\bfseries not} designed to be consumed publicly other than for the statement interceptor use case. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_ab58d42f08a9145dcff574389fcb697ff}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_ab58d42f08a9145dcff574389fcb697ff}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}!get\+First\+Char\+Of\+Query@{get\+First\+Char\+Of\+Query}}
+\index{get\+First\+Char\+Of\+Query@{get\+First\+Char\+Of\+Query}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}}
+\subsubsection{\texorpdfstring{get\+First\+Char\+Of\+Query()}{getFirstCharOfQuery()}}
+{\footnotesize\ttfamily char com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Internal\+Methods.\+get\+First\+Char\+Of\+Query (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the first character of the query that was issued to create this result set, upper-\/cased.
+
+\begin{DoxyReturn}{Returns}
+character 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl_aa660f8429c96f057e5c3046f32a06a18}{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a2a06ef27f3e32523ff5d6b8e04f7586b}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a2a06ef27f3e32523ff5d6b8e04f7586b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}!get\+Object\+Stored\+Proc@{get\+Object\+Stored\+Proc}}
+\index{get\+Object\+Stored\+Proc@{get\+Object\+Stored\+Proc}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}}
+\subsubsection{\texorpdfstring{get\+Object\+Stored\+Proc()}{getObjectStoredProc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Object com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Internal\+Methods.\+get\+Object\+Stored\+Proc (\begin{DoxyParamCaption}\item[{int}]{column\+Index,  }\item[{int}]{desired\+Sql\+Type }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Functions like Result\+Set.\+get\+Object(), but using the given S\+QL type (as registered during Callable\+Statement.\+register\+Out\+Parameter()).
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & 1-\/based column index \\
+\hline
+{\em desired\+Sql\+Type} & desired column type, one of \mbox{\hyperlink{}{Types}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl_a3dfdc0ed2f2b5498834ffbf5a0269e1a}{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_ab099352f36bb8af21d47fbfebe9a515a}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_ab099352f36bb8af21d47fbfebe9a515a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}!get\+Object\+Stored\+Proc@{get\+Object\+Stored\+Proc}}
+\index{get\+Object\+Stored\+Proc@{get\+Object\+Stored\+Proc}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}}
+\subsubsection{\texorpdfstring{get\+Object\+Stored\+Proc()}{getObjectStoredProc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Object com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Internal\+Methods.\+get\+Object\+Stored\+Proc (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{java.\+util.\+Map$<$ Object, Object $>$}]{map,  }\item[{int}]{desired\+Sql\+Type }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Functions like Result\+Set.\+get\+Object(), but using the given S\+QL type (as registered during Callable\+Statement.\+register\+Out\+Parameter()).
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & 1-\/based column index \\
+\hline
+{\em map} & map \\
+\hline
+{\em desired\+Sql\+Type} & desired column type, one of \mbox{\hyperlink{}{Types}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl_a70dfce90a5b666ec4699ca1b91a7a713}{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a403c7181f28d44398e8ba4865edf8fb0}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a403c7181f28d44398e8ba4865edf8fb0}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}!get\+Object\+Stored\+Proc@{get\+Object\+Stored\+Proc}}
+\index{get\+Object\+Stored\+Proc@{get\+Object\+Stored\+Proc}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}}
+\subsubsection{\texorpdfstring{get\+Object\+Stored\+Proc()}{getObjectStoredProc()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Object com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Internal\+Methods.\+get\+Object\+Stored\+Proc (\begin{DoxyParamCaption}\item[{String}]{column\+Name,  }\item[{int}]{desired\+Sql\+Type }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Functions like Result\+Set.\+get\+Object(), but using the given S\+QL type (as registered during Callable\+Statement.\+register\+Out\+Parameter()).
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Name} & column name \\
+\hline
+{\em desired\+Sql\+Type} & desired column type, one of \mbox{\hyperlink{}{Types}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl_a8e01634eee20129d559ee3ccfa59b24f}{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a435054bb5cb1913347350cbbb21fa591}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a435054bb5cb1913347350cbbb21fa591}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}!get\+Object\+Stored\+Proc@{get\+Object\+Stored\+Proc}}
+\index{get\+Object\+Stored\+Proc@{get\+Object\+Stored\+Proc}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}}
+\subsubsection{\texorpdfstring{get\+Object\+Stored\+Proc()}{getObjectStoredProc()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Object com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Internal\+Methods.\+get\+Object\+Stored\+Proc (\begin{DoxyParamCaption}\item[{String}]{col\+Name,  }\item[{java.\+util.\+Map$<$ Object, Object $>$}]{map,  }\item[{int}]{desired\+Sql\+Type }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Functions like Result\+Set.\+get\+Object(), but using the given S\+QL type (as registered during Callable\+Statement.\+register\+Out\+Parameter()).
+
+
+\begin{DoxyParams}{Parameters}
+{\em col\+Name} & column name \\
+\hline
+{\em map} & map \\
+\hline
+{\em desired\+Sql\+Type} & desired column type, one of \mbox{\hyperlink{}{Types}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl_aa9d0a1c264c70954b3fbc1f81f0e7a9b}{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a0102042bd0710772308db537f40e2286}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a0102042bd0710772308db537f40e2286}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}!real\+Close@{real\+Close}}
+\index{real\+Close@{real\+Close}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}}
+\subsubsection{\texorpdfstring{real\+Close()}{realClose()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Internal\+Methods.\+real\+Close (\begin{DoxyParamCaption}\item[{boolean}]{called\+Explicitly }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Closes this Result\+Set and releases resources.
+
+
+\begin{DoxyParams}{Parameters}
+{\em called\+Explicitly} & was real\+Close called by the standard Result\+Set.\+close() method, or was it closed internally by the driver? \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl_a33dfcef00d2e567cee58610ade647321}{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Impl}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_updatable_result_set_aa7c422ba94c2a8a8727c57160bd946bd}{com.\+mysql.\+cj.\+jdbc.\+result.\+Updatable\+Result\+Set}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a0cf0d8b631bb6bc7a7453ee35399889f}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_a0cf0d8b631bb6bc7a7453ee35399889f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}!set\+First\+Char\+Of\+Query@{set\+First\+Char\+Of\+Query}}
+\index{set\+First\+Char\+Of\+Query@{set\+First\+Char\+Of\+Query}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}}
+\subsubsection{\texorpdfstring{set\+First\+Char\+Of\+Query()}{setFirstCharOfQuery()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Internal\+Methods.\+set\+First\+Char\+Of\+Query (\begin{DoxyParamCaption}\item[{char}]{first\+Char\+Upper\+Case }\end{DoxyParamCaption})}
+
+Sets the first character of the query that was issued to create this result set. The character should be upper-\/cased.
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Char\+Upper\+Case} & character \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl_ac9fac0fdfce19c2d4a1cb5ff55e03ec5}{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_aaa893384996564b579f90c25c1c0e8c1}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_aaa893384996564b579f90c25c1c0e8c1}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}!set\+Owning\+Statement@{set\+Owning\+Statement}}
+\index{set\+Owning\+Statement@{set\+Owning\+Statement}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}}
+\subsubsection{\texorpdfstring{set\+Owning\+Statement()}{setOwningStatement()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Internal\+Methods.\+set\+Owning\+Statement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement}{Jdbc\+Statement}}}]{owning\+Statement }\end{DoxyParamCaption})}
+
+Sets the statement that \char`\"{}owns\char`\"{} this result set (usually used when the result set should internally \char`\"{}belong\char`\"{} to one statement, but is created by another.
+
+
+\begin{DoxyParams}{Parameters}
+{\em owning\+Statement} & the statement this result set will belong to \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl_a057575337f0438e794595d47b68f5f8a}{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_aeaa719d2c55d3e0c32bd5b47b4020009}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods_aeaa719d2c55d3e0c32bd5b47b4020009}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}!set\+Wrapper\+Statement@{set\+Wrapper\+Statement}}
+\index{set\+Wrapper\+Statement@{set\+Wrapper\+Statement}!com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods@{com\+::mysql\+::cj\+::jdbc\+::result\+::\+Result\+Set\+Internal\+Methods}}
+\subsubsection{\texorpdfstring{set\+Wrapper\+Statement()}{setWrapperStatement()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Internal\+Methods.\+set\+Wrapper\+Statement (\begin{DoxyParamCaption}\item[{java.\+sql.\+Statement}]{wrapper\+Statement }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em wrapper\+Statement} & The wrapper\+Statement to set. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl_a554db0f910df92f690ce667a5e5b5000}{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Impl}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/jdbc/result/Result\+Set\+Internal\+Methods.\+java\end{DoxyCompactItemize}

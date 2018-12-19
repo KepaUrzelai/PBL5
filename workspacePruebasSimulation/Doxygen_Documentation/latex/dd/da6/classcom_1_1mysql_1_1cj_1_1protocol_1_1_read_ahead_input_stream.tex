@@ -1,0 +1,56 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream}{}\section{com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream}\index{com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream@{com.\+mysql.\+cj.\+protocol.\+Read\+Ahead\+Input\+Stream}}
+
+
+Inherits Input\+Stream.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a130f55bbeb99362583fe11b61a3f792a}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a130f55bbeb99362583fe11b61a3f792a}} 
+synchronized int {\bfseries read} (byte b\mbox{[}$\,$\mbox{]}, int off, int len)  throws I\+O\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a0810c5860c7fa43ffff24b5d2a5b4f27}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a0810c5860c7fa43ffff24b5d2a5b4f27}} 
+int {\bfseries read} ()  throws I\+O\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a42da53c32ffa008263b0e68b6a6a8577}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a42da53c32ffa008263b0e68b6a6a8577}} 
+int {\bfseries available} ()  throws I\+O\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_ae5435f386001c88ac355cf664961fcbb}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_ae5435f386001c88ac355cf664961fcbb}} 
+{\bfseries Read\+Ahead\+Input\+Stream} (Input\+Stream to\+Buffer, boolean debug, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log\+To)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a542ea2a1e891f8cfff9b80c83f05b646}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a542ea2a1e891f8cfff9b80c83f05b646}} 
+{\bfseries Read\+Ahead\+Input\+Stream} (Input\+Stream to\+Buffer, int buffer\+Size, boolean debug, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log\+To)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a6837da76b0a9a3272a9b9db88fee4ecd}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a6837da76b0a9a3272a9b9db88fee4ecd}} 
+void {\bfseries close} ()  throws I\+O\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a13106d328f8dd3c5ce653a18a7efdfd0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a13106d328f8dd3c5ce653a18a7efdfd0}} 
+boolean {\bfseries mark\+Supported} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_aab36ec1a6e8b9795abfd919af07d6e27}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_aab36ec1a6e8b9795abfd919af07d6e27}} 
+long {\bfseries skip} (long n)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a610f1fb0f37469d11a19adbb2d2f116e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a610f1fb0f37469d11a19adbb2d2f116e}} 
+int {\bfseries end\+Of\+Current\+Data}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a5945549400abb32d2e8dbb686b7af786}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a5945549400abb32d2e8dbb686b7af786}} 
+int {\bfseries current\+Position}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a36c489a54865b32a5477505cc0cfdc88}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a36c489a54865b32a5477505cc0cfdc88}} 
+boolean {\bfseries do\+Debug} = false
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a244243ffa076d708c4f5ba1686ce5151}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_read_ahead_input_stream_a244243ffa076d708c4f5ba1686ce5151}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} {\bfseries log}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A non-\/blocking buffered input stream. Reads more if it can, won\textquotesingle{}t block to fill the buffer, only blocks to satisfy a request of read(byte\mbox{[}$\,$\mbox{]}) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/protocol/Read\+Ahead\+Input\+Stream.\+java\end{DoxyCompactItemize}

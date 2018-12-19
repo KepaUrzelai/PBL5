@@ -1,0 +1,183 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator}{}\section{com.\+mysql.\+cj.\+jdbc.\+Blob\+From\+Locator Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator}\index{com.\+mysql.\+cj.\+jdbc.\+Blob\+From\+Locator@{com.\+mysql.\+cj.\+jdbc.\+Blob\+From\+Locator}}
+
+
+Inherits Blob.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Locator\+Input\+Stream}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a31ec6c3d1950b3a8a5270eac15b5a4fc}{Blob\+From\+Locator}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl}{Result\+Set\+Impl}} creator\+Result\+Set\+To\+Set, int blob\+Column\+Index, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+Q\+L\+Exception 
+\item 
+Output\+Stream \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a9511b7ab8e28f5815a71bfaaeb3ed882}{set\+Binary\+Stream}} (long index\+To\+Write\+At)  throws S\+Q\+L\+Exception 
+\item 
+java.\+io.\+Input\+Stream \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a4729992908a7cc12876aaaef51f7ce8e}{get\+Binary\+Stream}} ()  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a87f6620378f2f7781c3d2ae4f7cca68e}{set\+Bytes}} (long write\+At, byte\mbox{[}$\,$\mbox{]} bytes, int offset, int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a6eea7dd5b29ebcd066beac855648fe35}{length}})  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a738e1fc68ebb03c3bd2f533930616d69}{set\+Bytes}} (long write\+At, byte\mbox{[}$\,$\mbox{]} bytes)  throws S\+Q\+L\+Exception 
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_ac9d460d4f9f59946014b373d7d703564}{get\+Bytes}} (long pos, int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a6eea7dd5b29ebcd066beac855648fe35}{length}})  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a6eea7dd5b29ebcd066beac855648fe35}{length}} ()  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a9883a07889dbe51799cbbddb55396503}{position}} (java.\+sql.\+Blob pattern, long start)  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_ac653f12b01e1b120afacc0e9f0efa4e4}{position}} (byte\mbox{[}$\,$\mbox{]} pattern, long start)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_aa3292b305786ffdcaf63ccaab6ff620b}{truncate}} (long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a6eea7dd5b29ebcd066beac855648fe35}{length}})  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a88c2c807229112622b1d1369d6e2d682}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a88c2c807229112622b1d1369d6e2d682}} 
+void {\bfseries free} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_aa77f948ff1858ec329525385e63e4e46}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_aa77f948ff1858ec329525385e63e4e46}} 
+Input\+Stream {\bfseries get\+Binary\+Stream} (long pos, long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a6eea7dd5b29ebcd066beac855648fe35}{length}})  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The representation (mapping) in the Java\+TM programming language of an S\+QL B\+L\+OB value. An S\+QL B\+L\+OB is a built-\/in type that stores a Binary Large Object as a column value in a row of a database table. The driver implements \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} using an S\+QL locator(\+B\+L\+O\+B), which means that a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} object contains a logical pointer to the S\+QL B\+L\+OB data rather than the data itself. A \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} object is valid for the duration of the transaction in which is was created. Methods in the interfaces Result\+Set, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement}{Callable\+Statement}}, and Prepared\+Statement, such as get\+Blob and set\+Blob allow a programmer to access an S\+QL B\+L\+OB value. The \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} interface provides methods for getting the length of an S\+QL B\+L\+OB (Binary Large Object) value, for materializing a B\+L\+OB value on the client, and for determining the position of a pattern of bytes within a B\+L\+OB value. This class is new in the J\+D\+BC 2.\+0 A\+PI. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a31ec6c3d1950b3a8a5270eac15b5a4fc}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a31ec6c3d1950b3a8a5270eac15b5a4fc}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}!Blob\+From\+Locator@{Blob\+From\+Locator}}
+\index{Blob\+From\+Locator@{Blob\+From\+Locator}!com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}}
+\subsubsection{\texorpdfstring{Blob\+From\+Locator()}{BlobFromLocator()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+jdbc.\+Blob\+From\+Locator.\+Blob\+From\+Locator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_impl}{Result\+Set\+Impl}}}]{creator\+Result\+Set\+To\+Set,  }\item[{int}]{blob\+Column\+Index,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Creates an updatable B\+L\+OB that can update in-\/place 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a4729992908a7cc12876aaaef51f7ce8e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a4729992908a7cc12876aaaef51f7ce8e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}!get\+Binary\+Stream@{get\+Binary\+Stream}}
+\index{get\+Binary\+Stream@{get\+Binary\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}}
+\subsubsection{\texorpdfstring{get\+Binary\+Stream()}{getBinaryStream()}}
+{\footnotesize\ttfamily java.\+io.\+Input\+Stream com.\+mysql.\+cj.\+jdbc.\+Blob\+From\+Locator.\+get\+Binary\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Retrieves the B\+L\+OB designated by this \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} instance as a stream.
+
+\begin{DoxyReturn}{Returns}
+this B\+L\+OB represented as a binary stream of bytes.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_ac9d460d4f9f59946014b373d7d703564}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_ac9d460d4f9f59946014b373d7d703564}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}!get\+Bytes@{get\+Bytes}}
+\index{get\+Bytes@{get\+Bytes}!com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}}
+\subsubsection{\texorpdfstring{get\+Bytes()}{getBytes()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+jdbc.\+Blob\+From\+Locator.\+get\+Bytes (\begin{DoxyParamCaption}\item[{long}]{pos,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Returns as an array of bytes, part or all of the B\+L\+OB value that this \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} object designates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & where to start the part of the B\+L\+OB \\
+\hline
+{\em length} & the length of the part of the B\+L\+OB you want returned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the bytes stored in the blob starting at position {\ttfamily pos} and having a length of {\ttfamily length}.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a6eea7dd5b29ebcd066beac855648fe35}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a6eea7dd5b29ebcd066beac855648fe35}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}!length@{length}}
+\index{length@{length}!com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Blob\+From\+Locator.\+length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Returns the number of bytes in the B\+L\+OB value designated by this \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} object.
+
+\begin{DoxyReturn}{Returns}
+the length of this blob
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a9883a07889dbe51799cbbddb55396503}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a9883a07889dbe51799cbbddb55396503}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}!position@{position}}
+\index{position@{position}!com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}}
+\subsubsection{\texorpdfstring{position()}{position()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Blob\+From\+Locator.\+position (\begin{DoxyParamCaption}\item[{java.\+sql.\+Blob}]{pattern,  }\item[{long}]{start }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Finds the position of the given pattern in this B\+L\+OB.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern} & the pattern to find \\
+\hline
+{\em start} & where to start finding the pattern\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the position where the pattern is found in the B\+L\+OB, -\/1 if not found
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_ac653f12b01e1b120afacc0e9f0efa4e4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_ac653f12b01e1b120afacc0e9f0efa4e4}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}!position@{position}}
+\index{position@{position}!com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}}
+\subsubsection{\texorpdfstring{position()}{position()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Blob\+From\+Locator.\+position (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{pattern,  }\item[{long}]{start }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Blob\+::position(byte\mbox{[}$\,$\mbox{]}, long) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a9511b7ab8e28f5815a71bfaaeb3ed882}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a9511b7ab8e28f5815a71bfaaeb3ed882}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}!set\+Binary\+Stream@{set\+Binary\+Stream}}
+\index{set\+Binary\+Stream@{set\+Binary\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}}
+\subsubsection{\texorpdfstring{set\+Binary\+Stream()}{setBinaryStream()}}
+{\footnotesize\ttfamily Output\+Stream com.\+mysql.\+cj.\+jdbc.\+Blob\+From\+Locator.\+set\+Binary\+Stream (\begin{DoxyParamCaption}\item[{long}]{index\+To\+Write\+At }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_abbef32522fa0951a0e417442c36ff0b1}{Blob\+::set\+Binary\+Stream(long)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a87f6620378f2f7781c3d2ae4f7cca68e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a87f6620378f2f7781c3d2ae4f7cca68e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}!set\+Bytes@{set\+Bytes}}
+\index{set\+Bytes@{set\+Bytes}!com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}}
+\subsubsection{\texorpdfstring{set\+Bytes()}{setBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Blob\+From\+Locator.\+set\+Bytes (\begin{DoxyParamCaption}\item[{long}]{write\+At,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{bytes,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+Blob\+::set\+Bytes(long, byte\mbox{[}$\,$\mbox{]}, int, int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a738e1fc68ebb03c3bd2f533930616d69}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_a738e1fc68ebb03c3bd2f533930616d69}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}!set\+Bytes@{set\+Bytes}}
+\index{set\+Bytes@{set\+Bytes}!com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}}
+\subsubsection{\texorpdfstring{set\+Bytes()}{setBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Blob\+From\+Locator.\+set\+Bytes (\begin{DoxyParamCaption}\item[{long}]{write\+At,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{bytes }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+Blob\+::set\+Bytes(long, byte\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_aa3292b305786ffdcaf63ccaab6ff620b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_from_locator_aa3292b305786ffdcaf63ccaab6ff620b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}!truncate@{truncate}}
+\index{truncate@{truncate}!com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator@{com\+::mysql\+::cj\+::jdbc\+::\+Blob\+From\+Locator}}
+\subsubsection{\texorpdfstring{truncate()}{truncate()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Blob\+From\+Locator.\+truncate (\begin{DoxyParamCaption}\item[{long}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob_a423c316889dc06f59cbaee6f77c6401f}{Blob\+::truncate(long)}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/Blob\+From\+Locator.\+java\end{DoxyCompactItemize}

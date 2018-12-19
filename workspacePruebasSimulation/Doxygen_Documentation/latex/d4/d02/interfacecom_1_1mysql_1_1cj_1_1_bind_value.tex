@@ -1,0 +1,56 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value}{}\section{com.\+mysql.\+cj.\+Bind\+Value Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value}\index{com.\+mysql.\+cj.\+Bind\+Value@{com.\+mysql.\+cj.\+Bind\+Value}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_bind_value}{com.\+mysql.\+cj.\+Client\+Prepared\+Query\+Bind\+Value}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value}{com.\+mysql.\+cj.\+Server\+Prepared\+Query\+Bind\+Value}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value_a89f1df9d90be93c8b8e446c264481303}\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value_a89f1df9d90be93c8b8e446c264481303}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_bind_value}{Bind\+Value}} {\bfseries clone} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value_aeff59ff50904893a11b96f2ff560f974}\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value_aeff59ff50904893a11b96f2ff560f974}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value_af0ec3dd14fdf2d01af7e7195ef43369a}\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value_af0ec3dd14fdf2d01af7e7195ef43369a}} 
+boolean {\bfseries is\+Null} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value_a0f9adcc47481b3e041fe5cfb8f18818c}\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value_a0f9adcc47481b3e041fe5cfb8f18818c}} 
+void {\bfseries set\+Null} (boolean is\+Null)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value_ab00e3f54fd1417769cb9ae5ea54c0983}\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value_ab00e3f54fd1417769cb9ae5ea54c0983}} 
+boolean {\bfseries is\+Stream} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value_a9ceb17c282abbc10981b7cbba6ca3086}\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value_a9ceb17c282abbc10981b7cbba6ca3086}} 
+void {\bfseries set\+Is\+Stream} (boolean is\+Stream)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value_a265b324d28aac43fe658894df12db699}\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value_a265b324d28aac43fe658894df12db699}} 
+\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_mysql_type}{Mysql\+Type}} {\bfseries get\+Mysql\+Type} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value_abb32f012246317a42d4c65ac7b6916a8}\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value_abb32f012246317a42d4c65ac7b6916a8}} 
+void {\bfseries set\+Mysql\+Type} (\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_mysql_type}{Mysql\+Type}} type)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value_a10d85fd3edb20a2c63250127d08cdcd3}\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value_a10d85fd3edb20a2c63250127d08cdcd3}} 
+byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Byte\+Value} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value_ab8c1dc59e4f139d0004481cb608a41aa}\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value_ab8c1dc59e4f139d0004481cb608a41aa}} 
+void {\bfseries set\+Byte\+Value} (byte\mbox{[}$\,$\mbox{]} parameter\+Value)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value_aee74c54d4ba871b7e63cf8a76d3f04fd}\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value_aee74c54d4ba871b7e63cf8a76d3f04fd}} 
+Input\+Stream {\bfseries get\+Stream\+Value} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value_aae317c620c8bbcaca76be87eacaa5533}\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value_aae317c620c8bbcaca76be87eacaa5533}} 
+void {\bfseries set\+Stream\+Value} (Input\+Stream parameter\+Stream, int stream\+Length)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value_a4388253fc77d9f51682b5c67a6869d8e}\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value_a4388253fc77d9f51682b5c67a6869d8e}} 
+int {\bfseries get\+Stream\+Length} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_bind_value_a559abc1794dd2783db255ab3b341fa70}\label{interfacecom_1_1mysql_1_1cj_1_1_bind_value_a559abc1794dd2783db255ab3b341fa70}} 
+boolean {\bfseries is\+Set} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/Bind\+Value.\+java\end{DoxyCompactItemize}

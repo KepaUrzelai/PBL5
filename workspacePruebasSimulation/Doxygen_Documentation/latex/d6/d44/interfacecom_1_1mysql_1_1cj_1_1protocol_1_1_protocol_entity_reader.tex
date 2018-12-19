@@ -1,0 +1,69 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_reader}{}\section{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity\+Reader$<$ T extends Protocol\+Entity, M extends Message $>$ Interface Template Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_reader}\index{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity\+Reader$<$ T extends Protocol\+Entity, M extends Message $>$@{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity\+Reader$<$ T extends Protocol\+Entity, M extends Message $>$}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_binary_resultset_reader}{com.\+mysql.\+cj.\+protocol.\+a.\+Binary\+Resultset\+Reader}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_column_definition_reader}{com.\+mysql.\+cj.\+protocol.\+a.\+Column\+Definition\+Reader}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_resultset_row_reader}{com.\+mysql.\+cj.\+protocol.\+a.\+Resultset\+Row\+Reader}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_text_resultset_reader}{com.\+mysql.\+cj.\+protocol.\+a.\+Text\+Resultset\+Reader}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+default T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_reader_ade53e887e76108322ed04525b6d38321}{read}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ T, M $>$ sf)  throws I\+O\+Exception 
+\item 
+default T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_reader_a17198032f8f4fb36d3e46dca3ec17b93}{read}} (int max\+Rows, boolean stream\+Results, M result\+Packet, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} metadata, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ T, M $>$ protocol\+Entity\+Factory)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_reader_ade53e887e76108322ed04525b6d38321}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_reader_ade53e887e76108322ed04525b6d38321}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol\+Entity\+Reader@{com\+::mysql\+::cj\+::protocol\+::\+Protocol\+Entity\+Reader}!read@{read}}
+\index{read@{read}!com\+::mysql\+::cj\+::protocol\+::\+Protocol\+Entity\+Reader@{com\+::mysql\+::cj\+::protocol\+::\+Protocol\+Entity\+Reader}}
+\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily default T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_reader}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity\+Reader}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}}, M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ T, M $>$}]{sf }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sf} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}} instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}} instance 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_reader_a17198032f8f4fb36d3e46dca3ec17b93}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_reader_a17198032f8f4fb36d3e46dca3ec17b93}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Protocol\+Entity\+Reader@{com\+::mysql\+::cj\+::protocol\+::\+Protocol\+Entity\+Reader}!read@{read}}
+\index{read@{read}!com\+::mysql\+::cj\+::protocol\+::\+Protocol\+Entity\+Reader@{com\+::mysql\+::cj\+::protocol\+::\+Protocol\+Entity\+Reader}}
+\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily default T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_reader}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity\+Reader}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}}, M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.read (\begin{DoxyParamCaption}\item[{int}]{max\+Rows,  }\item[{boolean}]{stream\+Results,  }\item[{M}]{result\+Packet,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}}]{metadata,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ T, M $>$}]{protocol\+Entity\+Factory }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Reads one result set off of the wire, if the result is actually an update count, creates an update-\/count only result set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Rows} & the maximum number of rows to read (-\/1 means all rows) \\
+\hline
+{\em stream\+Results} & should the driver leave the results on the wire, and read them only when needed? \\
+\hline
+{\em result\+Packet} & the first packet of information in the result set \\
+\hline
+{\em metadata} & use this metadata instead of the one provided on wire \\
+\hline
+{\em protocol\+Entity\+Factory} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}} instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a result set that either represents the rows, or an update count
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an error occurs while reading the rows \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/Protocol\+Entity\+Reader.\+java\end{DoxyCompactItemize}

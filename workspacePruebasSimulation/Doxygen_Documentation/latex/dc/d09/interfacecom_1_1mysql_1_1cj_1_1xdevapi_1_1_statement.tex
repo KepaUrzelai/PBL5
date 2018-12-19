@@ -1,0 +1,146 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Statement$<$ S\+T\+M\+T\+\_\+T, R\+E\+S\+\_\+T $>$ Interface Template Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement}\index{com.\+mysql.\+cj.\+xdevapi.\+Statement$<$ S\+T\+M\+T\+\_\+\+T, R\+E\+S\+\_\+\+T $>$@{com.\+mysql.\+cj.\+xdevapi.\+Statement$<$ S\+T\+M\+T\+\_\+\+T, R\+E\+S\+\_\+\+T $>$}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_filterable_statement}{com.\+mysql.\+cj.\+xdevapi.\+Filterable\+Statement$<$ S\+T\+M\+T\+\_\+\+T, R\+E\+S\+\_\+\+T $>$}}.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_1_1_lock_contention}{Lock\+Contention}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+R\+E\+S\+\_\+T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_ae92dce50b119561fd532303ad491c610}{execute}} ()
+\item 
+Completable\+Future$<$ R\+E\+S\+\_\+T $>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_abb6aa6d3f4b3088af1a2f81a50eeab49}{execute\+Async}} ()
+\item 
+default S\+T\+M\+T\+\_\+T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_a7be7ea383c05f9b1662b75eed8982ff1}{clear\+Bindings}} ()
+\item 
+default S\+T\+M\+T\+\_\+T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_ad4a21af767982f02e50d244b705ee24b}{bind}} (String arg\+Name, Object value)
+\item 
+default S\+T\+M\+T\+\_\+T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_a4541c17d970821bc7dd87beec7e5d0a1}{bind}} (Map$<$ String, Object $>$ values)
+\item 
+default S\+T\+M\+T\+\_\+T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_a890c1608844aebef556cfe1a0638951d}{bind}} (List$<$ Object $>$ values)
+\item 
+default S\+T\+M\+T\+\_\+T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_a9e14b71e366a4df30062bc2682751165}{bind}} (Object... values)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A statement is a query or state-\/affecting command against a database that returns a result. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_ad4a21af767982f02e50d244b705ee24b}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_ad4a21af767982f02e50d244b705ee24b}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Statement}!bind@{bind}}
+\index{bind@{bind}!com\+::mysql\+::cj\+::xdevapi\+::\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Statement}}
+\subsubsection{\texorpdfstring{bind()}{bind()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily default S\+T\+M\+T\+\_\+T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement}{com.\+mysql.\+cj.\+xdevapi.\+Statement}}$<$ S\+T\+M\+T\+\_\+T, R\+E\+S\+\_\+T $>$.bind (\begin{DoxyParamCaption}\item[{String}]{arg\+Name,  }\item[{Object}]{value }\end{DoxyParamCaption})}
+
+Bind the named argument to the given value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg\+Name} & argument name \\
+\hline
+{\em value} & object to bind \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this statement 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_filterable_statement_af9ccf97ebcaf88f6f9317829bf8496cb}{com.\+mysql.\+cj.\+xdevapi.\+Filterable\+Statement$<$ S\+T\+M\+T\+\_\+\+T, R\+E\+S\+\_\+\+T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_a4541c17d970821bc7dd87beec7e5d0a1}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_a4541c17d970821bc7dd87beec7e5d0a1}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Statement}!bind@{bind}}
+\index{bind@{bind}!com\+::mysql\+::cj\+::xdevapi\+::\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Statement}}
+\subsubsection{\texorpdfstring{bind()}{bind()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily default S\+T\+M\+T\+\_\+T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement}{com.\+mysql.\+cj.\+xdevapi.\+Statement}}$<$ S\+T\+M\+T\+\_\+T, R\+E\+S\+\_\+T $>$.bind (\begin{DoxyParamCaption}\item[{Map$<$ String, Object $>$}]{values }\end{DoxyParamCaption})}
+
+Bind the set of arguments named by the keys in the map to the associated values in the map.
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & the map containing key-\/value pairs to bind \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this statement 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_a890c1608844aebef556cfe1a0638951d}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_a890c1608844aebef556cfe1a0638951d}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Statement}!bind@{bind}}
+\index{bind@{bind}!com\+::mysql\+::cj\+::xdevapi\+::\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Statement}}
+\subsubsection{\texorpdfstring{bind()}{bind()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily default S\+T\+M\+T\+\_\+T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement}{com.\+mysql.\+cj.\+xdevapi.\+Statement}}$<$ S\+T\+M\+T\+\_\+T, R\+E\+S\+\_\+T $>$.bind (\begin{DoxyParamCaption}\item[{List$<$ Object $>$}]{values }\end{DoxyParamCaption})}
+
+Bind a list of objects numerically starting at 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & list of objects to bind \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this statement 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_a9e14b71e366a4df30062bc2682751165}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_a9e14b71e366a4df30062bc2682751165}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Statement}!bind@{bind}}
+\index{bind@{bind}!com\+::mysql\+::cj\+::xdevapi\+::\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Statement}}
+\subsubsection{\texorpdfstring{bind()}{bind()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily default S\+T\+M\+T\+\_\+T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement}{com.\+mysql.\+cj.\+xdevapi.\+Statement}}$<$ S\+T\+M\+T\+\_\+T, R\+E\+S\+\_\+T $>$.bind (\begin{DoxyParamCaption}\item[{Object...}]{values }\end{DoxyParamCaption})}
+
+Bind an array of objects numerically starting at 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & one or more objects to bind \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this statement 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_a7be7ea383c05f9b1662b75eed8982ff1}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_a7be7ea383c05f9b1662b75eed8982ff1}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Statement}!clear\+Bindings@{clear\+Bindings}}
+\index{clear\+Bindings@{clear\+Bindings}!com\+::mysql\+::cj\+::xdevapi\+::\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Statement}}
+\subsubsection{\texorpdfstring{clear\+Bindings()}{clearBindings()}}
+{\footnotesize\ttfamily default S\+T\+M\+T\+\_\+T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement}{com.\+mysql.\+cj.\+xdevapi.\+Statement}}$<$ S\+T\+M\+T\+\_\+T, R\+E\+S\+\_\+T $>$.clear\+Bindings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clear the bindings for this statement.
+
+\begin{DoxyReturn}{Returns}
+this statement 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_filterable_statement_a6f81659cd181c72dea83972c18438f56}{com.\+mysql.\+cj.\+xdevapi.\+Filterable\+Statement$<$ S\+T\+M\+T\+\_\+\+T, R\+E\+S\+\_\+\+T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_ae92dce50b119561fd532303ad491c610}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_ae92dce50b119561fd532303ad491c610}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Statement}!execute@{execute}}
+\index{execute@{execute}!com\+::mysql\+::cj\+::xdevapi\+::\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Statement}}
+\subsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily R\+E\+S\+\_\+T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement}{com.\+mysql.\+cj.\+xdevapi.\+Statement}}$<$ S\+T\+M\+T\+\_\+T, R\+E\+S\+\_\+T $>$.execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Execute the statement synchronously.
+
+\begin{DoxyReturn}{Returns}
+result of statement execution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_abb6aa6d3f4b3088af1a2f81a50eeab49}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement_abb6aa6d3f4b3088af1a2f81a50eeab49}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Statement}!execute\+Async@{execute\+Async}}
+\index{execute\+Async@{execute\+Async}!com\+::mysql\+::cj\+::xdevapi\+::\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Statement}}
+\subsubsection{\texorpdfstring{execute\+Async()}{executeAsync()}}
+{\footnotesize\ttfamily Completable\+Future$<$R\+E\+S\+\_\+T$>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement}{com.\+mysql.\+cj.\+xdevapi.\+Statement}}$<$ S\+T\+M\+T\+\_\+T, R\+E\+S\+\_\+T $>$.execute\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Execute the statement asynchronously.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{}{Completable\+Future}} for result 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/Statement.\+java\end{DoxyCompactItemize}

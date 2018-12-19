@@ -1,0 +1,85 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener}{}\section{com.\+mysql.\+cj.\+protocol.\+Result\+Listener$<$ OK extends Protocol\+Entity $>$ Interface Template Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener}\index{com.\+mysql.\+cj.\+protocol.\+Result\+Listener$<$ O\+K extends Protocol\+Entity $>$@{com.\+mysql.\+cj.\+protocol.\+Result\+Listener$<$ O\+K extends Protocol\+Entity $>$}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener}{com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Creating\+Result\+Listener$<$ R\+E\+S\+\_\+\+T $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener_a7252b90a18c4d3dc585cb7ded00b06f9}{on\+Metadata}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} metadata)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener_a5f0cc53ad220c8c4ca450c9dae00de5c}{on\+Row}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} r)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener_a53ba13bc02f2fa5d3f310b9f46f11ece}{on\+Complete}} (OK ok)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener_ab3ea59c10a6ea7cba54923bc4237dddc}{on\+Exception}} (Throwable t)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener_a53ba13bc02f2fa5d3f310b9f46f11ece}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener_a53ba13bc02f2fa5d3f310b9f46f11ece}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener@{com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener}!on\+Complete@{on\+Complete}}
+\index{on\+Complete@{on\+Complete}!com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener@{com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener}}
+\subsubsection{\texorpdfstring{on\+Complete()}{onComplete()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener}{com.\+mysql.\+cj.\+protocol.\+Result\+Listener}}$<$ OK extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}} $>$.on\+Complete (\begin{DoxyParamCaption}\item[{OK}]{ok }\end{DoxyParamCaption})}
+
+Called when result processing is complete. No additional notifications will be delivered.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ok} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener_ab3ea59c10a6ea7cba54923bc4237dddc}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener_ab3ea59c10a6ea7cba54923bc4237dddc}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener@{com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener}!on\+Exception@{on\+Exception}}
+\index{on\+Exception@{on\+Exception}!com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener@{com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener}}
+\subsubsection{\texorpdfstring{on\+Exception()}{onException()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener}{com.\+mysql.\+cj.\+protocol.\+Result\+Listener}}$<$ OK extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}} $>$.on\+Exception (\begin{DoxyParamCaption}\item[{Throwable}]{t }\end{DoxyParamCaption})}
+
+Called when an exception occurs. No additional notifications will be delivered.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \mbox{\hyperlink{}{Throwable}} \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener_af44c32d4ea694aea93998ebbba341605}{com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Creating\+Result\+Listener$<$ R\+E\+S\+\_\+\+T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener_a7252b90a18c4d3dc585cb7ded00b06f9}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener_a7252b90a18c4d3dc585cb7ded00b06f9}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener@{com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener}!on\+Metadata@{on\+Metadata}}
+\index{on\+Metadata@{on\+Metadata}!com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener@{com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener}}
+\subsubsection{\texorpdfstring{on\+Metadata()}{onMetadata()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener}{com.\+mysql.\+cj.\+protocol.\+Result\+Listener}}$<$ OK extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}} $>$.on\+Metadata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}}]{metadata }\end{DoxyParamCaption})}
+
+Called when metadata is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em metadata} & list of \mbox{\hyperlink{}{Field}} objects \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_result_creating_result_listener_a453e531bc60f8e74d1f19ae2ddd2fd37}{com.\+mysql.\+cj.\+protocol.\+x.\+Result\+Creating\+Result\+Listener$<$ R\+E\+S\+\_\+\+T $>$}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener_a5f0cc53ad220c8c4ca450c9dae00de5c}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener_a5f0cc53ad220c8c4ca450c9dae00de5c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener@{com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener}!on\+Row@{on\+Row}}
+\index{on\+Row@{on\+Row}!com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener@{com\+::mysql\+::cj\+::protocol\+::\+Result\+Listener}}
+\subsubsection{\texorpdfstring{on\+Row()}{onRow()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_listener}{com.\+mysql.\+cj.\+protocol.\+Result\+Listener}}$<$ OK extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}} $>$.on\+Row (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}}}]{r }\end{DoxyParamCaption})}
+
+Called when row is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \mbox{\hyperlink{}{Row}} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/Result\+Listener.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor}{}\section{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Session\+Association\+Interceptor Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor}\index{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Session\+Association\+Interceptor@{com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Session\+Association\+Interceptor}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a86d3be9b55a93bb96f17d85e39e623c9}{execute\+Top\+Level\+Only}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_af6940dabb40c900b336fb6f5761160b6}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection}{Mysql\+Connection}} conn, Properties props, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a2bbe0b1b240f2ab943ba68fe979cf3a9}{destroy}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a5a4578dc1324a1dc1a010deb257e7311}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a5a4578dc1324a1dc1a010deb257e7311}} 
+static final void {\bfseries set\+Session\+Key} (String key)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_ae4221ef68dac0b6de35cf46023db0c72}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_ae4221ef68dac0b6de35cf46023db0c72}} 
+static final void {\bfseries reset\+Session\+Key} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_adbf840ce7adf4bbc54efc2fa4d6a9987}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_adbf840ce7adf4bbc54efc2fa4d6a9987}} 
+static final String {\bfseries get\+Session\+Key} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a804bc59a162ecabfc4a6205e5da27955}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a804bc59a162ecabfc4a6205e5da27955}} 
+String {\bfseries current\+Session\+Key}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a13d158ba1aa03473494a82edfd567ff5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a13d158ba1aa03473494a82edfd567ff5}} 
+static final Thread\+Local$<$ String $>$ {\bfseries session\+Local} = new Thread\+Local$<$$>$()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a2bbe0b1b240f2ab943ba68fe979cf3a9}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a2bbe0b1b240f2ab943ba68fe979cf3a9}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Session\+Association\+Interceptor@{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Session\+Association\+Interceptor}!destroy@{destroy}}
+\index{destroy@{destroy}!com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Session\+Association\+Interceptor@{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Session\+Association\+Interceptor}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Session\+Association\+Interceptor.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a123809a91800f4f4409f5f37717bf9c8}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a86d3be9b55a93bb96f17d85e39e623c9}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a86d3be9b55a93bb96f17d85e39e623c9}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Session\+Association\+Interceptor@{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Session\+Association\+Interceptor}!execute\+Top\+Level\+Only@{execute\+Top\+Level\+Only}}
+\index{execute\+Top\+Level\+Only@{execute\+Top\+Level\+Only}!com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Session\+Association\+Interceptor@{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Session\+Association\+Interceptor}}
+\subsubsection{\texorpdfstring{execute\+Top\+Level\+Only()}{executeTopLevelOnly()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Session\+Association\+Interceptor.\+execute\+Top\+Level\+Only (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Should the driver execute this interceptor only for the \char`\"{}original\char`\"{} top-\/level query, and not put it in the execution path for queries that may be executed from other interceptors?
+
+If an interceptor issues queries using the connection it was created for, and does not return {\ttfamily true} for this method, it must ensure that it does not cause infinite recursion.
+
+\begin{DoxyReturn}{Returns}
+true if the driver should ensure that this interceptor is only executed for the top-\/level \char`\"{}original\char`\"{} query. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_ab12edf90713df907ba400dbe3ba03ea6}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_af6940dabb40c900b336fb6f5761160b6}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_af6940dabb40c900b336fb6f5761160b6}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Session\+Association\+Interceptor@{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Session\+Association\+Interceptor}!init@{init}}
+\index{init@{init}!com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Session\+Association\+Interceptor@{com\+::mysql\+::cj\+::jdbc\+::interceptors\+::\+Session\+Association\+Interceptor}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} com.\+mysql.\+cj.\+jdbc.\+interceptors.\+Session\+Association\+Interceptor.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection}{Mysql\+Connection}}}]{conn,  }\item[{Properties}]{props,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}}}]{log }\end{DoxyParamCaption})}
+
+Called once per connection that wants to use the interceptor
+
+The properties are the same ones passed in in the U\+RL or arguments to \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_non_registering_driver_ab3fd3d522550db032eab6c240b554e3e}{Driver.\+connect()}} or Driver\+Manager.\+get\+Connection().
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection for which this interceptor is being created \\
+\hline
+{\em props} & configuration values as passed to the connection. Note that in order to support javax.\+sql.\+Data\+Sources, configuration properties specific to an interceptor {\bfseries must} be passed via set\+U\+R\+L() on the Data\+Source. Query\+Interceptor properties are not exposed via accessor/mutator methods on Data\+Sources. \\
+\hline
+{\em log} & logger \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{}{Query\+Interceptor}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor_a1613f5491fdb4610d5727d60c904e7e2}{com.\+mysql.\+cj.\+interceptors.\+Query\+Interceptor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/interceptors/Session\+Association\+Interceptor.\+java\end{DoxyCompactItemize}

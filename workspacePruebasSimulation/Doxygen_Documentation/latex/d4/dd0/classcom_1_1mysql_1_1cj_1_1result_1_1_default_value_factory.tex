@@ -1,0 +1,51 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}{}\section{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory$<$ T $>$ Class Template Reference}
+\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory}\index{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory$<$ T $>$@{com.\+mysql.\+cj.\+result.\+Default\+Value\+Factory$<$ T $>$}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory}{com.\+mysql.\+cj.\+result.\+Value\+Factory$<$ T $>$}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_db_doc_value_factory}{com.\+mysql.\+cj.\+xdevapi.\+Db\+Doc\+Value\+Factory}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a7abbef5c2c0a1da994d462bd01bc66ae}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a7abbef5c2c0a1da994d462bd01bc66ae}} 
+T {\bfseries create\+From\+Date} (int year, int month, int day)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_af1cd4fa518f703b1eee37b00365f808b}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_af1cd4fa518f703b1eee37b00365f808b}} 
+T {\bfseries create\+From\+Time} (int hours, int minutes, int seconds, int nanos)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a826d789263a33a4a914fd4ce07aa44e9}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a826d789263a33a4a914fd4ce07aa44e9}} 
+T {\bfseries create\+From\+Timestamp} (int year, int month, int day, int hours, int minutes, int seconds, int nanos)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a051d2bb4762b37e5318c4b12879fee16}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a051d2bb4762b37e5318c4b12879fee16}} 
+T {\bfseries create\+From\+Long} (long l)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_ab0c6bdb65a95e8a1459fb64b0fe2a6ae}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_ab0c6bdb65a95e8a1459fb64b0fe2a6ae}} 
+T {\bfseries create\+From\+Big\+Integer} (Big\+Integer i)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a5a769375b9daa8f06534dec605997715}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a5a769375b9daa8f06534dec605997715}} 
+T {\bfseries create\+From\+Double} (double d)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_aaf3123a40d44b5da21e8f0cc7a26142f}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_aaf3123a40d44b5da21e8f0cc7a26142f}} 
+T {\bfseries create\+From\+Big\+Decimal} (Big\+Decimal d)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a97d2423b59241620b2e0a519c54b592a}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a97d2423b59241620b2e0a519c54b592a}} 
+T {\bfseries create\+From\+Bytes} (byte\mbox{[}$\,$\mbox{]} bytes, int offset, int length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a05b8ff2d9d1c7ff5c6f5b26188a5476c}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_a05b8ff2d9d1c7ff5c6f5b26188a5476c}} 
+T {\bfseries create\+From\+Bit} (byte\mbox{[}$\,$\mbox{]} bytes, int offset, int length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_ad19879592d2d343604ceff8f7d6dde84}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_default_value_factory_ad19879592d2d343604ceff8f7d6dde84}} 
+T {\bfseries create\+From\+Null} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The default value factory provides a base class that can be used for value factories that do not support creation from every type. The default value factory will thrown an Unsupported\+Operation\+Exception for every method and individual methods must be overridden by subclasses. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/result/Default\+Value\+Factory.\+java\end{DoxyCompactItemize}

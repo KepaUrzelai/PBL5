@@ -1,0 +1,119 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender}{}\section{com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Sender Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender}\index{com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Sender@{com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Sender}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a60d8f512862f503f0e63da3bad608966}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a60d8f512862f503f0e63da3bad608966}} 
+{\bfseries Async\+Message\+Sender} (Asynchronous\+Socket\+Channel channel)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a6fbc4d4b6b0e9a94cdec20e3c9efb904}{send}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} message)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a405a11dfc5f673ba7e8dbb1410bf25f9}{write\+Async}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} message, Completion\+Handler$<$ Long, Void $>$ callback)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a9350fb34edd02d90eebe96812dd85e25}{set\+Max\+Allowed\+Packet}} (int max\+Allowed\+Packet)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_aa71e26100605a3dbb3f575c839769d3e}{set\+Channel}} (Asynchronous\+Socket\+Channel channel)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a8dd20b5008f9f8f6a5d294269b0d8e0e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a8dd20b5008f9f8f6a5d294269b0d8e0e}} 
+void {\bfseries send} (byte\mbox{[}$\,$\mbox{]} message, int message\+Len, byte message\+Sequence)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_ad00ea2b9a6d74feb32a301410fc829f0}{undecorate\+All}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a4e7623346f23221fb9ff562c11c851e6}{undecorate}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Asynchronous message writer. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a6fbc4d4b6b0e9a94cdec20e3c9efb904}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a6fbc4d4b6b0e9a94cdec20e3c9efb904}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender}!send@{send}}
+\index{send@{send}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Sender.\+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}}}]{message }\end{DoxyParamCaption})}
+
+Synchronously write a message. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_aa71e26100605a3dbb3f575c839769d3e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_aa71e26100605a3dbb3f575c839769d3e}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender}!set\+Channel@{set\+Channel}}
+\index{set\+Channel@{set\+Channel}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender}}
+\subsubsection{\texorpdfstring{set\+Channel()}{setChannel()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Sender.\+set\+Channel (\begin{DoxyParamCaption}\item[{Asynchronous\+Socket\+Channel}]{channel }\end{DoxyParamCaption})}
+
+Allow overwriting the channel once the writer has been established. Required for S\+S\+L/\+T\+LS connections when the encryption doesn\textquotesingle{}t start until we send the capability flag to X Plugin.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \mbox{\hyperlink{}{Asynchronous\+Socket\+Channel}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a9350fb34edd02d90eebe96812dd85e25}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a9350fb34edd02d90eebe96812dd85e25}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender}!set\+Max\+Allowed\+Packet@{set\+Max\+Allowed\+Packet}}
+\index{set\+Max\+Allowed\+Packet@{set\+Max\+Allowed\+Packet}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender}}
+\subsubsection{\texorpdfstring{set\+Max\+Allowed\+Packet()}{setMaxAllowedPacket()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Sender.\+set\+Max\+Allowed\+Packet (\begin{DoxyParamCaption}\item[{int}]{max\+Allowed\+Packet }\end{DoxyParamCaption})}
+
+Set max allowed packet size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Allowed\+Packet} & max allowed packet size \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a31345b7817dcc7e982bb96dba97b3a01}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a4e7623346f23221fb9ff562c11c851e6}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a4e7623346f23221fb9ff562c11c851e6}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender}!undecorate@{undecorate}}
+\index{undecorate@{undecorate}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender}}
+\subsubsection{\texorpdfstring{undecorate()}{undecorate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}}$>$ com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Sender.\+undecorate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the previous Packet\+Sender instance from the decorators chain or the current Packet\+Sender if it is the first entry in a chain.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}} instance 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a3a352bf35ad98dc6cea7c1f4ac9480da}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_ad00ea2b9a6d74feb32a301410fc829f0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_ad00ea2b9a6d74feb32a301410fc829f0}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender}!undecorate\+All@{undecorate\+All}}
+\index{undecorate\+All@{undecorate\+All}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender}}
+\subsubsection{\texorpdfstring{undecorate\+All()}{undecorateAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}}$>$ com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Sender.\+undecorate\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return a Packet\+Sender instance free of decorators.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}} instance 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a8066931f03c2fa9cc705716fa10a4517}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a405a11dfc5f673ba7e8dbb1410bf25f9}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a405a11dfc5f673ba7e8dbb1410bf25f9}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender}!write\+Async@{write\+Async}}
+\index{write\+Async@{write\+Async}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Sender}}
+\subsubsection{\texorpdfstring{write\+Async()}{writeAsync()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Sender.\+write\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}}}]{message,  }\item[{Completion\+Handler$<$ Long, Void $>$}]{callback }\end{DoxyParamCaption})}
+
+Asynchronously write a message with a notification being delivered to {\ttfamily callback} upon completion of write of entire message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & message extending \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \\
+\hline
+{\em callback} & an optional callback to receive notification of when the message is completely written \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/x/Async\+Message\+Sender.\+java\end{DoxyCompactItemize}

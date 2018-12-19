@@ -1,0 +1,188 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob}{}\section{com.\+mysql.\+cj.\+jdbc.\+Clob Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob}\index{com.\+mysql.\+cj.\+jdbc.\+Clob@{com.\+mysql.\+cj.\+jdbc.\+Clob}}
+
+
+Inherits Clob, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_output_stream_watcher}{com.\+mysql.\+cj.\+protocol.\+Output\+Stream\+Watcher}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_writer_watcher}{com.\+mysql.\+cj.\+protocol.\+Writer\+Watcher}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_n_clob}{com.\+mysql.\+cj.\+jdbc.\+N\+Clob}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a782b5a3df742e495e2b59d7b9b5abdc4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a782b5a3df742e495e2b59d7b9b5abdc4}} 
+{\bfseries Clob} (String char\+Data\+Init, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)
+\item 
+Input\+Stream \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a207902fd33eb4765d5b102a6512a14fe}{get\+Ascii\+Stream}} ()  throws S\+Q\+L\+Exception 
+\item 
+Reader \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a2257c466b89e944490f677dfdfc3dbe4}{get\+Character\+Stream}} ()  throws S\+Q\+L\+Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a6329527c580f97eb9ad48187443b2134}{get\+Sub\+String}} (long start\+Pos, int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a34d1c1c51a7cab4cb589c6743f78f3d1}{length}})  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a34d1c1c51a7cab4cb589c6743f78f3d1}{length}} ()  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a94dca4c47b990167d6ab98c87ae43ce4}{position}} (java.\+sql.\+Clob arg0, long arg1)  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a294c4cca4be72b8d7f87b97f95d59e54}{position}} (String string\+To\+Find, long start\+Pos)  throws S\+Q\+L\+Exception 
+\item 
+Output\+Stream \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a689233129f0a3ee09fdb60020a826b59}{set\+Ascii\+Stream}} (long index\+To\+Write\+At)  throws S\+Q\+L\+Exception 
+\item 
+Writer \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_aa21bc09d5e81110704dd1c2c7fad6f75}{set\+Character\+Stream}} (long index\+To\+Write\+At)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a16363c80864ce2bcbee073698856df78}{set\+String}} (long pos, String str)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_ad219cc0c1ae1ab62a8819a31382d6276}{set\+String}} (long pos, String str, int offset, int len)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_afce3b43001378654ee8a1d99c8685eeb}{stream\+Closed}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_watchable_stream}{Watchable\+Stream}} out)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a2038effd43fab99bf2553026fe76131c}{truncate}} (long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a34d1c1c51a7cab4cb589c6743f78f3d1}{length}})  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a511b2df17d5336e806c022512c86e042}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a511b2df17d5336e806c022512c86e042}} 
+void {\bfseries writer\+Closed} (char\mbox{[}$\,$\mbox{]} char\+Data\+Being\+Written)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_ab6d96b9b821f777e7b25850ceb480c2b}{writer\+Closed}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_watchable_writer}{Watchable\+Writer}} out)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_ab87f9b3eae069b4b8d7d78f3532c17ec}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_ab87f9b3eae069b4b8d7d78f3532c17ec}} 
+void {\bfseries free} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a4ac4032fb87f049f6a0368706804cb18}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a4ac4032fb87f049f6a0368706804cb18}} 
+Reader {\bfseries get\+Character\+Stream} (long pos, long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a34d1c1c51a7cab4cb589c6743f78f3d1}{length}})  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simplistic implementation of java.\+sql.\+Clob for My\+S\+QL Connector/J 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a207902fd33eb4765d5b102a6512a14fe}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a207902fd33eb4765d5b102a6512a14fe}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}!get\+Ascii\+Stream@{get\+Ascii\+Stream}}
+\index{get\+Ascii\+Stream@{get\+Ascii\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{get\+Ascii\+Stream()}{getAsciiStream()}}
+{\footnotesize\ttfamily Input\+Stream com.\+mysql.\+cj.\+jdbc.\+Clob.\+get\+Ascii\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::get\+Ascii\+Stream() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a2257c466b89e944490f677dfdfc3dbe4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a2257c466b89e944490f677dfdfc3dbe4}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}!get\+Character\+Stream@{get\+Character\+Stream}}
+\index{get\+Character\+Stream@{get\+Character\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{get\+Character\+Stream()}{getCharacterStream()}}
+{\footnotesize\ttfamily Reader com.\+mysql.\+cj.\+jdbc.\+Clob.\+get\+Character\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::get\+Character\+Stream() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a6329527c580f97eb9ad48187443b2134}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a6329527c580f97eb9ad48187443b2134}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}!get\+Sub\+String@{get\+Sub\+String}}
+\index{get\+Sub\+String@{get\+Sub\+String}!com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{get\+Sub\+String()}{getSubString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+jdbc.\+Clob.\+get\+Sub\+String (\begin{DoxyParamCaption}\item[{long}]{start\+Pos,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::get\+Sub\+String(long, int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a34d1c1c51a7cab4cb589c6743f78f3d1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a34d1c1c51a7cab4cb589c6743f78f3d1}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}!length@{length}}
+\index{length@{length}!com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Clob.\+length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::length() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a94dca4c47b990167d6ab98c87ae43ce4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a94dca4c47b990167d6ab98c87ae43ce4}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}!position@{position}}
+\index{position@{position}!com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{position()}{position()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Clob.\+position (\begin{DoxyParamCaption}\item[{java.\+sql.\+Clob}]{arg0,  }\item[{long}]{arg1 }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::position(\+Clob, long) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a294c4cca4be72b8d7f87b97f95d59e54}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a294c4cca4be72b8d7f87b97f95d59e54}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}!position@{position}}
+\index{position@{position}!com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{position()}{position()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Clob.\+position (\begin{DoxyParamCaption}\item[{String}]{string\+To\+Find,  }\item[{long}]{start\+Pos }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::position(\+String, long) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a689233129f0a3ee09fdb60020a826b59}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a689233129f0a3ee09fdb60020a826b59}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}!set\+Ascii\+Stream@{set\+Ascii\+Stream}}
+\index{set\+Ascii\+Stream@{set\+Ascii\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{set\+Ascii\+Stream()}{setAsciiStream()}}
+{\footnotesize\ttfamily Output\+Stream com.\+mysql.\+cj.\+jdbc.\+Clob.\+set\+Ascii\+Stream (\begin{DoxyParamCaption}\item[{long}]{index\+To\+Write\+At }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::set\+Ascii\+Stream(long) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_aa21bc09d5e81110704dd1c2c7fad6f75}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_aa21bc09d5e81110704dd1c2c7fad6f75}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}!set\+Character\+Stream@{set\+Character\+Stream}}
+\index{set\+Character\+Stream@{set\+Character\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{set\+Character\+Stream()}{setCharacterStream()}}
+{\footnotesize\ttfamily Writer com.\+mysql.\+cj.\+jdbc.\+Clob.\+set\+Character\+Stream (\begin{DoxyParamCaption}\item[{long}]{index\+To\+Write\+At }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::set\+Character\+Stream(long) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a16363c80864ce2bcbee073698856df78}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a16363c80864ce2bcbee073698856df78}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}!set\+String@{set\+String}}
+\index{set\+String@{set\+String}!com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{set\+String()}{setString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Clob.\+set\+String (\begin{DoxyParamCaption}\item[{long}]{pos,  }\item[{String}]{str }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::set\+String(long, String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_ad219cc0c1ae1ab62a8819a31382d6276}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_ad219cc0c1ae1ab62a8819a31382d6276}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}!set\+String@{set\+String}}
+\index{set\+String@{set\+String}!com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{set\+String()}{setString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Clob.\+set\+String (\begin{DoxyParamCaption}\item[{long}]{pos,  }\item[{String}]{str,  }\item[{int}]{offset,  }\item[{int}]{len }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::set\+String(long, String, int, int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_afce3b43001378654ee8a1d99c8685eeb}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_afce3b43001378654ee8a1d99c8685eeb}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}!stream\+Closed@{stream\+Closed}}
+\index{stream\+Closed@{stream\+Closed}!com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{stream\+Closed()}{streamClosed()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Clob.\+stream\+Closed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_watchable_stream}{Watchable\+Stream}}}]{out }\end{DoxyParamCaption})}
+
+Called when the Output\+Stream being watched has .close() called
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & \mbox{\hyperlink{}{Watchable\+Stream}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_output_stream_watcher_ab830e1917ebb2d14757c5fd1f5dc35ab}{com.\+mysql.\+cj.\+protocol.\+Output\+Stream\+Watcher}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a2038effd43fab99bf2553026fe76131c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_a2038effd43fab99bf2553026fe76131c}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}!truncate@{truncate}}
+\index{truncate@{truncate}!com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{truncate()}{truncate()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Clob.\+truncate (\begin{DoxyParamCaption}\item[{long}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::truncate(long) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_ab6d96b9b821f777e7b25850ceb480c2b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_ab6d96b9b821f777e7b25850ceb480c2b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}!writer\+Closed@{writer\+Closed}}
+\index{writer\+Closed@{writer\+Closed}!com\+::mysql\+::cj\+::jdbc\+::\+Clob@{com\+::mysql\+::cj\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{writer\+Closed()}{writerClosed()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Clob.\+writer\+Closed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_watchable_writer}{Watchable\+Writer}}}]{out }\end{DoxyParamCaption})}
+
+Called when the Writer being watched has .close() called 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_writer_watcher_a12b4673c6a8478886d9d53dae4afe032}{com.\+mysql.\+cj.\+protocol.\+Writer\+Watcher}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/Clob.\+java\end{DoxyCompactItemize}

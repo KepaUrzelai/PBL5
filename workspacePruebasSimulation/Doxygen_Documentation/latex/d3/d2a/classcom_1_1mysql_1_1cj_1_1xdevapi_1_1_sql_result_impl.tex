@@ -1,0 +1,177 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl}\index{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl@{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer}{com.\+mysql.\+cj.\+protocol.\+Result\+Streamer}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a47ac7870d2b188ad61ff85f493aa740b}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a47ac7870d2b188ad61ff85f493aa740b}} 
+{\bfseries Sql\+Result\+Impl} (Supplier$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result}{Sql\+Result}} $>$ result\+Stream)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a63d1fa4f9bdb44615cb07d3324e96341}{next\+Result}} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a9ace870266358e357a46f584b3545dc6}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a9ace870266358e357a46f584b3545dc6}} 
+void {\bfseries finish\+Streaming} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_afc10544f4b662a846d92d2889cd20335}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_afc10544f4b662a846d92d2889cd20335}} 
+boolean {\bfseries has\+Data} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a4fe6c0a9ccb9785f48c25bbeebec10e2}{get\+Affected\+Items\+Count}} ()
+\item 
+Long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_ac1730d1c9d94a55bd5519e803be617e4}{get\+Auto\+Increment\+Value}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_aec69633fd00fa0b998014ea8f94cc797}{get\+Warnings\+Count}} ()
+\item 
+Iterator$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_warning}{Warning}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a58d7c6a9ad8d87b5447c2d2f5849ee73}{get\+Warnings}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a79fa6d1b15f715dc2d451ed8ec22493f}{get\+Column\+Count}} ()
+\item 
+List$<$ Column $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a284f0953dcca6644eb9eff7749e32f9b}{get\+Columns}} ()
+\item 
+List$<$ String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a9f539396fee9a85bbebbb39d803c9eea}{get\+Column\+Names}} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a3b562920da1050ee09f24fb4638b7f9c}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a3b562920da1050ee09f24fb4638b7f9c}} 
+long {\bfseries count} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a7d6ed19e6cf1aedeca7f530150ab0893}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a7d6ed19e6cf1aedeca7f530150ab0893}} 
+List$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} $>$ {\bfseries fetch\+All} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a03538872432cdca74d578646e5793d3c}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a03538872432cdca74d578646e5793d3c}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} {\bfseries next} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a6d3626107a3e51c71e4857dce6c669e2}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a6d3626107a3e51c71e4857dce6c669e2}} 
+boolean {\bfseries has\+Next} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+QL result. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a4fe6c0a9ccb9785f48c25bbeebec10e2}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a4fe6c0a9ccb9785f48c25bbeebec10e2}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}!get\+Affected\+Items\+Count@{get\+Affected\+Items\+Count}}
+\index{get\+Affected\+Items\+Count@{get\+Affected\+Items\+Count}!com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}}
+\subsubsection{\texorpdfstring{get\+Affected\+Items\+Count()}{getAffectedItemsCount()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl.\+get\+Affected\+Items\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the count of affected items from manipulation statements.
+
+\begin{DoxyReturn}{Returns}
+count 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result_a6389cfd50f26c8efc0120b5f3072d228}{com.\+mysql.\+cj.\+xdevapi.\+Result}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_ac1730d1c9d94a55bd5519e803be617e4}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_ac1730d1c9d94a55bd5519e803be617e4}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}!get\+Auto\+Increment\+Value@{get\+Auto\+Increment\+Value}}
+\index{get\+Auto\+Increment\+Value@{get\+Auto\+Increment\+Value}!com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}}
+\subsubsection{\texorpdfstring{get\+Auto\+Increment\+Value()}{getAutoIncrementValue()}}
+{\footnotesize\ttfamily Long com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl.\+get\+Auto\+Increment\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the auto-\/increment value if one was generated from a row insert statement.
+
+\begin{DoxyReturn}{Returns}
+auto-\/increment value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_insert_result_a32144e23568f91aa21dab0b01cb6b14e}{com.\+mysql.\+cj.\+xdevapi.\+Insert\+Result}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a79fa6d1b15f715dc2d451ed8ec22493f}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a79fa6d1b15f715dc2d451ed8ec22493f}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}!get\+Column\+Count@{get\+Column\+Count}}
+\index{get\+Column\+Count@{get\+Column\+Count}!com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}}
+\subsubsection{\texorpdfstring{get\+Column\+Count()}{getColumnCount()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl.\+get\+Column\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Count of columns.
+
+\begin{DoxyReturn}{Returns}
+count 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_aaf66f729c7c99e7ceb90ea49c4631ef0}{com.\+mysql.\+cj.\+xdevapi.\+Row\+Result}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a9f539396fee9a85bbebbb39d803c9eea}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a9f539396fee9a85bbebbb39d803c9eea}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}!get\+Column\+Names@{get\+Column\+Names}}
+\index{get\+Column\+Names@{get\+Column\+Names}!com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}}
+\subsubsection{\texorpdfstring{get\+Column\+Names()}{getColumnNames()}}
+{\footnotesize\ttfamily List$<$String$>$ com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl.\+get\+Column\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Names of columns.
+
+\begin{DoxyReturn}{Returns}
+list of result column names 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_acbc412c859e4618f3b924c602a82f541}{com.\+mysql.\+cj.\+xdevapi.\+Row\+Result}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a284f0953dcca6644eb9eff7749e32f9b}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a284f0953dcca6644eb9eff7749e32f9b}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}!get\+Columns@{get\+Columns}}
+\index{get\+Columns@{get\+Columns}!com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}}
+\subsubsection{\texorpdfstring{get\+Columns()}{getColumns()}}
+{\footnotesize\ttfamily List$<$Column$>$ com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl.\+get\+Columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metadata.
+
+\begin{DoxyReturn}{Returns}
+list of result \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_column}{Column}} objects 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_a4bd495dadd5549516c0f32366f8d77c7}{com.\+mysql.\+cj.\+xdevapi.\+Row\+Result}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a58d7c6a9ad8d87b5447c2d2f5849ee73}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a58d7c6a9ad8d87b5447c2d2f5849ee73}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}!get\+Warnings@{get\+Warnings}}
+\index{get\+Warnings@{get\+Warnings}!com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}}
+\subsubsection{\texorpdfstring{get\+Warnings()}{getWarnings()}}
+{\footnotesize\ttfamily Iterator$<$\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_warning}{Warning}}$>$ com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl.\+get\+Warnings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Warnings generated during statement execution.
+
+\begin{DoxyReturn}{Returns}
+iterator over warnings 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result_a7bd12aba36fc02a31c8fd546fe731e98}{com.\+mysql.\+cj.\+xdevapi.\+Result}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_aec69633fd00fa0b998014ea8f94cc797}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_aec69633fd00fa0b998014ea8f94cc797}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}!get\+Warnings\+Count@{get\+Warnings\+Count}}
+\index{get\+Warnings\+Count@{get\+Warnings\+Count}!com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}}
+\subsubsection{\texorpdfstring{get\+Warnings\+Count()}{getWarningsCount()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl.\+get\+Warnings\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Count of warnings generated during statement execution.
+
+\begin{DoxyReturn}{Returns}
+count 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result_addd5c82af4ab35e702d7f2961119ecc6}{com.\+mysql.\+cj.\+xdevapi.\+Result}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a63d1fa4f9bdb44615cb07d3324e96341}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a63d1fa4f9bdb44615cb07d3324e96341}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}!next\+Result@{next\+Result}}
+\index{next\+Result@{next\+Result}!com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Sql\+Result\+Impl}}
+\subsubsection{\texorpdfstring{next\+Result()}{nextResult()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl.\+next\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Move to the next result. This method has no effect after returning {\ttfamily false} for the first time.
+
+\begin{DoxyReturn}{Returns}
+was there a next result that we moved to? 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_ad5c821bd2efe2e952aef48dc574e913d}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/Sql\+Result\+Impl.\+java\end{DoxyCompactItemize}

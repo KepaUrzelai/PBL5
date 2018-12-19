@@ -1,0 +1,53 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Socket\+Connection Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Socket\+Connection@{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Socket\+Connection}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_abstract_socket_connection}{com.\+mysql.\+cj.\+protocol.\+Abstract\+Socket\+Connection}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{com.\+mysql.\+cj.\+protocol.\+Socket\+Connection}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a01b21bd9bd524d07d1467c758900a102}{connect}} (String host\+Name, int port\+Number, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} prop\+Set, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exc\+Interceptor, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log, int login\+Timeout)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a00e90b14ed518b12733a936a3b707134}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a00e90b14ed518b12733a936a3b707134}} 
+void {\bfseries perform\+Tls\+Handshake} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} server\+Session)  throws S\+S\+L\+Params\+Exception, Feature\+Not\+Available\+Exception, I\+O\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a2c48d7701f27174e67e79cee1deb78d1}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a2c48d7701f27174e67e79cee1deb78d1}} 
+Asynchronous\+Socket\+Channel {\bfseries get\+Asynchronous\+Socket\+Channel} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a01b21bd9bd524d07d1467c758900a102}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a01b21bd9bd524d07d1467c758900a102}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Socket\+Connection@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Socket\+Connection}!connect@{connect}}
+\index{connect@{connect}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Socket\+Connection@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Socket\+Connection}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Socket\+Connection.\+connect (\begin{DoxyParamCaption}\item[{String}]{host,  }\item[{int}]{port,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}}}]{property\+Set,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}}}]{log,  }\item[{int}]{login\+Timeout }\end{DoxyParamCaption})}
+
+Connect to the My\+S\+QL server and setup a stream connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & the hostname to connect to \\
+\hline
+{\em port} & the port number that the server is listening on \\
+\hline
+{\em property\+Set} & the Property\+Set with required connection options \\
+\hline
+{\em exception\+Interceptor} & exception interceptor \\
+\hline
+{\em log} & logger \\
+\hline
+{\em login\+Timeout} & the driver login time limit in milliseconds \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection_ac20aea608e999684c82a0dbaaa5886c7}{com.\+mysql.\+cj.\+protocol.\+Socket\+Connection}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/Native\+Socket\+Connection.\+java\end{DoxyCompactItemize}

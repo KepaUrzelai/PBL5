@@ -1,0 +1,52 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_resultset_row_reader}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Resultset\+Row\+Reader Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_resultset_row_reader}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Resultset\+Row\+Reader@{com.\+mysql.\+cj.\+protocol.\+a.\+Resultset\+Row\+Reader}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_reader}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity\+Reader$<$ T extends Protocol\+Entity, M extends Message $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_resultset_row_reader_a3f790668961e51d87c8fa296e0c164a7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_resultset_row_reader_a3f790668961e51d87c8fa296e0c164a7}} 
+{\bfseries Resultset\+Row\+Reader} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol}{Native\+Protocol}} prot)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_row}{Resultset\+Row}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_resultset_row_reader_a573b457be8bdc0762d3dac20eb23ca05}{read}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_row}{Resultset\+Row}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ sf)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_resultset_row_reader_a7d9db6565b3aaeebbcdbb4643c06013e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_resultset_row_reader_a7d9db6565b3aaeebbcdbb4643c06013e}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_protocol}{Native\+Protocol}} {\bfseries protocol}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_resultset_row_reader_af9773a7d86a3846ca78640038513ff2f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_resultset_row_reader_af9773a7d86a3846ca78640038513ff2f}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} {\bfseries property\+Set}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_resultset_row_reader_a76822f083abe98e2b745d5b7cb91d90b}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_resultset_row_reader_a76822f083abe98e2b745d5b7cb91d90b}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Integer $>$ {\bfseries use\+Buffer\+Row\+Size\+Threshold}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_resultset_row_reader_a573b457be8bdc0762d3dac20eb23ca05}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_resultset_row_reader_a573b457be8bdc0762d3dac20eb23ca05}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Resultset\+Row\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Resultset\+Row\+Reader}!read@{read}}
+\index{read@{read}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Resultset\+Row\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Resultset\+Row\+Reader}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_row}{Resultset\+Row}} com.\+mysql.\+cj.\+protocol.\+a.\+Resultset\+Row\+Reader.\+read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_row}{Resultset\+Row}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$}]{sf }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Retrieve one row from the My\+S\+QL server. Note\+: this method is not thread-\/safe, but it is only called from methods that are guarded by synchronizing on this object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sf} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/Resultset\+Row\+Reader.\+java\end{DoxyCompactItemize}

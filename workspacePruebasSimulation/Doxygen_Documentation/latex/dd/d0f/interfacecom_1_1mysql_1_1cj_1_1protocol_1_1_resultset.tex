@@ -1,0 +1,201 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{}\section{com.\+mysql.\+cj.\+protocol.\+Resultset Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}\index{com.\+mysql.\+cj.\+protocol.\+Resultset@{com.\+mysql.\+cj.\+protocol.\+Resultset}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity}}.
+
+
+
+Inherited by \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{com.\+mysql.\+cj.\+jdbc.\+result.\+Result\+Set\+Internal\+Methods}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_1_1_concurrency}{Concurrency}}
+\item 
+enum \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_1_1_type}{Type}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aee8797446404a63565e56825f2b5a5d4}{set\+Column\+Definition}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} metadata)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aa09b585b364b09f418b47bd267b1758b}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aa09b585b364b09f418b47bd267b1758b}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} {\bfseries get\+Column\+Definition} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_acafe4b216e2086884d0758c64fd34c0b}{has\+Rows}} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a56ff0f26904a612a034bf839cae46d51}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a56ff0f26904a612a034bf839cae46d51}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows}{Resultset\+Rows}} {\bfseries get\+Rows} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a2ee6b6a8cb5164dfc293b23cefb96b46}{init\+Rows\+With\+Metadata}} ()
+\item 
+int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a77886132904378ea915db2b4803e588c}{get\+Result\+Id}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a030e08e421f62239d808fc1be2808ac4}{set\+Next\+Resultset}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}} next\+Resultset)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aeb71f17cb0bbc2c33b47bc7e6a1f750c}{get\+Next\+Resultset}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_ab66d8aa07fe7c7860c0852a7a10f4e27}{clear\+Next\+Resultset}} ()
+\item 
+long \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a72a3e90cf2affd2bbc8826a2c2e39df9}{get\+Update\+Count}} ()
+\item 
+long \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_ab9b9750b3d8a9d8cc35af6d1e59dd86f}{get\+Update\+ID}} ()
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a41ec899fbc6875d7b31245be7245ae9a}{get\+Server\+Info}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents protocol specific result set, eg., for native protocol, a Protocol\+Text\+::\+Resultset or Protocol\+Binary\+::\+Resultset entity.
+
+See\+: \href{http://dev.mysql.com/doc/internals/en/com-query-response.html#packet-ProtocolText::Resultset}{\tt http\+://dev.\+mysql.\+com/doc/internals/en/com-\/query-\/response.\+html\#packet-\/\+Protocol\+Text\+::\+Resultset} \href{http://dev.mysql.com/doc/internals/en/binary-protocol-resultset.html}{\tt http\+://dev.\+mysql.\+com/doc/internals/en/binary-\/protocol-\/resultset.\+html} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_ab66d8aa07fe7c7860c0852a7a10f4e27}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_ab66d8aa07fe7c7860c0852a7a10f4e27}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}!clear\+Next\+Resultset@{clear\+Next\+Resultset}}
+\index{clear\+Next\+Resultset@{clear\+Next\+Resultset}!com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}}
+\subsubsection{\texorpdfstring{clear\+Next\+Resultset()}{clearNextResultset()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Resultset.\+clear\+Next\+Resultset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clears the reference to the next result set in a multi-\/result set \char`\"{}chain\char`\"{}. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset_a2a2679a79ede89432e8b54d6eff42138}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aeb71f17cb0bbc2c33b47bc7e6a1f750c}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aeb71f17cb0bbc2c33b47bc7e6a1f750c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}!get\+Next\+Resultset@{get\+Next\+Resultset}}
+\index{get\+Next\+Resultset@{get\+Next\+Resultset}!com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}}
+\subsubsection{\texorpdfstring{get\+Next\+Resultset()}{getNextResultset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}} com.\+mysql.\+cj.\+protocol.\+Resultset.\+get\+Next\+Resultset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the next Result\+Set in a multi-\/resultset \char`\"{}chain\char`\"{}, if any, null if none exists.
+
+\begin{DoxyReturn}{Returns}
+the next \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset_a62322ab9154b99ce2ee8c0aca9b90faa}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a77886132904378ea915db2b4803e588c}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a77886132904378ea915db2b4803e588c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}!get\+Result\+Id@{get\+Result\+Id}}
+\index{get\+Result\+Id@{get\+Result\+Id}!com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}}
+\subsubsection{\texorpdfstring{get\+Result\+Id()}{getResultId()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+Resultset.\+get\+Result\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The id (used when profiling) to identify us
+
+\begin{DoxyReturn}{Returns}
+result id 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset_ad10ec652380313c1eb2cb1dd67c4ea7e}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a41ec899fbc6875d7b31245be7245ae9a}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a41ec899fbc6875d7b31245be7245ae9a}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}!get\+Server\+Info@{get\+Server\+Info}}
+\index{get\+Server\+Info@{get\+Server\+Info}!com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}}
+\subsubsection{\texorpdfstring{get\+Server\+Info()}{getServerInfo()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+protocol.\+Resultset.\+get\+Server\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the server informational message returned from a D\+DL or D\+ML statement (if any), or null if none.
+
+\begin{DoxyReturn}{Returns}
+the server informational message 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset_a02eab42717038056dfd049351e3d13b1}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a72a3e90cf2affd2bbc8826a2c2e39df9}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a72a3e90cf2affd2bbc8826a2c2e39df9}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}!get\+Update\+Count@{get\+Update\+Count}}
+\index{get\+Update\+Count@{get\+Update\+Count}!com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}}
+\subsubsection{\texorpdfstring{get\+Update\+Count()}{getUpdateCount()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+protocol.\+Resultset.\+get\+Update\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the update count for this result set (if one exists), otherwise -\/1.
+
+\begin{DoxyReturn}{Returns}
+return the update count for this result set (if one exists), otherwise -\/1. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset_a10bf057eb5f4fbf7602b519cd3e420b0}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_ab9b9750b3d8a9d8cc35af6d1e59dd86f}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_ab9b9750b3d8a9d8cc35af6d1e59dd86f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}!get\+Update\+ID@{get\+Update\+ID}}
+\index{get\+Update\+ID@{get\+Update\+ID}!com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}}
+\subsubsection{\texorpdfstring{get\+Update\+I\+D()}{getUpdateID()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+protocol.\+Resultset.\+get\+Update\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the A\+U\+T\+O\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT value for the D\+D\+L/\+D\+ML statement which created this result set.
+
+\begin{DoxyReturn}{Returns}
+the A\+U\+T\+O\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT value for the D\+D\+L/\+D\+ML statement which created this result set. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset_ac6a7ec2cf40f503d0978cb3a03a26b66}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_acafe4b216e2086884d0758c64fd34c0b}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_acafe4b216e2086884d0758c64fd34c0b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}!has\+Rows@{has\+Rows}}
+\index{has\+Rows@{has\+Rows}!com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}}
+\subsubsection{\texorpdfstring{has\+Rows()}{hasRows()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+Resultset.\+has\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Does the result set contain rows, or is it the result of a D\+DL or D\+ML statement?
+
+\begin{DoxyReturn}{Returns}
+true if result set contains rows 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset_a6873a98d8b78925b9260230838d280d2}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a2ee6b6a8cb5164dfc293b23cefb96b46}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a2ee6b6a8cb5164dfc293b23cefb96b46}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}!init\+Rows\+With\+Metadata@{init\+Rows\+With\+Metadata}}
+\index{init\+Rows\+With\+Metadata@{init\+Rows\+With\+Metadata}!com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}}
+\subsubsection{\texorpdfstring{init\+Rows\+With\+Metadata()}{initRowsWithMetadata()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Resultset.\+init\+Rows\+With\+Metadata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set metadata of this \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}} to \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows}{Resultset\+Rows}} it contains. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset_a55681e1e25bdf8a26e098f812979bec3}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aee8797446404a63565e56825f2b5a5d4}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aee8797446404a63565e56825f2b5a5d4}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}!set\+Column\+Definition@{set\+Column\+Definition}}
+\index{set\+Column\+Definition@{set\+Column\+Definition}!com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}}
+\subsubsection{\texorpdfstring{set\+Column\+Definition()}{setColumnDefinition()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Resultset.\+set\+Column\+Definition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}}]{metadata }\end{DoxyParamCaption})}
+
+Sometimes the driver doesn\textquotesingle{}t have metadata before consuming the result set rows (because it\textquotesingle{}s cached), or need to coerce the metadata returned by queries into that required by the particular specification (eg metadata returned by metadata queries into that required by the J\+D\+BC specification). So it can call this to set it after the fact.
+
+
+\begin{DoxyParams}{Parameters}
+{\em metadata} & field-\/level metadata for the result set \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset_a103a093ccb3cf34125ff020ddc9ad6d8}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a030e08e421f62239d808fc1be2808ac4}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a030e08e421f62239d808fc1be2808ac4}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}!set\+Next\+Resultset@{set\+Next\+Resultset}}
+\index{set\+Next\+Resultset@{set\+Next\+Resultset}!com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}}
+\subsubsection{\texorpdfstring{set\+Next\+Resultset()}{setNextResultset()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Resultset.\+set\+Next\+Resultset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}}}]{next\+Resultset }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em next\+Resultset} & Sets the next result set in the result set chain for multiple result sets. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset_a69d6943f5f8f3e38a159e89897c583b2}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/Resultset.\+java\end{DoxyCompactItemize}

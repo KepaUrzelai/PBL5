@@ -1,0 +1,131 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query}{}\section{com.\+mysql.\+cj.\+Query Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1_query}\index{com.\+mysql.\+cj.\+Query@{com.\+mysql.\+cj.\+Query}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query}{com.\+mysql.\+cj.\+Abstract\+Query}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_prepared_query}{com.\+mysql.\+cj.\+Prepared\+Query$<$ T extends Query\+Bindings$<$?$>$}}.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_query_1_1_cancel_status}{Cancel\+Status}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_a29f450bbae1063765d434e3b89bdd26e}{get\+Id}} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_ad88d55a91d45f0e133f0ffe7a279b258}\label{interfacecom_1_1mysql_1_1cj_1_1_query_ad88d55a91d45f0e133f0ffe7a279b258}} 
+void {\bfseries set\+Cancel\+Status} (\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_query_1_1_cancel_status}{Cancel\+Status}} cs)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_add91f39e25b2687d5ae8637d59e470f5}\label{interfacecom_1_1mysql_1_1cj_1_1_query_add91f39e25b2687d5ae8637d59e470f5}} 
+void {\bfseries check\+Cancel\+Timeout} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a65a08bc19f00ca6ae30fa9d7666e9f51}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a65a08bc19f00ca6ae30fa9d7666e9f51}} 
+$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}}, M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity_factory}{Protocol\+Entity\+Factory}}$<$ T, M $>$ {\bfseries get\+Result\+Set\+Factory} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_ad9657ad6282e8cccd264dccb9b1204a5}\label{interfacecom_1_1mysql_1_1cj_1_1_query_ad9657ad6282e8cccd264dccb9b1204a5}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}} {\bfseries get\+Session} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_af99b8945b78c6f6cec21d9a81e227d1e}\label{interfacecom_1_1mysql_1_1cj_1_1_query_af99b8945b78c6f6cec21d9a81e227d1e}} 
+Object {\bfseries get\+Cancel\+Timeout\+Mutex} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a382965ca9799730bbfd58c83facd98b5}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a382965ca9799730bbfd58c83facd98b5}} 
+void {\bfseries reset\+Cancelled\+State} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a5808add7bd2bffa44c7532995b16e442}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a5808add7bd2bffa44c7532995b16e442}} 
+void {\bfseries close\+Query} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a726941dcc741acae509b16f14730966a}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a726941dcc741acae509b16f14730966a}} 
+void {\bfseries add\+Batch} (Object batch)
+\item 
+List$<$ Object $>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_af927782ce04741b0b0d3447e9b4f2a08}{get\+Batched\+Args}} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a72ab11f1338a67459c15b31d1e808b14}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a72ab11f1338a67459c15b31d1e808b14}} 
+void {\bfseries clear\+Batched\+Args} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a6f08d61e84781710d7e9c4680c2835b3}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a6f08d61e84781710d7e9c4680c2835b3}} 
+int {\bfseries get\+Result\+Fetch\+Size} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_aa27382e91d04ac9f8f6944dc3949b652}\label{interfacecom_1_1mysql_1_1cj_1_1_query_aa27382e91d04ac9f8f6944dc3949b652}} 
+void {\bfseries set\+Result\+Fetch\+Size} (int fetch\+Size)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a1e97cf75ff946bef7b89512a69199b90}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a1e97cf75ff946bef7b89512a69199b90}} 
+Resultset.\+Type {\bfseries get\+Result\+Type} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_abb2b03623cac9e35394b4ed22008f683}\label{interfacecom_1_1mysql_1_1cj_1_1_query_abb2b03623cac9e35394b4ed22008f683}} 
+void {\bfseries set\+Result\+Type} (Resultset.\+Type result\+Set\+Type)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a54f609a5c08b91fe0008e9b3334d0d82}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a54f609a5c08b91fe0008e9b3334d0d82}} 
+int {\bfseries get\+Timeout\+In\+Millis} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a9bdb29806cdcfabc9bf48c9c7872d777}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a9bdb29806cdcfabc9bf48c9c7872d777}} 
+void {\bfseries set\+Timeout\+In\+Millis} (int timeout\+In\+Millis)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a05d5eedcc76ab8fe224f4e2df0e4d274}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a05d5eedcc76ab8fe224f4e2df0e4d274}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_cancel_query_task}{Cancel\+Query\+Task}} {\bfseries start\+Query\+Timer} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} stmt\+To\+Cancel, int timeout)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a3e23446737570171c4323243ce3f9239}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a3e23446737570171c4323243ce3f9239}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_profiler_event_handler}{Profiler\+Event\+Handler}} {\bfseries get\+Event\+Sink} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_ad50d1ecd73b6b2cac60cff6bec83bfbf}\label{interfacecom_1_1mysql_1_1cj_1_1_query_ad50d1ecd73b6b2cac60cff6bec83bfbf}} 
+void {\bfseries set\+Event\+Sink} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_profiler_event_handler}{Profiler\+Event\+Handler}} event\+Sink)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a330ed617e56f62061a3a300128456dbb}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a330ed617e56f62061a3a300128456dbb}} 
+Atomic\+Boolean {\bfseries get\+Statement\+Executing} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a5e5e4f493fd7d0ea5e0ac6d2066af251}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a5e5e4f493fd7d0ea5e0ac6d2066af251}} 
+String {\bfseries get\+Current\+Catalog} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a456b19ab936c8d8ecd49dc23aaf6a833}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a456b19ab936c8d8ecd49dc23aaf6a833}} 
+void {\bfseries set\+Current\+Catalog} (String current\+Catalog)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_af3f72d084a40a8ec805f10b75b8fa0f2}\label{interfacecom_1_1mysql_1_1cj_1_1_query_af3f72d084a40a8ec805f10b75b8fa0f2}} 
+boolean {\bfseries is\+Clear\+Warnings\+Called} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a7ee7a059fdd6b703d9def2d3bd77a52f}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a7ee7a059fdd6b703d9def2d3bd77a52f}} 
+void {\bfseries set\+Clear\+Warnings\+Called} (boolean clear\+Warnings\+Called)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a103f171654654e894600c59f324b651b}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a103f171654654e894600c59f324b651b}} 
+void {\bfseries statement\+Begins} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a2bee69e6ff58bb35af496297e1803c41}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a2bee69e6ff58bb35af496297e1803c41}} 
+void {\bfseries stop\+Query\+Timer} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_cancel_query_task}{Cancel\+Query\+Task}} timeout\+Task, boolean rethrow\+Cancel\+Reason, boolean check\+Cancel\+Timeout)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_af927782ce04741b0b0d3447e9b4f2a08}\label{interfacecom_1_1mysql_1_1cj_1_1_query_af927782ce04741b0b0d3447e9b4f2a08}} 
+\index{com\+::mysql\+::cj\+::\+Query@{com\+::mysql\+::cj\+::\+Query}!get\+Batched\+Args@{get\+Batched\+Args}}
+\index{get\+Batched\+Args@{get\+Batched\+Args}!com\+::mysql\+::cj\+::\+Query@{com\+::mysql\+::cj\+::\+Query}}
+\subsubsection{\texorpdfstring{get\+Batched\+Args()}{getBatchedArgs()}}
+{\footnotesize\ttfamily List$<$Object$>$ com.\+mysql.\+cj.\+Query.\+get\+Batched\+Args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the batched args as added by the add\+Batch method(s). The list is unmodifiable and might contain any combination of String, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_bindings}{Client\+Prepared\+Query\+Bindings}}, or \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bindings}{Server\+Prepared\+Query\+Bindings}} depending on how the parameters were batched.
+
+\begin{DoxyReturn}{Returns}
+an unmodifiable List of batched args 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a19609eb768e13632f7a8eb0fd14cdfd5}{com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_aef6b23f8de5efa38c0334c9245c346bf}{com.\+mysql.\+cj.\+Abstract\+Query}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1_query_a29f450bbae1063765d434e3b89bdd26e}\label{interfacecom_1_1mysql_1_1cj_1_1_query_a29f450bbae1063765d434e3b89bdd26e}} 
+\index{com\+::mysql\+::cj\+::\+Query@{com\+::mysql\+::cj\+::\+Query}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!com\+::mysql\+::cj\+::\+Query@{com\+::mysql\+::cj\+::\+Query}}
+\subsubsection{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+Query.\+get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the query id used when profiling
+
+\begin{DoxyReturn}{Returns}
+id 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a42a752f62a59215845a9faf514893dba}{com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_a68f5ab0f91a8e8343951099d44860d36}{com.\+mysql.\+cj.\+Abstract\+Query}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/Query.\+java\end{DoxyCompactItemize}

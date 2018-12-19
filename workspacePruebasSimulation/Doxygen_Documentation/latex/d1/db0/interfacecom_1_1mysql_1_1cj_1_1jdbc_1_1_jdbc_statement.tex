@@ -1,0 +1,160 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement}{}\section{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement}\index{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement@{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement}}
+
+
+Inherits Statement, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{com.\+mysql.\+cj.\+Query}}.
+
+
+
+Inherited by \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement}{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Prepared\+Statement}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl}{com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a35049f45e6278dc1b824812acbe75556}{enable\+Streaming\+Results}} ()  throws S\+Q\+L\+Exception
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a11240571041f264e6bdde12ee05355a5}{disable\+Streaming\+Results}} ()  throws S\+Q\+L\+Exception
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a89093285d02aa790bb07c7afab7c4140}{set\+Local\+Infile\+Input\+Stream}} (Input\+Stream stream)
+\item 
+Input\+Stream \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a1f5ddb4f3f7ad5c677a27d5350568eac}{get\+Local\+Infile\+Input\+Stream}} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a7cf024a169c62cd9acbd867518a82dfc}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a7cf024a169c62cd9acbd867518a82dfc}} 
+void {\bfseries set\+Ping\+Target} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_ping_target}{Ping\+Target}} ping\+Target)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_acaa2fa9b43fdb8d5020efed654034d53}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_acaa2fa9b43fdb8d5020efed654034d53}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} {\bfseries get\+Exception\+Interceptor} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a5af1b0ade448d8559094223309113243}{remove\+Open\+Result\+Set}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} rs)
+\item 
+int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_ad7367340b87accdd66c01872ebaddbcd}{get\+Open\+Result\+Set\+Count}} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_acf4340a52d236d444fa9584b3f9cc43b}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_acf4340a52d236d444fa9584b3f9cc43b}} 
+void {\bfseries set\+Hold\+Results\+Open\+Over\+Close} (boolean hold\+Results\+Open\+Over\+Close)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a6ebd2f09956035be03e076980dce5528}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a6ebd2f09956035be03e076980dce5528}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} {\bfseries get\+Query} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_af93a548fefe7b195a578434d9e647a7d}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_af93a548fefe7b195a578434d9e647a7d}} 
+static final int {\bfseries M\+A\+X\+\_\+\+R\+O\+WS} = 50000000
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This interface contains methods that are considered the \char`\"{}vendor extension\char`\"{} to the J\+D\+BC A\+PI for My\+S\+QL\textquotesingle{}s implementation of java.\+sql.\+Statement.
+
+For those looking further into the driver implementation, it is not an A\+PI that is used for plugability of implementations inside our driver (which is why there are still references to \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl}{Statement\+Impl}} throughout the code). 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a11240571041f264e6bdde12ee05355a5}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a11240571041f264e6bdde12ee05355a5}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement}!disable\+Streaming\+Results@{disable\+Streaming\+Results}}
+\index{disable\+Streaming\+Results@{disable\+Streaming\+Results}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement}}
+\subsubsection{\texorpdfstring{disable\+Streaming\+Results()}{disableStreamingResults()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement.\+disable\+Streaming\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Resets this statements fetch size and result set type to the values they had before \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a35049f45e6278dc1b824812acbe75556}{enable\+Streaming\+Results()}} was called.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a9e5713d601e7e410e0edb1647b6f9160}{com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a35049f45e6278dc1b824812acbe75556}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a35049f45e6278dc1b824812acbe75556}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement}!enable\+Streaming\+Results@{enable\+Streaming\+Results}}
+\index{enable\+Streaming\+Results@{enable\+Streaming\+Results}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement}}
+\subsubsection{\texorpdfstring{enable\+Streaming\+Results()}{enableStreamingResults()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement.\+enable\+Streaming\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Workaround for containers that \textquotesingle{}check\textquotesingle{} for sane values of Statement.\+set\+Fetch\+Size() so that applications can use the Java variant of libmysql\textquotesingle{}s mysql\+\_\+use\+\_\+result() behavior.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a973ff5045e258a5c3e156887c116c976}{com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a1f5ddb4f3f7ad5c677a27d5350568eac}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a1f5ddb4f3f7ad5c677a27d5350568eac}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement}!get\+Local\+Infile\+Input\+Stream@{get\+Local\+Infile\+Input\+Stream}}
+\index{get\+Local\+Infile\+Input\+Stream@{get\+Local\+Infile\+Input\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement}}
+\subsubsection{\texorpdfstring{get\+Local\+Infile\+Input\+Stream()}{getLocalInfileInputStream()}}
+{\footnotesize\ttfamily Input\+Stream com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement.\+get\+Local\+Infile\+Input\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the Input\+Stream instance that will be used to send data in response to a \char`\"{}\+L\+O\+A\+D D\+A\+T\+A L\+O\+C\+A\+L I\+N\+F\+I\+L\+E\char`\"{} statement.
+
+This method returns N\+U\+LL if no such stream has been set via \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a89093285d02aa790bb07c7afab7c4140}{set\+Local\+Infile\+Input\+Stream()}}.
+
+\begin{DoxyReturn}{Returns}
+input stream 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a52f35ba4029870388a69d493851e726a}{com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_ad7367340b87accdd66c01872ebaddbcd}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_ad7367340b87accdd66c01872ebaddbcd}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement}!get\+Open\+Result\+Set\+Count@{get\+Open\+Result\+Set\+Count}}
+\index{get\+Open\+Result\+Set\+Count@{get\+Open\+Result\+Set\+Count}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement}}
+\subsubsection{\texorpdfstring{get\+Open\+Result\+Set\+Count()}{getOpenResultSetCount()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement.\+get\+Open\+Result\+Set\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the number of open result sets for this statement.
+
+\begin{DoxyReturn}{Returns}
+the number of open result sets for this statement 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_ac4a8718b3d1e416f72dbe33370434b0d}{com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a5af1b0ade448d8559094223309113243}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a5af1b0ade448d8559094223309113243}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement}!remove\+Open\+Result\+Set@{remove\+Open\+Result\+Set}}
+\index{remove\+Open\+Result\+Set@{remove\+Open\+Result\+Set}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement}}
+\subsubsection{\texorpdfstring{remove\+Open\+Result\+Set()}{removeOpenResultSet()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement.\+remove\+Open\+Result\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}}}]{rs }\end{DoxyParamCaption})}
+
+Callback for result set instances to remove them from the Set that tracks them per-\/statement
+
+
+\begin{DoxyParams}{Parameters}
+{\em rs} & result set \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_aaf649eaefb9458d2857697f50ba46245}{com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a89093285d02aa790bb07c7afab7c4140}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement_a89093285d02aa790bb07c7afab7c4140}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement}!set\+Local\+Infile\+Input\+Stream@{set\+Local\+Infile\+Input\+Stream}}
+\index{set\+Local\+Infile\+Input\+Stream@{set\+Local\+Infile\+Input\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Statement}}
+\subsubsection{\texorpdfstring{set\+Local\+Infile\+Input\+Stream()}{setLocalInfileInputStream()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Statement.\+set\+Local\+Infile\+Input\+Stream (\begin{DoxyParamCaption}\item[{Input\+Stream}]{stream }\end{DoxyParamCaption})}
+
+Sets an Input\+Stream instance that will be used to send data to the My\+S\+QL server for a \char`\"{}\+L\+O\+A\+D D\+A\+T\+A L\+O\+C\+A\+L I\+N\+F\+I\+L\+E\char`\"{} statement rather than a File\+Input\+Stream or U\+R\+L\+Input\+Stream that represents the path given as an argument to the statement.
+
+This stream will be read to completion upon execution of a \char`\"{}\+L\+O\+A\+D D\+A\+T\+A L\+O\+C\+A\+L I\+N\+F\+I\+L\+E\char`\"{} statement, and will automatically be closed by the driver, so it needs to be reset before each call to execute$\ast$() that would cause the My\+S\+QL server to request data to fulfill the request for \char`\"{}\+L\+O\+A\+D D\+A\+T\+A L\+O\+C\+A\+L I\+N\+F\+I\+L\+E\char`\"{}.
+
+If this value is set to N\+U\+LL, the driver will revert to using a File\+Input\+Stream or U\+R\+L\+Input\+Stream as required.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & input stream \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_statement_impl_a398ed93fc7171fac680cd867a87cbf23}{com.\+mysql.\+cj.\+jdbc.\+Statement\+Impl}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/jdbc/Jdbc\+Statement.\+java\end{DoxyCompactItemize}

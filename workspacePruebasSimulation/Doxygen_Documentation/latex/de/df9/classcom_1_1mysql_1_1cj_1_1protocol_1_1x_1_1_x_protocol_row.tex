@@ -1,0 +1,59 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row}{}\section{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol\+Row Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row}\index{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol\+Row@{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol\+Row}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{com.\+mysql.\+cj.\+result.\+Row}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row_aa76bb965d7fa7029ee045625aa64db58}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row_aa76bb965d7fa7029ee045625aa64db58}} 
+{\bfseries X\+Protocol\+Row} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} metadata, Row row\+Message)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row_adeaa06e6fee80085ce70902ed77ce16a}{get\+Null}} (int column\+Index)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row_ae6fd328d9a5ac92bdbb910fb9c8c043a}{was\+Null}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row_adeaa06e6fee80085ce70902ed77ce16a}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row_adeaa06e6fee80085ce70902ed77ce16a}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Protocol\+Row@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Protocol\+Row}!get\+Null@{get\+Null}}
+\index{get\+Null@{get\+Null}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Protocol\+Row@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Protocol\+Row}}
+\subsubsection{\texorpdfstring{get\+Null()}{getNull()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol\+Row.\+get\+Null (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption})}
+
+Check whether a column is N\+U\+LL and update the \textquotesingle{}was\+Null\textquotesingle{} status.
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & of the column value (starting at 0) to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the column value is N\+U\+LL, false if not. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_aaf07357d53c30067dfa87183a1e60a18}{com.\+mysql.\+cj.\+result.\+Row}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row_ae6fd328d9a5ac92bdbb910fb9c8c043a}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol_row_ae6fd328d9a5ac92bdbb910fb9c8c043a}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Protocol\+Row@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Protocol\+Row}!was\+Null@{was\+Null}}
+\index{was\+Null@{was\+Null}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Protocol\+Row@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Protocol\+Row}}
+\subsubsection{\texorpdfstring{was\+Null()}{wasNull()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+x.\+X\+Protocol\+Row.\+was\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Was the last value retrieved a N\+U\+LL value?
+
+\begin{DoxyReturn}{Returns}
+true if the last retrieved value was N\+U\+LL. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_a6a915f3dfaf8f9997f705b7762f9c6cb}{com.\+mysql.\+cj.\+result.\+Row}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/x/X\+Protocol\+Row.\+java\end{DoxyCompactItemize}

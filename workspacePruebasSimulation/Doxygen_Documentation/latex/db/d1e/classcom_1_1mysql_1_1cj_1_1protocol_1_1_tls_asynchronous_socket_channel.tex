@@ -1,0 +1,96 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel}{}\section{com.\+mysql.\+cj.\+protocol.\+Tls\+Asynchronous\+Socket\+Channel Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel}\index{com.\+mysql.\+cj.\+protocol.\+Tls\+Asynchronous\+Socket\+Channel@{com.\+mysql.\+cj.\+protocol.\+Tls\+Asynchronous\+Socket\+Channel}}
+
+
+Inherits Asynchronous\+Socket\+Channel, and Completion\+Handler$<$ Integer, Void $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_ad896e5429f1178d46c958d0aa078c3cb}{Tls\+Asynchronous\+Socket\+Channel}} (Asynchronous\+Socket\+Channel in, S\+S\+L\+Engine ssl\+Engine)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_aa604aa99e8f1a19a3b41b1dffbee6b8f}{completed}} (Integer result, Void attachment)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a3bf4e0ebbf784acc346d0f1b021c200f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a3bf4e0ebbf784acc346d0f1b021c200f}} 
+void {\bfseries failed} (Throwable exc, Void attachment)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_aabfaaefdbd511c6d9a50ca1ce463e25e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_aabfaaefdbd511c6d9a50ca1ce463e25e}} 
+void {\bfseries close} ()  throws I\+O\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_ac928f616d85f2bcdfc1d136b4a5c3a66}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_ac928f616d85f2bcdfc1d136b4a5c3a66}} 
+boolean {\bfseries is\+Open} ()
+\item 
+Future$<$ Integer $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a6b74d70823bd434de26eb434a1637b73}{read}} (Byte\+Buffer dest)
+\item 
+Future$<$ Integer $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a993f4bc3833dc8db73f3163954faca33}{write}} (Byte\+Buffer src)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_ad75f2eb33093dce08214761e80de872d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_ad75f2eb33093dce08214761e80de872d}} 
+Set$<$ Socket\+Option$<$?$>$ $>$ {\bfseries supported\+Options} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a0ddea78378a185738bf38b2b44c01b2b}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a0ddea78378a185738bf38b2b44c01b2b}} 
+Asynchronous\+Socket\+Channel {\bfseries bind} (Socket\+Address local)  throws I\+O\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a92a7d0396c75539e42e89868e88626eb}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a92a7d0396c75539e42e89868e88626eb}} 
+Asynchronous\+Socket\+Channel {\bfseries shutdown\+Input} ()  throws I\+O\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_aa101773740e726242024d8642c12cecf}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_aa101773740e726242024d8642c12cecf}} 
+Asynchronous\+Socket\+Channel {\bfseries shutdown\+Output} ()  throws I\+O\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_ad458628a47ddb262e5efcda1de49b4bf}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_ad458628a47ddb262e5efcda1de49b4bf}} 
+Socket\+Address {\bfseries get\+Remote\+Address} ()  throws I\+O\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a07a1023446082150144586cbc90bde66}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a07a1023446082150144586cbc90bde66}} 
+Future$<$ Void $>$ {\bfseries connect} (Socket\+Address remote)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a74341ff74719b5c1c38fc5391ce53082}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a74341ff74719b5c1c38fc5391ce53082}} 
+Socket\+Address {\bfseries get\+Local\+Address} ()  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Filter\+Input\+Stream-\/esque byte channel that decrypts incoming packets. We proxy calls to the read method from the caller. We replace the provided completion handler with our own handler that decrypts the incoming message and an then delegates to the original handler.
+
+Note\+: This implementation does not support attachments for reads. They are not used in Async\+Message\+Reader which this class is in direct support of. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_ad896e5429f1178d46c958d0aa078c3cb}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_ad896e5429f1178d46c958d0aa078c3cb}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel@{com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel}!Tls\+Asynchronous\+Socket\+Channel@{Tls\+Asynchronous\+Socket\+Channel}}
+\index{Tls\+Asynchronous\+Socket\+Channel@{Tls\+Asynchronous\+Socket\+Channel}!com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel@{com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel}}
+\subsubsection{\texorpdfstring{Tls\+Asynchronous\+Socket\+Channel()}{TlsAsynchronousSocketChannel()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+Tls\+Asynchronous\+Socket\+Channel.\+Tls\+Asynchronous\+Socket\+Channel (\begin{DoxyParamCaption}\item[{Asynchronous\+Socket\+Channel}]{in,  }\item[{S\+S\+L\+Engine}]{ssl\+Engine }\end{DoxyParamCaption})}
+
+Create a new decrypting input stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The underlying inputstream to read encrypted data from. \\
+\hline
+{\em ssl\+Engine} & A configured \mbox{\hyperlink{}{S\+S\+L\+Engine}} which has already completed the handshake. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_aa604aa99e8f1a19a3b41b1dffbee6b8f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_aa604aa99e8f1a19a3b41b1dffbee6b8f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel@{com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel}!completed@{completed}}
+\index{completed@{completed}!com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel@{com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel}}
+\subsubsection{\texorpdfstring{completed()}{completed()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Tls\+Asynchronous\+Socket\+Channel.\+completed (\begin{DoxyParamCaption}\item[{Integer}]{result,  }\item[{Void}]{attachment }\end{DoxyParamCaption})}
+
+Completion handler for a read. Prepare the buffer for decryption and continue with \mbox{\hyperlink{}{decrypt\+And\+Dispatch()}}. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a6b74d70823bd434de26eb434a1637b73}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a6b74d70823bd434de26eb434a1637b73}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel@{com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel}!read@{read}}
+\index{read@{read}!com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel@{com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily Future$<$Integer$>$ com.\+mysql.\+cj.\+protocol.\+Tls\+Asynchronous\+Socket\+Channel.\+read (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{dest }\end{DoxyParamCaption})}
+
+Unused. Should not be called. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a993f4bc3833dc8db73f3163954faca33}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_tls_asynchronous_socket_channel_a993f4bc3833dc8db73f3163954faca33}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel@{com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel}!write@{write}}
+\index{write@{write}!com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel@{com\+::mysql\+::cj\+::protocol\+::\+Tls\+Asynchronous\+Socket\+Channel}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily Future$<$Integer$>$ com.\+mysql.\+cj.\+protocol.\+Tls\+Asynchronous\+Socket\+Channel.\+write (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{src }\end{DoxyParamCaption})}
+
+Unused. Should not be called. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/protocol/Tls\+Asynchronous\+Socket\+Channel.\+java\end{DoxyCompactItemize}

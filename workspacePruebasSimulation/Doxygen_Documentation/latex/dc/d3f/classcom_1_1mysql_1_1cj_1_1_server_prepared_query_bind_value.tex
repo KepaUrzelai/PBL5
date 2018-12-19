@@ -1,0 +1,112 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value}{}\section{com.\+mysql.\+cj.\+Server\+Prepared\+Query\+Bind\+Value Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value}\index{com.\+mysql.\+cj.\+Server\+Prepared\+Query\+Bind\+Value@{com.\+mysql.\+cj.\+Server\+Prepared\+Query\+Bind\+Value}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_client_prepared_query_bind_value}{com.\+mysql.\+cj.\+Client\+Prepared\+Query\+Bind\+Value}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_bind_value}{com.\+mysql.\+cj.\+Bind\+Value}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a39d3a4826771b5a98c108bcbfd630d0f}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a39d3a4826771b5a98c108bcbfd630d0f}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value}{Server\+Prepared\+Query\+Bind\+Value}} {\bfseries clone} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_ace2cd66fa5ce7b60d1ddb0c919ec5783}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_ace2cd66fa5ce7b60d1ddb0c919ec5783}} 
+void {\bfseries reset} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a425bdbe24e9b3820488c0f936315229a}{reset\+To\+Type}} (int buf\+Type, long number\+Of\+Executions)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a42362563dfa8fb2023de2d0c6734abff}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a42362563dfa8fb2023de2d0c6734abff}} 
+String {\bfseries to\+String} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a05b09f6b71e326440cac60a365ec6b00}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a05b09f6b71e326440cac60a365ec6b00}} 
+String {\bfseries to\+String} (boolean quote\+If\+Needed)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_aeb5d121e9780688fc03f8edf1404fcd9}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_aeb5d121e9780688fc03f8edf1404fcd9}} 
+long {\bfseries get\+Bound\+Length} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a53324f0183c3d2b6d99247114a32b60c}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a53324f0183c3d2b6d99247114a32b60c}} 
+boolean {\bfseries is\+Set} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a80d68503220f9c21865a8815b7793258}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a80d68503220f9c21865a8815b7793258}} 
+void {\bfseries store\+Binding} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} into\+Packet, boolean is\+Load\+Data\+Query, String character\+Encoding, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} interceptor)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a3ab8f65eaf859a7ff98183e245cae9ac}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a3ab8f65eaf859a7ff98183e245cae9ac}} 
+long {\bfseries bound\+Before\+Execution\+Num} = 0
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_aa87bf817b49e78e7fb23da67b0f34acb}{bind\+Length}}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a4dd8969b65d3c51f18e5ee05f6754aa7}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a4dd8969b65d3c51f18e5ee05f6754aa7}} 
+int {\bfseries buffer\+Type}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_aa49ba26e72e2d7780a5b9f915a4ad1c1}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_aa49ba26e72e2d7780a5b9f915a4ad1c1}} 
+double {\bfseries double\+Binding}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_abd77ba808c6e9ad053f1d0f4046deb07}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_abd77ba808c6e9ad053f1d0f4046deb07}} 
+float {\bfseries float\+Binding}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_ab22e024ff3b3820378df1262c46608b7}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_ab22e024ff3b3820378df1262c46608b7}} 
+boolean {\bfseries is\+Long\+Data}
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a2ee1b71337514a7edd370aab5cdc7003}{long\+Binding}}
+\item 
+Object \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_aa595f7da76ae912b08b89998edc62018}{value}}
+\item 
+Time\+Zone \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_ab5b37e608f04a2ebd03addfcbd53c536}{tz}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a425bdbe24e9b3820488c0f936315229a}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a425bdbe24e9b3820488c0f936315229a}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value@{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value}!reset\+To\+Type@{reset\+To\+Type}}
+\index{reset\+To\+Type@{reset\+To\+Type}!com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value@{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value}}
+\subsubsection{\texorpdfstring{reset\+To\+Type()}{resetToType()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+Server\+Prepared\+Query\+Bind\+Value.\+reset\+To\+Type (\begin{DoxyParamCaption}\item[{int}]{buf\+Type,  }\item[{long}]{number\+Of\+Executions }\end{DoxyParamCaption})}
+
+Reset a bind value to be used for a new value of the given type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf\+Type} & \\
+\hline
+{\em number\+Of\+Executions} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if we need to send/resend types to the server 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_aa87bf817b49e78e7fb23da67b0f34acb}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_aa87bf817b49e78e7fb23da67b0f34acb}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value@{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value}!bind\+Length@{bind\+Length}}
+\index{bind\+Length@{bind\+Length}!com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value@{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value}}
+\subsubsection{\texorpdfstring{bind\+Length}{bindLength}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+Server\+Prepared\+Query\+Bind\+Value.\+bind\+Length}
+
+Default length of data \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a2ee1b71337514a7edd370aab5cdc7003}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_a2ee1b71337514a7edd370aab5cdc7003}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value@{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value}!long\+Binding@{long\+Binding}}
+\index{long\+Binding@{long\+Binding}!com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value@{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value}}
+\subsubsection{\texorpdfstring{long\+Binding}{longBinding}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+Server\+Prepared\+Query\+Bind\+Value.\+long\+Binding}
+
+all integral values are stored here \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_ab5b37e608f04a2ebd03addfcbd53c536}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_ab5b37e608f04a2ebd03addfcbd53c536}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value@{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value}!tz@{tz}}
+\index{tz@{tz}!com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value@{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value}}
+\subsubsection{\texorpdfstring{tz}{tz}}
+{\footnotesize\ttfamily Time\+Zone com.\+mysql.\+cj.\+Server\+Prepared\+Query\+Bind\+Value.\+tz}
+
+The Time\+Zone for date/time types \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_aa595f7da76ae912b08b89998edc62018}\label{classcom_1_1mysql_1_1cj_1_1_server_prepared_query_bind_value_aa595f7da76ae912b08b89998edc62018}} 
+\index{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value@{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value}!value@{value}}
+\index{value@{value}!com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value@{com\+::mysql\+::cj\+::\+Server\+Prepared\+Query\+Bind\+Value}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily Object com.\+mysql.\+cj.\+Server\+Prepared\+Query\+Bind\+Value.\+value}
+
+The value to store 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/Server\+Prepared\+Query\+Bind\+Value.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,138 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory}{}\section{com.\+mysql.\+cj.\+protocol.\+Socket\+Factory Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory}\index{com.\+mysql.\+cj.\+protocol.\+Socket\+Factory@{com.\+mysql.\+cj.\+protocol.\+Socket\+Factory}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_metadata}{com.\+mysql.\+cj.\+protocol.\+Socket\+Metadata}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_async_socket_factory}{com.\+mysql.\+cj.\+protocol.\+Async\+Socket\+Factory}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_named_pipe_socket_factory}{com.\+mysql.\+cj.\+protocol.\+Named\+Pipe\+Socket\+Factory}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory}{com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+$<$ T extends Closeable $>$ T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_a5c3f8f7b05e5ca6bdab1701cd5c24f83}{connect}} (String host, int port\+Number, Properties props, int login\+Timeout)  throws I\+O\+Exception
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_afc456b268ae05cf284598c3acc33829f}{before\+Handshake}} ()  throws I\+O\+Exception 
+\item 
+$<$ T extends Closeable $>$ T \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_ab1a527a05b7f6bce77ecc9fb1933609b}{perform\+Tls\+Handshake}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}} socket\+Connection, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} server\+Session)  throws I\+O\+Exception
+\item 
+default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_acfbef33f9924346f5fbfc476bf0667d9}{after\+Handshake}} ()  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_a1875d288dd7f0366b75714541dae162d}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_a1875d288dd7f0366b75714541dae162d}} 
+static final String {\bfseries T\+C\+P\+\_\+\+K\+E\+E\+P\+\_\+\+A\+L\+I\+V\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+A\+L\+UE} = \char`\"{}true\char`\"{}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_a676028cc91743d24b85ff9feba56ebf0}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_a676028cc91743d24b85ff9feba56ebf0}} 
+static final String {\bfseries T\+C\+P\+\_\+\+R\+C\+V\+\_\+\+B\+U\+F\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+A\+L\+UE} = \char`\"{}0\char`\"{}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_a1e431d84057266c2ce6dd98017457b45}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_a1e431d84057266c2ce6dd98017457b45}} 
+static final String {\bfseries T\+C\+P\+\_\+\+S\+N\+D\+\_\+\+B\+U\+F\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+A\+L\+UE} = \char`\"{}0\char`\"{}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_abc8024d17cc453d316ba98ccccd75975}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_abc8024d17cc453d316ba98ccccd75975}} 
+static final String {\bfseries T\+C\+P\+\_\+\+T\+R\+A\+F\+F\+I\+C\+\_\+\+C\+L\+A\+S\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+A\+L\+UE} = \char`\"{}0\char`\"{}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_ade8cf2685f0f0388368799db4b8c7167}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_ade8cf2685f0f0388368799db4b8c7167}} 
+static final String {\bfseries T\+C\+P\+\_\+\+N\+O\+\_\+\+D\+E\+L\+A\+Y\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+A\+L\+UE} = \char`\"{}true\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface to allow pluggable socket creation in the driver 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_acfbef33f9924346f5fbfc476bf0667d9}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_acfbef33f9924346f5fbfc476bf0667d9}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory}!after\+Handshake@{after\+Handshake}}
+\index{after\+Handshake@{after\+Handshake}!com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{after\+Handshake()}{afterHandshake()}}
+{\footnotesize\ttfamily default void com.\+mysql.\+cj.\+protocol.\+Socket\+Factory.\+after\+Handshake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Called by the driver after completing the My\+S\+QL protocol handshake and reading the results of the authentication.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an I/O error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a3d55f3b14d5d46d75ab93c88a339a72a}{com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_socket_factory_wrapper_ab7dde0fd740255950d83759b418fd2ff}{com.\+mysql.\+jdbc.\+Socket\+Factory\+Wrapper}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_afc456b268ae05cf284598c3acc33829f}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_afc456b268ae05cf284598c3acc33829f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory}!before\+Handshake@{before\+Handshake}}
+\index{before\+Handshake@{before\+Handshake}!com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{before\+Handshake()}{beforeHandshake()}}
+{\footnotesize\ttfamily default void com.\+mysql.\+cj.\+protocol.\+Socket\+Factory.\+before\+Handshake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Called by the driver before issuing the My\+S\+QL protocol handshake.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an I/O error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory_a4e13a5c155c986e139058ab3933017fe}{com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_socket_factory_wrapper_a6c39038cbdf685cde6e0ce84cecde918}{com.\+mysql.\+jdbc.\+Socket\+Factory\+Wrapper}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_a5c3f8f7b05e5ca6bdab1701cd5c24f83}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_a5c3f8f7b05e5ca6bdab1701cd5c24f83}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory}!connect@{connect}}
+\index{connect@{connect}!com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily $<$T extends Closeable$>$ T com.\+mysql.\+cj.\+protocol.\+Socket\+Factory.\+connect (\begin{DoxyParamCaption}\item[{String}]{host,  }\item[{int}]{port\+Number,  }\item[{Properties}]{props,  }\item[{int}]{login\+Timeout }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Creates a new socket or channel using the given properties. Properties are parsed by the driver from the U\+RL. All properties other than sensitive ones (user and password) are passed to this method. The driver will instantiate the socket factory with the class name given in the property "socket\+Factory", where the standard is {\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_standard_socket_factory}{com.\+mysql.\+cj.\+protocol.\+Standard\+Socket\+Factory}}} Implementing classes are responsible for handling synchronization of this method (if needed).
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & the hostname passed in the U\+RL. It will be a single hostname, as the driver parses multi-\/hosts (for failover) and calls this method for each host connection attempt.\\
+\hline
+{\em port\+Number} & the port number to connect to (if required).\\
+\hline
+{\em props} & properties passed to the driver via the U\+RL and/or properties instance. \\
+\hline
+{\em login\+Timeout} & login timeout in milliseconds \\
+\hline
+{\em $<$\+T$>$} & result type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a socket connected to the given host 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an I/O error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_ab1a527a05b7f6bce77ecc9fb1933609b}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_factory_ab1a527a05b7f6bce77ecc9fb1933609b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory}!perform\+Tls\+Handshake@{perform\+Tls\+Handshake}}
+\index{perform\+Tls\+Handshake@{perform\+Tls\+Handshake}!com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory@{com\+::mysql\+::cj\+::protocol\+::\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{perform\+Tls\+Handshake()}{performTlsHandshake()}}
+{\footnotesize\ttfamily $<$T extends Closeable$>$ T com.\+mysql.\+cj.\+protocol.\+Socket\+Factory.\+perform\+Tls\+Handshake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}}}]{socket\+Connection,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}}}]{server\+Session }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+If required, called by the driver during My\+S\+QL protocol handshake to transform original socket to S\+SL socket and perform T\+LS handshake.
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket\+Connection} & current \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}} \\
+\hline
+{\em server\+Session} & current \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} \\
+\hline
+{\em $<$\+T$>$} & result type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+SL socket 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an I/O error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/Socket\+Factory.\+java\end{DoxyCompactItemize}

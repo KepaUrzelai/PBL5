@@ -1,0 +1,351 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl}\index{com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl@{com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{com.\+mysql.\+cj.\+xdevapi.\+Schema}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_ab09abc096390ec7f763d045636551b7f}{get\+Session}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_aed68ad42cc9c13041185849537c8b791}{get\+Schema}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_aab6a1ee96f0abeacc922a36da272e50d}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_1_1_db_object_status}{Db\+Object\+Status}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a587cff9708d8d6787ad6012fd0353d5f}{exists\+In\+Database}} ()
+\item 
+List$<$ Collection $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a67c63b711c361bf306149d53d1149e61}{get\+Collections}} ()
+\item 
+List$<$ Collection $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a9a4dc1d12f1d8240c4b6bc114565b191}{get\+Collections}} (String pattern)
+\item 
+List$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a437e825fdc3d104e630dda918ccbfa72}{get\+Tables}} ()
+\item 
+List$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_ae9ce3609e108dc05f1e4ca978d490b81}{get\+Tables}} (String pattern)
+\item 
+Collection \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_abcdaa1e922b045e78ed4748279042ed9}{get\+Collection}} (String collection\+Name)
+\item 
+Collection \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a465ae06f3ba56080cbc7405ff428f01b}{get\+Collection}} (String collection\+Name, boolean require\+Exists)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a8382999acc577f81226c60bfa015a8a9}{get\+Collection\+As\+Table}} (String collection\+Name)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a47c591b1796cbcb04985088ad3cbaad7}{get\+Table}} (String table\+Name)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a6bef049505f3d49b68e56fb2169dc165}{get\+Table}} (String table\+Name, boolean require\+Exists)
+\item 
+Collection \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a36cc97bce57ffb6124bc7f25ee6ed60e}{create\+Collection}} (String collection\+Name)
+\item 
+Collection \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a723a878ef263bfeec2efcf434849da84}{create\+Collection}} (String collection\+Name, boolean reuse\+Existing\+Object)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_af8aa5d4ff38f013efaa8b38955b6327d}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_af8aa5d4ff38f013efaa8b38955b6327d}} 
+boolean {\bfseries equals} (Object other)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_ac5823bc78000f3e7241045caf9122578}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_ac5823bc78000f3e7241045caf9122578}} 
+int {\bfseries hash\+Code} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a75d95d9f6bc42e795afc262f4acb7664}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a75d95d9f6bc42e795afc262f4acb7664}} 
+String {\bfseries to\+String} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a8420b65714f543e4bd4a113edeadeb14}{drop\+Collection}} (String collection\+Name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a36cc97bce57ffb6124bc7f25ee6ed60e}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a36cc97bce57ffb6124bc7f25ee6ed60e}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!create\+Collection@{create\+Collection}}
+\index{create\+Collection@{create\+Collection}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{create\+Collection()}{createCollection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Collection com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+create\+Collection (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+Create a new collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & collection name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection}{Collection}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_a40a19a9c1a57c92b4197c545d21f11ea}{com.\+mysql.\+cj.\+xdevapi.\+Schema}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a723a878ef263bfeec2efcf434849da84}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a723a878ef263bfeec2efcf434849da84}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!create\+Collection@{create\+Collection}}
+\index{create\+Collection@{create\+Collection}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{create\+Collection()}{createCollection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Collection com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+create\+Collection (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{boolean}]{reuse\+Existing\+Object }\end{DoxyParamCaption})}
+
+Create a new collection if it does not already exist on the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & collection name \\
+\hline
+{\em reuse\+Existing\+Object} & true if allowed to reuse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection}{Collection}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_a81c42de36893c03f73f130ec5d7080f5}{com.\+mysql.\+cj.\+xdevapi.\+Schema}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a8420b65714f543e4bd4a113edeadeb14}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a8420b65714f543e4bd4a113edeadeb14}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!drop\+Collection@{drop\+Collection}}
+\index{drop\+Collection@{drop\+Collection}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{drop\+Collection()}{dropCollection()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+drop\+Collection (\begin{DoxyParamCaption}\item[{String}]{collection\+Name }\end{DoxyParamCaption})}
+
+Drop the collection from this schema.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\+Name} & name of collection to drop \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_aed2eef7be93416d42ed6b1d6c86bccdd}{com.\+mysql.\+cj.\+xdevapi.\+Schema}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a587cff9708d8d6787ad6012fd0353d5f}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a587cff9708d8d6787ad6012fd0353d5f}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!exists\+In\+Database@{exists\+In\+Database}}
+\index{exists\+In\+Database@{exists\+In\+Database}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{exists\+In\+Database()}{existsInDatabase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_1_1_db_object_status}{Db\+Object\+Status}} com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+exists\+In\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query}{Query}} the existence of this database object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{}{Db\+Object\+Status}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_ab4215a82b546a9e1dcb344c339765d7a}{com.\+mysql.\+cj.\+xdevapi.\+Database\+Object}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_abcdaa1e922b045e78ed4748279042ed9}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_abcdaa1e922b045e78ed4748279042ed9}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!get\+Collection@{get\+Collection}}
+\index{get\+Collection@{get\+Collection}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{get\+Collection()}{getCollection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Collection com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+get\+Collection (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+Retrieve a reference to the named collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & collection name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection}{Collection}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_aeb2f782db94fd4a068b1c1e6b9f3f20e}{com.\+mysql.\+cj.\+xdevapi.\+Schema}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a465ae06f3ba56080cbc7405ff428f01b}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a465ae06f3ba56080cbc7405ff428f01b}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!get\+Collection@{get\+Collection}}
+\index{get\+Collection@{get\+Collection}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{get\+Collection()}{getCollection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Collection com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+get\+Collection (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{boolean}]{require\+Exists }\end{DoxyParamCaption})}
+
+Retrieve a reference to the named collection hinting that an exception should be thrown if the collection is not known to the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & collection name \\
+\hline
+{\em require\+Exists} & true if required to exist \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection}{Collection}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_a6c7616f0106d2b05c75ed9e58238f0cf}{com.\+mysql.\+cj.\+xdevapi.\+Schema}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a8382999acc577f81226c60bfa015a8a9}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a8382999acc577f81226c60bfa015a8a9}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!get\+Collection\+As\+Table@{get\+Collection\+As\+Table}}
+\index{get\+Collection\+As\+Table@{get\+Collection\+As\+Table}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{get\+Collection\+As\+Table()}{getCollectionAsTable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}} com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+get\+Collection\+As\+Table (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+Retrieve a reference to the named collection using the table A\+PI.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & collection name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_adaa1920ec971a87acc1173ba0c56f92e}{com.\+mysql.\+cj.\+xdevapi.\+Schema}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a67c63b711c361bf306149d53d1149e61}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a67c63b711c361bf306149d53d1149e61}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!get\+Collections@{get\+Collections}}
+\index{get\+Collections@{get\+Collections}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{get\+Collections()}{getCollections()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily List$<$Collection$>$ com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+get\+Collections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the set of collections existing in this schema.
+
+\begin{DoxyReturn}{Returns}
+list of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection}{Collection}} objects 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_a644344cb0eaa8ea239f7b82443c487ec}{com.\+mysql.\+cj.\+xdevapi.\+Schema}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a9a4dc1d12f1d8240c4b6bc114565b191}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a9a4dc1d12f1d8240c4b6bc114565b191}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!get\+Collections@{get\+Collections}}
+\index{get\+Collections@{get\+Collections}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{get\+Collections()}{getCollections()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily List$<$Collection$>$ com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+get\+Collections (\begin{DoxyParamCaption}\item[{String}]{pattern }\end{DoxyParamCaption})}
+
+Retrieve the set of collections existing in this schema and matching the given pattern.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern} & match pattern \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_collection}{Collection}} objects 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_ac569085a3e372ef1db5f65f3a9e644ce}{com.\+mysql.\+cj.\+xdevapi.\+Schema}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_aab6a1ee96f0abeacc922a36da272e50d}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_aab6a1ee96f0abeacc922a36da272e50d}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the name of the database object represented by the Java object.
+
+\begin{DoxyReturn}{Returns}
+name 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_a482b3ae6f40ec6332bb7d8d8d02d1dda}{com.\+mysql.\+cj.\+xdevapi.\+Database\+Object}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_aed68ad42cc9c13041185849537c8b791}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_aed68ad42cc9c13041185849537c8b791}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!get\+Schema@{get\+Schema}}
+\index{get\+Schema@{get\+Schema}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{get\+Schema()}{getSchema()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+get\+Schema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the schema owning this database object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema}{Schema}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_a2d3d1b87950c42ecbe557248c51c954b}{com.\+mysql.\+cj.\+xdevapi.\+Database\+Object}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_ab09abc096390ec7f763d045636551b7f}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_ab09abc096390ec7f763d045636551b7f}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!get\+Session@{get\+Session}}
+\index{get\+Session@{get\+Session}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{get\+Session()}{getSession()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+get\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the session owning the given schema object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_session}{Session}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_database_object_a0bebc7132108a9cfcffed4a599b2dad5}{com.\+mysql.\+cj.\+xdevapi.\+Database\+Object}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a47c591b1796cbcb04985088ad3cbaad7}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a47c591b1796cbcb04985088ad3cbaad7}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!get\+Table@{get\+Table}}
+\index{get\+Table@{get\+Table}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{get\+Table()}{getTable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}} com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+get\+Table (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+Retrieve a reference to the named table.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & table name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_a27cf7ad5981483a0e44b6ea795b3e428}{com.\+mysql.\+cj.\+xdevapi.\+Schema}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a6bef049505f3d49b68e56fb2169dc165}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a6bef049505f3d49b68e56fb2169dc165}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!get\+Table@{get\+Table}}
+\index{get\+Table@{get\+Table}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{get\+Table()}{getTable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}} com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+get\+Table (\begin{DoxyParamCaption}\item[{String}]{table\+Name,  }\item[{boolean}]{require\+Exists }\end{DoxyParamCaption})}
+
+Retrieve a reference to the named table hinting that an exception should be thrown if the collection is not known to the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Name} & table name \\
+\hline
+{\em require\+Exists} & true if required to exist \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_a555b3596a60f576785190870c67f8ef5}{com.\+mysql.\+cj.\+xdevapi.\+Schema}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a437e825fdc3d104e630dda918ccbfa72}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_a437e825fdc3d104e630dda918ccbfa72}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!get\+Tables@{get\+Tables}}
+\index{get\+Tables@{get\+Tables}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{get\+Tables()}{getTables()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}}$>$ com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+get\+Tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the set of tables existing in this schema.
+
+\begin{DoxyReturn}{Returns}
+list of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}} objects 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_a33149bd057a049634d070e97848b8ca1}{com.\+mysql.\+cj.\+xdevapi.\+Schema}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_ae9ce3609e108dc05f1e4ca978d490b81}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_impl_ae9ce3609e108dc05f1e4ca978d490b81}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}!get\+Tables@{get\+Tables}}
+\index{get\+Tables@{get\+Tables}!com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Schema\+Impl}}
+\subsubsection{\texorpdfstring{get\+Tables()}{getTables()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}}$>$ com.\+mysql.\+cj.\+xdevapi.\+Schema\+Impl.\+get\+Tables (\begin{DoxyParamCaption}\item[{String}]{pattern }\end{DoxyParamCaption})}
+
+Retrieve the set of tables existing in this schema and matching the given pattern.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern} & match pattern \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_table}{Table}} objects 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_schema_a8d508f1db090e9724dd20ed9375a9b53}{com.\+mysql.\+cj.\+xdevapi.\+Schema}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/Schema\+Impl.\+java\end{DoxyCompactItemize}

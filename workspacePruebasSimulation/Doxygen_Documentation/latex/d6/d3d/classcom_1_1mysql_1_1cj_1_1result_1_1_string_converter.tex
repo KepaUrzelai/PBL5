@@ -1,0 +1,50 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter}{}\section{com.\+mysql.\+cj.\+result.\+String\+Converter$<$ T $>$ Class Template Reference}
+\label{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter}\index{com.\+mysql.\+cj.\+result.\+String\+Converter$<$ T $>$@{com.\+mysql.\+cj.\+result.\+String\+Converter$<$ T $>$}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_base_decorating_value_factory}{com.\+mysql.\+cj.\+result.\+Base\+Decorating\+Value\+Factory$<$ T $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter_aa40363fd36257ba577e49dfc3d9b26d4}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter_aa40363fd36257ba577e49dfc3d9b26d4}} 
+{\bfseries String\+Converter} (String encoding, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory}{Value\+Factory}}$<$ T $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_base_decorating_value_factory_a64c2c62bd9906ec3af7fc62e58bf34b3}{target\+Vf}})
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter_ab43f945452ba741f823d67b68b3bade8}{set\+Empty\+Strings\+Convert\+To\+Zero}} (boolean val)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter_a5760eb57f0d3b27722734bd63e741507}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter_a5760eb57f0d3b27722734bd63e741507}} 
+void {\bfseries set\+Event\+Sink} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_profiler_event_handler}{Profiler\+Event\+Handler}} event\+Sink)
+\item 
+T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter_a62092d8d4f0919ee0c63e7b4caf29d5a}{create\+From\+Bytes}} (byte\mbox{[}$\,$\mbox{]} orig\+Bytes, int offset, int length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter_a328be706c2bb9de113338b42cb20d8c6}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter_a328be706c2bb9de113338b42cb20d8c6}} 
+T {\bfseries create\+From\+Bit} (byte\mbox{[}$\,$\mbox{]} bytes, int offset, int length)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A string converter facilitates \char`\"{}indirect\char`\"{} conversions of values from strings to other non-\/string types. A byte array is interpreted as a string in the given character set and then inspected to guess that the actual type may be. After this, it is decoded as that type and sent to the value factory. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter_a62092d8d4f0919ee0c63e7b4caf29d5a}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter_a62092d8d4f0919ee0c63e7b4caf29d5a}} 
+\index{com\+::mysql\+::cj\+::result\+::\+String\+Converter@{com\+::mysql\+::cj\+::result\+::\+String\+Converter}!create\+From\+Bytes@{create\+From\+Bytes}}
+\index{create\+From\+Bytes@{create\+From\+Bytes}!com\+::mysql\+::cj\+::result\+::\+String\+Converter@{com\+::mysql\+::cj\+::result\+::\+String\+Converter}}
+\subsubsection{\texorpdfstring{create\+From\+Bytes()}{createFromBytes()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter}{com.\+mysql.\+cj.\+result.\+String\+Converter}}$<$ T $>$.create\+From\+Bytes (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{orig\+Bytes,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+Implement the logic for indirect conversions. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_value_factory}{com.\+mysql.\+cj.\+result.\+Value\+Factory$<$ T $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter_ab43f945452ba741f823d67b68b3bade8}\label{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter_ab43f945452ba741f823d67b68b3bade8}} 
+\index{com\+::mysql\+::cj\+::result\+::\+String\+Converter@{com\+::mysql\+::cj\+::result\+::\+String\+Converter}!set\+Empty\+Strings\+Convert\+To\+Zero@{set\+Empty\+Strings\+Convert\+To\+Zero}}
+\index{set\+Empty\+Strings\+Convert\+To\+Zero@{set\+Empty\+Strings\+Convert\+To\+Zero}!com\+::mysql\+::cj\+::result\+::\+String\+Converter@{com\+::mysql\+::cj\+::result\+::\+String\+Converter}}
+\subsubsection{\texorpdfstring{set\+Empty\+Strings\+Convert\+To\+Zero()}{setEmptyStringsConvertToZero()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_string_converter}{com.\+mysql.\+cj.\+result.\+String\+Converter}}$<$ T $>$.set\+Empty\+Strings\+Convert\+To\+Zero (\begin{DoxyParamCaption}\item[{boolean}]{val }\end{DoxyParamCaption})}
+
+Should empty strings be treated as \char`\"{}0\char`\"{}? 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/result/String\+Converter.\+java\end{DoxyCompactItemize}

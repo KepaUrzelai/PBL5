@@ -1,0 +1,51 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_mysql_data_truncation}{}\section{com.\+mysql.\+cj.\+jdbc.\+exceptions.\+Mysql\+Data\+Truncation Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_mysql_data_truncation}\index{com.\+mysql.\+cj.\+jdbc.\+exceptions.\+Mysql\+Data\+Truncation@{com.\+mysql.\+cj.\+jdbc.\+exceptions.\+Mysql\+Data\+Truncation}}
+
+
+Inherits Data\+Truncation.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_mysql_data_truncation_afc998a9007a27ce2636aae9668d573c4}{Mysql\+Data\+Truncation}} (String message, int index, boolean parameter, boolean read, int data\+Size, int transfer\+Size, int vendor\+Error\+Code)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_mysql_data_truncation_a373827e2e03f041bfd9ee0d882b07b60}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_mysql_data_truncation_a373827e2e03f041bfd9ee0d882b07b60}} 
+int {\bfseries get\+Error\+Code} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_mysql_data_truncation_a9879279a524e5c4f03fba46107925891}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_mysql_data_truncation_a9879279a524e5c4f03fba46107925891}} 
+String {\bfseries get\+Message} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+My\+S\+QL wrapper for Data\+Truncation until the server can support sending all needed information. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_mysql_data_truncation_afc998a9007a27ce2636aae9668d573c4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_mysql_data_truncation_afc998a9007a27ce2636aae9668d573c4}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Mysql\+Data\+Truncation@{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Mysql\+Data\+Truncation}!Mysql\+Data\+Truncation@{Mysql\+Data\+Truncation}}
+\index{Mysql\+Data\+Truncation@{Mysql\+Data\+Truncation}!com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Mysql\+Data\+Truncation@{com\+::mysql\+::cj\+::jdbc\+::exceptions\+::\+Mysql\+Data\+Truncation}}
+\subsubsection{\texorpdfstring{Mysql\+Data\+Truncation()}{MysqlDataTruncation()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+jdbc.\+exceptions.\+Mysql\+Data\+Truncation.\+Mysql\+Data\+Truncation (\begin{DoxyParamCaption}\item[{String}]{message,  }\item[{int}]{index,  }\item[{boolean}]{parameter,  }\item[{boolean}]{read,  }\item[{int}]{data\+Size,  }\item[{int}]{transfer\+Size,  }\item[{int}]{vendor\+Error\+Code }\end{DoxyParamCaption})}
+
+Creates a new \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1exceptions_1_1_mysql_data_truncation}{Mysql\+Data\+Truncation}} exception/warning.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & the message from the server \\
+\hline
+{\em index} & of column or parameter \\
+\hline
+{\em parameter} & was a parameter? \\
+\hline
+{\em read} & was truncated on read? \\
+\hline
+{\em data\+Size} & size requested \\
+\hline
+{\em transfer\+Size} & size actually used \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/exceptions/Mysql\+Data\+Truncation.\+java\end{DoxyCompactItemize}

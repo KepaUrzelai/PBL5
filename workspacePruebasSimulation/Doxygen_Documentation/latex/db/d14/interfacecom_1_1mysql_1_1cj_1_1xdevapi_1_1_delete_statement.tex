@@ -1,0 +1,78 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Delete\+Statement Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement}\index{com.\+mysql.\+cj.\+xdevapi.\+Delete\+Statement@{com.\+mysql.\+cj.\+xdevapi.\+Delete\+Statement}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_statement}{com.\+mysql.\+cj.\+xdevapi.\+Statement$<$ Delete\+Statement, Result $>$}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement_impl}{com.\+mysql.\+cj.\+xdevapi.\+Delete\+Statement\+Impl}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement}{Delete\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement_ab8e3a9ff4710cb66ffa5aba7740700af}{where}} (String search\+Condition)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement}{Delete\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement_aa2f42b5eaf29813d63a78cc6a5f553a7}{order\+By}} (String... sort\+Fields)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement}{Delete\+Statement}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement_a3eab5fbbfbfd3e97b9e6705d44721f19}{limit}} (long number\+Of\+Rows)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A statement to delete rows from a table. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement_a3eab5fbbfbfd3e97b9e6705d44721f19}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement_a3eab5fbbfbfd3e97b9e6705d44721f19}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Delete\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Delete\+Statement}!limit@{limit}}
+\index{limit@{limit}!com\+::mysql\+::cj\+::xdevapi\+::\+Delete\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Delete\+Statement}}
+\subsubsection{\texorpdfstring{limit()}{limit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement}{Delete\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Delete\+Statement.\+limit (\begin{DoxyParamCaption}\item[{long}]{number\+Of\+Rows }\end{DoxyParamCaption})}
+
+Add/replace the row limit for the deletion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Rows} & limit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement}{Delete\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement_aa2f42b5eaf29813d63a78cc6a5f553a7}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement_aa2f42b5eaf29813d63a78cc6a5f553a7}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Delete\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Delete\+Statement}!order\+By@{order\+By}}
+\index{order\+By@{order\+By}!com\+::mysql\+::cj\+::xdevapi\+::\+Delete\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Delete\+Statement}}
+\subsubsection{\texorpdfstring{order\+By()}{orderBy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement}{Delete\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Delete\+Statement.\+order\+By (\begin{DoxyParamCaption}\item[{String...}]{sort\+Fields }\end{DoxyParamCaption})}
+
+Add/replace the order by specification for the deletion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sort\+Fields} & sort expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement}{Delete\+Statement}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement_ab8e3a9ff4710cb66ffa5aba7740700af}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement_ab8e3a9ff4710cb66ffa5aba7740700af}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Delete\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Delete\+Statement}!where@{where}}
+\index{where@{where}!com\+::mysql\+::cj\+::xdevapi\+::\+Delete\+Statement@{com\+::mysql\+::cj\+::xdevapi\+::\+Delete\+Statement}}
+\subsubsection{\texorpdfstring{where()}{where()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement}{Delete\+Statement}} com.\+mysql.\+cj.\+xdevapi.\+Delete\+Statement.\+where (\begin{DoxyParamCaption}\item[{String}]{search\+Condition }\end{DoxyParamCaption})}
+
+Add/replace the filter for the deletion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+Condition} & condition expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_delete_statement}{Delete\+Statement}} 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/Delete\+Statement.\+java\end{DoxyCompactItemize}

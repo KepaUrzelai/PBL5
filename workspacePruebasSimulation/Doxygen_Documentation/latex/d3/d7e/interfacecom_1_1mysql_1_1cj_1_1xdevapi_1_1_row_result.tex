@@ -1,0 +1,75 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Row\+Result Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result}\index{com.\+mysql.\+cj.\+xdevapi.\+Row\+Result@{com.\+mysql.\+cj.\+xdevapi.\+Row\+Result}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_fetch_result}{com.\+mysql.\+cj.\+xdevapi.\+Fetch\+Result$<$ Row $>$}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_impl}{com.\+mysql.\+cj.\+xdevapi.\+Row\+Result\+Impl}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_aaf66f729c7c99e7ceb90ea49c4631ef0}{get\+Column\+Count}} ()
+\item 
+List$<$ Column $>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_a4bd495dadd5549516c0f32366f8d77c7}{get\+Columns}} ()
+\item 
+List$<$ String $>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_acbc412c859e4618f3b924c602a82f541}{get\+Column\+Names}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A result exposing a set of rows from a S\+E\+L\+E\+CT query. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_aaf66f729c7c99e7ceb90ea49c4631ef0}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_aaf66f729c7c99e7ceb90ea49c4631ef0}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Row\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Row\+Result}!get\+Column\+Count@{get\+Column\+Count}}
+\index{get\+Column\+Count@{get\+Column\+Count}!com\+::mysql\+::cj\+::xdevapi\+::\+Row\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Row\+Result}}
+\subsubsection{\texorpdfstring{get\+Column\+Count()}{getColumnCount()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+xdevapi.\+Row\+Result.\+get\+Column\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Count of columns.
+
+\begin{DoxyReturn}{Returns}
+count 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a79fa6d1b15f715dc2d451ed8ec22493f}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_update_result_a5b8a4cf3a36c9488feae9830562f4928}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Update\+Result}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_impl_a0daf18aecc605cbeadee206dc119906f}{com.\+mysql.\+cj.\+xdevapi.\+Row\+Result\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_acbc412c859e4618f3b924c602a82f541}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_acbc412c859e4618f3b924c602a82f541}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Row\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Row\+Result}!get\+Column\+Names@{get\+Column\+Names}}
+\index{get\+Column\+Names@{get\+Column\+Names}!com\+::mysql\+::cj\+::xdevapi\+::\+Row\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Row\+Result}}
+\subsubsection{\texorpdfstring{get\+Column\+Names()}{getColumnNames()}}
+{\footnotesize\ttfamily List$<$String$>$ com.\+mysql.\+cj.\+xdevapi.\+Row\+Result.\+get\+Column\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Names of columns.
+
+\begin{DoxyReturn}{Returns}
+list of result column names 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a9f539396fee9a85bbebbb39d803c9eea}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_update_result_a46b0f0ea62ed9ed071f14eee6a4ff743}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Update\+Result}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_impl_a64fc6e525116d24a678c4538f4f072ae}{com.\+mysql.\+cj.\+xdevapi.\+Row\+Result\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_a4bd495dadd5549516c0f32366f8d77c7}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_a4bd495dadd5549516c0f32366f8d77c7}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Row\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Row\+Result}!get\+Columns@{get\+Columns}}
+\index{get\+Columns@{get\+Columns}!com\+::mysql\+::cj\+::xdevapi\+::\+Row\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Row\+Result}}
+\subsubsection{\texorpdfstring{get\+Columns()}{getColumns()}}
+{\footnotesize\ttfamily List$<$Column$>$ com.\+mysql.\+cj.\+xdevapi.\+Row\+Result.\+get\+Columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metadata.
+
+\begin{DoxyReturn}{Returns}
+list of result \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_column}{Column}} objects 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a284f0953dcca6644eb9eff7749e32f9b}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_update_result_a229524cce1f3a1157e52d8f3d7b9dfc1}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Update\+Result}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_row_result_impl_a080528edc647e5ab131333d69042b167}{com.\+mysql.\+cj.\+xdevapi.\+Row\+Result\+Impl}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/Row\+Result.\+java\end{DoxyCompactItemize}

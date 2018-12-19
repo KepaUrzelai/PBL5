@@ -1,0 +1,851 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{}\section{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}\index{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection@{com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection}}
+
+
+Inherits Connection, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_mysql_connection}{com.\+mysql.\+cj.\+Mysql\+Connection}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_transaction_event_handler}{com.\+mysql.\+cj.\+Transaction\+Event\+Handler}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_connection}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+Connection}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_connection}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+Connection}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a8d7309165f9280946c8ac7a4fb8a22c7}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a8d7309165f9280946c8ac7a4fb8a22c7}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_property_set}{Jdbc\+Property\+Set}} {\bfseries get\+Property\+Set} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aed0496e0f2c1236f2784f92b45a482ef}{change\+User}} (String user\+Name, String new\+Password)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a0594dd85b684e0141c3260245cbb28e0}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a0594dd85b684e0141c3260245cbb28e0}} 
+void {\bfseries clear\+Has\+Tried\+Master} ()
+\item 
+java.\+sql.\+Prepared\+Statement \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a62db1ccf7a070833775481acb5e9e359}{client\+Prepare\+Statement}} (String sql)  throws S\+Q\+L\+Exception
+\item 
+java.\+sql.\+Prepared\+Statement \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a1d01e4f2fd60084794906cc9a1c24c24}{client\+Prepare\+Statement}} (String sql, int auto\+Gen\+Key\+Index)  throws S\+Q\+L\+Exception
+\item 
+java.\+sql.\+Prepared\+Statement \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a55c0d38bcf8ca54ed272a0a1bbbf7e4c}{client\+Prepare\+Statement}} (String sql, int result\+Set\+Type, int result\+Set\+Concurrency)  throws S\+Q\+L\+Exception
+\item 
+java.\+sql.\+Prepared\+Statement \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a11927338ef48e164fdd8444b6b273162}{client\+Prepare\+Statement}} (String sql, int\mbox{[}$\,$\mbox{]} auto\+Gen\+Key\+Indexes)  throws S\+Q\+L\+Exception
+\item 
+java.\+sql.\+Prepared\+Statement \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a802cf843e62a0feac95a16c7750a35c3}{client\+Prepare\+Statement}} (String sql, int result\+Set\+Type, int result\+Set\+Concurrency, int result\+Set\+Holdability)  throws S\+Q\+L\+Exception
+\item 
+java.\+sql.\+Prepared\+Statement \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a46a218367bb0a386a18caed711142d7a}{client\+Prepare\+Statement}} (String sql, String\mbox{[}$\,$\mbox{]} auto\+Gen\+Key\+Col\+Names)  throws S\+Q\+L\+Exception
+\item 
+int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aea218879f6bae7ed7717a257876582db}{get\+Active\+Statement\+Count}} ()
+\item 
+long \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a3a242d2fb1e6c443f163d55f8bbd6cde}{get\+Idle\+For}} ()
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a11233536b54479183feb8eda938f72e9}{get\+Statement\+Comment}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ab7d858b77e30de81f7ec67504ba89b0c}{has\+Tried\+Master}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a919152df37a4bf60c12c0818256a90a3}{is\+In\+Global\+Tx}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_af7cff3ba67d2b787b04c3eff40f9e087}{set\+In\+Global\+Tx}} (boolean flag)
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a012dc133872dd4d6db6d6f98118d3251}{is\+Master\+Connection}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a90906591d933e0d9f10dbb9db6b5a83a}{is\+Same\+Resource}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} c)
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a54cca6407a1a531b8e65ee3d965a51cd}{lower\+Case\+Table\+Names}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a6d078258f83ddc438d64bafb0f665004}{ping}} ()  throws S\+Q\+L\+Exception
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a44456aec7737354a14eff20638c047fa}{reset\+Server\+State}} ()  throws S\+Q\+L\+Exception
+\item 
+java.\+sql.\+Prepared\+Statement \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_add415475386bd7577301fddbdd5518b8}{server\+Prepare\+Statement}} (String sql)  throws S\+Q\+L\+Exception
+\item 
+java.\+sql.\+Prepared\+Statement \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a9deb2cebf6538a53be5f24c52ee39f22}{server\+Prepare\+Statement}} (String sql, int auto\+Gen\+Key\+Index)  throws S\+Q\+L\+Exception
+\item 
+java.\+sql.\+Prepared\+Statement \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aa0692efe53cb2eea133274bedbacd26a}{server\+Prepare\+Statement}} (String sql, int result\+Set\+Type, int result\+Set\+Concurrency)  throws S\+Q\+L\+Exception
+\item 
+java.\+sql.\+Prepared\+Statement \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a0c300ea92f3c97874b104b5e999b440b}{server\+Prepare\+Statement}} (String sql, int result\+Set\+Type, int result\+Set\+Concurrency, int result\+Set\+Holdability)  throws S\+Q\+L\+Exception
+\item 
+java.\+sql.\+Prepared\+Statement \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aefdad3d71436ba1c80d2cb1e8419dfba}{server\+Prepare\+Statement}} (String sql, int\mbox{[}$\,$\mbox{]} auto\+Gen\+Key\+Indexes)  throws S\+Q\+L\+Exception
+\item 
+java.\+sql.\+Prepared\+Statement \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aa15ffc32d47d1950257c4720802694bf}{server\+Prepare\+Statement}} (String sql, String\mbox{[}$\,$\mbox{]} auto\+Gen\+Key\+Col\+Names)  throws S\+Q\+L\+Exception
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a65cb0cc5d2afc54002bfc16222bbe402}{set\+Failed\+Over}} (boolean flag)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_adfbd59fbebd013673ed3eb97beb76179}{set\+Statement\+Comment}} (String comment)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ad9bedf228ed2ec194197ac2ceb960a94}{shutdown\+Server}} ()  throws S\+Q\+L\+Exception
+\item 
+int \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a06ded1274e682178c67fdb86f09fed5a}{get\+Auto\+Increment\+Increment}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a10b46302ae879b80a889ad9cc22ee9ed}{has\+Same\+Properties}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} c)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a2cadbe78f509f56fb4461f81ae10934e}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a2cadbe78f509f56fb4461f81ae10934e}} 
+String {\bfseries get\+Host} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aa0cc0cf69f201efa68eecad1d7a62eef}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aa0cc0cf69f201efa68eecad1d7a62eef}} 
+String {\bfseries get\+Host\+Port\+Pair} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a48162c9f0bf249804ae60cb7404cd0f8}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a48162c9f0bf249804ae60cb7404cd0f8}} 
+void {\bfseries set\+Proxy} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} proxy)
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a4418f89cdbd768f892b6ef7823107921}{is\+Server\+Local}} ()  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ab5a06def600625b8d101a40023ff2856}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ab5a06def600625b8d101a40023ff2856}} 
+int {\bfseries get\+Session\+Max\+Rows} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aec5eb42d9facdbd97b0a5238022af05d}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aec5eb42d9facdbd97b0a5238022af05d}} 
+void {\bfseries set\+Session\+Max\+Rows} (int max)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a7f187665ea1dcc0a9a77cdc7cb56dc52}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a7f187665ea1dcc0a9a77cdc7cb56dc52}} 
+void {\bfseries set\+Schema} (String schema)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_afc07faaedcdfc3be9fa9bfcf751b673a}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_afc07faaedcdfc3be9fa9bfcf751b673a}} 
+void {\bfseries abort\+Internal} ()  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_abf3c640bcdbc0839cd67ed0e9b7d94a1}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_abf3c640bcdbc0839cd67ed0e9b7d94a1}} 
+boolean {\bfseries is\+Proxy\+Set} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a248df459ef314e3a79257c7bd6dc560a}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a248df459ef314e3a79257c7bd6dc560a}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_cached_result_set_meta_data}{Cached\+Result\+Set\+Meta\+Data}} {\bfseries get\+Cached\+Meta\+Data} (String sql)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a1bf742d4ab1a9e354ab3c810caa40481}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a1bf742d4ab1a9e354ab3c810caa40481}} 
+String {\bfseries get\+Character\+Set\+Metadata} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ab48793a6beae119da08e7ae9e982c6c0}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ab48793a6beae119da08e7ae9e982c6c0}} 
+java.\+sql.\+Statement {\bfseries get\+Metadata\+Safe\+Statement} ()  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a463e239b2b6901e85834e64ebda84d0c}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a463e239b2b6901e85834e64ebda84d0c}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_server_version}{Server\+Version}} {\bfseries get\+Server\+Version} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a06e9e0a4a916223a7b1582f10b8fdb5d}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a06e9e0a4a916223a7b1582f10b8fdb5d}} 
+List$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1interceptors_1_1_query_interceptor}{Query\+Interceptor}} $>$ {\bfseries get\+Query\+Interceptors\+Instances} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_adaeb33edd797d27f3836f5cab30c51d0}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_adaeb33edd797d27f3836f5cab30c51d0}} 
+void {\bfseries initialize\+Results\+Metadata\+From\+Cache} (String sql, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_cached_result_set_meta_data}{Cached\+Result\+Set\+Meta\+Data}} cached\+Meta\+Data, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} result\+Set)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a48b2a3226fefc00bf09985a66da96d90}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a48b2a3226fefc00bf09985a66da96d90}} 
+void {\bfseries initialize\+Safe\+Query\+Interceptors} ()  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ac4815b01cd9176630cbab2941bec0ce4}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ac4815b01cd9176630cbab2941bec0ce4}} 
+boolean {\bfseries is\+Read\+Only} (boolean use\+Session\+Status)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a25615f355be83a136df2efcde168666c}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a25615f355be83a136df2efcde168666c}} 
+void {\bfseries ping\+Internal} (boolean check\+For\+Closed\+Connection, int timeout\+Millis)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_af5f24cb10cfc14e0174c6bb115745bc0}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_af5f24cb10cfc14e0174c6bb115745bc0}} 
+void {\bfseries real\+Close} (boolean called\+Explicitly, boolean issue\+Rollback, boolean skip\+Local\+Teardown, Throwable reason)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a24f00ff038a4f01aab9dea9e2817c084}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a24f00ff038a4f01aab9dea9e2817c084}} 
+void {\bfseries recache\+Prepared\+Statement} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement}{Jdbc\+Prepared\+Statement}} pstmt)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_abf867252ec91eb8d6ed6ec4fb34b2686}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_abf867252ec91eb8d6ed6ec4fb34b2686}} 
+void {\bfseries decache\+Prepared\+Statement} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_prepared_statement}{Jdbc\+Prepared\+Statement}} pstmt)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ae2bd1cf8c944f811560e419b9fcefc91}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ae2bd1cf8c944f811560e419b9fcefc91}} 
+void {\bfseries register\+Statement} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement}{Jdbc\+Statement}} stmt)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ad105c1e8c2184531cc209ce25e7817b3}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ad105c1e8c2184531cc209ce25e7817b3}} 
+void {\bfseries set\+Read\+Only\+Internal} (boolean read\+Only\+Flag)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a6a1919361434e33f3de8410b87dab6e1}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a6a1919361434e33f3de8410b87dab6e1}} 
+boolean {\bfseries stores\+Lower\+Case\+Table\+Name} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a8554721dac5197512681010d325b5e87}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a8554721dac5197512681010d325b5e87}} 
+void {\bfseries throw\+Connection\+Closed\+Exception} ()  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aea0e19ebe576a318c72df2d72cc25c94}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aea0e19ebe576a318c72df2d72cc25c94}} 
+void {\bfseries unregister\+Statement} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_statement}{Jdbc\+Statement}} stmt)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a5ffe05b61a153efd3a321b3b4a9a1c7a}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a5ffe05b61a153efd3a321b3b4a9a1c7a}} 
+void {\bfseries un\+Safe\+Query\+Interceptors} ()  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_af10e050fd33e42f9daddf69224c5179e}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_af10e050fd33e42f9daddf69224c5179e}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} {\bfseries get\+Multi\+Host\+Safe\+Proxy} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aa5b980c79d1c7d58535c5c469e3d4f24}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aa5b980c79d1c7d58535c5c469e3d4f24}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} {\bfseries get\+Active\+My\+S\+Q\+L\+Connection} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ab3325dceec74bde20215836ade6845ad}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ab3325dceec74bde20215836ade6845ad}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_client_info_provider}{Client\+Info\+Provider}} {\bfseries get\+Client\+Info\+Provider\+Impl} ()  throws S\+Q\+L\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This interface contains methods that are considered the \char`\"{}vendor extension\char`\"{} to the J\+D\+BC A\+PI for My\+S\+QL\textquotesingle{}s implementation of java.\+sql.\+Connection.
+
+For those looking further into the driver implementation, it is not an A\+PI that is used for plugability of implementations inside our driver (which is why there are still references to \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} throughout the code). 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aed0496e0f2c1236f2784f92b45a482ef}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aed0496e0f2c1236f2784f92b45a482ef}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!change\+User@{change\+User}}
+\index{change\+User@{change\+User}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{change\+User()}{changeUser()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+change\+User (\begin{DoxyParamCaption}\item[{String}]{user\+Name,  }\item[{String}]{new\+Password }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Changes the user on this connection by performing a re-\/authentication. If authentication fails, the connection is failed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & the username to authenticate with \\
+\hline
+{\em new\+Password} & the password to authenticate with \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if authentication fails, or some other error occurs while performing the command. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a326d50e31598342bcc2c4273967f3020}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a124604d3aae705d3e14bc1deb6a3f9a9}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_my_s_q_l_connection_a42cf4364f5721814b388fa7bef9fb009}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+My\+S\+Q\+L\+Connection}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a12c407fe2d10ba1f27cae220289f8adf}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a62db1ccf7a070833775481acb5e9e359}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a62db1ccf7a070833775481acb5e9e359}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!client\+Prepare\+Statement@{client\+Prepare\+Statement}}
+\index{client\+Prepare\+Statement@{client\+Prepare\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{client\+Prepare\+Statement()}{clientPrepareStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily java.\+sql.\+Prepared\+Statement com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+client\+Prepare\+Statement (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Prepares a statement on the client, using client-\/side emulation (irregardless of the configuration property \textquotesingle{}use\+Server\+Prep\+Stmts\textquotesingle{}) with the same semantics as the java.\+sql.\+Connection.\+prepare\+Statement() method with the same argument types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & statement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+prepared statement 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::prepare\+Statement(\+String) 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a97fe5e29bb844493eb31b4f1c48d8bc7}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_abec439c58b0b01c1590be391a2d1969a}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_aad5b9594841a4c935130b225d0c3d686}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a1d01e4f2fd60084794906cc9a1c24c24}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a1d01e4f2fd60084794906cc9a1c24c24}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!client\+Prepare\+Statement@{client\+Prepare\+Statement}}
+\index{client\+Prepare\+Statement@{client\+Prepare\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{client\+Prepare\+Statement()}{clientPrepareStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily java.\+sql.\+Prepared\+Statement com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+client\+Prepare\+Statement (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{int}]{auto\+Gen\+Key\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Prepares a statement on the client, using client-\/side emulation (irregardless of the configuration property \textquotesingle{}use\+Server\+Prep\+Stmts\textquotesingle{}) with the same semantics as the java.\+sql.\+Connection.\+prepare\+Statement() method with the same argument types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & statement \\
+\hline
+{\em auto\+Gen\+Key\+Index} & auto\+Gen\+Key\+Index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+prepared statement 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::prepare\+Statement(\+String, int) 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_ac15baa66a2fe559cb558a0afd9c7cc03}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a1dc0327172d67ed88fce75b54c5a87d8}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a384dc86ad7784b2b6f87d74e9242e248}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a55c0d38bcf8ca54ed272a0a1bbbf7e4c}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a55c0d38bcf8ca54ed272a0a1bbbf7e4c}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!client\+Prepare\+Statement@{client\+Prepare\+Statement}}
+\index{client\+Prepare\+Statement@{client\+Prepare\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{client\+Prepare\+Statement()}{clientPrepareStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily java.\+sql.\+Prepared\+Statement com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+client\+Prepare\+Statement (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{int}]{result\+Set\+Type,  }\item[{int}]{result\+Set\+Concurrency }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Prepares a statement on the client, using client-\/side emulation (irregardless of the configuration property \textquotesingle{}use\+Server\+Prep\+Stmts\textquotesingle{}) with the same semantics as the java.\+sql.\+Connection.\+prepare\+Statement() method with the same argument types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & statement \\
+\hline
+{\em result\+Set\+Type} & result\+Set\+Type \\
+\hline
+{\em result\+Set\+Concurrency} & result\+Set\+Concurrency \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+prepared statement 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::prepare\+Statement(\+String, int, int) 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a08e44e57c6c4a70f6d4ea9a71b612b0e}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_ac83890b870c7881f93d8907216be47ee}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_aa2b134c582c04c7016ffa481a25d4e18}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a11927338ef48e164fdd8444b6b273162}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a11927338ef48e164fdd8444b6b273162}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!client\+Prepare\+Statement@{client\+Prepare\+Statement}}
+\index{client\+Prepare\+Statement@{client\+Prepare\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{client\+Prepare\+Statement()}{clientPrepareStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily java.\+sql.\+Prepared\+Statement com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+client\+Prepare\+Statement (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{int \mbox{[}$\,$\mbox{]}}]{auto\+Gen\+Key\+Indexes }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Prepares a statement on the client, using client-\/side emulation (irregardless of the configuration property \textquotesingle{}use\+Server\+Prep\+Stmts\textquotesingle{}) with the same semantics as the java.\+sql.\+Connection.\+prepare\+Statement() method with the same argument types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & statement \\
+\hline
+{\em auto\+Gen\+Key\+Indexes} & auto\+Gen\+Key\+Indexes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+prepared statement 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::prepare\+Statement(\+String, int\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_aec5834ec5d7244d13cefd58333b3c553}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a1fc94fe8ebcc323191215f63aad419ff}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_ac3338beff85b1b1704e87f67b643eeaa}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a802cf843e62a0feac95a16c7750a35c3}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a802cf843e62a0feac95a16c7750a35c3}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!client\+Prepare\+Statement@{client\+Prepare\+Statement}}
+\index{client\+Prepare\+Statement@{client\+Prepare\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{client\+Prepare\+Statement()}{clientPrepareStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily java.\+sql.\+Prepared\+Statement com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+client\+Prepare\+Statement (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{int}]{result\+Set\+Type,  }\item[{int}]{result\+Set\+Concurrency,  }\item[{int}]{result\+Set\+Holdability }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Prepares a statement on the client, using client-\/side emulation (irregardless of the configuration property \textquotesingle{}use\+Server\+Prep\+Stmts\textquotesingle{}) with the same semantics as the java.\+sql.\+Connection.\+prepare\+Statement() method with the same argument types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & statement \\
+\hline
+{\em result\+Set\+Type} & result\+Set\+Type \\
+\hline
+{\em result\+Set\+Concurrency} & result\+Set\+Concurrency \\
+\hline
+{\em result\+Set\+Holdability} & result\+Set\+Holdability \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+prepared statement 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::prepare\+Statement(\+String, int, int, int) 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_ade6127c1a3fdabd2af201e60498afad4}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_ae60c9942657fd3686a4bbe8f21d05050}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a90d99874278a283359f65712794b4524}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a46a218367bb0a386a18caed711142d7a}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a46a218367bb0a386a18caed711142d7a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!client\+Prepare\+Statement@{client\+Prepare\+Statement}}
+\index{client\+Prepare\+Statement@{client\+Prepare\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{client\+Prepare\+Statement()}{clientPrepareStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily java.\+sql.\+Prepared\+Statement com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+client\+Prepare\+Statement (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{String \mbox{[}$\,$\mbox{]}}]{auto\+Gen\+Key\+Col\+Names }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Prepares a statement on the client, using client-\/side emulation (irregardless of the configuration property \textquotesingle{}use\+Server\+Prep\+Stmts\textquotesingle{}) with the same semantics as the java.\+sql.\+Connection.\+prepare\+Statement() method with the same argument types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & statement \\
+\hline
+{\em auto\+Gen\+Key\+Col\+Names} & auto\+Gen\+Key\+Col\+Names \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+prepared statement 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::prepare\+Statement(\+String, String\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_ade3184b1d304b0ab3a5a0f5d2f8f0539}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_acae69d4edeb44d1ecd2f6750e0312341}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_af7a6412387f62b55132775c5f9700fd9}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aea218879f6bae7ed7717a257876582db}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aea218879f6bae7ed7717a257876582db}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!get\+Active\+Statement\+Count@{get\+Active\+Statement\+Count}}
+\index{get\+Active\+Statement\+Count@{get\+Active\+Statement\+Count}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{get\+Active\+Statement\+Count()}{getActiveStatementCount()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+get\+Active\+Statement\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the number of statements active on this connection, which haven\textquotesingle{}t been .close()d.
+
+\begin{DoxyReturn}{Returns}
+the number of active statements 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a858f89a9745e2ffc3e748c91286d7862}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_ad356fedacaf160823158cc253f99322a}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a5f85b0597c870954959bd5c2a48ae28b}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a06ded1274e682178c67fdb86f09fed5a}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a06ded1274e682178c67fdb86f09fed5a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!get\+Auto\+Increment\+Increment@{get\+Auto\+Increment\+Increment}}
+\index{get\+Auto\+Increment\+Increment@{get\+Auto\+Increment\+Increment}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{get\+Auto\+Increment\+Increment()}{getAutoIncrementIncrement()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+get\+Auto\+Increment\+Increment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the -\/session-\/ value of \textquotesingle{}auto\+\_\+increment\+\_\+increment\textquotesingle{} from the server if it exists, or \textquotesingle{}1\textquotesingle{} if not.
+
+\begin{DoxyReturn}{Returns}
+the -\/session-\/ value of \textquotesingle{}auto\+\_\+increment\+\_\+increment\textquotesingle{} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a47d3fb6ffbaaff0190ea15e3c35d7270}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a0855a0981bb14e92fee22c3591d95175}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a94d28c91c18c2c57cd4ec7855a3d061d}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a3a242d2fb1e6c443f163d55f8bbd6cde}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a3a242d2fb1e6c443f163d55f8bbd6cde}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!get\+Idle\+For@{get\+Idle\+For}}
+\index{get\+Idle\+For@{get\+Idle\+For}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{get\+Idle\+For()}{getIdleFor()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+get\+Idle\+For (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reports how long this connection has been idle. This time (reported in milliseconds) is updated once a query has completed.
+
+\begin{DoxyReturn}{Returns}
+number of ms that this connection has been idle, 0 if the driver is busy retrieving results. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a628961d1155b35d0582a3198c2a6bb83}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a640187b96b3d091f9b74a927c754098c}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a4894df9d353212ae8b4e0860c15e6a6e}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a11233536b54479183feb8eda938f72e9}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a11233536b54479183feb8eda938f72e9}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!get\+Statement\+Comment@{get\+Statement\+Comment}}
+\index{get\+Statement\+Comment@{get\+Statement\+Comment}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{get\+Statement\+Comment()}{getStatementComment()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+get\+Statement\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the comment that will be prepended to all statements sent to the server.
+
+\begin{DoxyReturn}{Returns}
+the comment that will be prepended to all statements sent to the server. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a4ac13f311c3ef1e5e6718b17f3b5e090}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a4fefdf8c3a3be123e8391959185cde40}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_ae92114d9d277c58982679012dccd1017}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a10b46302ae879b80a889ad9cc22ee9ed}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a10b46302ae879b80a889ad9cc22ee9ed}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!has\+Same\+Properties@{has\+Same\+Properties}}
+\index{has\+Same\+Properties@{has\+Same\+Properties}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{has\+Same\+Properties()}{hasSameProperties()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+has\+Same\+Properties (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}}}]{c }\end{DoxyParamCaption})}
+
+Does this connection have the same properties as another?
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if has the same properties 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a498f67a53c8188e4827e838ed9dd3356}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a10dadfff0a559ba28835c1a0e95379d6}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a149e10365c36e34d7585bc42515e2fcf}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_my_s_q_l_connection_abceb3d3792b7bb70f6ba4f38c5c4a048}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ab7d858b77e30de81f7ec67504ba89b0c}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ab7d858b77e30de81f7ec67504ba89b0c}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!has\+Tried\+Master@{has\+Tried\+Master}}
+\index{has\+Tried\+Master@{has\+Tried\+Master}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{has\+Tried\+Master()}{hasTriedMaster()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+has\+Tried\+Master (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Has this connection tried to execute a query on the \char`\"{}master\char`\"{} server (first host in a multiple host list).
+
+\begin{DoxyReturn}{Returns}
+true if it has tried 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_acc9cbd5c4e0570757e05993e123c5696}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a38b81e539492d555536e40cc39bca55b}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a2eb48d606b888ae970ca17640c54b082}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a919152df37a4bf60c12c0818256a90a3}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a919152df37a4bf60c12c0818256a90a3}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!is\+In\+Global\+Tx@{is\+In\+Global\+Tx}}
+\index{is\+In\+Global\+Tx@{is\+In\+Global\+Tx}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{is\+In\+Global\+Tx()}{isInGlobalTx()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+is\+In\+Global\+Tx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is this connection currently a participant in an XA transaction?
+
+\begin{DoxyReturn}{Returns}
+true if this connection currently a participant in an XA transaction 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a36d32f1c890a8774776f435a8d7a9f55}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a939c7730de2849e54b9b121adb1cdaa3}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a12a895a23d45e4ac2df69fed6c022fef}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a012dc133872dd4d6db6d6f98118d3251}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a012dc133872dd4d6db6d6f98118d3251}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!is\+Master\+Connection@{is\+Master\+Connection}}
+\index{is\+Master\+Connection@{is\+Master\+Connection}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{is\+Master\+Connection()}{isMasterConnection()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+is\+Master\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is this connection connected to the first host in the list if there is a list of servers in the U\+RL?
+
+\begin{DoxyReturn}{Returns}
+true if this connection is connected to the first in the list. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a5ba146293ff6812bf52d5baf61f66e02}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a0c1fb78db80d2aedf2d8aa89ff182b5a}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a7e344c8e7ee5db8d3e1a0aa96bd6e1fd}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a90906591d933e0d9f10dbb9db6b5a83a}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a90906591d933e0d9f10dbb9db6b5a83a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!is\+Same\+Resource@{is\+Same\+Resource}}
+\index{is\+Same\+Resource@{is\+Same\+Resource}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{is\+Same\+Resource()}{isSameResource()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+is\+Same\+Resource (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}}}]{c }\end{DoxyParamCaption})}
+
+Does this connection have the same resource name as the given connection (for XA)?
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is the same one 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a0eec8abab54aa4e2f6789b0d3db561e4}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a47d81e605bf65122771ecb727b6177ed}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a4418f89cdbd768f892b6ef7823107921}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a4418f89cdbd768f892b6ef7823107921}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!is\+Server\+Local@{is\+Server\+Local}}
+\index{is\+Server\+Local@{is\+Server\+Local}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{is\+Server\+Local()}{isServerLocal()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+is\+Server\+Local (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Is the server this connection is connected to \char`\"{}local\char`\"{} (i.\+e. same host) as the application?
+
+\begin{DoxyReturn}{Returns}
+true if the server is \char`\"{}local\char`\"{} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a9f0926c4f30516633878b4315f7c073c}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_afe8fab04e181ccd81e0e5bb3881361cd}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_ae6f52873381a19395473dd957c756ee7}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a54cca6407a1a531b8e65ee3d965a51cd}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a54cca6407a1a531b8e65ee3d965a51cd}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!lower\+Case\+Table\+Names@{lower\+Case\+Table\+Names}}
+\index{lower\+Case\+Table\+Names@{lower\+Case\+Table\+Names}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{lower\+Case\+Table\+Names()}{lowerCaseTableNames()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+lower\+Case\+Table\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is the server configured to use lower-\/case table names only?
+
+\begin{DoxyReturn}{Returns}
+true if lower\+\_\+case\+\_\+table\+\_\+names is \textquotesingle{}on\textquotesingle{} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a75475406eba7048aeb899c27d04f2c59}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_aba2642633d16efa8be0fd109c0fa9747}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a5a3250cfcbd628ed09ce0eb494a1ff20}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a6d078258f83ddc438d64bafb0f665004}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a6d078258f83ddc438d64bafb0f665004}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!ping@{ping}}
+\index{ping@{ping}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{ping()}{ping()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+ping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Detect if the connection is still good by sending a ping command to the server.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if the ping fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a790847769075cca4f1f42d47b864f3e3}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_af9d635c00b09fc14bff63eeeec9b354d}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a75f3a66c04a2960e920a6e57a3279556}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_my_s_q_l_connection_a87a413280dac1e1f0be1bd8c93420082}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+My\+S\+Q\+L\+Connection}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_load_balanced_my_s_q_l_connection_a58a06fe0caa8144988fb2464d9fc4b0a}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Load\+Balanced\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a44456aec7737354a14eff20638c047fa}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a44456aec7737354a14eff20638c047fa}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!reset\+Server\+State@{reset\+Server\+State}}
+\index{reset\+Server\+State@{reset\+Server\+State}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{reset\+Server\+State()}{resetServerState()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+reset\+Server\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Resets the server-\/side state of this connection. Doesn\textquotesingle{}t work for My\+S\+QL versions older than 4.\+0.\+6 or if is\+Paranoid() is set (it will become a no-\/op in these cases). Usually only used from connection pooling code.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if the operation fails while resetting server state. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_adccdf6ec2e52545cff1a649ccecbdd62}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a420204849914ad076e502ba7753ba6b5}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_aa4aba4efd08774027532a7a9092bca57}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_add415475386bd7577301fddbdd5518b8}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_add415475386bd7577301fddbdd5518b8}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!server\+Prepare\+Statement@{server\+Prepare\+Statement}}
+\index{server\+Prepare\+Statement@{server\+Prepare\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{server\+Prepare\+Statement()}{serverPrepareStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily java.\+sql.\+Prepared\+Statement com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+server\+Prepare\+Statement (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Prepares a statement on the server (irregardless of the configuration property \textquotesingle{}use\+Server\+Prep\+Stmts\textquotesingle{}) with the same semantics as the java.\+sql.\+Connection.\+prepare\+Statement() method with the same argument types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & statement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+prepared statement 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::prepare\+Statement(\+String) 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_ad91b5892ca4cc22ca40b2421171b0078}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_aa430608c339c22aff456a59210faaf8b}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a7db176300b273436df94f2cc48e986af}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a9deb2cebf6538a53be5f24c52ee39f22}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a9deb2cebf6538a53be5f24c52ee39f22}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!server\+Prepare\+Statement@{server\+Prepare\+Statement}}
+\index{server\+Prepare\+Statement@{server\+Prepare\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{server\+Prepare\+Statement()}{serverPrepareStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily java.\+sql.\+Prepared\+Statement com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+server\+Prepare\+Statement (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{int}]{auto\+Gen\+Key\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Prepares a statement on the server (irregardless of the configuration property \textquotesingle{}use\+Server\+Prep\+Stmts\textquotesingle{}) with the same semantics as the java.\+sql.\+Connection.\+prepare\+Statement() method with the same argument types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & statement \\
+\hline
+{\em auto\+Gen\+Key\+Index} & auto\+Gen\+Key\+Index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+prepared statement 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::prepare\+Statement(\+String, int) 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_abd651a25d34961e6b9e8b5938f57222f}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a86037101987ec03d10b75dbba23a8dff}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a26a0ffb4b44f358479e5a39a3241837f}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aa0692efe53cb2eea133274bedbacd26a}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aa0692efe53cb2eea133274bedbacd26a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!server\+Prepare\+Statement@{server\+Prepare\+Statement}}
+\index{server\+Prepare\+Statement@{server\+Prepare\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{server\+Prepare\+Statement()}{serverPrepareStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily java.\+sql.\+Prepared\+Statement com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+server\+Prepare\+Statement (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{int}]{result\+Set\+Type,  }\item[{int}]{result\+Set\+Concurrency }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Prepares a statement on the server (irregardless of the configuration property \textquotesingle{}use\+Server\+Prep\+Stmts\textquotesingle{}) with the same semantics as the java.\+sql.\+Connection.\+prepare\+Statement() method with the same argument types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & statement \\
+\hline
+{\em result\+Set\+Type} & result\+Set\+Type \\
+\hline
+{\em result\+Set\+Concurrency} & result\+Set\+Concurrency \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+prepared statement 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::prepare\+Statement(\+String, int, int) 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a4d739eb2f2ef627fd61b4da1a57c94b5}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a764bc7940c1fb384724ba3bc18572978}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_ae6fa263dc52294e1239edd02a280ab6d}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a0c300ea92f3c97874b104b5e999b440b}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a0c300ea92f3c97874b104b5e999b440b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!server\+Prepare\+Statement@{server\+Prepare\+Statement}}
+\index{server\+Prepare\+Statement@{server\+Prepare\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{server\+Prepare\+Statement()}{serverPrepareStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily java.\+sql.\+Prepared\+Statement com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+server\+Prepare\+Statement (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{int}]{result\+Set\+Type,  }\item[{int}]{result\+Set\+Concurrency,  }\item[{int}]{result\+Set\+Holdability }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Prepares a statement on the server (irregardless of the configuration property \textquotesingle{}use\+Server\+Prep\+Stmts\textquotesingle{}) with the same semantics as the java.\+sql.\+Connection.\+prepare\+Statement() method with the same argument types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & statement \\
+\hline
+{\em result\+Set\+Type} & result\+Set\+Type \\
+\hline
+{\em result\+Set\+Concurrency} & result\+Set\+Concurrency \\
+\hline
+{\em result\+Set\+Holdability} & result\+Set\+Holdability \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+prepared statement 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::prepare\+Statement(\+String, int, int, int) 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a993fa4ecbf826575370653501a64d7fb}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a64bd494b5f5ad72d744fcc7236a5501d}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_aa64dae9148fe8777c14bf8dbe9ebebd1}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aefdad3d71436ba1c80d2cb1e8419dfba}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aefdad3d71436ba1c80d2cb1e8419dfba}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!server\+Prepare\+Statement@{server\+Prepare\+Statement}}
+\index{server\+Prepare\+Statement@{server\+Prepare\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{server\+Prepare\+Statement()}{serverPrepareStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily java.\+sql.\+Prepared\+Statement com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+server\+Prepare\+Statement (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{int \mbox{[}$\,$\mbox{]}}]{auto\+Gen\+Key\+Indexes }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Prepares a statement on the server (irregardless of the configuration property \textquotesingle{}use\+Server\+Prep\+Stmts\textquotesingle{}) with the same semantics as the java.\+sql.\+Connection.\+prepare\+Statement() method with the same argument types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & statement \\
+\hline
+{\em auto\+Gen\+Key\+Indexes} & auto\+Gen\+Key\+Indexes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+prepared statement 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::prepare\+Statement(\+String, int\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a19b32ebaabe6dbd19ce2dd4ca4b3e5eb}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a9ae046833df9f5a89755a54dd65d43b0}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a5c69e6b4ee9462919ab63d9e3c563294}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aa15ffc32d47d1950257c4720802694bf}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_aa15ffc32d47d1950257c4720802694bf}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!server\+Prepare\+Statement@{server\+Prepare\+Statement}}
+\index{server\+Prepare\+Statement@{server\+Prepare\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{server\+Prepare\+Statement()}{serverPrepareStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily java.\+sql.\+Prepared\+Statement com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+server\+Prepare\+Statement (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{String \mbox{[}$\,$\mbox{]}}]{auto\+Gen\+Key\+Col\+Names }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Prepares a statement on the server (irregardless of the configuration property \textquotesingle{}use\+Server\+Prep\+Stmts\textquotesingle{}) with the same semantics as the java.\+sql.\+Connection.\+prepare\+Statement() method with the same argument types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & statement \\
+\hline
+{\em auto\+Gen\+Key\+Col\+Names} & auto\+Gen\+Key\+Col\+Names \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+prepared statement 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Connection\+::prepare\+Statement(\+String, String\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_ae7caa7907c0b5245c5f8ac2f209abf2a}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a02f353527ecf3306019227fa68d014a7}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_ae0fc18db059bf9625bc8741334de6eef}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a65cb0cc5d2afc54002bfc16222bbe402}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_a65cb0cc5d2afc54002bfc16222bbe402}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!set\+Failed\+Over@{set\+Failed\+Over}}
+\index{set\+Failed\+Over@{set\+Failed\+Over}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{set\+Failed\+Over()}{setFailedOver()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+set\+Failed\+Over (\begin{DoxyParamCaption}\item[{boolean}]{flag }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & The failed\+Over flag to set. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_afef2182754848487fb2e37daea9ff7eb}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_aaa41827ca4520529797d55c4f8834f76}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_aa86a711c0807cc5b31b9e3600477184b}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_af7cff3ba67d2b787b04c3eff40f9e087}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_af7cff3ba67d2b787b04c3eff40f9e087}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!set\+In\+Global\+Tx@{set\+In\+Global\+Tx}}
+\index{set\+In\+Global\+Tx@{set\+In\+Global\+Tx}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{set\+In\+Global\+Tx()}{setInGlobalTx()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+set\+In\+Global\+Tx (\begin{DoxyParamCaption}\item[{boolean}]{flag }\end{DoxyParamCaption})}
+
+Set the state of being in a global (XA) transaction.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & the state flag \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_a70a08ce7c0dea524a32a245986fb1531}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_adb320c4558060ee9dae32dc4d4310beb}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a317920d3dc1f80c789676ad3391135bc}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_adfbd59fbebd013673ed3eb97beb76179}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_adfbd59fbebd013673ed3eb97beb76179}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!set\+Statement\+Comment@{set\+Statement\+Comment}}
+\index{set\+Statement\+Comment@{set\+Statement\+Comment}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{set\+Statement\+Comment()}{setStatementComment()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+set\+Statement\+Comment (\begin{DoxyParamCaption}\item[{String}]{comment }\end{DoxyParamCaption})}
+
+Sets the comment that will be prepended to all statements sent to the server. Do not use slash-\/star or star-\/slash tokens in the comment as these will be added by the driver itself.
+
+
+\begin{DoxyParams}{Parameters}
+{\em comment} & the comment that will be prepended to all statements sent to the server. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_ae62d28e9ed05949b66aa0ea00633d51d}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a79c9fe73cc7069028015a7e3e6a383fb}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a4e028eb0c700613a20c0a2b7f8a21170}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_replication_my_s_q_l_connection_a7afc9e0c6196c0acd9f60ca99c5e7b8a}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Replication\+My\+S\+Q\+L\+Connection}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ad9bedf228ed2ec194197ac2ceb960a94}\label{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection_ad9bedf228ed2ec194197ac2ceb960a94}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}!shutdown\+Server@{shutdown\+Server}}
+\index{shutdown\+Server@{shutdown\+Server}!com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection@{com\+::mysql\+::cj\+::jdbc\+::\+Jdbc\+Connection}}
+\subsubsection{\texorpdfstring{shutdown\+Server()}{shutdownServer()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Jdbc\+Connection.\+shutdown\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Used by Mini\+Admin to shutdown a My\+S\+QL server
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if the command can not be issued. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl_ad33978512e58f5bb84875219ffd8af41}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_wrapper_a0989b3c99444046219ef68a1e15863c9}{com.\+mysql.\+cj.\+jdbc.\+Connection\+Wrapper}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_multi_host_my_s_q_l_connection_a33803a0494610eb6148a4d8c1c9b046a}{com.\+mysql.\+cj.\+jdbc.\+ha.\+Multi\+Host\+My\+S\+Q\+L\+Connection}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/jdbc/Jdbc\+Connection.\+java\end{DoxyCompactItemize}

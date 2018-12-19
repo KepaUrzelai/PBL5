@@ -1,0 +1,1211 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement}{}\section{com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement}\index{com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement@{com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_client_prepared_statement}{com.\+mysql.\+cj.\+jdbc.\+Client\+Prepared\+Statement}}, and Callable\+Statement.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_wrapper}{com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement\+Wrapper}}.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Callable\+Statement\+Param}
+\item 
+class \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_1_1_callable_statement_param_info}{Callable\+Statement\+Param\+Info}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aedac79a513af12d5af9a38c06593ae77}{Callable\+Statement}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_1_1_callable_statement_param_info}{Callable\+Statement\+Param\+Info}} param\+Info)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a87cbed70a05b60f543557c5158d65520}{Callable\+Statement}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} conn, String sql, String catalog, boolean is\+Function\+Call)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae000145f4789826611e9e31158063446}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae000145f4789826611e9e31158063446}} 
+void {\bfseries add\+Batch} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_afaafbaefee9ef17b104a40041ff17fac}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_afaafbaefee9ef17b104a40041ff17fac}} 
+void {\bfseries clear\+Parameters} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aaa92dc9c08a10d95a69bfc5736f041a7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aaa92dc9c08a10d95a69bfc5736f041a7}} 
+boolean {\bfseries execute} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_acb22796d45316e71fdb37c36865a954f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_acb22796d45316e71fdb37c36865a954f}} 
+java.\+sql.\+Result\+Set {\bfseries execute\+Query} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a2410d77057db5d681e4a80c74adfa1c2}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a2410d77057db5d681e4a80c74adfa1c2}} 
+int {\bfseries execute\+Update} ()  throws S\+Q\+L\+Exception 
+\item 
+Array \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_abbdda7be3e842e71327e8ea392f7a5ed}{get\+Array}} (int i)  throws S\+Q\+L\+Exception 
+\item 
+Array \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a188c215d455bd103ff1df71a20edea16}{get\+Array}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+Big\+Decimal \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1f198827834b03e1db3d18b47c57c654}{get\+Big\+Decimal}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+Big\+Decimal \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aa8343c70b7c58a64f062ee4d0fef0981}{get\+Big\+Decimal}} (int parameter\+Index, int scale)  throws S\+Q\+L\+Exception 
+\item 
+Big\+Decimal \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_adc05152dc0cfb8a4dfc6a9d4c6ea989e}{get\+Big\+Decimal}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8e4c5f767bd7bd21b27fddd12f787f08}{get\+Blob}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a6901a932f5c35457ae1226f67ce97a3b}{get\+Blob}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a79e721d38feeff854ff4532cc0ca5aae}{get\+Boolean}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af41b4f682975fed49bfa17b6b2644bc9}{get\+Boolean}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+byte \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae89b7a7ccf06cc8ebbb3039730ebc06f}{get\+Byte}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+byte \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8969109951dffa5b6a541fcba87f0c40}{get\+Byte}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5178d2ef3a082635ffcb28fae3f209de}{get\+Bytes}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4184f57e3f8e6092f90a93d7feb05af8}{get\+Bytes}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob}{Clob}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a24eab53dc2c5d9c0ca81d4ef1f9c4a68}{get\+Clob}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob}{Clob}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1d3b051adc98dcf98fe93762440fe605}{get\+Clob}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+Date \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9280a0b05265e2def720a51151f8dc75}{get\+Date}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+Date \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5ecd5b8ebee139edcf6cf5c6b79dee9d}{get\+Date}} (int parameter\+Index, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+Date \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aca6a4c290274e62c2f8f100e0c746728}{get\+Date}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+Date \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5fa3659ab861ea6df99551e4811d7b22}{get\+Date}} (String parameter\+Name, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+double \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ab147f6da64dfa262ea1bed1a7c955c71}{get\+Double}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+double \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af7ea2799796fa396896066e857542937}{get\+Double}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+float \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ac5562c83206c020fe6126aafce30bd31}{get\+Float}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+float \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a60fdd6135ca3dd6e54bdb7ff62175103}{get\+Float}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae1c1a3f79f99f2dd61c551a5579f9d00}{get\+Int}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4685a7930f62ecaf6dbb1e0153809238}{get\+Int}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a6c377cb8bf737e797f7b1997b1720f20}{get\+Long}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a91e4b1905100f823247b0670dfeab198}{get\+Long}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+Object \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9f21c0d55e0a2c4361e1d57500a6c06f}{get\+Object}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+Object \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a97844ead20095c7f99ec8dda55fcb795}{get\+Object}} (int parameter\+Index, Map$<$ String, Class$<$?$>$$>$ map)  throws S\+Q\+L\+Exception 
+\item 
+Object \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a6166a1c8cd33dbb53750d37513d29365}{get\+Object}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+Object \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a367ba176bf87e7f1ec648719163ccfe1}{get\+Object}} (String parameter\+Name, Map$<$ String, Class$<$?$>$$>$ map)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a7de827ba1f1043c4f4fcaf93da15305e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a7de827ba1f1043c4f4fcaf93da15305e}} 
+Parameter\+Meta\+Data {\bfseries get\+Parameter\+Meta\+Data} ()  throws S\+Q\+L\+Exception 
+\item 
+Ref \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8720b2b1d80bf651acaa37a231a54a2f}{get\+Ref}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+Ref \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af7a8d26f34cc8e3de6ef0f752a120522}{get\+Ref}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+short \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a76c1fd1939e74de3c13d31f2be917be5}{get\+Short}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+short \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a27a1597b2ad871acb0687bd2c5a5ab2e}{get\+Short}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a003eb4a2772e2ed3d56e94c6a5329c90}{get\+String}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ab7834c33851bc5ef89b347980188d89e}{get\+String}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+Time \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a3cccf3351176e00eaa0d0fc817912868}{get\+Time}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+Time \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aefec73ec4f73a6f345d8068f40b370aa}{get\+Time}} (int parameter\+Index, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+Time \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a159ebf9a2c557e3b3be590039e235706}{get\+Time}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+Time \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_abf92189287e2a654e1c59e348cb11928}{get\+Time}} (String parameter\+Name, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+Timestamp \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a106f01266c7bfbaa1c14e3a5a3be0d2b}{get\+Timestamp}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+Timestamp \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a95a1e742a567a1dfe798b172770acfe3}{get\+Timestamp}} (int parameter\+Index, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+Timestamp \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad259b38c5fa0c1d844e7a2a2d78c420f}{get\+Timestamp}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+Timestamp \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae256b922dcf07dac53e51154a618f1c3}{get\+Timestamp}} (String parameter\+Name, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+U\+RL \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a64d354f54f05a378cc69bff200a58093}{get\+U\+RL}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+U\+RL \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a08e77360a042f37ef9afdd164461e343}{get\+U\+RL}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad0d91ad3712a15309404949c3cc97739}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad0d91ad3712a15309404949c3cc97739}} 
+void {\bfseries register\+Out\+Parameter} (int parameter\+Index, int sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af786267d341962a98bab672e1e7264be}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af786267d341962a98bab672e1e7264be}} 
+void {\bfseries register\+Out\+Parameter} (int parameter\+Index, S\+Q\+L\+Type sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_afe234609ae506d56697f519c3d29ebf8}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_afe234609ae506d56697f519c3d29ebf8}} 
+void {\bfseries register\+Out\+Parameter} (int parameter\+Index, int sql\+Type, int scale)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae9462bde5501d87b6c7abb207b3e651f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae9462bde5501d87b6c7abb207b3e651f}} 
+void {\bfseries register\+Out\+Parameter} (int parameter\+Index, S\+Q\+L\+Type sql\+Type, int scale)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a459e48382513438b924cd04576796915}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a459e48382513438b924cd04576796915}} 
+void {\bfseries register\+Out\+Parameter} (int parameter\+Index, int sql\+Type, String type\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ace571cca0105d534b9292c74b182a98b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ace571cca0105d534b9292c74b182a98b}} 
+void {\bfseries register\+Out\+Parameter} (int parameter\+Index, S\+Q\+L\+Type sql\+Type, String type\+Name)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a0fad8371936ac7040051d7158cea4024}{register\+Out\+Parameter}} (String parameter\+Name, int sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8dea8bf7c641c3b819ac3442f5a515d5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8dea8bf7c641c3b819ac3442f5a515d5}} 
+void {\bfseries register\+Out\+Parameter} (String parameter\+Name, S\+Q\+L\+Type sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ac0d18bc90e504b9bc2d2ba65c6562223}{register\+Out\+Parameter}} (String parameter\+Name, int sql\+Type, int scale)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9d30fa877a6d476dc33a1bfe99ec7b2f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9d30fa877a6d476dc33a1bfe99ec7b2f}} 
+void {\bfseries register\+Out\+Parameter} (String parameter\+Name, S\+Q\+L\+Type sql\+Type, int scale)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5c95bebcfabf37c4d4cf1f054e5b2278}{register\+Out\+Parameter}} (String parameter\+Name, int sql\+Type, String type\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad8565f92c6e3673ea330998a6f0b812d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad8565f92c6e3673ea330998a6f0b812d}} 
+void {\bfseries register\+Out\+Parameter} (String parameter\+Name, S\+Q\+L\+Type sql\+Type, String type\+Name)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a69641688613693dda99a792231cdb153}{set\+Ascii\+Stream}} (String parameter\+Name, Input\+Stream x, int length)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4a068a406dc0362622e2204d21a8e70a}{set\+Big\+Decimal}} (String parameter\+Name, Big\+Decimal x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a2cb01ff3839a5512f641ad8ffc72adaa}{set\+Binary\+Stream}} (String parameter\+Name, Input\+Stream x, int length)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8236f80a9a498f1401ee0f2ec01adcdd}{set\+Boolean}} (String parameter\+Name, boolean x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a212a0900b99fd7f7ddbe7a64eea6b1e4}{set\+Byte}} (String parameter\+Name, byte x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aaa52a01483a9d999e9c8973064a063d9}{set\+Bytes}} (String parameter\+Name, byte\mbox{[}$\,$\mbox{]} x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae67b3fc2ec48f545359e93d6568ccc3b}{set\+Character\+Stream}} (String parameter\+Name, Reader reader, int length)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad8945fa51e3fbb56c41cea11624e726e}{set\+Date}} (String parameter\+Name, Date x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4acf89e04d11195ab7c45dce46e7c367}{set\+Date}} (String parameter\+Name, Date x, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_abd5c1f562e6a0f06c4ef239a208d1471}{set\+Double}} (String parameter\+Name, double x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a419e74b589c54323627a2dbace2148c9}{set\+Float}} (String parameter\+Name, float x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a7b7f13ec6ca2fe9dc40472b5334d1259}{set\+Int}} (String parameter\+Name, int x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1b79292eddc7df78b2ef1b7e9ea614ed}{set\+Long}} (String parameter\+Name, long x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a75fd7895affb02fdb0d77a4093554b89}{set\+Null}} (String parameter\+Name, int sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a3358832780f6cdacf23551c4321bf35f}{set\+Null}} (String parameter\+Name, int sql\+Type, String type\+Name)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a2a37988196c65bd7d26890a1fe33281b}{set\+Object}} (String parameter\+Name, Object x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a43a0be416f90c7c642fc33122bbccfb1}{set\+Object}} (String parameter\+Name, Object x, int target\+Sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9236a7d2f476d95497910b71db906c07}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9236a7d2f476d95497910b71db906c07}} 
+void {\bfseries set\+Object} (String parameter\+Name, Object x, S\+Q\+L\+Type target\+Sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5b8dc26448026aec39c4e87831d1e045}{set\+Object}} (String parameter\+Name, Object x, int target\+Sql\+Type, int scale)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a857ad3f2a98d42fb3fd2c19d5134f23f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a857ad3f2a98d42fb3fd2c19d5134f23f}} 
+void {\bfseries set\+Object} (String parameter\+Name, Object x, S\+Q\+L\+Type target\+Sql\+Type, int scale\+Or\+Length)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a3e077220a5f501fd6a1455055ac27aa5}{set\+Short}} (String parameter\+Name, short x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a31f6dfa1f9643a1b4ed3efd57d00bc2b}{set\+String}} (String parameter\+Name, String x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_abaeaf443ba9998c9378de127b63c4eaa}{set\+Time}} (String parameter\+Name, Time x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ab2ce9627abfa776a9a481cc4f496d2ae}{set\+Time}} (String parameter\+Name, Time x, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5032ac718b4fbbb1cfd23077cc37ec20}{set\+Timestamp}} (String parameter\+Name, Timestamp x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_adeaf8f538114ab776d3f9063134709a7}{set\+Timestamp}} (String parameter\+Name, Timestamp x, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad9619f612112c6427341179cd909a058}{set\+U\+RL}} (String parameter\+Name, U\+RL val)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a49a33a86678de625aaf3d944363eb7d5}{was\+Null}} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad2aca8b3dc5657731e6015075cea280d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad2aca8b3dc5657731e6015075cea280d}} 
+int \mbox{[}$\,$\mbox{]} {\bfseries execute\+Batch} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ab80d76a28a17c36b707a575291016da0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ab80d76a28a17c36b707a575291016da0}} 
+void {\bfseries set\+Ascii\+Stream} (String parameter\+Name, Input\+Stream x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a329a1f253c6e16eb93caabb187fc30f6}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a329a1f253c6e16eb93caabb187fc30f6}} 
+void {\bfseries set\+Ascii\+Stream} (String parameter\+Name, Input\+Stream x, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9266c20a0842adfeca30fe7fbb3cf76b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9266c20a0842adfeca30fe7fbb3cf76b}} 
+void {\bfseries set\+Binary\+Stream} (String parameter\+Name, Input\+Stream x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aa36ee2696fb6f22333d0e8c59dcc5d93}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aa36ee2696fb6f22333d0e8c59dcc5d93}} 
+void {\bfseries set\+Binary\+Stream} (String parameter\+Name, Input\+Stream x, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae0e2596de05204678b8caa247366b7f8}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae0e2596de05204678b8caa247366b7f8}} 
+void {\bfseries set\+Blob} (String parameter\+Name, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a862ed16900aced622be6e676349d85c2}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a862ed16900aced622be6e676349d85c2}} 
+void {\bfseries set\+Blob} (String parameter\+Name, Input\+Stream input\+Stream)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a7d84e8ba7421f23ebe2a024cedd2f67a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a7d84e8ba7421f23ebe2a024cedd2f67a}} 
+void {\bfseries set\+Blob} (String parameter\+Name, Input\+Stream input\+Stream, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a59ba89c0a75b368c818f72cfaa69209b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a59ba89c0a75b368c818f72cfaa69209b}} 
+void {\bfseries set\+Character\+Stream} (String parameter\+Name, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4dd5f3eb90bd5aec28008772eab958fa}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4dd5f3eb90bd5aec28008772eab958fa}} 
+void {\bfseries set\+Character\+Stream} (String parameter\+Name, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a7f54a9f87ebdf219de9940389d32f3d1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a7f54a9f87ebdf219de9940389d32f3d1}} 
+void {\bfseries set\+Clob} (String parameter\+Name, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob}{Clob}} x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4e6b7cc4dbd931dcb5bb35e40930ef23}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4e6b7cc4dbd931dcb5bb35e40930ef23}} 
+void {\bfseries set\+Clob} (String parameter\+Name, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a6ea81378f64a3c5addddf379adef7dff}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a6ea81378f64a3c5addddf379adef7dff}} 
+void {\bfseries set\+Clob} (String parameter\+Name, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af60f91b86793a9898354b76d75ab0867}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af60f91b86793a9898354b76d75ab0867}} 
+void {\bfseries set\+N\+Character\+Stream} (String parameter\+Name, Reader value)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a0d7753d1fc9fa30f0f26d609ef503da0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a0d7753d1fc9fa30f0f26d609ef503da0}} 
+void {\bfseries set\+N\+Character\+Stream} (String parameter\+Name, Reader value, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8a45432648ac87e351ce860544fc93b3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8a45432648ac87e351ce860544fc93b3}} 
+Row\+Id {\bfseries get\+Row\+Id} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aecaec5ce03bfdda6b57a3373b0739f25}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aecaec5ce03bfdda6b57a3373b0739f25}} 
+Row\+Id {\bfseries get\+Row\+Id} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9a486e03a6a47d24e474cd305f93e729}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9a486e03a6a47d24e474cd305f93e729}} 
+void {\bfseries set\+Row\+Id} (String parameter\+Name, Row\+Id x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aafb9f5d4c8dd0ff100d2dd24b530a274}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aafb9f5d4c8dd0ff100d2dd24b530a274}} 
+void {\bfseries set\+N\+String} (String parameter\+Name, String value)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1ab3bcc87b0d60c29ce5eba3f6d0b19d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1ab3bcc87b0d60c29ce5eba3f6d0b19d}} 
+void {\bfseries set\+N\+Clob} (String parameter\+Name, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_n_clob}{N\+Clob}} value)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad4b6ab140e853c27e1582981665d925a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad4b6ab140e853c27e1582981665d925a}} 
+void {\bfseries set\+N\+Clob} (String parameter\+Name, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_acec0c18ed673c688052f2b4aff9b3846}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_acec0c18ed673c688052f2b4aff9b3846}} 
+void {\bfseries set\+N\+Clob} (String parameter\+Name, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a91114c0dd4622e91165da9db928725b3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a91114c0dd4622e91165da9db928725b3}} 
+void {\bfseries set\+S\+Q\+L\+X\+ML} (String parameter\+Name, S\+Q\+L\+X\+ML xml\+Object)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a0029a0f89063356028ef8d795e1b2f21}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a0029a0f89063356028ef8d795e1b2f21}} 
+S\+Q\+L\+X\+ML {\bfseries get\+S\+Q\+L\+X\+ML} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a6eb618a78c27c987829d5dc97d540065}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a6eb618a78c27c987829d5dc97d540065}} 
+S\+Q\+L\+X\+ML {\bfseries get\+S\+Q\+L\+X\+ML} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a00abcfef233b8ec80a0edb0e7daceeaa}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a00abcfef233b8ec80a0edb0e7daceeaa}} 
+String {\bfseries get\+N\+String} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4fea844e754c85efb3d18a86f5548e34}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4fea844e754c85efb3d18a86f5548e34}} 
+String {\bfseries get\+N\+String} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aa96c2194c44ec4082cb2cfb645647062}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aa96c2194c44ec4082cb2cfb645647062}} 
+Reader {\bfseries get\+N\+Character\+Stream} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5dbe870e6f661092ec6985e826602f82}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5dbe870e6f661092ec6985e826602f82}} 
+Reader {\bfseries get\+N\+Character\+Stream} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+Reader \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a668c7c8fd31463997dbe10c99a1e5589}{get\+Character\+Stream}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+Reader \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5477c18b65f62729d34075e638b5e6de}{get\+Character\+Stream}} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1b4eadf79d2fae5dd876aac322878a6f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1b4eadf79d2fae5dd876aac322878a6f}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_n_clob}{N\+Clob}} {\bfseries get\+N\+Clob} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a65db28a124ce9df471a223c444a9cf22}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a65db28a124ce9df471a223c444a9cf22}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_n_clob}{N\+Clob}} {\bfseries get\+N\+Clob} (String parameter\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aafb8f4a04b47a44c9eab5c384a1042e0}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aafb8f4a04b47a44c9eab5c384a1042e0}} 
+long {\bfseries execute\+Large\+Update} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a741debe8f395a8e49418ffa5f0996180}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a741debe8f395a8e49418ffa5f0996180}} 
+long \mbox{[}$\,$\mbox{]} {\bfseries execute\+Large\+Batch} ()  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1ef44aef1842ec7c4affb25b0baba1d7}{fix\+Parameter\+Name}} (String param\+Name\+In)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a72e0a1ec0c24599bb2d3ee4f52ec616c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a72e0a1ec0c24599bb2d3ee4f52ec616c}} 
+int {\bfseries get\+Named\+Param\+Index} (String param\+Name, boolean for\+Out)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af73a9e62e30b97e9b02f519a09749fbf}{get\+Output\+Parameters}} (int param\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8aa76ccabbeebdb8c0430151845e6495}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8aa76ccabbeebdb8c0430151845e6495}} 
+int {\bfseries map\+Output\+Parameter\+Index\+To\+Rs\+Index} (int param\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_affc71b6220a237feb94f842a2347d1da}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_affc71b6220a237feb94f842a2347d1da}} 
+void {\bfseries register\+Out\+Parameter} (int parameter\+Index, \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_mysql_type}{Mysql\+Type}} mysql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af0005c4b8cc3fc565a380073c5a095d1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af0005c4b8cc3fc565a380073c5a095d1}} 
+void {\bfseries register\+Out\+Parameter} (int parameter\+Index, \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_mysql_type}{Mysql\+Type}} mysql\+Type, @Suppress\+Warnings(\char`\"{}unused\char`\"{}) int scale)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_adfc6052606e5e137e89a1c9af6e61b99}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_adfc6052606e5e137e89a1c9af6e61b99}} 
+void {\bfseries register\+Out\+Parameter} (int parameter\+Index, \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_mysql_type}{Mysql\+Type}} mysql\+Type, @Suppress\+Warnings(\char`\"{}unused\char`\"{}) String type\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a74bf521ae6b025c69dd8c2ab02a0d318}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a74bf521ae6b025c69dd8c2ab02a0d318}} 
+int {\bfseries get\+Parameter\+Index\+Offset} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a105cffb3cb721f8d1228988106427140}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a105cffb3cb721f8d1228988106427140}} 
+boolean {\bfseries check\+Read\+Only\+Safe\+Statement} ()  throws S\+Q\+L\+Exception 
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a7d985ddf5b86f79d5133d106d26dce95}{s2b}} (String s)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement}{Callable\+Statement}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1226691f1ed6861ed209ec30c4cabb6d}{get\+Instance}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} conn, String sql, String catalog, boolean is\+Function\+Call)  throws S\+Q\+L\+Exception 
+\item 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement}{Callable\+Statement}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a0b4b36b3823d177a749e09a4a32971a9}{get\+Instance}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_1_1_callable_statement_param_info}{Callable\+Statement\+Param\+Info}} param\+Info)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a50b0a5e60e29ab7d67b07a27004293c4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a50b0a5e60e29ab7d67b07a27004293c4}} 
+boolean {\bfseries output\+Param\+Was\+Null} = false
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9b918f6fd2f0ff28fc6b3c8560d9a59b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9b918f6fd2f0ff28fc6b3c8560d9a59b}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_1_1_callable_statement_param_info}{Callable\+Statement\+Param\+Info}} {\bfseries param\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Representation of stored procedures for J\+D\+BC 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aedac79a513af12d5af9a38c06593ae77}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aedac79a513af12d5af9a38c06593ae77}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!Callable\+Statement@{Callable\+Statement}}
+\index{Callable\+Statement@{Callable\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{Callable\+Statement()}{CallableStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+Callable\+Statement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}}}]{conn,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_1_1_callable_statement_param_info}{Callable\+Statement\+Param\+Info}}}]{param\+Info }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Creates a new \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement}{Callable\+Statement}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection creating this statement \\
+\hline
+{\em param\+Info} & the S\+QL to prepare\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a87cbed70a05b60f543557c5158d65520}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a87cbed70a05b60f543557c5158d65520}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!Callable\+Statement@{Callable\+Statement}}
+\index{Callable\+Statement@{Callable\+Statement}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{Callable\+Statement()}{CallableStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+Callable\+Statement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}}}]{conn,  }\item[{String}]{sql,  }\item[{String}]{catalog,  }\item[{boolean}]{is\+Function\+Call }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Creates a new \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement}{Callable\+Statement}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection creating this statement \\
+\hline
+{\em sql} & the S\+QL to prepare \\
+\hline
+{\em catalog} & the current catalog\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1ef44aef1842ec7c4affb25b0baba1d7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1ef44aef1842ec7c4affb25b0baba1d7}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!fix\+Parameter\+Name@{fix\+Parameter\+Name}}
+\index{fix\+Parameter\+Name@{fix\+Parameter\+Name}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{fix\+Parameter\+Name()}{fixParameterName()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+fix\+Parameter\+Name (\begin{DoxyParamCaption}\item[{String}]{param\+Name\+In }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Adds \textquotesingle{}at\textquotesingle{} symbol to beginning of parameter names if needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Name\+In} & the parameter name to \textquotesingle{}fix\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the parameter name with an \textquotesingle{}a\textquotesingle{} prepended, if needed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if the parameter name is null or empty. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_abbdda7be3e842e71327e8ea392f7a5ed}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_abbdda7be3e842e71327e8ea392f7a5ed}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Array@{get\+Array}}
+\index{get\+Array@{get\+Array}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Array()}{getArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Array com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Array (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Array(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a188c215d455bd103ff1df71a20edea16}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a188c215d455bd103ff1df71a20edea16}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Array@{get\+Array}}
+\index{get\+Array@{get\+Array}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Array()}{getArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Array com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Array (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Array(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1f198827834b03e1db3d18b47c57c654}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1f198827834b03e1db3d18b47c57c654}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Big\+Decimal@{get\+Big\+Decimal}}
+\index{get\+Big\+Decimal@{get\+Big\+Decimal}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Big\+Decimal()}{getBigDecimal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Big\+Decimal com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Big\+Decimal (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Big\+Decimal(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aa8343c70b7c58a64f062ee4d0fef0981}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aa8343c70b7c58a64f062ee4d0fef0981}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Big\+Decimal@{get\+Big\+Decimal}}
+\index{get\+Big\+Decimal@{get\+Big\+Decimal}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Big\+Decimal()}{getBigDecimal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Big\+Decimal com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Big\+Decimal (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{int}]{scale }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & \\
+\hline
+{\em scale} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Big\+Decimal(int, int) 
+\end{DoxySeeAlso}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000003}{Deprecated}}]\end{DoxyRefDesc}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_adc05152dc0cfb8a4dfc6a9d4c6ea989e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_adc05152dc0cfb8a4dfc6a9d4c6ea989e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Big\+Decimal@{get\+Big\+Decimal}}
+\index{get\+Big\+Decimal@{get\+Big\+Decimal}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Big\+Decimal()}{getBigDecimal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Big\+Decimal com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Big\+Decimal (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Big\+Decimal(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8e4c5f767bd7bd21b27fddd12f787f08}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8e4c5f767bd7bd21b27fddd12f787f08}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Blob@{get\+Blob}}
+\index{get\+Blob@{get\+Blob}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Blob()}{getBlob()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Blob (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Blob(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a6901a932f5c35457ae1226f67ce97a3b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a6901a932f5c35457ae1226f67ce97a3b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Blob@{get\+Blob}}
+\index{get\+Blob@{get\+Blob}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Blob()}{getBlob()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_blob}{Blob}} com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Blob (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Blob(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a79e721d38feeff854ff4532cc0ca5aae}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a79e721d38feeff854ff4532cc0ca5aae}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Boolean@{get\+Boolean}}
+\index{get\+Boolean@{get\+Boolean}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Boolean()}{getBoolean()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Boolean (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Boolean(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af41b4f682975fed49bfa17b6b2644bc9}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af41b4f682975fed49bfa17b6b2644bc9}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Boolean@{get\+Boolean}}
+\index{get\+Boolean@{get\+Boolean}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Boolean()}{getBoolean()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Boolean (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Boolean(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae89b7a7ccf06cc8ebbb3039730ebc06f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae89b7a7ccf06cc8ebbb3039730ebc06f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Byte@{get\+Byte}}
+\index{get\+Byte@{get\+Byte}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Byte()}{getByte()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily byte com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Byte (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Byte(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8969109951dffa5b6a541fcba87f0c40}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8969109951dffa5b6a541fcba87f0c40}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Byte@{get\+Byte}}
+\index{get\+Byte@{get\+Byte}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Byte()}{getByte()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily byte com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Byte (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Byte(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5178d2ef3a082635ffcb28fae3f209de}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5178d2ef3a082635ffcb28fae3f209de}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Bytes@{get\+Bytes}}
+\index{get\+Bytes@{get\+Bytes}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Bytes()}{getBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Bytes (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Bytes(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4184f57e3f8e6092f90a93d7feb05af8}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4184f57e3f8e6092f90a93d7feb05af8}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Bytes@{get\+Bytes}}
+\index{get\+Bytes@{get\+Bytes}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Bytes()}{getBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Bytes (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Bytes(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a668c7c8fd31463997dbe10c99a1e5589}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a668c7c8fd31463997dbe10c99a1e5589}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Character\+Stream@{get\+Character\+Stream}}
+\index{get\+Character\+Stream@{get\+Character\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Character\+Stream()}{getCharacterStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Reader com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Character\+Stream (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Character\+Stream(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5477c18b65f62729d34075e638b5e6de}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5477c18b65f62729d34075e638b5e6de}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Character\+Stream@{get\+Character\+Stream}}
+\index{get\+Character\+Stream@{get\+Character\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Character\+Stream()}{getCharacterStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Reader com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Character\+Stream (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Character\+Stream(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a24eab53dc2c5d9c0ca81d4ef1f9c4a68}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a24eab53dc2c5d9c0ca81d4ef1f9c4a68}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Clob@{get\+Clob}}
+\index{get\+Clob@{get\+Clob}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Clob()}{getClob()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob}{Clob}} com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Clob (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Clob(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1d3b051adc98dcf98fe93762440fe605}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1d3b051adc98dcf98fe93762440fe605}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Clob@{get\+Clob}}
+\index{get\+Clob@{get\+Clob}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Clob()}{getClob()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob}{Clob}} com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Clob (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Clob(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9280a0b05265e2def720a51151f8dc75}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9280a0b05265e2def720a51151f8dc75}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Date()}{getDate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Date com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Date (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Date(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5ecd5b8ebee139edcf6cf5c6b79dee9d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5ecd5b8ebee139edcf6cf5c6b79dee9d}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Date()}{getDate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Date com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Date (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Calendar}]{cal }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Date(int, java.\+util.\+Calendar) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aca6a4c290274e62c2f8f100e0c746728}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aca6a4c290274e62c2f8f100e0c746728}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Date()}{getDate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Date com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Date (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Date(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5fa3659ab861ea6df99551e4811d7b22}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5fa3659ab861ea6df99551e4811d7b22}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Date()}{getDate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Date com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Date (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Calendar}]{cal }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Date(java.\+lang.\+String, java.\+util.\+Calendar) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ab147f6da64dfa262ea1bed1a7c955c71}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ab147f6da64dfa262ea1bed1a7c955c71}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Double@{get\+Double}}
+\index{get\+Double@{get\+Double}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Double()}{getDouble()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Double (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Double(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af7ea2799796fa396896066e857542937}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af7ea2799796fa396896066e857542937}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Double@{get\+Double}}
+\index{get\+Double@{get\+Double}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Double()}{getDouble()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Double (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Double(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ac5562c83206c020fe6126aafce30bd31}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ac5562c83206c020fe6126aafce30bd31}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Float@{get\+Float}}
+\index{get\+Float@{get\+Float}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Float()}{getFloat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Float (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Float(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a60fdd6135ca3dd6e54bdb7ff62175103}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a60fdd6135ca3dd6e54bdb7ff62175103}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Float@{get\+Float}}
+\index{get\+Float@{get\+Float}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Float()}{getFloat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Float (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Float(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1226691f1ed6861ed209ec30c4cabb6d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1226691f1ed6861ed209ec30c4cabb6d}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement}{Callable\+Statement}} com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}}}]{conn,  }\item[{String}]{sql,  }\item[{String}]{catalog,  }\item[{boolean}]{is\+Function\+Call }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Creates a callable statement instance \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a0b4b36b3823d177a749e09a4a32971a9}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a0b4b36b3823d177a749e09a4a32971a9}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement}{Callable\+Statement}} com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}}}]{conn,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_1_1_callable_statement_param_info}{Callable\+Statement\+Param\+Info}}}]{param\+Info }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Creates a callable statement instance \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae1c1a3f79f99f2dd61c551a5579f9d00}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae1c1a3f79f99f2dd61c551a5579f9d00}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Int@{get\+Int}}
+\index{get\+Int@{get\+Int}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Int()}{getInt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Int (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Int(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4685a7930f62ecaf6dbb1e0153809238}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4685a7930f62ecaf6dbb1e0153809238}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Int@{get\+Int}}
+\index{get\+Int@{get\+Int}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Int()}{getInt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Int (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Int(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a6c377cb8bf737e797f7b1997b1720f20}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a6c377cb8bf737e797f7b1997b1720f20}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Long@{get\+Long}}
+\index{get\+Long@{get\+Long}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Long()}{getLong()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Long (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Long(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a91e4b1905100f823247b0670dfeab198}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a91e4b1905100f823247b0670dfeab198}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Long@{get\+Long}}
+\index{get\+Long@{get\+Long}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Long()}{getLong()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Long (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Long(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9f21c0d55e0a2c4361e1d57500a6c06f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a9f21c0d55e0a2c4361e1d57500a6c06f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Object@{get\+Object}}
+\index{get\+Object@{get\+Object}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Object()}{getObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Object com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Object (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Object(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a97844ead20095c7f99ec8dda55fcb795}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a97844ead20095c7f99ec8dda55fcb795}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Object@{get\+Object}}
+\index{get\+Object@{get\+Object}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Object()}{getObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Object com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Object (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Map$<$ String, Class$<$?$>$$>$}]{map }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Object(int, java.\+util.\+Map) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a6166a1c8cd33dbb53750d37513d29365}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a6166a1c8cd33dbb53750d37513d29365}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Object@{get\+Object}}
+\index{get\+Object@{get\+Object}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Object()}{getObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Object com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Object (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Object(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a367ba176bf87e7f1ec648719163ccfe1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a367ba176bf87e7f1ec648719163ccfe1}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Object@{get\+Object}}
+\index{get\+Object@{get\+Object}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Object()}{getObject()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Object com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Object (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Map$<$ String, Class$<$?$>$$>$}]{map }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Object(java.\+lang.\+String, java.\+util.\+Map) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af73a9e62e30b97e9b02f519a09749fbf}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af73a9e62e30b97e9b02f519a09749fbf}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Output\+Parameters@{get\+Output\+Parameters}}
+\index{get\+Output\+Parameters@{get\+Output\+Parameters}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Output\+Parameters()}{getOutputParameters()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Output\+Parameters (\begin{DoxyParamCaption}\item[{int}]{param\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the Result\+Set that holds the output parameters, or throws an appropriate exception if none exist, or they weren\textquotesingle{}t returned.
+
+\begin{DoxyReturn}{Returns}
+the Result\+Set that holds the output parameters
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if no output parameters were defined, or if no output parameters were returned. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8720b2b1d80bf651acaa37a231a54a2f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8720b2b1d80bf651acaa37a231a54a2f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Ref@{get\+Ref}}
+\index{get\+Ref@{get\+Ref}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Ref()}{getRef()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ref com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Ref (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Ref(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af7a8d26f34cc8e3de6ef0f752a120522}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_af7a8d26f34cc8e3de6ef0f752a120522}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Ref@{get\+Ref}}
+\index{get\+Ref@{get\+Ref}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Ref()}{getRef()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ref com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Ref (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Ref(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a76c1fd1939e74de3c13d31f2be917be5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a76c1fd1939e74de3c13d31f2be917be5}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Short@{get\+Short}}
+\index{get\+Short@{get\+Short}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Short()}{getShort()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily short com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Short (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Short(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a27a1597b2ad871acb0687bd2c5a5ab2e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a27a1597b2ad871acb0687bd2c5a5ab2e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Short@{get\+Short}}
+\index{get\+Short@{get\+Short}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Short()}{getShort()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily short com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Short (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Short(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a003eb4a2772e2ed3d56e94c6a5329c90}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a003eb4a2772e2ed3d56e94c6a5329c90}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+String@{get\+String}}
+\index{get\+String@{get\+String}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+String()}{getString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+String (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+String(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ab7834c33851bc5ef89b347980188d89e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ab7834c33851bc5ef89b347980188d89e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+String@{get\+String}}
+\index{get\+String@{get\+String}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+String()}{getString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+String (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+String(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a3cccf3351176e00eaa0d0fc817912868}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a3cccf3351176e00eaa0d0fc817912868}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Time()}{getTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Time com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Time (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Time(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aefec73ec4f73a6f345d8068f40b370aa}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aefec73ec4f73a6f345d8068f40b370aa}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Time()}{getTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Time com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Time (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Calendar}]{cal }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Time(int, java.\+util.\+Calendar) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a159ebf9a2c557e3b3be590039e235706}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a159ebf9a2c557e3b3be590039e235706}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Time()}{getTime()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Time com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Time (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Time(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_abf92189287e2a654e1c59e348cb11928}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_abf92189287e2a654e1c59e348cb11928}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Time()}{getTime()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Time com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Time (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Calendar}]{cal }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Time(java.\+lang.\+String, java.\+util.\+Calendar) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a106f01266c7bfbaa1c14e3a5a3be0d2b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a106f01266c7bfbaa1c14e3a5a3be0d2b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Timestamp@{get\+Timestamp}}
+\index{get\+Timestamp@{get\+Timestamp}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Timestamp()}{getTimestamp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Timestamp com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Timestamp (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Timestamp(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a95a1e742a567a1dfe798b172770acfe3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a95a1e742a567a1dfe798b172770acfe3}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Timestamp@{get\+Timestamp}}
+\index{get\+Timestamp@{get\+Timestamp}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Timestamp()}{getTimestamp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Timestamp com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Timestamp (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Calendar}]{cal }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Timestamp(int, java.\+util.\+Calendar) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad259b38c5fa0c1d844e7a2a2d78c420f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad259b38c5fa0c1d844e7a2a2d78c420f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Timestamp@{get\+Timestamp}}
+\index{get\+Timestamp@{get\+Timestamp}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Timestamp()}{getTimestamp()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Timestamp com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Timestamp (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Timestamp(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae256b922dcf07dac53e51154a618f1c3}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae256b922dcf07dac53e51154a618f1c3}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+Timestamp@{get\+Timestamp}}
+\index{get\+Timestamp@{get\+Timestamp}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+Timestamp()}{getTimestamp()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Timestamp com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+Timestamp (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Calendar}]{cal }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+Timestamp(java.\+lang.\+String, java.\+util.\+Calendar) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a64d354f54f05a378cc69bff200a58093}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a64d354f54f05a378cc69bff200a58093}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+U\+RL@{get\+U\+RL}}
+\index{get\+U\+RL@{get\+U\+RL}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+U\+R\+L()}{getURL()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily U\+RL com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+U\+RL (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+U\+R\+L(int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a08e77360a042f37ef9afdd164461e343}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a08e77360a042f37ef9afdd164461e343}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!get\+U\+RL@{get\+U\+RL}}
+\index{get\+U\+RL@{get\+U\+RL}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{get\+U\+R\+L()}{getURL()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily U\+RL com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+get\+U\+RL (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::get\+U\+RL(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a0fad8371936ac7040051d7158cea4024}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a0fad8371936ac7040051d7158cea4024}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!register\+Out\+Parameter@{register\+Out\+Parameter}}
+\index{register\+Out\+Parameter@{register\+Out\+Parameter}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{register\+Out\+Parameter()}{registerOutParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+register\+Out\+Parameter (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{int}]{sql\+Type }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::register\+Out\+Parameter(java.\+lang.\+String, int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ac0d18bc90e504b9bc2d2ba65c6562223}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ac0d18bc90e504b9bc2d2ba65c6562223}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!register\+Out\+Parameter@{register\+Out\+Parameter}}
+\index{register\+Out\+Parameter@{register\+Out\+Parameter}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{register\+Out\+Parameter()}{registerOutParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+register\+Out\+Parameter (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{int}]{sql\+Type,  }\item[{int}]{scale }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::register\+Out\+Parameter(java.\+lang.\+String, int, int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5c95bebcfabf37c4d4cf1f054e5b2278}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5c95bebcfabf37c4d4cf1f054e5b2278}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!register\+Out\+Parameter@{register\+Out\+Parameter}}
+\index{register\+Out\+Parameter@{register\+Out\+Parameter}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{register\+Out\+Parameter()}{registerOutParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+register\+Out\+Parameter (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{int}]{sql\+Type,  }\item[{String}]{type\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::register\+Out\+Parameter(java.\+lang.\+String, int, java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a7d985ddf5b86f79d5133d106d26dce95}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a7d985ddf5b86f79d5133d106d26dce95}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!s2b@{s2b}}
+\index{s2b@{s2b}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{s2b()}{s2b()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+s2b (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Converts the given string to bytes, using the connection\textquotesingle{}s character encoding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a69641688613693dda99a792231cdb153}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a69641688613693dda99a792231cdb153}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Ascii\+Stream@{set\+Ascii\+Stream}}
+\index{set\+Ascii\+Stream@{set\+Ascii\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Ascii\+Stream()}{setAsciiStream()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Ascii\+Stream (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Input\+Stream}]{x,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Ascii\+Stream(java.\+lang.\+String, java.\+io.\+Input\+Stream, int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4a068a406dc0362622e2204d21a8e70a}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4a068a406dc0362622e2204d21a8e70a}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Big\+Decimal@{set\+Big\+Decimal}}
+\index{set\+Big\+Decimal@{set\+Big\+Decimal}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Big\+Decimal()}{setBigDecimal()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Big\+Decimal (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Big\+Decimal}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Big\+Decimal(java.\+lang.\+String, java.\+math.\+Big\+Decimal) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a2cb01ff3839a5512f641ad8ffc72adaa}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a2cb01ff3839a5512f641ad8ffc72adaa}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Binary\+Stream@{set\+Binary\+Stream}}
+\index{set\+Binary\+Stream@{set\+Binary\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Binary\+Stream()}{setBinaryStream()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Binary\+Stream (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Input\+Stream}]{x,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Binary\+Stream(java.\+lang.\+String, java.\+io.\+Input\+Stream, int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8236f80a9a498f1401ee0f2ec01adcdd}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a8236f80a9a498f1401ee0f2ec01adcdd}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Boolean@{set\+Boolean}}
+\index{set\+Boolean@{set\+Boolean}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Boolean()}{setBoolean()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Boolean (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{boolean}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Boolean(java.\+lang.\+String, boolean) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a212a0900b99fd7f7ddbe7a64eea6b1e4}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a212a0900b99fd7f7ddbe7a64eea6b1e4}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Byte@{set\+Byte}}
+\index{set\+Byte@{set\+Byte}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Byte()}{setByte()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Byte (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{byte}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Byte(java.\+lang.\+String, byte) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aaa52a01483a9d999e9c8973064a063d9}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_aaa52a01483a9d999e9c8973064a063d9}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Bytes@{set\+Bytes}}
+\index{set\+Bytes@{set\+Bytes}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Bytes()}{setBytes()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Bytes (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Bytes(java.\+lang.\+String, byte\mbox{[}\mbox{]}) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae67b3fc2ec48f545359e93d6568ccc3b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ae67b3fc2ec48f545359e93d6568ccc3b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Character\+Stream@{set\+Character\+Stream}}
+\index{set\+Character\+Stream@{set\+Character\+Stream}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Character\+Stream()}{setCharacterStream()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Character\+Stream (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Reader}]{reader,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Character\+Stream(java.\+lang.\+String, java.\+io.\+Reader, int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad8945fa51e3fbb56c41cea11624e726e}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad8945fa51e3fbb56c41cea11624e726e}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Date@{set\+Date}}
+\index{set\+Date@{set\+Date}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Date()}{setDate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Date (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Date}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Date(java.\+lang.\+String, java.\+sql.\+Date) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4acf89e04d11195ab7c45dce46e7c367}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a4acf89e04d11195ab7c45dce46e7c367}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Date@{set\+Date}}
+\index{set\+Date@{set\+Date}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Date()}{setDate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Date (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Date}]{x,  }\item[{Calendar}]{cal }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Date(java.\+lang.\+String, java.\+sql.\+Date, java.\+util.\+Calendar) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_abd5c1f562e6a0f06c4ef239a208d1471}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_abd5c1f562e6a0f06c4ef239a208d1471}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Double@{set\+Double}}
+\index{set\+Double@{set\+Double}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Double()}{setDouble()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Double (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{double}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Double(java.\+lang.\+String, double) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a419e74b589c54323627a2dbace2148c9}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a419e74b589c54323627a2dbace2148c9}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Float@{set\+Float}}
+\index{set\+Float@{set\+Float}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Float()}{setFloat()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Float (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{float}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Float(java.\+lang.\+String, float) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a7b7f13ec6ca2fe9dc40472b5334d1259}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a7b7f13ec6ca2fe9dc40472b5334d1259}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Int@{set\+Int}}
+\index{set\+Int@{set\+Int}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Int()}{setInt()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Int (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{int}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Int(java.\+lang.\+String, int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1b79292eddc7df78b2ef1b7e9ea614ed}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a1b79292eddc7df78b2ef1b7e9ea614ed}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Long@{set\+Long}}
+\index{set\+Long@{set\+Long}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Long()}{setLong()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Long (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{long}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Long(java.\+lang.\+String, long) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a75fd7895affb02fdb0d77a4093554b89}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a75fd7895affb02fdb0d77a4093554b89}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Null@{set\+Null}}
+\index{set\+Null@{set\+Null}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Null()}{setNull()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Null (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{int}]{sql\+Type }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Null(java.\+lang.\+String, int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a3358832780f6cdacf23551c4321bf35f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a3358832780f6cdacf23551c4321bf35f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Null@{set\+Null}}
+\index{set\+Null@{set\+Null}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Null()}{setNull()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Null (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{int}]{sql\+Type,  }\item[{String}]{type\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Null(java.\+lang.\+String, int, java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a2a37988196c65bd7d26890a1fe33281b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a2a37988196c65bd7d26890a1fe33281b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Object@{set\+Object}}
+\index{set\+Object@{set\+Object}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Object()}{setObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Object (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Object}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Object(java.\+lang.\+String, java.\+lang.\+Object) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a43a0be416f90c7c642fc33122bbccfb1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a43a0be416f90c7c642fc33122bbccfb1}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Object@{set\+Object}}
+\index{set\+Object@{set\+Object}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Object()}{setObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Object (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Object}]{x,  }\item[{int}]{target\+Sql\+Type }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Object(java.\+lang.\+String, java.\+lang.\+Object, int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5b8dc26448026aec39c4e87831d1e045}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5b8dc26448026aec39c4e87831d1e045}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Object@{set\+Object}}
+\index{set\+Object@{set\+Object}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Object()}{setObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Object (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Object}]{x,  }\item[{int}]{target\+Sql\+Type,  }\item[{int}]{scale }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Object(java.\+lang.\+String, java.\+lang.\+Object, int, int) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a3e077220a5f501fd6a1455055ac27aa5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a3e077220a5f501fd6a1455055ac27aa5}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Short@{set\+Short}}
+\index{set\+Short@{set\+Short}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Short()}{setShort()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Short (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{short}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Short(java.\+lang.\+String, short) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a31f6dfa1f9643a1b4ed3efd57d00bc2b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a31f6dfa1f9643a1b4ed3efd57d00bc2b}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+String@{set\+String}}
+\index{set\+String@{set\+String}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+String()}{setString()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+String (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{String}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+String(java.\+lang.\+String, java.\+lang.\+String) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_abaeaf443ba9998c9378de127b63c4eaa}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_abaeaf443ba9998c9378de127b63c4eaa}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Time()}{setTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Time (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Time}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Time(java.\+lang.\+String, java.\+sql.\+Time) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ab2ce9627abfa776a9a481cc4f496d2ae}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ab2ce9627abfa776a9a481cc4f496d2ae}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Time()}{setTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Time (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Time}]{x,  }\item[{Calendar}]{cal }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Time(java.\+lang.\+String, java.\+sql.\+Time, java.\+util.\+Calendar) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5032ac718b4fbbb1cfd23077cc37ec20}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a5032ac718b4fbbb1cfd23077cc37ec20}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Timestamp@{set\+Timestamp}}
+\index{set\+Timestamp@{set\+Timestamp}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Timestamp()}{setTimestamp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Timestamp (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Timestamp}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Timestamp(java.\+lang.\+String, java.\+sql.\+Timestamp) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_adeaf8f538114ab776d3f9063134709a7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_adeaf8f538114ab776d3f9063134709a7}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+Timestamp@{set\+Timestamp}}
+\index{set\+Timestamp@{set\+Timestamp}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+Timestamp()}{setTimestamp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+Timestamp (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{Timestamp}]{x,  }\item[{Calendar}]{cal }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+Timestamp(java.\+lang.\+String, java.\+sql.\+Timestamp, java.\+util.\+Calendar) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad9619f612112c6427341179cd909a058}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_ad9619f612112c6427341179cd909a058}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!set\+U\+RL@{set\+U\+RL}}
+\index{set\+U\+RL@{set\+U\+RL}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{set\+U\+R\+L()}{setURL()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+set\+U\+RL (\begin{DoxyParamCaption}\item[{String}]{parameter\+Name,  }\item[{U\+RL}]{val }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::set\+U\+RL(java.\+lang.\+String, java.\+net.\+U\+RL) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a49a33a86678de625aaf3d944363eb7d5}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_callable_statement_a49a33a86678de625aaf3d944363eb7d5}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}!was\+Null@{was\+Null}}
+\index{was\+Null@{was\+Null}!com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement@{com\+::mysql\+::cj\+::jdbc\+::\+Callable\+Statement}}
+\subsubsection{\texorpdfstring{was\+Null()}{wasNull()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+jdbc.\+Callable\+Statement.\+was\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Callable\+Statement\+::was\+Null() 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/Callable\+Statement.\+java\end{DoxyCompactItemize}

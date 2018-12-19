@@ -1,0 +1,83 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection}{}\section{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Async\+Socket\+Connection Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection}\index{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Async\+Socket\+Connection@{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Async\+Socket\+Connection}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_abstract_socket_connection}{com.\+mysql.\+cj.\+protocol.\+Abstract\+Socket\+Connection}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{com.\+mysql.\+cj.\+protocol.\+Socket\+Connection}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a6b2b3e14475625ac633ea3258d4eeb08}{connect}} (String host\+Name, int port\+Number, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} prop\+Set, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exc\+Interceptor, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log, int login\+Timeout)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a3e9822eb06f30e59addd9965056237c1}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a3e9822eb06f30e59addd9965056237c1}} 
+void {\bfseries perform\+Tls\+Handshake} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} server\+Session)  throws S\+S\+L\+Params\+Exception, Feature\+Not\+Available\+Exception, I\+O\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a1c70e8bf34ff9c3f1b2b0007260f10e7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a1c70e8bf34ff9c3f1b2b0007260f10e7}} 
+Asynchronous\+Socket\+Channel {\bfseries get\+Asynchronous\+Socket\+Channel} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_ac282682b46d2807beef590caebaa5b71}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_ac282682b46d2807beef590caebaa5b71}} 
+final void {\bfseries force\+Close} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a99b18cbdd06e398d4c1e25ea6172e1c2}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a99b18cbdd06e398d4c1e25ea6172e1c2}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_network_resources}{Network\+Resources}} {\bfseries get\+Network\+Resources} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a3d6ea580f0252b26d6385e69fe71f02c}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a3d6ea580f0252b26d6385e69fe71f02c}} 
+Socket {\bfseries get\+Mysql\+Socket} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a780fb96617a64cb758ef75681f6dc3ab}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a780fb96617a64cb758ef75681f6dc3ab}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_full_read_input_stream}{Full\+Read\+Input\+Stream}} {\bfseries get\+Mysql\+Input} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_af5b71958ccff270ccc3a24afa1b3a0af}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_af5b71958ccff270ccc3a24afa1b3a0af}} 
+void {\bfseries set\+Mysql\+Input} (Input\+Stream mysql\+Input)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a233c917f720ee49857c160155fbd75dc}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a233c917f720ee49857c160155fbd75dc}} 
+Buffered\+Output\+Stream {\bfseries get\+Mysql\+Output} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a312eb39f55bfb31c60beab6bb645f8c8}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a312eb39f55bfb31c60beab6bb645f8c8}} 
+boolean {\bfseries is\+S\+S\+L\+Established} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a6cb71da85c0faf8459c9cc9ef3845759}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a6cb71da85c0faf8459c9cc9ef3845759}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} {\bfseries get\+Exception\+Interceptor} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a0e10073e77bdd319bbf9346280c1dad7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a0e10073e77bdd319bbf9346280c1dad7}} 
+boolean {\bfseries is\+Synchronous} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An async I/O connection. This enables use of async methods on \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_protocol}{X\+Protocol}}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a6b2b3e14475625ac633ea3258d4eeb08}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_async_socket_connection_a6b2b3e14475625ac633ea3258d4eeb08}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Async\+Socket\+Connection@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Async\+Socket\+Connection}!connect@{connect}}
+\index{connect@{connect}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Async\+Socket\+Connection@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Async\+Socket\+Connection}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+X\+Async\+Socket\+Connection.\+connect (\begin{DoxyParamCaption}\item[{String}]{host,  }\item[{int}]{port,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}}}]{property\+Set,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}}}]{log,  }\item[{int}]{login\+Timeout }\end{DoxyParamCaption})}
+
+Connect to the My\+S\+QL server and setup a stream connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & the hostname to connect to \\
+\hline
+{\em port} & the port number that the server is listening on \\
+\hline
+{\em property\+Set} & the Property\+Set with required connection options \\
+\hline
+{\em exception\+Interceptor} & exception interceptor \\
+\hline
+{\em log} & logger \\
+\hline
+{\em login\+Timeout} & the driver login time limit in milliseconds \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection_ac20aea608e999684c82a0dbaaa5886c7}{com.\+mysql.\+cj.\+protocol.\+Socket\+Connection}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/x/X\+Async\+Socket\+Connection.\+java\end{DoxyCompactItemize}

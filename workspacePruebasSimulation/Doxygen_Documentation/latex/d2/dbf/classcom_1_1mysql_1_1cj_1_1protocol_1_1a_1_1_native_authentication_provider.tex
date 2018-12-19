@@ -1,0 +1,101 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Authentication\+Provider Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider}\index{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Authentication\+Provider@{com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Authentication\+Provider}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_provider}{com.\+mysql.\+cj.\+protocol.\+Authentication\+Provider$<$ M extends Message $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a3b9853ff4d45808557e5566bdbcd5d5d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a3b9853ff4d45808557e5566bdbcd5d5d}} 
+{\bfseries Native\+Authentication\+Provider} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_aad4a7ad192dd22c533e5a4a8190c7776}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_aad4a7ad192dd22c533e5a4a8190c7776}} 
+void {\bfseries init} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{Protocol}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ prot, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} prop\+Set, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exc\+Interceptor)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a2293502a6ebd37746dcada2f4b0a9c23}{connect}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} sess\+State, String user, String password, String database)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a27c5a8cd7397eb15934b3b3048dc161d}{get\+Encoding\+For\+Handshake}} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_aed374243b2af096a92fd54eb99300bf0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_aed374243b2af096a92fd54eb99300bf0}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} {\bfseries get\+Exception\+Interceptor} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a5cf1296206b1d2ceb53440428a37d6f8}{change\+User}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} server\+Session, String user\+Name, String password, String database)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a892979fa3727266691d4cbb0386adca2}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a892979fa3727266691d4cbb0386adca2}} 
+String {\bfseries seed}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a49df77ded491c1f4b77a3f1dddeb33a5}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a49df77ded491c1f4b77a3f1dddeb33a5}} 
+static final int {\bfseries A\+U\+T\+H\+\_\+411\+\_\+\+O\+V\+E\+R\+H\+E\+AD} = 33
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a5cf1296206b1d2ceb53440428a37d6f8}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a5cf1296206b1d2ceb53440428a37d6f8}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Authentication\+Provider@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Authentication\+Provider}!change\+User@{change\+User}}
+\index{change\+User@{change\+User}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Authentication\+Provider@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Authentication\+Provider}}
+\subsubsection{\texorpdfstring{change\+User()}{changeUser()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Authentication\+Provider.\+change\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}}}]{server\+Session,  }\item[{String}]{user\+Name,  }\item[{String}]{password,  }\item[{String}]{database }\end{DoxyParamCaption})}
+
+Re-\/authenticates as the given user and password
+
+
+\begin{DoxyParams}{Parameters}
+{\em server\+Session} & \\
+\hline
+{\em user\+Name} & \\
+\hline
+{\em password} & \\
+\hline
+{\em database} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_provider_a166772168a0573ba2f186e49c41b0aec}{com.\+mysql.\+cj.\+protocol.\+Authentication\+Provider$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a2293502a6ebd37746dcada2f4b0a9c23}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a2293502a6ebd37746dcada2f4b0a9c23}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Authentication\+Provider@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Authentication\+Provider}!connect@{connect}}
+\index{connect@{connect}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Authentication\+Provider@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Authentication\+Provider}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Authentication\+Provider.\+connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}}}]{sess\+State,  }\item[{String}]{user,  }\item[{String}]{password,  }\item[{String}]{database }\end{DoxyParamCaption})}
+
+Initialize communications with the My\+S\+QL server. Handles logging on, and handling initial connection errors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sess\+State} & The session state object. It\textquotesingle{}s intended to be updated from the handshake \\
+\hline
+{\em user} & \\
+\hline
+{\em password} & \\
+\hline
+{\em database} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_provider}{com.\+mysql.\+cj.\+protocol.\+Authentication\+Provider$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a27c5a8cd7397eb15934b3b3048dc161d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_authentication_provider_a27c5a8cd7397eb15934b3b3048dc161d}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Authentication\+Provider@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Authentication\+Provider}!get\+Encoding\+For\+Handshake@{get\+Encoding\+For\+Handshake}}
+\index{get\+Encoding\+For\+Handshake@{get\+Encoding\+For\+Handshake}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Authentication\+Provider@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Authentication\+Provider}}
+\subsubsection{\texorpdfstring{get\+Encoding\+For\+Handshake()}{getEncodingForHandshake()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Authentication\+Provider.\+get\+Encoding\+For\+Handshake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the Java encoding to be used for the handshake response. Defaults to U\+T\+F-\/8. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_provider}{com.\+mysql.\+cj.\+protocol.\+Authentication\+Provider$<$ M extends Message $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/Native\+Authentication\+Provider.\+java\end{DoxyCompactItemize}

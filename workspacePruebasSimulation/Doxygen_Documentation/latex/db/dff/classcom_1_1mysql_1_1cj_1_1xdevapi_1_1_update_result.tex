@@ -1,0 +1,99 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result}{}\section{com.\+mysql.\+cj.\+xdevapi.\+Update\+Result Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result}\index{com.\+mysql.\+cj.\+xdevapi.\+Update\+Result@{com.\+mysql.\+cj.\+xdevapi.\+Update\+Result}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{com.\+mysql.\+cj.\+xdevapi.\+Result}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_add_result_impl}{com.\+mysql.\+cj.\+xdevapi.\+Add\+Result\+Impl}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_insert_result_impl}{com.\+mysql.\+cj.\+xdevapi.\+Insert\+Result\+Impl}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_update_result}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Update\+Result}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result_a931d745fc11aee840dd19c930eb4b465}{Update\+Result}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} ok)
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result_a0af03ef8678c7e0aba1569e7bda5b979}{get\+Affected\+Items\+Count}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result_a5a4640f6081699843d69643728e1038b}{get\+Warnings\+Count}} ()
+\item 
+Iterator$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_warning}{Warning}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result_a44b96bc6ac3193b0f276a8317d48b5b3}{get\+Warnings}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result_a9314dbffc186019112194b43a86e0174}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result_a9314dbffc186019112194b43a86e0174}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}} {\bfseries ok}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A result from a statement that doesn\textquotesingle{}t return a set of rows. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result_a931d745fc11aee840dd19c930eb4b465}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result_a931d745fc11aee840dd19c930eb4b465}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result}!Update\+Result@{Update\+Result}}
+\index{Update\+Result@{Update\+Result}!com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result}}
+\subsubsection{\texorpdfstring{Update\+Result()}{UpdateResult()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+xdevapi.\+Update\+Result.\+Update\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_statement_execute_ok}{Statement\+Execute\+Ok}}}]{ok }\end{DoxyParamCaption})}
+
+Create a new result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ok} & the response from the server \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result_a0af03ef8678c7e0aba1569e7bda5b979}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result_a0af03ef8678c7e0aba1569e7bda5b979}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result}!get\+Affected\+Items\+Count@{get\+Affected\+Items\+Count}}
+\index{get\+Affected\+Items\+Count@{get\+Affected\+Items\+Count}!com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result}}
+\subsubsection{\texorpdfstring{get\+Affected\+Items\+Count()}{getAffectedItemsCount()}}
+{\footnotesize\ttfamily long com.\+mysql.\+cj.\+xdevapi.\+Update\+Result.\+get\+Affected\+Items\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the count of affected items from manipulation statements.
+
+\begin{DoxyReturn}{Returns}
+count 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result_a6389cfd50f26c8efc0120b5f3072d228}{com.\+mysql.\+cj.\+xdevapi.\+Result}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result_a44b96bc6ac3193b0f276a8317d48b5b3}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result_a44b96bc6ac3193b0f276a8317d48b5b3}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result}!get\+Warnings@{get\+Warnings}}
+\index{get\+Warnings@{get\+Warnings}!com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result}}
+\subsubsection{\texorpdfstring{get\+Warnings()}{getWarnings()}}
+{\footnotesize\ttfamily Iterator$<$\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_warning}{Warning}}$>$ com.\+mysql.\+cj.\+xdevapi.\+Update\+Result.\+get\+Warnings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Warnings generated during statement execution.
+
+\begin{DoxyReturn}{Returns}
+iterator over warnings 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result_a7bd12aba36fc02a31c8fd546fe731e98}{com.\+mysql.\+cj.\+xdevapi.\+Result}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result_a5a4640f6081699843d69643728e1038b}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_update_result_a5a4640f6081699843d69643728e1038b}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result}!get\+Warnings\+Count@{get\+Warnings\+Count}}
+\index{get\+Warnings\+Count@{get\+Warnings\+Count}!com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result@{com\+::mysql\+::cj\+::xdevapi\+::\+Update\+Result}}
+\subsubsection{\texorpdfstring{get\+Warnings\+Count()}{getWarningsCount()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+xdevapi.\+Update\+Result.\+get\+Warnings\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Count of warnings generated during statement execution.
+
+\begin{DoxyReturn}{Returns}
+count 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result_addd5c82af4ab35e702d7f2961119ecc6}{com.\+mysql.\+cj.\+xdevapi.\+Result}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/Update\+Result.\+java\end{DoxyCompactItemize}

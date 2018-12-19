@@ -1,0 +1,95 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{}\section{com.\+mysql.\+cj.\+protocol.\+Column\+Definition Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}\index{com.\+mysql.\+cj.\+protocol.\+Column\+Definition@{com.\+mysql.\+cj.\+protocol.\+Column\+Definition}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{com.\+mysql.\+cj.\+protocol.\+Protocol\+Entity}}.
+
+
+
+Inherited by \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1result_1_1_cached_result_set_meta_data}{com.\+mysql.\+cj.\+jdbc.\+result.\+Cached\+Result\+Set\+Meta\+Data}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_column_definition}{com.\+mysql.\+cj.\+result.\+Default\+Column\+Definition}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_column_def}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Column\+Def$<$ T extends Column\+Definition$<$ T $>$}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_column_definition_1_1_generated_column_definition}{com.\+mysql.\+cj.\+xdevapi.\+Column\+Definition$<$ T extends Column\+Definition$<$ T $>$.\+Generated\+Column\+Definition}}, and \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_column_definition_1_1_static_column_definition}{com.\+mysql.\+cj.\+xdevapi.\+Column\+Definition$<$ T extends Column\+Definition$<$ T $>$.\+Static\+Column\+Definition}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_ab5231022615e60179701e8e0b763c41a}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_ab5231022615e60179701e8e0b763c41a}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_field}{Field}} \mbox{[}$\,$\mbox{]} {\bfseries get\+Fields} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a795612d44026e85eedca7443f4f47381}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a795612d44026e85eedca7443f4f47381}} 
+void {\bfseries set\+Fields} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} fields)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_abadc6af9b7111fa0398649fe01a43308}{build\+Index\+Mapping}} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a6eafbe53ee7659c0aa45a05b8a9f77e3}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a6eafbe53ee7659c0aa45a05b8a9f77e3}} 
+boolean {\bfseries has\+Built\+Index\+Mapping} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_aa22f404b0faa1f9393ae5c34c2d943df}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_aa22f404b0faa1f9393ae5c34c2d943df}} 
+Map$<$ String, Integer $>$ {\bfseries get\+Column\+Label\+To\+Index} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_aed78b554a078a7b133507dd62a891529}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_aed78b554a078a7b133507dd62a891529}} 
+void {\bfseries set\+Column\+Label\+To\+Index} (Map$<$ String, Integer $>$ column\+Label\+To\+Index)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a68510237e7bbcb7778e1115b2c49f7ad}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a68510237e7bbcb7778e1115b2c49f7ad}} 
+Map$<$ String, Integer $>$ {\bfseries get\+Full\+Column\+Name\+To\+Index} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a75168874688cd04aa48f269036d2227d}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a75168874688cd04aa48f269036d2227d}} 
+void {\bfseries set\+Full\+Column\+Name\+To\+Index} (Map$<$ String, Integer $>$ full\+Col\+Name\+To\+Index)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_ad5ae6c46f96994220e21085f7aa00baa}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_ad5ae6c46f96994220e21085f7aa00baa}} 
+Map$<$ String, Integer $>$ {\bfseries get\+Column\+Name\+To\+Index} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a9294ea39f51afb604fa3579338bfa671}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a9294ea39f51afb604fa3579338bfa671}} 
+void {\bfseries set\+Column\+Name\+To\+Index} (Map$<$ String, Integer $>$ col\+Name\+To\+Index)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a1317a18af8dde169cb972926f8e3521b}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a1317a18af8dde169cb972926f8e3521b}} 
+Map$<$ String, Integer $>$ {\bfseries get\+Column\+To\+Index\+Cache} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a1972ecc1b6610bbb394af09827c4643f}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a1972ecc1b6610bbb394af09827c4643f}} 
+void {\bfseries set\+Column\+To\+Index\+Cache} (Map$<$ String, Integer $>$ column\+To\+Index\+Cache)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a3acff373088009fd3c2653b01cf0f7fe}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a3acff373088009fd3c2653b01cf0f7fe}} 
+void {\bfseries initialize\+From} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} column\+Definition)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_ae382d41d473df7f74ce51d22c18b1aa6}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_ae382d41d473df7f74ce51d22c18b1aa6}} 
+void {\bfseries export\+To} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} column\+Definition)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a9082cb797c01aec299496d0d2fe41528}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_a9082cb797c01aec299496d0d2fe41528}} 
+int {\bfseries find\+Column} (String column\+Name, boolean use\+Column\+Names\+In\+Find\+Column, int index\+Base)
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_adc02edd67e54d79c7f91d41d027e44ae}{has\+Large\+Fields}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents protocol specific result set metadata, eg., for native protocol, Protocol\+::\+Column\+Definition41 protocol entity. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_abadc6af9b7111fa0398649fe01a43308}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_abadc6af9b7111fa0398649fe01a43308}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Column\+Definition@{com\+::mysql\+::cj\+::protocol\+::\+Column\+Definition}!build\+Index\+Mapping@{build\+Index\+Mapping}}
+\index{build\+Index\+Mapping@{build\+Index\+Mapping}!com\+::mysql\+::cj\+::protocol\+::\+Column\+Definition@{com\+::mysql\+::cj\+::protocol\+::\+Column\+Definition}}
+\subsubsection{\texorpdfstring{build\+Index\+Mapping()}{buildIndexMapping()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Column\+Definition.\+build\+Index\+Mapping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Builds a hash between column names and their indices for fast retrieval. This is done lazily to support find\+Column() and get$\ast$(String), as it can be more expensive than just retrieving result set values by ordinal index. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_column_definition_a765750a709687a3a53d1fe1fa9891c96}{com.\+mysql.\+cj.\+result.\+Default\+Column\+Definition}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_adc02edd67e54d79c7f91d41d027e44ae}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition_adc02edd67e54d79c7f91d41d027e44ae}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Column\+Definition@{com\+::mysql\+::cj\+::protocol\+::\+Column\+Definition}!has\+Large\+Fields@{has\+Large\+Fields}}
+\index{has\+Large\+Fields@{has\+Large\+Fields}!com\+::mysql\+::cj\+::protocol\+::\+Column\+Definition@{com\+::mysql\+::cj\+::protocol\+::\+Column\+Definition}}
+\subsubsection{\texorpdfstring{has\+Large\+Fields()}{hasLargeFields()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+cj.\+protocol.\+Column\+Definition.\+has\+Large\+Fields (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if fields with type B\+L\+OB, M\+E\+D\+I\+U\+M\+B\+L\+OB, L\+O\+N\+G\+B\+L\+OB, T\+E\+XT, M\+E\+D\+I\+U\+M\+T\+E\+XT or L\+O\+N\+G\+T\+E\+XT exist in this \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}.
+
+\begin{DoxyReturn}{Returns}
+true if fields with type B\+L\+OB, M\+E\+D\+I\+U\+M\+B\+L\+OB, L\+O\+N\+G\+B\+L\+OB, T\+E\+XT, M\+E\+D\+I\+U\+M\+T\+E\+XT or L\+O\+N\+G\+T\+E\+XT exist in this \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1result_1_1_default_column_definition_a221996852cd52bf81bd9e3ecb8ab6ff5}{com.\+mysql.\+cj.\+result.\+Default\+Column\+Definition}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/Column\+Definition.\+java\end{DoxyCompactItemize}

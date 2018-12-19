@@ -1,0 +1,72 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection}{}\section{com.\+mysql.\+cj.\+jdbc.\+Mysql\+X\+A\+Connection Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection}\index{com.\+mysql.\+cj.\+jdbc.\+Mysql\+X\+A\+Connection@{com.\+mysql.\+cj.\+jdbc.\+Mysql\+X\+A\+Connection}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_pooled_connection}{com.\+mysql.\+cj.\+jdbc.\+Mysql\+Pooled\+Connection}}, X\+A\+Connection, and X\+A\+Resource.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_ab6bc1b1d3cad547e542c44bdc591e581}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_ab6bc1b1d3cad547e542c44bdc591e581}} 
+{\bfseries Mysql\+X\+A\+Connection} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} connection, boolean log\+Xa\+Commands)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_ae8f9497d327b131871bfefe4a8ae6c9d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_ae8f9497d327b131871bfefe4a8ae6c9d}} 
+X\+A\+Resource {\bfseries get\+X\+A\+Resource} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_ae2dc2f285e5de1d56599f992ede4c71d}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_ae2dc2f285e5de1d56599f992ede4c71d}} 
+int {\bfseries get\+Transaction\+Timeout} ()  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a248a14335113b2cf9289db82c977db9c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a248a14335113b2cf9289db82c977db9c}} 
+boolean {\bfseries set\+Transaction\+Timeout} (int arg0)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a6f7627c2098ba19cd1e9cd3162b7dbe6}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a6f7627c2098ba19cd1e9cd3162b7dbe6}} 
+boolean {\bfseries is\+Same\+RM} (X\+A\+Resource xares)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_ae272df21634f0f4a88b12cae093e9831}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_ae272df21634f0f4a88b12cae093e9831}} 
+Xid \mbox{[}$\,$\mbox{]} {\bfseries recover} (int flag)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a813bc9c4ead81e9da2835fa2d57246a1}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a813bc9c4ead81e9da2835fa2d57246a1}} 
+int {\bfseries prepare} (Xid xid)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_ab11b3a86e81d0c3ecc236c620939aabf}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_ab11b3a86e81d0c3ecc236c620939aabf}} 
+void {\bfseries forget} (Xid xid)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a0b19cab042f62f44adf248e080ea39b7}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a0b19cab042f62f44adf248e080ea39b7}} 
+void {\bfseries rollback} (Xid xid)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a6f20466a27da1aa3a0e5dabb3255d49b}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a6f20466a27da1aa3a0e5dabb3255d49b}} 
+void {\bfseries end} (Xid xid, int flags)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_abcfd20e77b38e5a5a28fba5c841c2279}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_abcfd20e77b38e5a5a28fba5c841c2279}} 
+void {\bfseries start} (Xid xid, int flags)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a8ce071c6596c3f33c815fbe697fd619c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a8ce071c6596c3f33c815fbe697fd619c}} 
+void {\bfseries commit} (Xid xid, boolean one\+Phase)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a0907b211fc78dda2fe38e381a74b4d7c}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a0907b211fc78dda2fe38e381a74b4d7c}} 
+synchronized Connection {\bfseries get\+Connection} ()  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a66a8ed0f398150a2042c39f56befe824}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a66a8ed0f398150a2042c39f56befe824}} 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection}{Mysql\+X\+A\+Connection}} {\bfseries get\+Instance} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} mysql\+Connection, boolean log\+Xa\+Commands)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_af6946cf76a2c471c7fefa2ec712b4994}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_af6946cf76a2c471c7fefa2ec712b4994}} 
+static Xid \mbox{[}$\,$\mbox{]} {\bfseries recover} (Connection c, int flag)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a6be66ae9e7a01d3cabda0e0a55d66514}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a6be66ae9e7a01d3cabda0e0a55d66514}} 
+static X\+A\+Exception {\bfseries map\+X\+A\+Exception\+From\+S\+Q\+L\+Exception} (S\+Q\+L\+Exception sql\+Ex)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a9e3e1df1f4dee55cf52612e8fe85eabf}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_mysql_x_a_connection_a9e3e1df1f4dee55cf52612e8fe85eabf}} 
+boolean {\bfseries log\+Xa\+Commands}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/Mysql\+X\+A\+Connection.\+java\end{DoxyCompactItemize}

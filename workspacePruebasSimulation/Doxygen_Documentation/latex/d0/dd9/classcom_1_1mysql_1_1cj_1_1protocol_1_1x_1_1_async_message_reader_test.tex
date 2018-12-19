@@ -1,0 +1,51 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_test}{}\section{com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader\+Test Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_test}\index{com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader\+Test@{com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader\+Test}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Base\+Test\+Channel}
+\item 
+class {\bfseries Base\+Test\+Socket\+Connection}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_test_a74de216dc92180e48ed4197bf4b16fa4}{test\+Bug22972057}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_test_aedc99d3bfdf2ce338f8110cf8049adb3}{test\+Bug22972057\+\_\+get\+Next\+Message\+Class}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_test_a7d74ac198355624b7961b71f2c365736}{error\+After\+Closed}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Tests for \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader}{Async\+Message\+Reader}}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_test_a7d74ac198355624b7961b71f2c365736}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_test_a7d74ac198355624b7961b71f2c365736}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader\+Test@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader\+Test}!error\+After\+Closed@{error\+After\+Closed}}
+\index{error\+After\+Closed@{error\+After\+Closed}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader\+Test@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader\+Test}}
+\subsubsection{\texorpdfstring{error\+After\+Closed()}{errorAfterClosed()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader\+Test.\+error\+After\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Make sure all entry points throw an error when the reader is closed. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_test_a74de216dc92180e48ed4197bf4b16fa4}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_test_a74de216dc92180e48ed4197bf4b16fa4}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader\+Test@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader\+Test}!test\+Bug22972057@{test\+Bug22972057}}
+\index{test\+Bug22972057@{test\+Bug22972057}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader\+Test@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader\+Test}}
+\subsubsection{\texorpdfstring{test\+Bug22972057()}{testBug22972057()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader\+Test.\+test\+Bug22972057 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Test that an operation does not hang due to waiting on a socket that is closed. This happens when the socket is closed after a message listener is added. If the close message (read with size = -\/1) is not properly propagated to the Sync\+Reader, the thread will hang waiting for data.
+
+Bug\#22972057 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_test_aedc99d3bfdf2ce338f8110cf8049adb3}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_reader_test_aedc99d3bfdf2ce338f8110cf8049adb3}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader\+Test@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader\+Test}!test\+Bug22972057\+\_\+get\+Next\+Message\+Class@{test\+Bug22972057\+\_\+get\+Next\+Message\+Class}}
+\index{test\+Bug22972057\+\_\+get\+Next\+Message\+Class@{test\+Bug22972057\+\_\+get\+Next\+Message\+Class}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader\+Test@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Async\+Message\+Reader\+Test}}
+\subsubsection{\texorpdfstring{test\+Bug22972057\+\_\+get\+Next\+Message\+Class()}{testBug22972057\_getNextMessageClass()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Reader\+Test.\+test\+Bug22972057\+\_\+get\+Next\+Message\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Same bug above exists for the \char`\"{}pending message\char`\"{} feature.
+
+Bug\#22972057 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/test/java/com/mysql/cj/protocol/x/Async\+Message\+Reader\+Test.\+java\end{DoxyCompactItemize}

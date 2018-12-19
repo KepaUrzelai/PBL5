@@ -1,0 +1,32 @@
+\hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_writer_watcher}{}\section{com.\+mysql.\+cj.\+protocol.\+Writer\+Watcher Interface Reference}
+\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_writer_watcher}\index{com.\+mysql.\+cj.\+protocol.\+Writer\+Watcher@{com.\+mysql.\+cj.\+protocol.\+Writer\+Watcher}}
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob}{com.\+mysql.\+cj.\+jdbc.\+Clob}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_writer_watcher_a12b4673c6a8478886d9d53dae4afe032}{writer\+Closed}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_watchable_writer}{Watchable\+Writer}} out)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Objects that want to be notified of lifecycle events on a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_watchable_writer}{Watchable\+Writer}} should implement this interface, and register themselves with set\+Watcher() on the \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_watchable_writer}{Watchable\+Writer}} instance. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_writer_watcher_a12b4673c6a8478886d9d53dae4afe032}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_writer_watcher_a12b4673c6a8478886d9d53dae4afe032}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Writer\+Watcher@{com\+::mysql\+::cj\+::protocol\+::\+Writer\+Watcher}!writer\+Closed@{writer\+Closed}}
+\index{writer\+Closed@{writer\+Closed}!com\+::mysql\+::cj\+::protocol\+::\+Writer\+Watcher@{com\+::mysql\+::cj\+::protocol\+::\+Writer\+Watcher}}
+\subsubsection{\texorpdfstring{writer\+Closed()}{writerClosed()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Writer\+Watcher.\+writer\+Closed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_watchable_writer}{Watchable\+Writer}}}]{out }\end{DoxyParamCaption})}
+
+Called when the Writer being watched has .close() called 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_clob_ab6d96b9b821f777e7b25850ceb480c2b}{com.\+mysql.\+cj.\+jdbc.\+Clob}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/protocol/Writer\+Watcher.\+java\end{DoxyCompactItemize}

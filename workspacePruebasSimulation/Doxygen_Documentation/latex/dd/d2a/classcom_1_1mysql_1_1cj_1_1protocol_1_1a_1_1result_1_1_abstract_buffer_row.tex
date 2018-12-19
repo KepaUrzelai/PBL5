@@ -1,0 +1,60 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row}{}\section{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Buffer\+Row Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row}\index{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Buffer\+Row@{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Buffer\+Row}}
+
+
+Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1result_1_1_abstract_resultset_row}{com.\+mysql.\+cj.\+protocol.\+result.\+Abstract\+Resultset\+Row}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_binary_buffer_row}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Binary\+Buffer\+Row}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Text\+Buffer\+Row}}.
+
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a08349d40ae79d6ead1baec4a471ee3f0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a08349d40ae79d6ead1baec4a471ee3f0}} 
+{\bfseries Abstract\+Buffer\+Row} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a7cf03826ff7d879810ca7d23472a49f5}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a7cf03826ff7d879810ca7d23472a49f5}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} {\bfseries row\+From\+Server}
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a38cbe12c531c96a8ba04b80fee493a5b}{home\+Position}} = 0
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a3ac289decb8f1f479611dafef6e45086}{last\+Requested\+Index}} = -\/1
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a3a7cb8406241de42bddb1ea0db5f0808}{last\+Requested\+Pos}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A Result\+Set\+Row implementation that holds one row packet (which is re-\/used by the driver, and thus saves memory allocations), and tries when possible to avoid allocations to break out the results as individual byte\mbox{[}\mbox{]}s.
+
+(this isn\textquotesingle{}t possible when doing things like reading floating point values). 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a38cbe12c531c96a8ba04b80fee493a5b}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a38cbe12c531c96a8ba04b80fee493a5b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row}!home\+Position@{home\+Position}}
+\index{home\+Position@{home\+Position}!com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row}}
+\subsubsection{\texorpdfstring{home\+Position}{homePosition}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Buffer\+Row.\+home\+Position = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+The beginning of the row packet \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a3ac289decb8f1f479611dafef6e45086}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a3ac289decb8f1f479611dafef6e45086}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row}!last\+Requested\+Index@{last\+Requested\+Index}}
+\index{last\+Requested\+Index@{last\+Requested\+Index}!com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row}}
+\subsubsection{\texorpdfstring{last\+Requested\+Index}{lastRequestedIndex}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Buffer\+Row.\+last\+Requested\+Index = -\/1\hspace{0.3cm}{\ttfamily [protected]}}
+
+The last-\/requested index, used as an optimization, if you ask for the same index, we won\textquotesingle{}t seek to find it. If you ask for an index that is $>$ than the last one requested, we start seeking from the last requested index. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a3a7cb8406241de42bddb1ea0db5f0808}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a3a7cb8406241de42bddb1ea0db5f0808}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row}!last\+Requested\+Pos@{last\+Requested\+Pos}}
+\index{last\+Requested\+Pos@{last\+Requested\+Pos}!com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row}}
+\subsubsection{\texorpdfstring{last\+Requested\+Pos}{lastRequestedPos}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Buffer\+Row.\+last\+Requested\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+The position of the last-\/requested index, optimization in concert with last\+Requested\+Index. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/result/Abstract\+Buffer\+Row.\+java\end{DoxyCompactItemize}

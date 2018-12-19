@@ -1,0 +1,509 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url}{}\section{com.\+mysql.\+cj.\+conf.\+Connection\+Url Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url}\index{com.\+mysql.\+cj.\+conf.\+Connection\+Url@{com.\+mysql.\+cj.\+conf.\+Connection\+Url}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_database_url_container}{com.\+mysql.\+cj.\+conf.\+Database\+Url\+Container}}.
+
+
+
+Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_failover_connection_url}{com.\+mysql.\+cj.\+conf.\+url.\+Failover\+Connection\+Url}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_loadbalance_connection_url}{com.\+mysql.\+cj.\+conf.\+url.\+Loadbalance\+Connection\+Url}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_replication_connection_url}{com.\+mysql.\+cj.\+conf.\+url.\+Replication\+Connection\+Url}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_single_connection_url}{com.\+mysql.\+cj.\+conf.\+url.\+Single\+Connection\+Url}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1url_1_1_x_dev_a_p_i_connection_url}{com.\+mysql.\+cj.\+conf.\+url.\+X\+Dev\+A\+P\+I\+Connection\+Url}}.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality}{Hosts\+Cardinality}}
+\item 
+enum \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_type}{Type}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_aefa00d04adfdec4b23d81d9c340e736f}{Connection\+Url}} (String orig\+Url)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a642faf5647403f81ccc6bd07d7a142b3}{get\+Default\+Host}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_ae02cd435e2ee29c886621ef728162a4b}{get\+Default\+Port}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a9c7c39c11e822c5d253069e4c95c9fba}{get\+Default\+User}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a2bbd7c56d39042e376fbdc28eff508e5}{get\+Default\+Password}} ()
+\item 
+\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_type}{Type}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_af2928b801cd9b2eaf89e94b3b123e357}{get\+Type}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a574945f907f1b2aadd0f056e0e240bbf}{get\+Database\+Url}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_abdfbf97b8d787783473d36722cfae81a}{get\+Database}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_ac75c964d5381fcfeaebed87ee2bb22b3}{hosts\+Count}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a97fd0f7c1fa6ffdc8cb195f58b4b5ca1}{get\+Main\+Host}} ()
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a31b073fdc19d1f315105a20bc6b3f5f1}{get\+Hosts\+List}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a45a6498954bd6fad0a39edb05805882a}{get\+Host\+Or\+Spawn\+Isolated}} (String host\+Port\+Pair)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a16fceddeee9baa86584b1f5ab7e55251}{get\+Host\+Or\+Spawn\+Isolated}} (String host\+Port\+Pair, List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} $>$ hosts\+List)
+\item 
+Map$<$ String, String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a9d7c5ace6030f70b633a6f8505bca69b}{get\+Original\+Properties}} ()
+\item 
+Properties \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a4f0fd63fe4a3350fa258c293d5184e0a}{get\+Connection\+Arguments\+As\+Properties}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_aa7ceabc22edf11585cc69a80637d4503}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url}{Connection\+Url}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_af7958a22bfdda05d3b62f6149efed678}{get\+Connection\+Url\+Instance}} (String conn\+String, Properties info)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a8ec478bacf5da8da5353206a73d669c7}{accepts\+Url}} (String conn\+String)
+\item 
+static Properties \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_ab0b909200aa45ca290930add14c8924e}{get\+Properties\+From\+Config\+Files}} (String config\+Files)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_ad72b3641e2d853e94c369c4706eb5c8b}{Connection\+Url}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_aea5acae1987c16d32135ad4be9eb5e1f}{Connection\+Url}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}} conn\+Str\+Parser, Properties info)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a95514a35cecb2df9fd97562e37405447}{collect\+Properties}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}} conn\+Str\+Parser, Properties info)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a30a037d919173bb9304abc41125093ce}{process\+Cold\+Fusion\+Auto\+Configuration}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a1c0bd7599f4e19698b01e25e11fc4686}{setup\+Properties\+Transformer}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a1029263b45f093075865f542e2d0fe87}{expand\+Properties\+From\+Config\+Files}} (Map$<$ String, String $>$ props)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a7898c43cc847ca9819dfc98d96089563}{inject\+Per\+Type\+Properties}} (Map$<$ String, String $>$ props)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_acab0ee9a544e643d843f1d1e82052a0b}{collect\+Hosts\+Info}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}} conn\+Str\+Parser)
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a774f5a5e265ff12c8ea94e1c380e1b7a}{fix\+Host\+Info}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} hi)
+\item 
+Map$<$ String, String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a7fd201bea071685e2344dc0701b0fb21}{preprocess\+Per\+Type\+Host\+Properties}} (Map$<$ String, String $>$ host\+Props)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a20a83e5fed9728cf3fa6c727278975aa}{fix\+Keys\+Case}} (Map$<$ String, String $>$ host\+Props)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_af9876d27316cbfee270a60d576c4b7c8}{fix\+Protocol\+Dependencies}} (Map$<$ String, String $>$ host\+Props)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a7086957f46b62fc28263e76fb9159a3c}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a7086957f46b62fc28263e76fb9159a3c}} 
+\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_type}{Type}} {\bfseries type}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_acb1dfbbdde68f9e171c3a525d3763801}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_acb1dfbbdde68f9e171c3a525d3763801}} 
+String {\bfseries original\+Conn\+Str}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a73a936ed6806d19dd308b401cb8f160c}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a73a936ed6806d19dd308b401cb8f160c}} 
+String {\bfseries original\+Database}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_ab774f53dab294218bc6b2cf1af73a905}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_ab774f53dab294218bc6b2cf1af73a905}} 
+List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} $>$ {\bfseries hosts} = new Array\+List$<$$>$()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_afc53ba40da35bf161d2df6fbd785b09b}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_afc53ba40da35bf161d2df6fbd785b09b}} 
+Map$<$ String, String $>$ {\bfseries properties} = new Hash\+Map$<$$>$()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A container for a database U\+RL and a collection of given connection arguments. The connection string is parsed and split by its components, each of which is then processed and fixed according to the needs of the connection type. This abstract class holds all common behavior to all connection string types. Its subclasses must implement their own specifics such as classifying hosts by type or apply validation rules. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_ad72b3641e2d853e94c369c4706eb5c8b}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_ad72b3641e2d853e94c369c4706eb5c8b}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!Connection\+Url@{Connection\+Url}}
+\index{Connection\+Url@{Connection\+Url}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{Connection\+Url()}{ConnectionUrl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+Connection\+Url (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Empty constructor. Required for subclasses initialization. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_aefa00d04adfdec4b23d81d9c340e736f}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_aefa00d04adfdec4b23d81d9c340e736f}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!Connection\+Url@{Connection\+Url}}
+\index{Connection\+Url@{Connection\+Url}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{Connection\+Url()}{ConnectionUrl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+Connection\+Url (\begin{DoxyParamCaption}\item[{String}]{orig\+Url }\end{DoxyParamCaption})}
+
+Constructor for unsupported U\+R\+Ls
+
+
+\begin{DoxyParams}{Parameters}
+{\em orig\+Url} & U\+R\+Ls \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_aea5acae1987c16d32135ad4be9eb5e1f}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_aea5acae1987c16d32135ad4be9eb5e1f}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!Connection\+Url@{Connection\+Url}}
+\index{Connection\+Url@{Connection\+Url}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{Connection\+Url()}{ConnectionUrl()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+Connection\+Url (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}}}]{conn\+Str\+Parser,  }\item[{Properties}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constructs an instance of \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url}{Connection\+Url}}, performing all the required initializations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn\+Str\+Parser} & a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}} instance containing the parsed version of the original connection string \\
+\hline
+{\em info} & the connection arguments map \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a8ec478bacf5da8da5353206a73d669c7}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a8ec478bacf5da8da5353206a73d669c7}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!accepts\+Url@{accepts\+Url}}
+\index{accepts\+Url@{accepts\+Url}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{accepts\+Url()}{acceptsUrl()}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+accepts\+Url (\begin{DoxyParamCaption}\item[{String}]{conn\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if this \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url}{Connection\+Url}} is able to process the given database U\+RL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn\+String} & the connection string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this class is able to process the given U\+RL, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_acab0ee9a544e643d843f1d1e82052a0b}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_acab0ee9a544e643d843f1d1e82052a0b}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!collect\+Hosts\+Info@{collect\+Hosts\+Info}}
+\index{collect\+Hosts\+Info@{collect\+Hosts\+Info}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{collect\+Hosts\+Info()}{collectHostsInfo()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+collect\+Hosts\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}}}]{conn\+Str\+Parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Collects the hosts information from the \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn\+Str\+Parser} & the \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}} from where to collect the hosts information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a95514a35cecb2df9fd97562e37405447}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a95514a35cecb2df9fd97562e37405447}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!collect\+Properties@{collect\+Properties}}
+\index{collect\+Properties@{collect\+Properties}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{collect\+Properties()}{collectProperties()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+collect\+Properties (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}}}]{conn\+Str\+Parser,  }\item[{Properties}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Joins the connection arguments from the connection string with the ones from the given connection arguments map collecting them in a single map. Additionally may also collect other connection arguments from configuration files.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn\+Str\+Parser} & the \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_parser}{Connection\+Url\+Parser}} from where to collect the properties \\
+\hline
+{\em info} & the connection arguments map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a1029263b45f093075865f542e2d0fe87}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a1029263b45f093075865f542e2d0fe87}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!expand\+Properties\+From\+Config\+Files@{expand\+Properties\+From\+Config\+Files}}
+\index{expand\+Properties\+From\+Config\+Files@{expand\+Properties\+From\+Config\+Files}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{expand\+Properties\+From\+Config\+Files()}{expandPropertiesFromConfigFiles()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+expand\+Properties\+From\+Config\+Files (\begin{DoxyParamCaption}\item[{Map$<$ String, String $>$}]{props }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Expands the connection argument \char`\"{}use\+Config\char`\"{} by reading the mentioned configuration files.
+
+
+\begin{DoxyParams}{Parameters}
+{\em props} & a connection arguments map from where to read the \char`\"{}use\+Config\char`\"{} property and where to save the loaded properties. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a774f5a5e265ff12c8ea94e1c380e1b7a}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a774f5a5e265ff12c8ea94e1c380e1b7a}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!fix\+Host\+Info@{fix\+Host\+Info}}
+\index{fix\+Host\+Info@{fix\+Host\+Info}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{fix\+Host\+Info()}{fixHostInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+fix\+Host\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}}}]{hi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Fixes the host information by moving data around and filling in missing data. Applies properties transformations to the collected properties if \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_connection_properties_transform}{Connection\+Properties\+Transform}} was declared in the connection arguments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hi} & the host information data to fix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} with all required data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a20a83e5fed9728cf3fa6c727278975aa}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a20a83e5fed9728cf3fa6c727278975aa}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!fix\+Keys\+Case@{fix\+Keys\+Case}}
+\index{fix\+Keys\+Case@{fix\+Keys\+Case}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{fix\+Keys\+Case()}{fixKeysCase()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+fix\+Keys\+Case (\begin{DoxyParamCaption}\item[{Map$<$ String, String $>$}]{host\+Props }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Fixes the case for alternate host syntax main properties.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Props} & the host properties map to fix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_af9876d27316cbfee270a60d576c4b7c8}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_af9876d27316cbfee270a60d576c4b7c8}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!fix\+Protocol\+Dependencies@{fix\+Protocol\+Dependencies}}
+\index{fix\+Protocol\+Dependencies@{fix\+Protocol\+Dependencies}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{fix\+Protocol\+Dependencies()}{fixProtocolDependencies()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+fix\+Protocol\+Dependencies (\begin{DoxyParamCaption}\item[{Map$<$ String, String $>$}]{host\+Props }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Fixes the protocol (T\+CP vs P\+I\+PE) dependencies for the given host properties map.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Props} & the host properties map to fix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a4f0fd63fe4a3350fa258c293d5184e0a}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a4f0fd63fe4a3350fa258c293d5184e0a}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Connection\+Arguments\+As\+Properties@{get\+Connection\+Arguments\+As\+Properties}}
+\index{get\+Connection\+Arguments\+As\+Properties@{get\+Connection\+Arguments\+As\+Properties}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Connection\+Arguments\+As\+Properties()}{getConnectionArgumentsAsProperties()}}
+{\footnotesize\ttfamily Properties com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Connection\+Arguments\+As\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{}{Properties}} instance containing the connection arguments extracted from the U\+RL query section, i.\+e., per host attributes are excluded. Applies properties transformations to the collected properties if \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_connection_properties_transform}{Connection\+Properties\+Transform}} was declared in the connection arguments.
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{}{Properties}} instance containing the common connection arguments. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_af7958a22bfdda05d3b62f6149efed678}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_af7958a22bfdda05d3b62f6149efed678}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Connection\+Url\+Instance@{get\+Connection\+Url\+Instance}}
+\index{get\+Connection\+Url\+Instance@{get\+Connection\+Url\+Instance}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Connection\+Url\+Instance()}{getConnectionUrlInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url}{Connection\+Url}} com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Connection\+Url\+Instance (\begin{DoxyParamCaption}\item[{String}]{conn\+String,  }\item[{Properties}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Static factory method that returns either a new instance of a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url}{Connection\+Url}} or a cached one. Returns \char`\"{}null\char`\"{} it can\textquotesingle{}t handle the connection string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn\+String} & the connection string \\
+\hline
+{\em info} & the connection arguments map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an instance of a \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url}{Connection\+Url}} or \char`\"{}null\char`\"{} if isn\textquotesingle{}t able to handle the connection string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_abdfbf97b8d787783473d36722cfae81a}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_abdfbf97b8d787783473d36722cfae81a}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Database@{get\+Database}}
+\index{get\+Database@{get\+Database}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Database()}{getDatabase()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the database from this connection U\+RL. Note that a \char`\"{}\+D\+B\+N\+A\+M\+E\char`\"{} property overrides the database identified in the connection string.
+
+\begin{DoxyReturn}{Returns}
+the database name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a574945f907f1b2aadd0f056e0e240bbf}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a574945f907f1b2aadd0f056e0e240bbf}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Database\+Url@{get\+Database\+Url}}
+\index{get\+Database\+Url@{get\+Database\+Url}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Database\+Url()}{getDatabaseUrl()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Database\+Url (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the original database U\+RL that produced this connection string.
+
+\begin{DoxyReturn}{Returns}
+the original database U\+RL 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_database_url_container_a5a2570fc547da50c4d8f0486de2fb13e}{com.\+mysql.\+cj.\+conf.\+Database\+Url\+Container}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a642faf5647403f81ccc6bd07d7a142b3}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a642faf5647403f81ccc6bd07d7a142b3}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Default\+Host@{get\+Default\+Host}}
+\index{get\+Default\+Host@{get\+Default\+Host}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Default\+Host()}{getDefaultHost()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Default\+Host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the default host. Subclasses must override this method if they have different default host value.
+
+\begin{DoxyReturn}{Returns}
+the default host 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a2bbd7c56d39042e376fbdc28eff508e5}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a2bbd7c56d39042e376fbdc28eff508e5}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Default\+Password@{get\+Default\+Password}}
+\index{get\+Default\+Password@{get\+Default\+Password}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Default\+Password()}{getDefaultPassword()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Default\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the default password. Usually the one provided in the method \mbox{\hyperlink{}{Driver\+Manager\#get\+Connection(\+String, String, String)}} or as connection argument.
+
+\begin{DoxyReturn}{Returns}
+the default password 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_ae02cd435e2ee29c886621ef728162a4b}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_ae02cd435e2ee29c886621ef728162a4b}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Default\+Port@{get\+Default\+Port}}
+\index{get\+Default\+Port@{get\+Default\+Port}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Default\+Port()}{getDefaultPort()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Default\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the default port. Subclasses must override this method if they have different default port value.
+
+\begin{DoxyReturn}{Returns}
+the default port 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a9c7c39c11e822c5d253069e4c95c9fba}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a9c7c39c11e822c5d253069e4c95c9fba}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Default\+User@{get\+Default\+User}}
+\index{get\+Default\+User@{get\+Default\+User}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Default\+User()}{getDefaultUser()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Default\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the default user. Usually the one provided in the method \mbox{\hyperlink{}{Driver\+Manager\#get\+Connection(\+String, String, String)}} or as connection argument.
+
+\begin{DoxyReturn}{Returns}
+the default user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a45a6498954bd6fad0a39edb05805882a}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a45a6498954bd6fad0a39edb05805882a}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Host\+Or\+Spawn\+Isolated@{get\+Host\+Or\+Spawn\+Isolated}}
+\index{get\+Host\+Or\+Spawn\+Isolated@{get\+Host\+Or\+Spawn\+Isolated}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Host\+Or\+Spawn\+Isolated()}{getHostOrSpawnIsolated()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Host\+Or\+Spawn\+Isolated (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption})}
+
+Returns an existing host info with the same host\+:port part or spawns a new isolated host info based on this connection U\+RL if none was found.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & the host\+:port part to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the existing host info or a new independent one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a16fceddeee9baa86584b1f5ab7e55251}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a16fceddeee9baa86584b1f5ab7e55251}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Host\+Or\+Spawn\+Isolated@{get\+Host\+Or\+Spawn\+Isolated}}
+\index{get\+Host\+Or\+Spawn\+Isolated@{get\+Host\+Or\+Spawn\+Isolated}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Host\+Or\+Spawn\+Isolated()}{getHostOrSpawnIsolated()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Host\+Or\+Spawn\+Isolated (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair,  }\item[{List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} $>$}]{hosts\+List }\end{DoxyParamCaption})}
+
+Returns an existing host info with the same host\+:port part or spawns a new isolated host info based on this connection U\+RL if none was found.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & the host\+:port part to search for \\
+\hline
+{\em hosts\+List} & the hosts list from where to search the host list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the existing host info or a new independent one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a31b073fdc19d1f315105a20bc6b3f5f1}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a31b073fdc19d1f315105a20bc6b3f5f1}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Hosts\+List@{get\+Hosts\+List}}
+\index{get\+Hosts\+List@{get\+Hosts\+List}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Hosts\+List()}{getHostsList()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}}$>$ com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Hosts\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a list of the hosts in this connection U\+RL.
+
+\begin{DoxyReturn}{Returns}
+the hosts list from this connection U\+RL 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a97fd0f7c1fa6ffdc8cb195f58b4b5ca1}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a97fd0f7c1fa6ffdc8cb195f58b4b5ca1}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Main\+Host@{get\+Main\+Host}}
+\index{get\+Main\+Host@{get\+Main\+Host}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Main\+Host()}{getMainHost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1conf_1_1_host_info}{Host\+Info}} com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Main\+Host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the single or first host info structure.
+
+\begin{DoxyReturn}{Returns}
+the first host info structure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a9d7c5ace6030f70b633a6f8505bca69b}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a9d7c5ace6030f70b633a6f8505bca69b}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Original\+Properties@{get\+Original\+Properties}}
+\index{get\+Original\+Properties@{get\+Original\+Properties}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Original\+Properties()}{getOriginalProperties()}}
+{\footnotesize\ttfamily Map$<$String, String$>$ com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Original\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the original (common to all hosts) connection arguments as provided in the connection string query section.
+
+\begin{DoxyReturn}{Returns}
+the original (common to all hosts) connection arguments 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_ab0b909200aa45ca290930add14c8924e}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_ab0b909200aa45ca290930add14c8924e}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Properties\+From\+Config\+Files@{get\+Properties\+From\+Config\+Files}}
+\index{get\+Properties\+From\+Config\+Files@{get\+Properties\+From\+Config\+Files}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Properties\+From\+Config\+Files()}{getPropertiesFromConfigFiles()}}
+{\footnotesize\ttfamily static Properties com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Properties\+From\+Config\+Files (\begin{DoxyParamCaption}\item[{String}]{config\+Files }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a map containing the properties read from the given configuration files. Multiple files can be referenced using a comma as separator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config\+Files} & the list of the configuration files to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the map containing all the properties read 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_af2928b801cd9b2eaf89e94b3b123e357}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_af2928b801cd9b2eaf89e94b3b123e357}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_type}{Type}} com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns this connection U\+RL type.
+
+\begin{DoxyReturn}{Returns}
+the connection U\+RL type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_ac75c964d5381fcfeaebed87ee2bb22b3}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_ac75c964d5381fcfeaebed87ee2bb22b3}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!hosts\+Count@{hosts\+Count}}
+\index{hosts\+Count@{hosts\+Count}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{hosts\+Count()}{hostsCount()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+hosts\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the number of hosts in this connection U\+RL.
+
+\begin{DoxyReturn}{Returns}
+the number of hosts 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a7898c43cc847ca9819dfc98d96089563}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a7898c43cc847ca9819dfc98d96089563}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!inject\+Per\+Type\+Properties@{inject\+Per\+Type\+Properties}}
+\index{inject\+Per\+Type\+Properties@{inject\+Per\+Type\+Properties}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{inject\+Per\+Type\+Properties()}{injectPerTypeProperties()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+inject\+Per\+Type\+Properties (\begin{DoxyParamCaption}\item[{Map$<$ String, String $>$}]{props }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Subclasses must override this method if they need to inject additional properties in the connection arguments map while it\textquotesingle{}s being constructed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em props} & the properties already containing all known connection arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a7fd201bea071685e2344dc0701b0fb21}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a7fd201bea071685e2344dc0701b0fb21}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!preprocess\+Per\+Type\+Host\+Properties@{preprocess\+Per\+Type\+Host\+Properties}}
+\index{preprocess\+Per\+Type\+Host\+Properties@{preprocess\+Per\+Type\+Host\+Properties}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{preprocess\+Per\+Type\+Host\+Properties()}{preprocessPerTypeHostProperties()}}
+{\footnotesize\ttfamily Map$<$String, String$>$ com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+preprocess\+Per\+Type\+Host\+Properties (\begin{DoxyParamCaption}\item[{Map$<$ String, String $>$}]{host\+Props }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Subclasses should override this to perform any required preprocessing on the host information properties.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Props} & the host properties map to process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the processed host properties map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a30a037d919173bb9304abc41125093ce}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a30a037d919173bb9304abc41125093ce}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!process\+Cold\+Fusion\+Auto\+Configuration@{process\+Cold\+Fusion\+Auto\+Configuration}}
+\index{process\+Cold\+Fusion\+Auto\+Configuration@{process\+Cold\+Fusion\+Auto\+Configuration}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{process\+Cold\+Fusion\+Auto\+Configuration()}{processColdFusionAutoConfiguration()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+process\+Cold\+Fusion\+Auto\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks if the conditions for the Cold Fusion auto configuration file are met. If so, adds a reference to its configuration file so that it can be loaded afterwards. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a1c0bd7599f4e19698b01e25e11fc4686}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_a1c0bd7599f4e19698b01e25e11fc4686}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!setup\+Properties\+Transformer@{setup\+Properties\+Transformer}}
+\index{setup\+Properties\+Transformer@{setup\+Properties\+Transformer}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{setup\+Properties\+Transformer()}{setupPropertiesTransformer()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+setup\+Properties\+Transformer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets up the \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_connection_properties_transform}{Connection\+Properties\+Transform}} if one was provided. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_aa7ceabc22edf11585cc69a80637d4503}\label{classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_aa7ceabc22edf11585cc69a80637d4503}} 
+\index{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!com\+::mysql\+::cj\+::conf\+::\+Connection\+Url@{com\+::mysql\+::cj\+::conf\+::\+Connection\+Url}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+cj.\+conf.\+Connection\+Url.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string representation of this object.
+
+\begin{DoxyReturn}{Returns}
+a string representation of this object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/conf/Connection\+Url.\+java\end{DoxyCompactItemize}

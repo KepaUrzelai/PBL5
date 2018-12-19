@@ -1,0 +1,52 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_authentication_provider}{}\section{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Authentication\+Provider Class Reference}
+\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_authentication_provider}\index{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Authentication\+Provider@{com.\+mysql.\+cj.\+protocol.\+x.\+X\+Authentication\+Provider}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_provider}{com.\+mysql.\+cj.\+protocol.\+Authentication\+Provider$<$ M extends Message $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_authentication_provider_a628e0d6b6faff2dec99b4ddb9f7cbb58}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_authentication_provider_a628e0d6b6faff2dec99b4ddb9f7cbb58}} 
+void {\bfseries init} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol}{Protocol}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ prot, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} property\+Set, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_authentication_provider_a1454c94a9b23f6302cc37a2efa714b9d}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_authentication_provider_a1454c94a9b23f6302cc37a2efa714b9d}} 
+void {\bfseries connect} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} server\+Session, String user\+Name, String password, String database)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_authentication_provider_afd444d5b0926e61a8b14b6300aa739cc}{change\+User}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} server\+Session, String user\+Name, String password, String database)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_authentication_provider_adf03df5479398541ea3039c50956db0f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_authentication_provider_adf03df5479398541ea3039c50956db0f}} 
+String {\bfseries get\+Encoding\+For\+Handshake} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_authentication_provider_afd444d5b0926e61a8b14b6300aa739cc}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_authentication_provider_afd444d5b0926e61a8b14b6300aa739cc}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Authentication\+Provider@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Authentication\+Provider}!change\+User@{change\+User}}
+\index{change\+User@{change\+User}!com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Authentication\+Provider@{com\+::mysql\+::cj\+::protocol\+::x\+::\+X\+Authentication\+Provider}}
+\subsubsection{\texorpdfstring{change\+User()}{changeUser()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+x.\+X\+Authentication\+Provider.\+change\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}}}]{server\+Session,  }\item[{String}]{user\+Name,  }\item[{String}]{password,  }\item[{String}]{database }\end{DoxyParamCaption})}
+
+Re-\/authenticates as the given user and password
+
+
+\begin{DoxyParams}{Parameters}
+{\em server\+Session} & \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} object \\
+\hline
+{\em user\+Name} & user name \\
+\hline
+{\em password} & password \\
+\hline
+{\em database} & db name \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_authentication_provider_a166772168a0573ba2f186e49c41b0aec}{com.\+mysql.\+cj.\+protocol.\+Authentication\+Provider$<$ M extends Message $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/x/X\+Authentication\+Provider.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,188 @@
+\hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings}{}\section{com.\+mysql.\+cj.\+Abstract\+Query\+Bindings$<$ T extends Bind\+Value $>$ Class Template Reference}
+\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings}\index{com.\+mysql.\+cj.\+Abstract\+Query\+Bindings$<$ T extends Bind\+Value $>$@{com.\+mysql.\+cj.\+Abstract\+Query\+Bindings$<$ T extends Bind\+Value $>$}}
+
+
+Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_query_bindings}{com.\+mysql.\+cj.\+Query\+Bindings$<$ T $>$}}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a6e32b58cbbe788daf51ceb4b1dbab116}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a6e32b58cbbe788daf51ceb4b1dbab116}} 
+{\bfseries Abstract\+Query\+Bindings} (int parameter\+Count, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}} sess)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a0255791ce812a85734cae2a60d2ec798}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a0255791ce812a85734cae2a60d2ec798}} 
+abstract \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings}{Abstract\+Query\+Bindings}}$<$ T $>$ {\bfseries clone} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a7b212748e0698fa97ecee6ef3f8fb6d5}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a7b212748e0698fa97ecee6ef3f8fb6d5}} 
+boolean {\bfseries is\+Load\+Data\+Query} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a4e14e1142386e82268bac20d253451c6}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a4e14e1142386e82268bac20d253451c6}} 
+void {\bfseries set\+Load\+Data\+Query} (boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_ae057e7a1b56daa198a730198f3040523}{is\+Load\+Data\+Query}})
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a7af74acdf60a682d5fa7f9278aa37e4e}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a7af74acdf60a682d5fa7f9278aa37e4e}} 
+T \mbox{[}$\,$\mbox{]} {\bfseries get\+Bind\+Values} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a0c455ee3707e8c6b44ab216d195862a1}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a0c455ee3707e8c6b44ab216d195862a1}} 
+void {\bfseries set\+Bind\+Values} (T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a89ff142df297b89a337489fe8f4e0266}{bind\+Values}})
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a5df13f93e579f0771b6515ae24bd26c4}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a5df13f93e579f0771b6515ae24bd26c4}} 
+boolean {\bfseries clear\+Bind\+Values} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a0df45abda5a160a740ff9206f3f05f7a}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a0df45abda5a160a740ff9206f3f05f7a}} 
+abstract void {\bfseries check\+Parameter\+Set} (int column\+Index)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a7e9658d2e8bcf61a2e0a7b020d31e2ee}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a7e9658d2e8bcf61a2e0a7b020d31e2ee}} 
+void {\bfseries check\+All\+Parameters\+Set} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_afd9bf3e5bb4ecf783818274f798be6e8}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_afd9bf3e5bb4ecf783818274f798be6e8}} 
+int {\bfseries get\+Number\+Of\+Executions} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a2f4900412aa5d9ea460e8d246d45a85a}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a2f4900412aa5d9ea460e8d246d45a85a}} 
+void {\bfseries set\+Number\+Of\+Executions} (int number\+Of\+Executions)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a2baacdf89019d5ad8cadbbec82603991}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a2baacdf89019d5ad8cadbbec82603991}} 
+synchronized final void {\bfseries set\+Value} (int param\+Index, byte\mbox{[}$\,$\mbox{]} val)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a7d6e6794a12d22bc55d8c5bd33640e3c}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a7d6e6794a12d22bc55d8c5bd33640e3c}} 
+synchronized final void {\bfseries set\+Value} (int param\+Index, byte\mbox{[}$\,$\mbox{]} val, \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_mysql_type}{Mysql\+Type}} type)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a43058029a8ced3bde792ae2c9c107fff}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a43058029a8ced3bde792ae2c9c107fff}} 
+synchronized final void {\bfseries set\+Value} (int param\+Index, String val)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a2c33843c7f8093c1a56583fa57510456}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a2c33843c7f8093c1a56583fa57510456}} 
+synchronized final void {\bfseries set\+Value} (int param\+Index, String val, \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_mysql_type}{Mysql\+Type}} type)
+\item 
+final void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a013ed20b0641202207651a5aea06f215}{hex\+Escape\+Block}} (byte\mbox{[}$\,$\mbox{]} buf, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} packet, int size)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a1dee6ee1875e05ebced2c60984c0c8e7}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a1dee6ee1875e05ebced2c60984c0c8e7}} 
+void {\bfseries set\+Object} (int parameter\+Index, Object parameter\+Obj)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a761eb9a0e429674a6fe9a4a29db29f8b}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a761eb9a0e429674a6fe9a4a29db29f8b}} 
+void {\bfseries set\+Object} (int parameter\+Index, Object parameter\+Obj, \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_mysql_type}{Mysql\+Type}} target\+Mysql\+Type)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a3a10937bc972e71cbf2b2ffde0578898}{set\+Object}} (int parameter\+Index, Object parameter\+Obj, \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_mysql_type}{Mysql\+Type}} target\+Mysql\+Type, int scale\+Or\+Length)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a0640614206a5c3d6b9e5be8adcfb0d8d}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a0640614206a5c3d6b9e5be8adcfb0d8d}} 
+abstract void {\bfseries init\+Bind\+Values} (int parameter\+Count)
+\item 
+final void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a9ab53fee30aef97d392c20362be03608}{set\+Serializable\+Object}} (int parameter\+Index, Object parameter\+Obj)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_aca9a8e582e3adb2d29ad562aa11bf3b5}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_aca9a8e582e3adb2d29ad562aa11bf3b5}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_session}{Session}} {\bfseries session}
+\item 
+T \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a89ff142df297b89a337489fe8f4e0266}{bind\+Values}}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_aa77871b296799261f80d15a47b2b7b28}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_aa77871b296799261f80d15a47b2b7b28}} 
+String {\bfseries char\+Encoding}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_afc729305171e8a1cf48109919d7a7e33}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_afc729305171e8a1cf48109919d7a7e33}} 
+int {\bfseries number\+Of\+Executions} = 0
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_ac3e991801df757e24b6885db0c2301d8}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_ac3e991801df757e24b6885db0c2301d8}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Boolean $>$ {\bfseries use\+Stream\+Lengths\+In\+Prep\+Stmts}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a4470ecf11f0d8b8f3ac3a5f4118f7350}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a4470ecf11f0d8b8f3ac3a5f4118f7350}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Boolean $>$ {\bfseries send\+Fractional\+Seconds}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_ae057e7a1b56daa198a730198f3040523}{is\+Load\+Data\+Query}} = false
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final byte \mbox{[}$\,$\mbox{]} {\bfseries H\+E\+X\+\_\+\+D\+I\+G\+I\+TS}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a013ed20b0641202207651a5aea06f215}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a013ed20b0641202207651a5aea06f215}} 
+\index{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings@{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings}!hex\+Escape\+Block@{hex\+Escape\+Block}}
+\index{hex\+Escape\+Block@{hex\+Escape\+Block}!com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings@{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings}}
+\subsubsection{\texorpdfstring{hex\+Escape\+Block()}{hexEscapeBlock()}}
+{\footnotesize\ttfamily final void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings}{com.\+mysql.\+cj.\+Abstract\+Query\+Bindings}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_bind_value}{Bind\+Value}} $>$.hex\+Escape\+Block (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buf,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}}]{packet,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+Used to escape binary data with hex for mb charsets
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & \\
+\hline
+{\em packet} & \\
+\hline
+{\em size} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a3a10937bc972e71cbf2b2ffde0578898}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a3a10937bc972e71cbf2b2ffde0578898}} 
+\index{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings@{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings}!set\+Object@{set\+Object}}
+\index{set\+Object@{set\+Object}!com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings@{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings}}
+\subsubsection{\texorpdfstring{set\+Object()}{setObject()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings}{com.\+mysql.\+cj.\+Abstract\+Query\+Bindings}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_bind_value}{Bind\+Value}} $>$.set\+Object (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Object}]{parameter\+Obj,  }\item[{\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_mysql_type}{Mysql\+Type}}}]{target\+Mysql\+Type,  }\item[{int}]{scale\+Or\+Length }\end{DoxyParamCaption})}
+
+Set the value of a parameter using an object; use the java.\+lang equivalent objects for integral values.
+
+The given Java object will be converted to the target\+Mysql\+Type before being sent to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em parameter\+Obj} & the object containing the input parameter value \\
+\hline
+{\em target\+Mysql\+Type} & The \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1_mysql_type}{Mysql\+Type}} to be send to the database \\
+\hline
+{\em scale\+Or\+Length} & For Types.\+D\+E\+C\+I\+M\+AL or Types.\+N\+U\+M\+E\+R\+IC types this is the number of digits after the decimal. For all other types this value will be ignored. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a9ab53fee30aef97d392c20362be03608}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a9ab53fee30aef97d392c20362be03608}} 
+\index{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings@{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings}!set\+Serializable\+Object@{set\+Serializable\+Object}}
+\index{set\+Serializable\+Object@{set\+Serializable\+Object}!com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings@{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings}}
+\subsubsection{\texorpdfstring{set\+Serializable\+Object()}{setSerializableObject()}}
+{\footnotesize\ttfamily final void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings}{com.\+mysql.\+cj.\+Abstract\+Query\+Bindings}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_bind_value}{Bind\+Value}} $>$.set\+Serializable\+Object (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Object}]{parameter\+Obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets the value for the placeholder as a serialized Java object (used by various forms of set\+Object()
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & \\
+\hline
+{\em parameter\+Obj} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a89ff142df297b89a337489fe8f4e0266}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a89ff142df297b89a337489fe8f4e0266}} 
+\index{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings@{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings}!bind\+Values@{bind\+Values}}
+\index{bind\+Values@{bind\+Values}!com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings@{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings}}
+\subsubsection{\texorpdfstring{bind\+Values}{bindValues}}
+{\footnotesize\ttfamily T \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings}{com.\+mysql.\+cj.\+Abstract\+Query\+Bindings}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_bind_value}{Bind\+Value}} $>$.bind\+Values\hspace{0.3cm}{\ttfamily [protected]}}
+
+Bind values for individual fields \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a99bfec5248e2cfa0e17827ebe33422db}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_a99bfec5248e2cfa0e17827ebe33422db}} 
+\index{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings@{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings}!H\+E\+X\+\_\+\+D\+I\+G\+I\+TS@{H\+E\+X\+\_\+\+D\+I\+G\+I\+TS}}
+\index{H\+E\+X\+\_\+\+D\+I\+G\+I\+TS@{H\+E\+X\+\_\+\+D\+I\+G\+I\+TS}!com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings@{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings}}
+\subsubsection{\texorpdfstring{H\+E\+X\+\_\+\+D\+I\+G\+I\+TS}{HEX\_DIGITS}}
+{\footnotesize\ttfamily final byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings}{com.\+mysql.\+cj.\+Abstract\+Query\+Bindings}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_bind_value}{Bind\+Value}} $>$.H\+E\+X\+\_\+\+D\+I\+G\+I\+TS\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} byte[] \{ (byte) \textcolor{charliteral}{'0'}, (byte) \textcolor{charliteral}{'1'}, (byte) \textcolor{charliteral}{'2'}, (byte) \textcolor{charliteral}{'3'}, (byte) \textcolor{charliteral}{'4'}, (byte) \textcolor{charliteral}{'5'}, (byte) \textcolor{charliteral}{'6'}, (byte) \textcolor{charliteral}{
+      '7'},
+            (byte) \textcolor{charliteral}{'8'}, (byte) \textcolor{charliteral}{'9'}, (byte) \textcolor{charliteral}{'A'}, (byte) \textcolor{charliteral}{'B'}, (byte) \textcolor{charliteral}{'C'}, (byte) \textcolor{charliteral}{'D'}, (byte) \textcolor{charliteral}{'E'}, (byte) \textcolor{charliteral}{'F'} 
+      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_ae057e7a1b56daa198a730198f3040523}\label{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings_ae057e7a1b56daa198a730198f3040523}} 
+\index{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings@{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings}!is\+Load\+Data\+Query@{is\+Load\+Data\+Query}}
+\index{is\+Load\+Data\+Query@{is\+Load\+Data\+Query}!com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings@{com\+::mysql\+::cj\+::\+Abstract\+Query\+Bindings}}
+\subsubsection{\texorpdfstring{is\+Load\+Data\+Query}{isLoadDataQuery}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1_abstract_query_bindings}{com.\+mysql.\+cj.\+Abstract\+Query\+Bindings}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1_bind_value}{Bind\+Value}} $>$.is\+Load\+Data\+Query = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Is this query a L\+O\+AD D\+A\+TA query? 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/Abstract\+Query\+Bindings.\+java\end{DoxyCompactItemize}
