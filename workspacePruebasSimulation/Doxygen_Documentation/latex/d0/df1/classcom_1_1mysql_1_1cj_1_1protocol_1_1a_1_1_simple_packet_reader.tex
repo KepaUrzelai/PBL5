@@ -7,13 +7,11 @@ Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_re
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a25bebda488bbc840c2ed840a576a76a0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a25bebda488bbc840c2ed840a576a76a0}} 
-{\bfseries Simple\+Packet\+Reader} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}} socket\+Connection, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Integer $>$ max\+Allowed\+Packet)
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a25bebda488bbc840c2ed840a576a76a0}{Simple\+Packet\+Reader}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a6da8bf24cf02fc7519f2080940126bb8}{socket\+Connection}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Integer $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a05df0f4f040b4a5195123a749d231878}{max\+Allowed\+Packet}})
 \item 
 \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a2f65d760ce356bbb432f3d8e804a24bc}{read\+Header}} ()  throws I\+O\+Exception 
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a088f75ed6453acc78366cfb88b7b15a0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a088f75ed6453acc78366cfb88b7b15a0}} 
-\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} {\bfseries read\+Message} (Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ reuse, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}} header)  throws I\+O\+Exception 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a088f75ed6453acc78366cfb88b7b15a0}{read\+Message}} (Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ reuse, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}} header)  throws I\+O\+Exception 
 \item 
 byte \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_ac89192017a4a7eb78ab9679925857fd6}{get\+Message\+Sequence}} ()
 \item 
@@ -22,16 +20,23 @@ void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a6da8bf24cf02fc7519f2080940126bb8}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a6da8bf24cf02fc7519f2080940126bb8}} 
-\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}} {\bfseries socket\+Connection}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a6da8bf24cf02fc7519f2080940126bb8}{socket\+Connection}}
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a05df0f4f040b4a5195123a749d231878}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a05df0f4f040b4a5195123a749d231878}} 
-\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Integer $>$ {\bfseries max\+Allowed\+Packet}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Integer $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a05df0f4f040b4a5195123a749d231878}{max\+Allowed\+Packet}}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Simple implementation of \mbox{\hyperlink{}{Packet\+Reader}} which handles the receiving of logical My\+S\+QL packets from the provided socket input stream. Multi-\/packets are handled outside of this reader. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a25bebda488bbc840c2ed840a576a76a0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a25bebda488bbc840c2ed840a576a76a0}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader}!Simple\+Packet\+Reader@{Simple\+Packet\+Reader}}
+\index{Simple\+Packet\+Reader@{Simple\+Packet\+Reader}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{Simple\+Packet\+Reader()}{SimplePacketReader()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+Simple\+Packet\+Reader.\+Simple\+Packet\+Reader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}}}]{socket\+Connection,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Integer $>$}]{max\+Allowed\+Packet }\end{DoxyParamCaption})}
+
+
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_ac89192017a4a7eb78ab9679925857fd6}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_ac89192017a4a7eb78ab9679925857fd6}} 
@@ -69,6 +74,12 @@ Read the next message header from server, possibly blocking indefinitely until t
 
 Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader_a09745b0e30f74fa13e2b32f22ce70cbb}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a088f75ed6453acc78366cfb88b7b15a0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a088f75ed6453acc78366cfb88b7b15a0}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader}!read\+Message@{read\+Message}}
+\index{read\+Message@{read\+Message}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{read\+Message()}{readMessage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} com.\+mysql.\+cj.\+protocol.\+a.\+Simple\+Packet\+Reader.\+read\+Message (\begin{DoxyParamCaption}\item[{Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$}]{reuse,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}}]{header }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a2dc67eb25eaee9e611b6fe3e9876877a}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a2dc67eb25eaee9e611b6fe3e9876877a}} 
 \index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader}!reset\+Message\+Sequence@{reset\+Message\+Sequence}}
 \index{reset\+Message\+Sequence@{reset\+Message\+Sequence}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader}}
@@ -81,6 +92,21 @@ Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_
 
 
 
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a05df0f4f040b4a5195123a749d231878}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a05df0f4f040b4a5195123a749d231878}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader}!max\+Allowed\+Packet@{max\+Allowed\+Packet}}
+\index{max\+Allowed\+Packet@{max\+Allowed\+Packet}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{max\+Allowed\+Packet}{maxAllowedPacket}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$Integer$>$ com.\+mysql.\+cj.\+protocol.\+a.\+Simple\+Packet\+Reader.\+max\+Allowed\+Packet\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a6da8bf24cf02fc7519f2080940126bb8}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_reader_a6da8bf24cf02fc7519f2080940126bb8}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader}!socket\+Connection@{socket\+Connection}}
+\index{socket\+Connection@{socket\+Connection}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Simple\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{socket\+Connection}{socketConnection}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection}{Socket\+Connection}} com.\+mysql.\+cj.\+protocol.\+a.\+Simple\+Packet\+Reader.\+socket\+Connection\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/Simple\+Packet\+Reader.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/\mbox{\hyperlink{_simple_packet_reader_8java}{Simple\+Packet\+Reader.\+java}}\end{DoxyCompactItemize}

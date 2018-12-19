@@ -5,8 +5,7 @@
 \item 
 static void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_security_a6529697fb27ef62f6a21cb347f5e4c99}{xor\+String}} (byte\mbox{[}$\,$\mbox{]} from, byte\mbox{[}$\,$\mbox{]} to, byte\mbox{[}$\,$\mbox{]} scramble, int length)
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_security_abe3782ad69fe2237705cbf44e28ab779}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_security_abe3782ad69fe2237705cbf44e28ab779}} 
-static byte \mbox{[}$\,$\mbox{]} {\bfseries scramble411} (String password, byte\mbox{[}$\,$\mbox{]} seed, String password\+Encoding)
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_security_abe3782ad69fe2237705cbf44e28ab779}{scramble411}} (String password, byte\mbox{[}$\,$\mbox{]} seed, String password\+Encoding)
 \item 
 static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_security_a1459b1e2d3828790e1d8982e65e68b34}{scramble411}} (byte\mbox{[}$\,$\mbox{]} password, byte\mbox{[}$\,$\mbox{]} seed)
 \item 
@@ -18,10 +17,16 @@ static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1pro
 Methods for doing secure authentication with My\+S\+Q\+L-\/4.\+1 and newer. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_security_abe3782ad69fe2237705cbf44e28ab779}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_security_abe3782ad69fe2237705cbf44e28ab779}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Security@{com\+::mysql\+::cj\+::protocol\+::\+Security}!scramble411@{scramble411}}
+\index{scramble411@{scramble411}!com\+::mysql\+::cj\+::protocol\+::\+Security@{com\+::mysql\+::cj\+::protocol\+::\+Security}}
+\subsubsection{\texorpdfstring{scramble411()}{scramble411()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+protocol.\+Security.\+scramble411 (\begin{DoxyParamCaption}\item[{String}]{password,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{seed,  }\item[{String}]{password\+Encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_security_a1459b1e2d3828790e1d8982e65e68b34}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_security_a1459b1e2d3828790e1d8982e65e68b34}} 
 \index{com\+::mysql\+::cj\+::protocol\+::\+Security@{com\+::mysql\+::cj\+::protocol\+::\+Security}!scramble411@{scramble411}}
 \index{scramble411@{scramble411}!com\+::mysql\+::cj\+::protocol\+::\+Security@{com\+::mysql\+::cj\+::protocol\+::\+Security}}
-\subsubsection{\texorpdfstring{scramble411()}{scramble411()}}
+\subsubsection{\texorpdfstring{scramble411()}{scramble411()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+cj.\+protocol.\+Security.\+scramble411 (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{password,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Hashing for My\+S\+Q\+L-\/4.\+1 authentication. Algorithm is as follows (c.\+f. {\itshape sql/auth/password.\+c})\+:
@@ -83,4 +88,4 @@ Simple X\+OR is used here but it is OK as we encrypt random strings
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/protocol/Security.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/protocol/\mbox{\hyperlink{_security_8java}{Security.\+java}}\end{DoxyCompactItemize}

@@ -7,13 +7,11 @@ Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_re
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a9060c97fdff3924c3e5bd97bbea114c7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a9060c97fdff3924c3e5bd97bbea114c7}} 
-{\bfseries Debug\+Buffering\+Packet\+Reader} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ packet\+Reader, Linked\+List$<$ String\+Builder $>$ packet\+Debug\+Buffer, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Integer $>$ packet\+Debug\+Buffer\+Size)
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a9060c97fdff3924c3e5bd97bbea114c7}{Debug\+Buffering\+Packet\+Reader}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ packet\+Reader, Linked\+List$<$ String\+Builder $>$ packet\+Debug\+Buffer, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Integer $>$ packet\+Debug\+Buffer\+Size)
 \item 
 \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a59ead81a6bb0f0b358f9e44db6b63280}{read\+Header}} ()  throws I\+O\+Exception 
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a50c66cbcfdd3b08a8135f3b6eb91cd19}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a50c66cbcfdd3b08a8135f3b6eb91cd19}} 
-\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} {\bfseries read\+Message} (Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ reuse, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}} header)  throws I\+O\+Exception 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a50c66cbcfdd3b08a8135f3b6eb91cd19}{read\+Message}} (Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ reuse, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}} header)  throws I\+O\+Exception 
 \item 
 byte \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a221efd81777e2a3fcceb0368f6baf0db}{get\+Message\+Sequence}} ()
 \item 
@@ -27,6 +25,15 @@ void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_bufferi
 
 \subsection{Detailed Description}
 A decorating \mbox{\hyperlink{}{Packet\+Reader}} which put debugging info to a ring-\/buffer. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a9060c97fdff3924c3e5bd97bbea114c7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a9060c97fdff3924c3e5bd97bbea114c7}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Reader}!Debug\+Buffering\+Packet\+Reader@{Debug\+Buffering\+Packet\+Reader}}
+\index{Debug\+Buffering\+Packet\+Reader@{Debug\+Buffering\+Packet\+Reader}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{Debug\+Buffering\+Packet\+Reader()}{DebugBufferingPacketReader()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+Debug\+Buffering\+Packet\+Reader.\+Debug\+Buffering\+Packet\+Reader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$}]{packet\+Reader,  }\item[{Linked\+List$<$ String\+Builder $>$}]{packet\+Debug\+Buffer,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Integer $>$}]{packet\+Debug\+Buffer\+Size }\end{DoxyParamCaption})}
+
+
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a221efd81777e2a3fcceb0368f6baf0db}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a221efd81777e2a3fcceb0368f6baf0db}} 
@@ -63,6 +70,12 @@ Read the next message header from server, possibly blocking indefinitely until t
 
 
 Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader_a09745b0e30f74fa13e2b32f22ce70cbb}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a50c66cbcfdd3b08a8135f3b6eb91cd19}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a50c66cbcfdd3b08a8135f3b6eb91cd19}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Reader}!read\+Message@{read\+Message}}
+\index{read\+Message@{read\+Message}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Reader}}
+\subsubsection{\texorpdfstring{read\+Message()}{readMessage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} com.\+mysql.\+cj.\+protocol.\+a.\+Debug\+Buffering\+Packet\+Reader.\+read\+Message (\begin{DoxyParamCaption}\item[{Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$}]{reuse,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_header}{Native\+Packet\+Header}}}]{header }\end{DoxyParamCaption}) throws I\+O\+Exception}
 
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a6739a6433fdce69bb684e15048481dc2}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_reader_a6739a6433fdce69bb684e15048481dc2}} 
 \index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Reader@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Reader}!reset\+Message\+Sequence@{reset\+Message\+Sequence}}
@@ -108,4 +121,4 @@ Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/Debug\+Buffering\+Packet\+Reader.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/\mbox{\hyperlink{_debug_buffering_packet_reader_8java}{Debug\+Buffering\+Packet\+Reader.\+java}}\end{DoxyCompactItemize}

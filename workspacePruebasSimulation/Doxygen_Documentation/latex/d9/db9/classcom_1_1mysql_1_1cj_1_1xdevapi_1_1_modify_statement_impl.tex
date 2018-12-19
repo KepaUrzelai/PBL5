@@ -7,11 +7,9 @@ Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_filterable_stat
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_aebce34d0e71257dc9bf3264a6dd0e6cd}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_aebce34d0e71257dc9bf3264a6dd0e6cd}} 
-\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} {\bfseries execute} ()
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_aebce34d0e71257dc9bf3264a6dd0e6cd}{execute}} ()
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_ab4c612ba7dbd0552d3342d150756ee70}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_ab4c612ba7dbd0552d3342d150756ee70}} 
-Completable\+Future$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} $>$ {\bfseries execute\+Async} ()
+Completable\+Future$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_ab4c612ba7dbd0552d3342d150756ee70}{execute\+Async}} ()
 \item 
 \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement}{Modify\+Statement}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_a4d22ce888e1c809740310f56cba2b6a3}{set}} (String doc\+Path, Object value)
 \item 
@@ -123,6 +121,18 @@ Add an update to the statement setting the field, if it exists at the document p
 
 Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_acb3745c970e50cf538e8d9b2295a08e1}{com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement}}.
 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_aebce34d0e71257dc9bf3264a6dd0e6cd}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_aebce34d0e71257dc9bf3264a6dd0e6cd}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement\+Impl}!execute@{execute}}
+\index{execute@{execute}!com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}} com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement\+Impl.\+execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_ab4c612ba7dbd0552d3342d150756ee70}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_ab4c612ba7dbd0552d3342d150756ee70}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement\+Impl}!execute\+Async@{execute\+Async}}
+\index{execute\+Async@{execute\+Async}!com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement\+Impl}}
+\subsubsection{\texorpdfstring{execute\+Async()}{executeAsync()}}
+{\footnotesize\ttfamily Completable\+Future$<$\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_result}{Result}}$>$ com.\+mysql.\+cj.\+xdevapi.\+Modify\+Statement\+Impl.\+execute\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_acd828dfa9665ae9290662791d1e0da96}\label{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_acd828dfa9665ae9290662791d1e0da96}} 
 \index{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement\+Impl}!merge@{merge}}
 \index{merge@{merge}!com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement\+Impl@{com\+::mysql\+::cj\+::xdevapi\+::\+Modify\+Statement\+Impl}}
@@ -173,7 +183,7 @@ Takes in a document patch and applies it on all documents matching the modify() 
  Example\+:~\newline
  collection.\+modify(\char`\"{}\+\_\+id = \+:id\char`\"{})~\newline
  .patch(\char`\"{}\{\textbackslash{}\char`\"{}zip"\+: address.\+zip-\/300000, "street"\+: C\+O\+N\+C\+AT(\$.name, \textquotesingle{}\textquotesingle{}\textquotesingle{}s street\+: \textquotesingle{}, \$.address.\+street)\}\char`\"{})$<$br$>$
-.\+bind(\char`\"{}id\char`\"{}, \char`\"{}2").execute();
+.\+bind(\char`\"{}id\char`\"{}, \char`\"{}2").\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_statement_impl_aebce34d0e71257dc9bf3264a6dd0e6cd}{execute()}};
 
 
 \begin{DoxyParams}{Parameters}
@@ -233,4 +243,4 @@ Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_modify_st
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/Modify\+Statement\+Impl.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_modify_statement_impl_8java}{Modify\+Statement\+Impl.\+java}}\end{DoxyCompactItemize}

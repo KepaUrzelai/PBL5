@@ -64,7 +64,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>com</b></li><li class="navelem"><b>mysql</b></li><li class="navelem"><b>cj</b></li><li class="navelem"><b>protocol</b></li><li class="navelem"><a class="el" href="../../de/d78/interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender.html">MessageSender</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../d8/dee/namespacecom.html">com</a></li><li class="navelem"><a class="el" href="../../de/d4a/namespacecom_1_1mysql.html">mysql</a></li><li class="navelem"><a class="el" href="../../d4/db2/namespacecom_1_1mysql_1_1cj.html">cj</a></li><li class="navelem"><a class="el" href="../../dc/d91/namespacecom_1_1mysql_1_1cj_1_1protocol.html">protocol</a></li><li class="navelem"><a class="el" href="../../de/d78/interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender.html">MessageSender</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,8 +80,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0c7192449eae4aa0f0dbbc9778dac002"><td class="memItemLeft" align="right" valign="top"><a id="a0c7192449eae4aa0f0dbbc9778dac002"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (byte[] message, int messageLen, byte messageSequence)  throws IOException</td></tr>
+<tr class="memitem:a0c7192449eae4aa0f0dbbc9778dac002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d78/interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender.html#a0c7192449eae4aa0f0dbbc9778dac002">send</a> (byte[] message, int messageLen, byte messageSequence)  throws IOException</td></tr>
 <tr class="separator:a0c7192449eae4aa0f0dbbc9778dac002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98dcb1def5601d40046a1cf5f9b67db4"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d78/interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender.html#a98dcb1def5601d40046a1cf5f9b67db4">send</a> (M message)</td></tr>
 <tr class="separator:a98dcb1def5601d40046a1cf5f9b67db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -95,8 +94,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (byte[] mess
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provides a facility for sending messages to server. The destination, transmission method, etc are determined by the implementation. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0c7192449eae4aa0f0dbbc9778dac002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c7192449eae4aa0f0dbbc9778dac002">&#9670;&nbsp;</a></span>send() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d78/interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender.html">com.mysql.cj.protocol.MessageSender</a>&lt; M extends <a class="el" href="../../d8/d9e/interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message.html">Message</a> &gt;.send </td>
+          <td>(</td>
+          <td class="paramtype">byte []&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>messageLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>messageSequence</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="../../d2/d3e/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender.html#a643c7e9a053e2704786f8319ef8a06e7">com.mysql.cj.protocol.a.CompressedPacketSender</a>, <a class="el" href="../../d6/d16/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender.html#a8dd20b5008f9f8f6a5d294269b0d8e0e">com.mysql.cj.protocol.x.AsyncMessageSender</a>, <a class="el" href="../../df/dee/classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender.html#a3fdd323d523578fb3c30b25eda718c0c">com.mysql.cj.protocol.x.SyncMessageSender</a>, <a class="el" href="../../d1/d4a/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender.html#ace4962a5811f350ebad23d8c985be11f">com.mysql.cj.protocol.a.DebugBufferingPacketSender</a>, <a class="el" href="../../d9/de9/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender.html#addcfce3e7ea16adf7933a367fb8f5904">com.mysql.cj.protocol.a.TracingPacketSender</a>, <a class="el" href="../../d1/db8/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender.html#a88b66f65476a850c58ffa47bc862661e">com.mysql.cj.protocol.a.SimplePacketSender</a>, and <a class="el" href="../../d6/d22/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_sender.html#a5bb1efc7043c5417509cd079cc7abd0d">com.mysql.cj.protocol.a.TimeTrackingPacketSender</a>.</p>
+
+</div>
+</div>
 <a id="a98dcb1def5601d40046a1cf5f9b67db4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98dcb1def5601d40046a1cf5f9b67db4">&#9670;&nbsp;</a></span>send()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a98dcb1def5601d40046a1cf5f9b67db4">&#9670;&nbsp;</a></span>send() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,7 +225,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (byte[] mess
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>pruebas/mysql-connector-java-8.0.11/src/main/core-api/java/com/mysql/cj/protocol/MessageSender.java</li>
+<li>pruebas/mysql-connector-java-8.0.11/src/main/core-api/java/com/mysql/cj/protocol/<a class="el" href="../../dc/d54/_message_sender_8java.html">MessageSender.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->

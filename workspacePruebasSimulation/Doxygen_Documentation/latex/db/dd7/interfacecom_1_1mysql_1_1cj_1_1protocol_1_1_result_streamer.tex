@@ -7,14 +7,26 @@ Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_da
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer_a58007e9c29f81c5e681f3df64fc4a055}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer_a58007e9c29f81c5e681f3df64fc4a055}} 
-void {\bfseries finish\+Streaming} ()
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer_a58007e9c29f81c5e681f3df64fc4a055}{finish\+Streaming}} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 A result streamer is a result object that is streaming results from the current connection. It allows to stream as long as nothing else needs to happen on the connection. Once something else needs to happen the streamed is notified to \char`\"{}complete streaming\char`\"{} at which point he can throw an exception, discard rows, buffer rows, etc. The connection is then free to execute the next command. 
 
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer_a58007e9c29f81c5e681f3df64fc4a055}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_result_streamer_a58007e9c29f81c5e681f3df64fc4a055}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Result\+Streamer@{com\+::mysql\+::cj\+::protocol\+::\+Result\+Streamer}!finish\+Streaming@{finish\+Streaming}}
+\index{finish\+Streaming@{finish\+Streaming}!com\+::mysql\+::cj\+::protocol\+::\+Result\+Streamer@{com\+::mysql\+::cj\+::protocol\+::\+Result\+Streamer}}
+\subsubsection{\texorpdfstring{finish\+Streaming()}{finishStreaming()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Result\+Streamer.\+finish\+Streaming (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_abstract_data_result_a6a37bb1022bc6bea43edf1f996dca4d4}{com.\+mysql.\+cj.\+xdevapi.\+Abstract\+Data\+Result$<$ T $>$}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_sql_result_impl_a9ace870266358e357a46f584b3545dc6}{com.\+mysql.\+cj.\+xdevapi.\+Sql\+Result\+Impl}}.
+
+
+
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/Result\+Streamer.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/\mbox{\hyperlink{_result_streamer_8java}{Result\+Streamer.\+java}}\end{DoxyCompactItemize}

@@ -7,6 +7,8 @@ Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_balance_
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_sequential_balance_strategy_af14fe3304b28a573292df8fb37b1a81f}{Sequential\+Balance\+Strategy}} ()
+\item 
 \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_sequential_balance_strategy_a2fb26910a5b3161faa35e0264d5c7adc}{pick\+Connection}} (Invocation\+Handler proxy, List$<$ String $>$ configured\+Hosts, Map$<$ String, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1_jdbc_connection}{Jdbc\+Connection}} $>$ live\+Connections, long\mbox{[}$\,$\mbox{]} response\+Times, int num\+Retries)  throws S\+Q\+L\+Exception 
 \end{DoxyCompactItemize}
 
@@ -15,6 +17,15 @@ Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_balance_
 A balancing strategy that starts at a random point, and then advances in the list (wrapping around) for each new \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_sequential_balance_strategy_a2fb26910a5b3161faa35e0264d5c7adc}{pick\+Connection()}} call.
 
 The initial point selection, and subsequent point selections are blacklist-\/aware. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_sequential_balance_strategy_af14fe3304b28a573292df8fb37b1a81f}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_sequential_balance_strategy_af14fe3304b28a573292df8fb37b1a81f}} 
+\index{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Sequential\+Balance\+Strategy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Sequential\+Balance\+Strategy}!Sequential\+Balance\+Strategy@{Sequential\+Balance\+Strategy}}
+\index{Sequential\+Balance\+Strategy@{Sequential\+Balance\+Strategy}!com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Sequential\+Balance\+Strategy@{com\+::mysql\+::cj\+::jdbc\+::ha\+::\+Sequential\+Balance\+Strategy}}
+\subsubsection{\texorpdfstring{Sequential\+Balance\+Strategy()}{SequentialBalanceStrategy()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+jdbc.\+ha.\+Sequential\+Balance\+Strategy.\+Sequential\+Balance\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_sequential_balance_strategy_a2fb26910a5b3161faa35e0264d5c7adc}\label{classcom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_sequential_balance_strategy_a2fb26910a5b3161faa35e0264d5c7adc}} 
@@ -57,4 +68,4 @@ Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1jdbc_1_1ha_1_1_balanc
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/ha/Sequential\+Balance\+Strategy.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/impl/java/com/mysql/cj/jdbc/ha/\mbox{\hyperlink{_sequential_balance_strategy_8java}{Sequential\+Balance\+Strategy.\+java}}\end{DoxyCompactItemize}

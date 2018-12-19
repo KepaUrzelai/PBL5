@@ -64,7 +64,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>com</b></li><li class="navelem"><b>mysql</b></li><li class="navelem"><b>cj</b></li><li class="navelem"><b>conf</b></li><li class="navelem"><a class="el" href="../../d3/d5e/classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url.html">ConnectionUrl</a></li><li class="navelem"><a class="el" href="../../d4/d08/enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality.html">HostsCardinality</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../d8/dee/namespacecom.html">com</a></li><li class="navelem"><a class="el" href="../../de/d4a/namespacecom_1_1mysql.html">mysql</a></li><li class="navelem"><a class="el" href="../../d4/db2/namespacecom_1_1mysql_1_1cj.html">cj</a></li><li class="navelem"><a class="el" href="../../d9/d7b/namespacecom_1_1mysql_1_1cj_1_1conf.html">conf</a></li><li class="navelem"><a class="el" href="../../d3/d5e/classcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url.html">ConnectionUrl</a></li><li class="navelem"><a class="el" href="../../d4/d08/enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality.html">HostsCardinality</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -79,18 +79,44 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac284db6b3b9a93d35d400c1d05cfb717"><td class="memItemLeft" align="right" valign="top"><a id="ac284db6b3b9a93d35d400c1d05cfb717"></a>
-abstract boolean&#160;</td><td class="memItemRight" valign="bottom"><b>assertSize</b> (int n)</td></tr>
+<tr class="memitem:ac284db6b3b9a93d35d400c1d05cfb717"><td class="memItemLeft" align="right" valign="top">abstract boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d08/enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality.html#ac284db6b3b9a93d35d400c1d05cfb717">assertSize</a> (int n)</td></tr>
 <tr class="separator:ac284db6b3b9a93d35d400c1d05cfb717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a841d1e01689174a7e5f02fe698ccbd5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><b>assertSize</b></td></tr>
+<tr class="memitem:a841d1e01689174a7e5f02fe698ccbd5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d08/enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality.html#a841d1e01689174a7e5f02fe698ccbd5f">assertSize</a></td></tr>
 <tr class="separator:a841d1e01689174a7e5f02fe698ccbd5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The rules describing the number of hosts a database URL may contain. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac284db6b3b9a93d35d400c1d05cfb717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac284db6b3b9a93d35d400c1d05cfb717">&#9670;&nbsp;</a></span>assertSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract boolean com.mysql.cj.conf.ConnectionUrl.HostsCardinality.assertSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a841d1e01689174a7e5f02fe698ccbd5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a841d1e01689174a7e5f02fe698ccbd5f">&#9670;&nbsp;</a></span>assertSize</h2>
 
@@ -102,11 +128,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=(<span class="keywordtype">int</span> n) {</div><div class="line">                <span class="keywordflow">return</span> n == 1;</div><div class="line">            }</div><div class="line">        },</div><div class="line">        MULTIPLE {</div><div class="line">            @Override</div><div class="line">            <span class="keyword">public</span> <span class="keywordtype">boolean</span> assertSize(<span class="keywordtype">int</span> n) {</div><div class="line">                <span class="keywordflow">return</span> n &gt; 1;</div><div class="line">            }</div><div class="line">        },</div><div class="line">        ONE_OR_MORE {</div><div class="line">            @Override</div><div class="line">            <span class="keyword">public</span> <span class="keywordtype">boolean</span> assertSize(<span class="keywordtype">int</span> n) {</div><div class="line">                <span class="keywordflow">return</span> n &gt;= 1;</div><div class="line">            }</div><div class="line">        }</div></div><!-- fragment -->
+<b>Initial value:</b><div class="fragment"><div class="line">=(<span class="keywordtype">int</span> n) {</div><div class="line">                <span class="keywordflow">return</span> n == 1;</div><div class="line">            }</div><div class="line">        },</div><div class="line">        MULTIPLE {</div><div class="line">            @Override</div><div class="line">            <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="../../d4/d08/enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality.html#a841d1e01689174a7e5f02fe698ccbd5f">assertSize</a>(<span class="keywordtype">int</span> n) {</div><div class="line">                <span class="keywordflow">return</span> n &gt; 1;</div><div class="line">            }</div><div class="line">        },</div><div class="line">        ONE_OR_MORE {</div><div class="line">            @Override</div><div class="line">            <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="../../d4/d08/enumcom_1_1mysql_1_1cj_1_1conf_1_1_connection_url_1_1_hosts_cardinality.html#a841d1e01689174a7e5f02fe698ccbd5f">assertSize</a>(<span class="keywordtype">int</span> n) {</div><div class="line">                <span class="keywordflow">return</span> n &gt;= 1;</div><div class="line">            }</div><div class="line">        }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this enum was generated from the following file:<ul>
-<li>pruebas/mysql-connector-java-8.0.11/src/main/core-api/java/com/mysql/cj/conf/ConnectionUrl.java</li>
+<li>pruebas/mysql-connector-java-8.0.11/src/main/core-api/java/com/mysql/cj/conf/<a class="el" href="../../df/da2/_connection_url_8java.html">ConnectionUrl.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->

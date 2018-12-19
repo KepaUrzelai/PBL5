@@ -64,7 +64,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>com</b></li><li class="navelem"><b>mysql</b></li><li class="navelem"><b>cj</b></li><li class="navelem"><b>protocol</b></li><li class="navelem"><b>a</b></li><li class="navelem"><a class="el" href="../../d2/d3e/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender.html">CompressedPacketSender</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../d8/dee/namespacecom.html">com</a></li><li class="navelem"><a class="el" href="../../de/d4a/namespacecom_1_1mysql.html">mysql</a></li><li class="navelem"><a class="el" href="../../d4/db2/namespacecom_1_1mysql_1_1cj.html">cj</a></li><li class="navelem"><a class="el" href="../../dc/d91/namespacecom_1_1mysql_1_1cj_1_1protocol.html">protocol</a></li><li class="navelem"><a class="el" href="../../dc/d20/namespacecom_1_1mysql_1_1cj_1_1protocol_1_1a.html">a</a></li><li class="navelem"><a class="el" href="../../d2/d3e/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender.html">CompressedPacketSender</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -81,8 +81,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab6d47e91936124c65c9c980ed73af907"><td class="memItemLeft" align="right" valign="top"><a id="ab6d47e91936124c65c9c980ed73af907"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CompressedPacketSender</b> (BufferedOutputStream outputStream)</td></tr>
+<tr class="memitem:ab6d47e91936124c65c9c980ed73af907"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3e/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender.html#ab6d47e91936124c65c9c980ed73af907">CompressedPacketSender</a> (BufferedOutputStream outputStream)</td></tr>
 <tr class="separator:ab6d47e91936124c65c9c980ed73af907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5491c16d427d8343f0417b9e5bebd1f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3e/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender.html#a5491c16d427d8343f0417b9e5bebd1f1">stop</a> ()</td></tr>
 <tr class="separator:a5491c16d427d8343f0417b9e5bebd1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,17 +99,34 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:af23eba021b7b5002ef05f27bba7733e8"><td class="memItemLeft" align="right" valign="top"><a id="af23eba021b7b5002ef05f27bba7733e8"></a>
-static final int&#160;</td><td class="memItemRight" valign="bottom"><b>COMP_HEADER_LENGTH</b> = 7</td></tr>
+<tr class="memitem:af23eba021b7b5002ef05f27bba7733e8"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3e/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender.html#af23eba021b7b5002ef05f27bba7733e8">COMP_HEADER_LENGTH</a> = 7</td></tr>
 <tr class="separator:af23eba021b7b5002ef05f27bba7733e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db21027c99a6cb911a6a286d291a326"><td class="memItemLeft" align="right" valign="top"><a id="a5db21027c99a6cb911a6a286d291a326"></a>
-static final int&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_COMPRESS_LEN</b> = 50</td></tr>
+<tr class="memitem:a5db21027c99a6cb911a6a286d291a326"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3e/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender.html#a5db21027c99a6cb911a6a286d291a326">MIN_COMPRESS_LEN</a> = 50</td></tr>
 <tr class="separator:a5db21027c99a6cb911a6a286d291a326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="../../de/d78/interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender.html">MessageSender</a> for the compressed protocol.</p>
 <p>TODO: add support for pre-allocated buffer for large packets (if there's a demonstrable perf improvement) </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab6d47e91936124c65c9c980ed73af907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6d47e91936124c65c9c980ed73af907">&#9670;&nbsp;</a></span>CompressedPacketSender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">com.mysql.cj.protocol.a.CompressedPacketSender.CompressedPacketSender </td>
+          <td>(</td>
+          <td class="paramtype">BufferedOutputStream&#160;</td>
+          <td class="paramname"><em>outputStream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a643c7e9a053e2704786f8319ef8a06e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a643c7e9a053e2704786f8319ef8a06e7">&#9670;&nbsp;</a></span>send()</h2>
 
@@ -144,7 +160,7 @@ static final int&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_COMPR
 </div><div class="memdoc">
 <p>Packet sender implementation for the compressed MySQL protocol. For compressed transmission of multi-packets, split the packets up in the same way as the uncompressed protocol. We fit up to MAX_PACKET_SIZE bytes of split uncompressed packet, including the header, into an compressed packet. The first packet of the multi-packet is 4 bytes of header and MAX_PACKET_SIZE - 4 bytes of the payload. The next packet must send the remaining four bytes of the payload followed by a new header and payload. If the second split packet is also around MAX_PACKET_SIZE in length, then only MAX_PACKET_SIZE - 4 (from the previous packet) - 4 (for the new header) can be sent. This means the payload will be limited by 8 bytes and this will continue to increase by 4 at every iteration. </p>
 
-<p>Implements <a class="el" href="../../de/d78/interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender.html">com.mysql.cj.protocol.MessageSender&lt; M extends Message &gt;</a>.</p>
+<p>Implements <a class="el" href="../../de/d78/interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender.html#a0c7192449eae4aa0f0dbbc9778dac002">com.mysql.cj.protocol.MessageSender&lt; M extends Message &gt;</a>.</p>
 
 </div>
 </div>
@@ -208,8 +224,53 @@ static final int&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_COMPR
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af23eba021b7b5002ef05f27bba7733e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af23eba021b7b5002ef05f27bba7733e8">&#9670;&nbsp;</a></span>COMP_HEADER_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int com.mysql.cj.protocol.a.CompressedPacketSender.COMP_HEADER_LENGTH = 7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5db21027c99a6cb911a6a286d291a326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5db21027c99a6cb911a6a286d291a326">&#9670;&nbsp;</a></span>MIN_COMPRESS_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int com.mysql.cj.protocol.a.CompressedPacketSender.MIN_COMPRESS_LEN = 50</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>pruebas/mysql-connector-java-8.0.11/src/main/protocol-impl/java/com/mysql/cj/protocol/a/CompressedPacketSender.java</li>
+<li>pruebas/mysql-connector-java-8.0.11/src/main/protocol-impl/java/com/mysql/cj/protocol/a/<a class="el" href="../../d5/d93/_compressed_packet_sender_8java.html">CompressedPacketSender.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->

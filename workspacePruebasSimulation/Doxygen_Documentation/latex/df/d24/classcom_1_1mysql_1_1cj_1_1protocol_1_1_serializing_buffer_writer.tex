@@ -7,28 +7,34 @@ Inherits Completion\+Handler$<$ Long, Void $>$.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a9e0d4a42d01bb141b8a2ab1b2505c7ab}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a9e0d4a42d01bb141b8a2ab1b2505c7ab}} 
-{\bfseries Serializing\+Buffer\+Writer} (Asynchronous\+Socket\+Channel channel)
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a9e0d4a42d01bb141b8a2ab1b2505c7ab}{Serializing\+Buffer\+Writer}} (Asynchronous\+Socket\+Channel \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a2c945e406ea10c40aa113a7c111570c6}{channel}})
 \item 
 void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_af340d231ae86b9546e151aae7515f4e3}{queue\+Buffer}} (Byte\+Buffer buf, Completion\+Handler$<$ Long, Void $>$ callback)
 \item 
 void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a5cedb5f89370707b473b5e8619c7ccf1}{completed}} (Long bytes\+Written, Void v)
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_ad46b2551c4658e8281f80788a7b7ab32}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_ad46b2551c4658e8281f80788a7b7ab32}} 
-void {\bfseries failed} (Throwable t, Void v)
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_ad46b2551c4658e8281f80788a7b7ab32}{failed}} (Throwable t, Void v)
 \item 
-void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_ac59dda63c81fa3c5f00f82924b1c63c5}{set\+Channel}} (Asynchronous\+Socket\+Channel channel)
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_ac59dda63c81fa3c5f00f82924b1c63c5}{set\+Channel}} (Asynchronous\+Socket\+Channel \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a2c945e406ea10c40aa113a7c111570c6}{channel}})
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a2c945e406ea10c40aa113a7c111570c6}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a2c945e406ea10c40aa113a7c111570c6}} 
-Asynchronous\+Socket\+Channel {\bfseries channel}
+Asynchronous\+Socket\+Channel \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a2c945e406ea10c40aa113a7c111570c6}{channel}}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 A layer over \mbox{\hyperlink{}{Asynchronous\+Socket\+Channel}} that serializes all incoming write requests. This means we queue any incoming buffer and don\textquotesingle{}t begin writing it until the previous buffer has been written fully. All buffers are transmitted atomically with respect to the caller/callback. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a9e0d4a42d01bb141b8a2ab1b2505c7ab}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a9e0d4a42d01bb141b8a2ab1b2505c7ab}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer@{com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer}!Serializing\+Buffer\+Writer@{Serializing\+Buffer\+Writer}}
+\index{Serializing\+Buffer\+Writer@{Serializing\+Buffer\+Writer}!com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer@{com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer}}
+\subsubsection{\texorpdfstring{Serializing\+Buffer\+Writer()}{SerializingBufferWriter()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+Serializing\+Buffer\+Writer.\+Serializing\+Buffer\+Writer (\begin{DoxyParamCaption}\item[{Asynchronous\+Socket\+Channel}]{channel }\end{DoxyParamCaption})}
+
+
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a5cedb5f89370707b473b5e8619c7ccf1}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a5cedb5f89370707b473b5e8619c7ccf1}} 
@@ -37,7 +43,13 @@ A layer over \mbox{\hyperlink{}{Asynchronous\+Socket\+Channel}} that serializes 
 \subsubsection{\texorpdfstring{completed()}{completed()}}
 {\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Serializing\+Buffer\+Writer.\+completed (\begin{DoxyParamCaption}\item[{Long}]{bytes\+Written,  }\item[{Void}]{v }\end{DoxyParamCaption})}
 
-Completion handler for channel writes. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_af340d231ae86b9546e151aae7515f4e3}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_af340d231ae86b9546e151aae7515f4e3}} 
+Completion handler for channel writes. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_ad46b2551c4658e8281f80788a7b7ab32}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_ad46b2551c4658e8281f80788a7b7ab32}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer@{com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer}!failed@{failed}}
+\index{failed@{failed}!com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer@{com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer}}
+\subsubsection{\texorpdfstring{failed()}{failed()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+Serializing\+Buffer\+Writer.\+failed (\begin{DoxyParamCaption}\item[{Throwable}]{t,  }\item[{Void}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_af340d231ae86b9546e151aae7515f4e3}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_af340d231ae86b9546e151aae7515f4e3}} 
 \index{com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer@{com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer}!queue\+Buffer@{queue\+Buffer}}
 \index{queue\+Buffer@{queue\+Buffer}!com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer@{com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer}}
 \subsubsection{\texorpdfstring{queue\+Buffer()}{queueBuffer()}}
@@ -71,6 +83,15 @@ Allow overwriting the channel once the writer has been established. Required for
 \end{DoxyParams}
 
 
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a2c945e406ea10c40aa113a7c111570c6}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1_serializing_buffer_writer_a2c945e406ea10c40aa113a7c111570c6}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer@{com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer}!channel@{channel}}
+\index{channel@{channel}!com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer@{com\+::mysql\+::cj\+::protocol\+::\+Serializing\+Buffer\+Writer}}
+\subsubsection{\texorpdfstring{channel}{channel}}
+{\footnotesize\ttfamily Asynchronous\+Socket\+Channel com.\+mysql.\+cj.\+protocol.\+Serializing\+Buffer\+Writer.\+channel\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/protocol/Serializing\+Buffer\+Writer.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/impl/java/com/mysql/cj/protocol/\mbox{\hyperlink{_serializing_buffer_writer_8java}{Serializing\+Buffer\+Writer.\+java}}\end{DoxyCompactItemize}

@@ -11,8 +11,7 @@ Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1
 \item 
 void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_ae16b87b06548b980f3b0e3d9df020296}{close}} ()
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_aaa49f432c3992ae2bbe56bbc4c273fb8}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_aaa49f432c3992ae2bbe56bbc4c273fb8}} 
-boolean {\bfseries has\+Next} ()
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_aaa49f432c3992ae2bbe56bbc4c273fb8}{has\+Next}} ()
 \item 
 boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a87d9941d48a1d379d2387082904ebe6c}{is\+After\+Last}} ()
 \item 
@@ -24,8 +23,7 @@ boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_
 \item 
 boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_abe926437ff8f266271a0e2403404dbc4}{is\+Last}} ()
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a2150a98917c9542a703991059ebd369f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a2150a98917c9542a703991059ebd369f}} 
-\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} {\bfseries next} ()
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a2150a98917c9542a703991059ebd369f}{next}} ()
 \item 
 void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_af58c1ee8e6bddf5ef73508bc9292a0a2}{after\+Last}} ()
 \item 
@@ -41,7 +39,7 @@ void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_res
 
 
 \subsection{Detailed Description}
-Provides streaming of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}} rows. Each next row is consumed from the input stream only on \mbox{\hyperlink{}{next()}} call. Consumed rows are not cached thus we only stream result sets when they are forward-\/only, read-\/only, and the fetch size has been set to Integer.\+M\+I\+N\+\_\+\+V\+A\+L\+UE (rows are read one by one). 
+Provides streaming of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset}{Resultset}} rows. Each next row is consumed from the input stream only on \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a2150a98917c9542a703991059ebd369f}{next()}} call. Consumed rows are not cached thus we only stream result sets when they are forward-\/only, read-\/only, and the fetch size has been set to Integer.\+M\+I\+N\+\_\+\+V\+A\+L\+UE (rows are read one by one). 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a2fd06d15f9d59ed1e807189b556357f4}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a2fd06d15f9d59ed1e807189b556357f4}} 
@@ -105,6 +103,12 @@ Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultse
 We\textquotesingle{}re done. 
 
 Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_aae10da1813382e04a356d4e282d1a7f9}{com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_aaa49f432c3992ae2bbe56bbc4c273fb8}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_aaa49f432c3992ae2bbe56bbc4c273fb8}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Resultset\+Rows\+Streaming@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Resultset\+Rows\+Streaming}!has\+Next@{has\+Next}}
+\index{has\+Next@{has\+Next}!com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Resultset\+Rows\+Streaming@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Resultset\+Rows\+Streaming}}
+\subsubsection{\texorpdfstring{has\+Next()}{hasNext()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Streaming}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}} $>$.has\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a87d9941d48a1d379d2387082904ebe6c}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a87d9941d48a1d379d2387082904ebe6c}} 
 \index{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Resultset\+Rows\+Streaming@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Resultset\+Rows\+Streaming}!is\+After\+Last@{is\+After\+Last}}
@@ -198,6 +202,12 @@ Moves the current position relative \textquotesingle{}rows\textquotesingle{} fro
 
 Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows_a81d7635ad38c59a3160e3edc46327bac}{com.\+mysql.\+cj.\+protocol.\+Resultset\+Rows}}.
 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a2150a98917c9542a703991059ebd369f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_a2150a98917c9542a703991059ebd369f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Resultset\+Rows\+Streaming@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Resultset\+Rows\+Streaming}!next@{next}}
+\index{next@{next}!com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Resultset\+Rows\+Streaming@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Resultset\+Rows\+Streaming}}
+\subsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row}{Row}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Resultset\+Rows\+Streaming}}$<$ T extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_protocol_entity}{Protocol\+Entity}} $>$.next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_ac2448082c41dad09ccd418eaf3f400e0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_resultset_rows_streaming_ac2448082c41dad09ccd418eaf3f400e0}} 
 \index{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Resultset\+Rows\+Streaming@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Resultset\+Rows\+Streaming}!set\+Current\+Row@{set\+Current\+Row}}
 \index{set\+Current\+Row@{set\+Current\+Row}!com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Resultset\+Rows\+Streaming@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Resultset\+Rows\+Streaming}}
@@ -219,4 +229,4 @@ Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultse
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/result/Resultset\+Rows\+Streaming.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/result/\mbox{\hyperlink{_resultset_rows_streaming_8java}{Resultset\+Rows\+Streaming.\+java}}\end{DoxyCompactItemize}

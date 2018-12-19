@@ -9,11 +9,9 @@ Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_abstract_socke
 \item 
 void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a01b21bd9bd524d07d1467c758900a102}{connect}} (String host\+Name, int port\+Number, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_property_set}{Property\+Set}} prop\+Set, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exc\+Interceptor, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1log_1_1_log}{Log}} log, int login\+Timeout)
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a00e90b14ed518b12733a936a3b707134}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a00e90b14ed518b12733a936a3b707134}} 
-void {\bfseries perform\+Tls\+Handshake} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} server\+Session)  throws S\+S\+L\+Params\+Exception, Feature\+Not\+Available\+Exception, I\+O\+Exception 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a00e90b14ed518b12733a936a3b707134}{perform\+Tls\+Handshake}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}} server\+Session)  throws S\+S\+L\+Params\+Exception, Feature\+Not\+Available\+Exception, I\+O\+Exception 
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a2c48d7701f27174e67e79cee1deb78d1}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a2c48d7701f27174e67e79cee1deb78d1}} 
-Asynchronous\+Socket\+Channel {\bfseries get\+Asynchronous\+Socket\+Channel} ()
+Asynchronous\+Socket\+Channel \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a2c48d7701f27174e67e79cee1deb78d1}{get\+Asynchronous\+Socket\+Channel}} ()
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -46,8 +44,28 @@ Connect to the My\+S\+QL server and setup a stream connection.
 
 Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection_ac20aea608e999684c82a0dbaaa5886c7}{com.\+mysql.\+cj.\+protocol.\+Socket\+Connection}}.
 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a2c48d7701f27174e67e79cee1deb78d1}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a2c48d7701f27174e67e79cee1deb78d1}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Socket\+Connection@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Socket\+Connection}!get\+Asynchronous\+Socket\+Channel@{get\+Asynchronous\+Socket\+Channel}}
+\index{get\+Asynchronous\+Socket\+Channel@{get\+Asynchronous\+Socket\+Channel}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Socket\+Connection@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Socket\+Connection}}
+\subsubsection{\texorpdfstring{get\+Asynchronous\+Socket\+Channel()}{getAsynchronousSocketChannel()}}
+{\footnotesize\ttfamily Asynchronous\+Socket\+Channel com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Socket\+Connection.\+get\+Asynchronous\+Socket\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection_acab5267ec9b4013b52015a1d9097066b}{com.\+mysql.\+cj.\+protocol.\+Socket\+Connection}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a00e90b14ed518b12733a936a3b707134}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_socket_connection_a00e90b14ed518b12733a936a3b707134}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Socket\+Connection@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Socket\+Connection}!perform\+Tls\+Handshake@{perform\+Tls\+Handshake}}
+\index{perform\+Tls\+Handshake@{perform\+Tls\+Handshake}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Socket\+Connection@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Native\+Socket\+Connection}}
+\subsubsection{\texorpdfstring{perform\+Tls\+Handshake()}{performTlsHandshake()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Native\+Socket\+Connection.\+perform\+Tls\+Handshake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_server_session}{Server\+Session}}}]{server\+Session }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1exceptions_1_1_s_s_l_params_exception}{S\+S\+L\+Params\+Exception}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1exceptions_1_1_feature_not_available_exception}{Feature\+Not\+Available\+Exception}}, I\+O\+Exception}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_socket_connection_a15064c0de5e729be5f27a42aee58fdd5}{com.\+mysql.\+cj.\+protocol.\+Socket\+Connection}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/Native\+Socket\+Connection.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/\mbox{\hyperlink{_native_socket_connection_8java}{Native\+Socket\+Connection.\+java}}\end{DoxyCompactItemize}

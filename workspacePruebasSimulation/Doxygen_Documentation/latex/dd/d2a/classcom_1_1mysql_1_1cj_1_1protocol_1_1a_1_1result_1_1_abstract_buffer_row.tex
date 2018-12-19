@@ -11,14 +11,12 @@ Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a08349d40ae79d6ead1baec4a471ee3f0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a08349d40ae79d6ead1baec4a471ee3f0}} 
-{\bfseries Abstract\+Buffer\+Row} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a08349d40ae79d6ead1baec4a471ee3f0}{Abstract\+Buffer\+Row}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1result_1_1_abstract_resultset_row_a50c0daccb2e9e7e2445af4a09d6fb9d0}{exception\+Interceptor}})
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a7cf03826ff7d879810ca7d23472a49f5}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a7cf03826ff7d879810ca7d23472a49f5}} 
-\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} {\bfseries row\+From\+Server}
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a7cf03826ff7d879810ca7d23472a49f5}{row\+From\+Server}}
 \item 
 int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a38cbe12c531c96a8ba04b80fee493a5b}{home\+Position}} = 0
 \item 
@@ -33,6 +31,15 @@ int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abst
 A Result\+Set\+Row implementation that holds one row packet (which is re-\/used by the driver, and thus saves memory allocations), and tries when possible to avoid allocations to break out the results as individual byte\mbox{[}\mbox{]}s.
 
 (this isn\textquotesingle{}t possible when doing things like reading floating point values). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a08349d40ae79d6ead1baec4a471ee3f0}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a08349d40ae79d6ead1baec4a471ee3f0}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row}!Abstract\+Buffer\+Row@{Abstract\+Buffer\+Row}}
+\index{Abstract\+Buffer\+Row@{Abstract\+Buffer\+Row}!com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row}}
+\subsubsection{\texorpdfstring{Abstract\+Buffer\+Row()}{AbstractBufferRow()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Buffer\+Row.\+Abstract\+Buffer\+Row (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
 
 \subsection{Member Data Documentation}
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a38cbe12c531c96a8ba04b80fee493a5b}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a38cbe12c531c96a8ba04b80fee493a5b}} 
@@ -53,8 +60,14 @@ The last-\/requested index, used as an optimization, if you ask for the same ind
 \subsubsection{\texorpdfstring{last\+Requested\+Pos}{lastRequestedPos}}
 {\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Buffer\+Row.\+last\+Requested\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
 
-The position of the last-\/requested index, optimization in concert with last\+Requested\+Index. 
+The position of the last-\/requested index, optimization in concert with last\+Requested\+Index. \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a7cf03826ff7d879810ca7d23472a49f5}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_abstract_buffer_row_a7cf03826ff7d879810ca7d23472a49f5}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row}!row\+From\+Server@{row\+From\+Server}}
+\index{row\+From\+Server@{row\+From\+Server}!com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Abstract\+Buffer\+Row}}
+\subsubsection{\texorpdfstring{row\+From\+Server}{rowFromServer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Abstract\+Buffer\+Row.\+row\+From\+Server\hspace{0.3cm}{\ttfamily [protected]}}
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/result/Abstract\+Buffer\+Row.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/result/\mbox{\hyperlink{_abstract_buffer_row_8java}{Abstract\+Buffer\+Row.\+java}}\end{DoxyCompactItemize}

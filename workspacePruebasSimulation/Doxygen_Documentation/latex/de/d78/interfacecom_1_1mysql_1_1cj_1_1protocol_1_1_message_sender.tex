@@ -7,8 +7,7 @@ Inherited by \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compr
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a0c7192449eae4aa0f0dbbc9778dac002}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a0c7192449eae4aa0f0dbbc9778dac002}} 
-void {\bfseries send} (byte\mbox{[}$\,$\mbox{]} message, int message\+Len, byte message\+Sequence)  throws I\+O\+Exception
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a0c7192449eae4aa0f0dbbc9778dac002}{send}} (byte\mbox{[}$\,$\mbox{]} message, int message\+Len, byte message\+Sequence)  throws I\+O\+Exception
 \item 
 default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a98dcb1def5601d40046a1cf5f9b67db4}{send}} (M message)
 \item 
@@ -24,10 +23,20 @@ default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_messag
 This interface provides a facility for sending messages to server. The destination, transmission method, etc are determined by the implementation. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a0c7192449eae4aa0f0dbbc9778dac002}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a0c7192449eae4aa0f0dbbc9778dac002}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::\+Message\+Sender}!send@{send}}
+\index{send@{send}!com\+::mysql\+::cj\+::protocol\+::\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::\+Message\+Sender}}
+\subsubsection{\texorpdfstring{send()}{send()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.send (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{message,  }\item[{int}]{message\+Len,  }\item[{byte}]{message\+Sequence }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_compressed_packet_sender_a643c7e9a053e2704786f8319ef8a06e7}{com.\+mysql.\+cj.\+protocol.\+a.\+Compressed\+Packet\+Sender}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_async_message_sender_a8dd20b5008f9f8f6a5d294269b0d8e0e}{com.\+mysql.\+cj.\+protocol.\+x.\+Async\+Message\+Sender}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_sender_a3fdd323d523578fb3c30b25eda718c0c}{com.\+mysql.\+cj.\+protocol.\+x.\+Sync\+Message\+Sender}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_ace4962a5811f350ebad23d8c985be11f}{com.\+mysql.\+cj.\+protocol.\+a.\+Debug\+Buffering\+Packet\+Sender}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_tracing_packet_sender_addcfce3e7ea16adf7933a367fb8f5904}{com.\+mysql.\+cj.\+protocol.\+a.\+Tracing\+Packet\+Sender}}, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender_a88b66f65476a850c58ffa47bc862661e}{com.\+mysql.\+cj.\+protocol.\+a.\+Simple\+Packet\+Sender}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_time_tracking_packet_sender_a5bb1efc7043c5417509cd079cc7abd0d}{com.\+mysql.\+cj.\+protocol.\+a.\+Time\+Tracking\+Packet\+Sender}}.
+
 \mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a98dcb1def5601d40046a1cf5f9b67db4}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a98dcb1def5601d40046a1cf5f9b67db4}} 
 \index{com\+::mysql\+::cj\+::protocol\+::\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::\+Message\+Sender}!send@{send}}
 \index{send@{send}!com\+::mysql\+::cj\+::protocol\+::\+Message\+Sender@{com\+::mysql\+::cj\+::protocol\+::\+Message\+Sender}}
-\subsubsection{\texorpdfstring{send()}{send()}}
+\subsubsection{\texorpdfstring{send()}{send()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily default void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender}}$<$ M extends \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message}{Message}} $>$.send (\begin{DoxyParamCaption}\item[{M}]{message }\end{DoxyParamCaption})}
 
 Send message to server.
@@ -88,4 +97,4 @@ Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_com
 
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/Message\+Sender.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/\mbox{\hyperlink{_message_sender_8java}{Message\+Sender.\+java}}\end{DoxyCompactItemize}

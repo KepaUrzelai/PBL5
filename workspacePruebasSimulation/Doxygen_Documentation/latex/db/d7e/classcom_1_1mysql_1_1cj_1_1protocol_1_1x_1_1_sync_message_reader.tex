@@ -7,21 +7,27 @@ Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_re
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a2464524fa481333d1d350b03f41d14ad}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a2464524fa481333d1d350b03f41d14ad}} 
-{\bfseries Sync\+Message\+Reader} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_full_read_input_stream}{Full\+Read\+Input\+Stream}} input\+Stream)
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a2464524fa481333d1d350b03f41d14ad}{Sync\+Message\+Reader}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_full_read_input_stream}{Full\+Read\+Input\+Stream}} input\+Stream)
 \item 
 \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_header}{X\+Message\+Header}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a057a4fcddafa78836d874a30205936fc}{read\+Header}} ()  throws I\+O\+Exception 
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a80429605aa58590c81c645fabf200f1e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a80429605aa58590c81c645fabf200f1e}} 
-\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} {\bfseries read\+Message} (Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ reuse, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_header}{X\+Message\+Header}} hdr)  throws I\+O\+Exception 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a80429605aa58590c81c645fabf200f1e}{read\+Message}} (Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ reuse, \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_header}{X\+Message\+Header}} hdr)  throws I\+O\+Exception 
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a878c3dcae955da43eb45bee60d904e54}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a878c3dcae955da43eb45bee60d904e54}} 
-\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} {\bfseries read\+Message} (Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ reuse, int expected\+Type)  throws I\+O\+Exception 
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a878c3dcae955da43eb45bee60d904e54}{read\+Message}} (Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$ reuse, int expected\+Type)  throws I\+O\+Exception 
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Synchronous-\/only implementation of \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader}{Message\+Reader}}. This implementation wraps an \mbox{\hyperlink{}{java.\+io.\+Input\+Stream}}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a2464524fa481333d1d350b03f41d14ad}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a2464524fa481333d1d350b03f41d14ad}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Reader}!Sync\+Message\+Reader@{Sync\+Message\+Reader}}
+\index{Sync\+Message\+Reader@{Sync\+Message\+Reader}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Reader}}
+\subsubsection{\texorpdfstring{Sync\+Message\+Reader()}{SyncMessageReader()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+x.\+Sync\+Message\+Reader.\+Sync\+Message\+Reader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1_full_read_input_stream}{Full\+Read\+Input\+Stream}}}]{input\+Stream }\end{DoxyParamCaption})}
+
+
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a057a4fcddafa78836d874a30205936fc}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a057a4fcddafa78836d874a30205936fc}} 
@@ -44,8 +50,20 @@ Read the next message header from server, possibly blocking indefinitely until t
 
 Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_reader_a09745b0e30f74fa13e2b32f22ce70cbb}{com.\+mysql.\+cj.\+protocol.\+Message\+Reader$<$ H extends Message\+Header, M extends Message $>$}}.
 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a80429605aa58590c81c645fabf200f1e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a80429605aa58590c81c645fabf200f1e}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Reader}!read\+Message@{read\+Message}}
+\index{read\+Message@{read\+Message}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Reader}}
+\subsubsection{\texorpdfstring{read\+Message()}{readMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+Sync\+Message\+Reader.\+read\+Message (\begin{DoxyParamCaption}\item[{Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$}]{reuse,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message_header}{X\+Message\+Header}}}]{hdr }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a878c3dcae955da43eb45bee60d904e54}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_sync_message_reader_a878c3dcae955da43eb45bee60d904e54}} 
+\index{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Reader}!read\+Message@{read\+Message}}
+\index{read\+Message@{read\+Message}!com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Reader@{com\+::mysql\+::cj\+::protocol\+::x\+::\+Sync\+Message\+Reader}}
+\subsubsection{\texorpdfstring{read\+Message()}{readMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} com.\+mysql.\+cj.\+protocol.\+x.\+Sync\+Message\+Reader.\+read\+Message (\begin{DoxyParamCaption}\item[{Optional$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1x_1_1_x_message}{X\+Message}} $>$}]{reuse,  }\item[{int}]{expected\+Type }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/x/Sync\+Message\+Reader.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/x/\mbox{\hyperlink{_sync_message_reader_8java}{Sync\+Message\+Reader.\+java}}\end{DoxyCompactItemize}

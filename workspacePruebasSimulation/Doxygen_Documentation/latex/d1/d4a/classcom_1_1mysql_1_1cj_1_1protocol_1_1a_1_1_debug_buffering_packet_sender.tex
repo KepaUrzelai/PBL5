@@ -7,14 +7,11 @@ Inherits \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_se
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_a38f99efbc9f851281f90960cd17905f7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_a38f99efbc9f851281f90960cd17905f7}} 
-{\bfseries Debug\+Buffering\+Packet\+Sender} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ packet\+Sender, Linked\+List$<$ String\+Builder $>$ packet\+Debug\+Buffer, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Integer $>$ packet\+Debug\+Buffer\+Size)
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_a38f99efbc9f851281f90960cd17905f7}{Debug\+Buffering\+Packet\+Sender}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ packet\+Sender, Linked\+List$<$ String\+Builder $>$ packet\+Debug\+Buffer, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Integer $>$ packet\+Debug\+Buffer\+Size)
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_a0cf9cc48937a3ae8101dbe8bb3ce103e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_a0cf9cc48937a3ae8101dbe8bb3ce103e}} 
-void {\bfseries set\+Max\+Packet\+Dump\+Length} (int max\+Packet\+Dump\+Length)
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_a0cf9cc48937a3ae8101dbe8bb3ce103e}{set\+Max\+Packet\+Dump\+Length}} (int max\+Packet\+Dump\+Length)
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_ace4962a5811f350ebad23d8c985be11f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_ace4962a5811f350ebad23d8c985be11f}} 
-void {\bfseries send} (byte\mbox{[}$\,$\mbox{]} packet, int packet\+Len, byte packet\+Sequence)  throws I\+O\+Exception 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_ace4962a5811f350ebad23d8c985be11f}{send}} (byte\mbox{[}$\,$\mbox{]} packet, int packet\+Len, byte packet\+Sequence)  throws I\+O\+Exception 
 \item 
 \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_a00c2c86d5ab855c81addbc039560b66b}{undecorate\+All}} ()
 \item 
@@ -22,7 +19,32 @@ void {\bfseries send} (byte\mbox{[}$\,$\mbox{]} packet, int packet\+Len, byte pa
 \end{DoxyCompactItemize}
 
 
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_a38f99efbc9f851281f90960cd17905f7}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_a38f99efbc9f851281f90960cd17905f7}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender}!Debug\+Buffering\+Packet\+Sender@{Debug\+Buffering\+Packet\+Sender}}
+\index{Debug\+Buffering\+Packet\+Sender@{Debug\+Buffering\+Packet\+Sender}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender}}
+\subsubsection{\texorpdfstring{Debug\+Buffering\+Packet\+Sender()}{DebugBufferingPacketSender()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+Debug\+Buffering\+Packet\+Sender.\+Debug\+Buffering\+Packet\+Sender (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender}{Message\+Sender}}$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} $>$}]{packet\+Sender,  }\item[{Linked\+List$<$ String\+Builder $>$}]{packet\+Debug\+Buffer,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1conf_1_1_readable_property}{Readable\+Property}}$<$ Integer $>$}]{packet\+Debug\+Buffer\+Size }\end{DoxyParamCaption})}
+
+
+
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_ace4962a5811f350ebad23d8c985be11f}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_ace4962a5811f350ebad23d8c985be11f}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender}!send@{send}}
+\index{send@{send}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Debug\+Buffering\+Packet\+Sender.\+send (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{packet,  }\item[{int}]{packet\+Len,  }\item[{byte}]{packet\+Sequence }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender_a0c7192449eae4aa0f0dbbc9778dac002}{com.\+mysql.\+cj.\+protocol.\+Message\+Sender$<$ M extends Message $>$}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_a0cf9cc48937a3ae8101dbe8bb3ce103e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_a0cf9cc48937a3ae8101dbe8bb3ce103e}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender}!set\+Max\+Packet\+Dump\+Length@{set\+Max\+Packet\+Dump\+Length}}
+\index{set\+Max\+Packet\+Dump\+Length@{set\+Max\+Packet\+Dump\+Length}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender}}
+\subsubsection{\texorpdfstring{set\+Max\+Packet\+Dump\+Length()}{setMaxPacketDumpLength()}}
+{\footnotesize\ttfamily void com.\+mysql.\+cj.\+protocol.\+a.\+Debug\+Buffering\+Packet\+Sender.\+set\+Max\+Packet\+Dump\+Length (\begin{DoxyParamCaption}\item[{int}]{max\+Packet\+Dump\+Length }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_a64d9081f4ce1701a67747cbb9462d4f3}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_debug_buffering_packet_sender_a64d9081f4ce1701a67747cbb9462d4f3}} 
 \index{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender}!undecorate@{undecorate}}
 \index{undecorate@{undecorate}!com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender@{com\+::mysql\+::cj\+::protocol\+::a\+::\+Debug\+Buffering\+Packet\+Sender}}
@@ -57,4 +79,4 @@ Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/Debug\+Buffering\+Packet\+Sender.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/\mbox{\hyperlink{_debug_buffering_packet_sender_8java}{Debug\+Buffering\+Packet\+Sender.\+java}}\end{DoxyCompactItemize}

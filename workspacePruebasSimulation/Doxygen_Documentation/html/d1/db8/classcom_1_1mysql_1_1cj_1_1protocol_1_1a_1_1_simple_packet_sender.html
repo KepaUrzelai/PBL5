@@ -64,7 +64,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>com</b></li><li class="navelem"><b>mysql</b></li><li class="navelem"><b>cj</b></li><li class="navelem"><b>protocol</b></li><li class="navelem"><b>a</b></li><li class="navelem"><a class="el" href="../../d1/db8/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender.html">SimplePacketSender</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../d8/dee/namespacecom.html">com</a></li><li class="navelem"><a class="el" href="../../de/d4a/namespacecom_1_1mysql.html">mysql</a></li><li class="navelem"><a class="el" href="../../d4/db2/namespacecom_1_1mysql_1_1cj.html">cj</a></li><li class="navelem"><a class="el" href="../../dc/d91/namespacecom_1_1mysql_1_1cj_1_1protocol.html">protocol</a></li><li class="navelem"><a class="el" href="../../dc/d20/namespacecom_1_1mysql_1_1cj_1_1protocol_1_1a.html">a</a></li><li class="navelem"><a class="el" href="../../d1/db8/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender.html">SimplePacketSender</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,11 +80,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0cfdd0d43649fedca7f4ba2fccb983ce"><td class="memItemLeft" align="right" valign="top"><a id="a0cfdd0d43649fedca7f4ba2fccb983ce"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SimplePacketSender</b> (BufferedOutputStream outputStream)</td></tr>
+<tr class="memitem:a0cfdd0d43649fedca7f4ba2fccb983ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db8/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender.html#a0cfdd0d43649fedca7f4ba2fccb983ce">SimplePacketSender</a> (BufferedOutputStream outputStream)</td></tr>
 <tr class="separator:a0cfdd0d43649fedca7f4ba2fccb983ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88b66f65476a850c58ffa47bc862661e"><td class="memItemLeft" align="right" valign="top"><a id="a88b66f65476a850c58ffa47bc862661e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (byte[] packet, int packetLen, byte packetSequence)  throws IOException </td></tr>
+<tr class="memitem:a88b66f65476a850c58ffa47bc862661e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db8/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender.html#a88b66f65476a850c58ffa47bc862661e">send</a> (byte[] packet, int packetLen, byte packetSequence)  throws IOException </td></tr>
 <tr class="separator:a88b66f65476a850c58ffa47bc862661e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fa36445cf29dff6e32000dc6c95c831"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d78/interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender.html">MessageSender</a>&lt; <a class="el" href="../../d3/d25/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload.html">NativePacketPayload</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db8/classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_simple_packet_sender.html#a2fa36445cf29dff6e32000dc6c95c831">undecorateAll</a> ()</td></tr>
 <tr class="separator:a2fa36445cf29dff6e32000dc6c95c831"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,7 +96,62 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (byte[] pack
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Simple implementation of <a class="el" href="../../de/d78/interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender.html">MessageSender</a> which handles the transmission of logical MySQL packets to the provided output stream. Large packets will be split into multiple chunks. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0cfdd0d43649fedca7f4ba2fccb983ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cfdd0d43649fedca7f4ba2fccb983ce">&#9670;&nbsp;</a></span>SimplePacketSender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">com.mysql.cj.protocol.a.SimplePacketSender.SimplePacketSender </td>
+          <td>(</td>
+          <td class="paramtype">BufferedOutputStream&#160;</td>
+          <td class="paramname"><em>outputStream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a88b66f65476a850c58ffa47bc862661e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b66f65476a850c58ffa47bc862661e">&#9670;&nbsp;</a></span>send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.mysql.cj.protocol.a.SimplePacketSender.send </td>
+          <td>(</td>
+          <td class="paramtype">byte []&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>packetLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>packetSequence</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../de/d78/interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_message_sender.html#a0c7192449eae4aa0f0dbbc9778dac002">com.mysql.cj.protocol.MessageSender&lt; M extends Message &gt;</a>.</p>
+
+</div>
+</div>
 <a id="a7258a5245f263cf4635daba8be258e36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7258a5245f263cf4635daba8be258e36">&#9670;&nbsp;</a></span>undecorate()</h2>
 
@@ -142,7 +195,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (byte[] pack
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>pruebas/mysql-connector-java-8.0.11/src/main/protocol-impl/java/com/mysql/cj/protocol/a/SimplePacketSender.java</li>
+<li>pruebas/mysql-connector-java-8.0.11/src/main/protocol-impl/java/com/mysql/cj/protocol/a/<a class="el" href="../../d0/d6c/_simple_packet_sender_8java.html">SimplePacketSender.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->

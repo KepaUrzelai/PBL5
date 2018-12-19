@@ -12,26 +12,66 @@ enum \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definiti
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_a463ad3b32013c0394c4bb428a70fd247}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_a463ad3b32013c0394c4bb428a70fd247}} 
-\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} {\bfseries set\+Name} (String fk\+Name)
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_a463ad3b32013c0394c4bb428a70fd247}{set\+Name}} (String fk\+Name)
 \item 
-\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_aa7d8e7f02ea79f326fd65479d21e2b1f}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_aa7d8e7f02ea79f326fd65479d21e2b1f}} 
-\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} {\bfseries fields} (String... column)
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_aa7d8e7f02ea79f326fd65479d21e2b1f}{fields}} (String... column)
 \item 
-\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_a0d3e1863c4bc69c9b03c8f573bf6bc39}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_a0d3e1863c4bc69c9b03c8f573bf6bc39}} 
-\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} {\bfseries refers\+To} (String table, String... column)
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_a0d3e1863c4bc69c9b03c8f573bf6bc39}{refers\+To}} (String table, String... column)
 \item 
-\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_aa73492ff5719b928485ce4c0e8be7e6d}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_aa73492ff5719b928485ce4c0e8be7e6d}} 
-\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} {\bfseries on\+Delete} (\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_1_1_change_mode}{Change\+Mode}} mode)
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_aa73492ff5719b928485ce4c0e8be7e6d}{on\+Delete}} (\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_1_1_change_mode}{Change\+Mode}} mode)
 \item 
-\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_ae6593612ed4d784bd6da0eac83ea51cd}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_ae6593612ed4d784bd6da0eac83ea51cd}} 
-\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} {\bfseries on\+Update} (\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_1_1_change_mode}{Change\+Mode}} mode)
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_ae6593612ed4d784bd6da0eac83ea51cd}{on\+Update}} (\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_1_1_change_mode}{Change\+Mode}} mode)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Fk\+Spec \+:\+:= \textquotesingle{}new Foreign\+Key\+Def()\textquotesingle{} \textquotesingle{}.fields(\textquotesingle{} String\+Literal (\textquotesingle{},\textquotesingle{} String\+Literal)$\ast$ \textquotesingle{})\textquotesingle{} \textquotesingle{}.refers\+To(\textquotesingle{} String\+Literal (\textquotesingle{},\textquotesingle{} String\+Literal)+ \textquotesingle{})\textquotesingle{} // table and columns ( \textquotesingle{}.on\+Delete(\textquotesingle{} (\textquotesingle{}Restrict\textquotesingle{} $\vert$ \textquotesingle{}Cascade\textquotesingle{} $\vert$ \textquotesingle{}Set\+Null\textquotesingle{}) \textquotesingle{})\textquotesingle{} )? ( \textquotesingle{}.on\+Update(\textquotesingle{} (\textquotesingle{}Restrict\textquotesingle{} $\vert$ \textquotesingle{}Cascade\textquotesingle{} $\vert$ \textquotesingle{}Set\+Null\textquotesingle{}) \textquotesingle{})\textquotesingle{} )? 
 
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_aa7d8e7f02ea79f326fd65479d21e2b1f}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_aa7d8e7f02ea79f326fd65479d21e2b1f}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition@{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition}!fields@{fields}}
+\index{fields@{fields}!com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition@{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition}}
+\subsubsection{\texorpdfstring{fields()}{fields()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} com.\+mysql.\+cj.\+xdevapi.\+Foreign\+Key\+Definition.\+fields (\begin{DoxyParamCaption}\item[{String...}]{column }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_def_acc462cbe87a4a3c4b53244d86a258070}{com.\+mysql.\+cj.\+xdevapi.\+Foreign\+Key\+Def}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_aa73492ff5719b928485ce4c0e8be7e6d}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_aa73492ff5719b928485ce4c0e8be7e6d}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition@{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition}!on\+Delete@{on\+Delete}}
+\index{on\+Delete@{on\+Delete}!com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition@{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition}}
+\subsubsection{\texorpdfstring{on\+Delete()}{onDelete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} com.\+mysql.\+cj.\+xdevapi.\+Foreign\+Key\+Definition.\+on\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_1_1_change_mode}{Change\+Mode}}}]{mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_ae6593612ed4d784bd6da0eac83ea51cd}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_ae6593612ed4d784bd6da0eac83ea51cd}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition@{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition}!on\+Update@{on\+Update}}
+\index{on\+Update@{on\+Update}!com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition@{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition}}
+\subsubsection{\texorpdfstring{on\+Update()}{onUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} com.\+mysql.\+cj.\+xdevapi.\+Foreign\+Key\+Definition.\+on\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_1_1_change_mode}{Change\+Mode}}}]{mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_a0d3e1863c4bc69c9b03c8f573bf6bc39}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_a0d3e1863c4bc69c9b03c8f573bf6bc39}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition@{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition}!refers\+To@{refers\+To}}
+\index{refers\+To@{refers\+To}!com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition@{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition}}
+\subsubsection{\texorpdfstring{refers\+To()}{refersTo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} com.\+mysql.\+cj.\+xdevapi.\+Foreign\+Key\+Definition.\+refers\+To (\begin{DoxyParamCaption}\item[{String}]{table,  }\item[{String...}]{column }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_def_a0e7ccf961a3a7bbf2d86a9b5765645d5}{com.\+mysql.\+cj.\+xdevapi.\+Foreign\+Key\+Def}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_a463ad3b32013c0394c4bb428a70fd247}\label{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition_a463ad3b32013c0394c4bb428a70fd247}} 
+\index{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition@{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition@{com\+::mysql\+::cj\+::xdevapi\+::\+Foreign\+Key\+Definition}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_definition}{Foreign\+Key\+Definition}} com.\+mysql.\+cj.\+xdevapi.\+Foreign\+Key\+Definition.\+set\+Name (\begin{DoxyParamCaption}\item[{String}]{fk\+Name }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1xdevapi_1_1_foreign_key_def_a39b5a6f9c5dc4307b38a87109cd4784d}{com.\+mysql.\+cj.\+xdevapi.\+Foreign\+Key\+Def}}.
+
+
+
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/Foreign\+Key\+Definition.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/user-\/api/java/com/mysql/cj/xdevapi/\mbox{\hyperlink{_foreign_key_definition_8java}{Foreign\+Key\+Definition.\+java}}\end{DoxyCompactItemize}

@@ -7,8 +7,7 @@ Inherits \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_aa8590ac608223c7b5411e9a43fa8a40e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_aa8590ac608223c7b5411e9a43fa8a40e}} 
-{\bfseries Text\+Buffer\+Row} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} buf, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} cd, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_value_decoder}{Value\+Decoder}} value\+Decoder)
+\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_aa8590ac608223c7b5411e9a43fa8a40e}{Text\+Buffer\+Row}} (\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}} buf, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} cd, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1result_1_1_abstract_resultset_row_a50c0daccb2e9e7e2445af4a09d6fb9d0}{exception\+Interceptor}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_value_decoder}{Value\+Decoder}} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1result_1_1_abstract_resultset_row_a62b113b0142a35b7962695b43b5b8e22}{value\+Decoder}})
 \item 
 byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_a54253c1dda65ca0c96dc3ca1adf4b908}{get\+Bytes}} (int index)
 \item 
@@ -19,8 +18,7 @@ boolean \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_a3d450230d8439eb5e1462b9f75b2714c}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_a3d450230d8439eb5e1462b9f75b2714c}} 
-int {\bfseries find\+And\+Seek\+To\+Offset} (int index)
+int \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_a3d450230d8439eb5e1462b9f75b2714c}{find\+And\+Seek\+To\+Offset}} (int index)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -30,7 +28,22 @@ A Result\+Set\+Row implementation that holds one row packet (which is re-\/used 
 
 (this isn\textquotesingle{}t possible when doing things like reading floating point values). 
 
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_aa8590ac608223c7b5411e9a43fa8a40e}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_aa8590ac608223c7b5411e9a43fa8a40e}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Text\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Text\+Buffer\+Row}!Text\+Buffer\+Row@{Text\+Buffer\+Row}}
+\index{Text\+Buffer\+Row@{Text\+Buffer\+Row}!com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Text\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Text\+Buffer\+Row}}
+\subsubsection{\texorpdfstring{Text\+Buffer\+Row()}{TextBufferRow()}}
+{\footnotesize\ttfamily com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Text\+Buffer\+Row.\+Text\+Buffer\+Row (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1_native_packet_payload}{Native\+Packet\+Payload}}}]{buf,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}}}]{cd,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1exceptions_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_value_decoder}{Value\+Decoder}}}]{value\+Decoder }\end{DoxyParamCaption})}
+
+
+
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_a3d450230d8439eb5e1462b9f75b2714c}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_a3d450230d8439eb5e1462b9f75b2714c}} 
+\index{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Text\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Text\+Buffer\+Row}!find\+And\+Seek\+To\+Offset@{find\+And\+Seek\+To\+Offset}}
+\index{find\+And\+Seek\+To\+Offset@{find\+And\+Seek\+To\+Offset}!com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Text\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Text\+Buffer\+Row}}
+\subsubsection{\texorpdfstring{find\+And\+Seek\+To\+Offset()}{findAndSeekToOffset()}}
+{\footnotesize\ttfamily int com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Text\+Buffer\+Row.\+find\+And\+Seek\+To\+Offset (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
 \mbox{\Hypertarget{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_a54253c1dda65ca0c96dc3ca1adf4b908}\label{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_text_buffer_row_a54253c1dda65ca0c96dc3ca1adf4b908}} 
 \index{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Text\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Text\+Buffer\+Row}!get\+Bytes@{get\+Bytes}}
 \index{get\+Bytes@{get\+Bytes}!com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Text\+Buffer\+Row@{com\+::mysql\+::cj\+::protocol\+::a\+::result\+::\+Text\+Buffer\+Row}}
@@ -95,4 +108,4 @@ Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1result_1_1_row_ab80b0
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/result/Text\+Buffer\+Row.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/protocol-\/impl/java/com/mysql/cj/protocol/a/result/\mbox{\hyperlink{_text_buffer_row_8java}{Text\+Buffer\+Row.\+java}}\end{DoxyCompactItemize}

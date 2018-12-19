@@ -64,7 +64,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>com</b></li><li class="navelem"><b>mysql</b></li><li class="navelem"><b>cj</b></li><li class="navelem"><b>protocol</b></li><li class="navelem"><a class="el" href="../../d0/da3/classcom_1_1mysql_1_1cj_1_1protocol_1_1_security.html">Security</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../d8/dee/namespacecom.html">com</a></li><li class="navelem"><a class="el" href="../../de/d4a/namespacecom_1_1mysql.html">mysql</a></li><li class="navelem"><a class="el" href="../../d4/db2/namespacecom_1_1mysql_1_1cj.html">cj</a></li><li class="navelem"><a class="el" href="../../dc/d91/namespacecom_1_1mysql_1_1cj_1_1protocol.html">protocol</a></li><li class="navelem"><a class="el" href="../../d0/da3/classcom_1_1mysql_1_1cj_1_1protocol_1_1_security.html">Security</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,8 +80,7 @@ $(function() {
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6529697fb27ef62f6a21cb347f5e4c99"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da3/classcom_1_1mysql_1_1cj_1_1protocol_1_1_security.html#a6529697fb27ef62f6a21cb347f5e4c99">xorString</a> (byte[] from, byte[] to, byte[] scramble, int length)</td></tr>
 <tr class="separator:a6529697fb27ef62f6a21cb347f5e4c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe3782ad69fe2237705cbf44e28ab779"><td class="memItemLeft" align="right" valign="top"><a id="abe3782ad69fe2237705cbf44e28ab779"></a>
-static byte []&#160;</td><td class="memItemRight" valign="bottom"><b>scramble411</b> (String password, byte[] seed, String passwordEncoding)</td></tr>
+<tr class="memitem:abe3782ad69fe2237705cbf44e28ab779"><td class="memItemLeft" align="right" valign="top">static byte []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da3/classcom_1_1mysql_1_1cj_1_1protocol_1_1_security.html#abe3782ad69fe2237705cbf44e28ab779">scramble411</a> (String password, byte[] seed, String passwordEncoding)</td></tr>
 <tr class="separator:abe3782ad69fe2237705cbf44e28ab779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1459b1e2d3828790e1d8982e65e68b34"><td class="memItemLeft" align="right" valign="top">static byte []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da3/classcom_1_1mysql_1_1cj_1_1protocol_1_1_security.html#a1459b1e2d3828790e1d8982e65e68b34">scramble411</a> (byte[] password, byte[] seed)</td></tr>
 <tr class="separator:a1459b1e2d3828790e1d8982e65e68b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,8 +90,50 @@ static byte []&#160;</td><td class="memItemRight" valign="bottom"><b>scramble411
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Methods for doing secure authentication with MySQL-4.1 and newer. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abe3782ad69fe2237705cbf44e28ab779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3782ad69fe2237705cbf44e28ab779">&#9670;&nbsp;</a></span>scramble411() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static byte [] com.mysql.cj.protocol.Security.scramble411 </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>password</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte []&#160;</td>
+          <td class="paramname"><em>seed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>passwordEncoding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1459b1e2d3828790e1d8982e65e68b34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1459b1e2d3828790e1d8982e65e68b34">&#9670;&nbsp;</a></span>scramble411()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1459b1e2d3828790e1d8982e65e68b34">&#9670;&nbsp;</a></span>scramble411() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +281,7 @@ Scramble = XOR(SHA2(password), SHA2(SHA2(SHA2(password)), Nonce))
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>pruebas/mysql-connector-java-8.0.11/src/main/core-impl/java/com/mysql/cj/protocol/Security.java</li>
+<li>pruebas/mysql-connector-java-8.0.11/src/main/core-impl/java/com/mysql/cj/protocol/<a class="el" href="../../d0/d7f/_security_8java.html">Security.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->

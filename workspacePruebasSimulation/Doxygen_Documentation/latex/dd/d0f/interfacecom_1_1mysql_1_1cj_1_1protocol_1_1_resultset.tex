@@ -20,13 +20,11 @@ enum \mbox{\hyperlink{enumcom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_1_1_type}
 \item 
 void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aee8797446404a63565e56825f2b5a5d4}{set\+Column\+Definition}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} metadata)
 \item 
-\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aa09b585b364b09f418b47bd267b1758b}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aa09b585b364b09f418b47bd267b1758b}} 
-\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} {\bfseries get\+Column\+Definition} ()
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aa09b585b364b09f418b47bd267b1758b}{get\+Column\+Definition}} ()
 \item 
 boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_acafe4b216e2086884d0758c64fd34c0b}{has\+Rows}} ()
 \item 
-\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a56ff0f26904a612a034bf839cae46d51}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a56ff0f26904a612a034bf839cae46d51}} 
-\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows}{Resultset\+Rows}} {\bfseries get\+Rows} ()
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows}{Resultset\+Rows}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a56ff0f26904a612a034bf839cae46d51}{get\+Rows}} ()
 \item 
 void \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a2ee6b6a8cb5164dfc293b23cefb96b46}{init\+Rows\+With\+Metadata}} ()
 \item 
@@ -62,6 +60,16 @@ Clears the reference to the next result set in a multi-\/result set \char`\"{}ch
 
 Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset_a2a2679a79ede89432e8b54d6eff42138}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aa09b585b364b09f418b47bd267b1758b}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aa09b585b364b09f418b47bd267b1758b}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}!get\+Column\+Definition@{get\+Column\+Definition}}
+\index{get\+Column\+Definition@{get\+Column\+Definition}!com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}}
+\subsubsection{\texorpdfstring{get\+Column\+Definition()}{getColumnDefinition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_column_definition}{Column\+Definition}} com.\+mysql.\+cj.\+protocol.\+Resultset.\+get\+Column\+Definition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset_a46cbcef39f6907dc5aa12d6f1353cf32}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
+
 \mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aeb71f17cb0bbc2c33b47bc7e6a1f750c}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_aeb71f17cb0bbc2c33b47bc7e6a1f750c}} 
 \index{com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}!get\+Next\+Resultset@{get\+Next\+Resultset}}
 \index{get\+Next\+Resultset@{get\+Next\+Resultset}!com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}}
@@ -91,6 +99,16 @@ result id
 
 
 Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset_ad10ec652380313c1eb2cb1dd67c4ea7e}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a56ff0f26904a612a034bf839cae46d51}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a56ff0f26904a612a034bf839cae46d51}} 
+\index{com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}!get\+Rows@{get\+Rows}}
+\index{get\+Rows@{get\+Rows}!com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}}
+\subsubsection{\texorpdfstring{get\+Rows()}{getRows()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_rows}{Resultset\+Rows}} com.\+mysql.\+cj.\+protocol.\+Resultset.\+get\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1result_1_1_native_resultset_a7f78b25cd2c764cf15975f10767d0de8}{com.\+mysql.\+cj.\+protocol.\+a.\+result.\+Native\+Resultset}}.
 
 \mbox{\Hypertarget{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a41ec899fbc6875d7b31245be7245ae9a}\label{interfacecom_1_1mysql_1_1cj_1_1protocol_1_1_resultset_a41ec899fbc6875d7b31245be7245ae9a}} 
 \index{com\+::mysql\+::cj\+::protocol\+::\+Resultset@{com\+::mysql\+::cj\+::protocol\+::\+Resultset}!get\+Server\+Info@{get\+Server\+Info}}
@@ -198,4 +216,4 @@ Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1cj_1_1protocol_1_1a_1_1resu
 
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/Resultset.\+java\end{DoxyCompactItemize}
+pruebas/mysql-\/connector-\/java-\/8.\+0.\+11/src/main/core-\/api/java/com/mysql/cj/protocol/\mbox{\hyperlink{_resultset_8java}{Resultset.\+java}}\end{DoxyCompactItemize}
