@@ -1,0 +1,98 @@
+package main;
+
+import java.util.List;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import clases.Order;
+import clases.Product;
+import clases.Segment;
+import clases.Workstation;
+import config.AppConfig;
+import control.ControlOrders;
+import control.ControlVehicles;
+import service.SegmentService;
+
+public class Main {
+	
+	List<Segment> SegmentList;
+	List<Product> order1;
+	Order order;
+	ControlOrders controlOrders;
+	ControlVehicles controlVehicles;
+	
+	public Main() {
+		
+		controlVehicles=new ControlVehicles();
+		/*inicializar();
+		//addSegmentsToDatabase();
+		addOrder();
+		inicializarSegmentos();
+		*/
+		Segment s=new Workstation(0,"Workstation1", 0);
+		
+		AnnotationConfigApplicationContext context = 
+	            new AnnotationConfigApplicationContext(AppConfig.class);
+		SegmentService segmentService = context.getBean(SegmentService.class);
+		segmentService.add(s);
+		
+		/*AnnotationConfigApplicationContext context = 
+	            new AnnotationConfigApplicationContext(AppConfig.class);
+		ProductService productService = context.getBean(ProductService.class);
+		productService.add(new Product(0,"alfajores 1", 5));*/
+		
+	}
+	
+    private void addSegmentsToDatabase() {
+    	//SegmentItemFacade database= new SegmentItemFacade();
+		for (Segment s: SegmentList) {
+			//database.saveSegment(s);
+		}
+	}
+
+	private void addOrder() {
+		controlOrders=new ControlOrders();
+		controlOrders.addOrder(order);
+		
+	}
+
+	public static void main(String[] args) throws Exception {
+
+    	@SuppressWarnings("unused")
+		Main main= new Main();
+ 
+    	
+    }
+
+
+	public void inicializar() {
+    	inicializarSegmentos();
+    	inicializarOrders();
+    }
+    
+    private void inicializarOrders() {
+    	/*order1=new ArrayList<Product>();
+    	order1.add(new Product(0,"alfajores 1", (Workstation)SegmentList.get(8), (Workstation)SegmentList.get(7), 5));
+    	order1.add(new Product(1,"alfajores 2", (Workstation)SegmentList.get(8), (Workstation)SegmentList.get(7), 5));
+    	order1.add(new Product(2,"alfajores 3", (Workstation)SegmentList.get(8), (Workstation)SegmentList.get(7), 5));
+    	order1.add(new Product(3,"perrunillas 1", (Workstation)SegmentList.get(9), (Workstation)SegmentList.get(7), 7));
+    	order1.add(new Product(4,"perrunillas 2", (Workstation)SegmentList.get(9), (Workstation)SegmentList.get(7), 7));
+		order=new Order(1, order1);*/
+	}
+
+	private void inicializarSegmentos() {
+		/*SegmentList=new ArrayList<Segment>();
+    	SegmentList.add(new Line(0, 1, 2, controlVehicles));//-1 equivale a null
+    	SegmentList.add(new Line(1, 3, -1, controlVehicles));
+    	SegmentList.add(new Line(2, 5, -1, controlVehicles));
+    	SegmentList.add(new Line(3, 4, -1, controlVehicles));
+    	SegmentList.add(new Line(4, 5, -1, controlVehicles));
+    	SegmentList.add(new Line(5, 6, -1, controlVehicles));
+    	SegmentList.add(new Line(6, 0, -1, controlVehicles));
+     	SegmentList.add(new Workstation(10,"workspace 1",  SegmentList.get(0).getId(), controlVehicles));
+     	SegmentList.add(new Workstation(11,"workspace 2",  SegmentList.get(4).getId(), controlVehicles));
+     	SegmentList.add(new Workstation(12,"workspace 3",  SegmentList.get(4).getId(), controlVehicles));//este lo he creau para tener otro mas y para hacer pruebas. no cuadra con el esquema
+     	SegmentList.add(new Parking(20,"parking 1", SegmentList.get(1).getId(), controlVehicles));    	
+    */}
+
+}

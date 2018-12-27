@@ -1,0 +1,84 @@
+package clases;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
+import control.ControlVehicles;
+
+public class Vehicle implements Runnable{
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)	
+	private Integer id;
+	
+	/*@OneToOne
+	@JoinColumn(name = "currentSegment")
+	private Segment currentSegment;
+	
+	@OneToOne
+	@JoinColumn(name = "destinationSegment")
+	private Segment destinationSegment;*/
+	
+	@Column(name = "status")
+	private String status;
+	
+	/*ControlVehicles controlVehicles;
+	boolean waiting;
+	Product productToMove;*/
+	
+	public Vehicle(int id) {//aqui se tendra que inicializar tmb con el current segment, pero de momento pa no tener que andar pasando la lista de segments pues no se hace. cuando este la base de datos echa se hace.
+		this.id=id;
+		/*controlVehicles=control;
+		this.waiting=true;*/
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public void move(Product product) throws InterruptedException {
+		System.out.println("El vehiculo=" + this.id + " ha pillau el producto=" + product.getName());
+		Thread.sleep(6000);
+		System.out.println("Se ha entregado el producto. El vehiculo vuelve a estar disponible.");
+		//controlVehicles.addVehicle(this);
+		waiting();
+	}
+
+	public void moveProduct(Product product) {
+		//this.productToMove = product;
+	}
+
+	public void run() {
+		try {
+			waiting();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private void waiting() throws InterruptedException {
+		synchronized(this) {
+			this.wait();
+		}		
+		//move(this.productToMove);
+	}
+	
+
+}
