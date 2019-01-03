@@ -40,10 +40,8 @@ public class Workstation extends Segment{
 	}
 	
 	public void produce() {
-		makeProduct();
-		while(!this.productTaken) {		
-			controlVehicles.callVehicle(listaProductos.get(0), this);
-		}
+		makeProduct();	
+		controlVehicles.callVehicle(listaProductos.get(0), this);
 		this.productTaken=false;
 		deleteProduct();
 	}

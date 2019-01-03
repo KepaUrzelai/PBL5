@@ -64,8 +64,14 @@ public class Vehicle implements Runnable{
 	private void waiting() throws InterruptedException {
 		synchronized(this) {
 			this.wait();
-		}		
+		}
+		calcularRuta();
 		move(this.productToMove);
+	}
+
+	private void calcularRuta() {
+		controlVehicles.calcularRutaGeneral(this.productToMove.getSegmentOrigin(), this.productToMove.getSegmentDestination());
+		
 	}
 	
 

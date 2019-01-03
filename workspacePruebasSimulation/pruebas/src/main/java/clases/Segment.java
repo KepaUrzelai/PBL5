@@ -1,5 +1,7 @@
 package clases;
 
+import java.util.concurrent.Semaphore;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -33,11 +35,14 @@ public abstract class Segment implements Runnable{
 	public String name;
 	
 	ControlVehicles controlVehicles;
+	Semaphore sem;
 
+	public Segment() {}
 	
 	public Segment(int id, ControlVehicles control) {
 		this.id=id;
 		this.controlVehicles=control;
+		this.sem=new Semaphore(1);
 		
 	}
 
@@ -58,6 +63,16 @@ public abstract class Segment implements Runnable{
 
 
 	public abstract void run();
+	public boolean takePermission(Vehicle vehicle) throws InterruptedException {
+		if(sem.availablePermits()==0) return false;
+		else {
+			sem.acquire();
+			if(this.getClass().equals(Line.class))Thread.sleep(2000);
+			else if(this.getClass().equals(Workstation.class))Thread.sleep(3000);
+			else Thread.sleep(2000);
+		}
+		return true;
+	}
 
 
 	public int getNextSegment() {

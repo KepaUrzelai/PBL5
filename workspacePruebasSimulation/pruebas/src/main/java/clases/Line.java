@@ -15,7 +15,18 @@ public class Line extends Segment{
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
+		try {
+			waiting();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
+	}
+	
+	private void waiting() throws InterruptedException {
+		synchronized(this) {
+			this.wait();
+		}		
 		
 	}
 

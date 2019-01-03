@@ -5,19 +5,18 @@ import java.util.List;
 import java.util.concurrent.Semaphore;
 
 import clases.Product;
+import clases.Segment;
 import clases.Vehicle;
 import clases.Workstation;
 
 public class ControlVehicles {
 	
-	static Semaphore vehicleSem;
 	static Semaphore mutEx;
 	List<Vehicle> listVehicles;
 	List<Vehicle> listAvailableVehicles;
 	
 	public ControlVehicles() {
 		initVehicles();
-		vehicleSem = new Semaphore(2);
 		mutEx = new Semaphore(1);
 		
 	}
@@ -44,13 +43,11 @@ public class ControlVehicles {
 		mutEx.acquire();
 		listAvailableVehicles.add(vehicle);
 		mutEx.release();
-		vehicleSem.release();
 		
 	}
 
 	public void callVehicle(Product product, Workstation workstation){
 		try {
-			vehicleSem.acquire();
 			mutEx.acquire();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -72,6 +69,25 @@ public class ControlVehicles {
 		
 	//	vehicle.move(product);
 		
+	}
+	
+	public void calcularRutaGeneral(Segment origin, Segment destination) {
+		List<Integer> ruta = new ArrayList<>();	
+		while(true) {
+			ruta.add(origin.getNextSegment());		
+			if(origin.getNextSegment2()!=-1){
+					
+			}
+				
+		}
+		
+	}
+	
+	public void calcularRutaSinDesvios(List<Integer> ruta, Segment segment, Segment destination) {
+		while(segment.getNextSegment()==destination.getId()) {
+			ruta.add(segment.getNextSegment());
+			//aqui una funcion de pillar el siguiente segment en plan utilizando su id. con la base de datos que todavia no esta implementada
+		}		
 	}
 
 }
