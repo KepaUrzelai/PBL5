@@ -14,8 +14,8 @@ public class Parking extends Segment{
 	
 	public Parking() {}
 
-	public Parking(int id,String name, int correspondient) {
-		super(id);
+	public Parking(int id,String name, int correspondient, ControlVehicles control) {
+		super(id, control);
 		// TODO Auto-generated constructor stub
 		this.name=name;
 		this.correspondientLineId=correspondient;

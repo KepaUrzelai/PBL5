@@ -60,18 +60,23 @@ public class ControlVehicles {
 		listAvailableVehicles.remove(0);
 		workstation.setProductTaken(true);
 		mutEx.release();
-		vehicle.moveProduct(product);
+	//	vehicle.moveProduct(product);
 		
 		synchronized(vehicle) {
 			vehicle.notify();
 		}
 		
 		
-	//	vehicle.move(product);
+	/*	try {
+			vehicle.move(product);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
 		
 	}
 	
-	public void calcularRutaGeneral(Segment origin, Segment destination) {
+/*	public void calcularRutaGeneral(Segment origin, Segment destination) {
 		List<Integer> ruta = new ArrayList<>();	
 		while(true) {
 			ruta.add(origin.getNextSegment());		
@@ -88,6 +93,6 @@ public class ControlVehicles {
 			ruta.add(segment.getNextSegment());
 			//aqui una funcion de pillar el siguiente segment en plan utilizando su id. con la base de datos que todavia no esta implementada
 		}		
-	}
+	}*/
 
 }

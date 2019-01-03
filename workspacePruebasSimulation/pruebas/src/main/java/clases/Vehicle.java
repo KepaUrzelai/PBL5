@@ -37,7 +37,8 @@ public class Vehicle implements Runnable{
 	}
 
 	public void move(Product product) throws InterruptedException {
-		System.out.println("El vehiculo=" + this.id + " ha pillau el producto=" + product.getName());
+	//	System.out.println("El vehiculo=" + this.id + " ha pillau el producto=" + product.getName());
+		System.out.println("ha pillau el product");
 		Thread.sleep(6000);
 		System.out.println("Se ha entregado el producto. El vehiculo vuelve a estar disponible.");
 		controlVehicles.addVehicle(this);
@@ -65,14 +66,14 @@ public class Vehicle implements Runnable{
 		synchronized(this) {
 			this.wait();
 		}
-		calcularRuta();
+//		calcularRuta();
 		move(this.productToMove);
 	}
 
-	private void calcularRuta() {
+/*	private void calcularRuta() {
 		controlVehicles.calcularRutaGeneral(this.productToMove.getSegmentOrigin(), this.productToMove.getSegmentDestination());
 		
-	}
+	}*/
 	
 
 }
