@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>Register</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet">
+    <link href="data/styles.css" type="text/css" rel="stylesheet">
+    <!--Boostrap 4 css-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Monoton Font-->
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link href="files/styleMaster.css" type="text/css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="base">
+    <!--Scripts for Boostrap 4 -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--HEADER-->
+      <div class="container">
+        <div class="jumbotron">   
+          <div class="page-header">  
+    <!--LOGO-->
+            <div id="logo">
+              <img id="jm_logo" class="img" src="images/jm_logo.jpg">
+            </div>
+     <!--TITLE-->
+            <h1 id="title1_text">Jijuk Malau<span id="title2_text">Robotics</span></h1>
+            </div>  
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-md navbar-dark secondary-color mb-5 no-content">
+    <!---------------------------------------- Breadcrumb---------------------------------------->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item "><a href="finalShop.html">Shop</a></li>
+          </ol>
+        </nav>
+    </div>
+
+<main class="my-form">
+    <div class="cotainer">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">Register</div>
+                        <div class="card-body">
+                            <form name="my-form" onsubmit="return validform()" action="success.php" method="">
+                                <div class="form-group row">
+                                    <a for="full_name" class="col-md-4 text-md-right">Name</a>
+                                    <div class="col-md-6">
+                                        <input type="text" id="full_name" class="form-control" name="full-name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <a for="full_name" class="col-md-4 text-md-right">Last name</a>
+                                    <div class="col-md-6">
+                                        <input type="text" id="full_name" class="form-control" name="full-name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <a for="email_address" class="col-md-4 text-md-right">E-Mail Address</a>
+                                    <div class="col-md-6">
+                                        <input type="text" id="email_address" class="form-control" name="email-address">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <a for="user_name" class="col-md-4 text-md-right">User Name</a>
+                                    <div class="col-md-6">
+                                        <input type="text" id="user_name" class="form-control" name="username">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <a for="phone_number" class="col-md-4 text-md-right">Phone Number</a>
+                                    <div class="col-md-6">
+                                        <input type="text" id="phone_number" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <a for="present_address" class="col-md-4 text-md-right">Present Address</a>
+                                    <div class="col-md-6">
+                                        <input type="text" id="present_address" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <a for="permanent_address" class="col-md-4 text-md-right">Permanent Address</a>
+                                    <div class="col-md-6">
+                                        <input type="text" id="permanent_address" class="form-control" name="permanent-address">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <a for="nid_number" class="col-md-4 text-md-right"><abbr
+                                                title="National Id Card">NID</abbr> Number</a>
+                                    <div class="col-md-6">
+                                        <input type="text" id="nid_number" class="form-control" name="nid-number">
+                                    </div>
+                                </div>
+
+                                    <div class="col-md-6 offset-md-4">
+                                        <button type="submit" class="btn btn-primary">
+                                        Register
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+            <!--/row-->
+  </body>
+</html>

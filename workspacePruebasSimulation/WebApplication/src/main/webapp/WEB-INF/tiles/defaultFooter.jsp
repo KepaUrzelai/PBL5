@@ -1,1 +1,0 @@
-<footer>Marry Christmas</footer>

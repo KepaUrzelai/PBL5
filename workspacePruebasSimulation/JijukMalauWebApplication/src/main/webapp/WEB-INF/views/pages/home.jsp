@@ -1,1 +1,0 @@
-<h2>Home page: it will be the shop</h2>
